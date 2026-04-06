@@ -1,0 +1,722 @@
+{
+  "sources": [
+    {
+      "name": "Thought Gallery",
+      "type": "newsletter",
+      "gmail_query": "from:thoughtgallery.org",
+      "category": "talks_lectures",
+      "enabled": true
+    },
+    {
+      "name": "NY Adventure Club",
+      "type": "newsletter",
+      "gmail_query": "from:nyadventureclub.com",
+      "category": "tours_experiences",
+      "enabled": true
+    },
+    {
+      "name": "Brooklyn Brainery",
+      "type": "newsletter",
+      "gmail_query": "from:brooklynbrainery.com",
+      "category": "workshops_classes",
+      "enabled": true
+    },
+    {
+      "name": "Center for Fiction",
+      "type": "newsletter",
+      "gmail_query": "from:centerforfiction.org",
+      "category": "talks_lectures",
+      "enabled": true
+    },
+    {
+      "name": "Brooklyn Public Library",
+      "type": "newsletter",
+      "gmail_query": "from:bklynlibrary.org",
+      "category": "talks_lectures",
+      "enabled": true
+    },
+    {
+      "name": "The Skint",
+      "type": "newsletter",
+      "gmail_query": "from:theskint.com",
+      "category": "talks_lectures",
+      "enabled": true
+    },
+    {
+      "name": "Nonsense NYC",
+      "type": "newsletter",
+      "gmail_query": "from:nonsensenyc.com",
+      "category": "tours_experiences",
+      "enabled": true
+    },
+    {
+      "name": "BRIC",
+      "type": "newsletter",
+      "gmail_query": "from:bricartsmedia.org",
+      "category": "art_exhibitions",
+      "enabled": true
+    },
+    {
+      "name": "BKReader",
+      "type": "newsletter",
+      "gmail_query": "from:bkreader.com",
+      "category": "talks_lectures",
+      "enabled": true
+    },
+    {
+      "name": "Patch Fort Greene",
+      "type": "newsletter",
+      "gmail_query": "from:patch.com subject:fort greene",
+      "category": "talks_lectures",
+      "enabled": true
+    },
+    {
+      "name": "Patch Bed-Stuy",
+      "type": "newsletter",
+      "gmail_query": "from:patch.com subject:bed-stuy",
+      "category": "talks_lectures",
+      "enabled": true
+    },
+    {
+      "name": "Patch BK Heights-DUMBO",
+      "type": "newsletter",
+      "gmail_query": "from:patch.com subject:(brooklyn heights OR dumbo)",
+      "category": "talks_lectures",
+      "enabled": true
+    },
+    {
+      "name": "Gary's Guide",
+      "type": "newsletter",
+      "gmail_query": "from:garysguide.com",
+      "category": "tech_ai",
+      "enabled": true
+    },
+    {
+      "name": "Cerebral Valley",
+      "type": "newsletter",
+      "gmail_query": "from:cerebralvalley.ai",
+      "category": "tech_ai",
+      "enabled": true
+    },
+    {
+      "name": "Built In NYC",
+      "type": "newsletter",
+      "gmail_query": "from:builtin.com subject:NYC",
+      "category": "tech_ai",
+      "enabled": true
+    },
+    {
+      "name": "Brooklyn Museum",
+      "type": "scrape",
+      "url": "https://www.brooklynmuseum.org/calendar",
+      "category": "art_exhibitions",
+      "neighborhood": "Prospect Heights",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Prospect Park Conservancy",
+      "type": "scrape",
+      "url": "https://www.prospectpark.org/visit-the-park/things-to-do/tours/",
+      "category": "tours_experiences",
+      "neighborhood": "Prospect Heights",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "BAM",
+      "type": "scrape",
+      "url": "https://www.bam.org/programs",
+      "category": "art_exhibitions",
+      "neighborhood": "Fort Greene",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "POWERHOUSE Arena",
+      "type": "scrape",
+      "url": "https://powerhousearena.com/events/",
+      "category": "talks_lectures",
+      "neighborhood": "DUMBO",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Greenlight Bookstore",
+      "type": "scrape",
+      "url": "https://www.greenlightbookstore.com/events",
+      "category": "talks_lectures",
+      "neighborhood": "Fort Greene",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Books Are Magic",
+      "type": "scrape",
+      "url": "https://www.booksaremagic.net/events",
+      "category": "talks_lectures",
+      "neighborhood": "Brooklyn Heights",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Smack Mellon",
+      "type": "scrape",
+      "url": "https://smackmellon.org/",
+      "category": "art_exhibitions",
+      "neighborhood": "DUMBO",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "A.I.R. Gallery",
+      "type": "scrape",
+      "url": "https://airgallery.org/",
+      "category": "art_exhibitions",
+      "neighborhood": "DUMBO",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "United Photo Industries",
+      "type": "scrape",
+      "url": "https://unitedphotoindustries.com/",
+      "category": "art_exhibitions",
+      "neighborhood": "DUMBO",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "The Invisible Dog",
+      "type": "scrape",
+      "url": "https://www.theinvisibledog.org/all",
+      "category": "art_exhibitions",
+      "neighborhood": "Boerum Hill",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "MoCADA",
+      "type": "scrape",
+      "url": "https://mocada.org/",
+      "category": "art_exhibitions",
+      "neighborhood": "Fort Greene",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Pratt Institute",
+      "type": "scrape",
+      "url": "https://www.pratt.edu/events/",
+      "category": "art_exhibitions",
+      "neighborhood": "Clinton Hill",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Art in DUMBO",
+      "type": "scrape",
+      "url": "https://artindumbo.com/",
+      "category": "art_exhibitions",
+      "neighborhood": "DUMBO",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Center for Brooklyn History",
+      "type": "scrape",
+      "url": "https://www.brooklynhistory.org/",
+      "category": "talks_lectures",
+      "neighborhood": "Brooklyn Heights",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "City Reliquary",
+      "type": "scrape",
+      "url": "https://www.cityreliquary.org/",
+      "category": "art_exhibitions",
+      "neighborhood": "Williamsburg",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Nitehawk Cinema",
+      "type": "scrape",
+      "url": "https://nitehawkcinema.com/williamsburg/",
+      "category": "film_screenings",
+      "neighborhood": "Williamsburg",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Brooklyn Botanic Garden",
+      "type": "scrape",
+      "url": "https://www.bbg.org/classes",
+      "category": "workshops_classes",
+      "neighborhood": "Prospect Heights",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "S.A.S.S.",
+      "type": "scrape",
+      "url": "https://history.wtf/",
+      "category": "talks_lectures",
+      "neighborhood": "Williamsburg",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Secret Science Club",
+      "type": "scrape",
+      "url": "http://secretscienceclub.blogspot.com/",
+      "category": "talks_lectures",
+      "neighborhood": "Gowanus",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Turnstile Tours",
+      "type": "scrape",
+      "url": "https://turnstiletours.com/",
+      "category": "tours_experiences",
+      "neighborhood": "Brooklyn",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Rooftop Films",
+      "type": "scrape",
+      "url": "https://rooftopfilms.com/calendar/",
+      "category": "film_screenings",
+      "neighborhood": "Brooklyn",
+      "enabled": true,
+      "seasonal": {"months": [5, 6, 7, 8, 9]}
+    },
+    {
+      "name": "BRIC Events",
+      "type": "scrape",
+      "url": "https://bricartsmedia.org/events/",
+      "category": "art_exhibitions",
+      "neighborhood": "Fort Greene",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Green-Wood Cemetery",
+      "type": "scrape",
+      "url": "https://www.green-wood.com/calendar/",
+      "category": "tours_experiences",
+      "neighborhood": "Greenwood",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Brooklyn Grange",
+      "type": "scrape",
+      "url": "https://www.brooklyngrangefarm.com/",
+      "category": "tours_experiences",
+      "neighborhood": "Navy Yard",
+      "enabled": true,
+      "seasonal": {"months": [4, 5, 6, 7, 8, 9, 10]}
+    },
+    {
+      "name": "Fort Greene Park Conservancy",
+      "type": "scrape",
+      "url": "https://fortgreenepark.org/calendar/",
+      "category": "tours_experiences",
+      "neighborhood": "Fort Greene",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Atlas Obscura NYC",
+      "type": "scrape",
+      "url": "https://www.atlasobscura.com/things-to-do/new-york/events",
+      "category": "tours_experiences",
+      "neighborhood": "NYC",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Choplet",
+      "type": "scrape",
+      "url": "https://choplet.com/",
+      "category": "workshops_classes",
+      "neighborhood": "Williamsburg",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Maison Clay",
+      "type": "scrape",
+      "url": "https://www.maisonclay.com/",
+      "category": "workshops_classes",
+      "neighborhood": "Williamsburg",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Artshack Brooklyn",
+      "type": "scrape",
+      "url": "https://www.artshackbrooklyn.org/",
+      "category": "workshops_classes",
+      "neighborhood": "Bed-Stuy",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "UrbanGlass",
+      "type": "scrape",
+      "url": "https://urbanglass.org/classes",
+      "category": "workshops_classes",
+      "neighborhood": "Fort Greene",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Brooklyn Glass",
+      "type": "scrape",
+      "url": "https://brooklynglass.com/",
+      "category": "workshops_classes",
+      "neighborhood": "Williamsburg",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Craftsman Ave",
+      "type": "scrape",
+      "url": "https://craftsmanave.com/",
+      "category": "workshops_classes",
+      "neighborhood": "Gowanus",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Bushwick Jewelry Casting",
+      "type": "scrape",
+      "url": "https://www.bushwickjewelrycasting.com/",
+      "category": "workshops_classes",
+      "neighborhood": "Bushwick",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Center for Book Arts",
+      "type": "scrape",
+      "url": "https://centerforbookarts.org/",
+      "category": "workshops_classes",
+      "neighborhood": "Flatiron",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Makeville Studio",
+      "type": "scrape",
+      "url": "https://makeville.com/",
+      "category": "workshops_classes",
+      "neighborhood": "Gowanus",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Bien Hecho Academy",
+      "type": "scrape",
+      "url": "http://www.bienhechoacademy.com/",
+      "category": "workshops_classes",
+      "neighborhood": "Navy Yard",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Find The Thread",
+      "type": "scrape",
+      "url": "https://findthethread.com/classes",
+      "category": "workshops_classes",
+      "neighborhood": "Clinton Hill",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Gowanus Print Lab",
+      "type": "scrape",
+      "url": "https://www.gowanusprintlab.com/classes.html",
+      "category": "workshops_classes",
+      "neighborhood": "Gowanus",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Brooklyn Kitchen",
+      "type": "scrape",
+      "url": "https://www.thebrooklynkitchen.com/",
+      "category": "workshops_classes",
+      "neighborhood": "Williamsburg",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "QU Fermentation",
+      "type": "scrape",
+      "url": "https://qufermentation.substack.com/",
+      "category": "workshops_classes",
+      "neighborhood": "Greenpoint",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Luma NYC",
+      "type": "scrape",
+      "url": "https://lu.ma/nyc",
+      "category": "tech_ai",
+      "neighborhood": "NYC",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Betaworks Studios",
+      "type": "scrape",
+      "url": "https://www.betaworks.com/",
+      "category": "tech_ai",
+      "neighborhood": "Meatpacking",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Gary's Guide",
+      "type": "scrape",
+      "url": "https://www.garysguide.com/events?region=newyork",
+      "category": "tech_ai",
+      "neighborhood": "NYC",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Cerebral Valley",
+      "type": "scrape",
+      "url": "https://cerebralvalley.ai/events",
+      "category": "tech_ai",
+      "neighborhood": "NYC",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Edible History",
+      "type": "scrape",
+      "url": "https://www.ediblehistorynyc.com/",
+      "category": "tours_experiences",
+      "neighborhood": "Brooklyn",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Culinary Historians of NY",
+      "type": "scrape",
+      "url": "https://culinaryhistoriansny.org/",
+      "category": "talks_lectures",
+      "neighborhood": "NYC",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "NY Mycological Society",
+      "type": "scrape",
+      "url": "https://newyorkmyc.org/",
+      "category": "tours_experiences",
+      "neighborhood": "NYC",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Gowanus Dredgers",
+      "type": "scrape",
+      "url": "https://gowanusdredgers.org/",
+      "category": "tours_experiences",
+      "neighborhood": "Gowanus",
+      "enabled": true,
+      "seasonal": {"months": [4, 5, 6, 7, 8, 9, 10]}
+    },
+    {
+      "name": "Interintellect",
+      "type": "scrape",
+      "url": "https://interintellect.com/",
+      "category": "talks_lectures",
+      "neighborhood": "NYC",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Explorers Club",
+      "type": "scrape",
+      "url": "https://www.explorers.org/calendar-of-events/",
+      "category": "talks_lectures",
+      "neighborhood": "Upper East Side",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Gotham Center",
+      "type": "scrape",
+      "url": "https://www.gothamcenter.org/",
+      "category": "talks_lectures",
+      "neighborhood": "NYC",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "NYC Resistor",
+      "type": "scrape",
+      "url": "https://www.nycresistor.com/",
+      "category": "workshops_classes",
+      "neighborhood": "Boerum Hill",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Genspace",
+      "type": "scrape",
+      "url": "https://www.genspace.org/",
+      "category": "workshops_classes",
+      "neighborhood": "Gowanus",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Movies With A View",
+      "type": "scrape",
+      "url": "https://www.brooklynbridgepark.org/events/movies-with-a-view",
+      "category": "film_screenings",
+      "neighborhood": "DUMBO",
+      "enabled": true,
+      "seasonal": {"months": [6, 7, 8]}
+    },
+    {
+      "name": "SummerScreen",
+      "type": "scrape",
+      "url": "https://summerscreen.org/",
+      "category": "film_screenings",
+      "neighborhood": "Williamsburg",
+      "enabled": true,
+      "seasonal": {"months": [6, 7, 8]}
+    },
+    {
+      "name": "NYC Parks Movies",
+      "type": "scrape",
+      "url": "https://www.nycgovparks.org/events",
+      "category": "film_screenings",
+      "neighborhood": "NYC",
+      "enabled": true,
+      "seasonal": {"months": [6, 7, 8]}
+    },
+    {
+      "name": "Rooftop Reds",
+      "type": "scrape",
+      "url": "https://rooftopreds.com/",
+      "category": "film_screenings",
+      "neighborhood": "Navy Yard",
+      "enabled": true,
+      "seasonal": {"months": [5, 6, 7, 8, 9]}
+    },
+    {
+      "name": "Club Free Time",
+      "type": "scrape",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-talks-lectures",
+      "category": "talks_lectures",
+      "neighborhood": "NYC",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Eventbrite Brooklyn",
+      "type": "scrape",
+      "url": "https://www.eventbrite.com/d/ny--brooklyn/classes--workshops/",
+      "category": "workshops_classes",
+      "neighborhood": "Brooklyn",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Death of Classical",
+      "type": "scrape",
+      "url": "https://www.deathofclassical.com/",
+      "category": "art_exhibitions",
+      "neighborhood": "NYC",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Mmuseumm",
+      "type": "scrape",
+      "url": "https://www.mmuseumm.com/",
+      "category": "art_exhibitions",
+      "neighborhood": "Tribeca",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "Open House New York",
+      "type": "scrape",
+      "url": "https://ohny.org/",
+      "category": "tours_experiences",
+      "neighborhood": "NYC",
+      "enabled": true,
+      "seasonal": {"months": [10]}
+    },
+    {
+      "name": "Photoville",
+      "type": "scrape",
+      "url": "https://photoville.com/",
+      "category": "art_exhibitions",
+      "neighborhood": "DUMBO",
+      "enabled": true,
+      "seasonal": {"months": [9, 10]}
+    },
+    {
+      "name": "Creative Coding NYC",
+      "type": "scrape",
+      "url": "https://www.meetup.com/creative-coding-nyc/",
+      "category": "tech_ai",
+      "neighborhood": "NYC",
+      "enabled": true,
+      "seasonal": null
+    }
+  ],
+  "categories": {
+    "tech_ai": {"label": "Tech & AI", "color": "#3b82f6"},
+    "talks_lectures": {"label": "Talks & Lectures", "color": "#8b5cf6"},
+    "workshops_classes": {"label": "Workshops & Classes", "color": "#f59e0b"},
+    "tours_experiences": {"label": "Tours & Experiences", "color": "#10b981"},
+    "film_screenings": {"label": "Film & Screenings", "color": "#ef4444"},
+    "art_exhibitions": {"label": "Art & Exhibitions", "color": "#ec4899"}
+  },
+  "taste_profile": {
+    "include_signals": [
+      "talks, panels, workshops, classes, lectures, salons, reading groups",
+      "walking tours, behind-the-scenes access, unusual venues, hands-on making",
+      "ceramics, glass, jewelry, woodworking, printing, fermentation, blacksmithing",
+      "tech events, AI demos, founder talks, policy discussions",
+      "free to moderate price",
+      "solo-friendly"
+    ],
+    "deprioritize_signals": [
+      "nightlife, DJ sets, club nights",
+      "corporate networking, pitch competitions",
+      "kids or family oriented",
+      "recurring fitness classes",
+      "multi-day commitments",
+      "generic networking mixers"
+    ],
+    "preferred_neighborhoods": [
+      "Fort Greene", "Prospect Heights", "Clinton Hill", "DUMBO",
+      "Williamsburg", "Bed-Stuy", "Park Slope", "Gowanus",
+      "Boerum Hill", "Brooklyn Heights", "Greenpoint", "Navy Yard"
+    ],
+    "price_flag_threshold": 75
+  },
+  "volume": {
+    "weekday_target": 15,
+    "weekend_target": 20
+  },
+  "feedback_decay_days": 90
+}

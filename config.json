@@ -367,24 +367,6 @@
       "seasonal": null
     },
     {
-      "name": "UrbanGlass",
-      "type": "scrape",
-      "url": "https://urbanglass.org/classes",
-      "category": "workshops_classes",
-      "neighborhood": "Fort Greene",
-      "enabled": true,
-      "seasonal": null
-    },
-    {
-      "name": "Brooklyn Glass",
-      "type": "scrape",
-      "url": "https://brooklynglass.com/",
-      "category": "workshops_classes",
-      "neighborhood": "Williamsburg",
-      "enabled": true,
-      "seasonal": null
-    },
-    {
       "name": "Craftsman Ave",
       "type": "scrape",
       "url": "https://craftsmanave.com/",
@@ -715,7 +697,7 @@
     "price_flag_threshold": 75
   },
   "volume": {
-    "weekday_target": 15,
+    "weekday_target": 20,
     "weekend_target": 20
   },
   "feedback_decay_days": 90

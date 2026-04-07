@@ -79,18 +79,49 @@
   }
 
   /* Category sections */
+  .category-section {
+    margin-top: 28px;
+  }
+
+  .category-section:first-child {
+    margin-top: 0;
+  }
+
+  .category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 4px 0 12px;
+    user-select: none;
+  }
+
   .category-label {
     font-size: 0.7rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: #a8a29e;
-    margin-bottom: 12px;
-    margin-top: 28px;
   }
 
-  .category-label:first-child {
-    margin-top: 0;
+  .category-toggle {
+    font-size: 0.7rem;
+    color: #a8a29e;
+    transition: transform 0.2s;
+  }
+
+  .category-section.collapsed .category-toggle {
+    transform: rotate(-90deg);
+  }
+
+  .category-body {
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+
+  .category-section.collapsed .category-body {
+    max-height: 0 !important;
+    overflow: hidden;
   }
 
   /* Event cards */
@@ -160,34 +191,150 @@
 
   .feedback-row {
     display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
+    gap: 4px;
   }
 
   .feedback-btn {
     font-family: inherit;
-    font-size: 0.7rem;
-    background: #fff;
-    border: 1px solid #d6d3d1;
-    border-radius: 4px;
-    padding: 3px 8px;
+    font-size: 0.85rem;
+    background: none;
+    border: none;
+    padding: 2px 4px;
     cursor: pointer;
-    color: #78716c;
-    transition: border-color 0.15s, color 0.15s;
+    color: #d6d3d1;
+    transition: color 0.15s;
+    line-height: 1;
   }
 
   .feedback-btn:hover {
-    border-color: #a8a29e;
-    color: #44403c;
+    color: #78716c;
   }
 
   .feedback-btn.selected-positive {
-    border-color: #059669;
     color: #059669;
   }
 
   .feedback-btn.selected-negative {
-    border-color: #dc2626;
+    color: #dc2626;
+  }
+
+  /* Save button */
+  .save-btn {
+    font-family: inherit;
+    font-size: 0.85rem;
+    background: none;
+    border: none;
+    padding: 2px 4px;
+    cursor: pointer;
+    color: #d6d3d1;
+    transition: color 0.15s;
+    line-height: 1;
+    margin-left: auto;
+  }
+
+  .save-btn:hover {
+    color: #f59e0b;
+  }
+
+  .save-btn.saved {
+    color: #f59e0b;
+  }
+
+  /* Day filter pills */
+  .day-filter {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .day-pill {
+    font-family: inherit;
+    font-size: 0.7rem;
+    font-weight: 500;
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 16px;
+    padding: 4px 12px;
+    cursor: pointer;
+    color: #78716c;
+    transition: all 0.15s;
+  }
+
+  .day-pill:hover {
+    border-color: #a8a29e;
+    color: #44403c;
+  }
+
+  .day-pill.active {
+    background: #1c1917;
+    border-color: #1c1917;
+    color: #fff;
+  }
+
+  /* Saved section */
+  .saved-section {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e7e5e4;
+  }
+
+  .saved-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 4px 0 12px;
+    user-select: none;
+  }
+
+  .saved-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #f59e0b;
+  }
+
+  .saved-empty {
+    font-size: 0.8rem;
+    color: #a8a29e;
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  .saved-card {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .saved-card .event-name {
+    font-size: 0.85rem;
+  }
+
+  .saved-card .saved-meta {
+    font-size: 0.75rem;
+    color: #78716c;
+  }
+
+  .saved-card .unsave-btn {
+    font-family: inherit;
+    font-size: 0.7rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #a8a29e;
+    margin-left: auto;
+  }
+
+  .saved-card .unsave-btn:hover {
     color: #dc2626;
   }
 
@@ -245,7 +392,9 @@
 
 <div class="container">
   <h1 id="digest-title"></h1>
+  <div id="saved-container"></div>
   <nav class="tab-nav" id="tab-nav"></nav>
+  <div id="day-filter-container"></div>
   <div id="tab-panels"></div>
   <div id="sources-container"></div>
 </div>
@@ -274,7 +423,7 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
     art_exhibitions:    { label: 'Art & Exhibitions',     color: '#ec4899' }
   };
 
-  var POSITIVE_SIGNALS = ['good_pick', 'more_like_this'];
+  var POSITIVE_SIGNALS = ['thumbs_up'];
 
   var SHORT_DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
   var SHORT_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
@@ -361,13 +510,11 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
       card.appendChild(why);
     }
 
-    // Feedback buttons
+    // Action row: feedback + save
     var feedbackRow = createEl('div', 'feedback-row');
     var signals = [
-      { key: 'good_pick',     label: 'Good pick' },
-      { key: 'not_for_me',    label: 'Not for me' },
-      { key: 'more_like_this', label: 'More like this' },
-      { key: 'less_like_this', label: 'Less like this' }
+      { key: 'thumbs_up',   label: '\u25B2' },
+      { key: 'thumbs_down', label: '\u25BC' }
     ];
 
     for (var s = 0; s < signals.length; s++) {
@@ -375,14 +522,41 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
       btn.textContent = signals[s].label;
       btn.setAttribute('data-event-id', evt.id);
       btn.setAttribute('data-signal', signals[s].key);
+      btn.setAttribute('title', signals[s].key === 'thumbs_up' ? 'More like this' : 'Less like this');
       feedbackRow.appendChild(btn);
     }
+
+    var saveBtn = createEl('button', 'save-btn');
+    saveBtn.textContent = '\u2606';
+    saveBtn.setAttribute('data-event-id', evt.id);
+    saveBtn.setAttribute('title', 'Save event');
+    if (savedEvents[evt.id]) {
+      saveBtn.classList.add('saved');
+      saveBtn.textContent = '\u2605';
+    }
+    feedbackRow.appendChild(saveBtn);
+
     card.appendChild(feedbackRow);
 
     return card;
   }
 
+  // Saved events state (persisted in localStorage)
+  var savedEvents = {};
+  try {
+    var saved = localStorage.getItem('events-digest-saved');
+    if (saved) savedEvents = JSON.parse(saved);
+  } catch(e) {}
+
+  // All events indexed by id for quick lookup
+  var allEventsById = {};
+
+  function persistSaved() {
+    try { localStorage.setItem('events-digest-saved', JSON.stringify(savedEvents)); } catch(e) {}
+  }
+
   function renderEvents(events, container) {
+    container.textContent = '';
     if (!events || events.length === 0) {
       var empty = createEl('div', 'empty-state');
       empty.textContent = 'No events yet.';
@@ -398,13 +572,28 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
       if (!catEvents || catEvents.length === 0) continue;
 
       var config = CATEGORY_CONFIG[catKey];
-      var label = createEl('div', 'category-label');
-      label.textContent = config ? config.label : catKey;
-      container.appendChild(label);
 
+      var section = createEl('div', 'category-section');
+      var header = createEl('div', 'category-header');
+      var label = createEl('div', 'category-label');
+      label.textContent = (config ? config.label : catKey) + ' (' + catEvents.length + ')';
+      var toggle = createEl('span', 'category-toggle');
+      toggle.textContent = '\u25BC';
+      header.appendChild(label);
+      header.appendChild(toggle);
+      section.appendChild(header);
+
+      var body = createEl('div', 'category-body');
       for (var e = 0; e < catEvents.length; e++) {
-        container.appendChild(createEventCard(catEvents[e]));
+        body.appendChild(createEventCard(catEvents[e]));
       }
+      section.appendChild(body);
+
+      header.addEventListener('click', (function(sec) {
+        return function() { sec.classList.toggle('collapsed'); };
+      })(section));
+
+      container.appendChild(section);
     }
 
     // Render any categories not in CATEGORY_ORDER
@@ -412,14 +601,90 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
     for (var k = 0; k < CATEGORY_ORDER.length; k++) knownKeys[CATEGORY_ORDER[k]] = true;
     for (var otherKey in groups) {
       if (groups.hasOwnProperty(otherKey) && !knownKeys[otherKey]) {
+        var otherSection = createEl('div', 'category-section');
+        var otherHeader = createEl('div', 'category-header');
         var otherLabel = createEl('div', 'category-label');
         otherLabel.textContent = otherKey;
-        container.appendChild(otherLabel);
+        otherHeader.appendChild(otherLabel);
+        otherSection.appendChild(otherHeader);
+        var otherBody = createEl('div', 'category-body');
         for (var oe = 0; oe < groups[otherKey].length; oe++) {
-          container.appendChild(createEventCard(groups[otherKey][oe]));
+          otherBody.appendChild(createEventCard(groups[otherKey][oe]));
         }
+        otherSection.appendChild(otherBody);
+        container.appendChild(otherSection);
       }
     }
+  }
+
+  function getUniqueDays(events) {
+    var seen = {};
+    var days = [];
+    for (var i = 0; i < events.length; i++) {
+      var d = events[i].date;
+      if (d && !seen[d]) {
+        seen[d] = true;
+        days.push(d);
+      }
+    }
+    days.sort();
+    return days;
+  }
+
+  function filterByDay(events, dateStr) {
+    if (!dateStr) return events;
+    var result = [];
+    for (var i = 0; i < events.length; i++) {
+      if (events[i].date === dateStr) result.push(events[i]);
+    }
+    return result;
+  }
+
+  function renderSavedSection() {
+    var container = document.getElementById('saved-container');
+    container.textContent = '';
+
+    var ids = Object.keys(savedEvents);
+    if (ids.length === 0) return;
+
+    var section = createEl('div', 'saved-section');
+    var headerEl = createEl('div', 'saved-header');
+    var labelEl = createEl('div', 'saved-label');
+    labelEl.textContent = 'Saved (' + ids.length + ')';
+    headerEl.appendChild(labelEl);
+    section.appendChild(headerEl);
+
+    for (var i = 0; i < ids.length; i++) {
+      var evt = allEventsById[ids[i]] || savedEvents[ids[i]];
+      if (!evt) continue;
+
+      var card = createEl('div', 'saved-card');
+
+      var nameLink = createEl('a', 'event-name');
+      nameLink.textContent = evt.name;
+      nameLink.href = evt.url || '#';
+      nameLink.target = '_blank';
+      nameLink.rel = 'noopener noreferrer';
+      card.appendChild(nameLink);
+
+      var metaSpan = createEl('span', 'saved-meta');
+      var parts = [];
+      if (evt.date) parts.push(formatDate(evt.date));
+      if (evt.time) parts.push(evt.time);
+      if (evt.venue) parts.push(evt.venue);
+      metaSpan.textContent = parts.join(' \u00b7 ');
+      card.appendChild(metaSpan);
+
+      var unsaveBtn = createEl('button', 'unsave-btn');
+      unsaveBtn.textContent = '\u2715';
+      unsaveBtn.setAttribute('data-unsave-id', ids[i]);
+      unsaveBtn.setAttribute('title', 'Remove from saved');
+      card.appendChild(unsaveBtn);
+
+      section.appendChild(card);
+    }
+
+    container.appendChild(section);
   }
 
   function renderDiscoveredSources(sources) {
@@ -457,39 +722,82 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
 
   function init() {
     var data = EVENTS_DATA;
+    var weekdayEvents = data.weekday_events || [];
+    var weekendEvents = data.weekend_events || [];
+
+    // Index all events by id
+    var all = weekdayEvents.concat(weekendEvents);
+    for (var ai = 0; ai < all.length; ai++) {
+      allEventsById[all[ai].id] = all[ai];
+    }
 
     // Title
     var titleEl = document.getElementById('digest-title');
     titleEl.textContent = (data.meta && data.meta.title) ? data.meta.title : 'Events Digest';
 
+    // Saved section
+    renderSavedSection();
+
     // Tab nav
     var tabNav = document.getElementById('tab-nav');
     var panelsContainer = document.getElementById('tab-panels');
+    var dayFilterContainer = document.getElementById('day-filter-container');
 
-    var weekdayCount = (data.weekday_events || []).length;
-    var weekendCount = (data.weekend_events || []).length;
+    tabNav.appendChild(createTabButton('Weekday', 'weekday', weekdayEvents.length));
+    tabNav.appendChild(createTabButton('Weekend', 'weekend', weekendEvents.length));
 
-    // Build tab buttons using safe DOM methods
-    tabNav.appendChild(createTabButton('Weekday', 'weekday', weekdayCount));
-    tabNav.appendChild(createTabButton('Weekend', 'weekend', weekendCount));
-
-    // Build panels
+    // Build panels (will be re-rendered on day filter)
     var weekdayPanel = createEl('div', 'tab-panel');
     weekdayPanel.setAttribute('data-panel', 'weekday');
-    renderEvents(data.weekday_events || [], weekdayPanel);
     panelsContainer.appendChild(weekdayPanel);
 
     var weekendPanel = createEl('div', 'tab-panel');
     weekendPanel.setAttribute('data-panel', 'weekend');
-    renderEvents(data.weekend_events || [], weekendPanel);
     panelsContainer.appendChild(weekendPanel);
 
-    // Tab switching
-    var savedTab = null;
-    try { savedTab = localStorage.getItem('events-digest-tab'); } catch(e) {}
-    var activeTab = (savedTab === 'weekday' || savedTab === 'weekend') ? savedTab : 'weekday';
+    var activeTab = 'weekday';
+    var activeDayFilter = null; // null = all days
+    try {
+      var st = localStorage.getItem('events-digest-tab');
+      if (st === 'weekday' || st === 'weekend') activeTab = st;
+    } catch(e) {}
+
+    function renderDayFilter(events) {
+      dayFilterContainer.textContent = '';
+      var days = getUniqueDays(events);
+      if (days.length <= 1) return; // no filter needed for 0-1 days
+
+      var filterRow = createEl('div', 'day-filter');
+
+      var allPill = createEl('button', 'day-pill' + (activeDayFilter === null ? ' active' : ''));
+      allPill.textContent = 'All';
+      allPill.setAttribute('data-day', '');
+      filterRow.appendChild(allPill);
+
+      for (var i = 0; i < days.length; i++) {
+        var pill = createEl('button', 'day-pill' + (activeDayFilter === days[i] ? ' active' : ''));
+        pill.textContent = formatDate(days[i]);
+        pill.setAttribute('data-day', days[i]);
+        filterRow.appendChild(pill);
+      }
+
+      dayFilterContainer.appendChild(filterRow);
+    }
+
+    function renderCurrentView() {
+      var events = activeTab === 'weekday' ? weekdayEvents : weekendEvents;
+      var panel = activeTab === 'weekday' ? weekdayPanel : weekendPanel;
+
+      renderDayFilter(events);
+
+      var filtered = activeDayFilter ? filterByDay(events, activeDayFilter) : events;
+      renderEvents(filtered, panel);
+    }
 
     function activateTab(tabName) {
+      activeTab = tabName;
+      activeDayFilter = null; // reset day filter on tab switch
+
       var tabs = tabNav.querySelectorAll('.tab');
       for (var t = 0; t < tabs.length; t++) {
         var isActive = tabs[t].getAttribute('data-tab') === tabName;
@@ -505,9 +813,10 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
       }
 
       try { localStorage.setItem('events-digest-tab', tabName); } catch(e) {}
+      renderCurrentView();
     }
 
-    // Delegate click on tab nav (handles clicks on the count span inside tab button too)
+    // Tab clicks
     tabNav.addEventListener('click', function(e) {
       var target = e.target;
       while (target && target !== tabNav) {
@@ -520,39 +829,79 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
       }
     });
 
+    // Day filter clicks
+    dayFilterContainer.addEventListener('click', function(e) {
+      if (!e.target.classList || !e.target.classList.contains('day-pill')) return;
+      var dayVal = e.target.getAttribute('data-day');
+      activeDayFilter = dayVal || null;
+      renderCurrentView();
+    });
+
     activateTab(activeTab);
 
-    // Feedback delegation
+    // Global click delegation for feedback, save, unsave
     document.addEventListener('click', function(e) {
-      if (!e.target.classList || !e.target.classList.contains('feedback-btn')) return;
+      var target = e.target;
 
-      var btn = e.target;
-      var eventId = btn.getAttribute('data-event-id');
-      var signal = btn.getAttribute('data-signal');
-      var row = btn.parentElement;
-      var siblings = row.querySelectorAll('.feedback-btn');
-
-      // Clear all selections in this row
-      for (var i = 0; i < siblings.length; i++) {
-        siblings[i].classList.remove('selected-positive', 'selected-negative');
+      // Feedback buttons
+      if (target.classList && target.classList.contains('feedback-btn')) {
+        var eventId = target.getAttribute('data-event-id');
+        var signal = target.getAttribute('data-signal');
+        var row = target.parentElement;
+        var siblings = row.querySelectorAll('.feedback-btn');
+        for (var i = 0; i < siblings.length; i++) {
+          siblings[i].classList.remove('selected-positive', 'selected-negative');
+        }
+        var isPositive = POSITIVE_SIGNALS.indexOf(signal) !== -1;
+        target.classList.add(isPositive ? 'selected-positive' : 'selected-negative');
+        try {
+          fetch('/feedback', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ event_id: eventId, signal: signal, timestamp: new Date().toISOString() })
+          }).catch(function() {});
+        } catch(ex) {}
+        return;
       }
 
-      // Highlight selected button
-      var isPositive = POSITIVE_SIGNALS.indexOf(signal) !== -1;
-      btn.classList.add(isPositive ? 'selected-positive' : 'selected-negative');
+      // Save button
+      if (target.classList && target.classList.contains('save-btn')) {
+        var saveId = target.getAttribute('data-event-id');
+        if (savedEvents[saveId]) {
+          delete savedEvents[saveId];
+          target.classList.remove('saved');
+          target.textContent = '\u2606';
+        } else {
+          savedEvents[saveId] = allEventsById[saveId] || { id: saveId };
+          target.classList.add('saved');
+          target.textContent = '\u2605';
+        }
+        persistSaved();
+        renderSavedSection();
+        try {
+          fetch('/feedback', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ event_id: saveId, signal: 'saved', timestamp: new Date().toISOString() })
+          }).catch(function() {});
+        } catch(ex) {}
+        return;
+      }
 
-      // Send feedback
-      try {
-        fetch('/feedback', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            event_id: eventId,
-            signal: signal,
-            timestamp: new Date().toISOString()
-          })
-        }).catch(function() {});
-      } catch(e) {}
+      // Unsave button
+      if (target.classList && target.classList.contains('unsave-btn')) {
+        var unsaveId = target.getAttribute('data-unsave-id');
+        delete savedEvents[unsaveId];
+        persistSaved();
+        renderSavedSection();
+        // Also update the star in the main list if visible
+        var stars = document.querySelectorAll('.save-btn[data-event-id="' + unsaveId + '"]');
+        for (var si = 0; si < stars.length; si++) {
+          stars[si].classList.remove('saved');
+          stars[si].textContent = '\u2606';
+        }
+        return;
+      }
     });
 
     // Discovered sources

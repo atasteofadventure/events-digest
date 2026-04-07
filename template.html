@@ -558,11 +558,26 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
     return card;
   }
 
-  // Saved events state (persisted in localStorage)
+  // Saved events state (persisted in localStorage + server file)
   var savedEvents = {};
   try {
     var saved = localStorage.getItem('events-digest-saved');
     if (saved) savedEvents = JSON.parse(saved);
+  } catch(e) {}
+  // Also try loading from server (backup persistence)
+  try {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', '/saved-events', false); // synchronous
+    xhr.send();
+    if (xhr.status === 200) {
+      var serverSaved = JSON.parse(xhr.responseText);
+      // Merge: server data fills in anything localStorage missed
+      for (var sk in serverSaved) {
+        if (serverSaved.hasOwnProperty(sk) && !savedEvents[sk]) {
+          savedEvents[sk] = serverSaved[sk];
+        }
+      }
+    }
   } catch(e) {}
 
   // All events indexed by id for quick lookup
@@ -570,6 +585,13 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
 
   function persistSaved() {
     try { localStorage.setItem('events-digest-saved', JSON.stringify(savedEvents)); } catch(e) {}
+    try {
+      fetch('/saved-events', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(savedEvents)
+      }).catch(function() {});
+    } catch(e) {}
   }
 
   function renderEvents(events, container) {

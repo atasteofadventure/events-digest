@@ -8,6 +8,7 @@ const { execFileSync } = require('child_process');
 const PORT = 3847;
 const INACTIVITY_MS = 30 * 60 * 1000; // 30 minutes
 const FEEDBACK_FILE = path.join(__dirname, 'feedback', 'responses.json');
+const SAVED_FILE = path.join(__dirname, 'feedback', 'saved-events.json');
 const DIGESTS_DIR = path.join(__dirname, 'digests');
 
 let feedbackDirty = false;
@@ -153,6 +154,34 @@ function handleFeedback(req, res) {
   });
 }
 
+function serveSavedEvents(res) {
+  try {
+    var content = fs.readFileSync(SAVED_FILE, 'utf8');
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(content);
+  } catch (e) {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end('{}');
+  }
+}
+
+function handleSaveEvents(req, res) {
+  var body = '';
+  req.on('data', function(chunk) { body += chunk; });
+  req.on('end', function() {
+    try {
+      var parsed = JSON.parse(body);
+      fs.writeFileSync(SAVED_FILE, JSON.stringify(parsed, null, 2));
+      feedbackDirty = true;
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ ok: true }));
+    } catch (e) {
+      res.writeHead(400, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: e.message }));
+    }
+  });
+}
+
 const server = http.createServer((req, res) => {
   resetTimer();
 
@@ -166,6 +195,10 @@ const server = http.createServer((req, res) => {
     serveDigest(filename, res);
   } else if (method === 'POST' && url === '/feedback') {
     handleFeedback(req, res);
+  } else if (method === 'GET' && url === '/saved-events') {
+    serveSavedEvents(res);
+  } else if (method === 'POST' && url === '/saved-events') {
+    handleSaveEvents(req, res);
   } else {
     res.writeHead(404, { 'Content-Type': 'text/plain' });
     res.end('Not Found');

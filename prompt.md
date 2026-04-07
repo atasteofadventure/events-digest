@@ -68,6 +68,8 @@ Convert every event to this exact JSON format:
 }
 ```
 
+The "why" field should be a SHORT DESCRIPTION OF THE EVENT from the organizer's own words or listing, not a personalized recommendation about why the user might enjoy it. Pull the actual event description, trimmed to 1-2 sentences. Example: "A two-hour workshop where you'll learn copper foil technique and leave with a finished stained glass suncatcher." NOT: "This workshop matches your interest in hands-on craft experiences."
+
 ## Step 4 - Deduplicate
 
 Remove events matching state.json seen_events on similar name (case-insensitive) + same date + same venue. For Thursday runs, also remove events in the most recent *-week.html digest.
@@ -80,7 +82,7 @@ Boost: talks, workshops, classes, hands-on making, tours, unusual venues, Brookl
 
 Reduce: nightlife, corporate networking, kids/family, fitness, multi-day, generic mixers.
 
-For each selected event, write a specific one-sentence "why" referencing the user's actual interests. Not generic. Do not use em dashes.
+**Category balance:** Limit art_exhibitions to no more than 3-4 per tab. The digest should be weighted toward workshops, tech, tours, and talks. Art shows are fine but should not dominate.
 
 **Collect ALL events first from ALL sources, THEN rank and select the top ~20 weekday + ~20 weekend.** Do not stop collecting once you hit 20. The quality of the digest depends on selecting from a large pool.
 

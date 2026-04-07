@@ -246,7 +246,7 @@
       "url": "https://nitehawkcinema.com/williamsburg/",
       "category": "film_screenings",
       "neighborhood": "Williamsburg",
-      "enabled": true,
+      "enabled": false,
       "seasonal": null
     },
     {

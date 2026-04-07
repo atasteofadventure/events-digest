@@ -24,11 +24,17 @@ For each source in config.json with type "newsletter":
 - Extract events: name, date, time, venue, price, signup URL.
 
 ### Websites (scrape)
+
+**YOU MUST ATTEMPT EVERY SINGLE ENABLED SCRAPE SOURCE.** Do not skip sources. Do not stop early. Process them all, one by one, and log every attempt in source_reliability (success or failure).
+
 For each source with type "scrape" and enabled: true:
-- Check seasonal rules: if seasonal.months exists and current month is not listed, skip.
-- Fetch the URL with: curl -sL URL | head -c 50000
-- Parse HTML for upcoming events (next 10 days): names, dates, times, venues, prices, signup URLs.
-- If curl returns no useful data, note failure in source_reliability and move on.
+1. Check seasonal rules: if seasonal.months exists and current month is not listed, skip (log as "seasonal_skip" in source_reliability).
+2. Try Playwright first (if available): use browser_navigate to load the page, then browser_snapshot to get the rendered content. This handles JS-rendered sites.
+3. If Playwright is not available or fails, fall back to curl: `curl -sL -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" URL | head -c 50000`
+4. Parse the content for upcoming events (next 10 days): names, dates, times, venues, prices, signup URLs.
+5. Log result in source_reliability: {"successes": N, "failures": N} for every source attempted.
+
+After processing ALL sources, print a summary: "Attempted X sources. Found events from Y. Failed on Z. Skipped W (seasonal)."
 
 ### Filter out unavailable events
 Skip events where registration is full, sold out, or waitlist-only. Check for keywords like "sold out", "full", "waitlist", "registration closed", "no longer available" on the event page or listing.

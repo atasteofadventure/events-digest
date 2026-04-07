@@ -662,6 +662,24 @@
       "neighborhood": "NYC",
       "enabled": true,
       "seasonal": null
+    },
+    {
+      "name": "NYC Noise",
+      "type": "scrape",
+      "url": "https://nyc-noise.com/",
+      "category": "talks_lectures",
+      "neighborhood": "NYC",
+      "enabled": true,
+      "seasonal": null
+    },
+    {
+      "name": "FOMO NYC",
+      "type": "scrape",
+      "url": "https://fomo.nyc/",
+      "category": "tours_experiences",
+      "neighborhood": "NYC",
+      "enabled": true,
+      "seasonal": null
     }
   ],
   "categories": {

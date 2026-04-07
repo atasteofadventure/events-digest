@@ -29,10 +29,19 @@ For each source in config.json with type "newsletter":
 
 For each source with type "scrape" and enabled: true:
 1. Check seasonal rules: if seasonal.months exists and current month is not listed, skip (log as "seasonal_skip" in source_reliability).
-2. Try Playwright first (if available): use browser_navigate to load the page, then browser_snapshot to get the rendered content. This handles JS-rendered sites.
-3. If Playwright is not available or fails, fall back to curl: `curl -sL -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" URL | head -c 50000`
+2. Use Chrome browser tools as the PRIMARY scraping method:
+   - mcp__claude-in-chrome__navigate to load the page (pass the tab ID)
+   - mcp__claude-in-chrome__read_page (depth: 3, max_chars: 30000) to get the rendered accessibility tree
+   - If read_page output is too large, use mcp__claude-in-chrome__get_page_text instead
+   - This handles JS-rendered sites (Luma, Eventbrite, Books Are Magic, workshop sites, etc.)
+3. If Chrome tools are not available or fail, fall back to curl: `curl -sL -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" URL | head -c 50000`
 4. Parse the content for upcoming events (next 10 days): names, dates, times, venues, prices, signup URLs.
 5. Log result in source_reliability: {"successes": N, "failures": N} for every source attempted.
+
+Before starting, get a Chrome tab:
+- Call mcp__claude-in-chrome__tabs_context_mcp with createIfEmpty: true
+- Use the returned tab ID for all navigate/read_page calls
+- Reuse the same tab for every source (navigate to next URL overwrites the previous)
 
 After processing ALL sources, print a summary: "Attempted X sources. Found events from Y. Failed on Z. Skipped W (seasonal)."
 

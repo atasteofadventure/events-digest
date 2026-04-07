@@ -84,9 +84,11 @@ Reduce: nightlife, corporate networking, kids/family, fitness, multi-day, generi
 
 **Category balance:** Limit art_exhibitions to no more than 3-4 per tab. The digest should be weighted toward workshops, tech, tours, and talks. Art shows are fine but should not dominate.
 
-**Collect ALL events first from ALL sources, THEN rank and select the top ~20 weekday + ~20 weekend.** Do not stop collecting once you hit 20. The quality of the digest depends on selecting from a large pool.
+**Collect ALL events first from ALL sources into a master list, THEN rank and select the top ~20 weekday + ~20 weekend.** Do not stop collecting once you hit 20. The quality of the digest depends on selecting from a large pool.
 
 If fewer quality events are found, include fewer. Do not pad with low-quality picks.
+
+**Logging:** Track the total number of raw events collected before filtering. Include this in the EVENTS_DATA JSON as `meta.total_collected`. Also save ALL collected events (before filtering/ranking) to a separate file: `~/events-digest/digests/YYYY-MM-DD-all.json` so the user can browse the full uncurated list.
 
 ## Step 6 - Generate HTML
 

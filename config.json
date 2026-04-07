@@ -183,7 +183,7 @@
       "url": "https://unitedphotoindustries.com/",
       "category": "art_exhibitions",
       "neighborhood": "DUMBO",
-      "enabled": true,
+      "enabled": false,
       "seasonal": null
     },
     {
@@ -264,7 +264,7 @@
       "url": "https://history.wtf/",
       "category": "talks_lectures",
       "neighborhood": "Williamsburg",
-      "enabled": true,
+      "enabled": false,
       "seasonal": null
     },
     {
@@ -292,7 +292,15 @@
       "category": "film_screenings",
       "neighborhood": "Brooklyn",
       "enabled": true,
-      "seasonal": {"months": [5, 6, 7, 8, 9]}
+      "seasonal": {
+        "months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
     },
     {
       "name": "BRIC Events",
@@ -319,7 +327,17 @@
       "category": "tours_experiences",
       "neighborhood": "Navy Yard",
       "enabled": true,
-      "seasonal": {"months": [4, 5, 6, 7, 8, 9, 10]}
+      "seasonal": {
+        "months": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
     },
     {
       "name": "Fort Greene Park Conservancy",
@@ -417,7 +435,7 @@
       "url": "https://findthethread.com/classes",
       "category": "workshops_classes",
       "neighborhood": "Clinton Hill",
-      "enabled": true,
+      "enabled": false,
       "seasonal": null
     },
     {
@@ -517,7 +535,17 @@
       "category": "tours_experiences",
       "neighborhood": "Gowanus",
       "enabled": true,
-      "seasonal": {"months": [4, 5, 6, 7, 8, 9, 10]}
+      "seasonal": {
+        "months": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
     },
     {
       "name": "Interintellect",
@@ -571,7 +599,13 @@
       "category": "film_screenings",
       "neighborhood": "DUMBO",
       "enabled": true,
-      "seasonal": {"months": [6, 7, 8]}
+      "seasonal": {
+        "months": [
+          6,
+          7,
+          8
+        ]
+      }
     },
     {
       "name": "SummerScreen",
@@ -580,7 +614,13 @@
       "category": "film_screenings",
       "neighborhood": "Williamsburg",
       "enabled": true,
-      "seasonal": {"months": [6, 7, 8]}
+      "seasonal": {
+        "months": [
+          6,
+          7,
+          8
+        ]
+      }
     },
     {
       "name": "NYC Parks Movies",
@@ -589,7 +629,13 @@
       "category": "film_screenings",
       "neighborhood": "NYC",
       "enabled": true,
-      "seasonal": {"months": [6, 7, 8]}
+      "seasonal": {
+        "months": [
+          6,
+          7,
+          8
+        ]
+      }
     },
     {
       "name": "Rooftop Reds",
@@ -598,7 +644,15 @@
       "category": "film_screenings",
       "neighborhood": "Navy Yard",
       "enabled": true,
-      "seasonal": {"months": [5, 6, 7, 8, 9]}
+      "seasonal": {
+        "months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
     },
     {
       "name": "Club Free Time",
@@ -643,7 +697,11 @@
       "category": "tours_experiences",
       "neighborhood": "NYC",
       "enabled": true,
-      "seasonal": {"months": [10]}
+      "seasonal": {
+        "months": [
+          10
+        ]
+      }
     },
     {
       "name": "Photoville",
@@ -652,7 +710,12 @@
       "category": "art_exhibitions",
       "neighborhood": "DUMBO",
       "enabled": true,
-      "seasonal": {"months": [9, 10]}
+      "seasonal": {
+        "months": [
+          9,
+          10
+        ]
+      }
     },
     {
       "name": "Creative Coding NYC",
@@ -683,12 +746,30 @@
     }
   ],
   "categories": {
-    "tech_ai": {"label": "Tech & AI", "color": "#3b82f6"},
-    "talks_lectures": {"label": "Talks & Lectures", "color": "#8b5cf6"},
-    "workshops_classes": {"label": "Workshops & Classes", "color": "#f59e0b"},
-    "tours_experiences": {"label": "Tours & Experiences", "color": "#10b981"},
-    "film_screenings": {"label": "Film & Screenings", "color": "#ef4444"},
-    "art_exhibitions": {"label": "Art & Exhibitions", "color": "#ec4899"}
+    "tech_ai": {
+      "label": "Tech & AI",
+      "color": "#3b82f6"
+    },
+    "talks_lectures": {
+      "label": "Talks & Lectures",
+      "color": "#8b5cf6"
+    },
+    "workshops_classes": {
+      "label": "Workshops & Classes",
+      "color": "#f59e0b"
+    },
+    "tours_experiences": {
+      "label": "Tours & Experiences",
+      "color": "#10b981"
+    },
+    "film_screenings": {
+      "label": "Film & Screenings",
+      "color": "#ef4444"
+    },
+    "art_exhibitions": {
+      "label": "Art & Exhibitions",
+      "color": "#ec4899"
+    }
   },
   "taste_profile": {
     "include_signals": [
@@ -708,9 +789,18 @@
       "generic networking mixers"
     ],
     "preferred_neighborhoods": [
-      "Fort Greene", "Prospect Heights", "Clinton Hill", "DUMBO",
-      "Williamsburg", "Bed-Stuy", "Park Slope", "Gowanus",
-      "Boerum Hill", "Brooklyn Heights", "Greenpoint", "Navy Yard"
+      "Fort Greene",
+      "Prospect Heights",
+      "Clinton Hill",
+      "DUMBO",
+      "Williamsburg",
+      "Bed-Stuy",
+      "Park Slope",
+      "Gowanus",
+      "Boerum Hill",
+      "Brooklyn Heights",
+      "Greenpoint",
+      "Navy Yard"
     ],
     "price_flag_threshold": 75
   },

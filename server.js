@@ -119,7 +119,10 @@ function serveDigest(filename, res) {
   const filePath = path.join(DIGESTS_DIR, safe);
   try {
     const content = fs.readFileSync(filePath, 'utf8');
-    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    const contentType = safe.endsWith('.json')
+      ? 'application/json; charset=utf-8'
+      : 'text/html; charset=utf-8';
+    res.writeHead(200, { 'Content-Type': contentType });
     res.end(content);
   } catch (e) {
     res.writeHead(404, { 'Content-Type': 'text/plain' });

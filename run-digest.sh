@@ -2,6 +2,13 @@
 # NYC Events Digest - Permanent cron runner
 # Invokes Claude Code CLI to generate the weekly digest
 
+# launchd runs jobs with a minimal PATH (/usr/bin:/bin:/usr/sbin:/sbin) that
+# excludes Homebrew (/opt/homebrew/bin -> node) and the user bin dir
+# (~/.local/bin -> claude). Set an explicit PATH so the scheduled run finds
+# both, exactly as an interactive shell would. Without this the job fails with
+# "claude: command not found" / "node: command not found".
+export PATH="$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
 REPO_DIR="$HOME/events-digest"
 PORT=3847
 TODAY=$(date +%Y-%m-%d)
@@ -24,11 +31,13 @@ claude -p --chrome --permission-mode auto \
   "Read ~/events-digest/prompt.md and execute every step. Use Chrome browser tools as primary scraper. Attempt EVERY enabled source. Collect all events first, then rank and select top 20 weekday + 20 weekend. Generate HTML digest and save to digests/. Then start the feedback server on port 3847 if not running, and open the digest in the browser." \
   2>/tmp/events-digest-claude.log
 
-# Start feedback server if not running
+# The feedback server is an always-on service owned by the
+# com.events-digest.server launchd job (RunAtLoad + KeepAlive), so it does not
+# need to be started here. Give it a moment in case launchd is still bringing
+# it up after a reboot.
 if ! lsof -i :"$PORT" > /dev/null 2>&1; then
-  node "$REPO_DIR/server.js" &
-  disown
-  sleep 1
+  echo "Note: server not on :$PORT yet (com.events-digest.server should start it)."
+  sleep 2
 fi
 
 # Open latest digest

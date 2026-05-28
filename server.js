@@ -5,8 +5,11 @@ const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
 
-const PORT = 3847;
-const INACTIVITY_MS = 30 * 60 * 1000; // 30 minutes
+const PORT = Number(process.env.DIGEST_PORT) || 3847;
+// Inactivity self-shutdown is OFF by default — this runs as an always-on
+// service under launchd. Set DIGEST_INACTIVITY_MS to a positive number of
+// milliseconds to re-enable the old "shut down when idle" behavior.
+const INACTIVITY_MS = Number(process.env.DIGEST_INACTIVITY_MS) || 0;
 const FEEDBACK_FILE = path.join(__dirname, 'feedback', 'responses.json');
 const SAVED_FILE = path.join(__dirname, 'feedback', 'saved-events.json');
 const DIGESTS_DIR = path.join(__dirname, 'digests');
@@ -15,6 +18,7 @@ let feedbackDirty = false;
 let inactivityTimer = null;
 
 function resetTimer() {
+  if (!INACTIVITY_MS) return; // persistent service: never self-shutdown
   if (inactivityTimer) clearTimeout(inactivityTimer);
   inactivityTimer = setTimeout(() => {
     console.log('Inactivity timeout — shutting down...');

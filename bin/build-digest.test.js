@@ -30,3 +30,10 @@ test('injectData replaces the EVENTS_JSON marker, dropping the old default', () 
   assert.match(out, /\/\*__EVENTS_JSON__\*\/\{.*"thisWeek"/);
   assert.doesNotMatch(out, /"old":1/);
 });
+
+test('injectData escapes script-breaking chars from untrusted event data (XSS)', () => {
+  const tpl = 'var EVENTS_DATA = /*__EVENTS_JSON__*/{}/**/;';
+  const out = injectData(tpl, { thisWeek: [{ name: '</script><img src=x onerror=alert(1)>' }] });
+  assert.doesNotMatch(out, /<\/script>/i);   // no literal closing tag survives
+  assert.match(out, /\\u003c\/script/i);     // escaped form instead
+});

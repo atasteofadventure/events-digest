@@ -21,11 +21,27 @@ function buildData(curated, runDateISO, meta) {
   };
 }
 
+// Escape a JSON string for safe embedding inside a <script> context. Event data
+// comes from untrusted newsletter content, so a field containing "</script>"
+// (or the line/paragraph separators U+2028/U+2029) could otherwise break out of
+// the script and execute. Each unsafe character becomes its \uXXXX form, which
+// the JS parser restores to the original character, so data fidelity is kept.
+// (Match chars are built via fromCharCode so the source carries no literal
+// separators; replacements are ordinary backslash-u text.)
+function escapeForScript(json) {
+  return json
+    .split('<').join('\\u003c')
+    .split('>').join('\\u003e')
+    .split('&').join('\\u0026')
+    .split(String.fromCharCode(0x2028)).join('\\u2028')
+    .split(String.fromCharCode(0x2029)).join('\\u2029');
+}
+
 // Replace the template's /*__EVENTS_JSON__*/ ... /**/ marker with the data.
 function injectData(template, data) {
   return template.replace(
     /\/\*__EVENTS_JSON__\*\/[\s\S]*?\/\*\*\//,
-    '/*__EVENTS_JSON__*/' + JSON.stringify(data) + '/**/'
+    '/*__EVENTS_JSON__*/' + escapeForScript(JSON.stringify(data)) + '/**/'
   );
 }
 
@@ -57,4 +73,4 @@ function main() {
 }
 
 if (require.main === module) main();
-module.exports = { buildData, injectData };
+module.exports = { buildData, injectData, escapeForScript };

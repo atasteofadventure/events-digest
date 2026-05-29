@@ -1,168 +1,186 @@
-# Email-Newsletter Sourcing & Four-Bucket Windowing — Design Spec
+# Email Sourcing + Four-Bucket Windowing + Cloud Routine + Vercel — Design Spec
 
-- **Date:** 2026-05-29
+- **Date:** 2026-05-29 (rev 2 — cloud pivot)
 - **Project:** NYC Events Digest
-- **Status:** Draft for review
+- **Status:** Draft for review. Connector viability VERIFIED (see below).
 
 ## Context & problem
 
-The digest historically pulled events by scraping ~60 sites plus reading 15
-newsletters by sender. Scraping is brittle: bot-protected and JS-heavy sites
-fail (8 failed in the 2026-05-28 run), and source diversity skews to a few
-prolific sites. We are pivoting to an **email-only** model: subscribe broadly to
-NYC event newsletters and aggregators using a Gmail alias, and read them from a
-single labeled inbox stream.
+The digest historically scraped ~60 sites + read 15 newsletters, run by local
+launchd + `claude -p` on the user's Mac, serving a local Node server on
+`localhost:3847`. Two problems: scraping is brittle, and the local headless run's
+access to the Gmail connector was uncertain and depended on Chrome + the Mac
+being awake.
 
-The hard part is timing. Newsletters arrive on wildly different cadences (daily,
-weekly, monthly, sporadic), and each issue covers a different time horizon. We
-must assemble a correct, forward-looking event list regardless of when each
-newsletter happened to land.
+We are pivoting to: **email-only sourcing** (subscribe broadly via a Gmail alias,
+read one labeled stream) executed by a **cloud routine** (scheduled remote agent),
+with the digest **hosted on Vercel**.
+
+## VERIFIED (2026-05-29)
+
+A one-off cloud routine (`events-digest-gmail-connector-test`) confirmed:
+- The **Gmail connector loads in a cloud routine** (`mcp__Gmail__*`), no errors.
+- It reads label `events-digest` (id `Label_5601765329358498879`) and the
+  `deliveredto:sarah.fellay+nycevents@gmail.com` query; both return results.
+- Results are **multi-page** (nextPageToken present): the real run must paginate.
+- Sample senders confirm the subscribe→alias→label pipeline (Architectural League,
+  MAD, Tenement, Museum of the Moving Image, The Other Art Fair, etc.).
+
+This removes the main risk; the cloud model is viable.
 
 ## Goals
 
-- Source events entirely from email (no scraping in the weekly run).
+- Run entirely in the cloud (scheduled remote agent). No Mac, launchd, or Chrome.
+- Source events only from email (the alias/label stream + legacy `from:` queries).
 - Combine staggered-arrival newsletters into one correct, de-duplicated,
   forward-looking list.
-- Organize output into four buckets: **this week, this weekend, next week,
-  next weekend**.
-- Never feature the same event twice; never show past or out-of-window events.
+- Four buckets: **this week, this weekend, next week, next weekend**.
+- Host the page + feedback backend on Vercel.
 
 ## Non-goals
 
-- Scrape-only venues (Bar Bayeux, Barbès, Hot House Jazz) are out of scope.
-- No change to the feedback server, save/feedback features, or launchd server job.
-- No re-architecture of ranking; we reuse the existing taste profile.
+- Scrape-only venues (Bar Bayeux, Barbès, Hot House Jazz) — dropped.
+- Local `server.js`, `run-digest.sh`, launchd jobs — retired (kept in git history).
+- Ranking re-architecture — reuse the existing taste profile.
 
 ## Core principle: two clocks
 
-Separate **email arrival time** from **event date**.
-- Read the label by a wide *arrival* window.
-- Decide inclusion by parsed *event* date.
+Separate **email arrival time** from **event date**. Read the label by a wide
+*arrival* window; decide inclusion by parsed *event* date. An event announced
+3 weeks ago but happening next week must still be included.
 
-Conflating the two is the central failure mode (an event announced 3 weeks ago
-but happening next week must still be included).
+## Inbox setup (done by user)
 
-## Inbox setup (already done by user)
+Alias `sarah.fellay+nycevents@gmail.com` for all subscriptions; Gmail filter
+`To: alias` → apply label `events-digest`, skip inbox. Label confirmed working.
 
-- Alias `sarah.fellay+nycevents@gmail.com` used for all new subscriptions.
-- Gmail filter: `To: sarah.fellay+nycevents@gmail.com` → apply label
-  `events-digest`, skip inbox.
-- Label `events-digest` confirmed working (auto-labeling new alias mail).
+## Architecture (cloud)
+
+```
+Scheduled cloud routine (cron, runs as the user)
+  1. read Gmail label:events-digest (PAGINATED, newer_than:30d) + 15 legacy from: queries
+  2. extract events, parse real dates
+  3. bucket by event date, dedupe, suppress already-featured
+  4. rank against taste profile, take top N per bucket
+  5. render four-section HTML from template
+  6. publish: write digest to the repo via GitHub Contents API (scoped token)
+  7. update state.json in the repo (seen_events, source_reliability)
+        │ commit
+        ▼
+  GitHub repo ──auto-deploy──▶ Vercel
+                                 ├─ serves the digest page (Vercel URL)
+                                 └─ /api/feedback, /api/saved-events (serverless = old server.js)
+                                          └─ Vercel KV (saves, thumbs)
+                                                 ▲
+  next routine run reads feedback via GET /api/feedback ──┘  (folds into taste profile)
+```
 
 ## Reading model
 
-Each run reads two email sources, both via the Gmail connector (read-only):
-1. **Alias stream:** everything in `label:events-digest newer_than:30d`. This is
-   the generic, subscribe-freely channel; new sources need no config entry.
-2. **Legacy sender queries:** the existing 15 `from:` newsletter queries in
-   `config.json` (these arrive at the plain address, not the alias, so they are
-   not in the label). Kept so we do not lose working sources or force
-   re-subscription.
+Each run reads two email sources via the Gmail connector (read scope):
+1. **Alias stream:** `label:events-digest newer_than:30d`, **paginated to
+   exhaustion** (the test proved page 1 is only the first ~10). Generic channel:
+   new sources need no config entry.
+2. **Legacy sender queries:** the 15 existing `from:` queries in `config.json`
+   (these arrive at the plain address, not the alias).
 
-A 30-day arrival lookback is deliberately wider than the farthest bucket
-(~17 days out) because announcements precede events. Re-reading prior issues is
-harmless: dedupe and event-date filtering make the pipeline idempotent.
+30-day arrival lookback is wider than the farthest bucket (~17 days), since
+announcements precede events. Re-reading is idempotent (dedupe + event-date filter).
 
 ## Event extraction & normalization
 
-For each email, extract individual events with normalized fields:
-`name, date (resolved to an absolute upcoming calendar date incl. year), time,
-venue, neighborhood, price, url, category, source (organizer/venue), via
-(newsletter it came from)`.
+Per email, extract events with: `name, date (absolute upcoming date incl. year),
+time, venue, neighborhood, price, url, category, source (organizer), via
+(newsletter)`. Resolve relative dates; expand multi-date/recurring listings; drop
+non-events, non-NYC, undated items.
 
-Rules:
-- Resolve relative dates ("Saturday, June 7") to the correct upcoming date.
-- Expand multi-date / recurring listings into individual dated instances.
-- Drop non-events (promos, merch, "support us"), non-NYC, and undated items.
-
-## Windowing: four buckets (by event date, relative to run day R)
+## Four-bucket windowing (by event date, relative to run day R)
 
 | Bucket | Window |
 |---|---|
-| This week | R → this Friday (weekday events) |
+| This week | R → this Friday (weekdays) |
 | This weekend | nearest upcoming Fri 17:00 → Sun 23:59 |
 | Next week | following Mon → Fri |
 | Next weekend | the Sat–Sun after "this weekend" |
 
-Buckets auto-shift by run day. The Thursday run fills all four. The Sunday run
-finds "this weekend" effectively over, so it collapses and that run leans on
-this-week / next-week / next-weekend. Events outside all four buckets (e.g., a
-festival months out) are parked, not shown.
+Buckets auto-shift by run day; the Sunday run finds "this weekend" over, so it
+collapses. Events outside all four are parked, not shown.
 
-## Dedupe
+## Dedupe & seen-suppression
 
-Collapse duplicates on normalized `(name + date + venue)`. Keep the richest
-record. Track all newsletters that mentioned an event in `via[]`; 3+ mentions is
-a popularity signal that boosts ranking.
-
-## Seen-suppression
-
-`state.json` records events featured in prior digests (key = dedupe key). An
-in-window event already featured is suppressed, so each event surfaces once, in
-its earliest in-window digest. Advance notice is a feature: a great event 12 days
-out appears now and is not repeated next week.
+- Dedupe on normalized `(name + date + venue)`; keep richest record; `via[]`
+  tracks all mentions (3+ = popularity boost).
+- `state.json` (now stored **in the repo**, read/written by the routine via the
+  Contents API) records featured events; each surfaces once, earliest in-window.
 
 ## Ranking & volume
 
-Reuse the existing taste profile and feedback history. Per bucket: rank, then
-take the top N. Proposed N ≈ 10–12 per bucket (≈40–48 total), nearer buckets
-weighted slightly heavier since they are more actionable. Tunable in `config.json`.
+Reuse taste profile + feedback history. ~10–12 per bucket (≈40–48 total), nearer
+buckets weighted slightly heavier. Tunable in `config.json`.
 
-## Template change
+## Template
 
-`template.html` moves from two tabs (Weekday/Weekend) to **four sections** (This
-Week / This Weekend / Next Week / Next Weekend), each with the existing
-collapsible category groups, save stars, and thumbs feedback. Empty buckets
-(e.g., This Weekend on a Sunday run) are hidden.
+`template.html` → four sections (This Week / This Weekend / Next Week / Next
+Weekend), each with existing collapsible categories, save stars, thumbs. Empty
+buckets hidden.
 
-## File changes
+## Deployment, hosting & feedback (Vercel)
 
-- `prompt.md` — the substantive change: read both email sources, extract, bucket
-  by event date, dedupe, suppress seen, rank, emit four sections.
-- `template.html` — four sections instead of two tabs.
-- `config.json` — disable/retire `type: "scrape"` sources for the weekly run
-  (email-only); keep the 15 newsletter `from:` queries; add per-bucket volume
-  targets. Optional `newsletter_overrides` to pin a sender to a category.
-- `state.json` — unchanged shape; `seen_events` now keyed on the dedupe key.
+- Vercel project linked to the repo; auto-deploys on every commit.
+- Routine writes `digests/<date>.html` + index via GitHub Contents API (no
+  `git clone`, sidestepping the historical 500 error).
+- `server.js` logic ports to serverless functions `api/feedback.js` +
+  `api/saved-events.js`; a `vercel.json` configures routing.
+- **Storage: Vercel KV** for saved events + feedback (managed, built for this).
+- The routine consumes feedback via `GET /api/feedback` at run start to tune the
+  taste profile (avoids giving the routine KV credentials).
 
-## Run cadence & scheduling
+## Auth & secrets
 
-Keep launchd Thu (hourly 10:07–18:07, first success wins) + Sun 17:03. Email-only
-removes the Chrome dependency from sourcing, so runs no longer require Chrome to
-be open. Timing the run after the big weekly aggregators publish (NYC for Free
-Wed AM, City Happenings Mon) means a Thursday run already has the week's roundups.
+- **One scoped GitHub token** (fine-grained, contents:write on `events-digest`)
+  for the routine's publish step. Exact secret-handling (routine env secret vs.
+  routing the repo write through a Vercel `/api/publish` endpoint that holds the
+  token) is decided in the implementation plan.
+- Vercel KV credentials live in Vercel env (serverless functions only).
+- Gmail uses the existing read-only connector. No Gmail API token.
 
-## Key risks & assumptions
+## Schedule
 
-1. **Gmail connector availability in headless runs (HIGH).** The weekly run is
-   `claude -p` under launchd. Interactively-authenticated connectors (the
-   claude.ai Gmail connector) may not load in a headless/cron context. The whole
-   email-only model depends on the connector being available there. **Must verify
-   before relying on it.** Fallback options if unavailable: a Gmail API token, or
-   IMAP read.
-2. **Read-only scope is sufficient.** Reading needs only read scope (confirmed
-   working); no label-writing needed by the digest.
-3. **Coverage gap.** The digest can only include what has arrived. A newsletter
-   sent after a run is missed until the next run. Mitigated by 30-day lookback,
-   twice-weekly runs, and aggregator-heavy sourcing; not zero.
+Cloud cron in UTC (min interval 1 hour). Target the existing cadence converted to
+UTC: Thursday + Sunday afternoon ET, timed after the big weekly aggregators
+publish (NYC for Free Wed AM, City Happenings Mon).
+
+## User setup (prerequisites, not buildable by the agent)
+
+1. Create a Vercel account; link it to the `events-digest` GitHub repo.
+2. Enable Vercel KV on the project.
+3. Create the scoped GitHub token; store secrets in Vercel env.
+4. Confirm whether the routines platform supports per-routine secrets (drives the
+   token-handling choice above).
+
+## Remaining risks
+
+1. **Secret handling for the routine's GitHub write** — needs the plan to confirm
+   routine secret support or fall back to a Vercel publish endpoint. (MED)
+2. **Pagination completeness** — must page through all label results. (LOW, handled)
+3. **Coverage gap** — can only include what has arrived; mitigated by 30-day
+   lookback + twice-weekly runs + aggregators. (LOW)
+4. **Vercel/GitHub setup is user-side** — build is blocked until done. (process)
 
 ## Verification / test plan
 
-- **Unit (TDD):** a pure date-bucketing helper `bucketFor(eventDate, runDate)` →
-  one of {thisWeek, thisWeekend, nextWeek, nextWeekend, out}. Write failing tests
-  covering run-day edge cases (Thu run, Sun run, Fri-5pm boundary, year rollover)
-  before implementing.
-- **Unit (TDD):** dedupe-key normalization `dedupeKey(event)` (case/punctuation/
-  venue-abbreviation folding).
-- **Integration (live dry-run):** run extraction against the real `events-digest`
-  label and assert: every output event has an in-window date, no past events, no
-  duplicates across buckets, no event already in `state.json.seen_events`.
-- **End-to-end:** one full run, then manually confirm the four sections render and
-  the events are plausible and correctly bucketed.
+- Connector availability in routine — **DONE (passed 2026-05-29).**
+- Unit (TDD): `bucketFor(eventDate, runDate)` and `dedupeKey(event)` pure helpers,
+  failing tests first (run-day edges, Fri-5pm boundary, year rollover).
+- Integration: a routine dry-run that reads the label (paginated), extracts, and
+  asserts every output event is in-window, no past events, no cross-bucket dupes,
+  none already in `state.json`.
+- Feedback round-trip: POST a thumbs to `/api/feedback`, confirm KV write, confirm
+  the next routine run reads it.
+- End-to-end: one full run → confirm the four sections render on Vercel.
 
 ## Open decisions for review
 
-1. Retire legacy scrape sources entirely, or keep them disabled-but-available?
+1. Retire legacy scrape sources entirely, or keep disabled-but-available?
 2. Per-bucket volume (proposed 10–12 each).
-3. On the Sunday run, hide "This Weekend" entirely or show a "wrap-up" of what's
-   left of it?
+3. Sunday run: hide "This Weekend" or show a short wrap-up?

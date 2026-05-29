@@ -1,25 +1,32 @@
 'use strict';
 const { test } = require('node:test');
 const assert = require('node:assert');
-const { buildSections } = require('./build-digest');
+const { buildData, injectData } = require('./build-digest');
 
-test('renders only non-empty buckets and hides This Weekend on Sunday', () => {
-  const curated = {
-    thisWeek: [{ name: 'A', dateISO: '2026-06-07T19:00:00', category: 'tech_ai', venue: 'V', via: [] }],
-    thisWeekend: [{ name: 'W', dateISO: '2026-06-07T20:00:00', category: 'tours', venue: 'V', via: [] }],
-    nextWeek: [], nextWeekend: [],
-  };
-  const html = buildSections(curated, '2026-06-07T17:00:00'); // Sunday
-  assert.match(html, /This Week/);
-  assert.doesNotMatch(html, /This Weekend/);   // hidden on Sunday
-  assert.doesNotMatch(html, /Next Week<\/h2>/); // empty hidden
+const curated = {
+  thisWeek: [{ name: 'A', dateISO: '2026-06-07T19:00:00', venue: 'V', via: [] }],
+  thisWeekend: [{ name: 'W', dateISO: '2026-06-07T20:00:00', venue: 'V', via: [] }],
+  nextWeek: [], nextWeekend: [],
+};
+
+test('buildData includes four buckets + meta + generated', () => {
+  const d = buildData(curated, '2026-06-04T10:00:00', { title: 'Wk' }); // Thursday
+  assert.deepEqual(
+    Object.keys(d).sort(),
+    ['discovered_sources', 'generated', 'meta', 'nextWeek', 'nextWeekend', 'thisWeek', 'thisWeekend']
+  );
+  assert.equal(d.thisWeekend.length, 1);
 });
 
-test('weekday run shows This Weekend when populated', () => {
-  const curated = {
-    thisWeek: [], thisWeekend: [{ name: 'W', dateISO: '2026-06-05T20:00:00', venue: 'V', via: [] }],
-    nextWeek: [], nextWeekend: [],
-  };
-  const html = buildSections(curated, '2026-06-04T10:00:00'); // Thursday
-  assert.match(html, /This Weekend/);
+test('buildData hides thisWeekend on Sunday runs', () => {
+  const d = buildData(curated, '2026-06-07T17:00:00', { title: 'Wk' }); // Sunday
+  assert.deepEqual(d.thisWeekend, []);
+  assert.equal(d.thisWeek.length, 1);
+});
+
+test('injectData replaces the EVENTS_JSON marker, dropping the old default', () => {
+  const tpl = 'x var EVENTS_DATA = /*__EVENTS_JSON__*/{"old":1}/**/; y';
+  const out = injectData(tpl, { meta: {}, thisWeek: [] });
+  assert.match(out, /\/\*__EVENTS_JSON__\*\/\{.*"thisWeek"/);
+  assert.doesNotMatch(out, /"old":1/);
 });

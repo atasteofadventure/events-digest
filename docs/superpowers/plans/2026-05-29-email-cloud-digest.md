@@ -10,6 +10,8 @@
 
 **Decisions locked (from spec review):** legacy scrape sources disabled-but-kept; 10–12 events per bucket; hide "This Weekend" on Sunday runs.
 
+**Rev 3 (2026-05-30) — STATIC, no database.** Per spec rev 3: **Tasks 6, 7, 8 (Vercel serverless functions, `vercel.json` KV/functions, `@vercel/kv`) are CUT.** No Supabase/Neon/KV. Saves use `localStorage`; thumbs feedback deferred. Task 5 (template) is adjusted: four tabs, **save via localStorage only, remove the server feedback/saved POSTs**. `vercel.json` becomes static-only (rewrite `/` → newest digest). Task 12 keeps only the publish path (routine commits HTML → Vercel auto-deploys).
+
 ---
 
 ## File structure

@@ -1,8 +1,27 @@
 # Email Sourcing + Four-Bucket Windowing + Cloud Routine + Vercel — Design Spec
 
-- **Date:** 2026-05-29 (rev 2 — cloud pivot)
+- **Date:** 2026-05-30 (rev 3 — static, no database)
 - **Project:** NYC Events Digest
 - **Status:** Draft for review. Connector viability VERIFIED (see below).
+
+## Rev 3 — Static, no database (supersedes the Vercel-KV / serverless / feedback sections below)
+
+Decision (2026-05-30): drop Supabase / any database and the serverless feedback
+backend. The digest is a **static page**. User confirmed single-browser use.
+
+- **Saves:** `localStorage` only (per-browser; no cross-device sync, accepted).
+- **Feedback/taste-learning loop:** deferred. Ranking still uses the taste
+  profile in `config.json`; it just no longer auto-tunes from thumbs. Thumbs UI
+  either removed or made a localStorage-only no-op for now.
+- **Dropped from this spec/plan:** Vercel KV, Supabase/Neon, `api/feedback.js`,
+  `api/saved-events.js`, `@vercel/kv`, the "routine reads feedback" step, and the
+  storage-provider decision. (Supabase/Neon/Vercel remain *linked* providers in
+  the Stripe project; we simply add no DB service.)
+- **Remaining architecture:** cloud routine → read Gmail label (paginated) →
+  build four-bucket HTML → publish to the repo → Vercel serves the static page.
+  The only write credential is the publish path (routine → repo → Vercel
+  auto-deploy), managed via the Stripe Projects CLI / a scoped GitHub token.
+- **vercel.json:** static only (rewrite `/` → newest digest); no functions.
 
 ## Context & problem
 

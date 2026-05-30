@@ -1,7 +1,7 @@
 'use strict';
 const { test } = require('node:test');
 const assert = require('node:assert');
-const { buildData, injectData } = require('./build-digest');
+const { buildData, injectData, injectTitle } = require('./build-digest');
 
 const curated = {
   thisWeek: [{ name: 'A', dateISO: '2026-06-07T19:00:00', venue: 'V', via: [] }],
@@ -35,6 +35,11 @@ test('injectData replaces the EVENTS_JSON marker, dropping the old default', () 
   const out = injectData(tpl, { meta: {}, thisWeek: [] });
   assert.match(out, /\/\*__EVENTS_JSON__\*\/\{.*"thisWeek"/);
   assert.doesNotMatch(out, /"old":1/);
+});
+
+test('injectTitle replaces __DIGEST_TITLE__ with an HTML-escaped title', () => {
+  const out = injectTitle('<title>__DIGEST_TITLE__</title>', 'Week of <b>x</b>');
+  assert.equal(out, '<title>Week of &lt;b&gt;x&lt;/b&gt;</title>');
 });
 
 test('injectData escapes script-breaking chars from untrusted event data (XSS)', () => {

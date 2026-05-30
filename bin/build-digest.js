@@ -53,6 +53,13 @@ function injectData(template, data) {
   );
 }
 
+// Replace the <title> placeholder with the HTML-escaped digest title.
+function injectTitle(template, title) {
+  const esc = (s) => String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return template.replace(/__DIGEST_TITLE__/g, esc(title));
+}
+
 function main() {
   const root = path.join(__dirname, '..');
   const runDateISO = process.env.RUN_DATE || new Date().toISOString();
@@ -63,7 +70,8 @@ function main() {
   const volume = Number(process.env.VOLUME_PER_BUCKET) || 12;
   const curated = curate(events, state, runDateISO, volume);
   const data = buildData(curated, runDateISO, { title: `Week of ${runDateISO.slice(0, 10)}`, type: 'week' });
-  const out = injectData(template, data);
+  let out = injectData(template, data);
+  out = injectTitle(out, data.meta.title || 'Events Digest');
 
   const day = runDateISO.slice(0, 10);
   fs.mkdirSync(path.join(root, 'digests'), { recursive: true });
@@ -81,4 +89,4 @@ function main() {
 }
 
 if (require.main === module) main();
-module.exports = { buildData, injectData, escapeForScript };
+module.exports = { buildData, injectData, injectTitle, escapeForScript };

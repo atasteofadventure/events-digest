@@ -417,7 +417,7 @@
 </div>
 
 <script>
-var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week"},"weekday_events":[],"weekend_events":[],"discovered_sources":[]}/**/;
+var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week"},"thisWeek":[],"thisWeekend":[],"nextWeek":[],"nextWeekend":[],"discovered_sources":[]}/**/;
 
 (function() {
   'use strict';
@@ -558,26 +558,11 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
     return card;
   }
 
-  // Saved events state (persisted in localStorage + server file)
+  // Saved events state (localStorage only — single-browser, static site)
   var savedEvents = {};
   try {
     var saved = localStorage.getItem('events-digest-saved');
     if (saved) savedEvents = JSON.parse(saved);
-  } catch(e) {}
-  // Also try loading from server (backup persistence)
-  try {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', '/saved-events', false); // synchronous
-    xhr.send();
-    if (xhr.status === 200) {
-      var serverSaved = JSON.parse(xhr.responseText);
-      // Merge: server data fills in anything localStorage missed
-      for (var sk in serverSaved) {
-        if (serverSaved.hasOwnProperty(sk) && !savedEvents[sk]) {
-          savedEvents[sk] = serverSaved[sk];
-        }
-      }
-    }
   } catch(e) {}
 
   // All events indexed by id for quick lookup
@@ -585,13 +570,6 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
 
   function persistSaved() {
     try { localStorage.setItem('events-digest-saved', JSON.stringify(savedEvents)); } catch(e) {}
-    try {
-      fetch('/saved-events', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(savedEvents)
-      }).catch(function() {});
-    } catch(e) {}
   }
 
   function renderEvents(events, container) {
@@ -761,11 +739,25 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
 
   function init() {
     var data = EVENTS_DATA;
-    var weekdayEvents = data.weekday_events || [];
-    var weekendEvents = data.weekend_events || [];
+    var BUCKETS = [
+      { key: 'thisWeek', label: 'This Week' },
+      { key: 'thisWeekend', label: 'This Weekend' },
+      { key: 'nextWeek', label: 'Next Week' },
+      { key: 'nextWeekend', label: 'Next Weekend' }
+    ];
+    var bucketEvents = {
+      thisWeek: data.thisWeek || [],
+      thisWeekend: data.thisWeekend || [],
+      nextWeek: data.nextWeek || [],
+      nextWeekend: data.nextWeekend || []
+    };
+    // Only buckets with events get a tab — hides empty buckets, including
+    // "This Weekend" on Sunday runs (the build emits it empty).
+    var activeBuckets = BUCKETS.filter(function(b) { return bucketEvents[b.key].length > 0; });
 
     // Index all events by id
-    var all = weekdayEvents.concat(weekendEvents);
+    var all = [];
+    for (var bk = 0; bk < BUCKETS.length; bk++) all = all.concat(bucketEvents[BUCKETS[bk].key]);
     for (var ai = 0; ai < all.length; ai++) {
       allEventsById[all[ai].id] = all[ai];
     }
@@ -776,7 +768,7 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
 
     // Collection stats
     var statsContainer = document.getElementById('collection-stats');
-    var shown = weekdayEvents.length + weekendEvents.length;
+    var shown = all.length;
     var total = (data.meta && data.meta.total_collected) ? data.meta.total_collected : null;
     if (total && total > shown) {
       var statsBar = createEl('div', 'stats-bar');
@@ -800,23 +792,21 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
     var panelsContainer = document.getElementById('tab-panels');
     var dayFilterContainer = document.getElementById('day-filter-container');
 
-    tabNav.appendChild(createTabButton('Weekday', 'weekday', weekdayEvents.length));
-    tabNav.appendChild(createTabButton('Weekend', 'weekend', weekendEvents.length));
+    var panelsByKey = {};
+    for (var bi = 0; bi < activeBuckets.length; bi++) {
+      var bdef = activeBuckets[bi];
+      tabNav.appendChild(createTabButton(bdef.label, bdef.key, bucketEvents[bdef.key].length));
+      var panel = createEl('div', 'tab-panel');
+      panel.setAttribute('data-panel', bdef.key);
+      panelsContainer.appendChild(panel);
+      panelsByKey[bdef.key] = panel;
+    }
 
-    // Build panels (will be re-rendered on day filter)
-    var weekdayPanel = createEl('div', 'tab-panel');
-    weekdayPanel.setAttribute('data-panel', 'weekday');
-    panelsContainer.appendChild(weekdayPanel);
-
-    var weekendPanel = createEl('div', 'tab-panel');
-    weekendPanel.setAttribute('data-panel', 'weekend');
-    panelsContainer.appendChild(weekendPanel);
-
-    var activeTab = 'weekday';
+    var activeTab = activeBuckets.length ? activeBuckets[0].key : null;
     var activeDayFilter = null; // null = all days
     try {
       var st = localStorage.getItem('events-digest-tab');
-      if (st === 'weekday' || st === 'weekend') activeTab = st;
+      if (st && bucketEvents[st] && bucketEvents[st].length > 0) activeTab = st;
     } catch(e) {}
 
     function renderDayFilter(events) {
@@ -842,8 +832,10 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
     }
 
     function renderCurrentView() {
-      var events = activeTab === 'weekday' ? weekdayEvents : weekendEvents;
-      var panel = activeTab === 'weekday' ? weekdayPanel : weekendPanel;
+      if (!activeTab) return;
+      var events = bucketEvents[activeTab] || [];
+      var panel = panelsByKey[activeTab];
+      if (!panel) return;
 
       renderDayFilter(events);
 
@@ -894,7 +886,7 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
       renderCurrentView();
     });
 
-    activateTab(activeTab);
+    if (activeTab) activateTab(activeTab);
 
     // Global click delegation for feedback, save, unsave
     document.addEventListener('click', function(e) {
@@ -911,13 +903,7 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
         }
         var isPositive = POSITIVE_SIGNALS.indexOf(signal) !== -1;
         target.classList.add(isPositive ? 'selected-positive' : 'selected-negative');
-        try {
-          fetch('/feedback', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ event_id: eventId, signal: signal, timestamp: new Date().toISOString() })
-          }).catch(function() {});
-        } catch(ex) {}
+        // Feedback is session-only for now (static site, no backend).
         return;
       }
 
@@ -935,13 +921,6 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
         }
         persistSaved();
         renderSavedSection();
-        try {
-          fetch('/feedback', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ event_id: saveId, signal: 'saved', timestamp: new Date().toISOString() })
-          }).catch(function() {});
-        } catch(ex) {}
         return;
       }
 

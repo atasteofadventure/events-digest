@@ -24,6 +24,12 @@ test('buildData hides thisWeekend on Sunday runs', () => {
   assert.equal(d.thisWeek.length, 1);
 });
 
+test('buildData maps dateISO to YYYY-MM-DD date for the template renderer', () => {
+  const c = { thisWeek: [{ name: 'A', dateISO: '2026-06-04T19:30:00', venue: 'V', via: [] }], thisWeekend: [], nextWeek: [], nextWeekend: [] };
+  const d = buildData(c, '2026-06-04T10:00:00', {});
+  assert.equal(d.thisWeek[0].date, '2026-06-04');
+});
+
 test('injectData replaces the EVENTS_JSON marker, dropping the old default', () => {
   const tpl = 'x var EVENTS_DATA = /*__EVENTS_JSON__*/{"old":1}/**/; y';
   const out = injectData(tpl, { meta: {}, thisWeek: [] });

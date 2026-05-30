@@ -10,13 +10,21 @@ const { dedupeKey } = require('../lib/windowing');
 // marked as seen and can resurface in a later run).
 function buildData(curated, runDateISO, meta) {
   const isSunday = new Date(runDateISO).getDay() === 0;
+  // The template renderer expects evt.date as YYYY-MM-DD (and evt.time
+  // separately); our events carry dateISO. Bridge it here, and drop the
+  // internal _bucket marker.
+  const forTemplate = (e) => {
+    const { _bucket, ...rest } = e;
+    return { ...rest, date: (e.dateISO || '').slice(0, 10) };
+  };
+  const mapBucket = (arr) => (arr || []).map(forTemplate);
   return {
     meta: meta || {},
     generated: runDateISO,
-    thisWeek: curated.thisWeek || [],
-    thisWeekend: isSunday ? [] : (curated.thisWeekend || []),
-    nextWeek: curated.nextWeek || [],
-    nextWeekend: curated.nextWeekend || [],
+    thisWeek: mapBucket(curated.thisWeek),
+    thisWeekend: isSunday ? [] : mapBucket(curated.thisWeekend),
+    nextWeek: mapBucket(curated.nextWeek),
+    nextWeekend: mapBucket(curated.nextWeekend),
     discovered_sources: [],
   };
 }

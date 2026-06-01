@@ -35,7 +35,7 @@ From the emails, extract every individual event into an array and write it to
   "venue": "Venue name",
   "neighborhood": "Neighborhood",
   "price": "Free" or "$25",
-  "url": "https://link-to-event",
+  "url": "https://absolute-link-to-this-event",
   "category": "one of: tech_ai, workshops_classes, tours_experiences, film_screenings, art_exhibitions, talks_lectures",
   "source": "organizer/venue name (not the newsletter)",
   "via": ["newsletter it came from"],
@@ -47,6 +47,15 @@ Rules:
 - **`dateISO`**: resolve relative dates ("this Saturday", "June 7") to the
   correct absolute upcoming date, including the year. Expand recurring or
   multi-date listings into one object per date.
+- **`url` is REQUIRED — capture the real link.** Newsletters almost always link
+  each event (the title, an "RSVP"/"tickets"/"details"/"more info" link, or a
+  "read more"). Use that exact `href` as a full `https://...` URL. Many emails wrap
+  links in a tracking/redirect (e.g. mailchimp, substack, sendgrid) — that is fine,
+  use the wrapped link; it resolves to the event. If an event genuinely has no link
+  in the email, use the organizer/venue's event page; only if that is impossible,
+  set `url` to "". Do NOT leave `url` blank when the email contains a link — a blank
+  url produces a dead link on the page. This was a real bug: a prior run left every
+  url empty.
 - **Drop only invalid listings**: anything without a real date, non-NYC events,
   sold-out/waitlisted events, and non-event promos (merch, fundraising appeals,
   "support us"). These are validity checks, not taste judgments.

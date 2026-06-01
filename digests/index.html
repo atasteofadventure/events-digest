@@ -468,6 +468,16 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Week of 2026-06-01","type
     return el;
   }
 
+  // Destination for an event's title link. Prefer the real event URL; when one
+  // is missing, fall back to a web search for the event so the link still goes
+  // somewhere useful instead of dead-ending on this page.
+  function eventHref(evt) {
+    var u = (evt && evt.url ? String(evt.url) : '').trim();
+    if (/^https?:\/\//i.test(u)) return u;
+    var q = [evt && evt.name, evt && evt.venue, 'NYC'].filter(Boolean).join(' ');
+    return 'https://www.google.com/search?q=' + encodeURIComponent(q);
+  }
+
   function createTabButton(label, tabKey, count) {
     var btn = createEl('button', 'tab');
     btn.setAttribute('data-tab', tabKey);
@@ -490,7 +500,7 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Week of 2026-06-01","type
 
     var nameLink = createEl('a', 'event-name');
     nameLink.textContent = evt.name;
-    nameLink.href = evt.url || '#';
+    nameLink.href = eventHref(evt);
     nameLink.target = '_blank';
     nameLink.rel = 'noopener noreferrer';
     header.appendChild(nameLink);
@@ -679,7 +689,7 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Week of 2026-06-01","type
 
       var nameLink = createEl('a', 'event-name');
       nameLink.textContent = evt.name;
-      nameLink.href = evt.url || '#';
+      nameLink.href = eventHref(evt);
       nameLink.target = '_blank';
       nameLink.rel = 'noopener noreferrer';
       card.appendChild(nameLink);

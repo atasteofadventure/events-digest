@@ -1,2 +1,16 @@
 .DS_Store
 node_modules/
+
+.projects/cache
+.projects/vault
+.projects/state.test.json
+.projects/state.local.test.json
+.env
+.env.*
+!.env.example
+
+# Local agent/editor tooling (not part of the repo)
+.claude/
+.cursor/
+.cursorignore
+.agents/

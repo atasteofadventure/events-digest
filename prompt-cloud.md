@@ -39,7 +39,6 @@ From the emails, extract every individual event into an array and write it to
   "category": "one of: tech_ai, workshops_classes, tours_experiences, film_screenings, art_exhibitions, talks_lectures",
   "source": "organizer/venue name (not the newsletter)",
   "via": ["newsletter it came from"],
-  "relevance": 0.0-1.0,
   "why": "one-sentence organizer description (not a personalized pitch)"
 }
 ```
@@ -48,26 +47,29 @@ Rules:
 - **`dateISO`**: resolve relative dates ("this Saturday", "June 7") to the
   correct absolute upcoming date, including the year. Expand recurring or
   multi-date listings into one object per date.
-- **Drop**: anything without a real date, non-NYC events, sold-out/waitlisted
-  events, and non-event promos (merch, fundraising appeals, "support us").
-- **`relevance`**: score against the taste profile and feedback history in
-  `config.json` (favor hands-on workshops, tours, tech/AI, talks/salons, local
-  Brooklyn, free-to-moderate price; penalize fitness, kids, mixers, multi-day
-  commitments, and food/flea markets). Higher = more on-taste.
-- **`category`**: art exhibitions are capped downstream, so only tag genuine
-  exhibition events as `art_exhibitions`.
-- Do not pre-filter by date — extract everything plausibly upcoming. The build
-  step buckets, dedupes, and drops out-of-window events.
+- **Drop only invalid listings**: anything without a real date, non-NYC events,
+  sold-out/waitlisted events, and non-event promos (merch, fundraising appeals,
+  "support us"). These are validity checks, not taste judgments.
+- **No taste filtering or ranking.** Extract EVERY valid upcoming event you find.
+  Do not decide what is "interesting", on-taste, or worth keeping — the reader
+  does that themselves. There is no relevance score and no cap; whatever you
+  extract is what gets shown.
+- **`category`**: tag each event with the closest category. Nothing is capped, so
+  do not be conservative about `art_exhibitions`.
+- Do not pre-filter by date — extract everything plausibly upcoming, however far
+  out. The build buckets by date (anything past next weekend lands in a "Later"
+  section) and drops only events whose date has already passed.
 
 ## 3. Build the digest
 
-Run the deterministic build (it buckets by event date into this/next week +
-weekend, dedupes, suppresses already-featured events from `state.json`, ranks by
-`relevance`, caps each bucket, renders the four-tab page, and updates
-`state.json`):
+Run the deterministic build. It buckets every event by date into five sections
+(This Week / This Weekend / Next Week / Next Weekend / Later), de-duplicates
+across sources (merging where an event was seen), sorts each section
+chronologically, and renders the page. It does NOT rank, filter by taste, cap, or
+hide previously-shown events — every event you extract is shown:
 
 ```bash
-RUN_DATE="$(date -u +%Y-%m-%dT%H:%M:%S)" VOLUME_PER_BUCKET=12 node bin/build-digest.js
+RUN_DATE="$(date -u +%Y-%m-%dT%H:%M:%S)" node bin/build-digest.js
 ```
 
 This writes `digests/<YYYY-MM-DD>.html`, `digests/index.html`, and an updated
@@ -88,12 +90,15 @@ Vercel serves `digests/index.html` at the site root.
 ## 5. Report
 
 End with a short summary: total events read, count per bucket
-(This Week / This Weekend / Next Week / Next Weekend), and any sources that
-returned nothing or errored.
+(This Week / This Weekend / Next Week / Next Weekend / Later), and any sources
+that returned nothing or errored.
 
 ## Notes
 
-- Feedback/taste-learning is deferred — there is no feedback to read. Ranking
-  uses only the static taste profile in `config.json`.
+- This digest does not curate. It shows every valid upcoming event you extract,
+  de-duplicated and bucketed by date, so the reader decides what is interesting.
+  There is no taste ranking, no per-bucket cap, and no hiding of events shown in
+  earlier digests.
 - On a Sunday run, "This Weekend" is intentionally emitted empty (it is over);
-  the page hides empty buckets automatically.
+  the page hides empty buckets automatically (the "Later" tab likewise only
+  appears when there are events beyond next weekend).

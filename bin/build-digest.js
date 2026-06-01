@@ -3,7 +3,6 @@
 const fs = require('fs');
 const path = require('path');
 const { curate, BUCKETS } = require('../lib/curate');
-const { dedupeKey } = require('../lib/windowing');
 
 // Shape the curated buckets into the JSON the client-side template renders.
 // Decision #3: hide "This Weekend" on Sunday runs (build-time, so it is not
@@ -25,6 +24,7 @@ function buildData(curated, runDateISO, meta) {
     thisWeekend: isSunday ? [] : mapBucket(curated.thisWeekend),
     nextWeek: mapBucket(curated.nextWeek),
     nextWeekend: mapBucket(curated.nextWeekend),
+    later: mapBucket(curated.later),
     discovered_sources: [],
   };
 }
@@ -67,9 +67,11 @@ function main() {
   const state = JSON.parse(fs.readFileSync(path.join(root, 'state.json'), 'utf8'));
   const template = fs.readFileSync(path.join(root, 'template.html'), 'utf8');
 
-  const volume = Number(process.env.VOLUME_PER_BUCKET) || 12;
-  const curated = curate(events, state, runDateISO, volume);
-  const data = buildData(curated, runDateISO, { title: `Week of ${runDateISO.slice(0, 10)}`, type: 'week' });
+  const total = Array.isArray(events) ? events.length : 0;
+  const curated = curate(events, runDateISO);
+  const data = buildData(curated, runDateISO, {
+    title: `Week of ${runDateISO.slice(0, 10)}`, type: 'week', total_collected: total,
+  });
   let out = injectData(template, data);
   out = injectTitle(out, data.meta.title || 'Events Digest');
 
@@ -78,10 +80,9 @@ function main() {
   fs.writeFileSync(path.join(root, 'digests', `${day}.html`), out);
   fs.writeFileSync(path.join(root, 'digests', 'index.html'), out);
 
-  // Mark only what was actually shown (post Sunday-hide) as seen.
-  const shown = ['thisWeek', 'thisWeekend', 'nextWeek', 'nextWeekend']
-    .flatMap((b) => (data[b] || []).map(dedupeKey));
-  state.seen_events = Array.from(new Set([...(state.seen_events || []), ...shown]));
+  // No cross-run suppression — every digest shows the full current set. Record
+  // only the run time so state.json stays a useful breadcrumb.
+  state.last_run = runDateISO;
   fs.writeFileSync(path.join(root, 'state.json'), JSON.stringify(state, null, 2));
 
   const counts = BUCKETS.map((b) => `${b}: ${(data[b] || []).length}`).join(', ');

@@ -417,7 +417,7 @@
 </div>
 
 <script>
-var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week"},"thisWeek":[],"thisWeekend":[],"nextWeek":[],"nextWeekend":[],"discovered_sources":[]}/**/;
+var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week"},"thisWeek":[],"thisWeekend":[],"nextWeek":[],"nextWeekend":[],"later":[],"discovered_sources":[]}/**/;
 
 (function() {
   'use strict';
@@ -743,13 +743,15 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
       { key: 'thisWeek', label: 'This Week' },
       { key: 'thisWeekend', label: 'This Weekend' },
       { key: 'nextWeek', label: 'Next Week' },
-      { key: 'nextWeekend', label: 'Next Weekend' }
+      { key: 'nextWeekend', label: 'Next Weekend' },
+      { key: 'later', label: 'Later' }
     ];
     var bucketEvents = {
       thisWeek: data.thisWeek || [],
       thisWeekend: data.thisWeekend || [],
       nextWeek: data.nextWeek || [],
-      nextWeekend: data.nextWeekend || []
+      nextWeekend: data.nextWeekend || [],
+      later: data.later || []
     };
     // Only buckets with events get a tab — hides empty buckets, including
     // "This Weekend" on Sunday runs (the build emits it empty).

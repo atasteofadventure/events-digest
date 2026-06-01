@@ -7,15 +7,17 @@ const curated = {
   thisWeek: [{ name: 'A', dateISO: '2026-06-07T19:00:00', venue: 'V', via: [] }],
   thisWeekend: [{ name: 'W', dateISO: '2026-06-07T20:00:00', venue: 'V', via: [] }],
   nextWeek: [], nextWeekend: [],
+  later: [{ name: 'L', dateISO: '2026-08-01T19:00:00', venue: 'V', via: [] }],
 };
 
-test('buildData includes four buckets + meta + generated', () => {
+test('buildData includes five buckets + meta + generated', () => {
   const d = buildData(curated, '2026-06-04T10:00:00', { title: 'Wk' }); // Thursday
   assert.deepEqual(
     Object.keys(d).sort(),
-    ['discovered_sources', 'generated', 'meta', 'nextWeek', 'nextWeekend', 'thisWeek', 'thisWeekend']
+    ['discovered_sources', 'generated', 'later', 'meta', 'nextWeek', 'nextWeekend', 'thisWeek', 'thisWeekend']
   );
   assert.equal(d.thisWeekend.length, 1);
+  assert.equal(d.later.length, 1);
 });
 
 test('buildData hides thisWeekend on Sunday runs', () => {

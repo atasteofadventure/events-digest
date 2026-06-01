@@ -808,6 +808,5 @@
     "weekday_target": 20,
     "weekend_target": 20
   },
-  "feedback_decay_days": 90,
-  "volume_per_bucket": 12
+  "feedback_decay_days": 90
 }

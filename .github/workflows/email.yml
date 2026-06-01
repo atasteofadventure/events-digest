@@ -1,0 +1,46 @@
+name: Weekly digest email
+
+# Sends the email-safe digest (digests/email.html) once a week, on Thursday.
+# The cloud routine rebuilds and pushes the digest twice a week (Thu + Sun); this
+# workflow only sends on Thursday's digest push. Trigger it manually any time via
+# the "Run workflow" button to test.
+on:
+  push:
+    branches: [main]
+    paths: ['digests/email.html']
+  workflow_dispatch: {}
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Decide whether to send
+        id: decide
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "send=true" >> "$GITHUB_OUTPUT"
+          else
+            DOW=$(date -u +%u)          # 1=Mon .. 4=Thu .. 7=Sun
+            MSG=$(git log -1 --pretty=%s)
+            if [ "$DOW" = "4" ] && printf '%s' "$MSG" | grep -q '^digest:'; then
+              echo "send=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "send=false" >> "$GITHUB_OUTPUT"
+              echo "Skipping send (event=push, DOW=$DOW, msg='$MSG'); only Thursday digest pushes are emailed."
+            fi
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.decide.outputs.send == 'true'
+        with:
+          node-version: '20'
+
+      - name: Send the digest email
+        if: steps.decide.outputs.send == 'true'
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+        run: node bin/send-email.js

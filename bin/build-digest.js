@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const { curate, BUCKETS } = require('../lib/curate');
+const { buildEmailHtml } = require('../lib/email');
 
 // Shape the curated buckets into the JSON the client-side template renders.
 // Decision #3: hide "This Weekend" on Sunday runs (build-time, so it is not
@@ -79,6 +80,8 @@ function main() {
   fs.mkdirSync(path.join(root, 'digests'), { recursive: true });
   fs.writeFileSync(path.join(root, 'digests', `${day}.html`), out);
   fs.writeFileSync(path.join(root, 'digests', 'index.html'), out);
+  // Email-safe flat version (sent weekly by the GitHub Action; see bin/send-email.js).
+  fs.writeFileSync(path.join(root, 'digests', 'email.html'), buildEmailHtml(data));
 
   // No cross-run suppression — every digest shows the full current set. Record
   // only the run time so state.json stays a useful breadcrumb.

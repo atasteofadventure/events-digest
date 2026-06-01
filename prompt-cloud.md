@@ -81,8 +81,10 @@ hide previously-shown events — every event you extract is shown:
 RUN_DATE="$(date -u +%Y-%m-%dT%H:%M:%S)" node bin/build-digest.js
 ```
 
-This writes `digests/<YYYY-MM-DD>.html`, `digests/index.html`, and an updated
-`state.json`.
+This writes `digests/<YYYY-MM-DD>.html`, `digests/index.html`, an email-safe
+`digests/email.html` (a GitHub Action emails it on Thursdays), and an updated
+`state.json`. The publish step below commits all of `digests/`, so `email.html`
+ships automatically — no extra action needed from you.
 
 ## 4. Publish
 

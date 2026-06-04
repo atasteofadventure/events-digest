@@ -1,129 +1,19 @@
 [
   {
-    "id": "skint-biology-on-tap-pride-0601",
-    "name": "Biology on Tap: Pride Edition",
-    "dateISO": "2026-06-01T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Pete's Candy Store",
-    "neighborhood": "Williamsburg",
-    "price": "Free ($5 suggested)",
-    "url": "https://www.instagram.com/biologyontap/",
-    "category": "talks_lectures",
-    "source": "Biology on Tap",
-    "via": ["The Skint"],
-    "why": "Scientists talk gay bugs, gay machines, and what being a queer person in science is like today."
-  },
-  {
-    "id": "skint-living-radio-0601",
-    "name": "Living Radio: Contemporary Radio Drama",
-    "dateISO": "2026-06-01T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Under St. Marks Theater",
-    "neighborhood": "East Village",
-    "price": "Pay what you can ($7 min)",
-    "url": "https://livingradionyc.com/",
-    "category": "talks_lectures",
-    "source": "Living Radio",
-    "via": ["The Skint"],
-    "why": "Live performances of five short radio plays inspired by the news, with results ranging from wacky to reflective."
-  },
-  {
-    "id": "skint-miss-manhattan-nonfiction-0601",
-    "name": "Miss Manhattan Non-Fiction Reading Series",
-    "dateISO": "2026-06-01T19:30:00",
-    "time": "7:30 PM",
-    "venue": "Niagara Bar",
-    "neighborhood": "East Village",
-    "price": "Free",
-    "url": "https://www.elyssamaxxgoodman.com/miss-manhattan-nonfiction-reading-series",
-    "category": "talks_lectures",
-    "source": "Miss Manhattan",
-    "via": ["The Skint"],
-    "why": "Monthly showcase with readings from Michelle Young (The Art Spy), Jason Irwin, Jee Leong Koh, and Ava Emilione."
-  },
-  {
-    "id": "skint-rooftop-films-griner-0601",
-    "name": "Rooftop Films: The Brittney Griner Story",
-    "dateISO": "2026-06-01T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Gansevoort Plaza",
-    "neighborhood": "Meatpacking District",
-    "price": "Free",
-    "url": "https://rooftopfilms.com/event/the-brittney-griner-story/",
-    "category": "film_screenings",
-    "source": "Rooftop Films",
-    "via": ["The Skint"],
-    "why": "Rooftop Films' 30th summer series opens with Alexandria Stapleton's documentary about WNBA star Brittney Griner."
-  },
-  {
-    "id": "skint-piano-mondays-highline-0601",
-    "name": "Piano Mondays at the High Line: Pride Singalong",
-    "dateISO": "2026-06-01T18:00:00",
-    "time": "6:00 PM",
-    "venue": "The High Line (Spur at 30th St & 10th Ave)",
-    "neighborhood": "Chelsea",
-    "price": "Free",
-    "url": "https://www.thehighline.org/events/piano-mondays/",
-    "category": "talks_lectures",
-    "source": "The High Line",
-    "via": ["The Skint"],
-    "why": "Open-air Pride singalong led by Lance Horne of Club Cumming and a rotating cast of Broadway musicians."
-  },
-  {
-    "id": "skint-read-on-lawn-bryant-park-0601",
-    "name": "Read on the Lawn Day at Bryant Park",
-    "dateISO": "2026-06-01T18:00:00",
-    "time": "6:00 PM",
-    "venue": "Bryant Park",
-    "neighborhood": "Midtown",
-    "price": "Free",
-    "url": "https://bryantpark.org/calendar/event/read-on-the-lawn-day/2026-06-01",
-    "category": "talks_lectures",
-    "source": "Bryant Park",
-    "via": ["The Skint"],
-    "why": "Bring a book and blanket for a laid-back evening of communal reading, book discussions, and ambient music."
-  },
-  {
-    "id": "skint-hb-studio-light-we-carry-0601",
-    "name": "HB Studio: The Light We Carry Festival",
-    "dateISO": "2026-06-01T18:00:00",
-    "time": "6:00 PM",
-    "venue": "HB Studio",
-    "neighborhood": "West Village",
-    "price": "Free–$20",
-    "url": "https://www.hbstudio.org/the-light-we-carry-festival",
-    "category": "talks_lectures",
-    "source": "HB Studio",
-    "via": ["The Skint"],
-    "why": "Week-long festival (May 30–Jun 5) celebrating the modern American theater, including talks, masterclasses, and free performances at NYC's storied acting school."
-  },
-  {
-    "id": "skint-we-are-pat-dctv-0601",
-    "name": "We Are Pat: Documentary Screening (through Jun 3)",
-    "dateISO": "2026-06-01T18:30:00",
-    "time": "6:30 PM",
-    "venue": "DCTV Firehouse Cinema",
-    "neighborhood": "Chinatown",
-    "price": "$16",
-    "url": "https://www.dctvny.org/s/firehouse-film/we-are-pat-MCYXPYXHT4QZAVHHPRIMIHTPDDG4",
-    "category": "film_screenings",
-    "source": "DCTV",
-    "via": ["The Skint"],
-    "why": "Rowan Haber's documentary exploring the evolution of gender identity and comedy through the lens of Julia Sweeney's androgynous SNL character, with filmmaker Q&As."
-  },
-  {
-    "id": "skint-urban-odysseys-bam-thru-0604",
-    "name": "Urban Odysseys at BAM (film series through Jun 4)",
-    "dateISO": "2026-06-01T18:00:00",
+    "id": "skint-marilyn-100-filmforum-thru-0611",
+    "name": "Marilyn 100: Films Celebrating Marilyn Monroe's 100th Year (through Jun 11)",
+    "dateISO": "2026-06-01T16:00:00",
     "time": "Various times",
-    "venue": "BAM",
-    "neighborhood": "Fort Greene",
-    "price": "$17 ($12 seniors)",
-    "url": "https://www.bam.org/film/2026/urban-odysseys",
+    "venue": "Film Forum",
+    "neighborhood": "South Village",
+    "price": "$18",
+    "url": "https://filmforum.org/series/marilyn-100",
     "category": "film_screenings",
-    "source": "Brooklyn Academy of Music",
-    "via": ["The Skint"],
-    "why": "BAM's urban-themed film series with After Hours, Bicycle Thieves, Good Time, The Daytrippers, Tokyo Godfathers, and more."
+    "source": "Film Forum",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Film Forum marks Marilyn Monroe's centenary with 13 films."
   },
   {
     "id": "skint-segal-film-festival-thru-0605",
@@ -132,11 +22,13 @@
     "time": "Various times",
     "venue": "CUNY Martin E. Segal Center / Anthology Film Archives",
     "neighborhood": "Midtown / East Village",
-    "price": "Free–$14",
+    "price": "Free\u2013$14",
     "url": "https://www.thesegalcenter.org/film-festival-2026",
     "category": "film_screenings",
     "source": "CUNY Martin E. Segal Center",
-    "via": ["The Skint"],
+    "via": [
+      "The Skint"
+    ],
     "why": "New films alongside a major retrospective celebrating experimental theater director Robert Wilson."
   },
   {
@@ -150,50 +42,74 @@
     "url": "https://www.brooklynfilmfestival.org",
     "category": "film_screenings",
     "source": "Brooklyn Film Festival",
-    "via": ["The Skint"],
+    "via": [
+      "The Skint"
+    ],
     "why": "Long-running Brooklyn indie film festival with screenings across Fort Greene, Greenpoint, and Williamsburg."
   },
   {
-    "id": "skint-marilyn-100-filmforum-thru-0611",
-    "name": "Marilyn 100: Films Celebrating Marilyn Monroe's 100th Year (through Jun 11)",
-    "dateISO": "2026-06-01T16:00:00",
-    "time": "Various times",
-    "venue": "Film Forum",
-    "neighborhood": "South Village",
-    "price": "$18",
-    "url": "https://filmforum.org/series/marilyn-100",
-    "category": "film_screenings",
-    "source": "Film Forum",
-    "via": ["The Skint"],
-    "why": "Film Forum marks Marilyn Monroe's centenary with 13 films."
-  },
-  {
-    "id": "skint-be-gay-do-crime-nitehawk-thru-0629",
-    "name": "Be Gay, Do Crime: Queer Film Series at Nitehawk (through Jun 29)",
-    "dateISO": "2026-06-01T20:00:00",
-    "time": "Various times",
-    "venue": "Nitehawk Cinema",
-    "neighborhood": "Williamsburg",
-    "price": "$15–17",
-    "url": "https://nitehawkcinema.com/",
-    "category": "film_screenings",
-    "source": "Nitehawk Cinema",
-    "via": ["The Skint"],
-    "why": "Nitehawk's curated queer cinema series through June 29 with Bad Education, Law of Desire, Pink Flamingos, Strangers on a Train, Women Who Kill, and more."
-  },
-  {
-    "id": "skint-macabre-mondays-baker-falls-thru-0629",
-    "name": "Scream Scene's Macabre Mondays (through Jun 29)",
-    "dateISO": "2026-06-01T20:00:00",
-    "time": "Mondays",
-    "venue": "Baker Falls",
-    "neighborhood": "Lower East Side",
+    "id": "skint-piano-mondays-highline-0601",
+    "name": "Piano Mondays at the High Line: Pride Singalong",
+    "dateISO": "2026-06-01T18:00:00",
+    "time": "6:00 PM",
+    "venue": "The High Line (Spur at 30th St & 10th Ave)",
+    "neighborhood": "Chelsea",
     "price": "Free",
-    "url": "https://www.instagram.com/p/DYzVQ-ajttr/",
+    "url": "https://www.thehighline.org/events/piano-mondays/",
+    "category": "talks_lectures",
+    "source": "The High Line",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Open-air Pride singalong led by Lance Horne of Club Cumming and a rotating cast of Broadway musicians."
+  },
+  {
+    "id": "skint-read-on-lawn-bryant-park-0601",
+    "name": "Read on the Lawn Day at Bryant Park",
+    "dateISO": "2026-06-01T18:00:00",
+    "time": "6:00 PM",
+    "venue": "Bryant Park",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://bryantpark.org/calendar/event/read-on-the-lawn-day/2026-06-01",
+    "category": "talks_lectures",
+    "source": "Bryant Park",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Bring a book and blanket for a laid-back evening of communal reading, book discussions, and ambient music."
+  },
+  {
+    "id": "skint-hb-studio-light-we-carry-0601",
+    "name": "HB Studio: The Light We Carry Festival",
+    "dateISO": "2026-06-01T18:00:00",
+    "time": "6:00 PM",
+    "venue": "HB Studio",
+    "neighborhood": "West Village",
+    "price": "Free\u2013$20",
+    "url": "https://www.hbstudio.org/the-light-we-carry-festival",
+    "category": "talks_lectures",
+    "source": "HB Studio",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Week-long festival (May 30\u2013Jun 5) celebrating the modern American theater, including talks, masterclasses, and free performances at NYC's storied acting school."
+  },
+  {
+    "id": "skint-urban-odysseys-bam-thru-0604",
+    "name": "Urban Odysseys at BAM (film series through Jun 4)",
+    "dateISO": "2026-06-01T18:00:00",
+    "time": "Various times",
+    "venue": "BAM",
+    "neighborhood": "Fort Greene",
+    "price": "$17 ($12 seniors)",
+    "url": "https://www.bam.org/film/2026/urban-odysseys",
     "category": "film_screenings",
-    "source": "Scream Scene",
-    "via": ["The Skint"],
-    "why": "Weekly free horror and cult film screenings through June 29 — The Shining, Night of the Creeps, Drag Me to Hell, Midsommar, Dead Alive."
+    "source": "Brooklyn Academy of Music",
+    "via": [
+      "The Skint"
+    ],
+    "why": "BAM's urban-themed film series with After Hours, Bicycle Thieves, Good Time, The Daytrippers, Tokyo Godfathers, and more."
   },
   {
     "id": "skint-nyc-indie-film-festival-thru-0607",
@@ -206,7 +122,9 @@
     "url": "https://nycindieff.com/",
     "category": "film_screenings",
     "source": "NYC Indie Film Festival",
-    "via": ["The Skint"],
+    "via": [
+      "The Skint"
+    ],
     "why": "Annual independent film festival featuring short and feature-length works by emerging filmmakers."
   },
   {
@@ -220,7 +138,9 @@
     "url": "https://www.theartofbrooklyn.org/",
     "category": "film_screenings",
     "source": "Art of Brooklyn Film Festival",
-    "via": ["The Skint"],
+    "via": [
+      "The Skint"
+    ],
     "why": "Brooklyn-focused film festival through June 10, with in-person and online screenings."
   },
   {
@@ -234,50 +154,26 @@
     "url": "https://www.paristheaternyc.com/series/something-borrowed-something-blue",
     "category": "film_screenings",
     "source": "The Paris Theater",
-    "via": ["The Skint"],
+    "via": [
+      "The Skint"
+    ],
     "why": "Summer romance series at the Paris Theater featuring All That Heaven Allows, Coming to America, Crazy Rich Asians, Monsoon Wedding, Moonstruck, and more."
   },
   {
-    "id": "skint-carnegie-faure-requiem-0601",
-    "name": "Masterwork Festival: Fauré Requiem & Jake Runestad",
-    "dateISO": "2026-06-01T20:00:00",
-    "time": "8:00 PM",
-    "venue": "Carnegie Hall",
-    "neighborhood": "Midtown",
-    "price": "$14 (use code clb53914)",
-    "url": "https://www.carnegiehall.org/calendar/2026/06/01/new-york-city-chamber-orchestra-and-masterwork-chorus-0800pm",
-    "category": "talks_lectures",
-    "source": "Carnegie Hall / Manhattan Concert Productions",
-    "via": ["The Skint"],
-    "why": "Fauré's Requiem — the 'lullaby of death' — alongside Jake Runestad's Walt Whitman–inspired Proud Music of the Storm."
-  },
-  {
-    "id": "skint-david-cross-littlefield-0601",
-    "name": "David Cross: Shootin' the Sh*t, Seein' What Sticks",
-    "dateISO": "2026-06-01T20:00:00",
-    "time": "8:00 PM",
-    "venue": "Littlefield",
-    "neighborhood": "Gowanus",
-    "price": "$10–$16 (use code cross7)",
-    "url": "https://littlefieldnyc.com/event/?wfea_eb_id=88969437128",
-    "category": "talks_lectures",
-    "source": "Littlefield",
-    "via": ["The Skint"],
-    "why": "Comedian David Cross (Mr. Show, Arrested Development) works out new material at Littlefield."
-  },
-  {
-    "id": "skint-bryant-park-nyc-opera-0605",
-    "name": "Bryant Park Picnic Performances: NYC Opera Honors America's 250th",
-    "dateISO": "2026-06-05T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Bryant Park",
-    "neighborhood": "Midtown",
-    "price": "Free",
-    "url": "https://bryantpark.org/calendar/event/american-opera/2026-05-29",
-    "category": "talks_lectures",
-    "source": "Bryant Park / NYC Opera",
-    "via": ["The Skint"],
-    "why": "Free outdoor concert honoring America's 250th anniversary, featuring vocalists Larisa Martínez, Latonia Moore, and more in an evening of American opera and musical theater."
+    "id": "skint-we-are-pat-dctv-0601",
+    "name": "We Are Pat: Documentary Screening (through Jun 3)",
+    "dateISO": "2026-06-01T18:30:00",
+    "time": "6:30 PM",
+    "venue": "DCTV Firehouse Cinema",
+    "neighborhood": "Chinatown",
+    "price": "$16",
+    "url": "https://www.dctvny.org/s/firehouse-film/we-are-pat-MCYXPYXHT4QZAVHHPRIMIHTPDDG4",
+    "category": "film_screenings",
+    "source": "DCTV",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Rowan Haber's documentary exploring the evolution of gender identity and comedy through the lens of Julia Sweeney's androgynous SNL character, with filmmaker Q&As."
   },
   {
     "id": "nypl-illness-illustration-0601",
@@ -290,92 +186,138 @@
     "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzC5XULoCAaBcvLSRkXTmHNJUMzPaH3imxop-DPewGlemj8nhl-nKAMVdj20fHIO3b-gNCcXjksnBMYpOVCY9bUl",
     "category": "talks_lectures",
     "source": "New York Public Library",
-    "via": ["NYPL"],
+    "via": [
+      "NYPL"
+    ],
     "why": "Panel with Onmae Moka, Kosaka Tsubasa, and Kriota Willberg on how comics depict illness, disability, and caregiving."
   },
   {
-    "id": "thought-gallery-jill-biden-92y-0602",
-    "name": "View From the East Wing: Jill Biden in conversation with Whoopi Goldberg",
-    "dateISO": "2026-06-02T19:30:00",
-    "time": "7:30 PM",
-    "venue": "92nd Street Y",
-    "neighborhood": "Upper East Side",
-    "price": "",
-    "url": "https://d5j56304.na1.hubspotlinks.com/Ctc/Y+113/d5j56304/VX57Gv2yf-mRW3WlQ04561KX9W8yJSQm5PLW68N1TFhvK3lcq-W8wLKSR6lZ3lcW6Z1YkP1htWJpW77V85Y8qTv_lN8nkR1KSWbVWW1rSmlN6wTR0XW6xgJL96_hZjrW404G1213gqPcW3N9y0n57MvBKW5wRhd654H2nxW4RtQQG31xXZXW7qbGKl4q30LgW1GqdRV1q3JpbW8Bccg91T33Z9W7BC3903tV08zW7PWQ5v4gRh64W7j2DWC5Sp_SsVgYMJQ1zpTCWW7wT7bP5j781vW78gs-15BRlpvW48JdQk1Sh4vmW5WMFTt5sSWkbW6jmfyD12LrS3W3SbWWT4NFYsXW30PC5F6gcR5WVwwGv76Bh5FhW2Nhj8J6mZ-dhW33SYbD3GH3DRW1kPwSx2jZz2zW8y-by92PKWtLf1Lk0vx04",
-    "category": "talks_lectures",
-    "source": "92nd Street Y",
-    "via": ["Thought Gallery / The Curriculum"],
-    "why": "Jill Biden discusses her memoir about four years as the only First Lady who held an outside career, in conversation with Whoopi Goldberg."
-  },
-  {
-    "id": "thought-gallery-red-hype-blue-fabrik-0602",
-    "name": "Red, Hype, and Blue: What 1976 Reveals About America at 250",
-    "dateISO": "2026-06-02T19:00:00",
+    "id": "skint-biology-on-tap-pride-0601",
+    "name": "Biology on Tap: Pride Edition",
+    "dateISO": "2026-06-01T19:00:00",
     "time": "7:00 PM",
-    "venue": "Fabrik NYC",
-    "neighborhood": "Midtown",
-    "price": "",
-    "url": "https://d5j56304.na1.hubspotlinks.com/Ctc/Y+113/d5j56304/VX57Gv2yf-mRW3WlQ04561KX9W8yJSQm5PLW68N1TFhw03lcq-W95jsWP6lZ3mbW6GDXms4NxWtJW2z289K9cmRvVW9dRv2N3SzF3sVVJRNS5czZnQW58VDyv8YWFFnW1gRnH15b5NPWW4yDLn82nHj-TVLhK-53g8GP5W9bSZrj6tDDZ2W3Fn4N95n77VbW1H2ZXk7Mh-cjW9563nV2TH4cxW2D4XRH9flQrRW2M6MKR8_hPstW1k_qYJ8lcw7vW812Ftq7cF_Z4W3l9nl562RCw1W3rDJYL365R-8W2zRDzW5pJ2F-W2dHJ4Z1vj7DTW1yKdLW4xH_nLW7RkQCj3PVRm-W7dnqpJ3pgGmHW7DctnR1szQBZW6GXX621ZPTjmW3H4GvT48t3dgW9cZy8N913pfxW8pH57l5BhtYkW7vSJcv7dd5PtW2Fd5Bt6ZbFCbf6lZYR804",
+    "venue": "Pete's Candy Store",
+    "neighborhood": "Williamsburg",
+    "price": "Free ($5 suggested)",
+    "url": "https://www.instagram.com/biologyontap/",
     "category": "talks_lectures",
-    "source": "Fabrik NYC / Wisdom Bar",
-    "via": ["Thought Gallery / The Curriculum"],
-    "why": "Public historian Luke G. Boyd explores what America's Bicentennial celebrations — and omissions — reveal about democracy at 250."
+    "source": "Biology on Tap",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Scientists talk gay bugs, gay machines, and what being a queer person in science is like today."
   },
   {
-    "id": "thought-gallery-art-saving-democracy-bam-0602",
-    "name": "The Art of Saving Democracy: Launch Event",
-    "dateISO": "2026-06-02T19:00:00",
+    "id": "skint-living-radio-0601",
+    "name": "Living Radio: Contemporary Radio Drama",
+    "dateISO": "2026-06-01T19:00:00",
     "time": "7:00 PM",
-    "venue": "Brooklyn Academy of Music (BAM)",
-    "neighborhood": "Fort Greene",
-    "price": "",
-    "url": "https://d5j56304.na1.hubspotlinks.com/Ctc/Y+113/d5j56304/VX57Gv2yf-mRW3WlQ04561KX9W8yJSQm5PLW68N1TFhvq3lcq-W7Y8-PT6lZ3lMVXFv6h4qSkwCW4ZbBn63pfvYwW1fWWwZ6Y0kCvVvH0z07Nf9XQN2Phd0mZqch-W5W3x0l32swYdVxKqXP6G2F9BW3BMMX-4nV3pKW4nGRZG1WwFt9VTRgPW6Yng4lW4rlC1X86LX6SW59H5Bs1JLJVZW5qBlJ72TTwSyW1t9CmC8Y70H_W2z3wZ93HkCq_W77pLxD7Vt8JmW4N41VS4THpn-W88pbS026V6WqW37jM_74hB0kzW7ZhvzB25qcxrW30rGFZ7JlNLBW1WKG0j3l1h05N4cWs5vH6nHkW502McV7BPRcHW97CLTv4JmQ5JW8lcfwd78mWRmf51Gb8W04",
+    "venue": "Under St. Marks Theater",
+    "neighborhood": "East Village",
+    "price": "Pay what you can ($7 min)",
+    "url": "https://livingradionyc.com/",
     "category": "talks_lectures",
-    "source": "Brooklyn Academy of Music (BAM)",
-    "via": ["Thought Gallery / The Curriculum"],
-    "why": "Artist Vincent Valdez and Debbie Millman (Design Matters) discuss freedom of expression at the launch of a civic-engagement toolkit; opening remarks by Kathleen Turner."
+    "source": "Living Radio",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Live performances of five short radio plays inspired by the news, with results ranging from wacky to reflective."
   },
   {
-    "id": "thought-gallery-revolutionary-women-nyhistorical-0602",
-    "name": "Revolutionary Women: Exhibition Opening Conversation",
-    "dateISO": "2026-06-02T18:30:00",
-    "time": "6:30 PM",
-    "venue": "New-York Historical Society",
-    "neighborhood": "Upper West Side",
-    "price": "",
-    "url": "https://d5j56304.na1.hubspotlinks.com/Ctc/Y+113/d5j56304/VX57Gv2yf-mRW3WlQ04561KX9W8yJSQm5PLW68N1TFhvK3lcq-W8wLKSR6lZ3nNW4prvn61JR0QlMSq5X73VbHgW13pZyL46ygxRW6q2VTb4DxRnyVxtDxT5QfxwQW8jTDRj1c7STzW7HdG7g8FFCmJW3L4n4B4SC-QhVQBTY42FDPyvW81qvkl7XlJmfW1znK_995_lDmVpCqjQ550dhDW7gvfzk6Dbd2yW6m64Y04rrTdHW1l7B1p75mBxZW434FwK2cMQ6nW4V6BqK9b8TzNW2pwTcB2xbn0VW4K484d3tB5s2W8QB-Rw11xwN6N4V791VSz5pmW6-B2vQ88cTRwW7PvxCR2ww2h_N1q8ZZfyrVB6W4lwJ6Y7FbsP0W92Tv5F6tjR31W4S9L6g1XY38dW3xlKkR8FC1-Bf1nn5Sg04",
-    "category": "talks_lectures",
-    "source": "New-York Historical Society",
-    "via": ["Thought Gallery / The Curriculum"],
-    "why": "The curatorial team discusses the just-opened exhibition exploring how women experienced — and shaped — the American Revolution."
-  },
-  {
-    "id": "thought-gallery-indian-princessses-atlantic-thru-0607",
-    "name": "Indian Princessses (Off-Broadway, final week)",
-    "dateISO": "2026-06-02T20:00:00",
-    "time": "8:00 PM",
-    "venue": "Atlantic Theater Company / Linda Gross Theater",
-    "neighborhood": "Chelsea",
-    "price": "",
-    "url": "https://d5j56304.na1.hubspotlinks.com/Ctc/Y+113/d5j56304/VX57Gv2yf-mRW3WlQ04561KX9W8yJSQm5PLW68N1TFhv63lcq-W7lCdLW6lZ3kZW5DnzPG4R0yD-W9hhZfl6T7LD8N46LkTcdFmCVVydBkd4vK2-zN1J_Rd4nxQhdW1TpXz63710_JTmybt7dG6z8W4SKqgK8t1ZnBW3KlpP65-tQJHW7-cht911G9_PVStSJQ5wpBc0W23svwF1zFMYdW20RkVk13VDC8W5R7X-_7fC8wRW5Y2SdQ4P8mrnW397Zlt2j1S3pW4dgbR28NwFLrW1fQN6J3Sxb_cTv4TL7k-N-fW4g-yLw70bsKjW17QX5C6dRP6bN5dM-TV2J9H8N3JbZxnhkTZNW5WRpjb3LRDytf65b7Tj04",
-    "category": "talks_lectures",
-    "source": "Atlantic Theater Company",
-    "via": ["Thought Gallery / The Curriculum"],
-    "why": "Final week of Eliana Theologides Rodriguez's Off-Broadway satire about multiracial preteen girls and their white dads, featuring Tony-winner Frank Wood — runs through June 7."
-  },
-  {
-    "id": "gary-guide-masters-scale-ibm-0602",
-    "name": "Masters of Scale Live with Arvind Krishna (CEO, IBM)",
-    "dateISO": "2026-06-02T10:00:00",
-    "time": "10:00 AM",
-    "venue": "IBM (Midtown)",
-    "neighborhood": "Midtown",
+    "id": "skint-rooftop-films-griner-0601",
+    "name": "Rooftop Films: The Brittney Griner Story",
+    "dateISO": "2026-06-01T19:00:00",
+    "time": "7:00 PM",
+    "venue": "Gansevoort Plaza",
+    "neighborhood": "Meatpacking District",
     "price": "Free",
-    "url": "http://gary.to/m8wb088",
-    "category": "tech_ai",
-    "source": "Masters of Scale / IBM",
-    "via": ["Gary's Guide"],
-    "why": "Live recording of the Masters of Scale podcast featuring IBM CEO Arvind Krishna, as part of NY Tech Week."
+    "url": "https://rooftopfilms.com/event/the-brittney-griner-story/",
+    "category": "film_screenings",
+    "source": "Rooftop Films",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Rooftop Films' 30th summer series opens with Alexandria Stapleton's documentary about WNBA star Brittney Griner."
+  },
+  {
+    "id": "skint-miss-manhattan-nonfiction-0601",
+    "name": "Miss Manhattan Non-Fiction Reading Series",
+    "dateISO": "2026-06-01T19:30:00",
+    "time": "7:30 PM",
+    "venue": "Niagara Bar",
+    "neighborhood": "East Village",
+    "price": "Free",
+    "url": "https://www.elyssamaxxgoodman.com/miss-manhattan-nonfiction-reading-series",
+    "category": "talks_lectures",
+    "source": "Miss Manhattan",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Monthly showcase with readings from Michelle Young (The Art Spy), Jason Irwin, Jee Leong Koh, and Ava Emilione."
+  },
+  {
+    "id": "skint-be-gay-do-crime-nitehawk-thru-0629",
+    "name": "Be Gay, Do Crime: Queer Film Series at Nitehawk (through Jun 29)",
+    "dateISO": "2026-06-01T20:00:00",
+    "time": "Various times",
+    "venue": "Nitehawk Cinema",
+    "neighborhood": "Williamsburg",
+    "price": "$15\u201317",
+    "url": "https://nitehawkcinema.com/",
+    "category": "film_screenings",
+    "source": "Nitehawk Cinema",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Nitehawk's curated queer cinema series through June 29 with Bad Education, Law of Desire, Pink Flamingos, Strangers on a Train, Women Who Kill, and more."
+  },
+  {
+    "id": "skint-macabre-mondays-baker-falls-thru-0629",
+    "name": "Scream Scene's Macabre Mondays (through Jun 29)",
+    "dateISO": "2026-06-01T20:00:00",
+    "time": "Mondays",
+    "venue": "Baker Falls",
+    "neighborhood": "Lower East Side",
+    "price": "Free",
+    "url": "https://www.instagram.com/p/DYzVQ-ajttr/",
+    "category": "film_screenings",
+    "source": "Scream Scene",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Weekly free horror and cult film screenings through June 29 \u2014 The Shining, Night of the Creeps, Drag Me to Hell, Midsommar, Dead Alive."
+  },
+  {
+    "id": "skint-carnegie-faure-requiem-0601",
+    "name": "Masterwork Festival: Faur\u00e9 Requiem & Jake Runestad",
+    "dateISO": "2026-06-01T20:00:00",
+    "time": "8:00 PM",
+    "venue": "Carnegie Hall",
+    "neighborhood": "Midtown",
+    "price": "$14 (use code clb53914)",
+    "url": "https://www.carnegiehall.org/calendar/2026/06/01/new-york-city-chamber-orchestra-and-masterwork-chorus-0800pm",
+    "category": "talks_lectures",
+    "source": "Carnegie Hall / Manhattan Concert Productions",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Faur\u00e9's Requiem \u2014 the 'lullaby of death' \u2014 alongside Jake Runestad's Walt Whitman\u2013inspired Proud Music of the Storm."
+  },
+  {
+    "id": "skint-david-cross-littlefield-0601",
+    "name": "David Cross: Shootin' the Sh*t, Seein' What Sticks",
+    "dateISO": "2026-06-01T20:00:00",
+    "time": "8:00 PM",
+    "venue": "Littlefield",
+    "neighborhood": "Gowanus",
+    "price": "$10\u2013$16 (use code cross7)",
+    "url": "https://littlefieldnyc.com/event/?wfea_eb_id=88969437128",
+    "category": "talks_lectures",
+    "source": "Littlefield",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Comedian David Cross (Mr. Show, Arrested Development) works out new material at Littlefield."
   },
   {
     "id": "gary-guide-b2b-founders-funders-0602",
@@ -388,8 +330,26 @@
     "url": "http://gary.to/la3vlfy",
     "category": "tech_ai",
     "source": "Forum Ventures",
-    "via": ["Gary's Guide"],
+    "via": [
+      "Gary's Guide"
+    ],
     "why": "Breakfast connecting B2B founders and investors with Forum Ventures, Intercom, and Cooley during NY Tech Week."
+  },
+  {
+    "id": "gary-guide-masters-scale-ibm-0602",
+    "name": "Masters of Scale Live with Arvind Krishna (CEO, IBM)",
+    "dateISO": "2026-06-02T10:00:00",
+    "time": "10:00 AM",
+    "venue": "IBM (Midtown)",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "http://gary.to/m8wb088",
+    "category": "tech_ai",
+    "source": "Masters of Scale / IBM",
+    "via": [
+      "Gary's Guide"
+    ],
+    "why": "Live recording of the Masters of Scale podcast featuring IBM CEO Arvind Krishna, as part of NY Tech Week."
   },
   {
     "id": "gary-guide-match-house-ny-0602",
@@ -402,7 +362,9 @@
     "url": "http://gary.to/08pmmqu",
     "category": "tech_ai",
     "source": "MATCH HOUSE",
-    "via": ["Gary's Guide"],
+    "via": [
+      "Gary's Guide"
+    ],
     "why": "Founder-investor matching event at the rooftop of Hotel Indigo LES during NY Tech Week."
   },
   {
@@ -416,22 +378,122 @@
     "url": "http://gary.to/wbzut1z",
     "category": "tech_ai",
     "source": "Swissnex",
-    "via": ["Gary's Guide"],
+    "via": [
+      "Gary's Guide"
+    ],
     "why": "Networking event connecting Swiss and US tech innovators during NY Tech Week."
   },
   {
-    "id": "thought-gallery-watchers-cbh-0603",
-    "name": "Who Watches the Watchers? Surveillance, Power, and Accountability",
-    "dateISO": "2026-06-03T18:30:00",
+    "id": "thought-gallery-revolutionary-women-nyhistorical-0602",
+    "name": "Revolutionary Women: Exhibition Opening Conversation",
+    "dateISO": "2026-06-02T18:30:00",
     "time": "6:30 PM",
-    "venue": "Center for Brooklyn History",
-    "neighborhood": "Brooklyn Heights",
+    "venue": "New-York Historical Society",
+    "neighborhood": "Upper West Side",
     "price": "",
-    "url": "https://d5j56304.na1.hubspotlinks.com/Ctc/Y+113/d5j56304/VX57Gv2yf-mRW3WlQ04561KX9W8yJSQm5PLW68N1TFhvK3lcq-W8wLKSR6lZ3mxVZbNxG4KcG8YW1VyyzN6CJdQCW2pcGyH8-vyCfVmgNMZ5NmWpZW606MsW1vbvMvN80ZG6g84jrjW7WWYb76YGT0sW6QnqLr8qhcV9VlnzJJ30m-1QW7YcyPy63jd-CW5DHKB34Hxc32W7VJLqw4z53Y2W4nvFMn1M6-mPW125knw6QXFsfW2yV8Dd6sZZdGW4k_NfN328vSFVkhzVP60lm_nW3xcfwL5R1lqyW8VZd8n4JcftyW12Mj1M3VrNbMW1zCzwF2Vvq1dW32ZnSJ5STNM9W4xtJyz5KndClW3G6JGL8ydDQsW27980L8r_hkLW46PMQS7pNQDfN2T3tT-9L5wRV8PSJt4BnqrXf1X2vFd04",
+    "url": "https://d5j56304.na1.hubspotlinks.com/Ctc/Y+113/d5j56304/VX57Gv2yf-mRW3WlQ04561KX9W8yJSQm5PLW68N1TFhvK3lcq-W8wLKSR6lZ3nNW4prvn61JR0QlMSq5X73VbHgW13pZyL46ygxRW6q2VTb4DxRnyVxtDxT5QfxwQW8jTDRj1c7STzW7HdG7g8FFCmJW3L4n4B4SC-QhVQBTY42FDPyvW81qvkl7XlJmfW1znK_995_lDmVpCqjQ550dhDW7gvfzk6Dbd2yW6m64Y04rrTdHW1l7B1p75mBxZW434FwK2cMQ6nW4V6BqK9b8TzNW2pwTcB2xbn0VW4K484d3tB5s2W8QB-Rw11xwN6N4V791VSz5pmW6-B2vQ88cTRwW7PvxCR2ww2h_N1q8ZZfyrVB6W4lwJ6Y7FbsP0W92Tv5F6tjR31W4S9L6g1XY38dW3xlKkR8FC1-Bf1nn5Sg04",
     "category": "talks_lectures",
-    "source": "Center for Brooklyn History",
-    "via": ["Thought Gallery / The Curriculum"],
-    "why": "Expert panel of legal scholars, advocates, and organizers examining the fight for accountability around surveillance technology."
+    "source": "New-York Historical Society",
+    "via": [
+      "Thought Gallery / The Curriculum"
+    ],
+    "why": "The curatorial team discusses the just-opened exhibition exploring how women experienced \u2014 and shaped \u2014 the American Revolution."
+  },
+  {
+    "id": "thought-gallery-red-hype-blue-fabrik-0602",
+    "name": "Red, Hype, and Blue: What 1976 Reveals About America at 250",
+    "dateISO": "2026-06-02T19:00:00",
+    "time": "7:00 PM",
+    "venue": "Fabrik NYC",
+    "neighborhood": "Midtown",
+    "price": "",
+    "url": "https://d5j56304.na1.hubspotlinks.com/Ctc/Y+113/d5j56304/VX57Gv2yf-mRW3WlQ04561KX9W8yJSQm5PLW68N1TFhw03lcq-W95jsWP6lZ3mbW6GDXms4NxWtJW2z289K9cmRvVW9dRv2N3SzF3sVVJRNS5czZnQW58VDyv8YWFFnW1gRnH15b5NPWW4yDLn82nHj-TVLhK-53g8GP5W9bSZrj6tDDZ2W3Fn4N95n77VbW1H2ZXk7Mh-cjW9563nV2TH4cxW2D4XRH9flQrRW2M6MKR8_hPstW1k_qYJ8lcw7vW812Ftq7cF_Z4W3l9nl562RCw1W3rDJYL365R-8W2zRDzW5pJ2F-W2dHJ4Z1vj7DTW1yKdLW4xH_nLW7RkQCj3PVRm-W7dnqpJ3pgGmHW7DctnR1szQBZW6GXX621ZPTjmW3H4GvT48t3dgW9cZy8N913pfxW8pH57l5BhtYkW7vSJcv7dd5PtW2Fd5Bt6ZbFCbf6lZYR804",
+    "category": "talks_lectures",
+    "source": "Fabrik NYC / Wisdom Bar",
+    "via": [
+      "Thought Gallery / The Curriculum"
+    ],
+    "why": "Public historian Luke G. Boyd explores what America's Bicentennial celebrations \u2014 and omissions \u2014 reveal about democracy at 250."
+  },
+  {
+    "id": "thought-gallery-art-saving-democracy-bam-0602",
+    "name": "The Art of Saving Democracy: Launch Event",
+    "dateISO": "2026-06-02T19:00:00",
+    "time": "7:00 PM",
+    "venue": "Brooklyn Academy of Music (BAM)",
+    "neighborhood": "Fort Greene",
+    "price": "",
+    "url": "https://d5j56304.na1.hubspotlinks.com/Ctc/Y+113/d5j56304/VX57Gv2yf-mRW3WlQ04561KX9W8yJSQm5PLW68N1TFhvq3lcq-W7Y8-PT6lZ3lMVXFv6h4qSkwCW4ZbBn63pfvYwW1fWWwZ6Y0kCvVvH0z07Nf9XQN2Phd0mZqch-W5W3x0l32swYdVxKqXP6G2F9BW3BMMX-4nV3pKW4nGRZG1WwFt9VTRgPW6Yng4lW4rlC1X86LX6SW59H5Bs1JLJVZW5qBlJ72TTwSyW1t9CmC8Y70H_W2z3wZ93HkCq_W77pLxD7Vt8JmW4N41VS4THpn-W88pbS026V6WqW37jM_74hB0kzW7ZhvzB25qcxrW30rGFZ7JlNLBW1WKG0j3l1h05N4cWs5vH6nHkW502McV7BPRcHW97CLTv4JmQ5JW8lcfwd78mWRmf51Gb8W04",
+    "category": "talks_lectures",
+    "source": "Brooklyn Academy of Music (BAM)",
+    "via": [
+      "Thought Gallery / The Curriculum"
+    ],
+    "why": "Artist Vincent Valdez and Debbie Millman (Design Matters) discuss freedom of expression at the launch of a civic-engagement toolkit; opening remarks by Kathleen Turner."
+  },
+  {
+    "id": "thought-gallery-jill-biden-92y-0602",
+    "name": "View From the East Wing: Jill Biden in conversation with Whoopi Goldberg",
+    "dateISO": "2026-06-02T19:30:00",
+    "time": "7:30 PM",
+    "venue": "92nd Street Y",
+    "neighborhood": "Upper East Side",
+    "price": "",
+    "url": "https://d5j56304.na1.hubspotlinks.com/Ctc/Y+113/d5j56304/VX57Gv2yf-mRW3WlQ04561KX9W8yJSQm5PLW68N1TFhvK3lcq-W8wLKSR6lZ3lcW6Z1YkP1htWJpW77V85Y8qTv_lN8nkR1KSWbVWW1rSmlN6wTR0XW6xgJL96_hZjrW404G1213gqPcW3N9y0n57MvBKW5wRhd654H2nxW4RtQQG31xXZXW7qbGKl4q30LgW1GqdRV1q3JpbW8Bccg91T33Z9W7BC3903tV08zW7PWQ5v4gRh64W7j2DWC5Sp_SsVgYMJQ1zpTCWW7wT7bP5j781vW78gs-15BRlpvW48JdQk1Sh4vmW5WMFTt5sSWkbW6jmfyD12LrS3W3SbWWT4NFYsXW30PC5F6gcR5WVwwGv76Bh5FhW2Nhj8J6mZ-dhW33SYbD3GH3DRW1kPwSx2jZz2zW8y-by92PKWtLf1Lk0vx04",
+    "category": "talks_lectures",
+    "source": "92nd Street Y",
+    "via": [
+      "Thought Gallery / The Curriculum"
+    ],
+    "why": "Jill Biden discusses her memoir about four years as the only First Lady who held an outside career, in conversation with Whoopi Goldberg."
+  },
+  {
+    "id": "thought-gallery-indian-princessses-atlantic-thru-0607",
+    "name": "Indian Princessses (Off-Broadway, final week)",
+    "dateISO": "2026-06-02T20:00:00",
+    "time": "8:00 PM",
+    "venue": "Atlantic Theater Company / Linda Gross Theater",
+    "neighborhood": "Chelsea",
+    "price": "",
+    "url": "https://d5j56304.na1.hubspotlinks.com/Ctc/Y+113/d5j56304/VX57Gv2yf-mRW3WlQ04561KX9W8yJSQm5PLW68N1TFhv63lcq-W7lCdLW6lZ3kZW5DnzPG4R0yD-W9hhZfl6T7LD8N46LkTcdFmCVVydBkd4vK2-zN1J_Rd4nxQhdW1TpXz63710_JTmybt7dG6z8W4SKqgK8t1ZnBW3KlpP65-tQJHW7-cht911G9_PVStSJQ5wpBc0W23svwF1zFMYdW20RkVk13VDC8W5R7X-_7fC8wRW5Y2SdQ4P8mrnW397Zlt2j1S3pW4dgbR28NwFLrW1fQN6J3Sxb_cTv4TL7k-N-fW4g-yLw70bsKjW17QX5C6dRP6bN5dM-TV2J9H8N3JbZxnhkTZNW5WRpjb3LRDytf65b7Tj04",
+    "category": "talks_lectures",
+    "source": "Atlantic Theater Company",
+    "via": [
+      "Thought Gallery / The Curriculum"
+    ],
+    "why": "Final week of Eliana Theologides Rodriguez's Off-Broadway satire about multiracial preteen girls and their white dads, featuring Tony-winner Frank Wood \u2014 runs through June 7."
+  },
+  {
+    "id": "gary-guide-forbes-iconoclast-0603",
+    "name": "Forbes Iconoclast Summit",
+    "dateISO": "2026-06-03T09:00:00",
+    "time": "9:00 AM",
+    "venue": "Midtown Manhattan",
+    "neighborhood": "Midtown",
+    "price": "",
+    "url": "http://gary.to/znys2t7",
+    "category": "tech_ai",
+    "source": "Forbes",
+    "via": [
+      "Gary's Guide"
+    ],
+    "why": "Leadership summit with Brian Moynihan (BofA), Ray Dalio (Bridgewater), Alex Clavel (SoftBank Vision Funds), and Mary Callahan Erdoes."
+  },
+  {
+    "id": "nybg-farmers-market-0603",
+    "name": "NYBG Farmers Market",
+    "dateISO": "2026-06-03T10:00:00",
+    "time": "10:00 AM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "Bronx",
+    "price": "Free with admission",
+    "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIJbklQIoyOPHA74wV_4JmaaRFISCzbI1fyIk44Z7OIKmLlJCQrYt3oYx",
+    "category": "tours_experiences",
+    "source": "New York Botanical Garden",
+    "via": [
+      "NYBG"
+    ],
+    "why": "Weekly farmers market at the NYBG with 15 rotating vendors, Fino Farms, and Trinity Farms produce \u2014 Wednesdays 10 AM\u20133 PM."
   },
   {
     "id": "gary-guide-ai-market-foresight-0603",
@@ -444,7 +506,9 @@
     "url": "http://gary.to/3nq4ca4",
     "category": "tech_ai",
     "source": "NY Tech Week",
-    "via": ["Gary's Guide"],
+    "via": [
+      "Gary's Guide"
+    ],
     "why": "Interactive live simulation exploring AI's impact on markets with practitioners and analysts."
   },
   {
@@ -458,22 +522,10 @@
     "url": "http://gary.to/c5lc4fj",
     "category": "tech_ai",
     "source": "UpScaleX / Room 52",
-    "via": ["Gary's Guide"],
-    "why": "AI startup pitches with a comedic twist on a comedy stage — no adversarial Shark Tank format."
-  },
-  {
-    "id": "gary-guide-forbes-iconoclast-0603",
-    "name": "Forbes Iconoclast Summit",
-    "dateISO": "2026-06-03T09:00:00",
-    "time": "9:00 AM",
-    "venue": "Midtown Manhattan",
-    "neighborhood": "Midtown",
-    "price": "",
-    "url": "http://gary.to/znys2t7",
-    "category": "tech_ai",
-    "source": "Forbes",
-    "via": ["Gary's Guide"],
-    "why": "Leadership summit with Brian Moynihan (BofA), Ray Dalio (Bridgewater), Alex Clavel (SoftBank Vision Funds), and Mary Callahan Erdoes."
+    "via": [
+      "Gary's Guide"
+    ],
+    "why": "AI startup pitches with a comedic twist on a comedy stage \u2014 no adversarial Shark Tank format."
   },
   {
     "id": "gary-guide-building-ai-companies-0603",
@@ -486,36 +538,26 @@
     "url": "http://gary.to/6ez3any",
     "category": "tech_ai",
     "source": "TheAgentic",
-    "via": ["Gary's Guide"],
+    "via": [
+      "Gary's Guide"
+    ],
     "why": "Practitioner panel on the operational and engineering challenges of scaling AI products, at Datadog's offices in the NY Times Building."
   },
   {
-    "id": "nypl-legacy-latin-hustle-0604",
-    "name": "The Legacy of Latin Hustle",
-    "dateISO": "2026-06-04T18:00:00",
-    "time": "6:00 PM",
-    "venue": "Library for the Performing Arts (Lincoln Center)",
-    "neighborhood": "Upper West Side",
-    "price": "Free",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzC5XULoCAaBcvLSRkXTmHNJUMzPaH3imxop-DPewGlemj8nhl-nKAMVdj20fHIO3b-gNCcXjksnBMYpOVCY9bUl",
-    "category": "talks_lectures",
-    "source": "New York Public Library",
-    "via": ["NYPL"],
-    "why": "NYPL's Library for the Performing Arts presents a program exploring the history and cultural legacy of the Latin Hustle dance style."
-  },
-  {
-    "id": "thought-gallery-npcs-consciousness-osnyc-0604",
-    "name": "NPCs and Consciousness",
-    "dateISO": "2026-06-04T19:00:00",
-    "time": "7:00 PM",
-    "venue": "OS NYC",
-    "neighborhood": "Lower East Side",
+    "id": "thought-gallery-watchers-cbh-0603",
+    "name": "Who Watches the Watchers? Surveillance, Power, and Accountability",
+    "dateISO": "2026-06-03T18:30:00",
+    "time": "6:30 PM",
+    "venue": "Center for Brooklyn History",
+    "neighborhood": "Brooklyn Heights",
     "price": "",
-    "url": "https://d5j56304.na1.hubspotlinks.com/Ctc/Y+113/d5j56304/VX57Gv2yf-mRW3WlQ04561KX9W8yJSQm5PLW68N1TFhvK3lcq-W8wLKSR6lZ3nZW4yHw2d7NyRmKW5Y3qBy5kt9dWW8RmlNt3r7nchW12MnbD3nffjTW7xfBJB2FcsHrW3t6mM57d0HlwW4S-CKd3rzlR1W7XzfLv1c1y_JW4qGyzx58Dj32W91Jzkq3mylZGW6ZDkB81ZzBHfW76mKY16zt7BLW6w31q33hyK89W1gkWk44kpCF8W7Z78Mv8MySDKW3pQVGL5Y-f0nW2LvPCR1lRSzxW8Z04FQ2dfT-HW98Zbn_4F_L8qW4YqCpN8d1wC5F2tS3CDC8FgVq7f-_1l9sH5W5v1XR63wHvlfW66xPjM3VxPQQW45czF228QwPjW1lD8Fk3QjzL5V-DQRJ5-kxJgVWHFyK8Dpx1Jf2vl_bC04",
-    "category": "tech_ai",
-    "source": "OS NYC",
-    "via": ["Thought Gallery / The Curriculum"],
-    "why": "CUNY philosopher Dr. Richard Brown speaks on Non-Player Characters, simulations, and how to know we're not NPCs in someone else's narrative — part of NY Tech Week."
+    "url": "https://d5j56304.na1.hubspotlinks.com/Ctc/Y+113/d5j56304/VX57Gv2yf-mRW3WlQ04561KX9W8yJSQm5PLW68N1TFhvK3lcq-W8wLKSR6lZ3mxVZbNxG4KcG8YW1VyyzN6CJdQCW2pcGyH8-vyCfVmgNMZ5NmWpZW606MsW1vbvMvN80ZG6g84jrjW7WWYb76YGT0sW6QnqLr8qhcV9VlnzJJ30m-1QW7YcyPy63jd-CW5DHKB34Hxc32W7VJLqw4z53Y2W4nvFMn1M6-mPW125knw6QXFsfW2yV8Dd6sZZdGW4k_NfN328vSFVkhzVP60lm_nW3xcfwL5R1lqyW8VZd8n4JcftyW12Mj1M3VrNbMW1zCzwF2Vvq1dW32ZnSJ5STNM9W4xtJyz5KndClW3G6JGL8ydDQsW27980L8r_hkLW46PMQS7pNQDfN2T3tT-9L5wRV8PSJt4BnqrXf1X2vFd04",
+    "category": "talks_lectures",
+    "source": "Center for Brooklyn History",
+    "via": [
+      "Thought Gallery / The Curriculum"
+    ],
+    "why": "Expert panel of legal scholars, advocates, and organizers examining the fight for accountability around surveillance technology."
   },
   {
     "id": "gary-guide-european-innovation-summit-0604",
@@ -528,7 +570,9 @@
     "url": "http://gary.to/is3y0iq",
     "category": "tech_ai",
     "source": "Swissnex / Enterprise Ireland",
-    "via": ["Gary's Guide"],
+    "via": [
+      "Gary's Guide"
+    ],
     "why": "Multi-national European innovation summit with Swissnex, Netherlands, Norway, Czech Republic, Spain, and Ireland."
   },
   {
@@ -542,22 +586,26 @@
     "url": "http://gary.to/xvn696c",
     "category": "tech_ai",
     "source": "NY Tech Week",
-    "via": ["Gary's Guide"],
+    "via": [
+      "Gary's Guide"
+    ],
     "why": "Summit on AI and longevity science featuring Shift Biosciences, Oura, XPRIZE, Compound VC, and Function Health."
   },
   {
-    "id": "gary-guide-founders-funders-rooftop-0604",
-    "name": "Founders & Funders Rooftop Party",
-    "dateISO": "2026-06-04T18:00:00",
-    "time": "6:00 PM",
-    "venue": "Mr. Purple (Hotel Indigo LES)",
-    "neighborhood": "Lower East Side",
-    "price": "Free",
-    "url": "http://gary.to/9zmxe4g",
+    "id": "cerebralvalley-ny-tech-week-2026-06-02",
+    "name": "NY Tech Week 2026 (June 2\u20137)",
+    "dateISO": "2026-06-04T09:00:00",
+    "time": "All week",
+    "venue": "Multiple venues, Manhattan",
+    "neighborhood": "Various",
+    "price": "Various (many free)",
+    "url": "https://elinkac1.mail.cerebralvalley.ai/ss/c/u001.WdgDeYwiPuACT2DM9v_9UzEHuU_d1EXRHutJZ3K5E1dHGT1uqZ-dAZVJxbdqUz4ee0m-WrfpYyGOgvCpIwD0hiX7cmZD-dSzwwTyKoHeDCIfALgNWQS-hRh10iDAVdxB3axyvpaynrQiuMRxWpzEkH6YHuSiPu2Iih0WP2OdzDReZm9C2q0J4emIj6YUl8nKMKp6RPjUYpqceibE_wjP0bQg-Y1gLRtepettWBnhCiS4VrtyBDW9xiI9h5DBNiUh_1nMAloXIiUw5RFFw8f1WlPd2_PMqZR7PWM8-jYjiEB_-53je-1EQSed4EpRCWRoi3CUIwkAF_Ur7u-BA7xgog4HV-YQrZ3ytjOWgCdka9zMEel9sNsv2HDg2iHC5QBNy4y2cu49_k1qXosM25XxpQcJHfoH34LeIKx9sJdDCzWlF0AvbggTw0NVtZElo2f04Fdq9v1rZh2XsT9avvohUV5xSn6Vqdsa3Omd3X1j5hWVgT5mNlNw6qM5yr6CRoBlqk2O2b5gXu9PRoQgAJpYpCHl5ah_IvKWJ4N-BOyFNkpvk8XnDfVtMm-Iu1bri8cbFJr0rX_S1aF9MZw8K0x2-sVbWGOrD2vixofWR_E0CB7RQjCFYKWJZVniHOEtZIQgmPozVpovaB0q9-rHPkOrgw/4r4/hxaB-7bFTnKp_77F3-ZOeg/h0/h001.Fy-ijYAn4PQhJJe53zBXRu1c3nUcbJKeMDCRh768364",
     "category": "tech_ai",
-    "source": "NYU Tandon Future Labs / Carta",
-    "via": ["Gary's Guide"],
-    "why": "Rooftop networking party for founders and investors at Mr. Purple during NY Tech Week."
+    "source": "NY Tech Week / Cerebral Valley",
+    "via": [
+      "Cerebral Valley"
+    ],
+    "why": "New York's annual tech and AI week\u2014hundreds of events from pitches and hackathons to panels and networking, June 2\u20137 across Manhattan."
   },
   {
     "id": "gary-guide-happy-wellness-demo-day-0604",
@@ -570,22 +618,58 @@
     "url": "http://gary.to/0neqlwq",
     "category": "tech_ai",
     "source": "Happy Wellness Group",
-    "via": ["Gary's Guide"],
+    "via": [
+      "Gary's Guide"
+    ],
     "why": "Demo day featuring Andrew Yang (CEO, Noble Mobile) and investor judges at the Gerald Lynch Theater."
   },
   {
-    "id": "gary-guide-claude-code-hackathon-0604",
-    "name": "Claude Code Hackathon",
-    "dateISO": "2026-06-04T16:30:00",
-    "time": "4:30 PM",
-    "venue": "Midtown Manhattan",
-    "neighborhood": "Midtown",
-    "price": "Free",
-    "url": "http://gary.to/7uosawq",
-    "category": "tech_ai",
-    "source": "NY Tech Week / Anthropic",
-    "via": ["Gary's Guide"],
-    "why": "Hands-on hackathon using Claude Code to build agentic workflows during NY Tech Week."
+    "id": "nybg-flower-power-exhibition-2026-06-04",
+    "name": "Flower Power Exhibition at NYBG",
+    "dateISO": "2026-06-04T10:00:00",
+    "time": "10:00 AM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "Bronx",
+    "price": "Paid (with admission)",
+    "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIIzckwIoyOPHAzc6zz-jts0f437F41tkDDx8CE7Gr5nAuk2PqwEjAvnB",
+    "category": "art_exhibitions",
+    "source": "New York Botanical Garden",
+    "via": [
+      "NYBG"
+    ],
+    "why": "Channel the spirit of the '60s at Flower Power\u2014vibrant botanical displays celebrating the era's counterculture with Andy Warhol photography."
+  },
+  {
+    "id": "nybg-summer-of-moomin-2026-06-04",
+    "name": "Summer of Moomin at NYBG",
+    "dateISO": "2026-06-04T10:00:00",
+    "time": "10:00 AM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "Bronx",
+    "price": "Paid (with admission)",
+    "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIJHckwIoyOPHA67bMvg_VL5YezgvUzUsSy6XFDxiETJAPE88M28xOl3Y",
+    "category": "art_exhibitions",
+    "source": "New York Botanical Garden",
+    "via": [
+      "NYBG"
+    ],
+    "why": "The beloved inhabitants of Moominvalley arrive at NYBG\u2014a celebration of Tove Jansson's universe with a clue-based quest, nature crafts, and giant character photo moments."
+  },
+  {
+    "id": "brooklyn-museum-iris-van-herpen-2026-06-04",
+    "name": "Iris van Herpen: Sculpting the Senses (Exhibition)",
+    "dateISO": "2026-06-04T11:00:00",
+    "time": "11:00 AM",
+    "venue": "Brooklyn Museum",
+    "neighborhood": "Prospect Heights",
+    "price": "Paid (members 40% off)",
+    "url": "https://secure.brooklynmuseum.org/19448?promob09",
+    "category": "art_exhibitions",
+    "source": "Brooklyn Museum",
+    "via": [
+      "Brooklyn Museum"
+    ],
+    "why": "Iris van Herpen's extraordinary haute couture creations explore technology and nature\u2014described as one of the most innovative fashion exhibitions in recent memory."
   },
   {
     "id": "gary-guide-agent-building-hackathon-0604",
@@ -598,8 +682,106 @@
     "url": "http://gary.to/2zh5sdj",
     "category": "tech_ai",
     "source": "NY Tech Week",
-    "via": ["Gary's Guide"],
+    "via": [
+      "Gary's Guide"
+    ],
     "why": "Structured hackathon focused on building and deploying AI agent systems from scratch."
+  },
+  {
+    "id": "gary-guide-claude-code-hackathon-0604",
+    "name": "Claude Code Hackathon",
+    "dateISO": "2026-06-04T16:30:00",
+    "time": "4:30 PM",
+    "venue": "Midtown Manhattan",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "http://gary.to/7uosawq",
+    "category": "tech_ai",
+    "source": "NY Tech Week / Anthropic",
+    "via": [
+      "Gary's Guide"
+    ],
+    "why": "Hands-on hackathon using Claude Code to build agentic workflows during NY Tech Week."
+  },
+  {
+    "id": "nypl-legacy-latin-hustle-0604",
+    "name": "The Legacy of Latin Hustle",
+    "dateISO": "2026-06-04T18:00:00",
+    "time": "6:00 PM",
+    "venue": "Library for the Performing Arts (Lincoln Center)",
+    "neighborhood": "Upper West Side",
+    "price": "Free",
+    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzC5XULoCAaBcvLSRkXTmHNJUMzPaH3imxop-DPewGlemj8nhl-nKAMVdj20fHIO3b-gNCcXjksnBMYpOVCY9bUl",
+    "category": "talks_lectures",
+    "source": "New York Public Library",
+    "via": [
+      "NYPL"
+    ],
+    "why": "NYPL's Library for the Performing Arts presents a program exploring the history and cultural legacy of the Latin Hustle dance style."
+  },
+  {
+    "id": "gary-guide-founders-funders-rooftop-0604",
+    "name": "Founders & Funders Rooftop Party",
+    "dateISO": "2026-06-04T18:00:00",
+    "time": "6:00 PM",
+    "venue": "Mr. Purple (Hotel Indigo LES)",
+    "neighborhood": "Lower East Side",
+    "price": "Free",
+    "url": "http://gary.to/9zmxe4g",
+    "category": "tech_ai",
+    "source": "NYU Tandon Future Labs / Carta",
+    "via": [
+      "Gary's Guide"
+    ],
+    "why": "Rooftop networking party for founders and investors at Mr. Purple during NY Tech Week."
+  },
+  {
+    "id": "thought-gallery-npcs-consciousness-osnyc-0604",
+    "name": "NPCs and Consciousness",
+    "dateISO": "2026-06-04T19:00:00",
+    "time": "7:00 PM",
+    "venue": "OS NYC",
+    "neighborhood": "Lower East Side",
+    "price": "",
+    "url": "https://d5j56304.na1.hubspotlinks.com/Ctc/Y+113/d5j56304/VX57Gv2yf-mRW3WlQ04561KX9W8yJSQm5PLW68N1TFhvK3lcq-W8wLKSR6lZ3nZW4yHw2d7NyRmKW5Y3qBy5kt9dWW8RmlNt3r7nchW12MnbD3nffjTW7xfBJB2FcsHrW3t6mM57d0HlwW4S-CKd3rzlR1W7XzfLv1c1y_JW4qGyzx58Dj32W91Jzkq3mylZGW6ZDkB81ZzBHfW76mKY16zt7BLW6w31q33hyK89W1gkWk44kpCF8W7Z78Mv8MySDKW3pQVGL5Y-f0nW2LvPCR1lRSzxW8Z04FQ2dfT-HW98Zbn_4F_L8qW4YqCpN8d1wC5F2tS3CDC8FgVq7f-_1l9sH5W5v1XR63wHvlfW66xPjM3VxPQQW45czF228QwPjW1lD8Fk3QjzL5V-DQRJ5-kxJgVWHFyK8Dpx1Jf2vl_bC04",
+    "category": "tech_ai",
+    "source": "OS NYC",
+    "via": [
+      "Thought Gallery / The Curriculum"
+    ],
+    "why": "CUNY philosopher Dr. Richard Brown speaks on Non-Player Characters, simulations, and how to know we're not NPCs in someone else's narrative \u2014 part of NY Tech Week."
+  },
+  {
+    "id": "prospectpark-summer-yoga-thursdays-2026-06-05",
+    "name": "Summer Yoga in Prospect Park (Weekly Thursdays)",
+    "dateISO": "2026-06-05T09:00:00",
+    "time": "9:00 AM",
+    "venue": "Prospect Park",
+    "neighborhood": "Prospect Park",
+    "price": "Free (RSVP required)",
+    "url": "https://us.list-manage.com/ieDVyuiX4lj?e=ce4c4305&c=2id7bbe46b26923a094c84942703808da",
+    "category": "workshops_classes",
+    "source": "Brooklyn Flow / Prospect Park Alliance",
+    "via": [
+      "Prospect Park"
+    ],
+    "why": "Free outdoor yoga every Thursday all summer with Brooklyn Flow\u2014all ages and levels welcome, presented with NewYork-Presbyterian Brooklyn Methodist Hospital."
+  },
+  {
+    "id": "mas-grand-central-tour-2026-06-05",
+    "name": "Grand Central Terminal Tour with MAS Docents",
+    "dateISO": "2026-06-05T10:00:00",
+    "time": "Multiple times",
+    "venue": "Grand Central Terminal",
+    "neighborhood": "Midtown",
+    "price": "Paid (members discount available)",
+    "url": "https://us.list-manage.com/1A8KNg0_ptP?e=b049e3ef&c=2id133823128cf05896eab7b3197b3f48",
+    "category": "tours_experiences",
+    "source": "Municipal Art Society Tours",
+    "via": [
+      "MAS Tours"
+    ],
+    "why": "Docent-led tours of one of NYC's most magnificent Beaux-Arts landmarks\u2014Grand Central Terminal's history, architecture, and hidden wonders."
   },
   {
     "id": "gary-guide-14m-faces-dont-exist-0605",
@@ -612,22 +794,10 @@
     "url": "http://gary.to/z047vle",
     "category": "tech_ai",
     "source": "NY Tech Week",
-    "via": ["Gary's Guide"],
-    "why": "Inside Europe's biggest avatar studio — what it actually takes to build real-time digital humans people want to watch and interact with."
-  },
-  {
-    "id": "nypl-queer-magic-after-hours-0605",
-    "name": "Library After Hours: Queer Magic",
-    "dateISO": "2026-06-05T19:30:00",
-    "time": "7:30 PM",
-    "venue": "Stephen A. Schwarzman Building (NYPL)",
-    "neighborhood": "Midtown",
-    "price": "Free",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzCs_aqmz6vGAoYhMJGhFFgxIl1rCyEM3PUHEoQVwHaQhWMnnp7_PaE6t8axEZGjg5CrxVuBMgEY8c81bS-d3681",
-    "category": "art_exhibitions",
-    "source": "New York Public Library",
-    "via": ["NYPL"],
-    "why": "Evening access to the NYPL flagship building with DJ Eugene Tambourine, collections viewings, games, puzzles, crafts, and dancing celebrating queerness and magic."
+    "via": [
+      "Gary's Guide"
+    ],
+    "why": "Inside Europe's biggest avatar studio \u2014 what it actually takes to build real-time digital humans people want to watch and interact with."
   },
   {
     "id": "nypl-elements-power-niarchos-0605",
@@ -640,36 +810,58 @@
     "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzC8zZHZAx3rhwHs80_FICV7bN_mbw9KgGQvRI2nTWfhKGsZow9jH1a88bZSj5IjJ2VLs3DX0LlP-KLQdpJWgg82",
     "category": "talks_lectures",
     "source": "New York Public Library",
-    "via": ["NYPL"],
+    "via": [
+      "NYPL"
+    ],
     "why": "Author Nicolas Niarchos and NYU's Michael Posner discuss the war for global battery metal supply chains and the human cost of decarbonization."
   },
   {
-    "id": "nypl-sapphic-saturdays-gideon-0606",
-    "name": "Sapphic Saturdays Book Club: Gideon the Ninth",
-    "dateISO": "2026-06-06T14:30:00",
-    "time": "2:30 PM",
-    "venue": "Stavros Niarchos Foundation Library (SNFL)",
-    "neighborhood": "Midtown",
-    "price": "Free",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzC5XULoCAaBcvLSRkXTmHNJUMzPaH3imxop-DPewGlemj8nhl-nKAMVdj20fHIO3b-gNCcXjksnBMYpOVCY9bUl",
+    "id": "nyhistory-stand-up-comedy-2026-06-05",
+    "name": "New York Hysterical: Stand-Up Comedy at NY Historical",
+    "dateISO": "2026-06-05T18:00:00",
+    "time": "6:00 PM",
+    "venue": "New-York Historical Society",
+    "neighborhood": "Upper West Side",
+    "price": "Free with pay-as-you-wish admission",
+    "url": "https://nyhistory.prospect2.com/lt.php?x=4lZy~GE4JaGiDKB.yw9FgOSf2XFTvgP0v-4yk5bEI3bM6aJ7_Ey7xOJz1HEj-RVfjDZo3HHLJnfs55R_0OxLYOV02nIo",
     "category": "talks_lectures",
-    "source": "New York Public Library",
-    "via": ["NYPL"],
-    "why": "Monthly sapphic book club meets to discuss Tamsyn Muir's cult necromancer fantasy novel Gideon the Ninth."
+    "source": "New-York Historical Society",
+    "via": [
+      "NY Historical Society"
+    ],
+    "why": "NYC stand-ups perform at the museum with host Tom Delgado\u2014comedian, actor, tour guide, and NYC history buff\u2014pay-as-you-wish museum hours 5\u20138 PM."
   },
   {
-    "id": "brooklyn-museum-first-saturday-pride-0606",
-    "name": "First Saturday: Brooklyn Pride at 30",
-    "dateISO": "2026-06-06T17:00:00",
-    "time": "5:00 PM",
-    "venue": "Brooklyn Museum",
-    "neighborhood": "Prospect Heights",
+    "id": "skint-bryant-park-nyc-opera-0605",
+    "name": "Bryant Park Picnic Performances: NYC Opera Honors America's 250th",
+    "dateISO": "2026-06-05T19:00:00",
+    "time": "7:00 PM",
+    "venue": "Bryant Park",
+    "neighborhood": "Midtown",
     "price": "Free",
-    "url": "https://secure.brooklynmuseum.org/14410/20197?promoQ60",
+    "url": "https://bryantpark.org/calendar/event/american-opera/2026-05-29",
+    "category": "talks_lectures",
+    "source": "Bryant Park / NYC Opera",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Free outdoor concert honoring America's 250th anniversary, featuring vocalists Larisa Mart\u00ednez, Latonia Moore, and more in an evening of American opera and musical theater."
+  },
+  {
+    "id": "nypl-queer-magic-after-hours-0605",
+    "name": "Library After Hours: Queer Magic",
+    "dateISO": "2026-06-05T19:30:00",
+    "time": "7:30 PM",
+    "venue": "Stephen A. Schwarzman Building (NYPL)",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzCs_aqmz6vGAoYhMJGhFFgxIl1rCyEM3PUHEoQVwHaQhWMnnp7_PaE6t8axEZGjg5CrxVuBMgEY8c81bS-d3681",
     "category": "art_exhibitions",
-    "source": "Brooklyn Museum",
-    "via": ["Brooklyn Museum"],
-    "why": "Monthly free evening at the Brooklyn Museum honors 30 years of Brooklyn Pride with LGBTQ+ artists, films, talks, readings, art-making, and dancing from 5–10 PM."
+    "source": "New York Public Library",
+    "via": [
+      "NYPL"
+    ],
+    "why": "Evening access to the NYPL flagship building with DJ Eugene Tambourine, collections viewings, games, puzzles, crafts, and dancing celebrating queerness and magic."
   },
   {
     "id": "gary-guide-emotionally-intelligent-ai-hackathon-0606",
@@ -682,8 +874,138 @@
     "url": "http://gary.to/7uosawq",
     "category": "tech_ai",
     "source": "ElevenLabs / Tavus",
-    "via": ["Gary's Guide"],
+    "via": [
+      "Gary's Guide"
+    ],
     "why": "Build on the emotional layer for voice AI with ElevenLabs and Tavus."
+  },
+  {
+    "id": "aiany-escape-fire-island-pines-2026-06-06",
+    "name": "AIANY Escape to Fire Island Pines",
+    "dateISO": "2026-06-06T10:30:00",
+    "time": "10:30 AM\u20134:30 PM",
+    "venue": "Fire Island Pines, NY (ferry from Bay Shore)",
+    "neighborhood": "Fire Island",
+    "price": "Paid",
+    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ4OTd9AAcAAAAAAkhUPht_hSK67UvzQ5KV3XljSOu31ROCJhnhtFnN5eXbDlEvXMWTQS7-3H9Zt5xLN1OhOX7YI38d5H6hIRPJUj4mRkY4xw",
+    "category": "tours_experiences",
+    "source": "AIA New York (AIANY)",
+    "via": [
+      "AIANY"
+    ],
+    "why": "Tour the historic Carrington House bungalow\u2014rented by Truman Capote and Bill Blass\u2014and several private homes in Fire Island Pines with AIA New York's Committee on Residential Architecture."
+  },
+  {
+    "id": "aiany-walking-tour-soho-2026-06-06",
+    "name": "Walking Tour: Historic Buildings and New Interventions in SoHo",
+    "dateISO": "2026-06-06T11:00:00",
+    "time": "11:00 AM\u20131:00 PM",
+    "venue": "SoHo, Manhattan",
+    "neighborhood": "SoHo",
+    "price": "Paid",
+    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ4OTd9AAcAAAAAAkhUPhuBDAOpz5sxgN9K75k12R0DZEjDYM_gXVwmzcj8iXxU1f37Aa9yWh5OHsOnIiCQmVU9BgWB8nLvMzKYRI8z5zCy8g",
+    "category": "tours_experiences",
+    "source": "AIA New York (AIANY)",
+    "via": [
+      "AIANY"
+    ],
+    "why": "AIANY walking tour exploring SoHo's rich architectural history alongside contemporary interventions in one of NYC's most storied cast-iron districts."
+  },
+  {
+    "id": "mas-hudson-river-tour-2026-06-06",
+    "name": "Hudson River Past, Present, Future (In-Person Tour)",
+    "dateISO": "2026-06-06T11:00:00",
+    "time": "11:00 AM",
+    "venue": "Manhattan Waterfront",
+    "neighborhood": "Midtown",
+    "price": "Paid (members discount available)",
+    "url": "https://us.list-manage.com/10DBW3U5p8n?e=b049e3ef&c=2id133823128cf05896eab7b3197b3f48",
+    "category": "tours_experiences",
+    "source": "Municipal Art Society Tours",
+    "via": [
+      "MAS Tours"
+    ],
+    "why": "New MAS tour with Carter Craft exploring the Hudson River's transformation\u2014from industrial waterway to urban greenway and beyond."
+  },
+  {
+    "id": "pioneerworks-going-in-2026-06-06",
+    "name": "Going In at Pioneer Works",
+    "dateISO": "2026-06-06T12:00:00",
+    "time": "12:00 PM\u201312:00 AM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "Paid",
+    "url": "https://pioneerworks.us1.list-manage.com/track/click?u=ebd07492dd9e48b5075d014&id=3654b86e&e=e68b10de0",
+    "category": "art_exhibitions",
+    "source": "Pioneer Works / The Bunker New York",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "A 12-hour durational listening program featuring live sets from Abby Echiverri, Kelly Moran, Omar Ahmad x DJ Haram, and more \u2014 exploring compositions for expanded states and deep listening."
+  },
+  {
+    "id": "momi-nothing-but-a-man-2026-06-06",
+    "name": "Nothing But a Man (35mm, Michael Roemer, 1964)",
+    "dateISO": "2026-06-06T13:00:00",
+    "time": "1:00 PM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "Paid",
+    "url": "https://us.list-manage.com/127rAdiIsFj?e=21bfcd63&c=2id58e9fc2b5642ffc1fe55a9d8ae4f2d",
+    "category": "film_screenings",
+    "source": "Museum of the Moving Image",
+    "via": [
+      "MoMI"
+    ],
+    "why": "Michael Roemer's masterpiece in a 35mm print\u2014one of the great films about Black American life in the early 1960s."
+  },
+  {
+    "id": "nypl-sapphic-saturdays-gideon-0606",
+    "name": "Sapphic Saturdays Book Club: Gideon the Ninth",
+    "dateISO": "2026-06-06T14:30:00",
+    "time": "2:30 PM",
+    "venue": "Stavros Niarchos Foundation Library (SNFL)",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzC5XULoCAaBcvLSRkXTmHNJUMzPaH3imxop-DPewGlemj8nhl-nKAMVdj20fHIO3b-gNCcXjksnBMYpOVCY9bUl",
+    "category": "talks_lectures",
+    "source": "New York Public Library",
+    "via": [
+      "NYPL"
+    ],
+    "why": "Monthly sapphic book club meets to discuss Tamsyn Muir's cult necromancer fantasy novel Gideon the Ninth."
+  },
+  {
+    "id": "momi-the-queen-35mm-2026-06-06",
+    "name": "The Queen (35mm, Frank Simon, 1968)",
+    "dateISO": "2026-06-06T15:00:00",
+    "time": "3:00 PM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "Paid",
+    "url": "https://us.list-manage.com/CSO4AQASfrQ?e=21bfcd63&c=2id58e9fc2b5642ffc1fe55a9d8ae4f2d",
+    "category": "film_screenings",
+    "source": "Museum of the Moving Image",
+    "via": [
+      "MoMI"
+    ],
+    "why": "Frank Simon's breakthrough 1968 drag documentary, a rare 35mm screening of a foundational queer film."
+  },
+  {
+    "id": "brooklyn-museum-first-saturday-pride-0606",
+    "name": "First Saturday: Brooklyn Pride at 30",
+    "dateISO": "2026-06-06T17:00:00",
+    "time": "5:00 PM",
+    "venue": "Brooklyn Museum",
+    "neighborhood": "Prospect Heights",
+    "price": "Free",
+    "url": "https://secure.brooklynmuseum.org/14410/20197?promoQ60",
+    "category": "art_exhibitions",
+    "source": "Brooklyn Museum",
+    "via": [
+      "Brooklyn Museum"
+    ],
+    "why": "Monthly free evening at the Brooklyn Museum honors 30 years of Brooklyn Pride with LGBTQ+ artists, films, talks, readings, art-making, and dancing from 5\u201310 PM."
   },
   {
     "id": "gary-guide-run-hack-5k-0607",
@@ -696,8 +1018,218 @@
     "url": "http://gary.to/2zh5sdj",
     "category": "tech_ai",
     "source": "NY Tech Week",
-    "via": ["Gary's Guide"],
+    "via": [
+      "Gary's Guide"
+    ],
     "why": "5K run and hackathon combo event wrapping up NY Tech Week, featuring Matt Mirman (CEO, Chat)."
+  },
+  {
+    "id": "aiany-freshkills-tour-2026-06-07",
+    "name": "AIANY Industrial Waterway Tour: Freshkills Park in Staten Island",
+    "dateISO": "2026-06-07T09:45:00",
+    "time": "9:45 AM\u20131:00 PM",
+    "venue": "Freshkills Park, Staten Island",
+    "neighborhood": "Staten Island",
+    "price": "Paid",
+    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ4OTd9AAcAAAAAAkhUPhuDPFc1nomZo01BGgn_XrofR4YW5Udv0jcxtb3XdzOaGIdcLyj-EhqrpllOaT4Yu0dJRkIlx1y6CHM7Q2PcSPfzvw",
+    "category": "tours_experiences",
+    "source": "AIA New York (AIANY)",
+    "via": [
+      "AIANY"
+    ],
+    "why": "AIANY tour of Freshkills, once the world's largest landfill now transformed into NYC's largest park, exploring the industrial waterway and landscape architecture."
+  },
+  {
+    "id": "momi-yoga-courtyard-2026-06-07",
+    "name": "Yoga in the Courtyard at MoMI (Weekly Saturdays)",
+    "dateISO": "2026-06-07T09:45:00",
+    "time": "9:45 AM",
+    "venue": "Museum of the Moving Image Courtyard",
+    "neighborhood": "Astoria",
+    "price": "Free (RSVP required)",
+    "url": "https://us.list-manage.com/LjIGLxUI_8L?e=21bfcd63&c=2id58e9fc2b5642ffc1fe55a9d8ae4f2d",
+    "category": "workshops_classes",
+    "source": "Museum of the Moving Image / The Yoga Room",
+    "via": [
+      "MoMI"
+    ],
+    "why": "Free Saturday morning yoga in MoMI's courtyard with local studio The Yoga Room\u2014bring your own mat, runs through August 29."
+  },
+  {
+    "id": "momi-lets-talk-ai-summit-2026-06-07",
+    "name": "Let's Talk About AI: A Community Summit at MoMI",
+    "dateISO": "2026-06-07T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "Free (RSVP required)",
+    "url": "https://us.list-manage.com/VUbMZXByKd4?e=21bfcd63&c=2id58e9fc2b5642ffc1fe55a9d8ae4f2d",
+    "category": "tech_ai",
+    "source": "Epicenter NYC / Museum of the Moving Image",
+    "via": [
+      "MoMI"
+    ],
+    "why": "Free community summit on AI in society presented by Epicenter NYC at the Museum of the Moving Image."
+  },
+  {
+    "id": "brooklyn-brainery-cold-process-soap-2026-06-07",
+    "name": "Cold Process Soap Making for Beginners",
+    "dateISO": "2026-06-07T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Brooklyn Brainery",
+    "neighborhood": "Prospect Heights",
+    "price": "Paid",
+    "url": "https://brooklynbrainery.com/courses/cold-process-soap-making-for-beginners",
+    "category": "workshops_classes",
+    "source": "Brooklyn Brainery",
+    "via": [
+      "Brooklyn Brainery"
+    ],
+    "why": "Learn the artisanal cold-process method for making natural soap from scratch\u2014all materials included."
+  },
+  {
+    "id": "aiany-architecture-bryant-park-2026-06-07",
+    "name": "Walking Tour: The Architecture of Bryant Park",
+    "dateISO": "2026-06-07T10:30:00",
+    "time": "10:30 AM\u201312:30 PM",
+    "venue": "Bryant Park, Midtown Manhattan",
+    "neighborhood": "Midtown",
+    "price": "Paid",
+    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ4OTd9AAcAAAAAAkhUPhuFNSNCBd9dUvJWFfYdXBpgpy2C9-T1lJJE_C95IzoT6qVA_gssJTtZrMsWotGSk-oou2KCXMmBnkAkxAFFL4dq9w",
+    "category": "tours_experiences",
+    "source": "AIA New York (AIANY)",
+    "via": [
+      "AIANY"
+    ],
+    "why": "AIANY walking tour of Bryant Park's architectural history, from the New York Public Library to the park's beloved public spaces and surrounding Midtown towers."
+  },
+  {
+    "id": "brooklyn-brainery-watercolor-fundamentals-2026-06-07",
+    "name": "Watercolor Fundamentals: The Very Basics",
+    "dateISO": "2026-06-07T11:00:00",
+    "time": "11:00 AM",
+    "venue": "Brooklyn Brainery",
+    "neighborhood": "Prospect Heights",
+    "price": "Paid",
+    "url": "https://brooklynbrainery.com/courses/watercolor-fundamentals-the-very-basics",
+    "category": "workshops_classes",
+    "source": "Brooklyn Brainery",
+    "via": [
+      "Brooklyn Brainery"
+    ],
+    "why": "Beginner-friendly watercolor workshop covering essential techniques at Brooklyn's beloved community learning space."
+  },
+  {
+    "id": "mas-subway-art-tour-2026-06-07",
+    "name": "Subway Art Tour Six (In-Person Tour)",
+    "dateISO": "2026-06-07T12:00:00",
+    "time": "12:00 PM",
+    "venue": "Multiple subway stops, Manhattan",
+    "neighborhood": "Various",
+    "price": "Paid (members discount available)",
+    "url": "https://us.list-manage.com/PO41q_rujnR?e=b049e3ef&c=2id133823128cf05896eab7b3197b3f48",
+    "category": "tours_experiences",
+    "source": "Municipal Art Society Tours",
+    "via": [
+      "MAS Tours"
+    ],
+    "why": "New MAS tour with Phil Desiere exploring NYC subway station art\u2014mosaics, murals, and public art from multiple eras and artists."
+  },
+  {
+    "id": "brooklyn-brainery-shibori-2026-06-07",
+    "name": "Shibori Block and Bind Dye Techniques with Indigo",
+    "dateISO": "2026-06-07T12:00:00",
+    "time": "12:00 PM",
+    "venue": "Brooklyn Brainery",
+    "neighborhood": "Prospect Heights",
+    "price": "Paid",
+    "url": "https://brooklynbrainery.com/courses/shibori-block-and-bind-dye-techniques-with-indigo",
+    "category": "workshops_classes",
+    "source": "Brooklyn Brainery",
+    "via": [
+      "Brooklyn Brainery"
+    ],
+    "why": "Learn traditional Japanese shibori resist-dyeing techniques using indigo to create unique textile patterns."
+  },
+  {
+    "id": "momi-days-of-heaven-2026-06-07",
+    "name": "Days of Heaven (Terrence Malick, 1978)",
+    "dateISO": "2026-06-07T12:30:00",
+    "time": "12:30 PM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "Paid",
+    "url": "https://us.list-manage.com/11JleWPmgbl?e=21bfcd63&c=2id58e9fc2b5642ffc1fe55a9d8ae4f2d",
+    "category": "film_screenings",
+    "source": "Museum of the Moving Image",
+    "via": [
+      "MoMI"
+    ],
+    "why": "Terrence Malick's visually stunning American epic, part of By the People, For the People: Real American Tales at MoMI."
+  },
+  {
+    "id": "brooklyn-brainery-junk-journal-2026-06-07",
+    "name": "DIY Junk Journal Ephemera",
+    "dateISO": "2026-06-07T13:00:00",
+    "time": "1:00 PM",
+    "venue": "Brooklyn Brainery",
+    "neighborhood": "Prospect Heights",
+    "price": "Paid",
+    "url": "https://brooklynbrainery.com/courses/diy-junk-journal-ephemera",
+    "category": "workshops_classes",
+    "source": "Brooklyn Brainery",
+    "via": [
+      "Brooklyn Brainery"
+    ],
+    "why": "Create your own junk journal using collage, ephemera, and mixed media at Brooklyn Brainery's community workshop."
+  },
+  {
+    "id": "brooklyn-brainery-scotch-darning-2026-06-07",
+    "name": "Advanced Mending: Patterns and Scotch Darning",
+    "dateISO": "2026-06-07T14:00:00",
+    "time": "2:00 PM",
+    "venue": "Brooklyn Brainery",
+    "neighborhood": "Prospect Heights",
+    "price": "Paid",
+    "url": "https://brooklynbrainery.com/courses/advanced-mending-patterns-and-scotch-darning",
+    "category": "workshops_classes",
+    "source": "Brooklyn Brainery",
+    "via": [
+      "Brooklyn Brainery"
+    ],
+    "why": "Learn the beautiful Scottish darning technique for mending textiles with decorative patterns."
+  },
+  {
+    "id": "momi-buddies-film-2026-06-07",
+    "name": "Buddies (Arthur Bressan Jr., 1985) with Special Guests",
+    "dateISO": "2026-06-07T14:30:00",
+    "time": "2:30 PM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "Paid",
+    "url": "https://us.list-manage.com/bbsJ8DdTiQl?e=21bfcd63&c=2id58e9fc2b5642ffc1fe55a9d8ae4f2d",
+    "category": "film_screenings",
+    "source": "Museum of the Moving Image",
+    "via": [
+      "MoMI"
+    ],
+    "why": "The first American theatrical release to deal with the AIDS crisis, followed by a conversation with star David Schachter and the director's sister Roe Bressan."
+  },
+  {
+    "id": "momi-vibrance-lgbtqia-shorts-2026-06-07",
+    "name": "Vibrance: LGBTQIA+ Short Films from Firelight Media",
+    "dateISO": "2026-06-07T15:00:00",
+    "time": "3:00 PM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "Free",
+    "url": "https://us.list-manage.com/190pxk8lC24?e=21bfcd63&c=2id58e9fc2b5642ffc1fe55a9d8ae4f2d",
+    "category": "film_screenings",
+    "source": "Museum of the Moving Image / Firelight Media",
+    "via": [
+      "MoMI"
+    ],
+    "why": "Free showcase of five short non-fiction LGBTQIA+ films where love is the galvanizing force in each character's journey\u2014programmed with Firelight Media."
   },
   {
     "id": "gary-guide-yacht-party-0607",
@@ -710,22 +1242,10 @@
     "url": "http://gary.to/vkkqn01",
     "category": "tech_ai",
     "source": "NY Tech Week",
-    "via": ["Gary's Guide"],
+    "via": [
+      "Gary's Guide"
+    ],
     "why": "Food, drinks, DJs, and rooftop views of the Manhattan skyline aboard a giant yacht closing out NY Tech Week."
-  },
-  {
-    "id": "nypl-squadron-mamdani-0608",
-    "name": "Daniel Squadron with Zohran Mamdani: The Fourth Branch",
-    "dateISO": "2026-06-08T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Stephen A. Schwarzman Building (NYPL)",
-    "neighborhood": "Midtown",
-    "price": "Free (livestream available)",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzC6j9sZCj67MS5JfYTi1gLXrrTFYhYmjqD0O_ncRlpX1TWf9gcDPC9x83aPdEgR8KVECReabj0UfJlb5VCJ_cQY",
-    "category": "talks_lectures",
-    "source": "New York Public Library",
-    "via": ["NYPL"],
-    "why": "Former NY State Senator Daniel Squadron joins Mayor Zohran Mamdani to discuss how state government can rebuild democracy from the ground up."
   },
   {
     "id": "skint-piano-mondays-highline-0608",
@@ -738,22 +1258,90 @@
     "url": "https://www.thehighline.org/events/piano-mondays/",
     "category": "talks_lectures",
     "source": "The High Line",
-    "via": ["The Skint"],
+    "via": [
+      "The Skint"
+    ],
     "why": "Open-air Pride singalong led by Lance Horne of Club Cumming and a rotating cast of Broadway musicians."
+  },
+  {
+    "id": "nypl-squadron-mamdani-0608",
+    "name": "Daniel Squadron with Zohran Mamdani: The Fourth Branch",
+    "dateISO": "2026-06-08T19:00:00",
+    "time": "7:00 PM",
+    "venue": "Stephen A. Schwarzman Building (NYPL)",
+    "neighborhood": "Midtown",
+    "price": "Free (livestream available)",
+    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzC6j9sZCj67MS5JfYTi1gLXrrTFYhYmjqD0O_ncRlpX1TWf9gcDPC9x83aPdEgR8KVECReabj0UfJlb5VCJ_cQY",
+    "category": "talks_lectures",
+    "source": "New York Public Library",
+    "via": [
+      "NYPL"
+    ],
+    "why": "Former NY State Senator Daniel Squadron joins Mayor Zohran Mamdani to discuss how state government can rebuild democracy from the ground up."
   },
   {
     "id": "mcny-museum-mile-festival-0609",
     "name": "48th Annual Museum Mile Festival",
     "dateISO": "2026-06-09T18:00:00",
     "time": "6:00 PM",
-    "venue": "Museum Mile (Fifth Ave, 82nd–105th St)",
+    "venue": "Museum Mile (Fifth Ave, 82nd\u2013105th St)",
     "neighborhood": "Upper East Side / East Harlem",
     "price": "Free",
     "url": "https://www.mcny.org/event/museum-mile-festival-2026",
     "category": "tours_experiences",
     "source": "Museum of the City of New York",
-    "via": ["MCNY"],
-    "why": "A mile of New York's great museums open for free from 6–9 PM — art, history, pop culture, and civic life."
+    "via": [
+      "MCNY"
+    ],
+    "why": "A mile of New York's great museums open for free from 6\u20139 PM \u2014 art, history, pop culture, and civic life."
+  },
+  {
+    "id": "aiany-future-freight-2026-06-09",
+    "name": "Future of Freight in NYC: Connecting Our Streets with the Blue Highway",
+    "dateISO": "2026-06-09T18:00:00",
+    "time": "6:00\u20138:00 PM",
+    "venue": "TBD (Manhattan)",
+    "neighborhood": "Manhattan",
+    "price": "Paid",
+    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ4OTd9AAcAAAAAAkhUPhuHBy8pNc3-QBpy_J4VYRZflu4HPeMdblxzIAqpivQnTeCvyxegC_lXjo-YmyaLLWLn_hR14J3C9pTEb4In5zdjRQ",
+    "category": "talks_lectures",
+    "source": "AIA New York (AIANY)",
+    "via": [
+      "AIANY"
+    ],
+    "why": "Panel discussion on the future of freight in NYC and the potential of the Hudson River 'Blue Highway' to move goods off congested streets and onto water."
+  },
+  {
+    "id": "pioneerworks-supper-club-dacha46-2026-06-09",
+    "name": "Supper Club with Dacha 46 at Pioneer Works",
+    "dateISO": "2026-06-09T18:00:00",
+    "time": "6:00\u20139:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "Paid",
+    "url": "https://pioneerworks.us1.list-manage.com/track/click?u=ebd07492dd9e48b5075d014&id=bbf29405&e=e68b10de0",
+    "category": "tours_experiences",
+    "source": "Pioneer Works / Dacha 46",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "Intimate open-air supper celebrating Ukrainian art, cuisine, and culture with food and drinks by Dacha 46 and live Ukrainian music in the Pioneer Works garden."
+  },
+  {
+    "id": "aiany-aia-conference-2026-06-10",
+    "name": "AIA Conference on Architecture and Design 2026",
+    "dateISO": "2026-06-10T09:00:00",
+    "time": "9:00 AM (June 10\u201313)",
+    "venue": "Multiple venues, Manhattan",
+    "neighborhood": "Midtown",
+    "price": "Paid",
+    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ4OTd9AAcAAAAAAkhUPhuJrc3CWcSiWfjra0eCWR8K-AT1MvSIjQDRMZ-gBqFw3J1pWAADseGCZLciki1XuXrPFUF0JNbdymoX1z2GZBVXrg",
+    "category": "talks_lectures",
+    "source": "AIA New York (AIANY)",
+    "via": [
+      "AIANY"
+    ],
+    "why": "AIA's flagship annual conference on architecture and design comes to NYC June 10\u201313, featuring speakers, tours, workshops, and the nation's largest architecture trade show."
   },
   {
     "id": "nybg-farmers-market-0610",
@@ -766,8 +1354,10 @@
     "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIJbklQIoyOPHA74wV_4JmaaRFISCzbI1fyIk44Z7OIKmLlJCQrYt3oYx",
     "category": "tours_experiences",
     "source": "New York Botanical Garden",
-    "via": ["NYBG"],
-    "why": "Weekly farmers market at the NYBG with 15 rotating vendors, Fino Farms, and Trinity Farms produce — Wednesdays 10 AM–3 PM."
+    "via": [
+      "NYBG"
+    ],
+    "why": "Weekly farmers market at the NYBG with 15 rotating vendors, Fino Farms, and Trinity Farms produce \u2014 Wednesdays 10 AM\u20133 PM."
   },
   {
     "id": "nybg-andrea-wulf-traveler-0611",
@@ -780,8 +1370,26 @@
     "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIJrklQIoyOPHAwsQYwnJVuk4pkAvrgo6W3I3_Ck6lNs-QL9OdtnXYVRy",
     "category": "talks_lectures",
     "source": "New York Botanical Garden",
-    "via": ["NYBG"],
+    "via": [
+      "NYBG"
+    ],
     "why": "Author Andrea Wulf presents her book about George Forster, the young naturalist and revolutionary who journeyed to the world's far reaches."
+  },
+  {
+    "id": "aiany-lutron-summer-spritz-2026-06-11",
+    "name": "Lutron Summer Spritz: A Celebration with AIA New York",
+    "dateISO": "2026-06-11T18:00:00",
+    "time": "Evening",
+    "venue": "Lutron NYC Global Experience Center",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ4OTd9AAcAAAAAAkhUPht8JjBjvD8acFfcn3K98gMBSy1qsV4TBwOfIbhhCjpR5JjeGYaCWlET1PXcUpDzr_FxfS_L-xOAF79XwxQb2k_Vrw",
+    "category": "tours_experiences",
+    "source": "AIA New York (AIANY) / Lutron",
+    "via": [
+      "AIANY"
+    ],
+    "why": "Welcome-summer celebration with AIA New York at the Lutron NYC Global Experience Center\u2014networking, drinks, and a showcase of Lutron's latest lighting and shading innovations."
   },
   {
     "id": "mcny-behind-the-surface-wpa-murals-0611",
@@ -794,8 +1402,26 @@
     "url": "https://35948.blackbaudhosting.com/35948/tickets?tab=2&txobjid=a9a0abd-741c-4a71-90be-3654cbc3aa05",
     "category": "talks_lectures",
     "source": "Museum of the City of New York",
-    "via": ["MCNY"],
-    "why": "An intimate look at decades of conservation work on a New Deal–era WPA mural, with curator Barbara Haskell (Whitney Museum) and conservation specialists."
+    "via": [
+      "MCNY"
+    ],
+    "why": "An intimate look at decades of conservation work on a New Deal\u2013era WPA mural, with curator Barbara Haskell (Whitney Museum) and conservation specialists."
+  },
+  {
+    "id": "prospectpark-ny-philharmonic-2026-06-12",
+    "name": "NY Philharmonic in Prospect Park",
+    "dateISO": "2026-06-12T19:00:00",
+    "time": "7:00 PM",
+    "venue": "Prospect Park (Bandshell area)",
+    "neighborhood": "Prospect Park",
+    "price": "Free",
+    "url": "https://us.list-manage.com/5sVU3wLDGH9?e=ce4c4305&c=2id7bbe46b26923a094c84942703808da",
+    "category": "tours_experiences",
+    "source": "NY Philharmonic / Prospect Park Alliance",
+    "via": [
+      "Prospect Park"
+    ],
+    "why": "Grand finale of the NY Philharmonic's outdoor summer series in NYC's flagship parks\u2014bring a picnic blanket and enjoy classical music in Brooklyn's Backyard."
   },
   {
     "id": "nypl-schomburg-centennial-festival-0613",
@@ -808,8 +1434,42 @@
     "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzCy7m7x6-bV822wLTY5Dr_2gtertYSF47p7rGyaIxpLfzPQsVX8ae2xDjrx3vVElAwcD221VUmuh_MIzo2Qikac",
     "category": "talks_lectures",
     "source": "Schomburg Center for Research in Black Culture / NYPL",
-    "via": ["NYPL"],
+    "via": [
+      "NYPL"
+    ],
     "why": "All-day centennial celebration with authors Walter Mosley, The Moth storytelling, cosplay, a Toni Cade Bambara film screening, and a block party with legendary hip-hop and R&B performances."
+  },
+  {
+    "id": "nybg-world-cup-garden-kickoff-0613",
+    "name": "NYBG World Cup Garden Kick-Off (Bronx Day)",
+    "dateISO": "2026-06-13T12:00:00",
+    "time": "12:00 PM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "Bronx",
+    "price": "",
+    "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIJfklQIoyOPHA5-VUQ1fsZSjZQo4zzenYyxOaw2p_3FoI6ALI2kYucpo",
+    "category": "tours_experiences",
+    "source": "New York Botanical Garden",
+    "via": [
+      "NYBG"
+    ],
+    "why": "Bronx Day kick-off for the World Cup Garden at NYBG \u2014 soccer-themed displays featuring plants from participating countries, plus hands-on activities."
+  },
+  {
+    "id": "nybg-puppeteers-flower-power-parade-0613",
+    "name": "Puppeteer's Cooperative: Flower Power Banner Workshop & Parade",
+    "dateISO": "2026-06-13T13:00:00",
+    "time": "1:00 PM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "Bronx",
+    "price": "",
+    "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIJvklQIoyOPHA4nwpEXvHtd7PADSJBfLnXvc-CkbAl7O4A6RdlJKSpDw",
+    "category": "workshops_classes",
+    "source": "New York Botanical Garden",
+    "via": [
+      "NYBG"
+    ],
+    "why": "Theater artist Theresa Linnihan invites visitors to print a flower flag and parade through the Garden in celebration of Flower Power."
   },
   {
     "id": "nypl-studio40-showcase-0613",
@@ -822,8 +1482,10 @@
     "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzDDWzgZLa3-aRr0pwljZDwR4sIFVf3yeOCAIyBVwMJQSBqJTHdCsOYOhQOwP1u59sfdznD5kS044XsXrxCFy3WV",
     "category": "art_exhibitions",
     "source": "New York Public Library",
-    "via": ["NYPL"],
-    "why": "New works by NYC artists presented from NYPL's free recording studio — live performances, music, video art, and podcast excerpts."
+    "via": [
+      "NYPL"
+    ],
+    "why": "New works by NYC artists presented from NYPL's free recording studio \u2014 live performances, music, video art, and podcast excerpts."
   },
   {
     "id": "nypl-teen-lit-night-deb-lee-0613",
@@ -836,7 +1498,9 @@
     "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzDJ5N56VyFQjsEzqOb_ffdFC5iz5ovfDglX-FWyv35R7zcjjG0rV_HWg730rpuT0lfCiJNBMX7oZty-FDtKY-Sa",
     "category": "talks_lectures",
     "source": "New York Public Library",
-    "via": ["NYPL"],
+    "via": [
+      "NYPL"
+    ],
     "why": "First-ever Teen Lit Night features author Deb JJ Lee (In Limbo) with screen printing, music, button-making, and free books to take home."
   },
   {
@@ -850,36 +1514,74 @@
     "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIP7bkwIoyOPHA7s3WJxlyg9Gs_rtOIJv2uWKjnje13ZMxRUYYk-zFjTu",
     "category": "tours_experiences",
     "source": "New York Botanical Garden",
-    "via": ["NYBG"],
+    "via": [
+      "NYBG"
+    ],
     "why": "Psychedelic liquid light visuals by Liquid Light Lab paired with live music, exploring the Flower Power exhibition after dark, with a Makers Market and food."
   },
   {
-    "id": "nybg-puppeteers-flower-power-parade-0613",
-    "name": "Puppeteer's Cooperative: Flower Power Banner Workshop & Parade",
-    "dateISO": "2026-06-13T13:00:00",
-    "time": "1:00 PM",
-    "venue": "New York Botanical Garden",
-    "neighborhood": "Bronx",
-    "price": "",
-    "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIJvklQIoyOPHA4nwpEXvHtd7PADSJBfLnXvc-CkbAl7O4A6RdlJKSpDw",
-    "category": "workshops_classes",
-    "source": "New York Botanical Garden",
-    "via": ["NYBG"],
-    "why": "Theater artist Theresa Linnihan invites visitors to print a flower flag and parade through the Garden in celebration of Flower Power."
+    "id": "pioneerworks-second-sundays-june-2026-06-14",
+    "name": "Second Sundays: Mini Ball, Book Talks & Voguing Workshop",
+    "dateISO": "2026-06-14T12:00:00",
+    "time": "12:00 PM\u20137:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "Free (RSVP required)",
+    "url": "https://pioneerworks.us1.list-manage.com/track/click?u=ebd07492dd9e48b5075d014&id=d9f6af00&e=e68b10de0",
+    "category": "art_exhibitions",
+    "source": "Pioneer Works",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "Pioneer Works' monthly free open house celebrating NYC Pride\u2014featuring a $500 Mini Ball organized by Michael Roberson Maison-Margiela, an all-day voguing workshop, and book talks with Wayne Koestenbaum and Diane Ackerman."
   },
   {
-    "id": "nybg-world-cup-garden-kickoff-0613",
-    "name": "NYBG World Cup Garden Kick-Off (Bronx Day)",
-    "dateISO": "2026-06-13T12:00:00",
-    "time": "12:00 PM",
-    "venue": "New York Botanical Garden",
-    "neighborhood": "Bronx",
-    "price": "",
-    "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIJfklQIoyOPHA5-VUQ1fsZSjZQo4zzenYyxOaw2p_3FoI6ALI2kYucpo",
+    "id": "nypl-declaring-america-exhibition-0615",
+    "name": "Declaring America: 1776 and Beyond (Exhibition Opens)",
+    "dateISO": "2026-06-15T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Stephen A. Schwarzman Building (NYPL)",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzCqrxxCH_w3pyTSSaw_wbG0F7DHVSKwjZZZ6PGehNfMUfJzu0D6bzrvMAp8SkCKKaNXefVecf3jKxZcTwwbZkYV",
+    "category": "art_exhibitions",
+    "source": "New York Public Library",
+    "via": [
+      "NYPL"
+    ],
+    "why": "Major new exhibition at NYPL's flagship building featuring founding documents, protest ephemera, and artworks exploring the American Revolution and its complex legacies."
+  },
+  {
+    "id": "skint-piano-mondays-highline-0615",
+    "name": "Piano Mondays at the High Line: Pride Singalong",
+    "dateISO": "2026-06-15T18:00:00",
+    "time": "6:00 PM",
+    "venue": "The High Line (Spur at 30th St & 10th Ave)",
+    "neighborhood": "Chelsea",
+    "price": "Free",
+    "url": "https://www.thehighline.org/events/piano-mondays/",
+    "category": "talks_lectures",
+    "source": "The High Line",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Open-air Pride singalong led by Lance Horne of Club Cumming and a rotating cast of Broadway musicians."
+  },
+  {
+    "id": "ohny-sunset-boat-tour-2026-06-16",
+    "name": "Development on the Waterfront: Sunset Boat Tour",
+    "dateISO": "2026-06-16T18:20:00",
+    "time": "6:20\u20139:00 PM",
+    "venue": "Pier 83, Manhattan (West 42nd St)",
+    "neighborhood": "Hell's Kitchen",
+    "price": "$70 ($55 OHNY members; $10 community tickets)",
+    "url": "https://xsasjxbab.cc.rs6.net/tn.jsp?f=19eEZEju8vvEkZRToplh6UwSTVUQLAyKknzYOAaKmU_EPDpZ32Yrb-UvYTJn7WKLTqaETxDytesf-rP3JOzBpswX03cRxMaHFFbD_vlpNB-ebHPr6Hy_ZmwlncSUNjmgol1ia4zCeCucRhDwSlL_TFgN7l8dpJnViniO4HQB-p57S9SHOQTMBzg==&c=ZsoSXmyi6D2crEM1_vXQVofOXKa9y9XfiCZ7disrgcD4BSBWrmd2fg==&ch=7ZxLp_EVIubml4t60cS4i39-3_6_SxLFaXm_gLJgYYtGYrYWyqqpQg==",
     "category": "tours_experiences",
-    "source": "New York Botanical Garden",
-    "via": ["NYBG"],
-    "why": "Bronx Day kick-off for the World Cup Garden at NYBG — soccer-themed displays featuring plants from participating countries, plus hands-on activities."
+    "source": "Open House New York",
+    "via": [
+      "OHNY"
+    ],
+    "why": "Urban planner Moses Gates leads a sunset boat tour exploring NYC's reinvented waterfront from Hudson Yards to Hallets Point, unpacking planning debates and investment decisions."
   },
   {
     "id": "nypl-immigration-anbinder-0616",
@@ -892,8 +1594,58 @@
     "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzC4rMUk53cpjAO1BVQUhU6s5pmSKWSk4QQTVfpVtqdaQqo-vgH5d21SxJhvCnqOF0TH9KDz7FdYDwR8QGEv34pt",
     "category": "talks_lectures",
     "source": "New York Public Library",
-    "via": ["NYPL"],
+    "via": [
+      "NYPL"
+    ],
     "why": "Author Tyler Anbinder shares hidden histories of NYC's immigrant population from Emma Goldman and Oscar de la Renta to today's essential workers."
+  },
+  {
+    "id": "pioneerworks-kim-stanley-robinson-2026-06-16",
+    "name": "Science + Fiction: Kim Stanley Robinson in Conversation with Janna Levin",
+    "dateISO": "2026-06-16T20:00:00",
+    "time": "8:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "Paid",
+    "url": "https://pioneerworks.us1.list-manage.com/track/click?u=ebd07492dd9e48b5075d014&id=4601c890&e=e68b10de0",
+    "category": "talks_lectures",
+    "source": "Pioneer Works",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "Titan of speculative fiction Kim Stanley Robinson joins astrophysicist Janna Levin for a career-spanning conversation on deep time, climate, and humanity's survival."
+  },
+  {
+    "id": "nybg-farmers-market-0617",
+    "name": "NYBG Farmers Market",
+    "dateISO": "2026-06-17T10:00:00",
+    "time": "10:00 AM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "Bronx",
+    "price": "Free with admission",
+    "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIJbklQIoyOPHA74wV_4JmaaRFISCzbI1fyIk44Z7OIKmLlJCQrYt3oYx",
+    "category": "tours_experiences",
+    "source": "New York Botanical Garden",
+    "via": [
+      "NYBG"
+    ],
+    "why": "Weekly farmers market at the NYBG with 15 rotating vendors, Fino Farms, and Trinity Farms produce \u2014 Wednesdays 10 AM\u20133 PM."
+  },
+  {
+    "id": "nyhistory-tang-wing-early-access-2026-06-17",
+    "name": "Tang Wing for American Democracy: Members Early Access",
+    "dateISO": "2026-06-17T11:00:00",
+    "time": "11:00 AM",
+    "venue": "New-York Historical Society",
+    "neighborhood": "Upper West Side",
+    "price": "Free for members",
+    "url": "https://nyhistory.prospect2.com/lt.php?x=4lZy~GE4JaGiDKB.yw9FgOSf2XFTvgP0v-4yk5bEI3bM6aJ7_Ey7xOJz1HEj-RVfjDZo3HHLJnfs55R_0OxLYOV02nEi",
+    "category": "art_exhibitions",
+    "source": "New-York Historical Society",
+    "via": [
+      "NY Historical Society"
+    ],
+    "why": "Members get exclusive early access to the new Tang Wing for American Democracy before its public opening."
   },
   {
     "id": "nypl-danielle-allen-revolution-0617",
@@ -906,7 +1658,9 @@
     "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzC-BJ8teddxdX7aG16j2dXxbyIaYnvPi06VPZ9R2BgQV7kg6DMJ_w0iZhkDqUUgZ_hD-sLLc6GSbhZMPFIra0Y-",
     "category": "talks_lectures",
     "source": "New York Public Library",
-    "via": ["NYPL"],
+    "via": [
+      "NYPL"
+    ],
     "why": "Philosopher Danielle Allen and historian Sean Wilentz explore a British aristocrat's secret alliance with Thomas Paine that launched the Age of Revolution."
   },
   {
@@ -920,64 +1674,10 @@
     "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzCtDXF5sZMHzozHQF5-74lCnxbhz20NbGsDzWW8xOB5cPNvkoCFXivvQdkpWCoci_30pcRcIM2ta1FUMyNquYpW",
     "category": "art_exhibitions",
     "source": "New York Public Library",
-    "via": ["NYPL"],
-    "why": "NYPL's free annual summer party for teens 12–18 of all orientations and gender identities — dancing, music, art activities, and snacks."
-  },
-  {
-    "id": "nypl-shakespeare-as-you-like-it-0619",
-    "name": "Shakespeare's As You Like It at NYPL (The Public Theater Mobile Unit)",
-    "dateISO": "2026-06-19T18:30:00",
-    "time": "6:30 PM",
-    "venue": "Stephen A. Schwarzman Building Plaza",
-    "neighborhood": "Midtown",
-    "price": "Free",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzC_5uuLV9PZHckNCiNvaoKcXrHGOfXn7iS9zvxRNcWFrqZ-O3Rk5O9Gb4-rEbHLMf7Yg_izr5ozDgk7Txcqvq9s",
-    "category": "talks_lectures",
-    "source": "The Public Theater Mobile Unit / New York Public Library",
-    "via": ["NYPL"],
-    "why": "The Public Theater's Mobile Unit brings free outdoor Shakespeare to the NYPL plaza — As You Like It, directed by Emma Rosa Went."
-  },
-  {
-    "id": "nypl-shakespeare-as-you-like-it-0620",
-    "name": "Shakespeare's As You Like It at NYPL (The Public Theater Mobile Unit)",
-    "dateISO": "2026-06-20T18:30:00",
-    "time": "6:30 PM",
-    "venue": "Stephen A. Schwarzman Building Plaza",
-    "neighborhood": "Midtown",
-    "price": "Free",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzC_5uuLV9PZHckNCiNvaoKcXrHGOfXn7iS9zvxRNcWFrqZ-O3Rk5O9Gb4-rEbHLMf7Yg_izr5ozDgk7Txcqvq9s",
-    "category": "talks_lectures",
-    "source": "The Public Theater Mobile Unit / New York Public Library",
-    "via": ["NYPL"],
-    "why": "The Public Theater's Mobile Unit brings free outdoor Shakespeare to the NYPL plaza — As You Like It, directed by Emma Rosa Went."
-  },
-  {
-    "id": "brooklyn-museum-weekend-art-print-jam-0620",
-    "name": "Weekend Art: Summer Print Jam",
-    "dateISO": "2026-06-20T13:00:00",
-    "time": "1:00 PM",
-    "venue": "Brooklyn Museum",
-    "neighborhood": "Prospect Heights",
-    "price": "Free with admission",
-    "url": "https://secure.brooklynmuseum.org/14410/20197?promoQ60",
-    "category": "workshops_classes",
-    "source": "Brooklyn Museum",
-    "via": ["Brooklyn Museum"],
-    "why": "Celebrate Immigrant Heritage Month with all-ages printmaking — create a gelli print highlighting your history and identity, with poetry and talks."
-  },
-  {
-    "id": "nybg-liquid-light-show-0620",
-    "name": "Liquid Light Shows: Flower Power After Hours",
-    "dateISO": "2026-06-20T19:00:00",
-    "time": "7:00 PM",
-    "venue": "New York Botanical Garden",
-    "neighborhood": "Bronx",
-    "price": "Paid (tickets required)",
-    "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIP7bkwIoyOPHA7s3WJxlyg9Gs_rtOIJv2uWKjnje13ZMxRUYYk-zFjTu",
-    "category": "tours_experiences",
-    "source": "New York Botanical Garden",
-    "via": ["NYBG"],
-    "why": "Psychedelic liquid light visuals by Liquid Light Lab paired with live music, exploring the Flower Power exhibition after dark."
+    "via": [
+      "NYPL"
+    ],
+    "why": "NYPL's free annual summer party for teens 12\u201318 of all orientations and gender identities \u2014 dancing, music, art activities, and snacks."
   },
   {
     "id": "mcny-world-cup-watch-party-0619",
@@ -990,36 +1690,106 @@
     "url": "https://35948.blackbaudhosting.com/35948/tickets?tab=2&txobjid=b630d7ec-6794-4baa-80d7-bc65d7ece82a",
     "category": "tours_experiences",
     "source": "Museum of the City of New York",
-    "via": ["MCNY"],
+    "via": [
+      "MCNY"
+    ],
     "why": "Watch the World Cup alongside New Yorkers at MCNY, with drinks from the Park View Bar and bites from Bourke Street Bakery."
   },
   {
-    "id": "skint-piano-mondays-highline-0615",
-    "name": "Piano Mondays at the High Line: Pride Singalong",
-    "dateISO": "2026-06-15T18:00:00",
-    "time": "6:00 PM",
-    "venue": "The High Line (Spur at 30th St & 10th Ave)",
-    "neighborhood": "Chelsea",
-    "price": "Free",
-    "url": "https://www.thehighline.org/events/piano-mondays/",
-    "category": "talks_lectures",
-    "source": "The High Line",
-    "via": ["The Skint"],
-    "why": "Open-air Pride singalong led by Lance Horne of Club Cumming and a rotating cast of Broadway musicians."
-  },
-  {
-    "id": "nypl-declaring-america-exhibition-0615",
-    "name": "Declaring America: 1776 and Beyond (Exhibition Opens)",
-    "dateISO": "2026-06-15T10:00:00",
-    "time": "10:00 AM",
-    "venue": "Stephen A. Schwarzman Building (NYPL)",
+    "id": "nypl-shakespeare-as-you-like-it-0619",
+    "name": "Shakespeare's As You Like It at NYPL (The Public Theater Mobile Unit)",
+    "dateISO": "2026-06-19T18:30:00",
+    "time": "6:30 PM",
+    "venue": "Stephen A. Schwarzman Building Plaza",
     "neighborhood": "Midtown",
     "price": "Free",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzCqrxxCH_w3pyTSSaw_wbG0F7DHVSKwjZZZ6PGehNfMUfJzu0D6bzrvMAp8SkCKKaNXefVecf3jKxZcTwwbZkYV",
+    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzC_5uuLV9PZHckNCiNvaoKcXrHGOfXn7iS9zvxRNcWFrqZ-O3Rk5O9Gb4-rEbHLMf7Yg_izr5ozDgk7Txcqvq9s",
+    "category": "talks_lectures",
+    "source": "The Public Theater Mobile Unit / New York Public Library",
+    "via": [
+      "NYPL"
+    ],
+    "why": "The Public Theater's Mobile Unit brings free outdoor Shakespeare to the NYPL plaza \u2014 As You Like It, directed by Emma Rosa Went."
+  },
+  {
+    "id": "brooklyn-museum-weekend-art-print-jam-0620",
+    "name": "Weekend Art: Summer Print Jam",
+    "dateISO": "2026-06-20T13:00:00",
+    "time": "1:00 PM",
+    "venue": "Brooklyn Museum",
+    "neighborhood": "Prospect Heights",
+    "price": "Free with admission",
+    "url": "https://secure.brooklynmuseum.org/14410/20197?promoQ60",
+    "category": "workshops_classes",
+    "source": "Brooklyn Museum",
+    "via": [
+      "Brooklyn Museum"
+    ],
+    "why": "Celebrate Immigrant Heritage Month with all-ages printmaking \u2014 create a gelli print highlighting your history and identity, with poetry and talks."
+  },
+  {
+    "id": "pioneerworks-ash-fure-animal-opening-2026-06-20",
+    "name": "Opening Reception: Ash Fure \u2013 ANIMAL [a listening gym]",
+    "dateISO": "2026-06-20T18:00:00",
+    "time": "6:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "Free (RSVP required)",
+    "url": "https://pioneerworks.us1.list-manage.com/track/click?u=ebd07492dd9e48b5075d014&id=4baa8c83&e=e68b10de0",
     "category": "art_exhibitions",
-    "source": "New York Public Library",
-    "via": ["NYPL"],
-    "why": "Major new exhibition at NYPL's flagship building featuring founding documents, protest ephemera, and artworks exploring the American Revolution and its complex legacies."
+    "source": "Pioneer Works",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "Opening of Ash Fure's sensory installation ANIMAL [a listening gym]\u2014a gallery transformed into an immersive space where athletic equipment becomes sonic sculptures."
+  },
+  {
+    "id": "nypl-shakespeare-as-you-like-it-0620",
+    "name": "Shakespeare's As You Like It at NYPL (The Public Theater Mobile Unit)",
+    "dateISO": "2026-06-20T18:30:00",
+    "time": "6:30 PM",
+    "venue": "Stephen A. Schwarzman Building Plaza",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzC_5uuLV9PZHckNCiNvaoKcXrHGOfXn7iS9zvxRNcWFrqZ-O3Rk5O9Gb4-rEbHLMf7Yg_izr5ozDgk7Txcqvq9s",
+    "category": "talks_lectures",
+    "source": "The Public Theater Mobile Unit / New York Public Library",
+    "via": [
+      "NYPL"
+    ],
+    "why": "The Public Theater's Mobile Unit brings free outdoor Shakespeare to the NYPL plaza \u2014 As You Like It, directed by Emma Rosa Went."
+  },
+  {
+    "id": "nybg-liquid-light-show-0620",
+    "name": "Liquid Light Shows: Flower Power After Hours",
+    "dateISO": "2026-06-20T19:00:00",
+    "time": "7:00 PM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "Bronx",
+    "price": "Paid (tickets required)",
+    "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIP7bkwIoyOPHA7s3WJxlyg9Gs_rtOIJv2uWKjnje13ZMxRUYYk-zFjTu",
+    "category": "tours_experiences",
+    "source": "New York Botanical Garden",
+    "via": [
+      "NYBG"
+    ],
+    "why": "Psychedelic liquid light visuals by Liquid Light Lab paired with live music, exploring the Flower Power exhibition after dark."
+  },
+  {
+    "id": "pioneerworks-dripping-2026-06-21",
+    "name": "Dripping at Pioneer Works: Bendik Giske, Pavel Milyakov, MOTHERBOARD",
+    "dateISO": "2026-06-21T20:00:00",
+    "time": "8:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "Paid",
+    "url": "https://pioneerworks.us1.list-manage.com/track/click?u=ebd07492dd9e48b5075d014&id=54743cc4&e=e68b10de0",
+    "category": "art_exhibitions",
+    "source": "Pioneer Works / Dripping",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "Dripping's second annual Pioneer Works showcase with avant-garde electronic artists Bendik Giske, Pavel Milyakov, MOTHERBOARD with Saint Just, and founders Relaxer b2b Baby Leo."
   },
   {
     "id": "skint-piano-mondays-highline-0622",
@@ -1032,8 +1802,26 @@
     "url": "https://www.thehighline.org/events/piano-mondays/",
     "category": "talks_lectures",
     "source": "The High Line",
-    "via": ["The Skint"],
+    "via": [
+      "The Skint"
+    ],
     "why": "Open-air Pride singalong led by Lance Horne of Club Cumming and a rotating cast of Broadway musicians."
+  },
+  {
+    "id": "nyhistory-dutch-roots-2026-06-22",
+    "name": "Dutch Roots: Art, Innovation, and the Creation of New York",
+    "dateISO": "2026-06-22T18:30:00",
+    "time": "6:30 PM",
+    "venue": "New-York Historical Society",
+    "neighborhood": "Upper West Side",
+    "price": "Paid",
+    "url": "https://nyhistory.prospect2.com/lt.php?x=4lZy~GE4JaGiDKB.yw9FgOSf2XFTvgP0v-4yk5bEI3bM6aJ7_Ey7xOJz1HEj-RVfjDZo3HHLJnfs55R_0OxLYOV02nIn",
+    "category": "talks_lectures",
+    "source": "New-York Historical Society",
+    "via": [
+      "NY Historical Society"
+    ],
+    "why": "Russell Shorto discusses the links between the Dutch trading outpost on Manhattan and the country whose art, science, and philosophy helped shape New York\u2014and America."
   },
   {
     "id": "nypl-city-fortune-williams-0623",
@@ -1046,8 +1834,26 @@
     "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzDBep1uO77iHfFC8eyeXcs6V1V2eBze2g-PPZtqHyEgAupmjhnZzl9JI52o9k1g-8dV2BLGdwGzU4qOE8SPqNk8",
     "category": "talks_lectures",
     "source": "New York Public Library",
-    "via": ["NYPL"],
-    "why": "Historian Mason B. Williams and Pulitzer Prize–winner Heather Ann Thompson investigate NYC's transformation from aspiration to entrenched inequality."
+    "via": [
+      "NYPL"
+    ],
+    "why": "Historian Mason B. Williams and Pulitzer Prize\u2013winner Heather Ann Thompson investigate NYC's transformation from aspiration to entrenched inequality."
+  },
+  {
+    "id": "nybg-farmers-market-0624",
+    "name": "NYBG Farmers Market",
+    "dateISO": "2026-06-24T10:00:00",
+    "time": "10:00 AM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "Bronx",
+    "price": "Free with admission",
+    "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIJbklQIoyOPHA74wV_4JmaaRFISCzbI1fyIk44Z7OIKmLlJCQrYt3oYx",
+    "category": "tours_experiences",
+    "source": "New York Botanical Garden",
+    "via": [
+      "NYBG"
+    ],
+    "why": "Weekly farmers market at the NYBG with 15 rotating vendors, Fino Farms, and Trinity Farms produce \u2014 Wednesdays 10 AM\u20133 PM."
   },
   {
     "id": "thought-gallery-hidden-histories-stmarks-0625",
@@ -1060,7 +1866,9 @@
     "url": "https://d5j56304.na1.hubspotlinks.com/Ctc/Y+113/d5j56304/VX4TpY3MxY71N1R39PRk1nG8W3_3yVc5PsVWPN7jDJtx5jMY8W50kH_H6lZ3pfW8l5rnQ3pxzlQW1lqsyM6xpqpJW7VHrsS61J9MJW90vSvZ8h_MVGW5Gz25z2tsmCXW4NjY3c7Y-byZW65cKwj7p24fgW3gKc9p6RzDrfW4TdsnR4LHGgcW851RB31bDmJRW9kmLvC4Q_j7lW4SXZX49fbcYSN48JSW6lfSdxW8fGcMR1nlPLLW40h1GM3w94lxW6fWqFW3QsSXjW6KnR1k16S8yBW4Sqy5Y7PjwfXN1tp63Mp2crPW6JJXcz75ZYBSW4z4CcT8n67zLW5W_2nt7B8mV4W1-RwY89hPF5pW4bWq3q1Z0q1JW4rjXSR6lG_NlW6kgN1X3bvg6jN4lVF1hqHXG5W6tHqRL48xtxVW5ysdPD7pFcYXW7c4Jmn4sjt24W4WgVJ-7nD0lVW7Q24d64fbHKsf54jhXT04",
     "category": "talks_lectures",
     "source": "St. Mark's Church in-the-Bowery",
-    "via": ["Thought Gallery / The Curriculum"],
+    "via": [
+      "Thought Gallery / The Curriculum"
+    ],
     "why": "Author Jonathan Ezra Goldman shares hidden stories of everyday life and marginalized communities in 1920s New York."
   },
   {
@@ -1074,8 +1882,10 @@
     "url": "https://secure.brooklynmuseum.org/14380/20198?promoQ60",
     "category": "talks_lectures",
     "source": "Brooklyn Museum",
-    "via": ["Brooklyn Museum"],
-    "why": "Lighthearted lectures spotlighting LGBTQ+ art with curator Liz St. George, photographer Lola Flash, historian Hugh Ryan, and drag artist Bertha Vanayshun — tickets include one specialty drink."
+    "via": [
+      "Brooklyn Museum"
+    ],
+    "why": "Lighthearted lectures spotlighting LGBTQ+ art with curator Liz St. George, photographer Lola Flash, historian Hugh Ryan, and drag artist Bertha Vanayshun \u2014 tickets include one specialty drink."
   },
   {
     "id": "gary-guide-nyc-coffee-club-0626",
@@ -1088,8 +1898,26 @@
     "url": "http://gary.to/is3y0iq",
     "category": "tech_ai",
     "source": "Forum VC / Level Up VC",
-    "via": ["Gary's Guide"],
+    "via": [
+      "Gary's Guide"
+    ],
     "why": "Monthly coffee meetup connecting early-stage founders and funders in fintech, healthcare, supply chain, and transportation."
+  },
+  {
+    "id": "prospectpark-pride-disco-skate-2026-06-26",
+    "name": "Pride Disco Skate at LeFrak Center at Lakeside",
+    "dateISO": "2026-06-26T18:00:00",
+    "time": "6:00 PM",
+    "venue": "LeFrak Center at Lakeside, Prospect Park",
+    "neighborhood": "Prospect Park",
+    "price": "Paid (portion benefits Brooklyn Community Pride Center)",
+    "url": "https://us.list-manage.com/aYVaDkHAcrP?e=ce4c4305&c=2id7bbe46b26923a094c84942703808da",
+    "category": "tours_experiences",
+    "source": "Prospect Park Alliance / LeFrak Center",
+    "via": [
+      "Prospect Park"
+    ],
+    "why": "Lace up your skates and groove at the lakeside rink for Pride Month\u2014a portion of each ticket goes to the Brooklyn Community Pride Center."
   },
   {
     "id": "nybg-liquid-light-show-0627",
@@ -1102,50 +1930,106 @@
     "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIP7bkwIoyOPHA7s3WJxlyg9Gs_rtOIJv2uWKjnje13ZMxRUYYk-zFjTu",
     "category": "tours_experiences",
     "source": "New York Botanical Garden",
-    "via": ["NYBG"],
+    "via": [
+      "NYBG"
+    ],
     "why": "Psychedelic liquid light visuals by Liquid Light Lab paired with live music, exploring the Flower Power exhibition after dark."
   },
   {
-    "id": "nybg-farmers-market-0603",
-    "name": "NYBG Farmers Market",
-    "dateISO": "2026-06-03T10:00:00",
-    "time": "10:00 AM",
-    "venue": "New York Botanical Garden",
-    "neighborhood": "Bronx",
-    "price": "Free with admission",
-    "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIJbklQIoyOPHA74wV_4JmaaRFISCzbI1fyIk44Z7OIKmLlJCQrYt3oYx",
-    "category": "tours_experiences",
-    "source": "New York Botanical Garden",
-    "via": ["NYBG"],
-    "why": "Weekly farmers market at the NYBG with 15 rotating vendors, Fino Farms, and Trinity Farms produce — Wednesdays 10 AM–3 PM."
+    "id": "prospectpark-as-you-like-it-2026-06-27",
+    "name": "Public Theater in the Park: As You Like It at Prospect Park",
+    "dateISO": "2026-06-27T19:00:00",
+    "time": "7:00 PM",
+    "venue": "Prospect Park Peninsula",
+    "neighborhood": "Prospect Park",
+    "price": "Free (RSVP required)",
+    "url": "https://us.list-manage.com/11DDmLAO7ZX?e=ce4c4305&c=2id7bbe46b26923a094c84942703808da",
+    "category": "talks_lectures",
+    "source": "The Public Theater Mobile Unit / Prospect Park Alliance",
+    "via": [
+      "Prospect Park"
+    ],
+    "why": "The Public Theater's Mobile Unit presents Shakespeare's As You Like It free on Prospect Park's scenic Peninsula\u2014two nights only."
   },
   {
-    "id": "nybg-farmers-market-0617",
-    "name": "NYBG Farmers Market",
-    "dateISO": "2026-06-17T10:00:00",
-    "time": "10:00 AM",
-    "venue": "New York Botanical Garden",
-    "neighborhood": "Bronx",
-    "price": "Free with admission",
-    "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIJbklQIoyOPHA74wV_4JmaaRFISCzbI1fyIk44Z7OIKmLlJCQrYt3oYx",
-    "category": "tours_experiences",
-    "source": "New York Botanical Garden",
-    "via": ["NYBG"],
-    "why": "Weekly farmers market at the NYBG with 15 rotating vendors, Fino Farms, and Trinity Farms produce — Wednesdays 10 AM–3 PM."
+    "id": "prospectpark-as-you-like-it-2026-06-28",
+    "name": "Public Theater in the Park: As You Like It at Prospect Park",
+    "dateISO": "2026-06-28T19:00:00",
+    "time": "7:00 PM",
+    "venue": "Prospect Park Peninsula",
+    "neighborhood": "Prospect Park",
+    "price": "Free (RSVP required)",
+    "url": "https://us.list-manage.com/11DDmLAO7ZX?e=ce4c4305&c=2id7bbe46b26923a094c84942703808da",
+    "category": "talks_lectures",
+    "source": "The Public Theater Mobile Unit / Prospect Park Alliance",
+    "via": [
+      "Prospect Park"
+    ],
+    "why": "The Public Theater's Mobile Unit presents Shakespeare's As You Like It free on Prospect Park's scenic Peninsula\u2014two nights only."
   },
   {
-    "id": "nybg-farmers-market-0624",
-    "name": "NYBG Farmers Market",
-    "dateISO": "2026-06-24T10:00:00",
+    "id": "nypl-declaration-of-independence-display-2026-07-01",
+    "name": "Special Display: Declaration of Independence in Jefferson's Hand",
+    "dateISO": "2026-07-01T10:00:00",
     "time": "10:00 AM",
-    "venue": "New York Botanical Garden",
-    "neighborhood": "Bronx",
-    "price": "Free with admission",
-    "url": "https://e.nybg.org/c/AQjDnxYQvZQMGIbm65UBIJbklQIoyOPHA74wV_4JmaaRFISCzbI1fyIk44Z7OIKmLlJCQrYt3oYx",
-    "category": "tours_experiences",
-    "source": "New York Botanical Garden",
-    "via": ["NYBG"],
-    "why": "Weekly farmers market at the NYBG with 15 rotating vendors, Fino Farms, and Trinity Farms produce — Wednesdays 10 AM–3 PM."
+    "venue": "Stephen A. Schwarzman Building (NYPL)",
+    "neighborhood": "Midtown",
+    "price": "Free (tickets required)",
+    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ4OTR9AAYAAAAAAZhizzBoAfQq4CplnUIeCHKmBCJKfwE7er34e84sFsTQAlw3R7IQdCwNEN0thzqjfMw14bfRUIZuGrv0-KpM7mwr6FC_",
+    "category": "art_exhibitions",
+    "source": "New York Public Library",
+    "via": [
+      "NYPL"
+    ],
+    "why": "A rare opportunity to see the NYPL's fair copy of the Declaration of Independence in Thomas Jefferson's own hand\u2014on view July 1\u20137 at the flagship Schwarzman Building."
+  },
+  {
+    "id": "bbp-movies-hamilton-2026-07-02",
+    "name": "Movies With A View: Hamilton",
+    "dateISO": "2026-07-02T20:00:00",
+    "time": "Sunset (lawn opens 6 PM)",
+    "venue": "Pier 1 Harbor View Lawn, Brooklyn Bridge Park",
+    "neighborhood": "Brooklyn Heights / DUMBO",
+    "price": "Free",
+    "url": "https://brooklynbridgepark.org/event-series/movies-with-a-view/",
+    "category": "film_screenings",
+    "source": "Brooklyn Bridge Park",
+    "via": [
+      "Brooklyn Bridge Park"
+    ],
+    "why": "Outdoor summer film series at Pier 1 Harbor View Lawn\u2014Hamilton (PG-13, 2020, 160 min) with Manhattan skyline views. First come, first served."
+  },
+  {
+    "id": "bbp-movies-when-harry-met-sally-2026-07-09",
+    "name": "Movies With A View: When Harry Met Sally",
+    "dateISO": "2026-07-09T20:00:00",
+    "time": "Sunset (lawn opens 6 PM)",
+    "venue": "Pier 1 Harbor View Lawn, Brooklyn Bridge Park",
+    "neighborhood": "Brooklyn Heights / DUMBO",
+    "price": "Free",
+    "url": "https://brooklynbridgepark.org/event-series/movies-with-a-view/",
+    "category": "film_screenings",
+    "source": "Brooklyn Bridge Park",
+    "via": [
+      "Brooklyn Bridge Park"
+    ],
+    "why": "Outdoor film series: When Harry Met Sally (R, 1989, 95 min) with views of the Manhattan skyline."
+  },
+  {
+    "id": "bbp-movies-bend-it-like-beckham-2026-07-16",
+    "name": "Movies With A View: Bend It Like Beckham",
+    "dateISO": "2026-07-16T20:00:00",
+    "time": "Sunset (lawn opens 6 PM)",
+    "venue": "Pier 1 Harbor View Lawn, Brooklyn Bridge Park",
+    "neighborhood": "Brooklyn Heights / DUMBO",
+    "price": "Free",
+    "url": "https://brooklynbridgepark.org/event-series/movies-with-a-view/",
+    "category": "film_screenings",
+    "source": "Brooklyn Bridge Park",
+    "via": [
+      "Brooklyn Bridge Park"
+    ],
+    "why": "Outdoor film series: Bend It Like Beckham (PG-13, 2002, 112 min)\u2014perfect for World Cup season."
   },
   {
     "id": "mcny-uptown-bounce-hiphop-afrobeats-0723",
@@ -1158,8 +2042,26 @@
     "url": "https://35948.blackbaudhosting.com/35948/tickets?tab=2&txobjid=b46a2ad0-656b-4832-b1dc-d6201558fb88",
     "category": "tours_experiences",
     "source": "Museum of the City of New York / El Museo del Barrio",
-    "via": ["MCNY"],
+    "via": [
+      "MCNY"
+    ],
     "why": "Free summer party at the top of Museum Mile with DJ Misbehaviour spinning Hip Hop and a special guest Afrobeats DJ, in collaboration with El Museo del Barrio."
+  },
+  {
+    "id": "bbp-movies-talented-mr-ripley-2026-07-23",
+    "name": "Movies With A View: The Talented Mr. Ripley",
+    "dateISO": "2026-07-23T20:00:00",
+    "time": "Sunset (lawn opens 6 PM)",
+    "venue": "Pier 1 Harbor View Lawn, Brooklyn Bridge Park",
+    "neighborhood": "Brooklyn Heights / DUMBO",
+    "price": "Free",
+    "url": "https://brooklynbridgepark.org/event-series/movies-with-a-view/",
+    "category": "film_screenings",
+    "source": "Brooklyn Bridge Park",
+    "via": [
+      "Brooklyn Bridge Park"
+    ],
+    "why": "Outdoor film series: The Talented Mr. Ripley (R, 1999, 139 min) with stunning harbor views."
   },
   {
     "id": "mcny-uptown-bounce-house-disco-0730",
@@ -1172,7 +2074,105 @@
     "url": "https://35948.blackbaudhosting.com/35948/tickets?tab=2&txobjid=2b65c36-9cac-4c54-a747-9cbac62a01b7",
     "category": "tours_experiences",
     "source": "Museum of the City of New York",
-    "via": ["MCNY"],
+    "via": [
+      "MCNY"
+    ],
     "why": "DJ Bridge and legendary Sundae Sermon Music Festival DJ Stormin Norman spin Disco, soulful House, and NYC nightlife anthems at MCNY."
+  },
+  {
+    "id": "bbp-movies-clueless-2026-07-30",
+    "name": "Movies With A View: Clueless",
+    "dateISO": "2026-07-30T20:00:00",
+    "time": "Sunset (lawn opens 6 PM)",
+    "venue": "Pier 1 Harbor View Lawn, Brooklyn Bridge Park",
+    "neighborhood": "Brooklyn Heights / DUMBO",
+    "price": "Free",
+    "url": "https://brooklynbridgepark.org/event-series/movies-with-a-view/",
+    "category": "film_screenings",
+    "source": "Brooklyn Bridge Park",
+    "via": [
+      "Brooklyn Bridge Park"
+    ],
+    "why": "Outdoor film series: Clueless (PG-13, 1995, 97 min) under the stars with Manhattan skyline views."
+  },
+  {
+    "id": "bbp-movies-jurassic-park-2026-08-06",
+    "name": "Movies With A View: Jurassic Park",
+    "dateISO": "2026-08-06T20:00:00",
+    "time": "Sunset (lawn opens 6 PM)",
+    "venue": "Pier 1 Harbor View Lawn, Brooklyn Bridge Park",
+    "neighborhood": "Brooklyn Heights / DUMBO",
+    "price": "Free",
+    "url": "https://brooklynbridgepark.org/event-series/movies-with-a-view/",
+    "category": "film_screenings",
+    "source": "Brooklyn Bridge Park",
+    "via": [
+      "Brooklyn Bridge Park"
+    ],
+    "why": "Outdoor film series: Jurassic Park (PG-13, 1993, 122 min)\u2014life finds a way, under the Brooklyn stars."
+  },
+  {
+    "id": "bbp-movies-do-the-right-thing-2026-08-13",
+    "name": "Movies With A View: Do the Right Thing",
+    "dateISO": "2026-08-13T20:00:00",
+    "time": "Sunset (lawn opens 6 PM)",
+    "venue": "Pier 1 Harbor View Lawn, Brooklyn Bridge Park",
+    "neighborhood": "Brooklyn Heights / DUMBO",
+    "price": "Free",
+    "url": "https://brooklynbridgepark.org/event-series/movies-with-a-view/",
+    "category": "film_screenings",
+    "source": "Brooklyn Bridge Park",
+    "via": [
+      "Brooklyn Bridge Park"
+    ],
+    "why": "Outdoor screening of Spike Lee's landmark Do the Right Thing (R, 1989) with views of the Manhattan skyline."
+  },
+  {
+    "id": "bbp-movies-bridesmaids-2026-08-20",
+    "name": "Movies With A View: Bridesmaids",
+    "dateISO": "2026-08-20T20:00:00",
+    "time": "Sunset (lawn opens 6 PM)",
+    "venue": "Pier 1 Harbor View Lawn, Brooklyn Bridge Park",
+    "neighborhood": "Brooklyn Heights / DUMBO",
+    "price": "Free",
+    "url": "https://brooklynbridgepark.org/event-series/movies-with-a-view/",
+    "category": "film_screenings",
+    "source": "Brooklyn Bridge Park",
+    "via": [
+      "Brooklyn Bridge Park"
+    ],
+    "why": "Outdoor film series: Bridesmaids (R, 2011, 125 min) with views of the Manhattan skyline."
+  },
+  {
+    "id": "bbp-movies-public-choice-2026-08-27",
+    "name": "Movies With A View: Public Choice (Challengers / Great Gatsby / Ocean's 11)",
+    "dateISO": "2026-08-27T20:00:00",
+    "time": "Sunset (lawn opens 6 PM)",
+    "venue": "Pier 1 Harbor View Lawn, Brooklyn Bridge Park",
+    "neighborhood": "Brooklyn Heights / DUMBO",
+    "price": "Free",
+    "url": "https://brooklynbridgepark.org/event-series/movies-with-a-view/",
+    "category": "film_screenings",
+    "source": "Brooklyn Bridge Park",
+    "via": [
+      "Brooklyn Bridge Park"
+    ],
+    "why": "Audience-voted outdoor screening\u2014choose from Challengers, The Great Gatsby, or Ocean's 11; voting opens in early August."
+  },
+  {
+    "id": "bbp-movies-how-to-train-dragon-2026-09-18",
+    "name": "Movies With A View: How to Train Your Dragon",
+    "dateISO": "2026-09-18T20:00:00",
+    "time": "Sunset (lawn opens 6 PM)",
+    "venue": "Pier 1 Harbor View Lawn, Brooklyn Bridge Park",
+    "neighborhood": "Brooklyn Heights / DUMBO",
+    "price": "Free",
+    "url": "https://brooklynbridgepark.org/event-series/movies-with-a-view/",
+    "category": "film_screenings",
+    "source": "Brooklyn Bridge Park",
+    "via": [
+      "Brooklyn Bridge Park"
+    ],
+    "why": "Season finale family film night: How to Train Your Dragon at Pier 1 Harbor View Lawn\u2014bonus Friday screening expanding the summer series."
   }
 ]

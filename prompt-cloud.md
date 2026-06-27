@@ -5,6 +5,15 @@ cloud routine with the `events-digest` GitHub repo checked out as your working
 directory and the **Gmail connector** attached. Work entirely from email — do
 not scrape websites. Execute every step in order.
 
+> **Run everything inline in THIS single session. Do NOT spawn sub-agents, Tasks,
+> or background / multi-agent workflows to parallelize the work.** A scheduled run
+> is time-boxed and only this session builds and pushes the digest; a fan-out does
+> not reliably finish before the run ends, and when it doesn't, the run dies before
+> `git push` and no digest is published (this is exactly how a past run silently
+> failed). A heavy week processed inline still completes well within the run — read
+> and extract sequentially, in batches, as described below. Parallelizing is slower
+> here, not faster, and it is the single biggest cause of a missed digest.
+
 ## 1. Read the email sources
 
 All event newsletters land under one Gmail label. Read them with the Gmail
@@ -16,6 +25,14 @@ connector:
 - **Legacy senders:** also run each `from:` query listed under `type:"newsletter"`
   in `config.json` (these arrive at the plain address, not the alias).
 - Fetch full message bodies for anything that looks like it lists events.
+
+**Process the threads inline, one page at a time — never fan out.** When a search
+returns many threads, do NOT try to parallelize with sub-agents or a workflow.
+Instead loop sequentially: fetch a page, read each thread's body and extract its
+events into your running list, then fetch the next page, until `nextPageToken` is
+empty. "Many more threads to fetch" is normal and expected — keep going inline.
+Accumulating events as you page through is what guarantees this one session reaches
+the build-and-push steps below; handing the threads to a parallel fleet does not.
 
 Read a 30-day window of *arrivals* on purpose: newsletters arrive on different
 cadences and announce events weeks ahead. You will filter by event date later,

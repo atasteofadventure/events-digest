@@ -53,7 +53,7 @@ From the emails, extract every individual event into an array and write it to
   "neighborhood": "Neighborhood",
   "price": "Free" or "$25",
   "url": "https://absolute-link-to-this-event",
-  "category": "one of: tech_ai, workshops_classes, tours_experiences, film_screenings, art_exhibitions, talks_lectures",
+  "category": "one of: tech_ai, music_nightlife, comedy, film_screenings, art_exhibitions, talks_lectures, workshops_classes, tours_experiences, festivals_parties, miscellaneous",
   "source": "organizer/venue name (not the newsletter)",
   "via": ["newsletter it came from"],
   "why": "one-sentence organizer description (not a personalized pitch)"
@@ -81,7 +81,12 @@ Rules:
   does that themselves. There is no relevance score and no cap; whatever you
   extract is what gets shown.
 - **`category`**: tag each event with the closest category. Nothing is capped, so
-  do not be conservative about `art_exhibitions`.
+  do not be conservative about `art_exhibitions`. Use `music_nightlife` for concerts,
+  DJ sets, dance parties, club nights, and drag/burlesque; `comedy` for stand-up and
+  comedy shows; `festivals_parties` for street festivals, parades, Pride marches, and
+  large outdoor celebrations. **`miscellaneous` is a real option — use it as the
+  genuine catch-all when an event fits none of the others.** Do NOT force a poor fit
+  into `tours_experiences`; reserve that for actual tours and guided experiences.
 - Do not pre-filter by date — extract everything plausibly upcoming, however far
   out. The build buckets by date (anything past next weekend lands in a "Later"
   section) and drops only events whose date has already passed.

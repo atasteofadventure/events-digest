@@ -2216,7 +2216,7 @@
     "neighborhood": "Williamsburg",
     "price": "",
     "url": "https://www.ticketmaster.com/galactic-brooklyn-new-york-06-27-2026/event/000064359AB77FB9",
-    "category": "miscellaneous",
+    "category": "music_nightlife",
     "source": "Brooklyn Bowl",
     "via": [
       "FREEwilliamsburg"
@@ -2232,7 +2232,7 @@
     "neighborhood": "Williamsburg",
     "price": "",
     "url": "https://www.songkick.com/concerts/43297017-moruf-at-babys-all-right",
-    "category": "miscellaneous",
+    "category": "music_nightlife",
     "source": "Baby's All Right",
     "via": [
       "FREEwilliamsburg"
@@ -2248,7 +2248,7 @@
     "neighborhood": "Williamsburg",
     "price": "",
     "url": "",
-    "category": "miscellaneous",
+    "category": "music_nightlife",
     "source": "Union Pool",
     "via": [
       "FREEwilliamsburg"
@@ -2264,7 +2264,7 @@
     "neighborhood": "Williamsburg",
     "price": "",
     "url": "",
-    "category": "miscellaneous",
+    "category": "music_nightlife",
     "source": "Baby's All Right",
     "via": [
       "FREEwilliamsburg"

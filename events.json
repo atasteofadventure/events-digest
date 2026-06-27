@@ -2206,5 +2206,69 @@
       "Thought Gallery / The Curriculum"
     ],
     "why": "Robert Montano's 100-minute coming-of-age monologue about growing up small and becoming a jockey — a spellbinding piece of physical storytelling running through July 25."
+  },
+  {
+    "id": "wburg-galactic-20260627",
+    "name": "Galactic (with Jelly Joseph & Circus Mind)",
+    "dateISO": "2026-06-27T20:00:00",
+    "time": "8:00 PM",
+    "venue": "Brooklyn Bowl",
+    "neighborhood": "Williamsburg",
+    "price": "",
+    "url": "https://www.ticketmaster.com/galactic-brooklyn-new-york-06-27-2026/event/000064359AB77FB9",
+    "category": "miscellaneous",
+    "source": "Brooklyn Bowl",
+    "via": [
+      "FREEwilliamsburg"
+    ],
+    "why": "New Orleans funk-jam mainstays Galactic headline Brooklyn Bowl with Jelly Joseph and Circus Mind; doors 6pm, show 8pm."
+  },
+  {
+    "id": "wburg-moruf-20260627",
+    "name": "MoRuf",
+    "dateISO": "2026-06-27T19:00:00",
+    "time": "7:00 PM",
+    "venue": "Baby's All Right",
+    "neighborhood": "Williamsburg",
+    "price": "",
+    "url": "https://www.songkick.com/concerts/43297017-moruf-at-babys-all-right",
+    "category": "miscellaneous",
+    "source": "Baby's All Right",
+    "via": [
+      "FREEwilliamsburg"
+    ],
+    "why": "Newark-bred R&B and hip-hop artist MoRuf headlines an early show at Baby's All Right."
+  },
+  {
+    "id": "wburg-weird-nightmare-20260627",
+    "name": "Weird Nightmare, Golden Apples",
+    "dateISO": "2026-06-27T19:00:00",
+    "time": "7:00 PM",
+    "venue": "Union Pool",
+    "neighborhood": "Williamsburg",
+    "price": "",
+    "url": "",
+    "category": "miscellaneous",
+    "source": "Union Pool",
+    "via": [
+      "FREEwilliamsburg"
+    ],
+    "why": "Union Pool presents a rock bill with Weird Nightmare and Golden Apples."
+  },
+  {
+    "id": "wburg-baby-dance-20260627",
+    "name": "Baby Dance",
+    "dateISO": "2026-06-27T21:00:00",
+    "time": "9:00 PM",
+    "venue": "Baby's All Right",
+    "neighborhood": "Williamsburg",
+    "price": "",
+    "url": "",
+    "category": "miscellaneous",
+    "source": "Baby's All Right",
+    "via": [
+      "FREEwilliamsburg"
+    ],
+    "why": "Late-night dance party at Baby's All Right."
   }
 ]

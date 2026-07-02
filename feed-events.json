@@ -1,0 +1,54 @@
+{
+  "generated": "2026-07-02T22:44:34.391Z",
+  "events": [],
+  "errors": [
+    {
+      "source": "Fort Greene Park Conservancy",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "Green-Wood Cemetery",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "Gowanus Dredgers",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "NY Mycological Society",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "Makeville Studio",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "Gotham Center",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "Club Free Time",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "Creative Coding NYC",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "NYC Parks",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "NYC Resistor",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "Greenlight Bookstore",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "Photoville",
+      "error": "HTTP 403"
+    }
+  ]
+}

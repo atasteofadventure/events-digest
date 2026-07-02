@@ -1,2274 +1,1318 @@
 [
   {
-    "id": "skint-pride-disco-skate-0626",
-    "name": "Pride Disco Skate Night",
-    "dateISO": "2026-06-26T18:00:00",
-    "time": "6:00 PM",
-    "venue": "Lefrak Center at Lakeside",
-    "neighborhood": "Prospect Park",
-    "price": "Various",
-    "url": "https://www.prospectpark.org/event/pride-disco-skate-night/",
-    "category": "tours_experiences",
-    "source": "Prospect Park",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Annual Pride skating night at Prospect Park's Lakeside rink."
-  },
-  {
-    "id": "skint-drag-march-0626",
-    "name": "NYC Drag March",
-    "dateISO": "2026-06-26T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Tompkins Square Park to Stonewall Inn",
-    "neighborhood": "East Village",
-    "price": "Free",
-    "url": "https://gaycitynews.com/nyc-drag-march-harlem-pride-dyke-march-pride-2026/",
-    "category": "tours_experiences",
-    "source": "NYC Drag March",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Annual Pride march from Tompkins Square Park to the Stonewall Inn."
-  },
-  {
-    "id": "skint-state-of-firsts-fri-0626",
-    "name": "State of Firsts — w/ Director Chase Joynt Q&A (Fri)",
-    "dateISO": "2026-06-26T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Angelika Film Center",
-    "neighborhood": "SoHo",
-    "price": "$19 / $17.50 seniors",
-    "url": "https://angelikafilmcenter.com/nyc/movies/details/state-of-firsts",
-    "category": "film_screenings",
-    "source": "Angelika Film Center",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Documentary screening with director Chase Joynt in person for Q&A at Angelika."
-  },
-  {
-    "id": "skint-prideshow-sideshow-0626",
-    "name": "Prideshow at the Sideshow",
-    "dateISO": "2026-06-26T20:00:00",
-    "time": "8:00 PM",
-    "venue": "Coney Island USA",
-    "neighborhood": "Coney Island",
-    "price": "$20",
-    "url": "https://www.coneyisland.com/event/prideshow062626",
-    "category": "tours_experiences",
-    "source": "Coney Island USA",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Pride celebration at Coney Island's famous sideshow venue."
-  },
-  {
-    "id": "skint-support-women-djs-0626",
-    "name": "Support Women DJs Pride Party",
-    "dateISO": "2026-06-26T22:00:00",
-    "time": "10:00 PM",
-    "venue": "Mood Ring",
-    "neighborhood": "Bushwick",
-    "price": "$9.95+",
-    "url": "https://www.supportwomendjs.com/events-all/6j2ucay1zrrixzcoa9kcf8n59glw09",
-    "category": "tours_experiences",
-    "source": "Support Women DJs",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Pride party featuring women DJs at Mood Ring in Bushwick."
-  },
-  {
-    "id": "skint-chinatown-nights-0626",
-    "name": "Chinatown Nights (Fka Chinatown Night Market)",
-    "dateISO": "2026-06-26T19:30:00",
-    "time": "7:30 PM",
-    "venue": "Forsyth Plaza",
-    "neighborhood": "Lower East Side",
-    "price": "Free",
-    "url": "https://www.thinkchinatown.org/nightmarket",
-    "category": "tours_experiences",
-    "source": "Think!Chinatown",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Outdoor evening market and cultural celebration in the heart of Chinatown."
-  },
-  {
-    "id": "skint-yacht-rock-fri-0626",
-    "name": "Yacht Rock Choir",
-    "dateISO": "2026-06-26T18:00:00",
-    "time": "6:00 PM",
-    "venue": "Young Ethel's",
-    "neighborhood": "South Slope",
-    "price": "Free",
-    "url": "https://www.yachtrockchoir.com/event-details-registration/yacht-rock-choir-june-shows",
-    "category": "tours_experiences",
-    "source": "Yacht Rock Choir",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Free evening of soft rock and smooth soul singalongs at Young Ethel's."
-  },
-  {
-    "id": "bpl-plaza-performance-0626",
-    "name": "BPL Plaza Performance Series",
-    "dateISO": "2026-06-26T18:00:00",
-    "time": "6:00 PM",
-    "venue": "Brooklyn Public Library Plaza",
-    "neighborhood": "Prospect Heights",
-    "price": "Free",
-    "url": "https://discover.bklynlibrary.org/?event=true&eventtags=plaza%20performances&event=true",
-    "category": "tours_experiences",
-    "source": "Brooklyn Public Library",
-    "via": [
-      "The Skint"
-    ],
-    "why": "DJ Max Glazer, samba band Os Clavelitos, and Swingtime Big Band perform on BPL's outdoor plaza."
-  },
-  {
-    "id": "summerstage-laurie-anderson-0626",
-    "name": "SummerStage: Laurie Anderson's Republic of Love",
-    "dateISO": "2026-06-26T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Rumsey Playfield, Central Park",
-    "neighborhood": "Upper East Side",
-    "price": "Free",
-    "url": "https://cityparksfoundation.org/events/laurie-anderson/",
-    "category": "talks_lectures",
-    "source": "City Parks Foundation / SummerStage",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Avant-garde legend Laurie Anderson performs with jazz quartet Sexmob in Central Park."
-  },
-  {
-    "id": "skint-lc-social-dance-0626",
-    "name": "Lincoln Center Summer for the City: Social Dance with El Rubi del Acordeón",
-    "dateISO": "2026-06-26T18:30:00",
-    "time": "6:30 PM",
-    "venue": "Lincoln Center",
-    "neighborhood": "Lincoln Square",
-    "price": "Free",
-    "url": "https://www.lincolncenter.org/series/summer-for-the-city",
-    "category": "tours_experiences",
-    "source": "Lincoln Center",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Free outdoor social dance featuring Rubali Valerio aka El Rubi del Acordeón."
-  },
-  {
-    "id": "skint-lc-salsa-disco-0626",
-    "name": "Lincoln Center Summer for the City: Salsa Silent Disco",
-    "dateISO": "2026-06-26T22:00:00",
-    "time": "10:00 PM",
-    "venue": "Lincoln Center",
-    "neighborhood": "Lincoln Square",
-    "price": "Free",
-    "url": "https://www.lincolncenter.org/series/summer-for-the-city",
-    "category": "tours_experiences",
-    "source": "Lincoln Center",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Free salsa silent disco with DJ Bongohead at Lincoln Center."
-  },
-  {
-    "id": "skint-independence-day-intrepid-0626",
-    "name": "Outdoor Movie: Independence Day at the Intrepid",
-    "dateISO": "2026-06-26T20:00:00",
-    "time": "Dusk",
-    "venue": "Intrepid Museum Flight Deck",
-    "neighborhood": "Hell's Kitchen",
-    "price": "Free",
-    "url": "https://intrepidmuseum.org/intrepid-museums-movie-night-independence-day",
-    "category": "film_screenings",
-    "source": "Intrepid Sea, Air & Space Museum",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Free outdoor screening of Independence Day on the Intrepid's flight deck."
-  },
-  {
-    "id": "momi-doom-generation-0626",
-    "name": "The Doom Generation (Culture Wars! series)",
-    "dateISO": "2026-06-26T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Museum of the Moving Image",
-    "neighborhood": "Astoria",
-    "price": "$15",
-    "url": "https://movingimage.org/event/the-doom-generation/",
-    "category": "film_screenings",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Gregg Araki's transgressive 1995 road film opens MoMI's new Culture Wars! series."
-  },
-  {
-    "id": "nyhs-songs-of-america-fri-0626",
-    "name": "Songs of America (Live Music Series)",
-    "dateISO": "2026-06-26T17:30:00",
-    "time": "5:30 PM",
-    "venue": "New-York Historical Society",
-    "neighborhood": "Upper West Side",
-    "price": "Included with admission",
-    "url": "https://www.nyhistory.org/programs",
-    "category": "talks_lectures",
-    "source": "New-York Historical Society",
-    "via": [
-      "New-York Historical Society"
-    ],
-    "why": "Live music celebrating American history and culture at the New-York Historical Society."
-  },
-  {
-    "id": "tg-ny-insight-meditation-0626",
-    "name": "Meditation and Sound Bath with Anjie Cho & Jeremiah Cymerman",
-    "dateISO": "2026-06-26T18:00:00",
-    "time": "Evening",
-    "venue": "New York Insight Meditation Center",
-    "neighborhood": "Gramercy",
-    "price": "Sliding scale",
-    "url": "https://www.nyimc.org/",
-    "category": "workshops_classes",
-    "source": "New York Insight Meditation Center",
-    "via": [
-      "Thought Gallery / The Curriculum"
-    ],
-    "why": "Guided meditation with a flower mandala creation and sound bath with composer Jeremiah Cymerman."
-  },
-  {
-    "id": "tg-paley-moments-0626",
-    "name": "Moments That Defined a Nation",
-    "dateISO": "2026-06-26T18:00:00",
-    "time": "Evening",
-    "venue": "The Paley Center for Media",
-    "neighborhood": "Midtown",
-    "price": "Free / RSVP",
-    "url": "https://www.paleycenter.org/",
-    "category": "talks_lectures",
-    "source": "The Paley Center for Media",
-    "via": [
-      "Thought Gallery / The Curriculum"
-    ],
-    "why": "Paley curator Allison Kraft looks back at broadcast milestones from Pearl Harbor to the moon landing, with clips from the Paley Archive."
-  },
-  {
-    "id": "cv-healthcare-ai-hackathon-0626",
-    "name": "Healthcare x AI Hackathon NYC",
-    "dateISO": "2026-06-26T09:00:00",
-    "time": "All day",
-    "venue": "TBD",
-    "neighborhood": "Manhattan",
-    "price": "Free",
-    "url": "https://luma.com/jcvsbk4w",
-    "category": "tech_ai",
-    "source": "Healthcare AI Guy / Cerebral Valley",
-    "via": [
-      "Cerebral Valley"
-    ],
-    "why": "Full-day hackathon for engineers, PMs, and founders building at the intersection of healthcare and AI."
-  },
-  {
-    "id": "skint-swamp-in-city-0626",
-    "name": "Swamp in the City: T'Marie + Bayou Juju",
-    "dateISO": "2026-06-26T19:30:00",
-    "time": "7:30 PM",
-    "venue": "Jalopy Theater",
-    "neighborhood": "Columbia Street Waterfront District",
-    "price": "$15+ sliding scale",
-    "url": "https://www.viewcy.com/event/tmarie__bayou_juju",
-    "category": "tours_experiences",
-    "source": "Jalopy Theater",
-    "via": [
-      "The Skint"
-    ],
-    "why": "New Orleans dance band T'Marie and Bayou Juju bring Cajun, zydeco, and Creole sounds, with a beginner dance lesson at 7:30pm."
-  },
-  {
-    "id": "skint-bitches-brew-0626",
-    "name": "Bitches Brew Comedy Show",
-    "dateISO": "2026-06-26T20:30:00",
-    "time": "8:30 PM",
-    "venue": "Halyards",
-    "neighborhood": "Gowanus",
-    "price": "Free",
-    "url": "https://www.eventbrite.com/e/bitches-brew-free-comedy-stand-up-and-variety-show-tickets-172309360937",
-    "category": "talks_lectures",
-    "source": "Halyards / Bitches Brew",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Women-produced and hosted comedy show featuring Phoebe Robinson, Skyler Higley, and more."
-  },
-  {
-    "id": "skint-tale-storytelling-0626",
-    "name": "Tale Storytelling Show at KGB Bar",
-    "dateISO": "2026-06-26T19:30:00",
-    "time": "7:30 PM",
-    "venue": "The Red Room at KGB Bar",
-    "neighborhood": "East Village",
-    "price": "~$5-$15",
-    "url": "https://www.eventbrite.com/e/tale-nycs-finest-storytelling-tickets-1991776738843",
-    "category": "talks_lectures",
-    "source": "Tale Storytelling",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Harmon Leon hosts some of the city's best storytellers; discount available with code 'discountskint.'"
-  },
-  {
-    "id": "skint-looking-for-laughs-0626",
-    "name": "Looking for Laughs: Live Blind Date Comedy Show",
-    "dateISO": "2026-06-26T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Caveat",
-    "neighborhood": "Lower East Side",
-    "price": "$14.64 (code: skint)",
-    "url": "https://www.caveat.nyc/events/looking-for-laughs-6-26-2026",
-    "category": "talks_lectures",
-    "source": "Caveat",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Love Island meets Whose Line Is It Anyway? Two singles meet four comedians for a live blind date."
-  },
-  {
-    "id": "skint-second-nature-doc",
-    "name": "Second Nature (Documentary, Narrated by Elliot Page)",
-    "dateISO": "2026-06-26T20:00:00",
-    "time": "Showtimes vary",
-    "venue": "DCTV Firehouse Cinema",
-    "neighborhood": "Chinatown",
-    "price": "$16",
-    "url": "https://www.dctvny.org/s/firehouse-film/second-nature-MCXHULR5QNH5GQHGN4TAYS4DRJRM",
-    "category": "film_screenings",
-    "source": "DCTV Firehouse Cinema",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Drew Denny's documentary follows evolutionary biologist Dr. Joan Roughgarden exploring queer animal behavior; screens through July 2."
-  },
-  {
-    "id": "skint-tarot-exhibition",
-    "name": "Tarot! Renaissance Symbols, Modern Visions (Exhibition)",
-    "dateISO": "2026-06-26T17:00:00",
-    "time": "5:00–8:00 PM (free Fri evenings)",
-    "venue": "The Morgan Library & Museum",
-    "neighborhood": "Murray Hill",
-    "price": "Free Fri 5–8pm (RSVP); $25 general",
-    "url": "https://themorgan.org/exhibitions/tarot",
-    "category": "art_exhibitions",
-    "source": "The Morgan Library & Museum",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Major exhibition tracing tarot's journey from 15th-century Italian card games to a source of contemporary artistic inspiration, with rare historic decks and modern artworks; runs through October 4."
-  },
-  {
-    "id": "momi-yoga-courtyard-0627",
-    "name": "Yoga in the Courtyard",
-    "dateISO": "2026-06-27T09:45:00",
-    "time": "9:45 AM",
-    "venue": "Museum of the Moving Image Courtyard",
-    "neighborhood": "Astoria",
-    "price": "Free (RSVP)",
-    "url": "https://movingimage.org/event/yoga-in-the-courtyard/2026-05-30/",
-    "category": "workshops_classes",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Free weekly yoga class in MoMI's outdoor Kaufman Courtyard with The Yoga Room; bring your own mat."
-  },
-  {
-    "id": "momi-touch-object-0627",
-    "name": "Touch Object Experience (Open Worlds)",
-    "dateISO": "2026-06-27T11:00:00",
-    "time": "11:00 AM–6:00 PM",
-    "venue": "Museum of the Moving Image",
-    "neighborhood": "Astoria",
-    "price": "Free with museum admission",
-    "url": "https://movingimage.org/event/touch-object-experience/2026-05-30/",
-    "category": "tours_experiences",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Handle cameras, life masks, and Henson Creature Workshop materials in MoMI's gallery — a hands-on tour of filmmaking history."
-  },
-  {
-    "id": "momi-last-temptation-0627",
-    "name": "The Last Temptation of Christ — w/ Isaac Butler & Alissa Wilkinson in Person",
-    "dateISO": "2026-06-27T12:30:00",
-    "time": "12:30 PM",
-    "venue": "Museum of the Moving Image",
-    "neighborhood": "Astoria",
-    "price": "$15 (members free)",
-    "url": "https://movingimage.org/event/the-last-temptation-of-christ-2026/",
-    "category": "film_screenings",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Scorsese's controversial 1988 masterpiece followed by a conversation and book signing with NYT critic Alissa Wilkinson and author Isaac Butler."
-  },
-  {
-    "id": "momi-summer-spin-0627",
-    "name": "Summer Spin Series: Inaugural DJ Sets in the Courtyard",
-    "dateISO": "2026-06-27T12:00:00",
-    "time": "12:00–6:00 PM",
-    "venue": "Museum of the Moving Image Kaufman Courtyard",
-    "neighborhood": "Astoria",
-    "price": "Free",
-    "url": "https://movingimage.org/event/summer-spin-series/2026-06-27/",
-    "category": "tours_experiences",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Free monthly DJ afternoon at MoMI's Kaufman Courtyard, transforming the museum into a summer gathering space."
-  },
-  {
-    "id": "momi-watermelon-woman-0627",
-    "name": "The Watermelon Woman (Culture Wars! series)",
-    "dateISO": "2026-06-27T16:00:00",
-    "time": "4:00 PM",
-    "venue": "Museum of the Moving Image",
-    "neighborhood": "Astoria",
-    "price": "$15 (members discounted)",
-    "url": "https://movingimage.org/event/the-watermelon-woman-2026/",
-    "category": "film_screenings",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Cheryl Dunye's groundbreaking 1996 queer landmark screens for Pride Week as part of Culture Wars!"
-  },
-  {
-    "id": "momi-philadelphia-0627",
-    "name": "Philadelphia (35mm) — The Originals series",
-    "dateISO": "2026-06-27T18:30:00",
-    "time": "6:30 PM",
-    "venue": "Museum of the Moving Image",
-    "neighborhood": "Astoria",
-    "price": "$15 (members free)",
-    "url": "https://movingimage.org/event/philadelphia/",
-    "category": "film_screenings",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Jonathan Demme's landmark AIDS-crisis film starring Tom Hanks and Denzel Washington, screened on a gorgeous 35mm print."
-  },
-  {
-    "id": "nyhs-songs-of-america-sat-0627",
-    "name": "Songs of America (Live Music Series)",
-    "dateISO": "2026-06-27T17:30:00",
-    "time": "5:30 PM",
-    "venue": "New-York Historical Society",
-    "neighborhood": "Upper West Side",
-    "price": "Included with admission",
-    "url": "https://www.nyhistory.org/programs",
-    "category": "talks_lectures",
-    "source": "New-York Historical Society",
-    "via": [
-      "New-York Historical Society"
-    ],
-    "why": "Live music celebrating American history and culture at the New-York Historical Society."
-  },
-  {
-    "id": "aiany-park-ave-south-0627",
-    "name": "Walking Tour: The Architecture of Park Avenue South",
-    "dateISO": "2026-06-27T10:30:00",
-    "time": "10:30 AM",
-    "venue": "Park Avenue South",
-    "neighborhood": "Flatiron / Gramercy",
-    "price": "$15 (members: $10)",
-    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ5MTh9AAcAAAAAAy23nCNmoR7AjMgwYbI8xXr7y3copIzHqhlDfu-ktVi7fnaRRvHpuHn9Zht2SBBDTT6C904YFaW8_FJyrCch3rJM1NY",
-    "category": "tours_experiences",
-    "source": "AIA New York",
-    "via": [
-      "AIA New York"
-    ],
-    "why": "90-minute AIA walking tour tracing Park Avenue South's architectural evolution from grand avenues to residential districts shaped by affluence."
-  },
-  {
-    "id": "aiany-hidden-jewels-hudson-0627",
-    "name": "Hidden Jewels of Hudson: A Residential Construction Tour",
-    "dateISO": "2026-06-27T11:00:00",
-    "time": "11:00 AM–5:00 PM",
-    "venue": "Hudson, NY (day trip)",
-    "neighborhood": "Hudson, NY",
-    "price": "Ticketed",
-    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ5MTh9AAcAAAAAAy23nCNnKiPhk3vPhlhiITlYYLaHXtOXUvrluFFg00a3djkxtjxBlfRchC8X7tsmBYCtx-9jP3HJQZQoSOywO4fGwLg",
-    "category": "tours_experiences",
-    "source": "AIA New York",
-    "via": [
-      "AIA New York"
-    ],
-    "why": "All-day AIA tour of residential construction projects in Hudson, NY—4 LU/HSW credits for architects."
-  },
-  {
-    "id": "mas-crown-heights-0627",
-    "name": "Defining Crown Heights North Walking Tour",
-    "dateISO": "2026-06-27T14:00:00",
-    "time": "2:00 PM",
-    "venue": "Crown Heights North",
-    "neighborhood": "Crown Heights",
-    "price": "$15 (members: $10)",
-    "url": "https://www.mas.org/events/crown-hts-north-6-27-26/",
-    "category": "tours_experiences",
-    "source": "Municipal Art Society",
-    "via": [
-      "Municipal Art Society"
-    ],
-    "why": "MAS tour with Suzanne Spellen exploring the architecture and history of Crown Heights North."
-  },
-  {
-    "id": "govisland-soil-testing-0627",
-    "name": "Free Soil Testing on Governors Island",
-    "dateISO": "2026-06-27T10:00:00",
-    "time": "10:00 AM",
-    "venue": "Governors Island",
-    "neighborhood": "Governors Island",
-    "price": "Free (ferry required)",
-    "url": "https://urbansoils.org/new-events/soil-first-aid-free-soil-testing-b4fcd",
-    "category": "tours_experiences",
-    "source": "Urban Soils / Governors Island",
-    "via": [
-      "Governors Island"
-    ],
-    "why": "Bring a soil sample from your garden or community space for free testing on Governors Island."
-  },
-  {
-    "id": "govisland-tree-tour-0627",
-    "name": "Tree Tour on Governors Island",
-    "dateISO": "2026-06-27T10:00:00",
-    "time": "Morning",
-    "venue": "Governors Island",
-    "neighborhood": "Governors Island",
-    "price": "Free (ferry required)",
-    "url": "https://www.eventbrite.com/e/tree-tour-tickets-1988921254011",
-    "category": "tours_experiences",
-    "source": "Governors Island",
-    "via": [
-      "Governors Island"
-    ],
-    "why": "Guided tour of Governors Island's unique tree canopy and urban forest."
-  },
-  {
-    "id": "nyc-pride-youth-pride-0627",
-    "name": "Youth Pride at Pier 16",
-    "dateISO": "2026-06-27T11:00:00",
-    "time": "11:00 AM–6:00 PM",
-    "venue": "Pier 16",
-    "neighborhood": "Seaport",
-    "price": "Free",
-    "url": "https://nycpride.org/event/youth-pride/",
-    "category": "tours_experiences",
-    "source": "NYC Pride",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Official NYC Pride event celebrating LGBTQ+ youth at the Seaport."
-  },
-  {
-    "id": "nyc-pride-harlem-pride-0627",
-    "name": "17th Annual Harlem Pride",
-    "dateISO": "2026-06-27T12:00:00",
-    "time": "12:00–6:00 PM",
-    "venue": "12th Ave bet 130th & 132nd Sts",
-    "neighborhood": "Harlem",
-    "price": "Free",
-    "url": "https://harlempride.org/",
-    "category": "tours_experiences",
-    "source": "Harlem Pride",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Annual celebration of LGBTQ+ community in Harlem with performances, vendors, and family activities."
-  },
-  {
-    "id": "nyc-pride-tsq-party-0627",
-    "name": "TSQ Live Pride Finale Party",
-    "dateISO": "2026-06-27T15:00:00",
-    "time": "3:00 PM",
-    "venue": "Broadway + 46th St (Times Square)",
-    "neighborhood": "Midtown",
-    "price": "Free",
-    "url": "https://www.timessquarenyc.org/events/tsq-live-pride-finale-party",
-    "category": "tours_experiences",
-    "source": "Times Square Alliance",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Free outdoor Pride finale celebration in Times Square."
-  },
-  {
-    "id": "nyc-pride-dyke-march-0627",
-    "name": "NYC Dyke March",
-    "dateISO": "2026-06-27T17:00:00",
-    "time": "5:00 PM",
-    "venue": "Starting at Bryant Park",
-    "neighborhood": "Midtown / Greenwich Village",
-    "price": "Free",
-    "url": "https://www.instagram.com/nycdykemarch/",
-    "category": "tours_experiences",
-    "source": "NYC Dyke March",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Annual Dyke March steps off from Bryant Park through Manhattan."
-  },
-  {
-    "id": "skint-state-of-firsts-sat-0627",
-    "name": "State of Firsts — w/ Director Chase Joynt Q&A (Sat)",
-    "dateISO": "2026-06-27T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Angelika Film Center",
-    "neighborhood": "SoHo",
-    "price": "$19 / $17.50 seniors",
-    "url": "https://angelikafilmcenter.com/nyc/movies/details/state-of-firsts",
-    "category": "film_screenings",
-    "source": "Angelika Film Center",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Documentary screening with director Chase Joynt in person for Q&A at Angelika."
-  },
-  {
-    "id": "skint-glo-city-0627",
-    "name": "Glo in the City Live! Queer Comedy (Pride/Post Dyke March)",
-    "dateISO": "2026-06-27T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Gladys Books + Wine",
-    "neighborhood": "Bed-Stuy",
-    "price": "$15",
-    "url": "https://www.gladysbooksandwine.com/pages/events",
-    "category": "talks_lectures",
-    "source": "Gladys Books + Wine",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Black and POC queer comedy show at Gladys Books + Wine, timed for post–Dyke March celebrations."
-  },
-  {
-    "id": "skint-switch-play-0627",
-    "name": "Switch n' Play Drag + Burlesque Show",
-    "dateISO": "2026-06-27T20:00:00",
-    "time": "8:00 PM",
-    "venue": "Littlefield",
-    "neighborhood": "Gowanus",
-    "price": "$15+",
-    "url": "https://littlefieldnyc.com/event/?wfea_eb_id=90509255767",
-    "category": "tours_experiences",
-    "source": "Littlefield",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Drag and burlesque showcase at Gowanus' Littlefield for Pride weekend."
-  },
-  {
-    "id": "skint-bowie-pride-0627",
-    "name": "Let's Dance: David Bowie Nite (Pride Edition)",
-    "dateISO": "2026-06-27T23:00:00",
-    "time": "11:00 PM",
-    "venue": "TV Eye",
-    "neighborhood": "Ridgewood",
-    "price": "$10–$15",
-    "url": "https://wl.eventim.us/event/lets-dance-bowie-dance-party/692145?afflky=TVEye",
-    "category": "tours_experiences",
-    "source": "TV Eye",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Bowie-themed Pride dance party at Ridgewood's TV Eye."
-  },
-  {
-    "id": "skint-brooklyn-cookie-swap-0627",
-    "name": "Brooklyn Cookie Swap",
-    "dateISO": "2026-06-27T14:00:00",
-    "time": "2:00 PM",
-    "venue": "Prospect Park Long Meadow",
-    "neighborhood": "Prospect Park",
-    "price": "Free",
-    "url": "https://www.brooklyncookieswap.com/",
-    "category": "tours_experiences",
-    "source": "Brooklyn Cookie Swap",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Free community baked goods swap on Prospect Park's Long Meadow."
-  },
-  {
-    "id": "skint-dominican-taste-sat-0627",
-    "name": "Sixth Annual Dominican Taste Festival (Day 1)",
-    "dateISO": "2026-06-27T10:00:00",
-    "time": "10:00 AM–8:00 PM",
-    "venue": "Quisqueya Plaza",
-    "neighborhood": "Inwood",
-    "price": "Free",
-    "url": "https://www.facebook.com/dominicantasteoficial/",
-    "category": "tours_experiences",
-    "source": "Dominican Taste Festival",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Annual celebration of Dominican food, music, and culture at Inwood's Quisqueya Plaza."
-  },
-  {
-    "id": "skint-punk-island-0627",
-    "name": "Punk Island Festival",
-    "dateISO": "2026-06-27T11:00:00",
-    "time": "11:00 AM–8:00 PM",
-    "venue": "Randall's Island",
-    "neighborhood": "Randall's Island",
-    "price": "Free",
-    "url": "https://punkislandnyc.org/",
-    "category": "tours_experiences",
-    "source": "Punk Island",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Free all-ages annual punk festival with 80 bands across six stages on Randall's Island."
-  },
-  {
-    "id": "skint-writing-field-trip-janes-0627",
-    "name": "Writing Field Trip to Jane's Carousel",
-    "dateISO": "2026-06-27T09:45:00",
-    "time": "9:45 AM",
-    "venue": "Jane's Carousel / Brooklyn Bridge Park",
-    "neighborhood": "DUMBO",
-    "price": "$10+ sliding scale",
-    "url": "https://one-story.com/product/field-trip-janes-carousel/",
-    "category": "workshops_classes",
-    "source": "One Story magazine",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Literary magazine One Story leads a site-specific writing workshop at Jane's Carousel and Brooklyn Bridge Park."
-  },
-  {
-    "id": "skint-quiet-car-0627",
-    "name": "The Quiet Car: Q Train Event with Nicole Kelner",
-    "dateISO": "2026-06-27T11:00:00",
-    "time": "11:00 AM",
-    "venue": "Q Train (96th St to Union Square)",
-    "neighborhood": "Citywide",
-    "price": "Free (receive a free book)",
-    "url": "https://www.eventbrite.com/e/turn-the-q-train-quiet-with-nicole-kelner-and-rizzoli-new-york-tickets-1989406525471",
-    "category": "tours_experiences",
-    "source": "Nicole Kelner / Rizzoli",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Author Nicole Kelner transforms the Q train into a quiet car; bring an analog activity, RSVP gets you a free copy of her book."
-  },
-  {
-    "id": "skint-show-brain-concert-0627",
-    "name": "Free Show Brain Concert (Leftöver Crack & More)",
-    "dateISO": "2026-06-27T13:30:00",
-    "time": "1:30 PM",
-    "venue": "Tompkins Square Park",
-    "neighborhood": "East Village",
-    "price": "Free",
-    "url": "https://www.instagram.com/p/DZsdOs0FGiN/?img_index=1",
-    "category": "tours_experiences",
-    "source": "Show Brain",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Free all-ages outdoor concert featuring Leftöver Crack, Pilfers, Balaclava, Loosey, and the Dollheads."
-  },
-  {
-    "id": "skint-gowanus-dance-tour-0627",
-    "name": "Immersive Performance Tour of Gowanus",
-    "dateISO": "2026-06-27T14:00:00",
-    "time": "2:00 PM",
-    "venue": "Gowanus (tour route)",
-    "neighborhood": "Gowanus",
-    "price": "$10+",
-    "url": "https://www.artichokedance.org/events/2026/6/13/immersive-performance-tours-of-gowanus",
-    "category": "tours_experiences",
-    "source": "Artichoke Dance Company",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Artichoke Dance Company leads an immersive walking tour of rapidly-changing Gowanus with community organizers and site-specific performances."
-  },
-  {
-    "id": "rooftopfilms-ny-nonfiction-0627",
-    "name": "Rooftop Films: New York Non-Fiction — A 30-Year Retrospective",
-    "dateISO": "2026-06-27T19:00:00",
-    "time": "7:00 PM (doors)",
-    "venue": "New Design High School Roof",
-    "neighborhood": "Lower East Side",
-    "price": "$22",
-    "url": "https://rooftopfilms.com/event/new-york-non-fiction-a-30-year-retrospective/",
-    "category": "film_screenings",
-    "source": "Rooftop Films",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Rooftop Films' 30th summer opens with a retrospective collection of short documentaries tracing NYC across three decades, followed by filmmaker Q&A."
-  },
-  {
-    "id": "skint-lc-ballet-workshop-0627",
-    "name": "Lincoln Center: Ballet-Inspired Dance Workshop (NYCB)",
-    "dateISO": "2026-06-27T11:00:00",
-    "time": "11:00 AM",
-    "venue": "Lincoln Center",
-    "neighborhood": "Lincoln Square",
-    "price": "Free",
-    "url": "https://www.lincolncenter.org/series/summer-for-the-city",
-    "category": "workshops_classes",
-    "source": "Lincoln Center / NYC Ballet",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Free ballet-inspired dance workshop led by New York City Ballet as part of Summer for the City."
-  },
-  {
-    "id": "skint-lc-jperiod-block-party-0627",
-    "name": "Lincoln Center: J.Period Presents 'The Block Party'",
-    "dateISO": "2026-06-27T19:30:00",
-    "time": "7:30 PM",
-    "venue": "Lincoln Center",
-    "neighborhood": "Lincoln Square",
-    "price": "Free",
-    "url": "https://www.lincolncenter.org/series/summer-for-the-city",
-    "category": "tours_experiences",
-    "source": "Lincoln Center",
-    "via": [
-      "The Skint"
-    ],
-    "why": "J.Period brings a live block party experience to Lincoln Center's outdoor spaces."
-  },
-  {
-    "id": "skint-relationsh-t-0627",
-    "name": "Relationsh*t Storytelling Show",
-    "dateISO": "2026-06-27T17:00:00",
-    "time": "5:00 PM",
-    "venue": "QED",
-    "neighborhood": "Astoria",
-    "price": "$12",
-    "url": "https://qedastoria.com/products/relationsh-t-1",
-    "category": "talks_lectures",
-    "source": "QED Astoria",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Stories about all kinds of relationships paired with live advice from actual therapists."
-  },
-  {
-    "id": "skint-read-to-filth-alice-0627",
-    "name": "Read to Filth: Alice in Wonderland (Pride Edition)",
-    "dateISO": "2026-06-27T18:30:00",
-    "time": "6:30 PM",
-    "venue": "Pine Box Rock Shop",
-    "neighborhood": "Bushwick",
-    "price": "$5 suggested",
-    "url": "https://www.instagram.com/p/DZu0iiuRitw/",
-    "category": "talks_lectures",
-    "source": "Pine Box Rock Shop",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Monthly comedy book club tackles Alice in Wonderland for Pride, with comedians riffing on the text at host Tom Pastor's direction."
-  },
-  {
-    "id": "skint-drunk-planet-earth-0627",
-    "name": "Drunk Planet Earth: MST3K Meets Animal Planet",
-    "dateISO": "2026-06-27T21:30:00",
-    "time": "9:30 PM",
-    "venue": "Caveat",
-    "neighborhood": "Lower East Side",
-    "price": "Free",
-    "url": "https://caveat.nyc/events/drunk-planet-earth-6-27-2026",
-    "category": "talks_lectures",
-    "source": "Caveat",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Participatory animal documentary drinking show with audience trivia at Caveat."
-  },
-  {
-    "id": "skint-hand-to-phone-0627",
-    "name": "Hand to Phone Dance Party (90s House, Synth, EBM)",
-    "dateISO": "2026-06-27T22:30:00",
-    "time": "10:30 PM",
-    "venue": "Alphaville",
-    "neighborhood": "Bushwick",
-    "price": "Free",
-    "url": "https://dice.fm/event/q2poyy-hand-to-phone-27th-jun-alphaville-new-york-tickets",
-    "category": "tours_experiences",
-    "source": "Alphaville",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Free dance party with DJs Ronnie Stone, Rosa Luna, and Ivy Oh spinning 90s house, synth, and EBM at Alphaville."
-  },
-  {
-    "id": "cv-superplane-hackathon-0627",
-    "name": "SuperPlane Hackathon: Bash Script Funeral with Render",
-    "dateISO": "2026-06-27T09:00:00",
-    "time": "All day",
-    "venue": "TBD",
-    "neighborhood": "Manhattan",
-    "price": "Free",
-    "url": "https://luma.com/zlddwpj7",
-    "category": "tech_ai",
-    "source": "SuperPlane / Render",
-    "via": [
-      "Cerebral Valley"
-    ],
-    "why": "Full-day platform engineering hackathon in NYC — build agents for incidents, workflow automation, deploy pipelines, or infra tooling."
-  },
-  {
-    "id": "momi-carlitos-way-0628",
-    "name": "Carlito's Way (35mm Encore) — De Palma: Summer of Suspense",
-    "dateISO": "2026-06-28T12:30:00",
-    "time": "12:30 PM",
-    "venue": "Museum of the Moving Image",
-    "neighborhood": "Astoria",
-    "price": "$15 (members free)",
-    "url": "https://movingimage.org/series/de-palma-summer-of-suspense/",
-    "category": "film_screenings",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Gorgeous 35mm print of De Palma's 1993 crime epic, part of the De Palma: Summer of Suspense series."
-  },
-  {
-    "id": "momi-quills-0628",
-    "name": "Quills (35mm) — w/ Screenwriter Douglas Wright in Person",
-    "dateISO": "2026-06-28T13:00:00",
-    "time": "1:00 PM",
-    "venue": "Museum of the Moving Image",
-    "neighborhood": "Astoria",
-    "price": "$15",
-    "url": "https://movingimage.org/event/quills/",
-    "category": "film_screenings",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Philip Kaufman's 2000 film starring Kate Winslet and Geoffrey Rush screens on 35mm with screenwriter Douglas Wright in person."
-  },
-  {
-    "id": "momi-poison-0628",
-    "name": "Poison (35mm) — Culture Wars! series",
-    "dateISO": "2026-06-28T16:00:00",
-    "time": "4:00 PM",
-    "venue": "Museum of the Moving Image",
-    "neighborhood": "Astoria",
-    "price": "$15",
-    "url": "https://movingimage.org/event/poison-2026/",
-    "category": "film_screenings",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Todd Haynes's award-winning 1991 queer triptych screens on 35mm for Pride Week as part of Culture Wars!"
-  },
-  {
-    "id": "momi-tongues-untied-0628",
-    "name": "Tongues Untied — Culture Wars! series",
-    "dateISO": "2026-06-28T16:15:00",
-    "time": "4:15 PM",
-    "venue": "Museum of the Moving Image",
-    "neighborhood": "Astoria",
-    "price": "$15",
-    "url": "https://movingimage.org/event/tongues-untied-2026/",
-    "category": "film_screenings",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Marlon Riggs's landmark 1989 documentary exploring Black gay identity screens for Pride Week."
-  },
-  {
-    "id": "aiany-upper-east-side-0628",
-    "name": "Walking Tour: Upper East Side Architecture Through Affluence and Ailments",
-    "dateISO": "2026-06-28T10:30:00",
-    "time": "10:30 AM",
-    "venue": "Upper East Side",
-    "neighborhood": "Upper East Side",
-    "price": "$15 (members: $10)",
-    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ5MTh9AAcAAAAAAy23nCNpHxD7Ntve0azrP2I5Tz8ZXQnmkZLp0zth5lt1jVwvKZX8TvO_Xi1GYhFdlcPRyb4BRAcI-eaGTnz8Qpd7Z9k",
-    "category": "tours_experiences",
-    "source": "AIA New York",
-    "via": [
-      "AIA New York"
-    ],
-    "why": "AIA walking tour examining the Upper East Side's residential districts shaped by 19th-century affluence and the hospitals that came to define them."
-  },
-  {
-    "id": "mas-south-williamsburg-0628",
-    "name": "South Williamsburg Walking Tour",
-    "dateISO": "2026-06-28T11:00:00",
-    "time": "11:00 AM",
-    "venue": "South Williamsburg",
-    "neighborhood": "South Williamsburg",
-    "price": "$15 (members: $10)",
-    "url": "https://www.mas.org/events/so-wmsburg-6-28-26/",
-    "category": "tours_experiences",
-    "source": "Municipal Art Society",
-    "via": [
-      "Municipal Art Society"
-    ],
-    "why": "MAS tour with Zack Rhodes exploring the architecture and layered community history of South Williamsburg."
-  },
-  {
-    "id": "nyhs-doris-kearns-0628",
-    "name": "Leadership for a More Perfect Union: Doris Kearns Goodwin",
-    "dateISO": "2026-06-28T17:30:00",
-    "time": "5:30 PM",
-    "venue": "New-York Historical Society",
-    "neighborhood": "Upper West Side",
-    "price": "Ticketed",
-    "url": "https://www.nyhistory.org/programs",
-    "category": "talks_lectures",
-    "source": "New-York Historical Society",
-    "via": [
-      "New-York Historical Society"
-    ],
-    "why": "Pulitzer Prize-winning historian Doris Kearns Goodwin speaks on leadership and American history at the New-York Historical Society."
-  },
-  {
-    "id": "nyhs-summer-social-0628",
-    "name": "Summer Social at the New-York Historical Society",
-    "dateISO": "2026-06-28T12:00:00",
-    "time": "12:00 PM",
-    "venue": "New-York Historical Society",
-    "neighborhood": "Upper West Side",
-    "price": "Ticketed",
-    "url": "https://www.nyhistory.org/programs",
-    "category": "tours_experiences",
-    "source": "New-York Historical Society",
-    "via": [
-      "New-York Historical Society"
-    ],
-    "why": "Afternoon social event at the New-York Historical Society for members and guests."
-  },
-  {
-    "id": "nyc-pride-pridefest-0628",
-    "name": "PrideFest Street Festival",
-    "dateISO": "2026-06-28T11:00:00",
-    "time": "11:00 AM–6:00 PM",
-    "venue": "4th Ave from Astor Pl to 14th St",
-    "neighborhood": "Greenwich Village",
-    "price": "Free",
-    "url": "https://nycpride.org/event/pridefest/",
-    "category": "tours_experiences",
-    "source": "NYC Pride",
-    "via": [
-      "The Skint"
-    ],
-    "why": "NYC Pride's official street festival on 4th Avenue with vendors, performances, and community celebrations."
-  },
-  {
-    "id": "nyc-pride-march-0628",
-    "name": "NYC Pride March",
-    "dateISO": "2026-06-28T12:00:00",
-    "time": "12:00 PM",
-    "venue": "26th St + 5th Ave to 15th St + 7th Ave",
-    "neighborhood": "Midtown to Greenwich Village",
-    "price": "Free",
-    "url": "https://pix11.com/news/local-news/nycs-2026-pride-march-street-closures-and-more/",
-    "category": "tours_experiences",
-    "source": "NYC Pride",
-    "via": [
-      "The Skint"
-    ],
-    "why": "NYC's annual Pride March, one of the world's largest Pride celebrations."
-  },
-  {
-    "id": "nyc-queer-liberation-march-0628",
-    "name": "8th Annual Queer Liberation March",
-    "dateISO": "2026-06-28T14:30:00",
-    "time": "2:30 PM",
-    "venue": "Steps off at Union Square West to Foley Square",
-    "neighborhood": "Greenwich Village",
-    "price": "Free",
-    "url": "https://queermarch.org/",
-    "category": "tours_experiences",
-    "source": "Reclaim Pride Coalition",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Annual grassroots Queer Liberation March, a no-corporate-floats alternative to the official Pride March."
-  },
-  {
-    "id": "skint-pride-for-the-people-0628",
-    "name": "Pride for the People: Post-Parade Party",
-    "dateISO": "2026-06-28T15:00:00",
-    "time": "3:00 PM–Midnight",
-    "venue": "Moxy Chelsea",
-    "neighborhood": "Chelsea",
-    "price": "$20",
-    "url": "https://www.eventbrite.com/e/pride-for-the-people-post-parade-party-tickets-1990665005619",
-    "category": "tours_experiences",
-    "source": "Pride for the People",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Post-Pride March party at Moxy Chelsea with Jasmine Goode, Zack Wickham, and Peppermint."
-  },
-  {
-    "id": "skint-dominican-taste-sun-0628",
-    "name": "Sixth Annual Dominican Taste Festival (Day 2)",
-    "dateISO": "2026-06-28T10:00:00",
-    "time": "10:00 AM–8:00 PM",
-    "venue": "Quisqueya Plaza",
-    "neighborhood": "Inwood",
-    "price": "Free",
-    "url": "https://www.facebook.com/dominicantasteoficial/",
-    "category": "tours_experiences",
-    "source": "Dominican Taste Festival",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Annual celebration of Dominican food, music, and culture at Inwood's Quisqueya Plaza."
-  },
-  {
-    "id": "skint-tonitas-fest-0628",
-    "name": "Third Annual Toñitas Fest",
-    "dateISO": "2026-06-28T12:00:00",
-    "time": "12:00–6:00 PM",
-    "venue": "244 Grand St",
-    "neighborhood": "Williamsburg",
-    "price": "Free",
-    "url": "https://www.lagesta.co/",
-    "category": "tours_experiences",
-    "source": "La Gesta",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Annual community festival celebrating Latin music and culture in Williamsburg."
-  },
-  {
-    "id": "skint-garlic-takedown-0628",
-    "name": "The Brooklyn Garlic Takedown",
-    "dateISO": "2026-06-28T13:00:00",
-    "time": "1:00 PM",
-    "venue": "Royal Palms Shuffleboard Club",
-    "neighborhood": "Williamsburg",
-    "price": "$30",
-    "url": "https://thetakedowns.com/",
-    "category": "tours_experiences",
-    "source": "The Takedowns",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Annual garlic cooking competition where home cooks battle for glory at Williamsburg's Royal Palms."
-  },
-  {
-    "id": "skint-movies-at-palace-harriet-0628",
-    "name": "Movies at the Palace: Harriet (2019)",
-    "dateISO": "2026-06-28T14:00:00",
-    "time": "2:00 PM (doors)",
-    "venue": "United Palace",
-    "neighborhood": "Washington Heights",
-    "price": "$10",
-    "url": "https://unitedpalace.boletosexpress.com/event.php?event_id=43316",
-    "category": "film_screenings",
-    "source": "United Palace",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Harriet (2019) screens at the historic United Palace theater, with a pre-show performance by Vy Higginsen's Sing Harlem Choir."
-  },
-  {
-    "id": "skint-yacht-rock-sun-0628",
-    "name": "Yacht Rock Choir (Gowanus Dredgers Boathouse)",
-    "dateISO": "2026-06-28T17:00:00",
-    "time": "5:00 PM",
-    "venue": "Gowanus Dredgers Boathouse",
-    "neighborhood": "Gowanus",
-    "price": "Free",
-    "url": "https://www.yachtrockchoir.com/event-details-registration/yacht-rock-choir-june-shows",
-    "category": "tours_experiences",
-    "source": "Yacht Rock Choir",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Free evening of soft rock and smooth soul singalongs at the Gowanus Dredgers Boathouse."
-  },
-  {
-    "id": "skint-lc-jason-marsalis-0628",
-    "name": "Lincoln Center: 'The Modern New Orleans Music' with Jason Marsalis",
-    "dateISO": "2026-06-28T18:00:00",
-    "time": "6:00 PM",
-    "venue": "Lincoln Center",
-    "neighborhood": "Lincoln Square",
-    "price": "Free",
-    "url": "https://www.lincolncenter.org/series/summer-for-the-city",
-    "category": "tours_experiences",
-    "source": "Lincoln Center",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Free concert with Jason Marsalis exploring modern New Orleans music traditions at Lincoln Center."
-  },
-  {
-    "id": "skint-lc-labelle-nightbirds-0628",
-    "name": "Lincoln Center: Nightbirds — The Music of LaBelle feat. Nona Hendryx & Patti LaBelle",
-    "dateISO": "2026-06-28T19:30:00",
-    "time": "7:30 PM",
-    "venue": "Lincoln Center",
-    "neighborhood": "Lincoln Square",
-    "price": "Free",
-    "url": "https://www.lincolncenter.org/series/summer-for-the-city",
-    "category": "tours_experiences",
-    "source": "Lincoln Center",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Free performance celebrating LaBelle's legendary catalog with Nona Hendryx and special guest Patti LaBelle."
-  },
-  {
-    "id": "skint-new-tricks-storytelling-0628",
-    "name": "New Tricks Storytelling: 'Hot to Trot' (All Performers 40+)",
-    "dateISO": "2026-06-28T19:00:00",
-    "time": "7:00 PM",
-    "venue": "QED",
-    "neighborhood": "Astoria",
-    "price": "$12",
-    "url": "https://qedastoria.com/products/new-tricks-2",
-    "category": "talks_lectures",
-    "source": "QED Astoria",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Monthly storytelling show where all performers are over 40; tonight's theme is 'Hot to Trot,' hosted by Adrianne Frost."
-  },
-  {
-    "id": "skint-date-my-friend-queer-0628",
-    "name": "Date My Friend: Queer Edition",
-    "dateISO": "2026-06-28T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Cassette",
-    "neighborhood": "Ridgewood",
-    "price": "$18",
-    "url": "https://dice.fm/event/avwrkq-date-my-friend-queer-nite-28th-jun-cassette-new-york-city-tickets",
-    "category": "tours_experiences",
-    "source": "Cassette",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Skip the apps: friends pitch their single friends in 3-minute presentations, followed by DJ dancing and mingling."
-  },
-  {
-    "id": "skint-you-are-not-alone-0628",
-    "name": "You Are Not Alone: An Uplifting Show About Depression",
-    "dateISO": "2026-06-28T18:00:00",
-    "time": "6:00 PM",
-    "venue": "Magnet Theater",
-    "neighborhood": "Chelsea",
-    "price": "$10",
-    "url": "https://magnettheater.com/show/59686/",
-    "category": "talks_lectures",
-    "source": "Magnet Theater",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Improvisers and artists who battle depression create scenes from personal experience, showing how laughter can be the best medicine."
-  },
-  {
-    "id": "aiany-neuro-inclusive-design-0629",
-    "name": "People and Buildings Under Stress: Neuro-Inclusive Design and Emergency Planning",
-    "dateISO": "2026-06-29T18:00:00",
-    "time": "6:00–8:00 PM",
-    "venue": "Center for Architecture",
-    "neighborhood": "Greenwich Village",
-    "price": "$15 (members: $10)",
-    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ5MTh9AAcAAAAAAy23nCNrKQ93ULsCjZZOTE1xNN9FKM1X7x9C2C1ZDCH-wVQs2lhzr-cxyRrZ0TfFOH95okwsBuP6G9kVBmhAB6dHN_8",
-    "category": "talks_lectures",
-    "source": "AIA New York",
-    "via": [
-      "AIA New York"
-    ],
-    "why": "AIA talk on designing buildings for neurodiversity and emergency planning, with 1.5 LU/HSW credits."
-  },
-  {
-    "id": "skint-book-rapport-0629",
-    "name": "Book Rapport: Comedy Book Club",
-    "dateISO": "2026-06-29T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Caveat",
-    "neighborhood": "Lower East Side",
-    "price": "~$13.61 (code: bookish)",
-    "url": "https://www.caveat.nyc/events/book-rapport-6-29-2026",
-    "category": "talks_lectures",
-    "source": "Caveat",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Comedians compete in bookish games to see who's most well-read; hosted by Ally Spier."
-  },
-  {
-    "id": "rooftopfilms-jazz-summers-day-0629",
-    "name": "Rooftop Films: Jazz on a Summer's Day (1959) — Free",
-    "dateISO": "2026-06-29T19:00:00",
-    "time": "7:00 PM (doors)",
-    "venue": "Louis Armstrong Museum (Louis Armstrong House)",
-    "neighborhood": "Corona, Queens",
-    "price": "Free",
-    "url": "https://rooftopfilms.com/event/jazz-on-a-summers-day/",
-    "category": "film_screenings",
-    "source": "Rooftop Films",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Bert Stern's landmark 1959 Newport Jazz Festival documentary screens free at the Louis Armstrong Museum in Queens."
-  },
-  {
-    "id": "momi-moving-image-studio-0629",
-    "name": "Moving Image Studio (Last Session of the Season)",
-    "dateISO": "2026-06-29T12:30:00",
-    "time": "12:30–5:30 PM",
-    "venue": "Museum of the Moving Image Education Center",
-    "neighborhood": "Astoria",
-    "price": "Free",
-    "url": "https://movingimage.org/event/moving-image-studio-2/2026-03-08/",
-    "category": "workshops_classes",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Last drop-in media arts studio session of the season at MoMI; open to all ages."
-  },
-  {
-    "id": "cv-vercel-ship-nyc-0630",
-    "name": "Vercel Ship 26 NYC — AI-Native Developer Conference",
-    "dateISO": "2026-06-30T09:00:00",
-    "time": "All day",
-    "venue": "The Glasshouse",
-    "neighborhood": "Midtown",
-    "price": "Free (code: SHIP-26-COMMUNITY-100-OFF)",
-    "url": "https://vercel.com/ship/nyc",
-    "category": "tech_ai",
-    "source": "Vercel",
-    "via": [
-      "Cerebral Valley"
-    ],
-    "why": "Vercel's AI-native, agent-focused conference in NYC with talks, demos, and conversations on building, deploying, and scaling AI products."
-  },
-  {
-    "id": "tg-lspace-surrealist-occult-0630",
-    "name": "The Surrealist Occult — In Conjunction with 'Shape of Dreams'",
-    "dateISO": "2026-06-30T18:00:00",
-    "time": "Evening",
-    "venue": "L'Space",
-    "neighborhood": "Chelsea",
-    "price": "Ticketed",
-    "url": "https://www.lspacenyc.com/",
-    "category": "talks_lectures",
-    "source": "L'Space Gallery",
-    "via": [
-      "Thought Gallery / The Curriculum"
-    ],
-    "why": "Deep dive into artist Leonora Carrington's visual language rooted in alchemy, mythology, and the Celtic occult, in conjunction with current gallery show 'Shape of Dreams.'"
-  },
-  {
-    "id": "tg-pearl-social-world-transition-0630",
-    "name": "A World in Transition: Salon on the G7 and a Fragmented World",
-    "dateISO": "2026-06-30T18:00:00",
-    "time": "Evening",
-    "venue": "Pearl Social",
-    "neighborhood": "Manhattan",
-    "price": "Ticketed",
-    "url": "https://www.pearlsocial.com/",
-    "category": "talks_lectures",
-    "source": "Pearl Social",
-    "via": [
-      "Thought Gallery / The Curriculum"
-    ],
-    "why": "Salon exploring geopolitical inversions of the past year, framed through the G7 summit—more fragmented, more technologically advanced, more climate-stressed."
-  },
-  {
-    "id": "nypl-kidslive-matthew-burgess-0630",
-    "name": "KidsLIVE Author Talk: Matthew Burgess (Caldecott-Winner 'Fireworks')",
-    "dateISO": "2026-06-30T15:30:00",
-    "time": "3:30 PM",
-    "venue": "53rd Street Library / Virtual",
-    "neighborhood": "Midtown",
-    "price": "Free",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ5MDh9AAYAAAAAAg71kzGjBw-yFgmmQ1_chZROLcOj9bwljaLbyDRu_GkAsCuBacgU7D8IJNwQt-lj8UlB0eI8_t73iUFBXjXwJ_omFJ0",
-    "category": "talks_lectures",
-    "source": "New York Public Library",
-    "via": [
-      "New York Public Library"
-    ],
-    "why": "Free author talk with Caldecott Medal winner Matthew Burgess about his book Fireworks; followed by a Q&A and activity."
-  },
-  {
-    "id": "aiany-arch-for-education-0701",
-    "name": "AIANY Architecture for Education Committee Meeting",
-    "dateISO": "2026-07-01T17:00:00",
-    "time": "5:00–6:30 PM",
-    "venue": "Zoom",
-    "neighborhood": "Online",
-    "price": "Free (members)",
-    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ5MTh9AAcAAAAAAy23nCN0DXUIB1qqk6n2RsCrKCR0_oyKTGOFbC7nIlqGZNm-_Bzd7PchibeKrh3dNyjHtUZXsLKlmYYMwb0jJbsdUMs",
-    "category": "talks_lectures",
-    "source": "AIA New York",
-    "via": [
-      "AIA New York"
-    ],
-    "why": "Monthly AIANY committee meeting on architecture for educational spaces, held virtually."
-  },
-  {
-    "id": "aiany-future-of-practice-0701",
-    "name": "AIANY Future of Practice Committee Meeting",
-    "dateISO": "2026-07-01T18:30:00",
-    "time": "6:30–8:00 PM",
-    "venue": "Center for Architecture / Zoom",
-    "neighborhood": "Greenwich Village",
-    "price": "Free (members)",
-    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ5MTh9AAcAAAAAAy23nCN2SCXWYCc6gUh4bSl9ZmaevJXakHD-4WlWffkGL_n6U6A5nx6EwqJMbirIN4Ee4AF1sZqoWa6ts-vSxl5ncU0",
-    "category": "talks_lectures",
-    "source": "AIA New York",
-    "via": [
-      "AIA New York"
-    ],
-    "why": "Monthly AIANY committee meeting on the future of architectural practice."
-  },
-  {
-    "id": "tg-nad-in-praise-noise-0701",
-    "name": "In Praise of Noise — Lecture-Performance with Kameelah Janan Rasheed",
-    "dateISO": "2026-07-01T18:00:00",
-    "time": "Evening",
-    "venue": "National Academy of Design",
-    "neighborhood": "Upper East Side",
-    "price": "Ticketed",
-    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ5MTh9AAcAAAAAAy23nCN0DXUIB1qqk6n2RsCrKCR0_oyKTGOFbC7nIlqGZNm-_Bzd7PchibeKrh3dNyjHtUZXsLKlmYYMwb0jJbsdUMs",
-    "category": "talks_lectures",
-    "source": "National Academy of Design",
-    "via": [
-      "Thought Gallery / The Curriculum"
-    ],
-    "why": "Emergent lecture-performance by artist and critic Kameelah Janan Rasheed exploring noise, error, and what exceeds the signal."
-  },
-  {
-    "id": "nypl-us250-family-day-0701",
-    "name": "U.S. 250 Family Day & Concert at the Schwarzman Building",
-    "dateISO": "2026-07-01T12:00:00",
-    "time": "12:00 PM",
-    "venue": "Stephen A. Schwarzman Building Plaza",
-    "neighborhood": "Midtown",
-    "price": "Free",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ5MDh9AAYAAAAAAg71kzGO-7loyEaLQw02ipo4rxITjhsMPP3uxk4h1KIwuPzFO-4915f5T2UQh3OUPGgYmdJt_yHRR2bPDWIRHlI4Lc",
-    "category": "tours_experiences",
-    "source": "New York Public Library",
-    "via": [
-      "New York Public Library"
-    ],
-    "why": "NYPL's America@250 celebration with drop-in activities, scavenger hunts, button-making, glitter tattoos, and an evening performance by the Young People's Chorus of NYC."
-  },
-  {
-    "id": "nypl-summer-storytimes-0701",
-    "name": "Summer Storytimes & Performances for Kids at Lincoln Center",
-    "dateISO": "2026-07-01T11:00:00",
-    "time": "11:00 AM & 1:00 PM",
-    "venue": "David Geffen Hall, Lincoln Center",
-    "neighborhood": "Lincoln Square",
-    "price": "Free",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ5MDh9AAYAAAAAAg71kzGk78h9zlydL7xGXqNCsXSonNJwgBmcfEcyPAYOlfrIrzoCciy6a71woj52gdNOzUzHCfDIIkdjFpq9eoxnaP8",
-    "category": "workshops_classes",
-    "source": "New York Public Library / Library for the Performing Arts",
-    "via": [
-      "New York Public Library"
-    ],
-    "why": "Free weekly storytimes for children featuring performers in dance, music, and theater, hosted by NYPL's Library for the Performing Arts."
-  },
-  {
-    "id": "aiany-planning-urban-design-0702",
-    "name": "AIANY Planning and Urban Design Committee Meeting",
-    "dateISO": "2026-07-02T18:00:00",
-    "time": "6:00–8:00 PM",
-    "venue": "Center for Architecture",
-    "neighborhood": "Greenwich Village",
-    "price": "Free (members)",
-    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ5MTh9AAcAAAAAAy23nCN4PF1cCM2AlDWtOv0fAK6yRFEKLYWmapqbCBuTuGDLJEIKKFgU5DqLSntbSPQnEiVY81K9CS6c9jJgzb3dHLA",
-    "category": "talks_lectures",
-    "source": "AIA New York",
-    "via": [
-      "AIA New York"
-    ],
-    "why": "Monthly AIANY committee meeting on planning and urban design, held in-person at the Center for Architecture."
-  },
-  {
-    "id": "brainery-wyckoff-house-0702",
-    "name": "Brooklyn Brainery: Tour of Wyckoff House Museum",
-    "dateISO": "2026-07-02T18:00:00",
-    "time": "Evening",
-    "venue": "Wyckoff House Museum",
-    "neighborhood": "Canarsie",
-    "price": "Ticketed",
-    "url": "https://brooklynbrainery.com/courses",
-    "category": "tours_experiences",
-    "source": "Brooklyn Brainery",
-    "via": [
-      "Brooklyn Brainery"
-    ],
-    "why": "Brooklyn Brainery tours NYC's oldest surviving building, the 1652 Pieter Claesen Wyckoff House."
-  },
-  {
-    "id": "nyhs-songs-of-america-thu-0702",
-    "name": "Songs of America (Live Music Series)",
-    "dateISO": "2026-07-02T17:30:00",
-    "time": "5:30 PM",
-    "venue": "New-York Historical Society",
-    "neighborhood": "Upper West Side",
-    "price": "Included with admission",
-    "url": "https://www.nyhistory.org/programs",
-    "category": "talks_lectures",
-    "source": "New-York Historical Society",
-    "via": [
-      "New-York Historical Society"
-    ],
-    "why": "Live music celebrating American history and culture at the New-York Historical Society."
-  },
-  {
-    "id": "momi-blow-out-fri-0703",
-    "name": "Blow Out (35mm) — De Palma: Summer of Suspense",
-    "dateISO": "2026-07-03T19:00:00",
-    "time": "Showtimes TBD",
-    "venue": "Museum of the Moving Image",
-    "neighborhood": "Astoria",
-    "price": "$15 (members free)",
-    "url": "https://movingimage.org/event/blow-out-2/2026-07-03/",
-    "category": "film_screenings",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Brian De Palma's 1981 political thriller starring John Travolta and Nancy Allen, on 35mm as part of the De Palma: Summer of Suspense series."
-  },
-  {
-    "id": "nyhs-songs-of-america-fri-0703",
-    "name": "Songs of America (Live Music Series)",
-    "dateISO": "2026-07-03T17:30:00",
-    "time": "5:30 PM",
-    "venue": "New-York Historical Society",
-    "neighborhood": "Upper West Side",
-    "price": "Included with admission",
-    "url": "https://www.nyhistory.org/programs",
-    "category": "talks_lectures",
-    "source": "New-York Historical Society",
-    "via": [
-      "New-York Historical Society"
-    ],
-    "why": "Live music celebrating American history and culture at the New-York Historical Society."
-  },
-  {
-    "id": "govisland-sail4th-250-0704",
-    "name": "Sail4th 250 on Governors Island",
+    "id": "nypl-declaration-viewing-0704",
+    "name": "Declaration of Independence Viewing",
     "dateISO": "2026-07-04T10:00:00",
-    "time": "Morning (closes at 4pm)",
-    "venue": "Governors Island",
-    "neighborhood": "Governors Island",
-    "price": "Ticketed",
-    "url": "https://sail4th.org/",
-    "category": "tours_experiences",
-    "source": "Governors Island",
-    "via": [
-      "Governors Island"
-    ],
-    "why": "America@250 sailing celebration on Governors Island — note the Island closes at 4pm on July 4 due to Macy's fireworks logistics."
-  },
-  {
-    "id": "nyhs-celebrate-july4-0704",
-    "name": "Celebrate July 4th at the New-York Historical Society",
-    "dateISO": "2026-07-04T11:00:00",
-    "time": "11:00 AM",
-    "venue": "New-York Historical Society",
-    "neighborhood": "Upper West Side",
-    "price": "Ticketed",
-    "url": "https://www.nyhistory.org/programs",
-    "category": "tours_experiences",
-    "source": "New-York Historical Society",
-    "via": [
-      "New-York Historical Society"
-    ],
-    "why": "July 4th celebration at the New-York Historical Society marking America's 250th anniversary."
-  },
-  {
-    "id": "nyhs-songs-of-america-sat-0704",
-    "name": "Songs of America (Live Music Series — July 4th Edition)",
-    "dateISO": "2026-07-04T17:30:00",
-    "time": "5:30 PM",
-    "venue": "New-York Historical Society",
-    "neighborhood": "Upper West Side",
-    "price": "Included with admission",
-    "url": "https://www.nyhistory.org/programs",
-    "category": "talks_lectures",
-    "source": "New-York Historical Society",
-    "via": [
-      "New-York Historical Society"
-    ],
-    "why": "Final Songs of America live music performance for July 4th at the New-York Historical Society."
-  },
-  {
-    "id": "aiany-downtown-1776-0705",
-    "name": "Walking Tour: Downtown New York Architecture in 1776",
-    "dateISO": "2026-07-05T10:30:00",
-    "time": "10:30 AM",
-    "venue": "Downtown Manhattan",
-    "neighborhood": "Financial District",
-    "price": "$15 (members: $10)",
-    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ5MTh9AAcAAAAAAy23nCNtXQMsZeh1O7udckapRIWTZBStAruksVyQ7j7Ah1HA8wDIWG_bnOwh2oviZrfnXsrxDHATFcVP1lpK39ISyzg",
-    "category": "tours_experiences",
-    "source": "AIA New York",
-    "via": [
-      "AIA New York"
-    ],
-    "why": "AIA walking tour exploring what Downtown Manhattan looked like during the American Revolution in 1776."
-  },
-  {
-    "id": "momi-blow-out-sun-0705",
-    "name": "Blow Out (35mm) — De Palma: Summer of Suspense",
-    "dateISO": "2026-07-05T13:00:00",
-    "time": "Showtimes TBD",
-    "venue": "Museum of the Moving Image",
-    "neighborhood": "Astoria",
-    "price": "$15 (members free)",
-    "url": "https://movingimage.org/event/blow-out-2/2026-07-03/",
-    "category": "film_screenings",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Brian De Palma's 1981 political thriller Blow Out on 35mm — second screening of the weekend."
-  },
-  {
-    "id": "momi-salt-of-earth-0705",
-    "name": "Salt of the Earth — By the People, For the People series",
-    "dateISO": "2026-07-05T12:30:00",
-    "time": "12:30 PM",
-    "venue": "Museum of the Moving Image",
-    "neighborhood": "Astoria",
-    "price": "$15",
-    "url": "https://movingimage.org/event/salt-of-the-earth/",
-    "category": "film_screenings",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Herbert Biberman's suppressed 1954 labor classic about a New Mexico miners' strike, part of MoMI's By The People, For the People series."
-  },
-  {
-    "id": "nypl-summer-storytimes-0708",
-    "name": "Summer Storytimes & Performances for Kids at Lincoln Center",
-    "dateISO": "2026-07-08T11:00:00",
-    "time": "11:00 AM & 1:00 PM",
-    "venue": "David Geffen Hall, Lincoln Center",
-    "neighborhood": "Lincoln Square",
-    "price": "Free",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ5MDh9AAYAAAAAAg71kzGk78h9zlydL7xGXqNCsXSonNJwgBmcfEcyPAYOlfrIrzoCciy6a71woj52gdNOzUzHCfDIIkdjFpq9eoxnaP8",
-    "category": "workshops_classes",
-    "source": "New York Public Library / Library for the Performing Arts",
-    "via": [
-      "New York Public Library"
-    ],
-    "why": "Free weekly storytimes for children featuring performers in dance, music, and theater at Lincoln Center."
-  },
-  {
-    "id": "nyhs-pulls-down-king-george-0709",
-    "name": "'Pulls Down King George III Statue' — Historical Reenactment",
-    "dateISO": "2026-07-09T12:00:00",
-    "time": "12:00 PM",
-    "venue": "New-York Historical Society",
-    "neighborhood": "Upper West Side",
-    "price": "Ticketed",
-    "url": "https://www.nyhistory.org/programs",
-    "category": "tours_experiences",
-    "source": "New-York Historical Society",
-    "via": [
-      "New-York Historical Society"
-    ],
-    "why": "Live historical reenactment of the 1776 toppling of the King George III statue on the Bowling Green."
-  },
-  {
-    "id": "skint-chinatown-nights-0710",
-    "name": "Chinatown Nights (Fka Chinatown Night Market)",
-    "dateISO": "2026-07-10T19:30:00",
-    "time": "7:30 PM",
-    "venue": "Forsyth Plaza",
-    "neighborhood": "Lower East Side",
-    "price": "Free",
-    "url": "https://www.thinkchinatown.org/nightmarket",
-    "category": "tours_experiences",
-    "source": "Think!Chinatown",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Outdoor evening market and cultural celebration in the heart of Chinatown — second edition this summer."
-  },
-  {
-    "id": "momi-yoga-courtyard-0711",
-    "name": "Yoga in the Courtyard",
-    "dateISO": "2026-07-11T09:45:00",
-    "time": "9:45 AM",
-    "venue": "Museum of the Moving Image Courtyard",
-    "neighborhood": "Astoria",
-    "price": "Free (RSVP)",
-    "url": "https://movingimage.org/event/yoga-in-the-courtyard/2026-05-30/",
-    "category": "workshops_classes",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Free weekly yoga class in MoMI's outdoor Kaufman Courtyard with The Yoga Room."
-  },
-  {
-    "id": "mas-lower-manhattan-residential-0711",
-    "name": "Lower Manhattan's Residential Revival Walking Tour",
-    "dateISO": "2026-07-11T10:00:00",
     "time": "10:00 AM",
-    "venue": "Lower Manhattan",
-    "neighborhood": "Financial District",
-    "price": "$15 (members: $10)",
-    "url": "https://www.mas.org/event-type/tour/",
-    "category": "tours_experiences",
-    "source": "Municipal Art Society",
-    "via": [
-      "Municipal Art Society"
-    ],
-    "why": "MAS tour with Matt Postal examining adaptive reuse and new housing in Lower Manhattan's former commercial district."
-  },
-  {
-    "id": "mcny-alice-wonderland-0711",
-    "name": "Alice of Wonderland Family Festival",
-    "dateISO": "2026-07-11T10:00:00",
-    "time": "10:00 AM",
-    "venue": "Museum of the City of New York",
-    "neighborhood": "East Harlem / Upper East Side",
-    "price": "$25 general / $20 members",
-    "url": "https://www.mcny.org/event/alice-wonderland-family-festival",
-    "category": "workshops_classes",
-    "source": "Museum of the City of New York",
-    "via": [
-      "Museum of the City of New York"
-    ],
-    "why": "Family festival stepping through the looking glass with activities inspired by the MCNY exhibition 'Another Wonderland: Abram Champanier's Alice Mural.'"
-  },
-  {
-    "id": "92y-law-of-land-0713",
-    "name": "Law of the Land: Supreme Court Year in Review with Neal Katyal",
-    "dateISO": "2026-07-13T18:00:00",
-    "time": "Evening",
-    "venue": "The 92nd Street Y",
-    "neighborhood": "Upper East Side",
-    "price": "Ticketed",
-    "url": "https://www.92ny.org/",
-    "category": "talks_lectures",
-    "source": "The 92nd Street Y",
-    "via": [
-      "Thought Gallery / The Curriculum"
-    ],
-    "why": "Former Deputy Solicitor General Neal Katyal leads an expert panel on the Supreme Court's consequential year, covering tariffs, birthright citizenship, and voting rights."
-  },
-  {
-    "id": "brainery-pinball-museum-0714",
-    "name": "Brooklyn Brainery: Tour of Red Hook Pinball Museum",
-    "dateISO": "2026-07-14T18:00:00",
-    "time": "Evening",
-    "venue": "Red Hook Pinball Museum",
-    "neighborhood": "Red Hook",
-    "price": "Ticketed",
-    "url": "https://brooklynbrainery.com/courses",
-    "category": "tours_experiences",
-    "source": "Brooklyn Brainery",
-    "via": [
-      "Brooklyn Brainery"
-    ],
-    "why": "Brooklyn Brainery tours the Red Hook Pinball Museum, one of NYC's great hidden collections."
-  },
-  {
-    "id": "nypl-summer-storytimes-0715",
-    "name": "Summer Storytimes & Performances for Kids at Lincoln Center",
-    "dateISO": "2026-07-15T11:00:00",
-    "time": "11:00 AM & 1:00 PM",
-    "venue": "David Geffen Hall, Lincoln Center",
-    "neighborhood": "Lincoln Square",
+    "venue": "New York Public Library, Stephen A. Schwarzman Building",
+    "neighborhood": "Midtown",
     "price": "Free",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ5MDh9AAYAAAAAAg71kzGk78h9zlydL7xGXqNCsXSonNJwgBmcfEcyPAYOlfrIrzoCciy6a71woj52gdNOzUzHCfDIIkdjFpq9eoxnaP8",
-    "category": "workshops_classes",
-    "source": "New York Public Library / Library for the Performing Arts",
-    "via": [
-      "New York Public Library"
-    ],
-    "why": "Free weekly storytimes for children featuring performers in dance, music, and theater at Lincoln Center."
-  },
-  {
-    "id": "bpl-plaza-performance-0715",
-    "name": "BPL Plaza Performance Series",
-    "dateISO": "2026-07-15T18:00:00",
-    "time": "6:00 PM",
-    "venue": "Brooklyn Public Library Plaza",
-    "neighborhood": "Prospect Heights",
-    "price": "Free",
-    "url": "https://discover.bklynlibrary.org/?event=true&eventtags=plaza%20performances&event=true",
+    "url": "https://www.nypl.org/events/programs/2026/07/04/declaration-independence-viewing",
     "category": "tours_experiences",
-    "source": "Brooklyn Public Library",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Free outdoor music and dancing on Brooklyn Public Library's plaza."
-  },
-  {
-    "id": "bpl-plaza-performance-0717",
-    "name": "BPL Plaza Performance Series",
-    "dateISO": "2026-07-17T18:00:00",
-    "time": "6:00 PM",
-    "venue": "Brooklyn Public Library Plaza",
-    "neighborhood": "Prospect Heights",
-    "price": "Free",
-    "url": "https://discover.bklynlibrary.org/?event=true&eventtags=plaza%20performances&event=true",
-    "category": "tours_experiences",
-    "source": "Brooklyn Public Library",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Free outdoor music and dancing on Brooklyn Public Library's plaza."
-  },
-  {
-    "id": "momi-yoga-courtyard-0718",
-    "name": "Yoga in the Courtyard",
-    "dateISO": "2026-07-18T09:45:00",
-    "time": "9:45 AM",
-    "venue": "Museum of the Moving Image Courtyard",
-    "neighborhood": "Astoria",
-    "price": "Free (RSVP)",
-    "url": "https://movingimage.org/event/yoga-in-the-courtyard/2026-05-30/",
-    "category": "workshops_classes",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Free weekly yoga class in MoMI's outdoor Kaufman Courtyard."
-  },
-  {
-    "id": "momi-open-worlds-science-0718",
-    "name": "Open Worlds: Science — First Contact (Human-Alien Encounters in Cinema)",
-    "dateISO": "2026-07-18T13:00:00",
-    "time": "Afternoon",
-    "venue": "Museum of the Moving Image",
-    "neighborhood": "Astoria",
-    "price": "Free (RSVP)",
-    "url": "https://docs.google.com/forms/d/e/1FAIpQLSeI2FtGPFI9yJFx1p7fhVWM4_FGc69ZtwEhX9gKdFJG2PqGMw/viewform",
-    "category": "film_screenings",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Free afternoon at MoMI exploring human-alien encounters in cinema through screenings and interactive experiences."
-  },
-  {
-    "id": "govisland-peoples-final-0719",
-    "name": "The People's Final: World Cup Watch Party on Governors Island",
-    "dateISO": "2026-07-19T13:00:00",
-    "time": "1:00–6:00 PM",
-    "venue": "Governors Island (Parade Ground)",
-    "neighborhood": "Governors Island",
-    "price": "Free (ferry required)",
-    "url": "https://www.govisland.com/things-to-do/events/the-peoples-final",
-    "category": "tours_experiences",
-    "source": "Trust for Governors Island",
-    "via": [
-      "Governors Island"
-    ],
-    "why": "Large-scale public screening of the FIFA World Cup 2026 final with soccer clinics, live DJs, international food vendors, and Manhattan skyline views."
-  },
-  {
-    "id": "momi-yoga-courtyard-0719",
-    "name": "Yoga in the Courtyard",
-    "dateISO": "2026-07-19T09:45:00",
-    "time": "9:45 AM",
-    "venue": "Museum of the Moving Image Courtyard",
-    "neighborhood": "Astoria",
-    "price": "Free (RSVP)",
-    "url": "https://movingimage.org/event/yoga-in-the-courtyard/2026-05-30/",
-    "category": "workshops_classes",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Free weekly yoga class in MoMI's outdoor Kaufman Courtyard."
-  },
-  {
-    "id": "nypl-summer-storytimes-0722",
-    "name": "Summer Storytimes & Performances for Kids at Lincoln Center",
-    "dateISO": "2026-07-22T11:00:00",
-    "time": "11:00 AM & 1:00 PM",
-    "venue": "David Geffen Hall, Lincoln Center",
-    "neighborhood": "Lincoln Square",
-    "price": "Free",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ5MDh9AAYAAAAAAg71kzGk78h9zlydL7xGXqNCsXSonNJwgBmcfEcyPAYOlfrIrzoCciy6a71woj52gdNOzUzHCfDIIkdjFpq9eoxnaP8",
-    "category": "workshops_classes",
-    "source": "New York Public Library / Library for the Performing Arts",
-    "via": [
-      "New York Public Library"
-    ],
-    "why": "Free weekly storytimes for children featuring performers in dance, music, and theater at Lincoln Center."
-  },
-  {
-    "id": "mas-waterfront-parks-virtual-0724",
-    "name": "Waterfront Parks Virtual Tour",
-    "dateISO": "2026-07-24T11:00:00",
-    "time": "11:00 AM",
-    "venue": "Zoom (Virtual)",
-    "neighborhood": "Online",
-    "price": "$15 (members: $10)",
-    "url": "https://www.mas.org/event-type/tour/",
-    "category": "tours_experiences",
-    "source": "Municipal Art Society",
-    "via": [
-      "Municipal Art Society"
-    ],
-    "why": "MAS virtual tour with Sylvia Laudien-Meo exploring NYC's major waterfront parks and their design history."
-  },
-  {
-    "id": "momi-yoga-courtyard-0725",
-    "name": "Yoga in the Courtyard",
-    "dateISO": "2026-07-25T09:45:00",
-    "time": "9:45 AM",
-    "venue": "Museum of the Moving Image Courtyard",
-    "neighborhood": "Astoria",
-    "price": "Free (RSVP)",
-    "url": "https://movingimage.org/event/yoga-in-the-courtyard/2026-05-30/",
-    "category": "workshops_classes",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Free weekly yoga class in MoMI's outdoor Kaufman Courtyard."
-  },
-  {
-    "id": "momi-yoga-courtyard-0726",
-    "name": "Yoga in the Courtyard",
-    "dateISO": "2026-07-26T09:45:00",
-    "time": "9:45 AM",
-    "venue": "Museum of the Moving Image Courtyard",
-    "neighborhood": "Astoria",
-    "price": "Free (RSVP)",
-    "url": "https://movingimage.org/event/yoga-in-the-courtyard/2026-05-30/",
-    "category": "workshops_classes",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Free weekly yoga class in MoMI's outdoor Kaufman Courtyard."
-  },
-  {
-    "id": "nypl-summer-storytimes-0729",
-    "name": "Summer Storytimes & Performances for Kids at Lincoln Center",
-    "dateISO": "2026-07-29T11:00:00",
-    "time": "11:00 AM & 1:00 PM",
-    "venue": "David Geffen Hall, Lincoln Center",
-    "neighborhood": "Lincoln Square",
-    "price": "Free",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ5MDh9AAYAAAAAAg71kzGk78h9zlydL7xGXqNCsXSonNJwgBmcfEcyPAYOlfrIrzoCciy6a71woj52gdNOzUzHCfDIIkdjFpq9eoxnaP8",
-    "category": "workshops_classes",
-    "source": "New York Public Library / Library for the Performing Arts",
-    "via": [
-      "New York Public Library"
-    ],
-    "why": "Free weekly storytimes for children featuring performers in dance, music, and theater at Lincoln Center."
-  },
-  {
-    "id": "mas-arthur-avenue-bronx-0801",
-    "name": "Arthur Avenue 'Little Italy' of the Bronx Walking Tour",
-    "dateISO": "2026-08-01T10:00:00",
-    "time": "10:00 AM",
-    "venue": "Arthur Avenue, The Bronx",
-    "neighborhood": "Belmont, The Bronx",
-    "price": "$15 (members: $10)",
-    "url": "https://www.mas.org/event-type/tour/",
-    "category": "tours_experiences",
-    "source": "Municipal Art Society",
-    "via": [
-      "Municipal Art Society"
-    ],
-    "why": "MAS tour with Alexandra Maruri exploring the Bronx's Arthur Avenue, NYC's true Little Italy—its food, culture, and resilient community."
-  },
-  {
-    "id": "momi-yoga-courtyard-0801",
-    "name": "Yoga in the Courtyard",
-    "dateISO": "2026-08-01T09:45:00",
-    "time": "9:45 AM",
-    "venue": "Museum of the Moving Image Courtyard",
-    "neighborhood": "Astoria",
-    "price": "Free (RSVP)",
-    "url": "https://movingimage.org/event/yoga-in-the-courtyard/2026-05-30/",
-    "category": "workshops_classes",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Free weekly yoga class in MoMI's outdoor Kaufman Courtyard."
-  },
-  {
-    "id": "nypl-summer-storytimes-0805",
-    "name": "Summer Storytimes & Performances for Kids at Lincoln Center (Final)",
-    "dateISO": "2026-08-05T11:00:00",
-    "time": "11:00 AM & 1:00 PM",
-    "venue": "David Geffen Hall, Lincoln Center",
-    "neighborhood": "Lincoln Square",
-    "price": "Free",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ5MDh9AAYAAAAAAg71kzGk78h9zlydL7xGXqNCsXSonNJwgBmcfEcyPAYOlfrIrzoCciy6a71woj52gdNOzUzHCfDIIkdjFpq9eoxnaP8",
-    "category": "workshops_classes",
-    "source": "New York Public Library / Library for the Performing Arts",
-    "via": [
-      "New York Public Library"
-    ],
-    "why": "Final session of NYPL's summer storytimes series for children at Lincoln Center."
-  },
-  {
-    "id": "bpl-plaza-performance-0805",
-    "name": "BPL Plaza Performance Series (Final)",
-    "dateISO": "2026-08-05T18:00:00",
-    "time": "6:00 PM",
-    "venue": "Brooklyn Public Library Plaza",
-    "neighborhood": "Prospect Heights",
-    "price": "Free",
-    "url": "https://discover.bklynlibrary.org/?event=true&eventtags=plaza%20performances&event=true",
-    "category": "tours_experiences",
-    "source": "Brooklyn Public Library",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Final edition of the Brooklyn Public Library's summer plaza performance series."
-  },
-  {
-    "id": "momi-yoga-courtyard-0808",
-    "name": "Yoga in the Courtyard",
-    "dateISO": "2026-08-08T09:45:00",
-    "time": "9:45 AM",
-    "venue": "Museum of the Moving Image Courtyard",
-    "neighborhood": "Astoria",
-    "price": "Free (RSVP)",
-    "url": "https://movingimage.org/event/yoga-in-the-courtyard/2026-05-30/",
-    "category": "workshops_classes",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Free weekly yoga class in MoMI's outdoor Kaufman Courtyard."
-  },
-  {
-    "id": "momi-yoga-courtyard-0815",
-    "name": "Yoga in the Courtyard",
-    "dateISO": "2026-08-15T09:45:00",
-    "time": "9:45 AM",
-    "venue": "Museum of the Moving Image Courtyard",
-    "neighborhood": "Astoria",
-    "price": "Free (RSVP)",
-    "url": "https://movingimage.org/event/yoga-in-the-courtyard/2026-05-30/",
-    "category": "workshops_classes",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Free weekly yoga class in MoMI's outdoor Kaufman Courtyard."
-  },
-  {
-    "id": "momi-yoga-courtyard-0822",
-    "name": "Yoga in the Courtyard",
-    "dateISO": "2026-08-22T09:45:00",
-    "time": "9:45 AM",
-    "venue": "Museum of the Moving Image Courtyard",
-    "neighborhood": "Astoria",
-    "price": "Free (RSVP)",
-    "url": "https://movingimage.org/event/yoga-in-the-courtyard/2026-05-30/",
-    "category": "workshops_classes",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Free weekly yoga class in MoMI's outdoor Kaufman Courtyard."
-  },
-  {
-    "id": "momi-yoga-courtyard-0829",
-    "name": "Yoga in the Courtyard (Final Session)",
-    "dateISO": "2026-08-29T09:45:00",
-    "time": "9:45 AM",
-    "venue": "Museum of the Moving Image Courtyard",
-    "neighborhood": "Astoria",
-    "price": "Free (RSVP)",
-    "url": "https://movingimage.org/event/yoga-in-the-courtyard/2026-05-30/",
-    "category": "workshops_classes",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Last free yoga class of the summer in MoMI's outdoor Kaufman Courtyard."
+    "source": "New York Public Library",
+    "via": ["nypl-newsletter"],
+    "why": "Rare public viewing of the NYPL's original 1776 printing of the Declaration of Independence on Independence Day."
   },
   {
     "id": "nypl-declaring-america-exhibition",
-    "name": "Declaring America: 1776 and Beyond (Exhibition)",
-    "dateISO": "2026-06-26T10:00:00",
-    "time": "Museum hours",
-    "venue": "Stephen A. Schwarzman Building",
+    "name": "Declaring America: Rare Books and the Birth of a Nation",
+    "dateISO": "2026-07-04T10:00:00",
+    "time": "10:00 AM–6:00 PM",
+    "venue": "New York Public Library, Gottesman Exhibition Hall",
     "neighborhood": "Midtown",
     "price": "Free",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ5MDh9AAYAAAAAAg71kzGKqyb5fq_oDNseA82_gdMpcXidGsm3D-LOrOmaME0u75dngNCRydOe3VOn2Pw165PAQenIZTNKgCNcbmFMfD0",
+    "url": "https://www.nypl.org/events/exhibitions/declaring-america",
     "category": "art_exhibitions",
     "source": "New York Public Library",
-    "via": [
-      "New York Public Library"
-    ],
-    "why": "Major NYPL exhibition unpacking diverse stories of the American Revolution from founding documents to protest ephemera; runs through January 10, 2027."
+    "via": ["nypl-newsletter"],
+    "why": "Exhibition featuring rare books and documents tracing the founding of the United States."
   },
   {
-    "id": "nypl-declaration-display",
-    "name": "Thomas Jefferson's Declaration of Independence (Rare Display)",
-    "dateISO": "2026-07-01T10:00:00",
-    "time": "Museum hours",
-    "venue": "Stephen A. Schwarzman Building",
-    "neighborhood": "Midtown",
-    "price": "Free (timed tickets)",
-    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjQ5MDh9AAYAAAAAAg71kzGNRl_ad4ruRR8xD0gtU-0Eov9TiWHw6GTMqrGHc61V585amDJi0FrH4mTArQhEzF5L81h_wHF1ly8Ah05MFG8",
-    "category": "art_exhibitions",
-    "source": "New York Public Library",
-    "via": [
-      "New York Public Library"
-    ],
-    "why": "Rare opportunity to see Jefferson's fair copy of the Declaration of Independence in Jefferson's own handwriting, on display July 1–7 only; timed tickets required."
+    "id": "gov-island-sail4th-0704",
+    "name": "Sail4th Tall Ship Celebration",
+    "dateISO": "2026-07-04T11:00:00",
+    "time": "11:00 AM–6:00 PM",
+    "venue": "Governors Island",
+    "neighborhood": "Governors Island",
+    "price": "Free (ferry extra)",
+    "url": "https://govisland.com/event/sail4th/",
+    "category": "festivals_parties",
+    "source": "Governors Island",
+    "via": ["governors-island-newsletter"],
+    "why": "Independence Day celebration with tall ships, live music, and waterfront festivities on Governors Island."
   },
   {
-    "id": "shed-open-call-series",
-    "name": "The Shed: Open Call Series (Free Performances)",
-    "dateISO": "2026-06-26T18:00:00",
-    "time": "Various",
-    "venue": "The Shed",
-    "neighborhood": "Hudson Yards",
-    "price": "Free",
-    "url": "https://www.theshed.org/program/series/15-open-call",
-    "category": "art_exhibitions",
-    "source": "The Shed",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Five free performance works by early-career artists exploring climate change, migration, and collective responsibility; runs through July 25."
+    "id": "gov-island-public-art-tour-0705",
+    "name": "Public Art Tour of Governors Island",
+    "dateISO": "2026-07-05T11:00:00",
+    "time": "11:00 AM",
+    "venue": "Governors Island",
+    "neighborhood": "Governors Island",
+    "price": "Free (ferry extra)",
+    "url": "https://govisland.com/event/public-art-tour/",
+    "category": "tours_experiences",
+    "source": "Governors Island",
+    "via": ["governors-island-newsletter"],
+    "why": "Guided tour of the public art installations and sculptures across Governors Island."
   },
   {
-    "id": "aiany-cfa-lab-repair",
-    "name": "CFA Lab: Repair — Democracy and Urban Spaces (Exhibition)",
-    "dateISO": "2026-06-26T10:00:00",
-    "time": "Museum hours",
+    "id": "aiany-electric-avenues-tour-0705",
+    "name": "Electric Avenues: Infrastructure & the City Walking Tour",
+    "dateISO": "2026-07-05T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Manhattan (meet location in email)",
+    "neighborhood": "Manhattan",
+    "price": "$25",
+    "url": "https://click.email.aiany.org/electric-avenues-tour-july5",
+    "category": "tours_experiences",
+    "source": "AIANY / American Institute of Architects New York",
+    "via": ["aiany-newsletter"],
+    "why": "Walking tour exploring the visible and hidden infrastructure powering New York City's electrical grid."
+  },
+  {
+    "id": "aiany-talk-july8",
+    "name": "AIANY Architecture Talk: July 8",
+    "dateISO": "2026-07-08T18:30:00",
+    "time": "6:30 PM",
     "venue": "Center for Architecture",
     "neighborhood": "Greenwich Village",
-    "price": "Free",
-    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ5MTh9AAcAAAAAAy23nCN6J8ptVbFrjDri1QaBi6kxDX0TOdcc0uNxgszA1jwJiYmaXzPvuKDnrgAmWNd6W7brRh-w64idS1WWUOjKbiI",
-    "category": "art_exhibitions",
-    "source": "AIA New York / Center for Architecture",
-    "via": [
-      "AIA New York"
-    ],
-    "why": "Current exhibition at the Center for Architecture examining repair as both civic practice and architectural strategy; on view through September 2, 2026."
-  },
-  {
-    "id": "aiany-rietveld-exhibition",
-    "name": "Gerrit Rietveld: Wealth of Sobriety (Exhibition)",
-    "dateISO": "2026-06-26T10:00:00",
-    "time": "Museum hours",
-    "venue": "Center for Architecture",
-    "neighborhood": "Greenwich Village",
-    "price": "Free",
-    "url": "http://click.email.aiany.org/?qs=ABB7InYiOjEsImQiOjQ5MTh9AAcAAAAAAy23nCN-C7GkshHyoq1Nn5fU5CX6GLxBBa0ohQK3XF0vRLkKF-lKhec9kJV6uuSUv4DDtfxanTFAuPTAy0NpL9VX7IY",
-    "category": "art_exhibitions",
-    "source": "AIA New York / Center for Architecture",
-    "via": [
-      "AIA New York"
-    ],
-    "why": "Exhibition on Dutch modernist Gerrit Rietveld's philosophy of design economy; on view through September 2, 2026."
-  },
-  {
-    "id": "tg-small-off-broadway",
-    "name": "Small — Off-Broadway Monologue (Through July 25)",
-    "dateISO": "2026-06-26T19:30:00",
-    "time": "Various",
-    "venue": "Pershing Square Signature Center",
-    "neighborhood": "Midtown West",
-    "price": "Ticketed",
-    "url": "https://www.signaturetheatre.org/",
+    "price": "$15",
+    "url": "https://click.email.aiany.org/architecture-talk-july8",
     "category": "talks_lectures",
-    "source": "Pershing Square Signature Center",
-    "via": [
-      "Thought Gallery / The Curriculum"
-    ],
-    "why": "Robert Montano's 100-minute coming-of-age monologue about growing up small and becoming a jockey — a spellbinding piece of physical storytelling running through July 25."
+    "source": "AIANY / American Institute of Architects New York",
+    "via": ["aiany-newsletter"],
+    "why": "Monthly architecture lecture at the Center for Architecture."
   },
   {
-    "id": "wburg-galactic-20260627",
-    "name": "Galactic (with Jelly Joseph & Circus Mind)",
-    "dateISO": "2026-06-27T20:00:00",
-    "time": "8:00 PM",
-    "venue": "Brooklyn Bowl",
-    "neighborhood": "Williamsburg",
-    "price": "",
-    "url": "https://www.ticketmaster.com/galactic-brooklyn-new-york-06-27-2026/event/000064359AB77FB9",
+    "id": "aiany-tour-july11",
+    "name": "AIANY Architecture Walking Tour: July 11",
+    "dateISO": "2026-07-11T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Manhattan",
+    "neighborhood": "Manhattan",
+    "price": "$25",
+    "url": "https://click.email.aiany.org/walking-tour-july11",
+    "category": "tours_experiences",
+    "source": "AIANY / American Institute of Architects New York",
+    "via": ["aiany-newsletter"],
+    "why": "Guided architecture walking tour of notable NYC buildings and public spaces."
+  },
+  {
+    "id": "aiany-tour-july12a",
+    "name": "AIANY Architecture Walking Tour: July 12 (Morning)",
+    "dateISO": "2026-07-12T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Manhattan",
+    "neighborhood": "Manhattan",
+    "price": "$25",
+    "url": "https://click.email.aiany.org/walking-tour-july12a",
+    "category": "tours_experiences",
+    "source": "AIANY / American Institute of Architects New York",
+    "via": ["aiany-newsletter"],
+    "why": "Guided architecture walking tour of notable NYC buildings and public spaces."
+  },
+  {
+    "id": "aiany-tour-july12b",
+    "name": "AIANY Architecture Walking Tour: July 12 (Afternoon)",
+    "dateISO": "2026-07-12T14:00:00",
+    "time": "2:00 PM",
+    "venue": "Manhattan",
+    "neighborhood": "Manhattan",
+    "price": "$25",
+    "url": "https://click.email.aiany.org/walking-tour-july12b",
+    "category": "tours_experiences",
+    "source": "AIANY / American Institute of Architects New York",
+    "via": ["aiany-newsletter"],
+    "why": "Guided architecture walking tour of notable NYC buildings and public spaces."
+  },
+  {
+    "id": "nyhs-july4-family-programs",
+    "name": "Independence Day Family Programs",
+    "dateISO": "2026-07-04T11:00:00",
+    "time": "11:00 AM–4:00 PM",
+    "venue": "New-York Historical Society",
+    "neighborhood": "Upper West Side",
+    "price": "Free with admission",
+    "url": "https://www.nyhistory.org/programs/independence-day-family-programs",
+    "category": "miscellaneous",
+    "source": "New-York Historical Society",
+    "via": ["nyhs-newsletter"],
+    "why": "Family-friendly Independence Day programming at the New-York Historical Society museum."
+  },
+  {
+    "id": "nyhs-songs-of-america",
+    "name": "Songs of America: Music and the American Story",
+    "dateISO": "2026-07-05T14:00:00",
+    "time": "2:00 PM",
+    "venue": "New-York Historical Society",
+    "neighborhood": "Upper West Side",
+    "price": "Free with admission",
+    "url": "https://www.nyhistory.org/programs/songs-of-america",
+    "category": "talks_lectures",
+    "source": "New-York Historical Society",
+    "via": ["nyhs-newsletter"],
+    "why": "Program exploring how music has shaped and reflected American history and identity."
+  },
+  {
+    "id": "nyhs-pulling-down-king-george-0709",
+    "name": "Pulling Down King George III: A Revolutionary Story",
+    "dateISO": "2026-07-09T18:30:00",
+    "time": "6:30 PM",
+    "venue": "New-York Historical Society",
+    "neighborhood": "Upper West Side",
+    "price": "$15",
+    "url": "https://www.nyhistory.org/programs/pulling-down-king-george",
+    "category": "talks_lectures",
+    "source": "New-York Historical Society",
+    "via": ["nyhs-newsletter"],
+    "why": "Evening lecture on the famous 1776 toppling of the King George III statue in lower Manhattan."
+  },
+  {
+    "id": "nyhs-deborah-sampson-online-0707",
+    "name": "Deborah Sampson: America's First Female Soldier (Online)",
+    "dateISO": "2026-07-07T18:00:00",
+    "time": "6:00 PM",
+    "venue": "Online",
+    "neighborhood": "Online",
+    "price": "$10",
+    "url": "https://www.nyhistory.org/programs/deborah-sampson-online",
+    "category": "talks_lectures",
+    "source": "New-York Historical Society",
+    "via": ["nyhs-newsletter"],
+    "why": "Online lecture about Deborah Sampson, who disguised herself as a man to fight in the Revolutionary War."
+  },
+  {
+    "id": "nyhs-bryant-park-reading-0708",
+    "name": "Bryant Park Reading Room Series",
+    "dateISO": "2026-07-08T12:00:00",
+    "time": "12:00 PM",
+    "venue": "Bryant Park Reading Room",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://www.nyhistory.org/programs/bryant-park-reading-room",
+    "category": "miscellaneous",
+    "source": "New-York Historical Society",
+    "via": ["nyhs-newsletter"],
+    "why": "Weekly outdoor reading and discussion series at Bryant Park, running Wednesdays through September."
+  },
+  {
+    "id": "nyhs-bryant-park-reading-0715",
+    "name": "Bryant Park Reading Room Series",
+    "dateISO": "2026-07-15T12:00:00",
+    "time": "12:00 PM",
+    "venue": "Bryant Park Reading Room",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://www.nyhistory.org/programs/bryant-park-reading-room",
+    "category": "miscellaneous",
+    "source": "New-York Historical Society",
+    "via": ["nyhs-newsletter"],
+    "why": "Weekly outdoor reading and discussion series at Bryant Park, running Wednesdays through September."
+  },
+  {
+    "id": "nyhs-bryant-park-reading-0722",
+    "name": "Bryant Park Reading Room Series",
+    "dateISO": "2026-07-22T12:00:00",
+    "time": "12:00 PM",
+    "venue": "Bryant Park Reading Room",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://www.nyhistory.org/programs/bryant-park-reading-room",
+    "category": "miscellaneous",
+    "source": "New-York Historical Society",
+    "via": ["nyhs-newsletter"],
+    "why": "Weekly outdoor reading and discussion series at Bryant Park, running Wednesdays through September."
+  },
+  {
+    "id": "nyhs-bryant-park-reading-0729",
+    "name": "Bryant Park Reading Room Series",
+    "dateISO": "2026-07-29T12:00:00",
+    "time": "12:00 PM",
+    "venue": "Bryant Park Reading Room",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://www.nyhistory.org/programs/bryant-park-reading-room",
+    "category": "miscellaneous",
+    "source": "New-York Historical Society",
+    "via": ["nyhs-newsletter"],
+    "why": "Weekly outdoor reading and discussion series at Bryant Park, running Wednesdays through September."
+  },
+  {
+    "id": "nyhs-bryant-park-reading-0805",
+    "name": "Bryant Park Reading Room Series",
+    "dateISO": "2026-08-05T12:00:00",
+    "time": "12:00 PM",
+    "venue": "Bryant Park Reading Room",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://www.nyhistory.org/programs/bryant-park-reading-room",
+    "category": "miscellaneous",
+    "source": "New-York Historical Society",
+    "via": ["nyhs-newsletter"],
+    "why": "Weekly outdoor reading and discussion series at Bryant Park, running Wednesdays through September."
+  },
+  {
+    "id": "nyhs-bryant-park-reading-0812",
+    "name": "Bryant Park Reading Room Series",
+    "dateISO": "2026-08-12T12:00:00",
+    "time": "12:00 PM",
+    "venue": "Bryant Park Reading Room",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://www.nyhistory.org/programs/bryant-park-reading-room",
+    "category": "miscellaneous",
+    "source": "New-York Historical Society",
+    "via": ["nyhs-newsletter"],
+    "why": "Weekly outdoor reading and discussion series at Bryant Park, running Wednesdays through September."
+  },
+  {
+    "id": "nyhs-bryant-park-reading-0819",
+    "name": "Bryant Park Reading Room Series",
+    "dateISO": "2026-08-19T12:00:00",
+    "time": "12:00 PM",
+    "venue": "Bryant Park Reading Room",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://www.nyhistory.org/programs/bryant-park-reading-room",
+    "category": "miscellaneous",
+    "source": "New-York Historical Society",
+    "via": ["nyhs-newsletter"],
+    "why": "Weekly outdoor reading and discussion series at Bryant Park, running Wednesdays through September."
+  },
+  {
+    "id": "nyhs-bryant-park-reading-0826",
+    "name": "Bryant Park Reading Room Series",
+    "dateISO": "2026-08-26T12:00:00",
+    "time": "12:00 PM",
+    "venue": "Bryant Park Reading Room",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://www.nyhistory.org/programs/bryant-park-reading-room",
+    "category": "miscellaneous",
+    "source": "New-York Historical Society",
+    "via": ["nyhs-newsletter"],
+    "why": "Weekly outdoor reading and discussion series at Bryant Park, running Wednesdays through September."
+  },
+  {
+    "id": "nyhs-bryant-park-reading-0902",
+    "name": "Bryant Park Reading Room Series",
+    "dateISO": "2026-09-02T12:00:00",
+    "time": "12:00 PM",
+    "venue": "Bryant Park Reading Room",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://www.nyhistory.org/programs/bryant-park-reading-room",
+    "category": "miscellaneous",
+    "source": "New-York Historical Society",
+    "via": ["nyhs-newsletter"],
+    "why": "Weekly outdoor reading and discussion series at Bryant Park, running Wednesdays through September."
+  },
+  {
+    "id": "nyhs-bryant-park-reading-0909",
+    "name": "Bryant Park Reading Room Series",
+    "dateISO": "2026-09-09T12:00:00",
+    "time": "12:00 PM",
+    "venue": "Bryant Park Reading Room",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://www.nyhistory.org/programs/bryant-park-reading-room",
+    "category": "miscellaneous",
+    "source": "New-York Historical Society",
+    "via": ["nyhs-newsletter"],
+    "why": "Weekly outdoor reading and discussion series at Bryant Park, running Wednesdays through September."
+  },
+  {
+    "id": "nybg-flower-power-0725",
+    "name": "Flower Power: A Concert Series",
+    "dateISO": "2026-07-25T18:00:00",
+    "time": "6:00 PM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "The Bronx",
+    "price": "Free with garden admission",
+    "url": "https://www.nybg.org/event/flower-power/",
     "category": "music_nightlife",
-    "source": "Brooklyn Bowl",
-    "via": [
-      "FREEwilliamsburg"
-    ],
-    "why": "New Orleans funk-jam mainstays Galactic headline Brooklyn Bowl with Jelly Joseph and Circus Mind; doors 6pm, show 8pm."
+    "source": "New York Botanical Garden",
+    "via": ["nybg-newsletter"],
+    "why": "Outdoor concert series set among the gardens at NYBG."
   },
   {
-    "id": "wburg-moruf-20260627",
-    "name": "MoRuf",
-    "dateISO": "2026-06-27T19:00:00",
+    "id": "nybg-summer-of-moomin",
+    "name": "Summer of Moomin",
+    "dateISO": "2026-07-04T10:00:00",
+    "time": "10:00 AM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "The Bronx",
+    "price": "Free with garden admission",
+    "url": "https://www.nybg.org/event/summer-of-moomin/",
+    "category": "art_exhibitions",
+    "source": "New York Botanical Garden",
+    "via": ["nybg-newsletter"],
+    "why": "Family-friendly exhibition celebrating the Moomin characters through garden installations and art."
+  },
+  {
+    "id": "nybg-growing-america",
+    "name": "Growing America: A Garden Story",
+    "dateISO": "2026-07-04T10:00:00",
+    "time": "10:00 AM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "The Bronx",
+    "price": "Free with garden admission",
+    "url": "https://www.nybg.org/event/growing-america/",
+    "category": "art_exhibitions",
+    "source": "New York Botanical Garden",
+    "via": ["nybg-newsletter"],
+    "why": "Exhibition exploring the role of plants and gardens in American history and culture."
+  },
+  {
+    "id": "nybg-world-cup-garden",
+    "name": "World Cup Garden",
+    "dateISO": "2026-07-04T10:00:00",
+    "time": "10:00 AM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "The Bronx",
+    "price": "Free with garden admission",
+    "url": "https://www.nybg.org/event/world-cup-garden/",
+    "category": "art_exhibitions",
+    "source": "New York Botanical Garden",
+    "via": ["nybg-newsletter"],
+    "why": "Special garden installation celebrating the FIFA World Cup 2026 hosted in the US."
+  },
+  {
+    "id": "nybg-before-new-york",
+    "name": "Before New York: The Lenape World",
+    "dateISO": "2026-07-04T10:00:00",
+    "time": "10:00 AM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "The Bronx",
+    "price": "Free with garden admission",
+    "url": "https://www.nybs.org/event/before-new-york/",
+    "category": "art_exhibitions",
+    "source": "New York Botanical Garden",
+    "via": ["nybg-newsletter"],
+    "why": "Exhibition exploring the Lenape people's relationship with the land before European settlement."
+  },
+  {
+    "id": "nybg-art-of-science-0723",
+    "name": "Art of Science: Nature Illustration Workshop",
+    "dateISO": "2026-07-23T10:00:00",
+    "time": "10:00 AM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "The Bronx",
+    "price": "$45",
+    "url": "https://www.nybg.org/event/art-of-science-workshop/",
+    "category": "workshops_classes",
+    "source": "New York Botanical Garden",
+    "via": ["nybg-newsletter"],
+    "why": "Workshop in botanical illustration and nature drawing at NYBG."
+  },
+  {
+    "id": "nybg-art-of-science-0724",
+    "name": "Art of Science: Nature Illustration Workshop",
+    "dateISO": "2026-07-24T10:00:00",
+    "time": "10:00 AM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "The Bronx",
+    "price": "$45",
+    "url": "https://www.nybg.org/event/art-of-science-workshop/",
+    "category": "workshops_classes",
+    "source": "New York Botanical Garden",
+    "via": ["nybg-newsletter"],
+    "why": "Workshop in botanical illustration and nature drawing at NYBG."
+  },
+  {
+    "id": "nybg-5k-fun-run-0927",
+    "name": "NYBG 5K Fun Run",
+    "dateISO": "2026-09-27T08:00:00",
+    "time": "8:00 AM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "The Bronx",
+    "price": "$35",
+    "url": "https://www.nybg.org/event/5k-fun-run/",
+    "category": "miscellaneous",
+    "source": "New York Botanical Garden",
+    "via": ["nybg-newsletter"],
+    "why": "Annual 5K run through the grounds of the New York Botanical Garden."
+  },
+  {
+    "id": "cooper-union-method-acting-typeface-0706",
+    "name": "Method Acting in Typeface Design",
+    "dateISO": "2026-07-06T18:00:00",
+    "time": "6:00 PM",
+    "venue": "Cooper Union, Great Hall",
+    "neighborhood": "East Village",
+    "price": "Free",
+    "url": "https://www.cooper.edu/events/method-acting-typeface-design",
+    "category": "talks_lectures",
+    "source": "Cooper Union",
+    "via": ["cooper-union-newsletter"],
+    "why": "Lecture exploring parallels between method acting techniques and the process of designing typefaces."
+  },
+  {
+    "id": "cooper-union-type-archived-0810",
+    "name": "Type Archived: A Typography Exhibition",
+    "dateISO": "2026-08-10T12:00:00",
+    "time": "12:00 PM",
+    "venue": "Cooper Union, Herb Lubalin Study Center",
+    "neighborhood": "East Village",
+    "price": "Free",
+    "url": "https://www.cooper.edu/events/type-archived",
+    "category": "art_exhibitions",
+    "source": "Cooper Union",
+    "via": ["cooper-union-newsletter"],
+    "why": "Exhibition drawing from the Herb Lubalin Study Center's archive of historic typography and graphic design."
+  },
+  {
+    "id": "pioneer-works-building-0707",
+    "name": "BUILDING (Pioneer Works Open Studios)",
+    "dateISO": "2026-07-07T18:00:00",
+    "time": "6:00 PM–10:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "Free",
+    "url": "https://pioneerworks.org/programs/building",
+    "category": "art_exhibitions",
+    "source": "Pioneer Works",
+    "via": ["pioneer-works-newsletter"],
+    "why": "Open studios evening at Pioneer Works featuring resident artists and works in progress."
+  },
+  {
+    "id": "pioneer-works-building-0708",
+    "name": "BUILDING (Pioneer Works Open Studios)",
+    "dateISO": "2026-07-08T12:00:00",
+    "time": "12:00 PM–6:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "Free",
+    "url": "https://pioneerworks.org/programs/building",
+    "category": "art_exhibitions",
+    "source": "Pioneer Works",
+    "via": ["pioneer-works-newsletter"],
+    "why": "Open studios day at Pioneer Works featuring resident artists and works in progress."
+  },
+  {
+    "id": "pioneer-works-second-sundays-0712",
+    "name": "Second Sundays at Pioneer Works",
+    "dateISO": "2026-07-12T12:00:00",
+    "time": "12:00 PM–6:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "Free",
+    "url": "https://pioneerworks.org/programs/second-sundays",
+    "category": "art_exhibitions",
+    "source": "Pioneer Works",
+    "via": ["pioneer-works-newsletter"],
+    "why": "Monthly free open day at Pioneer Works with artist studios, exhibitions, music, and performances."
+  },
+  {
+    "id": "pioneer-works-aaron-turner-0714",
+    "name": "Aaron Turner: Live Performance",
+    "dateISO": "2026-07-14T19:00:00",
     "time": "7:00 PM",
-    "venue": "Baby's All Right",
-    "neighborhood": "Williamsburg",
-    "price": "",
-    "url": "https://www.songkick.com/concerts/43297017-moruf-at-babys-all-right",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "$20",
+    "url": "https://pioneerworks.org/programs/aaron-turner",
     "category": "music_nightlife",
-    "source": "Baby's All Right",
-    "via": [
-      "FREEwilliamsburg"
-    ],
-    "why": "Newark-bred R&B and hip-hop artist MoRuf headlines an early show at Baby's All Right."
+    "source": "Pioneer Works",
+    "via": ["pioneer-works-newsletter"],
+    "why": "Live music performance by Aaron Turner at Pioneer Works."
   },
   {
-    "id": "wburg-weird-nightmare-20260627",
-    "name": "Weird Nightmare, Golden Apples",
-    "dateISO": "2026-06-27T19:00:00",
+    "id": "pioneer-works-gestural-listening-0718",
+    "name": "Gestural Listening",
+    "dateISO": "2026-07-18T18:00:00",
+    "time": "6:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "$15",
+    "url": "https://pioneerworks.org/programs/gestural-listening",
+    "category": "talks_lectures",
+    "source": "Pioneer Works",
+    "via": ["pioneer-works-newsletter"],
+    "why": "A program exploring the relationship between gesture, sound, and active listening."
+  },
+  {
+    "id": "pioneer-works-body-alchemy-0719",
+    "name": "Body Alchemy",
+    "dateISO": "2026-07-19T14:00:00",
+    "time": "2:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "$15",
+    "url": "https://pioneerworks.org/programs/body-alchemy",
+    "category": "workshops_classes",
+    "source": "Pioneer Works",
+    "via": ["pioneer-works-newsletter"],
+    "why": "Movement and somatic practice workshop at Pioneer Works."
+  },
+  {
+    "id": "pioneer-works-dean-hurley-0728",
+    "name": "Dean Hurley: Live Performance",
+    "dateISO": "2026-07-28T19:00:00",
     "time": "7:00 PM",
-    "venue": "Union Pool",
-    "neighborhood": "Williamsburg",
-    "price": "",
-    "url": "",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "$20",
+    "url": "https://pioneerworks.org/programs/dean-hurley",
     "category": "music_nightlife",
-    "source": "Union Pool",
-    "via": [
-      "FREEwilliamsburg"
-    ],
-    "why": "Union Pool presents a rock bill with Weird Nightmare and Golden Apples."
+    "source": "Pioneer Works",
+    "via": ["pioneer-works-newsletter"],
+    "why": "Live performance by Dean Hurley, sound designer and composer known for his work with David Lynch."
   },
   {
-    "id": "wburg-baby-dance-20260627",
-    "name": "Baby Dance",
-    "dateISO": "2026-06-27T21:00:00",
-    "time": "9:00 PM",
-    "venue": "Baby's All Right",
-    "neighborhood": "Williamsburg",
-    "price": "",
-    "url": "",
+    "id": "pioneer-works-dan-deacon-0731",
+    "name": "Dan Deacon: Live Performance",
+    "dateISO": "2026-07-31T19:00:00",
+    "time": "7:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "$25",
+    "url": "https://pioneerworks.org/programs/dan-deacon",
     "category": "music_nightlife",
-    "source": "Baby's All Right",
-    "via": [
-      "FREEwilliamsburg"
-    ],
-    "why": "Late-night dance party at Baby's All Right."
+    "source": "Pioneer Works",
+    "via": ["pioneer-works-newsletter"],
+    "why": "Live performance by Dan Deacon, Baltimore-based electronic musician and composer."
+  },
+  {
+    "id": "pioneer-works-animal-exhibition",
+    "name": "ANIMAL: New Works Exhibition",
+    "dateISO": "2026-07-04T12:00:00",
+    "time": "12:00 PM–6:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "Free",
+    "url": "https://pioneerworks.org/programs/animal",
+    "category": "art_exhibitions",
+    "source": "Pioneer Works",
+    "via": ["pioneer-works-newsletter"],
+    "why": "Group exhibition of new works at Pioneer Works exploring themes of animals and the natural world."
+  },
+  {
+    "id": "ohny-port-infrastructure-boat-tour-0729",
+    "name": "Port Infrastructure Boat Tour",
+    "dateISO": "2026-07-29T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Brooklyn Bridge Park Pier 6",
+    "neighborhood": "Brooklyn Heights",
+    "price": "$45",
+    "url": "https://ohny.org/programs/port-infrastructure-boat-tour",
+    "category": "tours_experiences",
+    "source": "Open House New York",
+    "via": ["ohny-newsletter"],
+    "why": "Boat tour exploring New York Harbor's working port infrastructure, cargo terminals, and maritime history."
+  },
+  {
+    "id": "nytransit-50th-anniversary-ride-0704",
+    "name": "50th Anniversary Subway Nostalgia Train Ride",
+    "dateISO": "2026-07-04T12:00:00",
+    "time": "12:00 PM",
+    "venue": "New York Transit Museum",
+    "neighborhood": "Brooklyn Heights",
+    "price": "$45",
+    "url": "https://www.nytransitmuseum.org/event/50th-anniversary-rides/",
+    "category": "tours_experiences",
+    "source": "New York Transit Museum",
+    "via": ["nytransit-newsletter"],
+    "why": "Vintage subway train ride through the New York City subway system, celebrating the Transit Museum's 50th anniversary."
+  },
+  {
+    "id": "nytransit-50th-anniversary-ride-0705",
+    "name": "50th Anniversary Subway Nostalgia Train Ride",
+    "dateISO": "2026-07-05T12:00:00",
+    "time": "12:00 PM",
+    "venue": "New York Transit Museum",
+    "neighborhood": "Brooklyn Heights",
+    "price": "$45",
+    "url": "https://www.nytransitmuseum.org/event/50th-anniversary-rides/",
+    "category": "tours_experiences",
+    "source": "New York Transit Museum",
+    "via": ["nytransit-newsletter"],
+    "why": "Vintage subway train ride through the New York City subway system, celebrating the Transit Museum's 50th anniversary."
+  },
+  {
+    "id": "nytransit-coney-island-excursion-0718",
+    "name": "Coney Island Rail Excursion",
+    "dateISO": "2026-07-18T10:00:00",
+    "time": "10:00 AM",
+    "venue": "New York Transit Museum",
+    "neighborhood": "Brooklyn Heights",
+    "price": "$60",
+    "url": "https://www.nytransitmuseum.org/event/coney-island-excursion/",
+    "category": "tours_experiences",
+    "source": "New York Transit Museum",
+    "via": ["nytransit-newsletter"],
+    "why": "Guided rail excursion to Coney Island on vintage subway cars, with historical narration along the way."
+  },
+  {
+    "id": "nytransit-rockaways-excursion-0816",
+    "name": "Rockaways Rail Excursion",
+    "dateISO": "2026-08-16T10:00:00",
+    "time": "10:00 AM",
+    "venue": "New York Transit Museum",
+    "neighborhood": "Brooklyn Heights",
+    "price": "$60",
+    "url": "https://www.nytransitmuseum.org/event/rockaways-excursion/",
+    "category": "tours_experiences",
+    "source": "New York Transit Museum",
+    "via": ["nytransit-newsletter"],
+    "why": "Guided rail excursion to the Rockaways on vintage subway cars, with historical narration."
+  },
+  {
+    "id": "momi-blow-out-0703",
+    "name": "Blow Out (Brian De Palma, 1981)",
+    "dateISO": "2026-07-03T19:30:00",
+    "time": "7:30 PM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "$15",
+    "url": "https://movingimage.us/event/blow-out-july3/",
+    "category": "film_screenings",
+    "source": "Museum of the Moving Image",
+    "via": ["momi-newsletter"],
+    "why": "Screening of Brian De Palma's 1981 political thriller starring John Travolta."
+  },
+  {
+    "id": "momi-blow-out-0705",
+    "name": "Blow Out (Brian De Palma, 1981)",
+    "dateISO": "2026-07-05T14:00:00",
+    "time": "2:00 PM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "$15",
+    "url": "https://movingimage.us/event/blow-out-july5/",
+    "category": "film_screenings",
+    "source": "Museum of the Moving Image",
+    "via": ["momi-newsletter"],
+    "why": "Screening of Brian De Palma's 1981 political thriller starring John Travolta."
+  },
+  {
+    "id": "momi-salt-of-the-earth-0705",
+    "name": "Salt of the Earth (Herbert J. Biberman, 1954)",
+    "dateISO": "2026-07-05T12:00:00",
+    "time": "12:00 PM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "$15",
+    "url": "https://movingimage.us/event/salt-of-the-earth-july5/",
+    "category": "film_screenings",
+    "source": "Museum of the Moving Image",
+    "via": ["momi-newsletter"],
+    "why": "Screening of the 1954 independent labor drama, one of the few films made by blacklisted filmmakers during the McCarthy era."
+  },
+  {
+    "id": "momi-yoga-saturday-0704",
+    "name": "Yoga in the Courtyard",
+    "dateISO": "2026-07-04T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "Free with museum admission",
+    "url": "https://movingimage.us/programs/yoga-saturdays/",
+    "category": "workshops_classes",
+    "source": "Museum of the Moving Image",
+    "via": ["momi-newsletter"],
+    "why": "Free outdoor yoga sessions in the MoMI courtyard, running Saturdays through August."
+  },
+  {
+    "id": "momi-yoga-saturday-0711",
+    "name": "Yoga in the Courtyard",
+    "dateISO": "2026-07-11T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "Free with museum admission",
+    "url": "https://movingimage.us/programs/yoga-saturdays/",
+    "category": "workshops_classes",
+    "source": "Museum of the Moving Image",
+    "via": ["momi-newsletter"],
+    "why": "Free outdoor yoga sessions in the MoMI courtyard, running Saturdays through August."
+  },
+  {
+    "id": "momi-yoga-saturday-0718",
+    "name": "Yoga in the Courtyard",
+    "dateISO": "2026-07-18T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "Free with museum admission",
+    "url": "https://movingimage.us/programs/yoga-saturdays/",
+    "category": "workshops_classes",
+    "source": "Museum of the Moving Image",
+    "via": ["momi-newsletter"],
+    "why": "Free outdoor yoga sessions in the MoMI courtyard, running Saturdays through August."
+  },
+  {
+    "id": "momi-yoga-saturday-0725",
+    "name": "Yoga in the Courtyard",
+    "dateISO": "2026-07-25T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "Free with museum admission",
+    "url": "https://movingimage.us/programs/yoga-saturdays/",
+    "category": "workshops_classes",
+    "source": "Museum of the Moving Image",
+    "via": ["momi-newsletter"],
+    "why": "Free outdoor yoga sessions in the MoMI courtyard, running Saturdays through August."
+  },
+  {
+    "id": "momi-yoga-saturday-0801",
+    "name": "Yoga in the Courtyard",
+    "dateISO": "2026-08-01T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "Free with museum admission",
+    "url": "https://movingimage.us/programs/yoga-saturdays/",
+    "category": "workshops_classes",
+    "source": "Museum of the Moving Image",
+    "via": ["momi-newsletter"],
+    "why": "Free outdoor yoga sessions in the MoMI courtyard, running Saturdays through August."
+  },
+  {
+    "id": "momi-yoga-saturday-0808",
+    "name": "Yoga in the Courtyard",
+    "dateISO": "2026-08-08T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "Free with museum admission",
+    "url": "https://movingimage.us/programs/yoga-saturdays/",
+    "category": "workshops_classes",
+    "source": "Museum of the Moving Image",
+    "via": ["momi-newsletter"],
+    "why": "Free outdoor yoga sessions in the MoMI courtyard, running Saturdays through August."
+  },
+  {
+    "id": "momi-yoga-saturday-0815",
+    "name": "Yoga in the Courtyard",
+    "dateISO": "2026-08-15T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "Free with museum admission",
+    "url": "https://movingimage.us/programs/yoga-saturdays/",
+    "category": "workshops_classes",
+    "source": "Museum of the Moving Image",
+    "via": ["momi-newsletter"],
+    "why": "Free outdoor yoga sessions in the MoMI courtyard, running Saturdays through August."
+  },
+  {
+    "id": "momi-yoga-saturday-0822",
+    "name": "Yoga in the Courtyard",
+    "dateISO": "2026-08-22T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "Free with museum admission",
+    "url": "https://movingimage.us/programs/yoga-saturdays/",
+    "category": "workshops_classes",
+    "source": "Museum of the Moving Image",
+    "via": ["momi-newsletter"],
+    "why": "Free outdoor yoga sessions in the MoMI courtyard, running Saturdays through August."
+  },
+  {
+    "id": "momi-yoga-saturday-0829",
+    "name": "Yoga in the Courtyard",
+    "dateISO": "2026-08-29T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "Free with museum admission",
+    "url": "https://movingimage.us/programs/yoga-saturdays/",
+    "category": "workshops_classes",
+    "source": "Museum of the Moving Image",
+    "via": ["momi-newsletter"],
+    "why": "Free outdoor yoga sessions in the MoMI courtyard, running Saturdays through August."
+  },
+  {
+    "id": "momi-open-worlds-science-0718",
+    "name": "Open Worlds: Science on Screen",
+    "dateISO": "2026-07-18T14:00:00",
+    "time": "2:00 PM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "$15",
+    "url": "https://movingimage.us/programs/open-worlds-science/",
+    "category": "film_screenings",
+    "source": "Museum of the Moving Image",
+    "via": ["momi-newsletter"],
+    "why": "Screening series exploring science and technology through the lens of cinema."
+  },
+  {
+    "id": "momi-practical-magic-0719",
+    "name": "Practical Magic (Griffin Dunne, 1998)",
+    "dateISO": "2026-07-19T19:30:00",
+    "time": "7:30 PM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "$15",
+    "url": "https://movingimage.us/event/practical-magic/",
+    "category": "film_screenings",
+    "source": "Museum of the Moving Image",
+    "via": ["momi-newsletter"],
+    "why": "Screening of the 1998 romantic comedy-fantasy starring Sandra Bullock and Nicole Kidman."
+  },
+  {
+    "id": "momi-summer-media-camp",
+    "name": "Summer Media Camp",
+    "dateISO": "2026-07-07T09:00:00",
+    "time": "9:00 AM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria",
+    "price": "$500/week",
+    "url": "https://movingimage.us/programs/summer-media-camp/",
+    "category": "workshops_classes",
+    "source": "Museum of the Moving Image",
+    "via": ["momi-newsletter"],
+    "why": "Weeklong filmmaking and media production camps for young people at MoMI."
+  },
+  {
+    "id": "mcny-late-night-hours-0709",
+    "name": "Late-Night Museum Hours",
+    "dateISO": "2026-07-09T18:00:00",
+    "time": "6:00 PM–9:00 PM",
+    "venue": "Museum of the City of New York",
+    "neighborhood": "East Harlem",
+    "price": "Free",
+    "url": "https://www.mcny.org/event/late-night-hours",
+    "category": "art_exhibitions",
+    "source": "Museum of the City of New York",
+    "via": ["mcny-newsletter"],
+    "why": "Free extended evening hours at MCNY — access all current exhibitions until 9 PM."
+  },
+  {
+    "id": "mcny-late-night-hours-0716",
+    "name": "Late-Night Museum Hours",
+    "dateISO": "2026-07-16T18:00:00",
+    "time": "6:00 PM–9:00 PM",
+    "venue": "Museum of the City of New York",
+    "neighborhood": "East Harlem",
+    "price": "Free",
+    "url": "https://www.mcny.org/event/late-night-hours",
+    "category": "art_exhibitions",
+    "source": "Museum of the City of New York",
+    "via": ["mcny-newsletter"],
+    "why": "Free extended evening hours at MCNY — access all current exhibitions until 9 PM."
+  },
+  {
+    "id": "mcny-late-night-hours-0723",
+    "name": "Late-Night Museum Hours",
+    "dateISO": "2026-07-23T18:00:00",
+    "time": "6:00 PM–9:00 PM",
+    "venue": "Museum of the City of New York",
+    "neighborhood": "East Harlem",
+    "price": "Free",
+    "url": "https://www.mcny.org/event/late-night-hours",
+    "category": "art_exhibitions",
+    "source": "Museum of the City of New York",
+    "via": ["mcny-newsletter"],
+    "why": "Free extended evening hours at MCNY — access all current exhibitions until 9 PM."
+  },
+  {
+    "id": "mcny-late-night-hours-0730",
+    "name": "Late-Night Museum Hours",
+    "dateISO": "2026-07-30T18:00:00",
+    "time": "6:00 PM–9:00 PM",
+    "venue": "Museum of the City of New York",
+    "neighborhood": "East Harlem",
+    "price": "Free",
+    "url": "https://www.mcny.org/event/late-night-hours",
+    "category": "art_exhibitions",
+    "source": "Museum of the City of New York",
+    "via": ["mcny-newsletter"],
+    "why": "Free extended evening hours at MCNY — access all current exhibitions until 9 PM."
+  },
+  {
+    "id": "mcny-late-night-hours-0805",
+    "name": "Late-Night Museum Hours",
+    "dateISO": "2026-08-05T18:00:00",
+    "time": "6:00 PM–9:00 PM",
+    "venue": "Museum of the City of New York",
+    "neighborhood": "East Harlem",
+    "price": "Free",
+    "url": "https://www.mcny.org/event/late-night-hours",
+    "category": "art_exhibitions",
+    "source": "Museum of the City of New York",
+    "via": ["mcny-newsletter"],
+    "why": "Free extended evening hours at MCNY — access all current exhibitions until 9 PM."
+  },
+  {
+    "id": "mcny-late-night-hours-0812",
+    "name": "Late-Night Museum Hours",
+    "dateISO": "2026-08-12T18:00:00",
+    "time": "6:00 PM–9:00 PM",
+    "venue": "Museum of the City of New York",
+    "neighborhood": "East Harlem",
+    "price": "Free",
+    "url": "https://www.mcny.org/event/late-night-hours",
+    "category": "art_exhibitions",
+    "source": "Museum of the City of New York",
+    "via": ["mcny-newsletter"],
+    "why": "Free extended evening hours at MCNY — access all current exhibitions until 9 PM."
+  },
+  {
+    "id": "mcny-late-night-hours-0819",
+    "name": "Late-Night Museum Hours",
+    "dateISO": "2026-08-19T18:00:00",
+    "time": "6:00 PM–9:00 PM",
+    "venue": "Museum of the City of New York",
+    "neighborhood": "East Harlem",
+    "price": "Free",
+    "url": "https://www.mcny.org/event/late-night-hours",
+    "category": "art_exhibitions",
+    "source": "Museum of the City of New York",
+    "via": ["mcny-newsletter"],
+    "why": "Free extended evening hours at MCNY — access all current exhibitions until 9 PM."
+  },
+  {
+    "id": "mcny-late-night-hours-0826",
+    "name": "Late-Night Museum Hours",
+    "dateISO": "2026-08-26T18:00:00",
+    "time": "6:00 PM–9:00 PM",
+    "venue": "Museum of the City of New York",
+    "neighborhood": "East Harlem",
+    "price": "Free",
+    "url": "https://www.mcny.org/event/late-night-hours",
+    "category": "art_exhibitions",
+    "source": "Museum of the City of New York",
+    "via": ["mcny-newsletter"],
+    "why": "Free extended evening hours at MCNY — access all current exhibitions until 9 PM."
+  },
+  {
+    "id": "mcny-late-night-hours-0902",
+    "name": "Late-Night Museum Hours",
+    "dateISO": "2026-09-02T18:00:00",
+    "time": "6:00 PM–9:00 PM",
+    "venue": "Museum of the City of New York",
+    "neighborhood": "East Harlem",
+    "price": "Free",
+    "url": "https://www.mcny.org/event/late-night-hours",
+    "category": "art_exhibitions",
+    "source": "Museum of the City of New York",
+    "via": ["mcny-newsletter"],
+    "why": "Free extended evening hours at MCNY — access all current exhibitions until 9 PM."
+  },
+  {
+    "id": "centralpark-fifa-arena",
+    "name": "FIFA Fan Arena: World Cup 2026",
+    "dateISO": "2026-07-04T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Central Park Great Lawn",
+    "neighborhood": "Upper West Side",
+    "price": "Free",
+    "url": "https://www.centralparknyc.org/events/fifa-fan-arena",
+    "category": "festivals_parties",
+    "source": "Central Park Conservancy",
+    "via": ["central-park-conservancy-newsletter"],
+    "why": "Free FIFA World Cup fan zone in Central Park with screens, activities, and food vendors throughout the tournament."
+  },
+  {
+    "id": "centralpark-world-cup-final-0719",
+    "name": "World Cup Final Watch Party",
+    "dateISO": "2026-07-19T14:00:00",
+    "time": "2:00 PM",
+    "venue": "Central Park Great Lawn",
+    "neighborhood": "Upper West Side",
+    "price": "Free",
+    "url": "https://www.centralparknyc.org/events/world-cup-final-watch-party",
+    "category": "festivals_parties",
+    "source": "Central Park Conservancy",
+    "via": ["central-park-conservancy-newsletter"],
+    "why": "Free outdoor watch party for the FIFA World Cup Final on the Great Lawn in Central Park."
+  },
+  {
+    "id": "garysguide-event-0707a",
+    "name": "NYC Tech Meetup: AI in Production",
+    "dateISO": "2026-07-07T18:30:00",
+    "time": "6:30 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "Free",
+    "url": "https://www.garysguide.com/events",
+    "category": "tech_ai",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "NYC tech community meetup focused on AI and machine learning in production systems."
+  },
+  {
+    "id": "garysguide-event-0708a",
+    "name": "Startup Pitch Night",
+    "dateISO": "2026-07-08T19:00:00",
+    "time": "7:00 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "Free",
+    "url": "https://www.garysguide.com/events",
+    "category": "tech_ai",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "Startup founders pitch their companies to investors and the NYC tech community."
+  },
+  {
+    "id": "garysguide-event-0709a",
+    "name": "Product Management Workshop",
+    "dateISO": "2026-07-09T18:00:00",
+    "time": "6:00 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "$25",
+    "url": "https://www.garysguide.com/events",
+    "category": "workshops_classes",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "Hands-on workshop on product management fundamentals and techniques."
+  },
+  {
+    "id": "garysguide-event-0710a",
+    "name": "Venture Capital Networking Night",
+    "dateISO": "2026-07-10T18:00:00",
+    "time": "6:00 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "Free",
+    "url": "https://www.garysguide.com/events",
+    "category": "tech_ai",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "Networking event connecting founders, VCs, and investors in the NYC tech ecosystem."
+  },
+  {
+    "id": "garysguide-event-0714a",
+    "name": "Blockchain and Web3 Meetup",
+    "dateISO": "2026-07-14T18:30:00",
+    "time": "6:30 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "Free",
+    "url": "https://www.garysguide.com/events",
+    "category": "tech_ai",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "NYC blockchain and Web3 community meetup covering decentralized applications and crypto."
+  },
+  {
+    "id": "garysguide-event-0715a",
+    "name": "Design Systems Workshop",
+    "dateISO": "2026-07-15T18:00:00",
+    "time": "6:00 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "$20",
+    "url": "https://www.garysguide.com/events",
+    "category": "workshops_classes",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "Practical workshop on designing and building scalable design systems for products."
+  },
+  {
+    "id": "garysguide-event-0716a",
+    "name": "Cybersecurity for Startups",
+    "dateISO": "2026-07-16T18:00:00",
+    "time": "6:00 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "Free",
+    "url": "https://www.garysguide.com/events",
+    "category": "tech_ai",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "Talk on cybersecurity essentials for early-stage startups and tech companies."
+  },
+  {
+    "id": "garysguide-event-0721a",
+    "name": "NYC Founders Roundtable",
+    "dateISO": "2026-07-21T18:30:00",
+    "time": "6:30 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "Free",
+    "url": "https://www.garysguide.com/events",
+    "category": "tech_ai",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "Roundtable discussion among NYC startup founders sharing learnings and challenges."
+  },
+  {
+    "id": "garysguide-event-0722a",
+    "name": "Machine Learning in Finance",
+    "dateISO": "2026-07-22T18:00:00",
+    "time": "6:00 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "Free",
+    "url": "https://www.garysguide.com/events",
+    "category": "tech_ai",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "Talk on applications of machine learning and AI in financial services."
+  },
+  {
+    "id": "garysguide-event-0723a",
+    "name": "Growth Marketing Masterclass",
+    "dateISO": "2026-07-23T18:00:00",
+    "time": "6:00 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "$30",
+    "url": "https://www.garysguide.com/events",
+    "category": "workshops_classes",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "Masterclass on growth marketing strategies for tech startups and digital products."
+  },
+  {
+    "id": "garysguide-event-0728a",
+    "name": "Developer Productivity Tools",
+    "dateISO": "2026-07-28T18:30:00",
+    "time": "6:30 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "Free",
+    "url": "https://www.garysguide.com/events",
+    "category": "tech_ai",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "Meetup showcasing developer tools, workflows, and productivity improvements."
+  },
+  {
+    "id": "garysguide-event-0729a",
+    "name": "UX Research Methods",
+    "dateISO": "2026-07-29T18:00:00",
+    "time": "6:00 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "$15",
+    "url": "https://www.garysguide.com/events",
+    "category": "workshops_classes",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "Workshop on user experience research methods and usability testing."
+  },
+  {
+    "id": "garysguide-event-0730a",
+    "name": "Climate Tech Meetup",
+    "dateISO": "2026-07-30T18:00:00",
+    "time": "6:00 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "Free",
+    "url": "https://www.garysguide.com/events",
+    "category": "tech_ai",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "Meetup for climate technology founders, investors, and engineers in NYC."
+  },
+  {
+    "id": "garysguide-event-0804a",
+    "name": "No-Code App Building Workshop",
+    "dateISO": "2026-08-04T18:00:00",
+    "time": "6:00 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "$25",
+    "url": "https://www.garysguide.com/events",
+    "category": "workshops_classes",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "Hands-on workshop on building apps and automations without writing code."
+  },
+  {
+    "id": "garysguide-event-0805a",
+    "name": "NYC AI Showcase",
+    "dateISO": "2026-08-05T18:30:00",
+    "time": "6:30 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "Free",
+    "url": "https://www.garysguide.com/events",
+    "category": "tech_ai",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "Showcase of AI projects and demos built by NYC engineers and researchers."
+  },
+  {
+    "id": "garysguide-event-0811a",
+    "name": "SaaS Metrics Deep Dive",
+    "dateISO": "2026-08-11T18:00:00",
+    "time": "6:00 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "Free",
+    "url": "https://www.garysguide.com/events",
+    "category": "tech_ai",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "Talk on SaaS business metrics, benchmarks, and how to interpret them for growth."
+  },
+  {
+    "id": "garysguide-event-0821a",
+    "name": "NYC HealthTech Mixer",
+    "dateISO": "2026-08-21T18:00:00",
+    "time": "6:00 PM",
+    "venue": "TBD (see Gary's Guide listing)",
+    "neighborhood": "Manhattan",
+    "price": "Free",
+    "url": "https://www.garysguide.com/events",
+    "category": "tech_ai",
+    "source": "Gary's Guide",
+    "via": ["garysguide-newsletter"],
+    "why": "Networking mixer for healthtech founders, clinicians, and investors in NYC."
+  },
+  {
+    "id": "nycparks-community-paddle-0703",
+    "name": "Community Paddle at Inwood Canoe Club",
+    "dateISO": "2026-07-03T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Inwood Canoe Club, Inwood Hill Park",
+    "neighborhood": "Inwood",
+    "price": "Free",
+    "url": "https://www.nycgovparks.org/events/community-paddle",
+    "category": "tours_experiences",
+    "source": "NYC Parks",
+    "via": ["nyc-parks-newsletter"],
+    "why": "Free community kayaking and canoe paddle through the waters of Inwood Hill Park."
+  },
+  {
+    "id": "nycparks-indigenous-art-workshop-0703",
+    "name": "Indigenous Art Workshop",
+    "dateISO": "2026-07-03T13:00:00",
+    "time": "1:00 PM",
+    "venue": "Inwood Hill Park Nature Center",
+    "neighborhood": "Inwood",
+    "price": "Free",
+    "url": "https://www.nycgovparks.org/events/indigenous-art-workshop",
+    "category": "workshops_classes",
+    "source": "NYC Parks",
+    "via": ["nyc-parks-newsletter"],
+    "why": "Free workshop exploring Indigenous art traditions and craft techniques at the Inwood Hill Park Nature Center."
+  },
+  {
+    "id": "gov-island-nyc-poetry-festival-0718",
+    "name": "NYC Poetry Festival",
+    "dateISO": "2026-07-18T11:00:00",
+    "time": "11:00 AM–7:00 PM",
+    "venue": "Governors Island",
+    "neighborhood": "Governors Island",
+    "price": "Free (ferry extra)",
+    "url": "https://nycpoetryfestival.org/",
+    "category": "festivals_parties",
+    "source": "Governors Island",
+    "via": ["governors-island-newsletter"],
+    "why": "Annual outdoor poetry festival on Governors Island featuring readings, performances, and literary events."
+  },
+  {
+    "id": "gov-island-nyc-poetry-festival-0719",
+    "name": "NYC Poetry Festival",
+    "dateISO": "2026-07-19T11:00:00",
+    "time": "11:00 AM–7:00 PM",
+    "venue": "Governors Island",
+    "neighborhood": "Governors Island",
+    "price": "Free (ferry extra)",
+    "url": "https://nycpoetryfestival.org/",
+    "category": "festivals_parties",
+    "source": "Governors Island",
+    "via": ["governors-island-newsletter"],
+    "why": "Annual outdoor poetry festival on Governors Island featuring readings, performances, and literary events."
   }
 ]

@@ -12,7 +12,8 @@
       "type": "newsletter",
       "gmail_query": "from:nyadventureclub.com",
       "category": "tours_experiences",
-      "enabled": true
+      "enabled": false,
+      "note": "no email ever received as of 2026-07-02 — pending subscription, see docs/SUBSCRIBE-CHECKLIST.md; re-enable after subscribing"
     },
     {
       "name": "Brooklyn Brainery",
@@ -33,7 +34,8 @@
       "type": "newsletter",
       "gmail_query": "from:bklynlibrary.org",
       "category": "talks_lectures",
-      "enabled": true
+      "enabled": false,
+      "note": "no email ever received as of 2026-07-02 — pending subscription, see docs/SUBSCRIBE-CHECKLIST.md; re-enable after subscribing"
     },
     {
       "name": "The Skint",
@@ -47,7 +49,8 @@
       "type": "newsletter",
       "gmail_query": "from:nonsensenyc.com",
       "category": "tours_experiences",
-      "enabled": true
+      "enabled": false,
+      "note": "no email ever received as of 2026-07-02 — pending subscription, see docs/SUBSCRIBE-CHECKLIST.md; re-enable after subscribing"
     },
     {
       "name": "BRIC",
@@ -61,28 +64,32 @@
       "type": "newsletter",
       "gmail_query": "from:bkreader.com",
       "category": "talks_lectures",
-      "enabled": true
+      "enabled": false,
+      "note": "no email ever received as of 2026-07-02 — pending subscription, see docs/SUBSCRIBE-CHECKLIST.md; re-enable after subscribing"
     },
     {
       "name": "Patch Fort Greene",
       "type": "newsletter",
       "gmail_query": "from:patch.com subject:fort greene",
       "category": "talks_lectures",
-      "enabled": true
+      "enabled": false,
+      "note": "no email ever received as of 2026-07-02 — pending subscription, see docs/SUBSCRIBE-CHECKLIST.md; re-enable after subscribing"
     },
     {
       "name": "Patch Bed-Stuy",
       "type": "newsletter",
       "gmail_query": "from:patch.com subject:bed-stuy",
       "category": "talks_lectures",
-      "enabled": true
+      "enabled": false,
+      "note": "no email ever received as of 2026-07-02 — pending subscription, see docs/SUBSCRIBE-CHECKLIST.md; re-enable after subscribing"
     },
     {
       "name": "Patch BK Heights-DUMBO",
       "type": "newsletter",
       "gmail_query": "from:patch.com subject:(brooklyn heights OR dumbo)",
       "category": "talks_lectures",
-      "enabled": true
+      "enabled": false,
+      "note": "no email ever received as of 2026-07-02 — pending subscription, see docs/SUBSCRIBE-CHECKLIST.md; re-enable after subscribing"
     },
     {
       "name": "Gary's Guide",
@@ -103,7 +110,8 @@
       "type": "newsletter",
       "gmail_query": "from:builtin.com subject:NYC",
       "category": "tech_ai",
-      "enabled": true
+      "enabled": false,
+      "note": "no email ever received as of 2026-07-02 — pending subscription, see docs/SUBSCRIBE-CHECKLIST.md; re-enable after subscribing"
     },
     {
       "name": "Brooklyn Museum",
@@ -743,6 +751,80 @@
       "neighborhood": "NYC",
       "enabled": false,
       "seasonal": null
+    },
+    {
+      "type": "feed",
+      "name": "Fort Greene Park Conservancy",
+      "format": "squarespace-json",
+      "feed_url": "https://www.fortgreenepark.org/calendar/?format=json",
+      "enabled": true
+    },
+    {
+      "type": "feed",
+      "name": "Green-Wood Cemetery",
+      "format": "ics",
+      "feed_url": "https://www.green-wood.com/calendar/?ical=1",
+      "enabled": true
+    },
+    {
+      "type": "feed",
+      "name": "Gowanus Dredgers",
+      "format": "ics",
+      "feed_url": "https://gowanusdredgers.org/?ical=1",
+      "enabled": true
+    },
+    {
+      "type": "feed",
+      "name": "NY Mycological Society",
+      "format": "ics",
+      "feed_url": "https://www.newyorkmyc.org/events/?ical=1",
+      "enabled": true
+    },
+    {
+      "type": "feed",
+      "name": "Makeville Studio",
+      "format": "ics",
+      "feed_url": "https://calendar.google.com/calendar/ical/makeville.com_r8os53m99cg005fpqu036h3lc0%40group.calendar.google.com/public/basic.ics",
+      "enabled": true
+    },
+    {
+      "type": "feed",
+      "name": "Gotham Center",
+      "format": "squarespace-json",
+      "feed_url": "https://www.gothamcenter.org/upcoming-events?format=json",
+      "enabled": true
+    },
+    {
+      "type": "feed",
+      "name": "Club Free Time",
+      "format": "jsonld",
+      "feed_url": "https://www.clubfreetime.com/new-york-city-nyc/free-talks-lectures",
+      "enabled": true
+    },
+    {
+      "type": "feed",
+      "name": "Creative Coding NYC",
+      "format": "ics",
+      "feed_url": "https://www.meetup.com/creative-coding-nyc/events/ical/",
+      "enabled": true
+    },
+    {
+      "type": "feed",
+      "name": "NYC Parks",
+      "format": "nycparks-rss",
+      "feed_url": "https://www.nycgovparks.org/xml/events_300_rss.xml",
+      "boroughs": [
+        "B",
+        "M"
+      ],
+      "enabled": true
+    },
+    {
+      "type": "feed",
+      "name": "NYC Resistor",
+      "format": "rss-title-date",
+      "feed_url": "https://www.nycresistor.com/feed/",
+      "enabled": true
     }
   ],
   "categories": {

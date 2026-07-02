@@ -2,8 +2,9 @@
 
 You are generating this week's NYC events digest. You are running as a scheduled
 cloud routine with the `events-digest` GitHub repo checked out as your working
-directory and the **Gmail connector** attached. Work entirely from email — do
-not scrape websites. Execute every step in order.
+directory and the **Gmail connector** attached. Work from email plus the
+deterministic feed fetcher (step 2.5) — do not scrape websites yourself.
+Execute every step in order.
 
 > **Run everything inline in THIS single session. Do NOT spawn sub-agents, Tasks,
 > or background / multi-agent workflows to parallelize the work.** A scheduled run
@@ -91,6 +92,22 @@ Rules:
   out. The build buckets by date (anything past next weekend lands in a "Later"
   section) and drops only events whose date has already passed.
 
+## 2.5 Fetch structured feeds (deterministic)
+
+Run the feed fetcher — it pulls venue calendars (ICS / JSON-LD / Squarespace
+JSON / structured RSS) listed as `type:"feed"` in config.json and writes
+`feed-events.json`:
+
+```bash
+node bin/fetch-feeds.js
+```
+
+A failing feed never fails the run; failures are recorded in
+`feed-events.json` under `errors`. Do not retry them manually and do NOT
+scrape those websites yourself — just include the errors in your final report.
+The build merges `feed-events.json` with your extracted `events.json`
+automatically and de-duplicates events that appear in both.
+
 ## 3. Build the digest
 
 Run the deterministic build. It buckets every event by date into five sections
@@ -113,7 +130,7 @@ ships automatically — no extra action needed from you.
 Commit and push so Vercel auto-deploys the static site:
 
 ```bash
-git add digests/ state.json events.json
+git add digests/ state.json events.json feed-events.json
 git commit -m "digest: <YYYY-MM-DD>"
 git push
 ```
@@ -123,8 +140,9 @@ Vercel serves `digests/index.html` at the site root.
 ## 5. Report
 
 End with a short summary: total events read, count per bucket
-(This Week / This Weekend / Next Week / Next Weekend / Later), and any sources
-that returned nothing or errored.
+(This Week / This Weekend / Next Week / Next Weekend / Later), the per-source
+coverage line the build prints (`Sources: N contributed; empty: ...`), and any
+feed errors from `feed-events.json`.
 
 ## Notes
 

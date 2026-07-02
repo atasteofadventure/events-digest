@@ -50,3 +50,36 @@ test('injectData escapes script-breaking chars from untrusted event data (XSS)',
   assert.doesNotMatch(out, /<\/script>/i);   // no literal closing tag survives
   assert.match(out, /\\u003c\/script/i);     // escaped form instead
 });
+
+// ---------- feed merge + source report ----------
+const { mergeFeedEvents, sourceReport } = require('./build-digest');
+
+test('mergeFeedEvents concatenates newsletter and feed events', () => {
+  const a = [{ id: '1', name: 'A', dateISO: '2026-07-10T19:00:00', via: ['The Skint'] }];
+  const feed = { events: [{ id: 'feed-x', name: 'B', dateISO: '2026-07-11T10:00:00', via: ['feed: Park'] }] };
+  assert.equal(mergeFeedEvents(a, feed).length, 2);
+});
+
+test('mergeFeedEvents tolerates missing or malformed feed file content', () => {
+  assert.equal(mergeFeedEvents([{ id: '1' }], null).length, 1);
+  assert.equal(mergeFeedEvents([{ id: '1' }], {}).length, 1);
+  assert.equal(mergeFeedEvents(null, { events: [{ id: 'f' }] }).length, 1);
+});
+
+test('sourceReport counts per via-source and lists empty configured sources', () => {
+  const events = [
+    { via: ['The Skint'] },
+    { via: ['The Skint', 'feed: Park'] },
+    { via: ['feed: Park'] },
+  ];
+  const rep = sourceReport(events, ['The Skint', 'Park', 'Nonsense NYC']);
+  assert.deepEqual(rep.counts[0], { source: 'The Skint', count: 2 });
+  assert.deepEqual(rep.counts[1], { source: 'Park', count: 2 }); // "feed: " prefix normalized
+  assert.deepEqual(rep.empty, ['Nonsense NYC']);
+  assert.equal(rep.contributing, 2);
+});
+
+test('sourceReport falls back to event.source when via is missing', () => {
+  const rep = sourceReport([{ source: 'Solo' }], []);
+  assert.deepEqual(rep.counts, [{ source: 'Solo', count: 1 }]);
+});

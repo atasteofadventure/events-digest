@@ -61,17 +61,59 @@ function injectTitle(template, title) {
   return template.replace(/__DIGEST_TITLE__/g, esc(title));
 }
 
+// Feed events are fetched separately (bin/fetch-feeds.js) into feed-events.json;
+// merge them with the newsletter-extracted events before curation. curate()
+// dedupes name+date+venue across the merged set and unions `via`.
+function mergeFeedEvents(events, feedFile) {
+  const feedEvents = (feedFile && Array.isArray(feedFile.events)) ? feedFile.events : [];
+  return [...(events || []), ...feedEvents];
+}
+
+// Visibility: which sources actually contributed this run, and which configured
+// sources produced nothing (dead subscription, broken feed, or a quiet week).
+function sourceReport(events, configuredNames) {
+  const tally = new Map();
+  for (const e of events || []) {
+    const vias = Array.isArray(e.via) && e.via.length ? e.via : [e.source || 'unknown'];
+    for (const v of vias) {
+      const name = String(v).replace(/^feed:\s*/, '');
+      tally.set(name, (tally.get(name) || 0) + 1);
+    }
+  }
+  const counts = [...tally.entries()].map(([source, count]) => ({ source, count }))
+    .sort((a, b) => b.count - a.count);
+  const empty = (configuredNames || []).filter((n) => !tally.has(n));
+  return { counts, empty, contributing: counts.length };
+}
+
 function main() {
   const root = path.join(__dirname, '..');
   const runDateISO = process.env.RUN_DATE || new Date().toISOString();
-  const events = JSON.parse(fs.readFileSync(path.join(root, 'events.json'), 'utf8'));
+  const rawEvents = JSON.parse(fs.readFileSync(path.join(root, 'events.json'), 'utf8'));
   const state = JSON.parse(fs.readFileSync(path.join(root, 'state.json'), 'utf8'));
   const template = fs.readFileSync(path.join(root, 'template.html'), 'utf8');
+
+  const feedPath = path.join(root, 'feed-events.json');
+  let feedFile = null;
+  if (fs.existsSync(feedPath)) {
+    try { feedFile = JSON.parse(fs.readFileSync(feedPath, 'utf8')); }
+    catch { console.error('warning: feed-events.json unreadable; building without feeds'); }
+  }
+  const events = mergeFeedEvents(rawEvents, feedFile);
+
+  const config = JSON.parse(fs.readFileSync(path.join(root, 'config.json'), 'utf8'));
+  const configuredNames = (config.sources || [])
+    .filter((s) => s.enabled !== false).map((s) => s.name);
+  const report = sourceReport(events, configuredNames);
+  if (feedFile && Array.isArray(feedFile.errors) && feedFile.errors.length) {
+    report.feedErrors = feedFile.errors;
+  }
 
   const total = Array.isArray(events) ? events.length : 0;
   const curated = curate(events, runDateISO);
   const data = buildData(curated, runDateISO, {
     title: `Week of ${runDateISO.slice(0, 10)}`, type: 'week', total_collected: total,
+    source_report: { contributing: report.contributing, empty: report.empty },
   });
   let out = injectData(template, data);
   out = injectTitle(out, data.meta.title || 'Events Digest');
@@ -83,6 +125,9 @@ function main() {
   // Email-safe flat version (sent weekly by the GitHub Action; see bin/send-email.js).
   fs.writeFileSync(path.join(root, 'digests', 'email.html'), buildEmailHtml(data));
 
+  // Per-source coverage report — makes lopsided sourcing visible instead of silent.
+  fs.writeFileSync(path.join(root, 'digests', 'sources.json'), JSON.stringify(report, null, 2));
+
   // No cross-run suppression — every digest shows the full current set. Record
   // only the run time so state.json stays a useful breadcrumb.
   state.last_run = runDateISO;
@@ -90,7 +135,11 @@ function main() {
 
   const counts = BUCKETS.map((b) => `${b}: ${(data[b] || []).length}`).join(', ');
   console.log(`Built digests/${day}.html — ${counts}`);
+  console.log(`Sources: ${report.contributing} contributed; empty: ${report.empty.join(', ') || 'none'}`);
+  if (report.feedErrors) {
+    for (const fe of report.feedErrors) console.log(`feed error: ${fe.source} — ${fe.error}`);
+  }
 }
 
 if (require.main === module) main();
-module.exports = { buildData, injectData, injectTitle, escapeForScript };
+module.exports = { buildData, injectData, injectTitle, escapeForScript, mergeFeedEvents, sourceReport };

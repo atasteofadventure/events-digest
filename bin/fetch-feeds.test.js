@@ -80,3 +80,15 @@ test('withinHorizon keeps today through +90 days, drops yesterday', () => {
   assert.equal(withinHorizon('2026-09-25T00:00:00', NOW), true);
   assert.equal(withinHorizon('2026-10-15T00:00:00', NOW), false);
 });
+
+test('eventbrite-organizer format parses the embedded blob', async () => {
+  const ev = { id: '9', name: 'Workshop', url: 'https://www.eventbrite.com/e/w-9',
+    start_date: '2026-07-20', start_time: '18:00:00',
+    primary_venue: { name: 'Studio' }, ticket_availability: { is_free: true } };
+  const body = '<script>{"organizer":{"upcomingEvents":' + JSON.stringify([ev]) + '}}</script>';
+  const sources = [{ type: 'feed', name: 'Studio (Eventbrite)', feed_url: 'https://eb/o/studio', format: 'eventbrite-organizer', enabled: true }];
+  const { events } = await fetchFeeds(sources, fakeFetch({ 'https://eb/o/studio': { body } }), NOW);
+  assert.equal(events.length, 1);
+  assert.equal(events[0].name, 'Workshop');
+  assert.equal(events[0].price, 'Free');
+});

@@ -9,7 +9,7 @@ const fs = require('fs');
 const path = require('path');
 const {
   icsToEvents, jsonLdToEvents, squarespaceJsonToEvents,
-  nycParksRssToEvents, resistorRssToEvents,
+  nycParksRssToEvents, resistorRssToEvents, eventbriteOrganizerToEvents,
 } = require('../lib/feeds');
 
 const TIMEOUT_MS = 20000;
@@ -35,6 +35,7 @@ function parseBody(src, body) {
       return squarespaceJsonToEvents(JSON.parse(body), { ...opts, origin: new URL(src.feed_url).origin });
     case 'nycparks-rss': return nycParksRssToEvents(body, { ...opts, boroughs: src.boroughs });
     case 'rss-title-date': return resistorRssToEvents(body, opts);
+    case 'eventbrite-organizer': return eventbriteOrganizerToEvents(body, opts);
     default: throw new Error(`unknown feed format "${src.format}"`);
   }
 }

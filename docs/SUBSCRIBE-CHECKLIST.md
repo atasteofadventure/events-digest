@@ -19,19 +19,19 @@ The 8 dead config queries:
 - [ ] Patch Brooklyn Heights–DUMBO — https://patch.com/new-york/heights-dumbo
 
 Blocked-to-bots or JS-only venues:
-- [ ] Brooklyn Museum — https://www.brooklynmuseum.org/ (footer email signup)
+- [x] Brooklyn Museum — ALREADY subscribed via alias (arriving since June, labeled). NOTE 2026-07-02: a new "Please confirm your subscription!" email is in the inbox — click it.
 - [ ] BAM — https://www.bam.org/
-- [ ] Prospect Park Conservancy — https://www.prospectpark.org/
+- [x] Prospect Park Conservancy — ALREADY subscribed (alias + plain, labeled); mail is mostly fundraising, few events
 - [ ] Brooklyn Botanic Garden — https://www.bbg.org/
 - [ ] Nitehawk Cinema — https://nitehawkcinema.com/
-- [ ] Rooftop Films — https://rooftopfilms.com/
+- [x] Rooftop Films — subscribed at the PLAIN address (member email); covered via a from:rooftopfilms.com config query instead (added 2026-07-02)
 - [ ] Books Are Magic — https://www.booksaremagic.net/
 - [ ] Greenlight Bookstore — https://www.greenlightbookstore.com/
 - [ ] Atlas Obscura — https://www.atlasobscura.com/newsletters
-- [ ] Brooklyn Bridge Park — https://www.brooklynbridgepark.org/ (covers Movies With A View)
+- [x] Brooklyn Bridge Park — ALREADY subscribed via alias since 2026-05-29 (re-confirmed 2026-07-02); covers Movies With A View
 
 New suggestions (not in config, high signal):
-- [ ] Pioneer Works — https://pioneerworks.org/
+- [x] Pioneer Works — ALREADY subscribed via alias (arriving, labeled)
 - [ ] Screen Slate — https://www.screenslate.com/ (daily NYC screening listings — best film coverage available)
 
 ## Tier B — smaller venues, subscribe if you care about them
@@ -66,6 +66,11 @@ New suggestions (not in config, high signal):
 - [ ] NYC Noise — https://nyc-noise.com/
 - [ ] Pratt Institute — https://www.pratt.edu/events/
 - [ ] Betaworks Studios — https://www.betaworks.com/
+
+**Verified 2026-07-02 after Sarah's signup pass:** BAM, BBG, Nitehawk, Books Are Magic,
+Greenlight, Atlas Obscura, and Screen Slate had zero email history — those subscriptions are
+genuinely new today; watch for confirmation emails and first issues (should land under the
+events-digest label via the alias).
 
 ## After subscribing
 

@@ -825,6 +825,13 @@
       "format": "rss-title-date",
       "feed_url": "https://www.nycresistor.com/feed/",
       "enabled": true
+    },
+    {
+      "type": "newsletter",
+      "name": "Rooftop Films",
+      "gmail_query": "from:rooftopfilms.com",
+      "enabled": true,
+      "note": "arrives at the PLAIN address (member email) — from: query needed, not covered by the alias label"
     }
   ],
   "categories": {

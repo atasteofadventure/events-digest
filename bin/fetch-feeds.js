@@ -33,7 +33,11 @@ function parseBody(src, body) {
     case 'jsonld': return jsonLdToEvents(body, opts);
     case 'squarespace-json':
       return squarespaceJsonToEvents(JSON.parse(body), { ...opts, origin: new URL(src.feed_url).origin });
-    case 'nycparks-rss': return nycParksRssToEvents(body, { ...opts, boroughs: src.boroughs });
+    case 'nycparks-rss': return nycParksRssToEvents(body, {
+      ...opts, boroughs: src.boroughs,
+      excludeCategories: src.exclude_categories,
+      boroughOnlyCategories: src.borough_only_categories,
+    });
     case 'rss-title-date': return resistorRssToEvents(body, opts);
     case 'eventbrite-organizer': return eventbriteOrganizerToEvents(body, opts);
     default: throw new Error(`unknown feed format "${src.format}"`);

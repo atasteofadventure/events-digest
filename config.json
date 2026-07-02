@@ -817,7 +817,30 @@
         "B",
         "M"
       ],
-      "enabled": true
+      "enabled": true,
+      "exclude_categories": [
+        "Best for Kids",
+        "Swimming/Aquatics",
+        "Volunteer",
+        "Basketball/Netball",
+        "Running/Jogging",
+        "Seniors",
+        "Fishing"
+      ],
+      "borough_only_categories": {
+        "Fitness": [
+          "B"
+        ],
+        "Exercise Classes": [
+          "B"
+        ],
+        "Shape Up NYC": [
+          "B"
+        ],
+        "Outdoor Fitness": [
+          "B"
+        ]
+      }
     },
     {
       "type": "feed",

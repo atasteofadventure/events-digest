@@ -1,9 +1,9 @@
 name: Weekly digest email
 
-# Sends the email-safe digest (digests/email.html) once a week, on Thursday.
-# The cloud routine rebuilds and pushes the digest twice a week (Thu + Sun); this
-# workflow only sends on Thursday's digest push. Trigger it manually any time via
-# the "Run workflow" button to test.
+# Sends the email-safe digest (digests/email.html) whenever a digest build is
+# pushed. The cloud routine runs Thursdays 22:00 UTC; a recovery/manual run on
+# any other day now emails too — the `digest:` commit prefix is the guard, not
+# the day of week. Trigger manually any time via the "Run workflow" button.
 on:
   push:
     branches: [main]
@@ -22,13 +22,12 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "send=true" >> "$GITHUB_OUTPUT"
           else
-            DOW=$(date -u +%u)          # 1=Mon .. 4=Thu .. 7=Sun
             MSG=$(git log -1 --pretty=%s)
-            if [ "$DOW" = "4" ] && printf '%s' "$MSG" | grep -q '^digest:'; then
+            if printf '%s' "$MSG" | grep -q '^digest:'; then
               echo "send=true" >> "$GITHUB_OUTPUT"
             else
               echo "send=false" >> "$GITHUB_OUTPUT"
-              echo "Skipping send (event=push, DOW=$DOW, msg='$MSG'); only Thursday digest pushes are emailed."
+              printf 'Skipping send (event=push, msg=%s); only digest: pushes are emailed.\n' "$MSG"
             fi
           fi
 

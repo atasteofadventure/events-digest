@@ -10,11 +10,11 @@ Signup is usually a footer form on the venue's homepage; URLs below are the page
 
 The 8 dead config queries:
 - [ ] NY Adventure Club — https://www.nyadventureclub.com/
-- [ ] Brooklyn Public Library — https://www.bklynlibrary.org/enews (also covers Center for Brooklyn History)
+- [ ] Brooklyn Public Library — https://www.bklynlibrary.org/ (footer signup; /enews is 404 — also covers Center for Brooklyn History)
 - [ ] Nonsense NYC — https://www.nonsensenyc.com/
 - [ ] BKReader — https://www.bkreader.com/
-- [ ] Built In NYC — https://www.builtin.com/ (account/newsletter settings)
-- [ ] Patch Fort Greene — https://patch.com/new-york/fort-greene (newsletter signup)
+- [ ] Built In NYC — https://builtin.com/ (account/newsletter settings; /newsletter is 404)
+- [ ] Patch Fort Greene — https://patch.com/new-york/fort-greene-clinton-hill (newsletter signup)
 - [ ] Patch Bed-Stuy — https://patch.com/new-york/bed-stuy
 - [ ] Patch Brooklyn Heights–DUMBO — https://patch.com/new-york/heights-dumbo
 

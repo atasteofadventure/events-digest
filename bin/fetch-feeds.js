@@ -68,17 +68,36 @@ async function fetchFeeds(sources, fetchImpl, nowISO) {
   return { events, errors };
 }
 
+// When EVERY feed fails (e.g. the cloud sandbox's egress proxy 403s all
+// outbound fetches — observed 2026-07-02), an existing feed-events.json with
+// real events (committed by the fetch-feeds GitHub Action) must be kept, not
+// clobbered with an empty file.
+function shouldKeepExisting(result, existing) {
+  const totalFailure = result.events.length === 0 && result.errors.length > 0;
+  const existingHasData = !!(existing && Array.isArray(existing.events) && existing.events.length > 0);
+  return totalFailure && existingHasData;
+}
+
 async function main() {
   const root = path.join(__dirname, '..');
   const config = JSON.parse(fs.readFileSync(path.join(root, 'config.json'), 'utf8'));
   const nowISO = process.env.RUN_DATE || new Date().toISOString();
-  const { events, errors } = await fetchFeeds(config.sources, fetch, nowISO);
-  const out = { generated: nowISO, events, errors };
-  fs.writeFileSync(path.join(root, 'feed-events.json'), JSON.stringify(out, null, 2));
-  console.log(`Wrote feed-events.json — ${events.length} events, ${errors.length} feed errors`);
+  const result = await fetchFeeds(config.sources, fetch, nowISO);
+  const outPath = path.join(root, 'feed-events.json');
+  let existing = null;
+  if (fs.existsSync(outPath)) {
+    try { existing = JSON.parse(fs.readFileSync(outPath, 'utf8')); } catch { /* unreadable -> overwrite */ }
+  }
+  if (shouldKeepExisting(result, existing)) {
+    console.log(`ALL ${result.errors.length} feeds failed — keeping existing feed-events.json`
+      + ` (${existing.events.length} events from ${existing.generated}). Likely a network-restricted environment.`);
+    return;
+  }
+  fs.writeFileSync(outPath, JSON.stringify({ generated: nowISO, ...result }, null, 2));
+  console.log(`Wrote feed-events.json — ${result.events.length} events, ${result.errors.length} feed errors`);
 }
 
 if (require.main === module) {
   main().catch((e) => { console.error(String((e && e.message) || e)); process.exit(1); });
 }
-module.exports = { fetchFeeds, withinHorizon };
+module.exports = { fetchFeeds, withinHorizon, shouldKeepExisting };

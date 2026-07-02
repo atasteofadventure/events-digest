@@ -83,3 +83,15 @@ test('sourceReport falls back to event.source when via is missing', () => {
   const rep = sourceReport([{ source: 'Solo' }], []);
   assert.deepEqual(rep.counts, [{ source: 'Solo', count: 1 }]);
 });
+
+test('sourceReport matches model-invented via slugs to configured names', () => {
+  // The cloud run labels via with its own slugs (e.g. "garysguide-newsletter");
+  // matching must normalize so configured sources are not falsely "empty".
+  const events = [{ via: ['garysguide-newsletter'] }, { via: ['theskint-newsletter'] }];
+  const rep = sourceReport(events, ["Gary's Guide", 'The Skint', 'BRIC']);
+  assert.ok(!rep.empty.includes("Gary's Guide"));
+  assert.ok(!rep.empty.includes('The Skint'));
+  assert.deepEqual(rep.empty, ['BRIC']);
+  // counts display the configured name when matched
+  assert.ok(rep.counts.some(c => c.source === "Gary's Guide"));
+});

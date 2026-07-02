@@ -69,20 +69,36 @@ function mergeFeedEvents(events, feedFile) {
   return [...(events || []), ...feedEvents];
 }
 
+// Normalize a source label for matching: the cloud run labels `via` with its
+// own slugs ("garysguide-newsletter") that must still match the configured
+// name ("Gary's Guide"). Lowercase alphanumeric, common suffixes stripped.
+function sourceKey(s) {
+  return String(s)
+    .replace(/^feed:\s*/, '')
+    .replace(/-(newsletter|email|feed)$/i, '')
+    .toLowerCase().replace(/[^a-z0-9]+/g, '');
+}
+
 // Visibility: which sources actually contributed this run, and which configured
 // sources produced nothing (dead subscription, broken feed, or a quiet week).
 function sourceReport(events, configuredNames) {
-  const tally = new Map();
+  const tally = new Map(); // key -> { source: display label, count }
   for (const e of events || []) {
     const vias = Array.isArray(e.via) && e.via.length ? e.via : [e.source || 'unknown'];
     for (const v of vias) {
-      const name = String(v).replace(/^feed:\s*/, '');
-      tally.set(name, (tally.get(name) || 0) + 1);
+      const key = sourceKey(v);
+      const cur = tally.get(key) || { source: String(v).replace(/^feed:\s*/, ''), count: 0 };
+      cur.count += 1;
+      tally.set(key, cur);
     }
   }
-  const counts = [...tally.entries()].map(([source, count]) => ({ source, count }))
-    .sort((a, b) => b.count - a.count);
-  const empty = (configuredNames || []).filter((n) => !tally.has(n));
+  // Prefer the configured display name where a key matches.
+  for (const n of configuredNames || []) {
+    const hit = tally.get(sourceKey(n));
+    if (hit) hit.source = n;
+  }
+  const counts = [...tally.values()].sort((a, b) => b.count - a.count);
+  const empty = (configuredNames || []).filter((n) => !tally.has(sourceKey(n)));
   return { counts, empty, contributing: counts.length };
 }
 

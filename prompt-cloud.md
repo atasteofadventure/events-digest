@@ -56,7 +56,7 @@ From the emails, extract every individual event into an array and write it to
   "url": "https://absolute-link-to-this-event",
   "category": "one of: tech_ai, music_nightlife, comedy, film_screenings, art_exhibitions, talks_lectures, workshops_classes, tours_experiences, festivals_parties, miscellaneous",
   "source": "organizer/venue name (not the newsletter)",
-  "via": ["newsletter it came from"],
+  "via": ["newsletter it came from — use the EXACT source `name` from config.json when the newsletter is listed there (e.g. \"The Skint\", \"Gary's Guide\"), otherwise the newsletter's plain display name (e.g. \"Museum of the Moving Image\"); do NOT invent slugs like \"garysguide-newsletter\""],
   "why": "one-sentence organizer description (not a personalized pitch)"
 }
 ```
@@ -92,19 +92,17 @@ Rules:
   out. The build buckets by date (anything past next weekend lands in a "Later"
   section) and drops only events whose date has already passed.
 
-## 2.5 Fetch structured feeds (deterministic)
+## 2.5 Structured feeds (pre-fetched — do not fetch here)
 
-Run the feed fetcher — it pulls venue calendars (ICS / JSON-LD / Squarespace
-JSON / structured RSS) listed as `type:"feed"` in config.json and writes
-`feed-events.json`:
+Venue-calendar events (`type:"feed"` in config.json) are fetched by a GitHub
+Action ("Fetch feeds", Thursdays 21:30 UTC) that commits `feed-events.json`
+to the repo BEFORE this run — your clone already contains today's feed data.
 
-```bash
-node bin/fetch-feeds.js
-```
-
-A failing feed never fails the run; failures are recorded in
-`feed-events.json` under `errors`. Do not retry them manually and do NOT
-scrape those websites yourself — just include the errors in your final report.
+You may still run `node bin/fetch-feeds.js`; in this sandbox every outbound
+fetch fails (restricted egress) and the script detects the total failure and
+keeps the committed file untouched. Do NOT try to fetch or scrape the feed
+websites yourself, and do NOT edit `feed-events.json`. If the file's
+`generated` timestamp is more than 2 days old, note that in your report.
 The build merges `feed-events.json` with your extracted `events.json`
 automatically and de-duplicates events that appear in both.
 

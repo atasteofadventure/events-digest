@@ -92,3 +92,14 @@ test('eventbrite-organizer format parses the embedded blob', async () => {
   assert.equal(events[0].name, 'Workshop');
   assert.equal(events[0].price, 'Free');
 });
+
+test('shouldKeepExisting: total fetch failure must not clobber a good feed file', () => {
+  const { shouldKeepExisting } = require('./fetch-feeds');
+  const allFailed = { events: [], errors: [{ source: 'A', error: 'HTTP 403' }, { source: 'B', error: 'HTTP 403' }] };
+  const good = { events: [{ id: 'x' }] };
+  assert.equal(shouldKeepExisting(allFailed, good), true);          // keep CI-committed data
+  assert.equal(shouldKeepExisting(allFailed, { events: [] }), false); // nothing worth keeping
+  assert.equal(shouldKeepExisting(allFailed, null), false);
+  const partial = { events: [{ id: 'y' }], errors: [{ source: 'A', error: 'HTTP 403' }] };
+  assert.equal(shouldKeepExisting(partial, good), false);           // partial success wins
+});

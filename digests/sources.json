@@ -1,133 +1,121 @@
 {
   "counts": [
     {
-      "source": "garysguide-newsletter",
-      "count": 17
+      "source": "NYC Parks",
+      "count": 183
     },
     {
-      "source": "momi-newsletter",
-      "count": 15
+      "source": "Fort Greene Park Conservancy",
+      "count": 51
     },
     {
-      "source": "nyhs-newsletter",
+      "source": "Club Free Time",
+      "count": 45
+    },
+    {
+      "source": "Makeville Studio",
+      "count": 41
+    },
+    {
+      "source": "Green-Wood Cemetery",
+      "count": 30
+    },
+    {
+      "source": "Gowanus Dredgers",
+      "count": 30
+    },
+    {
+      "source": "Museum of the Moving Image",
+      "count": 22
+    },
+    {
+      "source": "Gary's Guide",
+      "count": 22
+    },
+    {
+      "source": "New York Public Library",
+      "count": 19
+    },
+    {
+      "source": "New York Transit Museum",
+      "count": 18
+    },
+    {
+      "source": "NY Historical Society",
+      "count": 16
+    },
+    {
+      "source": "NY Mycological Society",
       "count": 14
     },
     {
-      "source": "pioneer-works-newsletter",
-      "count": 9
+      "source": "Greenlight Bookstore",
+      "count": 11
     },
     {
-      "source": "mcny-newsletter",
-      "count": 9
+      "source": "New York Botanical Garden",
+      "count": 10
     },
     {
-      "source": "nybg-newsletter",
+      "source": "Pioneer Works",
       "count": 8
     },
     {
-      "source": "aiany-newsletter",
+      "source": "AIANY",
+      "count": 7
+    },
+    {
+      "source": "NYC Resistor",
+      "count": 7
+    },
+    {
+      "source": "Governors Island",
       "count": 5
     },
     {
-      "source": "governors-island-newsletter",
-      "count": 4
+      "source": "Brooklyn Museum",
+      "count": 5
     },
     {
-      "source": "nytransit-newsletter",
-      "count": 4
+      "source": "The Skint",
+      "count": 3
     },
     {
-      "source": "nypl-newsletter",
+      "source": "Municipal Art Society",
+      "count": 3
+    },
+    {
+      "source": "Cooper Union",
       "count": 2
     },
     {
-      "source": "cooper-union-newsletter",
+      "source": "Brooklyn Brainery",
       "count": 2
     },
     {
-      "source": "central-park-conservancy-newsletter",
+      "source": "Photoville",
       "count": 2
     },
     {
-      "source": "nyc-parks-newsletter",
-      "count": 2
+      "source": "Museum of the City of New York",
+      "count": 1
     },
     {
-      "source": "ohny-newsletter",
+      "source": "Open House New York",
+      "count": 1
+    },
+    {
+      "source": "Gotham Center",
       "count": 1
     }
   ],
   "empty": [
     "Thought Gallery",
-    "Brooklyn Brainery",
     "Center for Fiction",
-    "The Skint",
     "BRIC",
-    "Gary's Guide",
     "Cerebral Valley",
-    "Fort Greene Park Conservancy",
-    "Green-Wood Cemetery",
-    "Gowanus Dredgers",
-    "NY Mycological Society",
-    "Makeville Studio",
-    "Gotham Center",
-    "Club Free Time",
     "Creative Coding NYC",
-    "NYC Parks",
-    "NYC Resistor",
-    "Rooftop Films",
-    "Greenlight Bookstore",
-    "Photoville"
+    "Rooftop Films"
   ],
-  "contributing": 14,
-  "feedErrors": [
-    {
-      "source": "Fort Greene Park Conservancy",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "Green-Wood Cemetery",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "Gowanus Dredgers",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "NY Mycological Society",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "Makeville Studio",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "Gotham Center",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "Club Free Time",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "Creative Coding NYC",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "NYC Parks",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "NYC Resistor",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "Greenlight Bookstore",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "Photoville",
-      "error": "HTTP 403"
-    }
-  ]
+  "contributing": 27
 }

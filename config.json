@@ -822,8 +822,8 @@
     {
       "type": "feed",
       "name": "NYC Resistor",
-      "format": "rss-title-date",
-      "feed_url": "https://www.nycresistor.com/feed/",
+      "format": "eventbrite-organizer",
+      "feed_url": "https://www.eventbrite.com/o/nyc-resistor-52408308",
       "enabled": true
     },
     {
@@ -832,6 +832,20 @@
       "gmail_query": "from:rooftopfilms.com",
       "enabled": true,
       "note": "arrives at the PLAIN address (member email) — from: query needed, not covered by the alias label"
+    },
+    {
+      "type": "feed",
+      "name": "Greenlight Bookstore",
+      "format": "eventbrite-organizer",
+      "feed_url": "https://www.eventbrite.com/o/greenlight-bookstore-13064382976",
+      "enabled": true
+    },
+    {
+      "type": "feed",
+      "name": "Photoville",
+      "format": "eventbrite-organizer",
+      "feed_url": "https://www.eventbrite.com/o/photoville-47122000073",
+      "enabled": true
     }
   ],
   "categories": {

@@ -27,9 +27,25 @@ event count confirmed). Method meanings:
 | Source | Feed URL | Verified | Date location |
 |---|---|---|---|
 | NYC Parks (citywide — supersedes "NYC Parks Movies") | `https://www.nycgovparks.org/xml/events_300_rss.xml` | 1,565 items | Inspect item structure at implementation; MUST filter (e.g. Brooklyn parks / relevant categories) or it swamps the digest. Covers park fitness, movies, tours citywide. |
-| NYC Resistor | `https://www.nycresistor.com/feed/` | 10 items | event dates in item titles: "Jul 05 2026 : Intro to Soldering Workshop" — parse from title |
+| ~~NYC Resistor~~ | superseded 2026-07-02 | — | switched to the richer `eventbrite-organizer` feed (section 1a) |
 | Secret Science Club | `http://secretscienceclub.blogspot.com/feeds/posts/default?alt=rss` | 25 items | dates in body prose, not structured — routine-LLM extraction tier or rely on The Skint coverage |
 | City Reliquary | `https://www.cityreliquary.org/feed/` | 10 items | mixed blog/event posts; marginal — newsletter fallback also fine |
+
+## 1a. Eventbrite organizer feeds (added 2026-07-02, format `eventbrite-organizer`)
+
+Organizer pages embed a server-rendered `upcomingEvents` JSON blob (undocumented page
+structure — fails loudly via the coverage report if Eventbrite redesigns).
+
+| Source | Organizer URL | Verified |
+|---|---|---|
+| NYC Resistor | `https://www.eventbrite.com/o/nyc-resistor-52408308` | 7 upcoming (replaces its RSS feed) |
+| Greenlight Bookstore | `https://www.eventbrite.com/o/greenlight-bookstore-13064382976` | 11 upcoming, with prices |
+| Photoville | `https://www.eventbrite.com/o/photoville-47122000073` | 2 upcoming (year-round walks, not just the June festival) |
+
+Probed and ruled out (no Eventbrite links on their sites): Turnstile Tours, Craftsman Ave,
+Artshack, Bushwick Jewelry Casting, Secret Science Club, Betaworks, Death of Classical,
+Culinary Historians, City Reliquary, Edible History, Brooklyn Grange, Gowanus Print Lab,
+Genspace, Center for Book Arts, Smack Mellon.
 
 ## 3. Newsletter fallback — no usable feed found (subscribe checklist)
 

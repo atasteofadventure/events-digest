@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week of June 15–28, 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f5f4;
+    color: #1c1917;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+
+  /* Tabs */
+  .tab-nav {
+    display: flex;
+    gap: 24px;
+    border-bottom: 1px solid #e7e5e4;
+    margin-bottom: 28px;
+  }
+
+  .tab {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 8px 0 10px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #78716c;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .tab:hover {
+    color: #44403c;
+  }
+
+  .tab.active {
+    color: #1c1917;
+    border-bottom-color: #1c1917;
+  }
+
+  .tab .count {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #a8a29e;
+    margin-left: 4px;
+  }
+
+  .tab.active .count {
+    color: #78716c;
+  }
+
+  /* Tab panels */
+  .tab-panel {
+    display: none;
+  }
+
+  .tab-panel.active {
+    display: block;
+  }
+
+  /* Category sections */
+  .category-section {
+    margin-top: 28px;
+  }
+
+  .category-section:first-child {
+    margin-top: 0;
+  }
+
+  .category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 4px 0 12px;
+    user-select: none;
+  }
+
+  .category-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #a8a29e;
+  }
+
+  .category-toggle {
+    font-size: 0.7rem;
+    color: #a8a29e;
+    transition: transform 0.2s;
+  }
+
+  .category-section.collapsed .category-toggle {
+    transform: rotate(-90deg);
+  }
+
+  .category-body {
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+
+  .category-section.collapsed .category-body {
+    max-height: 0 !important;
+    overflow: hidden;
+  }
+
+  /* Event cards */
+  .event-card {
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 8px;
+    border-left: 3px solid var(--accent, #a8a29e);
+    padding: 16px 18px;
+    margin-bottom: 12px;
+  }
+
+  .event-header {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+
+  .event-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1c1917;
+    text-decoration: none;
+  }
+
+  .event-name:hover {
+    text-decoration: underline;
+  }
+
+  .price-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  .price-badge.free {
+    background: #ecfdf5;
+    color: #059669;
+  }
+
+  .price-badge.paid {
+    background: #f5f5f4;
+    color: #78716c;
+  }
+
+  .event-meta {
+    font-size: 0.8rem;
+    color: #78716c;
+    margin-bottom: 6px;
+  }
+
+  .event-meta span + span::before {
+    content: "\00b7";
+    margin: 0 6px;
+  }
+
+  .event-why {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #57534e;
+    margin-bottom: 10px;
+  }
+
+  .feedback-row {
+    display: flex;
+    gap: 4px;
+  }
+
+  .feedback-btn {
+    font-family: inherit;
+    font-size: 0.85rem;
+    background: none;
+    border: none;
+    padding: 2px 4px;
+    cursor: pointer;
+    color: #d6d3d1;
+    transition: color 0.15s;
+    line-height: 1;
+  }
+
+  .feedback-btn:hover {
+    color: #78716c;
+  }
+
+  .feedback-btn.selected-positive {
+    color: #059669;
+  }
+
+  .feedback-btn.selected-negative {
+    color: #dc2626;
+  }
+
+  /* Save button */
+  .save-btn {
+    font-family: inherit;
+    font-size: 0.85rem;
+    background: none;
+    border: none;
+    padding: 2px 4px;
+    cursor: pointer;
+    color: #d6d3d1;
+    transition: color 0.15s;
+    line-height: 1;
+    margin-left: auto;
+  }
+
+  .save-btn:hover {
+    color: #f59e0b;
+  }
+
+  .save-btn.saved {
+    color: #f59e0b;
+  }
+
+  /* Day filter pills */
+  .day-filter {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .day-pill {
+    font-family: inherit;
+    font-size: 0.7rem;
+    font-weight: 500;
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 16px;
+    padding: 4px 12px;
+    cursor: pointer;
+    color: #78716c;
+    transition: all 0.15s;
+  }
+
+  .day-pill:hover {
+    border-color: #a8a29e;
+    color: #44403c;
+  }
+
+  .day-pill.active {
+    background: #1c1917;
+    border-color: #1c1917;
+    color: #fff;
+  }
+
+  /* Saved section */
+  .saved-section {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e7e5e4;
+  }
+
+  .saved-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 4px 0 12px;
+    user-select: none;
+  }
+
+  .saved-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #f59e0b;
+  }
+
+  .saved-empty {
+    font-size: 0.8rem;
+    color: #a8a29e;
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  .saved-card {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .saved-card .event-name {
+    font-size: 0.85rem;
+  }
+
+  .saved-card .saved-meta {
+    font-size: 0.75rem;
+    color: #78716c;
+  }
+
+  .saved-card .unsave-btn {
+    font-family: inherit;
+    font-size: 0.7rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #a8a29e;
+    margin-left: auto;
+  }
+
+  .saved-card .unsave-btn:hover {
+    color: #dc2626;
+  }
+
+  /* Discovered Sources */
+  .sources-section {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e7e5e4;
+  }
+
+  .sources-title {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #a8a29e;
+    margin-bottom: 12px;
+  }
+
+  .source-item {
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+  }
+
+  .source-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #1c1917;
+    text-decoration: none;
+  }
+
+  .source-name:hover {
+    text-decoration: underline;
+  }
+
+  .source-desc {
+    font-size: 0.8rem;
+    color: #78716c;
+    margin-top: 2px;
+  }
+
+  /* Collection stats */
+  .stats-bar {
+    font-size: 0.8rem;
+    color: #a8a29e;
+    margin-bottom: 16px;
+  }
+
+  .stats-bar a {
+    color: #3b82f6;
+    text-decoration: none;
+  }
+
+  .stats-bar a:hover {
+    text-decoration: underline;
+  }
+
+  /* Empty state */
+  .empty-state {
+    text-align: center;
+    padding: 48px 20px;
+    color: #a8a29e;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1 id="digest-title"></h1>
+  <div id="collection-stats"></div>
+  <div id="saved-container"></div>
+  <nav class="tab-nav" id="tab-nav"></nav>
+  <div id="day-filter-container"></div>
+  <div id="tab-panels"></div>
+  <div id="sources-container"></div>
+</div>
+
+<script>
+var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta": {"generated": "2026-06-14T20:51:35.954657", "type": "week", "week_start": "2026-06-15", "week_end": "2026-06-28", "title": "Week of June 15–28, 2026", "total_collected": 106}, "thisWeek": [{"id": "evt_8f123d2e", "name": "Refurbish a Classic Game Boy", "date": "2026-06-15", "day": "Monday", "time": "1:00 PM", "venue": "Craftsman Ave", "neighborhood": "Gowanus", "price": "$375-765", "url": "https://fareharbor.com/embeds/book/craftsmanave/items/539341/?full-items=yes&flow=530030", "category": "workshops_classes", "source": "Craftsman Ave", "why": "A four-hour workshop where you refurbish a classic Game Boy, restoring a piece of gaming history. Ages 18+."}, {"id": "evt_5fac57e8", "name": "Monthly Meeting + Paddle at the Boathouse", "date": "2026-06-15", "day": "Monday", "time": "6:30 PM", "venue": "Gowanus Dredgers Boathouse", "neighborhood": "Gowanus", "price": "Free", "url": "https://gowanusdredgers.org/event/monthly-meeting-paddle-at-the-boathouse/", "category": "tours_experiences", "source": "Gowanus Dredgers", "why": "A casual member catch-up and paddle at the boathouse, gathering at 6:30 and aiming to be on-water around 7:15."}, {"id": "evt_107b8132", "name": "Fiction Book Group", "date": "2026-06-15", "day": "Monday", "time": "7:00 PM", "venue": "Greenlight Bookstore", "neighborhood": "Fort Greene", "price": "Free", "url": "https://www.eventbrite.com/e/1988495079311", "category": "talks_lectures", "source": "Greenlight Bookstore", "why": "Greenlight's monthly fiction book group meets to discuss the current selection; open discussion for readers."}, {"id": "evt_6dd33afb", "name": "Phill Branch with Cori Murray", "date": "2026-06-15", "day": "Monday", "time": "7:30 PM", "venue": "Greenlight Bookstore", "neighborhood": "Fort Greene", "price": "Free", "url": "https://www.eventbrite.com/e/1988495487532", "category": "talks_lectures", "source": "Greenlight Bookstore", "why": "Emmy Award-winning director Phill Branch discusses his memoir The Double Dutch Fuss in conversation with Cori Murray."}, {"id": "evt_282dc97d", "name": "Grieving & Weaving", "date": "2026-06-16", "day": "Tuesday", "time": "6:30 PM", "venue": "Green-Wood Cemetery", "neighborhood": "Greenwood", "price": "", "url": "https://www.green-wood.com/event/grieving-weaving-6/", "category": "tours_experiences", "source": "Green-Wood Cemetery", "why": "A knitting and crocheting group that meets in the cemetery, combining creativity with grief-support resources in a communal setting."}, {"id": "evt_df8f864d", "name": "Science + Fiction: Kim Stanley Robinson", "date": "2026-06-16", "day": "Tuesday", "time": "8:00 PM", "venue": "Pioneer Works", "neighborhood": "Red Hook", "price": "$25", "url": "https://pioneerworks.org/programs/science-fiction-kim-stanley-robinson", "category": "talks_lectures", "source": "Pioneer Works", "why": "An evening talk in Pioneer Works' Science + Fiction series with acclaimed science-fiction author Kim Stanley Robinson."}, {"id": "evt_f97dad2d", "name": "Building AI Agents w/ n8n", "date": "2026-06-17", "day": "Wednesday", "time": "6:00 PM", "venue": "BrainStation, 136 Crosby St", "neighborhood": "SoHo", "price": "$55", "url": "https://www.garysguide.com/events/ghm4ngs/Building-AI-Agents-w-n8n", "category": "tech_ai", "source": "Gary's Guide", "why": "A hands-on workshop on building AI agents using the n8n automation platform."}, {"id": "evt_18993ebc", "name": "Music Tech Capital - Where Investors Are Placing Their Bets", "date": "2026-06-17", "day": "Wednesday", "time": "6:00 PM", "venue": "NYC (venue TBA)", "neighborhood": "NYC", "price": "Free", "url": "https://www.garysguide.com/events/03mhkxa/Music-Tech-Capital-Where-Investors-Are-Placing-Their-Bets", "category": "tech_ai", "source": "Gary's Guide", "why": "A panel on where investors are placing bets in music technology, part of NY Music Month."}, {"id": "evt_df4ab455", "name": "A Day in the Life of a Gravedigger", "date": "2026-06-17", "day": "Wednesday", "time": "6:30 PM", "venue": "Green-Wood Cemetery", "neighborhood": "Greenwood", "price": "", "url": "https://www.green-wood.com/event/a-day-in-the-life-of-a-gravedigger-2/", "category": "tours_experiences", "source": "Green-Wood Cemetery", "why": "Staff panelists share perspectives on working in deathcare, discussing responsibilities and career inspirations within the cemetery field."}, {"id": "evt_85ae3b01", "name": "Black Lit Book Group", "date": "2026-06-17", "day": "Wednesday", "time": "7:00 PM", "venue": "Greenlight Bookstore", "neighborhood": "Fort Greene", "price": "Free", "url": "https://www.eventbrite.com/e/1988494748321", "category": "talks_lectures", "source": "Greenlight Bookstore", "why": "A book group focused on Black literature and writers, meeting to discuss the month's title."}, {"id": "evt_d426509e", "name": "Craft & Code", "date": "2026-06-18", "day": "Thursday", "time": "6:00 PM", "venue": "Brooklyn (venue TBA)", "neighborhood": "Brooklyn", "price": "Free", "url": "https://www.garysguide.com/events/0p5rsax/Craft-Code", "category": "tech_ai", "source": "Gary's Guide", "why": "A hands-on coding and making session for developers and creative technologists in Brooklyn."}, {"id": "evt_5f6329ed", "name": "America/Beautiful 250", "date": "2026-06-18", "day": "Thursday", "time": "6:00 PM", "venue": "Green-Wood Cemetery", "neighborhood": "Greenwood", "price": "", "url": "https://www.green-wood.com/event/america-beautiful-250/2026-06-18/1/", "category": "tours_experiences", "source": "Green-Wood Cemetery", "why": "Pianist Min Kwon performs a program exploring American identity and meaning through music, with two evening showings."}, {"id": "evt_76c7d89f", "name": "Teeny Tiny Screen Print Project", "date": "2026-06-18", "day": "Thursday", "time": "6:30 PM", "venue": "Brooklyn Brainery", "neighborhood": "Prospect Heights", "price": "$68", "url": "https://brooklynbrainery.com/courses/teeny-tiny-screen-print-project", "category": "workshops_classes", "source": "Brooklyn Brainery", "why": "Learn to screenprint at home using simplified methods with an embroidery hoop and recycled silk screen to print on your own items."}, {"id": "evt_731883ba", "name": "Terror House (with director Q&A)", "date": "2026-06-18", "day": "Thursday", "time": "9:30 PM", "venue": "Nitehawk Cinema", "neighborhood": "Williamsburg", "price": "$16", "url": "https://nitehawkcinema.com/williamsburg/movies/terror-house/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "A 1998 shot-on-video horror film about students hunted in a house with a dark history, screening with a Q&A with director Mark Polonia."}, {"id": "evt_bb25bc88", "name": "Juneteenth at Green-Wood", "date": "2026-06-19", "day": "Friday", "time": "10:00 AM", "venue": "Green-Wood Cemetery", "neighborhood": "Greenwood", "price": "", "url": "https://www.green-wood.com/event/juneteenth-at-green-wood/", "category": "tours_experiences", "source": "Green-Wood Cemetery", "why": "A celebration featuring paper flag crafts and self-guided cemetery exploration highlighting the gravesites of Black pioneers."}], "thisWeekend": [{"id": "evt_59a9a929", "name": "Make a Custom Chef Knife", "date": "2026-06-20", "day": "Saturday", "time": "9:00 AM", "venue": "Craftsman Ave", "neighborhood": "Gowanus", "price": "$405-825", "url": "https://fareharbor.com/embeds/book/craftsmanave/items/510896/?full-items=yes&flow=530030", "category": "workshops_classes", "source": "Craftsman Ave", "why": "A workshop to forge and finish your own custom chef knife from scratch. Ages 18+."}, {"id": "evt_ef37a532", "name": "Wild Things", "date": "2026-06-20", "day": "Saturday", "time": "11:00 AM", "venue": "Nitehawk Cinema", "neighborhood": "Williamsburg", "price": "$16", "url": "https://nitehawkcinema.com/williamsburg/movies/wild-things/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "A brunch screening of the 1998 erotic thriller, an exercise in class politics with whiplash twists and trashy entertainment."}, {"id": "evt_bcb5c2a7", "name": "Plant ID 101", "date": "2026-06-20", "day": "Saturday", "time": "12:00 PM", "venue": "Brooklyn Botanic Garden", "neighborhood": "Prospect Heights", "price": "", "url": "https://www.bbg.org/classes/plant_id_101", "category": "workshops_classes", "source": "Brooklyn Botanic Garden", "why": "A class teaching how to recognize and name herbaceous plants (Sat, June 20, 12-4pm); preregistration required."}, {"id": "evt_6a4d7843", "name": "A Midsummer Afternoon's Perfumed Walk in the Shakespeare Garden", "date": "2026-06-20", "day": "Saturday", "time": "12:30 PM", "venue": "Brooklyn Botanic Garden", "neighborhood": "Prospect Heights", "price": "", "url": "https://www.bbg.org/classes/midsummer_afternoons_perfumed_walk_in_the_shakespeare_garden", "category": "workshops_classes", "source": "Brooklyn Botanic Garden", "why": "Explore Shakespearean-era plants in the Shakespeare Garden and craft your own nosegay and perfume (Sat, June 20)."}, {"id": "evt_bacaa4f1", "name": "Craft a Side Table (Intro to Woodworking)", "date": "2026-06-20", "day": "Saturday", "time": "1:00 PM", "venue": "Craftsman Ave", "neighborhood": "Gowanus", "price": "$265-565", "url": "https://fareharbor.com/embeds/book/craftsmanave/items/289769/?full-items=yes&flow=530030", "category": "workshops_classes", "source": "Craftsman Ave", "why": "A four-hour introduction to woodworking and furniture making where you craft your own side table. Ages 18+."}, {"id": "evt_0200b70c", "name": "Signal from the Soil: A Day of Mycelium, Sound & Story", "date": "2026-06-20", "day": "Saturday", "time": "1:00 PM", "venue": "Museum of the Moving Image", "neighborhood": "Astoria", "price": "", "url": "https://www.newyorkmyc.org/event/join-nyms-at-momi-sat-6-20-for-signal-from-the-soil-a-day-of-mycelium-sound-story/", "category": "tours_experiences", "source": "NY Mycological Society", "why": "An NYMS afternoon at the Museum of the Moving Image exploring mycelium through cultivation workshops and fungal listening stations."}, {"id": "evt_779a9178", "name": "Brooklyn Navy Yard: Past, Present & Future Walking Tour", "date": "2026-06-20", "day": "Saturday", "time": "2:00 PM", "venue": "Brooklyn Navy Yard", "neighborhood": "Navy Yard", "price": "$25", "url": "https://turnstiletours.com/tour/brooklyn-navy-yard-walking-tour/", "category": "tours_experiences", "source": "Turnstile Tours", "why": "A guided walking tour exploring the past, present and future of the historic Brooklyn Navy Yard waterfront."}, {"id": "evt_fb928c92", "name": "WIP Film Screening: Spoon-Fed by Jaime Sunwoo", "date": "2026-06-20", "day": "Saturday", "time": "5:00 PM", "venue": "NYC Resistor", "neighborhood": "Boerum Hill", "price": "Pay what you wish", "url": "https://www.eventbrite.com/e/wip-film-screening-spoon-fed-by-jaime-sunwoo-tickets-1990923083537", "category": "film_screenings", "source": "NYC Resistor", "why": "A preview screening of a 20-minute sci-fi short with an audience feedback session; proceeds support the film's completion. Doors 5pm, screening 5:30pm."}, {"id": "evt_92d0d356", "name": "Wayne Wonder + Lila Iké", "date": "2026-06-20", "day": "Saturday", "time": "6:00 PM", "venue": "Lena Horne Bandshell", "neighborhood": "Fort Greene", "price": "Free", "url": "https://bricartsmedia.org/event/wayne-wonder-lila-ike-dj-gravy/", "category": "art_exhibitions", "source": "BRIC", "why": "A free reggae-forward BRIC Celebrate Brooklyn! concert at the Lena Horne Bandshell with Wayne Wonder and Lila Iké."}, {"id": "evt_189e056d", "name": "Opening Reception for Ash Fure: ANIMAL [the listening gym]", "date": "2026-06-20", "day": "Saturday", "time": "6:00 PM", "venue": "Pioneer Works", "neighborhood": "Red Hook", "price": "Free", "url": "https://pioneerworks.org/programs/opening-reception-for-ash-fure", "category": "art_exhibitions", "source": "Pioneer Works", "why": "The public opening (6-8pm) for ANIMAL [the listening gym], composer Ash Fure's immersive installation of contact-driven architectural machines that confront listeners with the physical force of sound."}, {"id": "evt_b796b78b", "name": "Post & Rung Stool: Sundays!", "date": "2026-06-21", "day": "Sunday", "time": "10:00 AM", "venue": "Makeville Studio", "neighborhood": "Gowanus", "price": "$575", "url": "https://makeville.com/classes/furniture-making-ii-floating-wall-cabinet-f6442-dwn67", "category": "workshops_classes", "source": "Makeville Studio", "why": "Build a sturdy post-and-rung stool with traditional joinery and four tapered, octagonal legs using machines and hand tools (Sun, 6/21-6/28)."}, {"id": "evt_89747736", "name": "FREE Walk-Up Paddling – 2nd St.", "date": "2026-06-21", "day": "Sunday", "time": "12:00 PM", "venue": "Gowanus Dredgers Boathouse", "neighborhood": "Gowanus", "price": "Free", "url": "https://gowanusdredgers.org/event/free-walk-up-paddling-2nd-st/2026-06-21/", "category": "tours_experiences", "source": "Gowanus Dredgers", "why": "Weekend self-guided canoe paddling on the Gowanus Canal from the 2nd Street boathouse."}], "nextWeek": [{"id": "evt_b7d3a25a", "name": "Roller Coaster Of Climate Tech Investing", "date": "2026-06-22", "day": "Monday", "time": "12:00 PM", "venue": "NYC (venue TBA)", "neighborhood": "NYC", "price": "Free", "url": "https://www.garysguide.com/events/ct4wu93/Roller-Coaster-Of-Climate-Tech-Investing", "category": "tech_ai", "source": "Gary's Guide", "why": "A talk on the ups and downs of investing in climate technology startups."}, {"id": "evt_08b9faf0", "name": "Book Launch: Matthew Wolfe with Keith Gessen", "date": "2026-06-23", "day": "Tuesday", "time": "7:30 PM", "venue": "Greenlight Bookstore", "neighborhood": "Fort Greene", "price": "Free", "url": "https://www.eventbrite.com/e/1988359472708", "category": "talks_lectures", "source": "Greenlight Bookstore", "why": "Matthew Wolfe launches his new book in conversation with writer Keith Gessen."}, {"id": "evt_e0516e5c", "name": "AI Engineers Presents - Founders To Follow", "date": "2026-06-24", "day": "Wednesday", "time": "6:00 PM", "venue": "NYC (venue TBA)", "neighborhood": "NYC", "price": "Free", "url": "https://www.garysguide.com/events/txmhe22/AI-Engineers-Presents-Founders-To-Follow", "category": "tech_ai", "source": "Gary's Guide", "why": "AI Engineers spotlights up-and-coming AI founders worth following, with short talks."}, {"id": "evt_a0fab04c", "name": "Lit Out Loud: Waiting on a Friend by Natalie Adler", "date": "2026-06-24", "day": "Wednesday", "time": "7:00 PM", "venue": "POWERHOUSE Arena", "neighborhood": "DUMBO", "price": "Free", "url": "https://powerhousearena.com/events/lit-out-loud-waiting-for-a-friend-by-natalie-adler-narrated-by-dani-martineck/", "category": "talks_lectures", "source": "POWERHOUSE Arena", "why": "A live literary reading of Natalie Adler's Waiting on a Friend, narrated by Dani Martineck."}, {"id": "evt_7555916f", "name": "Queerly Beloved: Pride Shorts in the Park 2026", "date": "2026-06-24", "day": "Wednesday", "time": "7:00 PM", "venue": "Fort Greene Park — Central Lawn", "neighborhood": "Fort Greene", "price": "Free", "url": "https://rooftopfilms.com/event/queerly-beloved-pride-shorts-in-the-park-2026/", "category": "film_screenings", "source": "Rooftop Films", "why": "A free outdoor Pride-themed short-film program on Fort Greene Park's Central Lawn."}], "nextWeekend": [{"id": "evt_d3ef8741", "name": "Container Gardening", "date": "2026-06-27", "day": "Saturday", "time": "10:00 AM", "venue": "Brooklyn Botanic Garden", "neighborhood": "Prospect Heights", "price": "", "url": "https://www.bbg.org/classes/container_gardening", "category": "workshops_classes", "source": "Brooklyn Botanic Garden", "why": "Explore the art and science of container gardening (Sat, June 27, 10am-1pm); preregistration required."}, {"id": "evt_c7ed6321", "name": "Prospect Park Walking Tour", "date": "2026-06-27", "day": "Saturday", "time": "10:30 AM", "venue": "Prospect Park (Grand Army Plaza)", "neighborhood": "Prospect Heights", "price": "$25", "url": "https://turnstiletours.com/tour/prospect-park-tours/", "category": "tours_experiences", "source": "Prospect Park Conservancy", "why": "A two-hour guided walk exploring Prospect Park's history, architecture and nature."}, {"id": "evt_09938c50", "name": "Urban Beekeeping Basics", "date": "2026-06-27", "day": "Saturday", "time": "10:30 AM", "venue": "Brooklyn Botanic Garden", "neighborhood": "Prospect Heights", "price": "", "url": "https://www.bbg.org/classes/urban_beekeeping_basics", "category": "workshops_classes", "source": "Brooklyn Botanic Garden", "why": "Covers bee biology, hive care and pest management with live bee observation (Sat, June 27, 10:30am-1:30pm)."}, {"id": "evt_1de80a8c", "name": "Built In NYC w/ Vercel", "date": "2026-06-27", "day": "Saturday", "time": "11:00 AM", "venue": "NYC (venue TBA)", "neighborhood": "NYC", "price": "Free", "url": "https://www.garysguide.com/events/p2yoyx8/Built-In-NYC-w-Vercel", "category": "tech_ai", "source": "Gary's Guide", "why": "A builder-focused event hosted with Vercel on shipping modern web and AI apps."}, {"id": "evt_05ebea32", "name": "Special Workshop: Forest Floor First Aid", "date": "2026-06-27", "day": "Saturday", "time": "11:00 AM", "venue": "Van Cortlandt Park East", "neighborhood": "NYC", "price": "", "url": "https://www.newyorkmyc.org/event/special-workshop-forest-floor-first-aid-herbal-safety-skills-for-mushroom-walkers-van-cortlandt-park-east-saturday-june-27th/", "category": "tours_experiences", "source": "NY Mycological Society", "why": "A workshop led by herbalist Journei Bimwala covering herbal safety and first-aid skills for mushroom foragers."}, {"id": "evt_83635202", "name": "Arbrasson Workshop with Daniel Fishkin", "date": "2026-06-27", "day": "Saturday", "time": "1:00 PM", "venue": "Pioneer Works", "neighborhood": "Red Hook", "price": "$25", "url": "https://pioneerworks.org/calendar", "category": "workshops_classes", "source": "Pioneer Works", "why": "A hands-on sound workshop with artist Daniel Fishkin exploring the Arbrasson instrument at Pioneer Works."}, {"id": "evt_9fbd2499", "name": "Movies Under the Stars: Captain America: Brave New World", "date": "2026-06-27", "day": "Saturday", "time": "8:30 PM", "venue": "Lincoln Terrace Park", "neighborhood": "Crown Heights", "price": "Free", "url": "https://www.nycgovparks.org/events/2026/06/27/movies-under-the-stars-captain-america-brave-new-world-2025", "category": "film_screenings", "source": "NYC Parks Movies", "why": "A free outdoor screening of Captain America: Brave New World at Lincoln Terrace Park, beginning at dusk."}, {"id": "evt_5b0e6964", "name": "Brooklyn Navy Yard: Architecture & Infrastructure Tour", "date": "2026-06-28", "day": "Sunday", "time": "11:00 AM", "venue": "Brooklyn Navy Yard", "neighborhood": "Navy Yard", "price": "$25", "url": "https://turnstiletours.com/tour/brooklyn-navy-yard-sustainability-tour/", "category": "tours_experiences", "source": "Turnstile Tours", "why": "A tour focused on the architecture and infrastructure of the Navy Yard, offered the last Sunday of the month."}], "later": [], "discovered_sources": []}/**/;
+
+(function() {
+  'use strict';
+
+  var CATEGORY_ORDER = [
+    'tech_ai',
+    'workshops_classes',
+    'tours_experiences',
+    'film_screenings',
+    'art_exhibitions',
+    'talks_lectures'
+  ];
+
+  var CATEGORY_CONFIG = {
+    tech_ai:           { label: 'Tech & AI',            color: '#3b82f6' },
+    talks_lectures:    { label: 'Talks & Lectures',     color: '#8b5cf6' },
+    workshops_classes:  { label: 'Workshops & Classes',   color: '#f59e0b' },
+    tours_experiences:  { label: 'Tours & Experiences',   color: '#10b981' },
+    film_screenings:    { label: 'Film & Screenings',     color: '#ef4444' },
+    art_exhibitions:    { label: 'Art & Exhibitions',     color: '#ec4899' }
+  };
+
+  var POSITIVE_SIGNALS = ['thumbs_up'];
+
+  var SHORT_DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  var SHORT_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  function formatDate(dateStr) {
+    var parts = dateStr.split('-');
+    var d = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
+    return SHORT_DAYS[d.getDay()] + ', ' + SHORT_MONTHS[d.getMonth()] + ' ' + d.getDate();
+  }
+
+  function groupByCategory(events) {
+    var groups = {};
+    for (var i = 0; i < events.length; i++) {
+      var cat = events[i].category || 'other';
+      if (!groups[cat]) groups[cat] = [];
+      groups[cat].push(events[i]);
+    }
+    return groups;
+  }
+
+  function createEl(tag, className) {
+    var el = document.createElement(tag);
+    if (className) el.className = className;
+    return el;
+  }
+
+  // Destination for an event's title link. Prefer the real event URL; when one
+  // is missing, fall back to a web search for the event so the link still goes
+  // somewhere useful instead of dead-ending on this page.
+  function eventHref(evt) {
+    var u = (evt && evt.url ? String(evt.url) : '').trim();
+    if (/^https?:\/\//i.test(u)) return u;
+    var q = [evt && evt.name, evt && evt.venue, 'NYC'].filter(Boolean).join(' ');
+    return 'https://www.google.com/search?q=' + encodeURIComponent(q);
+  }
+
+  function createTabButton(label, tabKey, count) {
+    var btn = createEl('button', 'tab');
+    btn.setAttribute('data-tab', tabKey);
+    btn.appendChild(document.createTextNode(label + ' '));
+    var countSpan = createEl('span', 'count');
+    countSpan.textContent = String(count);
+    btn.appendChild(countSpan);
+    return btn;
+  }
+
+  function createEventCard(evt) {
+    var card = createEl('div', 'event-card');
+    var catConfig = CATEGORY_CONFIG[evt.category];
+    if (catConfig) {
+      card.style.setProperty('--accent', catConfig.color);
+    }
+
+    // Header: name link + price badge
+    var header = createEl('div', 'event-header');
+
+    var nameLink = createEl('a', 'event-name');
+    nameLink.textContent = evt.name;
+    nameLink.href = eventHref(evt);
+    nameLink.target = '_blank';
+    nameLink.rel = 'noopener noreferrer';
+    header.appendChild(nameLink);
+
+    if (evt.price) {
+      var badge = createEl('span', 'price-badge');
+      var isFree = evt.price.toLowerCase() === 'free';
+      badge.className = 'price-badge ' + (isFree ? 'free' : 'paid');
+      badge.textContent = evt.price;
+      header.appendChild(badge);
+    }
+
+    card.appendChild(header);
+
+    // Meta line
+    var meta = createEl('div', 'event-meta');
+    var metaParts = [];
+    if (evt.date) metaParts.push(formatDate(evt.date));
+    if (evt.time) metaParts.push(evt.time);
+    if (evt.venue) metaParts.push(evt.venue);
+    if (evt.neighborhood) metaParts.push(evt.neighborhood);
+
+    for (var m = 0; m < metaParts.length; m++) {
+      var span = createEl('span');
+      span.textContent = metaParts[m];
+      meta.appendChild(span);
+    }
+    card.appendChild(meta);
+
+    // Why sentence
+    if (evt.why) {
+      var why = createEl('div', 'event-why');
+      why.textContent = evt.why;
+      card.appendChild(why);
+    }
+
+    // Action row: feedback + save
+    var feedbackRow = createEl('div', 'feedback-row');
+    var signals = [
+      { key: 'thumbs_up',   label: '\u25B2' },
+      { key: 'thumbs_down', label: '\u25BC' }
+    ];
+
+    for (var s = 0; s < signals.length; s++) {
+      var btn = createEl('button', 'feedback-btn');
+      btn.textContent = signals[s].label;
+      btn.setAttribute('data-event-id', evt.id);
+      btn.setAttribute('data-signal', signals[s].key);
+      btn.setAttribute('title', signals[s].key === 'thumbs_up' ? 'More like this' : 'Less like this');
+      feedbackRow.appendChild(btn);
+    }
+
+    var saveBtn = createEl('button', 'save-btn');
+    saveBtn.textContent = '\u2606';
+    saveBtn.setAttribute('data-event-id', evt.id);
+    saveBtn.setAttribute('title', 'Save event');
+    if (savedEvents[evt.id]) {
+      saveBtn.classList.add('saved');
+      saveBtn.textContent = '\u2605';
+    }
+    feedbackRow.appendChild(saveBtn);
+
+    card.appendChild(feedbackRow);
+
+    return card;
+  }
+
+  // Saved events state (localStorage only — single-browser, static site)
+  var savedEvents = {};
+  try {
+    var saved = localStorage.getItem('events-digest-saved');
+    if (saved) savedEvents = JSON.parse(saved);
+  } catch(e) {}
+
+  // All events indexed by id for quick lookup
+  var allEventsById = {};
+
+  function persistSaved() {
+    try { localStorage.setItem('events-digest-saved', JSON.stringify(savedEvents)); } catch(e) {}
+  }
+
+  function renderEvents(events, container) {
+    container.textContent = '';
+    if (!events || events.length === 0) {
+      var empty = createEl('div', 'empty-state');
+      empty.textContent = 'No events yet.';
+      container.appendChild(empty);
+      return;
+    }
+
+    var groups = groupByCategory(events);
+
+    for (var c = 0; c < CATEGORY_ORDER.length; c++) {
+      var catKey = CATEGORY_ORDER[c];
+      var catEvents = groups[catKey];
+      if (!catEvents || catEvents.length === 0) continue;
+
+      var config = CATEGORY_CONFIG[catKey];
+
+      var section = createEl('div', 'category-section');
+      var header = createEl('div', 'category-header');
+      var label = createEl('div', 'category-label');
+      label.textContent = (config ? config.label : catKey) + ' (' + catEvents.length + ')';
+      var toggle = createEl('span', 'category-toggle');
+      toggle.textContent = '\u25BC';
+      header.appendChild(label);
+      header.appendChild(toggle);
+      section.appendChild(header);
+
+      var body = createEl('div', 'category-body');
+      for (var e = 0; e < catEvents.length; e++) {
+        body.appendChild(createEventCard(catEvents[e]));
+      }
+      section.appendChild(body);
+
+      header.addEventListener('click', (function(sec) {
+        return function() { sec.classList.toggle('collapsed'); };
+      })(section));
+
+      container.appendChild(section);
+    }
+
+    // Render any categories not in CATEGORY_ORDER
+    var knownKeys = {};
+    for (var k = 0; k < CATEGORY_ORDER.length; k++) knownKeys[CATEGORY_ORDER[k]] = true;
+    for (var otherKey in groups) {
+      if (groups.hasOwnProperty(otherKey) && !knownKeys[otherKey]) {
+        var otherSection = createEl('div', 'category-section');
+        var otherHeader = createEl('div', 'category-header');
+        var otherLabel = createEl('div', 'category-label');
+        otherLabel.textContent = otherKey;
+        otherHeader.appendChild(otherLabel);
+        otherSection.appendChild(otherHeader);
+        var otherBody = createEl('div', 'category-body');
+        for (var oe = 0; oe < groups[otherKey].length; oe++) {
+          otherBody.appendChild(createEventCard(groups[otherKey][oe]));
+        }
+        otherSection.appendChild(otherBody);
+        container.appendChild(otherSection);
+      }
+    }
+  }
+
+  function getUniqueDays(events) {
+    var seen = {};
+    var days = [];
+    for (var i = 0; i < events.length; i++) {
+      var d = events[i].date;
+      if (d && !seen[d]) {
+        seen[d] = true;
+        days.push(d);
+      }
+    }
+    days.sort();
+    return days;
+  }
+
+  function filterByDay(events, dateStr) {
+    if (!dateStr) return events;
+    var result = [];
+    for (var i = 0; i < events.length; i++) {
+      if (events[i].date === dateStr) result.push(events[i]);
+    }
+    return result;
+  }
+
+  function renderSavedSection() {
+    var container = document.getElementById('saved-container');
+    container.textContent = '';
+
+    var ids = Object.keys(savedEvents);
+    if (ids.length === 0) return;
+
+    var section = createEl('div', 'saved-section');
+    var headerEl = createEl('div', 'saved-header');
+    var labelEl = createEl('div', 'saved-label');
+    labelEl.textContent = 'Saved (' + ids.length + ')';
+    headerEl.appendChild(labelEl);
+    section.appendChild(headerEl);
+
+    for (var i = 0; i < ids.length; i++) {
+      var evt = allEventsById[ids[i]] || savedEvents[ids[i]];
+      if (!evt) continue;
+
+      var card = createEl('div', 'saved-card');
+
+      var nameLink = createEl('a', 'event-name');
+      nameLink.textContent = evt.name;
+      nameLink.href = eventHref(evt);
+      nameLink.target = '_blank';
+      nameLink.rel = 'noopener noreferrer';
+      card.appendChild(nameLink);
+
+      var metaSpan = createEl('span', 'saved-meta');
+      var parts = [];
+      if (evt.date) parts.push(formatDate(evt.date));
+      if (evt.time) parts.push(evt.time);
+      if (evt.venue) parts.push(evt.venue);
+      metaSpan.textContent = parts.join(' \u00b7 ');
+      card.appendChild(metaSpan);
+
+      var unsaveBtn = createEl('button', 'unsave-btn');
+      unsaveBtn.textContent = '\u2715';
+      unsaveBtn.setAttribute('data-unsave-id', ids[i]);
+      unsaveBtn.setAttribute('title', 'Remove from saved');
+      card.appendChild(unsaveBtn);
+
+      section.appendChild(card);
+    }
+
+    container.appendChild(section);
+  }
+
+  function renderDiscoveredSources(sources) {
+    var wrapper = document.getElementById('sources-container');
+    if (!sources || sources.length === 0) return;
+
+    var section = createEl('div', 'sources-section');
+
+    var title = createEl('div', 'sources-title');
+    title.textContent = 'Discovered Sources';
+    section.appendChild(title);
+
+    for (var i = 0; i < sources.length; i++) {
+      var src = sources[i];
+      var item = createEl('div', 'source-item');
+
+      var name = createEl('a', 'source-name');
+      name.textContent = src.name;
+      name.href = src.url || '#';
+      name.target = '_blank';
+      name.rel = 'noopener noreferrer';
+      item.appendChild(name);
+
+      if (src.description) {
+        var desc = createEl('div', 'source-desc');
+        desc.textContent = src.description;
+        item.appendChild(desc);
+      }
+
+      section.appendChild(item);
+    }
+
+    wrapper.appendChild(section);
+  }
+
+  function init() {
+    var data = EVENTS_DATA;
+    var BUCKETS = [
+      { key: 'thisWeek', label: 'This Week' },
+      { key: 'thisWeekend', label: 'This Weekend' },
+      { key: 'nextWeek', label: 'Next Week' },
+      { key: 'nextWeekend', label: 'Next Weekend' },
+      { key: 'later', label: 'Later' }
+    ];
+    var bucketEvents = {
+      thisWeek: data.thisWeek || [],
+      thisWeekend: data.thisWeekend || [],
+      nextWeek: data.nextWeek || [],
+      nextWeekend: data.nextWeekend || [],
+      later: data.later || []
+    };
+    // Only buckets with events get a tab — hides empty buckets, including
+    // "This Weekend" on Sunday runs (the build emits it empty).
+    var activeBuckets = BUCKETS.filter(function(b) { return bucketEvents[b.key].length > 0; });
+
+    // Index all events by id
+    var all = [];
+    for (var bk = 0; bk < BUCKETS.length; bk++) all = all.concat(bucketEvents[BUCKETS[bk].key]);
+    for (var ai = 0; ai < all.length; ai++) {
+      allEventsById[all[ai].id] = all[ai];
+    }
+
+    // Title
+    var titleEl = document.getElementById('digest-title');
+    titleEl.textContent = (data.meta && data.meta.title) ? data.meta.title : 'Events Digest';
+
+    // Collection stats
+    var statsContainer = document.getElementById('collection-stats');
+    var shown = all.length;
+    var total = (data.meta && data.meta.total_collected) ? data.meta.total_collected : null;
+    if (total && total > shown) {
+      var statsBar = createEl('div', 'stats-bar');
+      var digestDate = (data.meta && data.meta.week_start) ? data.meta.week_start : '';
+      var allFileUrl = '/digests/' + digestDate + '-all.json';
+      var statsText = document.createTextNode('Showing ' + shown + ' of ' + total + ' events found. ');
+      statsBar.appendChild(statsText);
+      var allLink = createEl('a');
+      allLink.href = allFileUrl;
+      allLink.target = '_blank';
+      allLink.textContent = 'View all ' + total;
+      statsBar.appendChild(allLink);
+      statsContainer.appendChild(statsBar);
+    }
+
+    // Saved section
+    renderSavedSection();
+
+    // Tab nav
+    var tabNav = document.getElementById('tab-nav');
+    var panelsContainer = document.getElementById('tab-panels');
+    var dayFilterContainer = document.getElementById('day-filter-container');
+
+    var panelsByKey = {};
+    for (var bi = 0; bi < activeBuckets.length; bi++) {
+      var bdef = activeBuckets[bi];
+      tabNav.appendChild(createTabButton(bdef.label, bdef.key, bucketEvents[bdef.key].length));
+      var panel = createEl('div', 'tab-panel');
+      panel.setAttribute('data-panel', bdef.key);
+      panelsContainer.appendChild(panel);
+      panelsByKey[bdef.key] = panel;
+    }
+
+    var activeTab = activeBuckets.length ? activeBuckets[0].key : null;
+    var activeDayFilter = null; // null = all days
+    try {
+      var st = localStorage.getItem('events-digest-tab');
+      if (st && bucketEvents[st] && bucketEvents[st].length > 0) activeTab = st;
+    } catch(e) {}
+
+    function renderDayFilter(events) {
+      dayFilterContainer.textContent = '';
+      var days = getUniqueDays(events);
+      if (days.length <= 1) return; // no filter needed for 0-1 days
+
+      var filterRow = createEl('div', 'day-filter');
+
+      var allPill = createEl('button', 'day-pill' + (activeDayFilter === null ? ' active' : ''));
+      allPill.textContent = 'All';
+      allPill.setAttribute('data-day', '');
+      filterRow.appendChild(allPill);
+
+      for (var i = 0; i < days.length; i++) {
+        var pill = createEl('button', 'day-pill' + (activeDayFilter === days[i] ? ' active' : ''));
+        pill.textContent = formatDate(days[i]);
+        pill.setAttribute('data-day', days[i]);
+        filterRow.appendChild(pill);
+      }
+
+      dayFilterContainer.appendChild(filterRow);
+    }
+
+    function renderCurrentView() {
+      if (!activeTab) return;
+      var events = bucketEvents[activeTab] || [];
+      var panel = panelsByKey[activeTab];
+      if (!panel) return;
+
+      renderDayFilter(events);
+
+      var filtered = activeDayFilter ? filterByDay(events, activeDayFilter) : events;
+      renderEvents(filtered, panel);
+    }
+
+    function activateTab(tabName) {
+      activeTab = tabName;
+      activeDayFilter = null; // reset day filter on tab switch
+
+      var tabs = tabNav.querySelectorAll('.tab');
+      for (var t = 0; t < tabs.length; t++) {
+        var isActive = tabs[t].getAttribute('data-tab') === tabName;
+        if (isActive) tabs[t].classList.add('active');
+        else tabs[t].classList.remove('active');
+      }
+
+      var panels = panelsContainer.querySelectorAll('.tab-panel');
+      for (var p = 0; p < panels.length; p++) {
+        var isActivePanel = panels[p].getAttribute('data-panel') === tabName;
+        if (isActivePanel) panels[p].classList.add('active');
+        else panels[p].classList.remove('active');
+      }
+
+      try { localStorage.setItem('events-digest-tab', tabName); } catch(e) {}
+      renderCurrentView();
+    }
+
+    // Tab clicks
+    tabNav.addEventListener('click', function(e) {
+      var target = e.target;
+      while (target && target !== tabNav) {
+        if (target.classList && target.classList.contains('tab')) {
+          var tabName = target.getAttribute('data-tab');
+          if (tabName) activateTab(tabName);
+          return;
+        }
+        target = target.parentElement;
+      }
+    });
+
+    // Day filter clicks
+    dayFilterContainer.addEventListener('click', function(e) {
+      if (!e.target.classList || !e.target.classList.contains('day-pill')) return;
+      var dayVal = e.target.getAttribute('data-day');
+      activeDayFilter = dayVal || null;
+      renderCurrentView();
+    });
+
+    if (activeTab) activateTab(activeTab);
+
+    // Global click delegation for feedback, save, unsave
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+
+      // Feedback buttons
+      if (target.classList && target.classList.contains('feedback-btn')) {
+        var eventId = target.getAttribute('data-event-id');
+        var signal = target.getAttribute('data-signal');
+        var row = target.parentElement;
+        var siblings = row.querySelectorAll('.feedback-btn');
+        for (var i = 0; i < siblings.length; i++) {
+          siblings[i].classList.remove('selected-positive', 'selected-negative');
+        }
+        var isPositive = POSITIVE_SIGNALS.indexOf(signal) !== -1;
+        target.classList.add(isPositive ? 'selected-positive' : 'selected-negative');
+        // Feedback is session-only for now (static site, no backend).
+        return;
+      }
+
+      // Save button
+      if (target.classList && target.classList.contains('save-btn')) {
+        var saveId = target.getAttribute('data-event-id');
+        if (savedEvents[saveId]) {
+          delete savedEvents[saveId];
+          target.classList.remove('saved');
+          target.textContent = '\u2606';
+        } else {
+          savedEvents[saveId] = allEventsById[saveId] || { id: saveId };
+          target.classList.add('saved');
+          target.textContent = '\u2605';
+        }
+        persistSaved();
+        renderSavedSection();
+        return;
+      }
+
+      // Unsave button
+      if (target.classList && target.classList.contains('unsave-btn')) {
+        var unsaveId = target.getAttribute('data-unsave-id');
+        delete savedEvents[unsaveId];
+        persistSaved();
+        renderSavedSection();
+        // Also update the star in the main list if visible
+        var stars = document.querySelectorAll('.save-btn[data-event-id="' + unsaveId + '"]');
+        for (var si = 0; si < stars.length; si++) {
+          stars[si].classList.remove('saved');
+          stars[si].textContent = '\u2606';
+        }
+        return;
+      }
+    });
+
+    // Discovered sources
+    renderDiscoveredSources(data.discovered_sources || []);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+</body>
+</html>

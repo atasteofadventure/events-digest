@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week of June 21 – July 12, 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f5f4;
+    color: #1c1917;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+
+  /* Tabs */
+  .tab-nav {
+    display: flex;
+    gap: 24px;
+    border-bottom: 1px solid #e7e5e4;
+    margin-bottom: 28px;
+  }
+
+  .tab {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 8px 0 10px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #78716c;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .tab:hover {
+    color: #44403c;
+  }
+
+  .tab.active {
+    color: #1c1917;
+    border-bottom-color: #1c1917;
+  }
+
+  .tab .count {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #a8a29e;
+    margin-left: 4px;
+  }
+
+  .tab.active .count {
+    color: #78716c;
+  }
+
+  /* Tab panels */
+  .tab-panel {
+    display: none;
+  }
+
+  .tab-panel.active {
+    display: block;
+  }
+
+  /* Category sections */
+  .category-section {
+    margin-top: 28px;
+  }
+
+  .category-section:first-child {
+    margin-top: 0;
+  }
+
+  .category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 4px 0 12px;
+    user-select: none;
+  }
+
+  .category-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #a8a29e;
+  }
+
+  .category-toggle {
+    font-size: 0.7rem;
+    color: #a8a29e;
+    transition: transform 0.2s;
+  }
+
+  .category-section.collapsed .category-toggle {
+    transform: rotate(-90deg);
+  }
+
+  .category-body {
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+
+  .category-section.collapsed .category-body {
+    max-height: 0 !important;
+    overflow: hidden;
+  }
+
+  /* Event cards */
+  .event-card {
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 8px;
+    border-left: 3px solid var(--accent, #a8a29e);
+    padding: 16px 18px;
+    margin-bottom: 12px;
+  }
+
+  .event-header {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+
+  .event-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1c1917;
+    text-decoration: none;
+  }
+
+  .event-name:hover {
+    text-decoration: underline;
+  }
+
+  .price-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  .price-badge.free {
+    background: #ecfdf5;
+    color: #059669;
+  }
+
+  .price-badge.paid {
+    background: #f5f5f4;
+    color: #78716c;
+  }
+
+  .event-meta {
+    font-size: 0.8rem;
+    color: #78716c;
+    margin-bottom: 6px;
+  }
+
+  .event-meta span + span::before {
+    content: "\00b7";
+    margin: 0 6px;
+  }
+
+  .event-why {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #57534e;
+    margin-bottom: 10px;
+  }
+
+  .feedback-row {
+    display: flex;
+    gap: 4px;
+  }
+
+  .feedback-btn {
+    font-family: inherit;
+    font-size: 0.85rem;
+    background: none;
+    border: none;
+    padding: 2px 4px;
+    cursor: pointer;
+    color: #d6d3d1;
+    transition: color 0.15s;
+    line-height: 1;
+  }
+
+  .feedback-btn:hover {
+    color: #78716c;
+  }
+
+  .feedback-btn.selected-positive {
+    color: #059669;
+  }
+
+  .feedback-btn.selected-negative {
+    color: #dc2626;
+  }
+
+  /* Save button */
+  .save-btn {
+    font-family: inherit;
+    font-size: 0.85rem;
+    background: none;
+    border: none;
+    padding: 2px 4px;
+    cursor: pointer;
+    color: #d6d3d1;
+    transition: color 0.15s;
+    line-height: 1;
+    margin-left: auto;
+  }
+
+  .save-btn:hover {
+    color: #f59e0b;
+  }
+
+  .save-btn.saved {
+    color: #f59e0b;
+  }
+
+  /* Day filter pills */
+  .day-filter {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .day-pill {
+    font-family: inherit;
+    font-size: 0.7rem;
+    font-weight: 500;
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 16px;
+    padding: 4px 12px;
+    cursor: pointer;
+    color: #78716c;
+    transition: all 0.15s;
+  }
+
+  .day-pill:hover {
+    border-color: #a8a29e;
+    color: #44403c;
+  }
+
+  .day-pill.active {
+    background: #1c1917;
+    border-color: #1c1917;
+    color: #fff;
+  }
+
+  /* Saved section */
+  .saved-section {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e7e5e4;
+  }
+
+  .saved-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 4px 0 12px;
+    user-select: none;
+  }
+
+  .saved-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #f59e0b;
+  }
+
+  .saved-empty {
+    font-size: 0.8rem;
+    color: #a8a29e;
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  .saved-card {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .saved-card .event-name {
+    font-size: 0.85rem;
+  }
+
+  .saved-card .saved-meta {
+    font-size: 0.75rem;
+    color: #78716c;
+  }
+
+  .saved-card .unsave-btn {
+    font-family: inherit;
+    font-size: 0.7rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #a8a29e;
+    margin-left: auto;
+  }
+
+  .saved-card .unsave-btn:hover {
+    color: #dc2626;
+  }
+
+  /* Discovered Sources */
+  .sources-section {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e7e5e4;
+  }
+
+  .sources-title {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #a8a29e;
+    margin-bottom: 12px;
+  }
+
+  .source-item {
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+  }
+
+  .source-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #1c1917;
+    text-decoration: none;
+  }
+
+  .source-name:hover {
+    text-decoration: underline;
+  }
+
+  .source-desc {
+    font-size: 0.8rem;
+    color: #78716c;
+    margin-top: 2px;
+  }
+
+  /* Collection stats */
+  .stats-bar {
+    font-size: 0.8rem;
+    color: #a8a29e;
+    margin-bottom: 16px;
+  }
+
+  .stats-bar a {
+    color: #3b82f6;
+    text-decoration: none;
+  }
+
+  .stats-bar a:hover {
+    text-decoration: underline;
+  }
+
+  /* Empty state */
+  .empty-state {
+    text-align: center;
+    padding: 48px 20px;
+    color: #a8a29e;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1 id="digest-title"></h1>
+  <div id="collection-stats"></div>
+  <div id="saved-container"></div>
+  <nav class="tab-nav" id="tab-nav"></nav>
+  <div id="day-filter-container"></div>
+  <div id="tab-panels"></div>
+  <div id="sources-container"></div>
+</div>
+
+<script>
+var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta": {"generated": "2026-06-21T17:19:10-04:00", "type": "week", "week_start": "2026-06-21", "week_end": "2026-07-12", "title": "Week of June 21 – July 12, 2026", "total_collected": 172}, "thisWeek": [{"name": "Cyanotype 2: Working with Digital Negatives", "date": "2026-06-21", "day": "Sunday", "time": "11:00 AM", "venue": "Brooklyn Brainery", "neighborhood": "Prospect Heights", "price": "", "url": "https://brooklynbrainery.com/courses/cyanotype-2-working-with-digital-negatives", "category": "workshops_classes", "source": "Brooklyn Brainery", "why": "Learn to make digital negatives to take your cyanotype printing to the next level.", "id": "evt_35fbb72e"}, {"name": "BE GAY, DO CRIME 3: Wild Things", "date": "2026-06-21", "day": "Sunday", "time": "11:00 AM", "venue": "Nitehawk Cinema Williamsburg", "neighborhood": "Williamsburg", "price": "", "url": "https://nitehawkcinema.com/williamsburg/movies/wild-things/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "A Pride brunch movie screening of the erotic thriller Wild Things as part of the Be Gay, Do Crime series.", "id": "evt_01d461e7"}, {"name": "Folsom Street East Street Festival", "date": "2026-06-21", "day": "Sunday", "time": "11:00 AM", "venue": "27th St between 11th & 12th Aves", "neighborhood": "Chelsea", "price": "$27.93", "url": "https://theskint.com", "category": "miscellaneous", "source": "The Skint", "why": "The 27th annual Folsom Street East outdoor fetish street festival.", "id": "evt_54265b63"}, {"name": "Spoons Toons & Booze Goes On Vacation", "date": "2026-06-21", "day": "Sunday", "time": "11:15 AM", "venue": "Nitehawk Cinema Williamsburg", "neighborhood": "Williamsburg", "price": "", "url": "https://nitehawkcinema.com/williamsburg/special_events/stb-june-2026/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "A Saturday-morning cartoon party featuring vacation- and summer-themed episodes with brunch and cocktails.", "id": "evt_178ffc91"}, {"name": "Egg Rolls, Egg Creams, and Empanadas Festival", "date": "2026-06-21", "day": "Sunday", "time": "12:00 PM", "venue": "Eldridge St between Canal & Division Sts", "neighborhood": "Lower East Side", "price": "Free", "url": "https://theskint.com", "category": "miscellaneous", "source": "The Skint", "why": "The 25th annual cultural street festival celebrating the Lower East Side's Jewish, Chinese, and Puerto Rican communities.", "id": "evt_975340a4"}, {"name": "Seasonal Highlights Tour", "date": "2026-06-21", "day": "Sunday", "time": "1:00 PM", "venue": "Brooklyn Botanic Garden", "neighborhood": "Prospect Heights", "price": "Free", "url": "https://www.bbg.org/visit/event/seasonal_highlights_tour_june_2026", "category": "tours_experiences", "source": "Brooklyn Botanic Garden", "why": "Discover BBG's plants and gardens in peak bloom and other highlights of the season.", "id": "evt_f76f8f3f"}, {"name": "Boomerang Theatre: The Taming of the Shrew in Central Park", "date": "2026-06-21", "day": "Sunday", "time": "2:00 PM", "venue": "Central Park (69th St & Central Park West)", "neighborhood": "Upper West Side", "price": "Free", "url": "https://theskint.com", "category": "miscellaneous", "source": "The Skint", "why": "Boomerang Theatre Company returns to Central Park with a contemporary production of Shakespeare's The Taming of the Shrew (select weekends through 7/19); blankets and lawn chairs welcome.", "id": "evt_a63da44c"}, {"name": "Creationship Sundays - AI For Creative Good", "date": "2026-06-21", "day": "Sunday", "time": "5:00 PM", "venue": "Caravan Of Dreams, 405 E 6th St", "neighborhood": "East Village", "price": "Free", "url": "https://www.garysguide.com/events/qelgrld/Creationship-Sundays-AI-For-Creative-Good", "category": "tech_ai", "source": "Gary's Guide", "why": "A gathering for AI builders, artists, and creatives focused on using AI for creative good.", "id": "evt_d7096f23"}, {"name": "The Builders Table", "date": "2026-06-21", "day": "Sunday", "time": "5:00 PM", "venue": "Pubkey, 85 W Washington Pl", "neighborhood": "West Village", "price": "Free", "url": "https://www.garysguide.com/events/ntvslzi/The-Builders-Table", "category": "tech_ai", "source": "Gary's Guide", "why": "A gathering for builders and founders to connect over a shared table.", "id": "evt_c5d73d4f"}, {"name": "Socrates Annual Summer Solstice Opening Celebration", "date": "2026-06-21", "day": "Sunday", "time": "5:00 PM", "venue": "Socrates Sculpture Park", "neighborhood": "Long Island City", "price": "Free", "url": "https://socratessculpturepark.org/programevent/summer-solstice-opening-celebration-the-socrates-annual-2026-alumni-artist-picnic/", "category": "art_exhibitions", "source": "The Skint", "why": "A free outdoor opening celebration and alumni artist picnic for the Socrates Annual exhibition.", "id": "evt_f4068b2f"}, {"name": "Bend It Like Beckham", "date": "2026-06-21", "day": "Sunday", "time": "7:00 PM", "venue": "Kensington Plaza", "neighborhood": "Kensington", "price": "Free with RSVP", "url": "https://rooftopfilms.com/event/bend-it-like-beckham/", "category": "film_screenings", "source": "Rooftop Films", "why": "A free outdoor screening of the beloved soccer coming-of-age comedy.", "id": "evt_c1737925"}, {"name": "Summer Solstice Celebration", "date": "2026-06-21", "day": "Sunday", "time": "7:30 PM", "venue": "Brooklyn Botanic Garden (Cherry Esplanade)", "neighborhood": "Prospect Heights", "price": "$22", "url": "https://www.bbg.org/visit/event/summer_solstice_celebration", "category": "miscellaneous", "source": "Brooklyn Botanic Garden", "why": "Celebrate the longest day of the year with sunrise and sunset performances by the Metropolis Ensemble.", "id": "evt_6247ee72"}, {"name": "Bendik Giske, Pavel Milyakov, MOTHERBOARD, Relaxer b2b Baby Leo", "date": "2026-06-21", "day": "Sunday", "time": "8:00 PM", "venue": "Pioneer Works", "neighborhood": "Red Hook", "price": "$30+", "url": "https://pioneerworks.org/programs/bendik-giske-pavel-milyakov-motherboard-relaxer-b2b-baby-leo", "category": "miscellaneous", "source": "Pioneer Works", "why": "A music program featuring Bendik Giske, Pavel Milyakov, MOTHERBOARD, and Relaxer b2b Baby Leo.", "id": "evt_b935339c"}, {"name": "Disasterpiece Movie Night: Son of the Mask", "date": "2026-06-21", "day": "Sunday", "time": "8:00 PM", "venue": "Wonderville", "neighborhood": "Bushwick", "price": "Free", "url": "https://www.wonderville.nyc/events/disasterpiece-movie-night-6-21-26", "category": "film_screenings", "source": "The Skint", "why": "A free, irreverent bad-movie night screening Son of the Mask.", "id": "evt_2d168c76"}, {"name": "Iris van Herpen: Sculpting the Senses", "date": "2026-06-21", "day": "Sunday", "time": "", "venue": "Brooklyn Museum", "neighborhood": "Prospect Heights", "price": "", "url": "https://www.brooklynmuseum.org/exhibitions", "category": "art_exhibitions", "source": "Brooklyn Museum", "why": "A major exhibition of the work of Dutch fashion designer Iris van Herpen, on view through the summer.", "id": "evt_8e1e84b6"}, {"name": "Everyday Rebellions: Collection Conversations", "date": "2026-06-21", "day": "Sunday", "time": "", "venue": "Brooklyn Museum", "neighborhood": "Prospect Heights", "price": "", "url": "https://www.brooklynmuseum.org/exhibitions", "category": "art_exhibitions", "source": "Brooklyn Museum", "why": "A collection-based exhibition running through July 5, 2026.", "id": "evt_a447d126"}, {"name": "Pitch Black: Haiti + Congo Revisited", "date": "2026-06-21", "day": "Sunday", "time": "", "venue": "MoCADA Culture Lab II @ L10, 10 Lafayette Avenue", "neighborhood": "Fort Greene", "price": "", "url": "https://mocada.org/", "category": "art_exhibitions", "source": "MoCADA", "why": "An exhibition on futbol and beyond, opened June 12 and on view through the summer.", "id": "evt_2edc905b"}, {"name": "Pratt Institute x The Village West: Windows on 14th Street", "date": "2026-06-21", "day": "Sunday", "time": "", "venue": "Pratt Institute / The Village West, 14th Street", "neighborhood": "Clinton Hill", "price": "", "url": "https://www.pratt.edu/events/", "category": "art_exhibitions", "source": "Pratt Institute", "why": "An ongoing window exhibition on 14th Street running June 2026 through June 2027.", "id": "evt_748ed6bc"}, {"name": "Animal [A Listening Gym]", "date": "2026-06-21", "day": "Sunday", "time": "", "venue": "Pioneer Works", "neighborhood": "Red Hook", "price": "Free", "url": "https://pioneerworks.org/exhibitions/animal-a-listening-gym", "category": "art_exhibitions", "source": "The Skint", "why": "Part sound installation, part gym, part club: Ash Fure and Xavi L. Aguirre's immersive installation invites visitors to press, lean, lift, and listen amid steel structures and spatialized audio (runs through 8/9).", "id": "evt_6514c3a9"}, {"name": "Masquerade", "date": "2026-06-21", "day": "Sunday", "time": "", "venue": "218 W. 57th St.", "neighborhood": "Midtown", "price": "", "url": "https://thoughtgallery.org", "category": "tours_experiences", "source": "Thought Gallery", "why": "New York's multi-floor immersive successor to Sleep No More, set in a Phantom of the Opera otherworld where masked theatregoers move from scenario to scenario. Masks required; formalwear encouraged.", "id": "evt_5b6224c9"}, {"name": "Film Scholar Discusses Sunset Boulevard for Its 75th Birthday", "date": "2026-06-22", "day": "Monday", "time": "12:30 PM", "venue": "New York City", "neighborhood": "NYC", "price": "Free", "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-06-22/event/742765", "category": "talks_lectures", "source": "Club Free Time", "why": "A film scholar discusses the classic film Sunset Boulevard on its 75th anniversary.", "id": "evt_294fe28a"}, {"name": "Sistema Calera: A Late Pleistocene Karst Archive", "date": "2026-06-22", "day": "Monday", "time": "6:00 PM", "venue": "The Explorers Club", "neighborhood": "Upper East Side", "price": "", "url": "https://www.explorers.org/calendar-of-events/sistema-calera-a-late-pleistocene-karst-archive/", "category": "talks_lectures", "source": "Explorers Club", "why": "Michael Girard presents on Sistema Calera, a Late Pleistocene karst archive.", "id": "evt_2e9d30ae"}, {"name": "Quantum Computing In Person Meetup", "date": "2026-06-22", "day": "Monday", "time": "6:00 PM", "venue": "Viam Robotics, 1900 Broadway, 6th Fl", "neighborhood": "NYC", "price": "Free", "url": "https://www.garysguide.com/events/3csq8wz/Quantum-Computing-In-Person-Meetup", "category": "tech_ai", "source": "Gary's Guide", "why": "An in-person meetup for those interested in quantum computing.", "id": "evt_2250ab04"}, {"name": "Nature Writing Book Group", "date": "2026-06-22", "day": "Monday", "time": "6:30 PM", "venue": "Greene Garden", "neighborhood": "Fort Greene", "price": "Free", "url": "https://www.greenlightbookstore.com/event/2026-06-22/nature-writing-book-group", "category": "talks_lectures", "source": "Greenlight Bookstore", "why": "Greenlight's monthly book group focused on nature writing, meeting outdoors at Greene Garden.", "id": "evt_778e7d67"}, {"name": "In-Person ID Meeting", "date": "2026-06-22", "day": "Monday", "time": "6:30 PM", "venue": "New York Mycological Society", "neighborhood": "NYC", "price": "", "url": "https://www.newyorkmyc.org/event/come-join-us-for-an-in-person-id-meeting-this-monday-june-22nd/", "category": "talks_lectures", "source": "NY Mycological Society", "why": "Bring specimens to share and develop mushroom identification skills with fellow members.", "id": "evt_b18c6f3c"}, {"name": "Perspectives On Modern Creativity - The Artist & The Toolmaker", "date": "2026-06-22", "day": "Monday", "time": "7:00 PM", "venue": "Nublu Classic, 62 Loisaida Ave", "neighborhood": "East Village", "price": "Free", "url": "https://www.garysguide.com/events/tifmx12/Perspectives-On-Modern-Creativity-The-Artist-The-Toolmaker", "category": "talks_lectures", "source": "Gary's Guide", "why": "A conversation exploring modern creativity through the lens of the artist and the toolmaker.", "id": "evt_1cd623d2"}, {"name": "Delight As Strategy - How The Best PMs Build Beloved Products", "date": "2026-06-22", "day": "Monday", "time": "7:00 PM", "venue": "BrainStation, 136 Crosby St", "neighborhood": "SoHo", "price": "Free", "url": "https://www.garysguide.com/events/rh5hiz1/Delight-As-Strategy-How-The-Best-PMs-Build-Beloved-Products", "category": "talks_lectures", "source": "Gary's Guide", "why": "A talk on how the best product managers build beloved products by making delight a strategy.", "id": "evt_d451bbd2"}, {"name": "The Cemeteries of New Orleans", "date": "2026-06-22", "day": "Monday", "time": "7:00 PM", "venue": "Brooklyn Brainery", "neighborhood": "Prospect Heights", "price": "Free", "url": "https://brooklynbrainery.com/courses/the-cemeteries-of-new-orleans", "category": "talks_lectures", "source": "Brooklyn Brainery", "why": "Explore the history and culture behind the famous above-ground cemeteries of New Orleans.", "id": "evt_cb6e62aa"}, {"name": "A Minecraft Movie", "date": "2026-06-22", "day": "Monday", "time": "7:00 PM", "venue": "New York Hall of Science", "neighborhood": "Queens", "price": "Free with RSVP", "url": "https://rooftopfilms.com/event/a-minecraft-movie-qdi/", "category": "film_screenings", "source": "Rooftop Films", "why": "A free outdoor family screening of the Minecraft movie.", "id": "evt_f2b585f9"}, {"name": "Anchorman: The Legend of Ron Burgundy (35mm) + Debra McGuire Q&A", "date": "2026-06-22", "day": "Monday", "time": "7:00 PM", "venue": "Roxy Cinema", "neighborhood": "Tribeca", "price": "$19", "url": "https://www.roxycinemanewyork.com/screenings/anchorman-35mm-qa-2/", "category": "film_screenings", "source": "The Skint", "why": "A 35mm screening of Anchorman with a Q&A featuring costume designer Debra McGuire.", "id": "evt_ea9cb6f7"}, {"name": "Econlol: An Economics-Themed Comedy Show", "date": "2026-06-22", "day": "Monday", "time": "7:00 PM", "venue": "Caveat", "neighborhood": "Lower East Side", "price": "$15.67", "url": "https://caveat.nyc/events/econlol-an-economics-themed-comedy-show-6-22-2026", "category": "talks_lectures", "source": "The Skint", "why": "A nerdy comedy show built around economics, with promo code 'skint' for discounted tickets.", "id": "evt_6b038c30"}, {"name": "Franklin Park Reading Series", "date": "2026-06-22", "day": "Monday", "time": "8:00 PM", "venue": "Franklin Park", "neighborhood": "Crown Heights", "price": "Free", "url": "https://www.facebook.com/FranklinParkReadingSeries", "category": "talks_lectures", "source": "The Skint", "why": "The bar and beer garden's summer season kicks off with fiction and poetry readings from Camille Perri, Cat Fitzpatrick, Natalie Adler, M Lin, Chiwan Choi, and Honor Jones.", "id": "evt_7196f895"}, {"name": "The Ripped Bodice Presents: Celebrating Queer Romance Pride Panel + Party", "date": "2026-06-22", "day": "Monday", "time": "8:00 PM", "venue": "Littlefield", "neighborhood": "Gowanus", "price": "$15", "url": "https://theskint.com", "category": "talks_lectures", "source": "The Skint", "why": "A pride panel and party celebrating queer romance, presented by bookstore The Ripped Bodice.", "id": "evt_fd8c703d"}, {"name": "Toddler Takeover at the Green-House", "date": "2026-06-23", "day": "Tuesday", "time": "10:00 AM", "venue": "The Green-House, Green-Wood Cemetery", "neighborhood": "Greenwood", "price": "", "url": "https://www.green-wood.com/calendar/", "category": "miscellaneous", "source": "Green-Wood Cemetery", "why": "Tuesday morning toddler time with open play and sensory exploration.", "id": "evt_097087ef"}, {"name": "Pride Month - Wine, Stories & Community", "date": "2026-06-23", "day": "Tuesday", "time": "5:00 PM", "venue": "First Citizens SVB, 11 W 42nd St, 13th Fl", "neighborhood": "Midtown", "price": "Free", "url": "https://www.garysguide.com/events/z1mv0nn/Pride-Month-Wine-Stories-Community", "category": "tech_ai", "source": "Gary's Guide", "why": "A Pride Month gathering with wine, stories, and community.", "id": "evt_30ae7420"}, {"name": "Meet Jules by Google Labs Workshop", "date": "2026-06-23", "day": "Tuesday", "time": "5:00 PM", "venue": "Cerebral Valley (NYC)", "neighborhood": "Manhattan", "price": "", "url": "https://cerebralvalley.ai/e/meet-jules-june-23", "category": "tech_ai", "source": "Cerebral Valley", "why": "An intimate, hands-on session with Google Labs to explore the new Jules; selected teams work one-on-one with Google Labs engineers on their own production codebases.", "id": "evt_a728956e"}, {"name": "El Museo del Barrio-Featured Artist Discusses Her Craft & Career", "date": "2026-06-23", "day": "Tuesday", "time": "5:30 PM", "venue": "New York City", "neighborhood": "NYC", "price": "Free", "url": "https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-06-23/event/744637", "category": "talks_lectures", "source": "Club Free Time", "why": "An artist featured at El Museo del Barrio discusses her craft and career.", "id": "evt_ec72eea0"}, {"name": "PIT Builders - Pride Tech Night", "date": "2026-06-23", "day": "Tuesday", "time": "6:00 PM", "venue": "Wilka's, 241 Bowery", "neighborhood": "Lower East Side", "price": "$30", "url": "https://www.garysguide.com/events/pqe7kcb/PIT-Builders-Pride-Tech-Night", "category": "tech_ai", "source": "Gary's Guide", "why": "A Pride-themed tech networking night for builders.", "id": "evt_c4f6b2bb"}, {"name": "The Shortlist: June Founder Showcase", "date": "2026-06-23", "day": "Tuesday", "time": "6:00 PM", "venue": "Betaworks, 29 Little W 12th St", "neighborhood": "Meatpacking", "price": "Free", "url": "https://www.betaworks.com/event/the-shortlist-june-founder-showcase", "category": "tech_ai", "source": "Betaworks Studios", "why": "A monthly showcase featuring a shortlist of founders presenting their companies.", "id": "evt_7afa2b3c"}, {"name": "Before New York: Opening Lecture with Dr. Eric W. Sanderson", "date": "2026-06-23", "day": "Tuesday", "time": "6:00 PM", "venue": "Green-Wood Cemetery", "neighborhood": "Greenwood", "price": "", "url": "https://www.green-wood.com/calendar/", "category": "talks_lectures", "source": "Green-Wood Cemetery", "why": "A lecture on Brooklyn's historical ecology and environmental resilience.", "id": "evt_e8554887"}, {"name": "Radical Nonfiction Book Group", "date": "2026-06-23", "day": "Tuesday", "time": "7:00 PM", "venue": "Hollow Nickel", "neighborhood": "Fort Greene", "price": "Free", "url": "https://www.greenlightbookstore.com/event/2026-06-23/radical-nonfiction-book-group", "category": "talks_lectures", "source": "Greenlight Bookstore", "why": "A discussion group reading radical nonfiction, hosted by Greenlight at Hollow Nickel.", "id": "evt_9409f371"}, {"name": "HealthTech & MedTech Mixer", "date": "2026-06-23", "day": "Tuesday", "time": "7:00 PM", "venue": "The Back Room, 102 Norfolk St", "neighborhood": "Lower East Side", "price": "$7", "url": "https://www.garysguide.com/events/xpkn1mp/HealthTech-MedTech-Mixer", "category": "tech_ai", "source": "Gary's Guide", "why": "A networking mixer for professionals in health tech and med tech.", "id": "evt_3a65ce08"}, {"name": "Book Launch: Matthew Wolfe with Keith Gessen", "date": "2026-06-23", "day": "Tuesday", "time": "7:30 PM", "venue": "Greenlight Bookstore", "neighborhood": "Fort Greene", "price": "Free", "url": "https://www.greenlightbookstore.com/event/2026-06-23/book-launch-matthew-wolfe-keith-gessen", "category": "talks_lectures", "source": "Greenlight Bookstore", "why": "Author Matthew Wolfe launches his new book in conversation with Keith Gessen.", "id": "evt_132613d9"}, {"name": "What the Body Carries: A Members Salon", "date": "2026-06-23", "day": "Tuesday", "time": "", "venue": "Pioneer Works", "neighborhood": "Red Hook", "price": "", "url": "https://pioneerworks.org/programs/members-night-with-bases-loaded", "category": "talks_lectures", "source": "Pioneer Works", "why": "A members salon program exploring what the body carries.", "id": "evt_521591ab"}, {"name": "250 Years of the American Dream", "date": "2026-06-23", "day": "Tuesday", "time": "", "venue": "Italian Cultural Institute in New York", "neighborhood": "Upper East Side", "price": "", "url": "https://thoughtgallery.org", "category": "talks_lectures", "source": "Thought Gallery", "why": "Federico Rampini speaks with Times opinion columnist Bret Stephens in a conversation moderated by IIC-NY Director Claudio Pagliara.", "id": "evt_fff643f9"}, {"name": "Permissionless IV", "date": "2026-06-24", "day": "Wednesday", "time": "9:00 AM", "venue": "Industry City, Brooklyn", "neighborhood": "Sunset Park", "price": "", "url": "https://www.garysguide.com/events/o9n9env/Permissionless-IV", "category": "tech_ai", "source": "Gary's Guide", "why": "A major crypto and DeFi conference bringing together builders and investors.", "id": "evt_2cb91b9e"}, {"name": "Brooklyn Navy Yard Farm Tour", "date": "2026-06-24", "day": "Wednesday", "time": "10:00 AM", "venue": "Brooklyn Grange, Brooklyn Navy Yard", "neighborhood": "Navy Yard", "price": "Sliding scale", "url": "https://www.brooklyngrangefarm.com/tickets-and-tours", "category": "tours_experiences", "source": "Brooklyn Grange", "why": "A guided public tour of the rooftop farm at the Brooklyn Navy Yard.", "id": "evt_373de7bd"}, {"name": "Dispatches from the Field: LIVE from Orbit with Jessica Meir", "date": "2026-06-24", "day": "Wednesday", "time": "11:00 AM", "venue": "The Explorers Club", "neighborhood": "Upper East Side", "price": "", "url": "https://www.explorers.org/calendar-of-events/dispatches-from-the-field-jessica-meir-aboard-the-iss/", "category": "talks_lectures", "source": "Explorers Club", "why": "A live dispatch from astronaut Jessica Meir aboard the International Space Station.", "id": "evt_eef45a7b"}, {"name": "Storytime in the Park", "date": "2026-06-24", "day": "Wednesday", "time": "11:00 AM", "venue": "Fort Greene Park", "neighborhood": "Fort Greene", "price": "Free", "url": "https://fortgreenepark.org/calendar/", "category": "miscellaneous", "source": "Fort Greene Park Conservancy", "why": "A weekly children's storytime held in the park.", "id": "evt_1ae0a1cd"}, {"name": "Building Real-Time Agentic AI Applications w/ Redis & Amazon Bedrock", "date": "2026-06-24", "day": "Wednesday", "time": "4:30 PM", "venue": "12 W 39th St", "neighborhood": "Midtown", "price": "Free", "url": "https://www.garysguide.com/events/qtb81ez/Building-Real-Time-Agentic-AI-Applications-w-Redis-Amazon-Bedrock", "category": "tech_ai", "source": "Gary's Guide", "why": "A technical session on building real-time agentic AI applications with Redis and Amazon Bedrock.", "id": "evt_6a7dc9f4"}, {"name": "Meet Jules by Google Labs Workshop", "date": "2026-06-24", "day": "Wednesday", "time": "5:00 PM", "venue": "Cerebral Valley (NYC)", "neighborhood": "Manhattan", "price": "", "url": "https://cerebralvalley.ai/e/meet-jules-june-24", "category": "tech_ai", "source": "Cerebral Valley", "why": "An intimate, hands-on session with Google Labs to explore the new Jules; selected teams work one-on-one with Google Labs engineers on their own production codebases.", "id": "evt_4a59a7a4"}, {"name": "NYC AI Demos", "date": "2026-06-24", "day": "Wednesday", "time": "6:00 PM", "venue": "The Refinery at Domino, 300 Kent Ave, Brooklyn", "neighborhood": "Williamsburg", "price": "Free", "url": "https://www.garysguide.com/events/kiv9hzx/NYC-AI-Demos", "category": "tech_ai", "source": "Gary's Guide", "why": "An evening of live AI product demos from NYC builders.", "id": "evt_7e6361d6"}, {"name": "AI At The Decision Layer - From Pilot To Production", "date": "2026-06-24", "day": "Wednesday", "time": "6:00 PM", "venue": "399 Park Ave, 11th Fl", "neighborhood": "Midtown", "price": "Free", "url": "https://www.garysguide.com/events/wuhxtx0/AI-At-The-Decision-Layer-From-Pilot-To-Production", "category": "tech_ai", "source": "Gary's Guide", "why": "A discussion on moving AI from pilot projects to production at the decision layer.", "id": "evt_c0294478"}, {"name": "LeadDev Meetup", "date": "2026-06-24", "day": "Wednesday", "time": "6:00 PM", "venue": "NY Times Bldg, 620 8th Ave", "neighborhood": "Midtown", "price": "Free", "url": "https://www.garysguide.com/events/ubb6x9p/LeadDev-Meetup", "category": "tech_ai", "source": "Gary's Guide", "why": "A meetup for engineering leaders and managers.", "id": "evt_9c4ba187"}, {"name": "Developers & Brokers After-Hours", "date": "2026-06-24", "day": "Wednesday", "time": "6:30 PM", "venue": "Amelia's, 450 Park Ave S", "neighborhood": "NYC", "price": "$25", "url": "https://www.garysguide.com/events/qyb72e0/Developers-Brokers-After-Hours", "category": "tech_ai", "source": "Gary's Guide", "why": "An after-hours networking event for developers and brokers.", "id": "evt_f6a23f02"}, {"name": "Lit Out Loud: Waiting on a Friend by Natalie Adler, Narrated by Dani Martineck", "date": "2026-06-24", "day": "Wednesday", "time": "7:00 PM", "venue": "POWERHOUSE Arena", "neighborhood": "DUMBO", "price": "", "url": "https://powerhousearena.com/events/lit-out-loud-waiting-for-a-friend-by-natalie-adler-narrated-by-dani-martineck/", "category": "talks_lectures", "source": "POWERHOUSE Arena", "why": "A young woman with the power to see the ghosts of her friends is haunted by the one who refuses to return.", "id": "evt_823bcce1"}, {"name": "Literature in Translation Book Group", "date": "2026-06-24", "day": "Wednesday", "time": "7:00 PM", "venue": "Fritz", "neighborhood": "Fort Greene", "price": "Free", "url": "https://www.greenlightbookstore.com/event/2026-06-24/literature-translation-book-group", "category": "talks_lectures", "source": "Greenlight Bookstore", "why": "Greenlight's book group discussing literature in translation, meeting at Fritz.", "id": "evt_28f5dc19"}, {"name": "Queerly Beloved: Pride Shorts in the Park 2026", "date": "2026-06-24", "day": "Wednesday", "time": "7:00 PM", "venue": "Fort Greene Park - Central Lawn", "neighborhood": "Fort Greene", "price": "Free with RSVP", "url": "https://rooftopfilms.com/event/queerly-beloved-pride-shorts-in-the-park-2026/", "category": "film_screenings", "source": "Rooftop Films", "why": "A free outdoor program of LGBTQ+ short films celebrating Pride.", "id": "evt_fa7857df"}, {"name": "22nd Annual In C", "date": "2026-06-24", "day": "Wednesday", "time": "8:00 PM", "venue": "Le Poisson Rouge", "neighborhood": "Greenwich Village", "price": "$30+", "url": "https://lpr.com/lpr_events/nycinc26/", "category": "miscellaneous", "source": "NYC Noise", "why": "The annual collective performance of Terry Riley's minimalist landmark In C.", "id": "evt_08c24e76"}, {"name": "Hujar:Contact - Curator Discussion", "date": "2026-06-24", "day": "Wednesday", "time": "", "venue": "The Morgan Library & Museum", "neighborhood": "Murray Hill", "price": "", "url": "https://thoughtgallery.org", "category": "art_exhibitions", "source": "Thought Gallery", "why": "Gary Schneider, Vince Aletti, and Fran Lebowitz contextualize photographer Peter Hujar's output in a discussion with the show's curator.", "id": "evt_ad89c06e"}, {"name": "God, Sex, Art, and the Birth of America's Culture Wars", "date": "2026-06-24", "day": "Wednesday", "time": "", "venue": "Books Are Magic", "neighborhood": "Carroll Gardens", "price": "", "url": "https://thoughtgallery.org", "category": "talks_lectures", "source": "Thought Gallery", "why": "Cultural historian Isaac Butler shares his new book revisiting how figures like Jesse Helms battled artists such as Andres Serrano and Robert Mapplethorpe.", "id": "evt_4c816684"}, {"name": "Steamboat Pilot to Literary Legend - Ron Chernow", "date": "2026-06-24", "day": "Wednesday", "time": "", "venue": "Plymouth Church", "neighborhood": "Brooklyn Heights", "price": "", "url": "https://thoughtgallery.org", "category": "talks_lectures", "source": "Thought Gallery", "why": "Biographer Ron Chernow discusses his most recent book, an in-depth look at America's first literary celebrity and his grapples with the legacy of slavery.", "id": "evt_b54d88c4"}, {"name": "Distribution Is Your Moat ft. Tony Haile", "date": "2026-06-25", "day": "Thursday", "time": "9:30 AM", "venue": "Betaworks, 29 Little W 12th St", "neighborhood": "Meatpacking", "price": "Free", "url": "https://www.betaworks.com/event/distribution-is-your-moat-ft-tony-haile", "category": "talks_lectures", "source": "Betaworks Studios", "why": "A talk with Tony Haile on why distribution is your moat.", "id": "evt_28d17cf6"}, {"name": "NYC AI Coworking", "date": "2026-06-25", "day": "Thursday", "time": "10:00 AM", "venue": "Station 3, 26 Broadway, 3rd Fl", "neighborhood": "Financial District", "price": "Free", "url": "https://www.garysguide.com/events/rykqtbk/NYC-AI-Coworking", "category": "tech_ai", "source": "Gary's Guide", "why": "A coworking day for people building in AI.", "id": "evt_bd45cc1d"}, {"name": "LGBTQ+ Innovation Economy Pride Celebration", "date": "2026-06-25", "day": "Thursday", "time": "5:00 PM", "venue": "VERS, 714 9th Ave", "neighborhood": "Hell's Kitchen", "price": "Free", "url": "https://www.garysguide.com/events/1r5rcqn/LGBTQ-Innovation-Economy-Pride-Celebration", "category": "tech_ai", "source": "Gary's Guide", "why": "A Pride celebration for the LGBTQ+ innovation and tech community.", "id": "evt_3fa1a901"}, {"name": "Search, Streams, & System Design Tradeoffs", "date": "2026-06-25", "day": "Thursday", "time": "5:30 PM", "venue": "Elastic NYC office, 1250 Broadway", "neighborhood": "Midtown", "price": "Free", "url": "https://www.garysguide.com/events/6cdbwb3/Search-Streams-System-Design-Tradeoffs", "category": "tech_ai", "source": "Gary's Guide", "why": "A technical meetup on search, streaming, and system design tradeoffs.", "id": "evt_1c93a512"}, {"name": "Book Launch Exploring NYC in the 20s: Hidden Histories of Jazz Age New York", "date": "2026-06-25", "day": "Thursday", "time": "6:00 PM", "venue": "New York City", "neighborhood": "NYC", "price": "Free", "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-06-25/event/742876", "category": "talks_lectures", "source": "Club Free Time", "why": "A book launch exploring hidden histories of Jazz Age New York in the 1920s.", "id": "evt_46f4aef3"}, {"name": "Tortoise, L'Rain", "date": "2026-06-25", "day": "Thursday", "time": "6:00 PM", "venue": "Knockdown Center Ruins", "neighborhood": "Maspeth", "price": "$30+", "url": "https://www.knockdown.center/upcoming/", "category": "miscellaneous", "source": "NYC Noise", "why": "Post-rock legends Tortoise perform with experimental artist L'Rain at the outdoor Ruins.", "id": "evt_3a5057bd"}, {"name": "Literary Scholar Explores Walt Whitman's Sexuality: Was He a Gay Icon?", "date": "2026-06-25", "day": "Thursday", "time": "6:30 PM", "venue": "New York City", "neighborhood": "NYC", "price": "Free", "url": "https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-06-25/event/740434", "category": "talks_lectures", "source": "Club Free Time", "why": "A literary scholar explores Walt Whitman's sexuality and his status as a gay icon.", "id": "evt_200f4846"}, {"name": "Papers We Love", "date": "2026-06-25", "day": "Thursday", "time": "6:30 PM", "venue": "Mindspace, 25 Kent Ave, Ste 401, Brooklyn", "neighborhood": "Williamsburg", "price": "Free", "url": "https://www.garysguide.com/events/5b3lg9d/Papers-We-Love", "category": "tech_ai", "source": "Papers We Love NYC", "why": "A meetup where attendees present and discuss academic computer science papers.", "id": "evt_1313f815"}, {"name": "Tech Gather Meetup", "date": "2026-06-25", "day": "Thursday", "time": "7:00 PM", "venue": "Sugar Mouse, 47 3rd Ave", "neighborhood": "East Village", "price": "Free", "url": "https://www.garysguide.com/events/ksxzqo1/Tech-Gather-Meetup", "category": "tech_ai", "source": "Gary's Guide", "why": "A casual gathering for people in tech to meet and network.", "id": "evt_a755db5a"}, {"name": "Laurel Halo, Ash Fure", "date": "2026-06-25", "day": "Thursday", "time": "8:00 PM", "venue": "Pioneer Works", "neighborhood": "Red Hook", "price": "$30+", "url": "https://pioneerworks.org/programs/laurel-halo", "category": "miscellaneous", "source": "Pioneer Works", "why": "A music program featuring Laurel Halo and Ash Fure.", "id": "evt_3ef2cab2"}, {"name": "The Four Noble Truths", "date": "2026-06-25", "day": "Thursday", "time": "", "venue": "New York Insight Meditation Center", "neighborhood": "Manhattan", "price": "", "url": "https://thoughtgallery.org", "category": "talks_lectures", "source": "Thought Gallery", "why": "Lama Aria Drolma, an ordained Buddhist teacher in the Karma Kagyu tradition, leads a guided session on Buddhism's Four Noble Truths. All levels welcome.", "id": "evt_471388a4"}, {"name": "TGIF! Afterschool Story and Craft Hour", "date": "2026-06-26", "day": "Friday", "time": "3:30 PM", "venue": "The Green-House, Green-Wood Cemetery", "neighborhood": "Greenwood", "price": "", "url": "https://www.green-wood.com/calendar/", "category": "workshops_classes", "source": "Green-Wood Cemetery", "why": "An afterschool story and craft hour in partnership with Brooklyn Public Library.", "id": "evt_4dc7ccc0"}, {"name": "Rust Big Summer Social", "date": "2026-06-26", "day": "Friday", "time": "4:00 PM", "venue": "Globe Bar, 158 E 23rd St", "neighborhood": "Gramercy", "price": "Free", "url": "https://www.garysguide.com/events/u0huvkj/Rust-Big-Summer-Social", "category": "tech_ai", "source": "Gary's Guide", "why": "A summer social for the Rust programming language community.", "id": "evt_6d66567e"}, {"name": "Pulitzer Prize- & Tony Award-Winning Writer Discusses His Broadway Play, Proof", "date": "2026-06-26", "day": "Friday", "time": "5:30 PM", "venue": "New York City", "neighborhood": "NYC", "price": "Free", "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-06-26/event/748003", "category": "talks_lectures", "source": "Club Free Time", "why": "A Pulitzer Prize- and Tony Award-winning writer discusses his Broadway play, Proof.", "id": "evt_be1ecfe6"}, {"name": "Trapped: Mind-Altering Shorts 2026", "date": "2026-06-26", "day": "Friday", "time": "7:00 PM", "venue": "Industry City, Courtyard 5/6", "neighborhood": "Sunset Park", "price": "", "url": "https://rooftopfilms.com/event/trapped-mind-altering-shorts-2026/", "category": "film_screenings", "source": "Rooftop Films", "why": "A curated program of mind-bending short films.", "id": "evt_d16b70c8"}, {"name": "Superman (2025)", "date": "2026-06-26", "day": "Friday", "time": "7:00 PM", "venue": "P.S. 503/506 Playground", "neighborhood": "Sunset Park", "price": "Free with RSVP", "url": "https://rooftopfilms.com/event/superman-2025/", "category": "film_screenings", "source": "Rooftop Films", "why": "A free outdoor screening of the 2025 Superman film.", "id": "evt_3332857b"}, {"name": "Green-Wood After Hours", "date": "2026-06-26", "day": "Friday", "time": "7:30 PM", "venue": "Green-Wood Cemetery", "neighborhood": "Greenwood", "price": "", "url": "https://www.green-wood.com/calendar/", "category": "tours_experiences", "source": "Green-Wood Cemetery", "why": "An evening exploration of the cemetery with access to the Catacombs.", "id": "evt_37b99abf"}, {"name": "Movies Under the Stars: Jurassic Park (1993)", "date": "2026-06-26", "day": "Friday", "time": "9:00 PM", "venue": "NYC Park", "neighborhood": "NYC", "price": "Free", "url": "https://www.nycgovparks.org/events/free_summer_movies", "category": "film_screenings", "source": "NYC Parks Movies", "why": "A free outdoor screening of the dinosaur adventure classic in a NYC park.", "id": "evt_8f928df4"}, {"name": "Movies Under the Stars: Mamma Mia!", "date": "2026-06-26", "day": "Friday", "time": "9:00 PM", "venue": "NYC Park", "neighborhood": "NYC", "price": "Free", "url": "https://www.nycgovparks.org/events/free_summer_movies", "category": "film_screenings", "source": "NYC Parks Movies", "why": "A free outdoor sing-along screening of the ABBA musical.", "id": "evt_4d314fca"}], "thisWeekend": [{"name": "Container Gardening", "date": "2026-06-27", "day": "Saturday", "time": "10:00 AM", "venue": "Brooklyn Botanic Garden", "neighborhood": "Prospect Heights", "price": "Preregistration Required", "url": "https://www.bbg.org/classes/container_gardening", "category": "workshops_classes", "source": "Brooklyn Botanic Garden", "why": "A hands-on class on growing plants in containers.", "id": "evt_da8c77b7"}, {"name": "Bi-Weekly Volunteer Days", "date": "2026-06-27", "day": "Saturday", "time": "10:00 AM", "venue": "Fort Greene Park", "neighborhood": "Fort Greene", "price": "Free", "url": "https://fortgreenepark.org/calendar/", "category": "miscellaneous", "source": "Fort Greene Park Conservancy", "why": "Help maintain and beautify the park alongside other volunteers.", "id": "evt_45787e3e"}, {"name": "Urban Beekeeping Basics", "date": "2026-06-27", "day": "Saturday", "time": "10:30 AM", "venue": "Brooklyn Botanic Garden", "neighborhood": "Prospect Heights", "price": "Preregistration Required", "url": "https://www.bbg.org/classes/urban_beekeeping_basics", "category": "workshops_classes", "source": "Brooklyn Botanic Garden", "why": "Learn bee biology, hive care techniques, and pest management.", "id": "evt_fdf08ee1"}, {"name": "RUBBLE AROUND THE WORLD", "date": "2026-06-27", "day": "Saturday", "time": "11:00 AM", "venue": "Mmuseumm, 4 Cortlandt Alley", "neighborhood": "Tribeca", "price": "", "url": "https://www.mmuseumm.com/", "category": "art_exhibitions", "source": "Mmuseumm", "why": "Mmuseumm's 2026 season exhibition exploring the modern world through vernacular objects; open weekends 11am-6pm.", "id": "evt_f56de508"}, {"name": "Discover Green-Wood Trolley Tour", "date": "2026-06-27", "day": "Saturday", "time": "1:00 PM", "venue": "Green-Wood Cemetery", "neighborhood": "Greenwood", "price": "", "url": "https://www.green-wood.com/calendar/", "category": "tours_experiences", "source": "Green-Wood Cemetery", "why": "An expert-led trolley tour of the historic landscape and its notable residents.", "id": "evt_6a24ef36"}, {"name": "The Taverns of New York: A Cocktail Themed Tour of Colonial Manhattan", "date": "2026-06-27", "day": "Saturday", "time": "2:00 PM", "venue": "Brooklyn Brainery", "neighborhood": "Prospect Heights", "price": "", "url": "https://brooklynbrainery.com/courses/the-taverns-of-new-york-a-cocktail-themed-tour-of-colonial-manhattan", "category": "tours_experiences", "source": "Brooklyn Brainery", "why": "A cocktail-themed walking tour through the taverns of colonial Manhattan.", "id": "evt_8b14451e"}, {"name": "Brooklyn Navy Yard: Past, Present & Future Walking Tour", "date": "2026-06-27", "day": "Saturday", "time": "2:00 PM", "venue": "Building 77, 141 Flushing Ave", "neighborhood": "Brooklyn", "price": "$25", "url": "https://fareharbor.com/embeds/book/turnstiletours/items/calendar/?flow=42946", "category": "tours_experiences", "source": "Turnstile Tours", "why": "A guided walking tour exploring the history, industry, and future of the Brooklyn Navy Yard.", "id": "evt_43fbd6d6"}, {"name": "New York Non-Fiction: A 30-Year Retrospective", "date": "2026-06-27", "day": "Saturday", "time": "7:00 PM", "venue": "New Design High School", "neighborhood": "Lower East Side", "price": "", "url": "https://rooftopfilms.com/event/new-york-non-fiction-a-30-year-retrospective/", "category": "film_screenings", "source": "Rooftop Films", "why": "A retrospective program of New York documentary shorts.", "id": "evt_32dadf34"}, {"name": "Green-Wood After Hours", "date": "2026-06-27", "day": "Saturday", "time": "7:30 PM", "venue": "Green-Wood Cemetery", "neighborhood": "Greenwood", "price": "", "url": "https://www.green-wood.com/calendar/", "category": "tours_experiences", "source": "Green-Wood Cemetery", "why": "An evening exploration of the cemetery with access to the Catacombs.", "id": "evt_09a656e2"}, {"name": "Arbrasson Workshop with Daniel Fishkin", "date": "2026-06-27", "day": "Saturday", "time": "", "venue": "Pioneer Works", "neighborhood": "Red Hook", "price": "", "url": "https://pioneerworks.org/programs", "category": "workshops_classes", "source": "Pioneer Works", "why": "A hands-on workshop with Daniel Fishkin.", "id": "evt_36c93e1a"}, {"name": "Yoga for Hackers", "date": "2026-06-27", "day": "Saturday", "time": "", "venue": "NYC Resistor, 87 3rd Ave, Brooklyn", "neighborhood": "Boerum Hill", "price": "", "url": "https://www.eventbrite.com/e/yoga-for-hackers-tickets-1991795799855", "category": "workshops_classes", "source": "NYC Resistor", "why": "A yoga session geared toward hackers and makers.", "id": "evt_b4d117c1"}, {"name": "Forest Floor First Aid: Herbal Safety Skills for Mushroom Walkers", "date": "2026-06-27", "day": "Saturday", "time": "", "venue": "Van Cortlandt Park East", "neighborhood": "Bronx", "price": "", "url": "https://www.newyorkmyc.org/event/special-workshop-forest-floor-first-aid-herbal-safety-skills-for-mushroom-walkers-van-cortlandt-park-east-saturday-june-27th/", "category": "workshops_classes", "source": "NY Mycological Society", "why": "Herbalist and forager Journei Bimwala leads a workshop on herbal safety for mushroom walkers.", "id": "evt_a200da1f"}, {"name": "Birding in Peace", "date": "2026-06-28", "day": "Sunday", "time": "6:00 AM", "venue": "Green-Wood Cemetery", "neighborhood": "Greenwood", "price": "", "url": "https://www.green-wood.com/calendar/", "category": "tours_experiences", "source": "Green-Wood Cemetery", "why": "An early morning bird-watching tour before the cemetery opens to the public.", "id": "evt_882599b1"}, {"name": "Grave Beginnings: Green-Wood by Trolley", "date": "2026-06-28", "day": "Sunday", "time": "11:00 AM", "venue": "Green-Wood Cemetery", "neighborhood": "Greenwood", "price": "Free", "url": "https://www.green-wood.com/calendar/", "category": "tours_experiences", "source": "Green-Wood Cemetery", "why": "A one-hour introductory trolley tour for first-time visitors.", "id": "evt_fdd555e6"}, {"name": "Art Historian Discusses How Contemporary Artists Impact Understanding of the Past", "date": "2026-06-28", "day": "Sunday", "time": "2:00 PM", "venue": "New York City", "neighborhood": "NYC", "price": "Pay-what-you-wish", "url": "https://www.clubfreetime.com/new-york-city-nyc/free-lecture/2026-06-28/event/748300", "category": "talks_lectures", "source": "Club Free Time", "why": "An art historian discusses how contemporary artists shape our understanding of the past.", "id": "evt_ebc5370c"}, {"name": "Kitten Meet & Greet", "date": "2026-06-28", "day": "Sunday", "time": "2:00 PM", "venue": "Brooklyn Brainery", "neighborhood": "Prospect Heights", "price": "", "url": "https://brooklynbrainery.com/courses/kitten-meet-greet", "category": "miscellaneous", "source": "Brooklyn Brainery", "why": "Spend an afternoon meeting and socializing with adoptable kittens.", "id": "evt_34bc0806"}, {"name": "Basics of Analog Tape Echo and Cassette Loops", "date": "2026-06-28", "day": "Sunday", "time": "", "venue": "NYC Resistor, 87 3rd Ave, Brooklyn", "neighborhood": "Boerum Hill", "price": "", "url": "https://www.eventbrite.com/e/basics-of-analog-tape-echo-and-cassette-loops-tickets-1992213330701", "category": "workshops_classes", "source": "NYC Resistor", "why": "A workshop on the basics of analog tape echo and cassette loops.", "id": "evt_97114102"}, {"name": "Intro to Finger-crochet", "date": "2026-06-28", "day": "Sunday", "time": "", "venue": "NYC Resistor, 87 3rd Ave, Brooklyn", "neighborhood": "Boerum Hill", "price": "", "url": "https://www.eventbrite.com/e/intro-to-finger-crochet-tickets-1992031884992", "category": "workshops_classes", "source": "NYC Resistor", "why": "An introductory workshop on finger-crochet techniques.", "id": "evt_cce0827c"}], "nextWeek": [{"name": "The Book of George", "date": "2026-06-29", "day": "Monday", "time": "6:00 PM", "venue": "The Explorers Club", "neighborhood": "Upper East Side", "price": "", "url": "https://www.explorers.org/calendar-of-events/the-book-of-george/", "category": "talks_lectures", "source": "Explorers Club", "why": "George McKenzie Jr. presents The Book of George at the Explorers Club.", "id": "evt_89fabde6"}, {"name": "Tech Connect - Moving From Digital Banking To Autonomous Finance", "date": "2026-06-29", "day": "Monday", "time": "6:00 PM", "venue": "Sugar Mouse, 47 3rd Ave", "neighborhood": "East Village", "price": "Free", "url": "https://www.garysguide.com/events/hdzxybu/Tech-Connect-Moving-From-Digital-Banking-To-Autonomous-Finance", "category": "tech_ai", "source": "Gary's Guide", "why": "A networking event on the shift from digital banking to autonomous finance.", "id": "evt_f605cd3d"}, {"name": "Backyard Watercolor Exploration (Outdoors)", "date": "2026-06-29", "day": "Monday", "time": "6:00 PM", "venue": "Brooklyn Brainery", "neighborhood": "Prospect Heights", "price": "", "url": "https://brooklynbrainery.com/courses/backyard-watercolor-exploration-outdoors", "category": "workshops_classes", "source": "Brooklyn Brainery", "why": "Paint with watercolors outdoors in the Brainery's backyard.", "id": "evt_291fd59f"}, {"name": "Open Craft Night in the Backyard", "date": "2026-06-29", "day": "Monday", "time": "6:00 PM", "venue": "Brooklyn Brainery", "neighborhood": "Prospect Heights", "price": "Free", "url": "https://brooklynbrainery.com/courses/open-craft-night-in-the-backyard-free", "category": "workshops_classes", "source": "Brooklyn Brainery", "why": "A free, casual craft night in the backyard - bring your own project.", "id": "evt_4bb3f963"}, {"name": "Full Moon Gowanus Voyage", "date": "2026-06-29", "day": "Monday", "time": "8:15 PM", "venue": "Gowanus Dredgers Bunker, 19th St./3rd Ave", "neighborhood": "Gowanus", "price": "", "url": "https://gowanusdredgers.org/", "category": "tours_experiences", "source": "Gowanus Dredgers", "why": "A sunset and full-moon guided paddling adventure on the Gowanus Canal.", "id": "evt_70460d24"}, {"name": "PRODUCE: Volume 1", "date": "2026-06-29", "day": "Monday", "time": "", "venue": "Pioneer Works", "neighborhood": "Red Hook", "price": "", "url": "https://pioneerworks.org/programs/produce-volume-1", "category": "art_exhibitions", "source": "Pioneer Works", "why": "A program presenting PRODUCE: Volume 1.", "id": "evt_651e8040"}, {"name": "The End of the Game", "date": "2026-06-30", "day": "Tuesday", "time": "6:00 PM", "venue": "The Explorers Club", "neighborhood": "Upper East Side", "price": "", "url": "https://www.explorers.org/calendar-of-events/the-end-of-the-game/", "category": "talks_lectures", "source": "Explorers Club", "why": "An Explorers Club evening program titled The End of the Game.", "id": "evt_635ecd0f"}, {"name": "Coding Agents + GTM Lightning Talks", "date": "2026-06-30", "day": "Tuesday", "time": "6:00 PM", "venue": "TBA", "neighborhood": "NYC", "price": "Free", "url": "https://www.garysguide.com/events/t6itkn9/Coding-Agents-GTM-Lightning-Talks", "category": "tech_ai", "source": "Gary's Guide", "why": "Lightning talks on coding agents and go-to-market strategy.", "id": "evt_720bc18e"}, {"name": "Trust The Agent, Verify The Code", "date": "2026-06-30", "day": "Tuesday", "time": "6:00 PM", "venue": "Nomadworks, 240 W 40th St, 2nd Fl", "neighborhood": "Midtown", "price": "Free", "url": "https://www.garysguide.com/events/hrrkbix/Trust-The-Agent-Verify-The-Code", "category": "tech_ai", "source": "Gary's Guide", "why": "A session on working with AI coding agents and verifying their output.", "id": "evt_dbb1a7a5"}, {"name": "Astoria Tech Meetup", "date": "2026-06-30", "day": "Tuesday", "time": "6:30 PM", "venue": "Our House Queens, 23-71 31st St", "neighborhood": "Astoria", "price": "Free", "url": "https://www.garysguide.com/events/imv8pyb/Astoria-Tech-Meetup", "category": "tech_ai", "source": "Gary's Guide", "why": "A tech meetup for the Astoria, Queens community.", "id": "evt_19fde56d"}, {"name": "Charcoal Drawing: Anatomy", "date": "2026-06-30", "day": "Tuesday", "time": "6:30 PM", "venue": "Brooklyn Brainery", "neighborhood": "Prospect Heights", "price": "", "url": "https://brooklynbrainery.com/courses/charcoal-drawing-anatomy", "category": "workshops_classes", "source": "Brooklyn Brainery", "why": "Practice charcoal drawing with a focus on human anatomy.", "id": "evt_6978587f"}, {"name": "Book Launch: Fully Baked by Rosebud Baker in conversation with Roy Wood Jr.", "date": "2026-06-30", "day": "Tuesday", "time": "7:00 PM", "venue": "POWERHOUSE Arena", "neighborhood": "DUMBO", "price": "", "url": "https://powerhousearena.com/events/book-launch-fully-baked-by-rosebud-baker-in-conversation-with-roy-wood-jr/", "category": "talks_lectures", "source": "POWERHOUSE Arena", "why": "An astonishingly candid and funny memoir from comedian Rosebud Baker, in conversation with Roy Wood Jr.", "id": "evt_828d54a7"}, {"name": "Farm-to-Screen Shorts 2026", "date": "2026-06-30", "day": "Tuesday", "time": "7:30 PM", "venue": "Brooklyn Grange Sunset Park", "neighborhood": "Sunset Park", "price": "", "url": "https://rooftopfilms.com/event/farm-to-screen-shorts-2026/", "category": "film_screenings", "source": "Rooftop Films", "why": "A rooftop-farm screening of food- and agriculture-themed short films.", "id": "evt_c916c492"}, {"name": "John Zorn's Simulacrum", "date": "2026-06-30", "day": "Tuesday", "time": "8:00 PM", "venue": "Roulette", "neighborhood": "Downtown Brooklyn", "price": "$30+", "url": "https://roulette.org/event/john-zorns-simulacrum/", "category": "miscellaneous", "source": "NYC Noise", "why": "Composer John Zorn presents his organ-led trio Simulacrum.", "id": "evt_41f2f085"}, {"name": "Movies Under the Stars: Encanto (2021)", "date": "2026-06-30", "day": "Tuesday", "time": "8:30 PM", "venue": "NYC Park", "neighborhood": "NYC", "price": "Free", "url": "https://www.nycgovparks.org/events/free_summer_movies", "category": "film_screenings", "source": "NYC Parks Movies", "why": "A free outdoor family screening of Disney's Encanto.", "id": "evt_872900b0"}, {"name": "Scientific Controversies: Heart, Blood, and Soul", "date": "2026-06-30", "day": "Tuesday", "time": "", "venue": "Pioneer Works", "neighborhood": "Red Hook", "price": "", "url": "https://pioneerworks.org/programs/scientific-controversies-heart-blood-and-soul", "category": "talks_lectures", "source": "Pioneer Works", "why": "A Scientific Controversies discussion on the heart, blood, and soul.", "id": "evt_6cafeb60"}, {"name": "Brooklyn Navy Yard Farm Tour", "date": "2026-07-01", "day": "Wednesday", "time": "10:00 AM", "venue": "Brooklyn Grange, Brooklyn Navy Yard", "neighborhood": "Navy Yard", "price": "Sliding scale", "url": "https://www.brooklyngrangefarm.com/tickets-and-tours", "category": "tours_experiences", "source": "Brooklyn Grange", "why": "A guided public tour of the rooftop farm at the Brooklyn Navy Yard.", "id": "evt_b7bc06bf"}, {"name": "Family Gardening Hours", "date": "2026-07-01", "day": "Wednesday", "time": "10:30 AM", "venue": "Brooklyn Botanic Garden", "neighborhood": "Prospect Heights", "price": "Preregistration Required", "url": "https://www.bbg.org/classes/family_gardening_hours", "category": "workshops_classes", "source": "Brooklyn Botanic Garden", "why": "Activity stations for families with children of all ages.", "id": "evt_b1f55184"}, {"name": "Storytime in the Park", "date": "2026-07-01", "day": "Wednesday", "time": "11:00 AM", "venue": "Fort Greene Park", "neighborhood": "Fort Greene", "price": "Free", "url": "https://fortgreenepark.org/calendar/", "category": "miscellaneous", "source": "Fort Greene Park Conservancy", "why": "A weekly children's storytime held in the park.", "id": "evt_be4bbdd5"}, {"name": "Agents & APIs Developer Meetup", "date": "2026-07-01", "day": "Wednesday", "time": "5:30 PM", "venue": "1400 Broadway", "neighborhood": "Midtown", "price": "Free", "url": "https://www.garysguide.com/events/k896o57/Agents-APIs-Developer-Meetup", "category": "tech_ai", "source": "Gary's Guide", "why": "A developer meetup focused on AI agents and APIs.", "id": "evt_7ca0b0a3"}, {"name": "Rutgers, Delancey, and Revolution: 250 Years of History", "date": "2026-07-01", "day": "Wednesday", "time": "6:00 PM", "venue": "New York City", "neighborhood": "NYC", "price": "Pay-what-you-wish", "url": "https://www.clubfreetime.com/new-york-city-nyc/free-lecture/2026-07-01/event/747424", "category": "talks_lectures", "source": "Club Free Time", "why": "A lecture on 250 years of history connecting Rutgers, Delancey, and the Revolution.", "id": "evt_e67b8116"}, {"name": "Portfolio Project Showcase", "date": "2026-07-01", "day": "Wednesday", "time": "6:00 PM", "venue": "BrainStation, 136 Crosby St, 4th Fl", "neighborhood": "SoHo", "price": "Free", "url": "https://www.garysguide.com/events/td6s6mf/Portfolio-Project-Showcase", "category": "tech_ai", "source": "Gary's Guide", "why": "A showcase of portfolio projects from students and builders.", "id": "evt_40eb1155"}, {"name": "FREE Walk-Up Paddling", "date": "2026-07-01", "day": "Wednesday", "time": "6:00 PM", "venue": "Gowanus Dredgers Boathouse, 165 2nd St.", "neighborhood": "Gowanus", "price": "Free", "url": "https://gowanusdredgers.org/", "category": "tours_experiences", "source": "Gowanus Dredgers", "why": "Stop down and launch a canoe for a self-guided paddle on the Gowanus Canal.", "id": "evt_31729d25"}, {"name": "The Unforgettables Reading/Working Group", "date": "2026-07-01", "day": "Wednesday", "time": "6:30 PM", "venue": "A.I.R. Gallery", "neighborhood": "DUMBO", "price": "", "url": "https://airgallery.org/events-1/unforgettables-2026-3", "category": "talks_lectures", "source": "A.I.R. Gallery", "why": "A reading and working group session at A.I.R. Gallery.", "id": "evt_34d4bd87"}, {"name": "Nocturnal Insect Crawl", "date": "2026-07-01", "day": "Wednesday", "time": "7:30 PM", "venue": "Brooklyn Botanic Garden", "neighborhood": "Prospect Heights", "price": "Preregistration Required", "url": "https://www.bbg.org/classes/nocturnal_insect_crawl", "category": "tours_experiences", "source": "Brooklyn Botanic Garden", "why": "A moonlit walk focusing on nighttime pollinators.", "id": "evt_16702d89"}, {"name": "Movies Under the Stars: Forrest Gump (1994)", "date": "2026-07-01", "day": "Wednesday", "time": "8:30 PM", "venue": "NYC Park", "neighborhood": "NYC", "price": "Free", "url": "https://www.nycgovparks.org/events/free_summer_movies", "category": "film_screenings", "source": "NYC Parks Movies", "why": "A free outdoor screening of the Tom Hanks classic.", "id": "evt_6072998c"}, {"name": "Theremin Master Class with Dorit Chrysler", "date": "2026-07-01", "day": "Wednesday", "time": "", "venue": "Pioneer Works", "neighborhood": "Red Hook", "price": "", "url": "https://pioneerworks.org/programs", "category": "workshops_classes", "source": "Pioneer Works", "why": "A master class on the theremin led by Dorit Chrysler.", "id": "evt_1bdf5076"}, {"name": "Learn to Use a Laser Cutter", "date": "2026-07-01", "day": "Wednesday", "time": "", "venue": "NYC Resistor, 87 3rd Ave, Brooklyn", "neighborhood": "Boerum Hill", "price": "", "url": "https://www.eventbrite.com/e/learn-to-use-a-laser-cutter-to-cut-and-etch-your-own-designs-tickets-1991813583045", "category": "workshops_classes", "source": "NYC Resistor", "why": "A hands-on class to learn cutting and etching your own designs with a laser cutter.", "id": "evt_4da519fc"}, {"name": "Seasonal Highlights Tour", "date": "2026-07-02", "day": "Thursday", "time": "11:00 AM", "venue": "Brooklyn Botanic Garden", "neighborhood": "Prospect Heights", "price": "Free", "url": "https://www.bbg.org/visit/event/seasonal_highlights_tour", "category": "tours_experiences", "source": "Brooklyn Botanic Garden", "why": "A guided tour of the garden's summer plants and seasonal highlights.", "id": "evt_99b86c32"}, {"name": "Historic House & Urban Farm Tour at Wyckoff House Museum", "date": "2026-07-02", "day": "Thursday", "time": "1:00 PM", "venue": "Wyckoff House Museum", "neighborhood": "East Flatbush", "price": "Free", "url": "https://brooklynbrainery.com/courses/historic-house-urban-farm-tour-at-wyckoff-house-museum", "category": "tours_experiences", "source": "Brooklyn Brainery", "why": "Tour the historic Wyckoff House and its urban farm.", "id": "evt_ead269d2"}, {"name": "Introduction to Gouache Painting", "date": "2026-07-02", "day": "Thursday", "time": "6:00 PM", "venue": "Brooklyn Brainery", "neighborhood": "Prospect Heights", "price": "", "url": "https://brooklynbrainery.com/courses/introduction-to-gouache-painting", "category": "workshops_classes", "source": "Brooklyn Brainery", "why": "An introductory class to painting with gouache.", "id": "evt_3a470f95"}, {"name": "Contour Drawing Demo", "date": "2026-07-02", "day": "Thursday", "time": "6:00 PM", "venue": "Brooklyn Botanic Garden", "neighborhood": "Prospect Heights", "price": "", "url": "https://www.bbg.org/visit/event/contour_drawing_demo", "category": "workshops_classes", "source": "Brooklyn Botanic Garden", "why": "A hands-on contour-drawing demonstration in the garden.", "id": "evt_23c132c7"}, {"name": "Movies With A View: Hamilton", "date": "2026-07-02", "day": "Thursday", "time": "6:00 PM", "venue": "Brooklyn Bridge Park, Pier 1 Harbor View Lawn", "neighborhood": "DUMBO", "price": "Free", "url": "https://brooklynbridgepark.org/event-series/movies-with-a-view/", "category": "film_screenings", "source": "Movies With A View", "why": "The season-opening free outdoor screening of Hamilton overlooking the Manhattan skyline. Lawn opens 6pm, film at sunset.", "id": "evt_3dc11a56"}, {"name": "Jazz in July: Fernando Garcia & the Lux Quintet", "date": "2026-07-02", "day": "Thursday", "time": "7:00 PM", "venue": "Brooklyn Botanic Garden", "neighborhood": "Prospect Heights", "price": "", "url": "https://www.bbg.org/visit/event/fernando_garcia_and_the_lux_quintet", "category": "miscellaneous", "source": "Brooklyn Botanic Garden", "why": "A contemporary jazz ensemble performing Afro-Puerto Rican genres.", "id": "evt_558de542"}, {"name": "Movies Under the Stars: Elio", "date": "2026-07-03", "day": "Friday", "time": "8:30 PM", "venue": "NYC Park", "neighborhood": "NYC", "price": "Free", "url": "https://www.nycgovparks.org/events/free_summer_movies", "category": "film_screenings", "source": "NYC Parks Movies", "why": "A free outdoor family screening of Pixar's Elio.", "id": "evt_a92210e0"}], "nextWeekend": [{"name": "FREE Walk-Up Paddling", "date": "2026-07-04", "day": "Saturday", "time": "10:00 AM", "venue": "Gowanus Dredgers Boathouse, 165 2nd St.", "neighborhood": "Gowanus", "price": "Free", "url": "https://gowanusdredgers.org/", "category": "tours_experiences", "source": "Gowanus Dredgers", "why": "Stop down and launch a canoe for a self-guided paddle on the Gowanus Canal.", "id": "evt_cec172e5"}, {"name": "Brooklyn Navy Yard: Past, Present & Future Walking Tour", "date": "2026-07-04", "day": "Saturday", "time": "2:00 PM", "venue": "Building 77, 141 Flushing Ave", "neighborhood": "Brooklyn", "price": "$25", "url": "https://fareharbor.com/embeds/book/turnstiletours/items/calendar/?flow=42946", "category": "tours_experiences", "source": "Turnstile Tours", "why": "A guided walking tour exploring the history, industry, and future of the Brooklyn Navy Yard.", "id": "evt_7d9d746f"}], "later": [{"name": "STEM & Innovation Camp", "date": "2026-07-06", "day": "Monday", "time": "8:30 AM", "venue": "Civic Hall, 124 E 14th St, Bernard Goldstein Center", "neighborhood": "Union Square", "price": "", "url": "https://www.garysguide.com/events/8yfpsox/STEM-Innovation-Camp", "category": "workshops_classes", "source": "Gary's Guide", "why": "A camp focused on STEM and innovation.", "id": "evt_b611ad59"}, {"name": "Fragrance Appreciation for Curious Beginners", "date": "2026-07-06", "day": "Monday", "time": "6:00 PM", "venue": "Brooklyn Brainery", "neighborhood": "Prospect Heights", "price": "", "url": "https://brooklynbrainery.com/courses/fragrance-appreciation-for-curious-beginners", "category": "workshops_classes", "source": "Brooklyn Brainery", "why": "An introduction to appreciating and understanding fragrance for beginners.", "id": "evt_82fb0afc"}, {"name": "Intro to Jewelry Casting", "date": "2026-07-06", "day": "Monday", "time": "", "venue": "Bushwick Jewelry Casting", "neighborhood": "Bushwick", "price": "$375", "url": "https://www.bushwickjewelrycasting.com/book-online", "category": "workshops_classes", "source": "Bushwick Jewelry Casting", "why": "Learn lost wax casting to create custom jewelry. Materials, tools, and studio time are provided.", "id": "evt_fcf37c05"}, {"name": "Watercolor Food Illustration", "date": "2026-07-07", "day": "Tuesday", "time": "5:30 PM", "venue": "Brooklyn Brainery", "neighborhood": "Prospect Heights", "price": "", "url": "https://brooklynbrainery.com/courses/watercolor-food-illustration", "category": "workshops_classes", "source": "Brooklyn Brainery", "why": "Learn to illustrate food using watercolor techniques.", "id": "evt_ab5a51b6"}, {"name": "Book Launch: The Pure and the Impure by Colette, translated by Rachel Careau", "date": "2026-07-07", "day": "Tuesday", "time": "7:00 PM", "venue": "POWERHOUSE Arena", "neighborhood": "DUMBO", "price": "", "url": "https://powerhousearena.com/events/book-launch-the-pure-and-the-impure-by-colette-translated-by-rachel-careau/", "category": "talks_lectures", "source": "POWERHOUSE Arena", "why": "A journey through the sexual underworld of Belle Epoque Paris in a new translation of Colette.", "id": "evt_99e693c9"}, {"name": "DeSciNYC - What Are We Breathing On The NYC Subway?", "date": "2026-07-07", "day": "Tuesday", "time": "7:30 PM", "venue": "TBA", "neighborhood": "NYC", "price": "$15", "url": "https://www.garysguide.com/events/jdk19kn/DeSciNYC-What-Are-We-Breathing-On-The-NYC-Subway", "category": "talks_lectures", "source": "Gary's Guide", "why": "A decentralized science talk exploring air quality on the NYC subway.", "id": "evt_6bc09687"}, {"name": "BUILDING by Colin Quinn and Vincent Piazza", "date": "2026-07-07", "day": "Tuesday", "time": "", "venue": "Pioneer Works", "neighborhood": "Red Hook", "price": "", "url": "https://pioneerworks.org/programs/building", "category": "art_exhibitions", "source": "Pioneer Works", "why": "A program of BUILDING by Colin Quinn and Vincent Piazza, July 7-8.", "id": "evt_6f7236f7"}, {"name": "Brooklyn Navy Yard Farm Tour", "date": "2026-07-08", "day": "Wednesday", "time": "10:00 AM", "venue": "Brooklyn Grange, Brooklyn Navy Yard", "neighborhood": "Navy Yard", "price": "Sliding scale", "url": "https://www.brooklyngrangefarm.com/tickets-and-tours", "category": "tours_experiences", "source": "Brooklyn Grange", "why": "A guided public tour of the rooftop farm at the Brooklyn Navy Yard.", "id": "evt_5e11990f"}, {"name": "Storytime in the Park", "date": "2026-07-08", "day": "Wednesday", "time": "11:00 AM", "venue": "Fort Greene Park", "neighborhood": "Fort Greene", "price": "Free", "url": "https://fortgreenepark.org/calendar/", "category": "miscellaneous", "source": "Fort Greene Park Conservancy", "why": "A weekly children's storytime held in the park.", "id": "evt_d510d35a"}, {"name": "NYT & National Geographic-Featured Photographer Shares Her Artistic Career", "date": "2026-07-08", "day": "Wednesday", "time": "4:30 PM", "venue": "New York City", "neighborhood": "NYC", "price": "Free", "url": "https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-07-08/event/746374", "category": "talks_lectures", "source": "Club Free Time", "why": "A NYT- and National Geographic-featured photographer shares experiences from her artistic career.", "id": "evt_6a13481a"}, {"name": "Female Founders & Funders", "date": "2026-07-08", "day": "Wednesday", "time": "5:00 PM", "venue": "Luminary, 1204 Broadway, 4th Fl", "neighborhood": "NoMad", "price": "$20", "url": "https://www.garysguide.com/events/wakokzt/Female-Founders-Funders", "category": "tech_ai", "source": "Gary's Guide", "why": "A networking event connecting female founders with funders.", "id": "evt_faa6c399"}, {"name": "AI Builders Night", "date": "2026-07-08", "day": "Wednesday", "time": "5:30 PM", "venue": "LOFT39, 38 W 39th St", "neighborhood": "Midtown", "price": "Free", "url": "https://www.garysguide.com/events/omh02e1/AI-Builders-Night", "category": "tech_ai", "source": "Gary's Guide", "why": "An evening gathering for people building AI products.", "id": "evt_d4c4f927"}, {"name": "Migrating At Scale - A Firestore To Postgres Story", "date": "2026-07-08", "day": "Wednesday", "time": "6:00 PM", "venue": "12 W 39th St", "neighborhood": "Midtown", "price": "Free", "url": "https://www.garysguide.com/events/ol98l44/Migrating-At-Scale-A-Firestore-To-Postgres-Story", "category": "tech_ai", "source": "Gary's Guide", "why": "A technical talk on migrating from Firestore to Postgres at scale.", "id": "evt_0fa973a7"}, {"name": "Dark Toons 2026", "date": "2026-07-08", "day": "Wednesday", "time": "8:00 PM", "venue": "The Old American Can Factory", "neighborhood": "Gowanus", "price": "", "url": "https://rooftopfilms.com/event/dark-toons-2026/", "category": "film_screenings", "source": "Rooftop Films", "why": "A program of edgy, adult animated short films.", "id": "evt_48d31d8a"}, {"name": "Smashing Walled Gardens: Jailbreaking Old iOS Devices", "date": "2026-07-08", "day": "Wednesday", "time": "", "venue": "NYC Resistor, 87 3rd Ave, Brooklyn", "neighborhood": "Boerum Hill", "price": "Pay-what-you-wish", "url": "https://www.eventbrite.com/e/smashing-walled-gardens-jailbreaking-old-ios-devices-tickets-1992293298888", "category": "workshops_classes", "source": "NYC Resistor", "why": "A workshop on jailbreaking old iOS devices and breaking out of walled gardens.", "id": "evt_993017e8"}, {"name": "8 Week Ceramic Session", "date": "2026-07-08", "day": "Wednesday", "time": "", "venue": "Choplet", "neighborhood": "Williamsburg", "price": "$573", "url": "https://choplet.com/ceramic-classes/classes-at-choplet-williamsburg/", "category": "workshops_classes", "source": "Choplet", "why": "An 8-week ceramic session covering wheel throwing, hand building, decorating, sculpture, and glazing.", "id": "evt_12220ed0"}, {"name": "Building Web-Powered AI Apps w/o Code", "date": "2026-07-09", "day": "Thursday", "time": "5:30 PM", "venue": "Tavily HQ, 1350 Broadway", "neighborhood": "Midtown", "price": "Free", "url": "https://www.garysguide.com/events/illfhzu/Building-Web-Powered-AI-Apps-w-o-Code", "category": "tech_ai", "source": "Gary's Guide", "why": "A workshop on building web-powered AI applications without code.", "id": "evt_3f5ff253"}, {"name": "AI Meetup - GenAI, LLMs & Agents", "date": "2026-07-09", "day": "Thursday", "time": "5:30 PM", "venue": "Manhattan West, 5 Manhattan West", "neighborhood": "Hudson Yards", "price": "Free", "url": "https://www.garysguide.com/events/uloyr0r/AI-Meetup-GenAI-LLMs-Agents", "category": "tech_ai", "source": "Gary's Guide", "why": "A meetup covering generative AI, LLMs, and agents.", "id": "evt_e352c522"}, {"name": "Demo - Build Your Own System", "date": "2026-07-09", "day": "Thursday", "time": "6:00 PM", "venue": "BrainStation, 136 Crosby St, 4th Fl", "neighborhood": "SoHo", "price": "$55", "url": "https://www.garysguide.com/events/pkeasrj/Demo-Build-Your-Own-System", "category": "workshops_classes", "source": "Gary's Guide", "why": "A hands-on demo session on building your own system.", "id": "evt_f86079d6"}, {"name": "Gouache Florals", "date": "2026-07-09", "day": "Thursday", "time": "6:00 PM", "venue": "Brooklyn Brainery", "neighborhood": "Prospect Heights", "price": "", "url": "https://brooklynbrainery.com/courses/gouache-florals", "category": "workshops_classes", "source": "Brooklyn Brainery", "why": "Paint florals using gouache paint.", "id": "evt_6bfeb562"}, {"name": "Movies With A View: When Harry Met Sally", "date": "2026-07-09", "day": "Thursday", "time": "6:00 PM", "venue": "Brooklyn Bridge Park, Pier 1 Harbor View Lawn", "neighborhood": "DUMBO", "price": "Free", "url": "https://brooklynbridgepark.org/event-series/movies-with-a-view/", "category": "film_screenings", "source": "Movies With A View", "why": "A free outdoor screening of the classic romantic comedy with the Manhattan skyline as backdrop. Lawn opens 6pm, film at sunset.", "id": "evt_da4acdcb"}, {"name": "Beethoven: String Quartet Op. 135 & Jeff Scott NYC Premiere (Poesis Quartet)", "date": "2026-07-09", "day": "Thursday", "time": "7:00 PM", "venue": "The Green-Wood Cemetery Catacombs", "neighborhood": "Greenwood", "price": "", "url": "https://www.deathofclassical.com/concerts/beethoven-scott", "category": "miscellaneous", "source": "Death of Classical", "why": "The Poesis Quartet performs Beethoven's String Quartet Op. 135 and the NYC premiere of a Jeff Scott work in the Green-Wood Cemetery Catacombs (runs July 9-11).", "id": "evt_9e8dab21"}, {"name": "Watercolor Fundamentals: The Very Basics", "date": "2026-07-10", "day": "Friday", "time": "6:00 PM", "venue": "Brooklyn Brainery", "neighborhood": "Prospect Heights", "price": "", "url": "https://brooklynbrainery.com/courses/watercolor-fundamentals-the-very-basics", "category": "workshops_classes", "source": "Brooklyn Brainery", "why": "A beginner class covering the very basics of watercolor painting.", "id": "evt_b90a4db0"}, {"name": "Bi-Weekly Volunteer Days", "date": "2026-07-11", "day": "Saturday", "time": "10:00 AM", "venue": "Fort Greene Park", "neighborhood": "Fort Greene", "price": "Free", "url": "https://fortgreenepark.org/calendar/", "category": "miscellaneous", "source": "Fort Greene Park Conservancy", "why": "Help maintain and beautify the park alongside other volunteers.", "id": "evt_2f99d7c6"}, {"name": "Experience Cyanotype on Recycled Materials", "date": "2026-07-11", "day": "Saturday", "time": "10:30 AM", "venue": "Fort Greene Park", "neighborhood": "Fort Greene", "price": "", "url": "https://fortgreenepark.org/calendar/", "category": "workshops_classes", "source": "Fort Greene Park Conservancy", "why": "A hands-on workshop exploring cyanotype printing on recycled materials.", "id": "evt_79c7ef87"}, {"name": "Behavioral Neuroscientist & DJ Discuss What Music Taste Says about You", "date": "2026-07-11", "day": "Saturday", "time": "11:00 AM", "venue": "New York City", "neighborhood": "NYC", "price": "Free", "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-07-11/event/746680", "category": "talks_lectures", "source": "Club Free Time", "why": "A behavioral neuroscientist and a DJ discuss what your music taste reveals about you.", "id": "evt_0cfe552e"}, {"name": "Founder-Led Growth - The Content System That Brings Customers", "date": "2026-07-11", "day": "Saturday", "time": "1:30 PM", "venue": "TBA", "neighborhood": "NYC", "price": "Free", "url": "https://www.garysguide.com/events/c6d0kop/Founder-Led-Growth-The-Content-System-That-Brings-Customers", "category": "tech_ai", "source": "Gary's Guide", "why": "A session on founder-led growth and building a content system that brings customers.", "id": "evt_a1e0564b"}, {"name": "Improv for Communication Skills", "date": "2026-07-11", "day": "Saturday", "time": "2:00 PM", "venue": "Brooklyn Brainery", "neighborhood": "Prospect Heights", "price": "", "url": "https://brooklynbrainery.com/courses/improv-for-communication-skills", "category": "workshops_classes", "source": "Brooklyn Brainery", "why": "Use improv exercises to strengthen your communication skills.", "id": "evt_d69879ef"}, {"name": "Brooklyn Navy Yard: Past, Present & Future Walking Tour", "date": "2026-07-11", "day": "Saturday", "time": "2:00 PM", "venue": "Building 77, 141 Flushing Ave", "neighborhood": "Brooklyn", "price": "$25", "url": "https://fareharbor.com/embeds/book/turnstiletours/items/calendar/?flow=42946", "category": "tours_experiences", "source": "Turnstile Tours", "why": "A guided walking tour exploring the history, industry, and future of the Brooklyn Navy Yard.", "id": "evt_d34dd6bf"}, {"name": "The New Yorker Comic Artist Shares His New Book, Declaration/Emancipation Illustrated", "date": "2026-07-11", "day": "Saturday", "time": "4:00 PM", "venue": "New York City", "neighborhood": "NYC", "price": "Free", "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-07-11/event/747925", "category": "talks_lectures", "source": "Club Free Time", "why": "A New Yorker comic artist shares his new illustrated book, Declaration/Emancipation Illustrated.", "id": "evt_7402a943"}, {"name": "Tasha (Record Release), Babas", "date": "2026-07-11", "day": "Saturday", "time": "7:00 PM", "venue": "Union Pool", "neighborhood": "Williamsburg", "price": "", "url": "https://dice.fm/event/l8d7ap-tasha-record-release-11th-jul-union-pool-new-york-tickets", "category": "miscellaneous", "source": "NYC Noise", "why": "Singer-songwriter Tasha celebrates a record release with Babas (21+).", "id": "evt_b3113305"}, {"name": "Stone Setting 2-Day Workshop", "date": "2026-07-11", "day": "Saturday", "time": "", "venue": "Bushwick Jewelry Casting", "neighborhood": "Bushwick", "price": "$375", "url": "https://www.bushwickjewelrycasting.com/book-online", "category": "workshops_classes", "source": "Bushwick Jewelry Casting", "why": "Learn bezel, tube, flush, pre-fabricated and prong stone setting methods, and more.", "id": "evt_63dcc066"}, {"name": "Geometric Perspective", "date": "2026-07-12", "day": "Sunday", "time": "2:00 PM", "venue": "Brooklyn Brainery", "neighborhood": "Prospect Heights", "price": "", "url": "https://brooklynbrainery.com/courses/geometric-perspective", "category": "workshops_classes", "source": "Brooklyn Brainery", "why": "Learn the fundamentals of geometric perspective in drawing.", "id": "evt_9819d7f3"}, {"name": "Panel Exploring Creativity & Art As Activism (with Guerrilla Girls)", "date": "2026-07-12", "day": "Sunday", "time": "3:00 PM", "venue": "New York City", "neighborhood": "NYC", "price": "Free", "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-07-12/event/746692", "category": "talks_lectures", "source": "Club Free Time", "why": "A panel featuring the Guerrilla Girls explores creativity and art as activism.", "id": "evt_d1fdc4e2"}, {"name": "Second Sundays: July 2026", "date": "2026-07-12", "day": "Sunday", "time": "", "venue": "Pioneer Works", "neighborhood": "Red Hook", "price": "Free", "url": "https://pioneerworks.org/programs/second-sundays-july-2026", "category": "art_exhibitions", "source": "Pioneer Works", "why": "Pioneer Works' monthly free open-house day with exhibitions, performances, and activities.", "id": "evt_df5b342a"}, {"name": "Wolfe's Pond Park Walk", "date": "2026-07-12", "day": "Sunday", "time": "", "venue": "Wolfe's Pond Park, Prince's Bay, Staten Island", "neighborhood": "Staten Island", "price": "", "url": "https://www.newyorkmyc.org/event/wolfes-pond-park-princes-bay-staten-island-sunday-july-12th/", "category": "tours_experiences", "source": "NY Mycological Society", "why": "The society's first official mushroom walk of the season.", "id": "evt_9de577e8"}], "discovered_sources": []}/**/;
+
+(function() {
+  'use strict';
+
+  var CATEGORY_ORDER = [
+    'tech_ai',
+    'workshops_classes',
+    'tours_experiences',
+    'film_screenings',
+    'art_exhibitions',
+    'talks_lectures',
+    'miscellaneous'
+  ];
+
+  var CATEGORY_CONFIG = {
+    tech_ai:           { label: 'Tech & AI',            color: '#3b82f6' },
+    talks_lectures:    { label: 'Talks & Lectures',     color: '#8b5cf6' },
+    workshops_classes:  { label: 'Workshops & Classes',   color: '#f59e0b' },
+    tours_experiences:  { label: 'Tours & Experiences',   color: '#10b981' },
+    film_screenings:    { label: 'Film & Screenings',     color: '#ef4444' },
+    art_exhibitions:    { label: 'Art & Exhibitions',     color: '#ec4899' },
+    miscellaneous:      { label: 'Miscellaneous',         color: '#64748b' }
+  };
+
+  var POSITIVE_SIGNALS = ['thumbs_up'];
+
+  var SHORT_DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  var SHORT_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  function formatDate(dateStr) {
+    var parts = dateStr.split('-');
+    var d = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
+    return SHORT_DAYS[d.getDay()] + ', ' + SHORT_MONTHS[d.getMonth()] + ' ' + d.getDate();
+  }
+
+  function groupByCategory(events) {
+    var groups = {};
+    for (var i = 0; i < events.length; i++) {
+      var cat = events[i].category || 'other';
+      if (!groups[cat]) groups[cat] = [];
+      groups[cat].push(events[i]);
+    }
+    return groups;
+  }
+
+  function createEl(tag, className) {
+    var el = document.createElement(tag);
+    if (className) el.className = className;
+    return el;
+  }
+
+  // Destination for an event's title link. Prefer the real event URL; when one
+  // is missing, fall back to a web search for the event so the link still goes
+  // somewhere useful instead of dead-ending on this page.
+  function eventHref(evt) {
+    var u = (evt && evt.url ? String(evt.url) : '').trim();
+    if (/^https?:\/\//i.test(u)) return u;
+    var q = [evt && evt.name, evt && evt.venue, 'NYC'].filter(Boolean).join(' ');
+    return 'https://www.google.com/search?q=' + encodeURIComponent(q);
+  }
+
+  function createTabButton(label, tabKey, count) {
+    var btn = createEl('button', 'tab');
+    btn.setAttribute('data-tab', tabKey);
+    btn.appendChild(document.createTextNode(label + ' '));
+    var countSpan = createEl('span', 'count');
+    countSpan.textContent = String(count);
+    btn.appendChild(countSpan);
+    return btn;
+  }
+
+  function createEventCard(evt) {
+    var card = createEl('div', 'event-card');
+    var catConfig = CATEGORY_CONFIG[evt.category];
+    if (catConfig) {
+      card.style.setProperty('--accent', catConfig.color);
+    }
+
+    // Header: name link + price badge
+    var header = createEl('div', 'event-header');
+
+    var nameLink = createEl('a', 'event-name');
+    nameLink.textContent = evt.name;
+    nameLink.href = eventHref(evt);
+    nameLink.target = '_blank';
+    nameLink.rel = 'noopener noreferrer';
+    header.appendChild(nameLink);
+
+    if (evt.price) {
+      var badge = createEl('span', 'price-badge');
+      var isFree = evt.price.toLowerCase() === 'free';
+      badge.className = 'price-badge ' + (isFree ? 'free' : 'paid');
+      badge.textContent = evt.price;
+      header.appendChild(badge);
+    }
+
+    card.appendChild(header);
+
+    // Meta line
+    var meta = createEl('div', 'event-meta');
+    var metaParts = [];
+    if (evt.date) metaParts.push(formatDate(evt.date));
+    if (evt.time) metaParts.push(evt.time);
+    if (evt.venue) metaParts.push(evt.venue);
+    if (evt.neighborhood) metaParts.push(evt.neighborhood);
+
+    for (var m = 0; m < metaParts.length; m++) {
+      var span = createEl('span');
+      span.textContent = metaParts[m];
+      meta.appendChild(span);
+    }
+    card.appendChild(meta);
+
+    // Why sentence
+    if (evt.why) {
+      var why = createEl('div', 'event-why');
+      why.textContent = evt.why;
+      card.appendChild(why);
+    }
+
+    // Action row: feedback + save
+    var feedbackRow = createEl('div', 'feedback-row');
+    var signals = [
+      { key: 'thumbs_up',   label: '\u25B2' },
+      { key: 'thumbs_down', label: '\u25BC' }
+    ];
+
+    for (var s = 0; s < signals.length; s++) {
+      var btn = createEl('button', 'feedback-btn');
+      btn.textContent = signals[s].label;
+      btn.setAttribute('data-event-id', evt.id);
+      btn.setAttribute('data-signal', signals[s].key);
+      btn.setAttribute('title', signals[s].key === 'thumbs_up' ? 'More like this' : 'Less like this');
+      feedbackRow.appendChild(btn);
+    }
+
+    var saveBtn = createEl('button', 'save-btn');
+    saveBtn.textContent = '\u2606';
+    saveBtn.setAttribute('data-event-id', evt.id);
+    saveBtn.setAttribute('title', 'Save event');
+    if (savedEvents[evt.id]) {
+      saveBtn.classList.add('saved');
+      saveBtn.textContent = '\u2605';
+    }
+    feedbackRow.appendChild(saveBtn);
+
+    card.appendChild(feedbackRow);
+
+    return card;
+  }
+
+  // Saved events state (localStorage only — single-browser, static site)
+  var savedEvents = {};
+  try {
+    var saved = localStorage.getItem('events-digest-saved');
+    if (saved) savedEvents = JSON.parse(saved);
+  } catch(e) {}
+
+  // All events indexed by id for quick lookup
+  var allEventsById = {};
+
+  function persistSaved() {
+    try { localStorage.setItem('events-digest-saved', JSON.stringify(savedEvents)); } catch(e) {}
+  }
+
+  function renderEvents(events, container) {
+    container.textContent = '';
+    if (!events || events.length === 0) {
+      var empty = createEl('div', 'empty-state');
+      empty.textContent = 'No events yet.';
+      container.appendChild(empty);
+      return;
+    }
+
+    var groups = groupByCategory(events);
+
+    for (var c = 0; c < CATEGORY_ORDER.length; c++) {
+      var catKey = CATEGORY_ORDER[c];
+      var catEvents = groups[catKey];
+      if (!catEvents || catEvents.length === 0) continue;
+
+      var config = CATEGORY_CONFIG[catKey];
+
+      var section = createEl('div', 'category-section');
+      var header = createEl('div', 'category-header');
+      var label = createEl('div', 'category-label');
+      label.textContent = (config ? config.label : catKey) + ' (' + catEvents.length + ')';
+      var toggle = createEl('span', 'category-toggle');
+      toggle.textContent = '\u25BC';
+      header.appendChild(label);
+      header.appendChild(toggle);
+      section.appendChild(header);
+
+      var body = createEl('div', 'category-body');
+      for (var e = 0; e < catEvents.length; e++) {
+        body.appendChild(createEventCard(catEvents[e]));
+      }
+      section.appendChild(body);
+
+      header.addEventListener('click', (function(sec) {
+        return function() { sec.classList.toggle('collapsed'); };
+      })(section));
+
+      container.appendChild(section);
+    }
+
+    // Render any categories not in CATEGORY_ORDER
+    var knownKeys = {};
+    for (var k = 0; k < CATEGORY_ORDER.length; k++) knownKeys[CATEGORY_ORDER[k]] = true;
+    for (var otherKey in groups) {
+      if (groups.hasOwnProperty(otherKey) && !knownKeys[otherKey]) {
+        var otherSection = createEl('div', 'category-section');
+        var otherHeader = createEl('div', 'category-header');
+        var otherLabel = createEl('div', 'category-label');
+        otherLabel.textContent = otherKey;
+        otherHeader.appendChild(otherLabel);
+        otherSection.appendChild(otherHeader);
+        var otherBody = createEl('div', 'category-body');
+        for (var oe = 0; oe < groups[otherKey].length; oe++) {
+          otherBody.appendChild(createEventCard(groups[otherKey][oe]));
+        }
+        otherSection.appendChild(otherBody);
+        container.appendChild(otherSection);
+      }
+    }
+  }
+
+  function getUniqueDays(events) {
+    var seen = {};
+    var days = [];
+    for (var i = 0; i < events.length; i++) {
+      var d = events[i].date;
+      if (d && !seen[d]) {
+        seen[d] = true;
+        days.push(d);
+      }
+    }
+    days.sort();
+    return days;
+  }
+
+  function filterByDay(events, dateStr) {
+    if (!dateStr) return events;
+    var result = [];
+    for (var i = 0; i < events.length; i++) {
+      if (events[i].date === dateStr) result.push(events[i]);
+    }
+    return result;
+  }
+
+  function renderSavedSection() {
+    var container = document.getElementById('saved-container');
+    container.textContent = '';
+
+    var ids = Object.keys(savedEvents);
+    if (ids.length === 0) return;
+
+    var section = createEl('div', 'saved-section');
+    var headerEl = createEl('div', 'saved-header');
+    var labelEl = createEl('div', 'saved-label');
+    labelEl.textContent = 'Saved (' + ids.length + ')';
+    headerEl.appendChild(labelEl);
+    section.appendChild(headerEl);
+
+    for (var i = 0; i < ids.length; i++) {
+      var evt = allEventsById[ids[i]] || savedEvents[ids[i]];
+      if (!evt) continue;
+
+      var card = createEl('div', 'saved-card');
+
+      var nameLink = createEl('a', 'event-name');
+      nameLink.textContent = evt.name;
+      nameLink.href = eventHref(evt);
+      nameLink.target = '_blank';
+      nameLink.rel = 'noopener noreferrer';
+      card.appendChild(nameLink);
+
+      var metaSpan = createEl('span', 'saved-meta');
+      var parts = [];
+      if (evt.date) parts.push(formatDate(evt.date));
+      if (evt.time) parts.push(evt.time);
+      if (evt.venue) parts.push(evt.venue);
+      metaSpan.textContent = parts.join(' \u00b7 ');
+      card.appendChild(metaSpan);
+
+      var unsaveBtn = createEl('button', 'unsave-btn');
+      unsaveBtn.textContent = '\u2715';
+      unsaveBtn.setAttribute('data-unsave-id', ids[i]);
+      unsaveBtn.setAttribute('title', 'Remove from saved');
+      card.appendChild(unsaveBtn);
+
+      section.appendChild(card);
+    }
+
+    container.appendChild(section);
+  }
+
+  function renderDiscoveredSources(sources) {
+    var wrapper = document.getElementById('sources-container');
+    if (!sources || sources.length === 0) return;
+
+    var section = createEl('div', 'sources-section');
+
+    var title = createEl('div', 'sources-title');
+    title.textContent = 'Discovered Sources';
+    section.appendChild(title);
+
+    for (var i = 0; i < sources.length; i++) {
+      var src = sources[i];
+      var item = createEl('div', 'source-item');
+
+      var name = createEl('a', 'source-name');
+      name.textContent = src.name;
+      name.href = src.url || '#';
+      name.target = '_blank';
+      name.rel = 'noopener noreferrer';
+      item.appendChild(name);
+
+      if (src.description) {
+        var desc = createEl('div', 'source-desc');
+        desc.textContent = src.description;
+        item.appendChild(desc);
+      }
+
+      section.appendChild(item);
+    }
+
+    wrapper.appendChild(section);
+  }
+
+  function init() {
+    var data = EVENTS_DATA;
+    var BUCKETS = [
+      { key: 'thisWeek', label: 'This Week' },
+      { key: 'thisWeekend', label: 'This Weekend' },
+      { key: 'nextWeek', label: 'Next Week' },
+      { key: 'nextWeekend', label: 'Next Weekend' },
+      { key: 'later', label: 'Later' }
+    ];
+    var bucketEvents = {
+      thisWeek: data.thisWeek || [],
+      thisWeekend: data.thisWeekend || [],
+      nextWeek: data.nextWeek || [],
+      nextWeekend: data.nextWeekend || [],
+      later: data.later || []
+    };
+    // Only buckets with events get a tab — hides empty buckets, including
+    // "This Weekend" on Sunday runs (the build emits it empty).
+    var activeBuckets = BUCKETS.filter(function(b) { return bucketEvents[b.key].length > 0; });
+
+    // Index all events by id
+    var all = [];
+    for (var bk = 0; bk < BUCKETS.length; bk++) all = all.concat(bucketEvents[BUCKETS[bk].key]);
+    for (var ai = 0; ai < all.length; ai++) {
+      allEventsById[all[ai].id] = all[ai];
+    }
+
+    // Title
+    var titleEl = document.getElementById('digest-title');
+    titleEl.textContent = (data.meta && data.meta.title) ? data.meta.title : 'Events Digest';
+
+    // Collection stats
+    var statsContainer = document.getElementById('collection-stats');
+    var shown = all.length;
+    var total = (data.meta && data.meta.total_collected) ? data.meta.total_collected : null;
+    if (total && total > shown) {
+      var statsBar = createEl('div', 'stats-bar');
+      var digestDate = (data.meta && data.meta.week_start) ? data.meta.week_start : '';
+      var allFileUrl = '/digests/' + digestDate + '-all.json';
+      var statsText = document.createTextNode('Showing ' + shown + ' of ' + total + ' events found. ');
+      statsBar.appendChild(statsText);
+      var allLink = createEl('a');
+      allLink.href = allFileUrl;
+      allLink.target = '_blank';
+      allLink.textContent = 'View all ' + total;
+      statsBar.appendChild(allLink);
+      statsContainer.appendChild(statsBar);
+    }
+
+    // Saved section
+    renderSavedSection();
+
+    // Tab nav
+    var tabNav = document.getElementById('tab-nav');
+    var panelsContainer = document.getElementById('tab-panels');
+    var dayFilterContainer = document.getElementById('day-filter-container');
+
+    var panelsByKey = {};
+    for (var bi = 0; bi < activeBuckets.length; bi++) {
+      var bdef = activeBuckets[bi];
+      tabNav.appendChild(createTabButton(bdef.label, bdef.key, bucketEvents[bdef.key].length));
+      var panel = createEl('div', 'tab-panel');
+      panel.setAttribute('data-panel', bdef.key);
+      panelsContainer.appendChild(panel);
+      panelsByKey[bdef.key] = panel;
+    }
+
+    var activeTab = activeBuckets.length ? activeBuckets[0].key : null;
+    var activeDayFilter = null; // null = all days
+    try {
+      var st = localStorage.getItem('events-digest-tab');
+      if (st && bucketEvents[st] && bucketEvents[st].length > 0) activeTab = st;
+    } catch(e) {}
+
+    function renderDayFilter(events) {
+      dayFilterContainer.textContent = '';
+      var days = getUniqueDays(events);
+      if (days.length <= 1) return; // no filter needed for 0-1 days
+
+      var filterRow = createEl('div', 'day-filter');
+
+      var allPill = createEl('button', 'day-pill' + (activeDayFilter === null ? ' active' : ''));
+      allPill.textContent = 'All';
+      allPill.setAttribute('data-day', '');
+      filterRow.appendChild(allPill);
+
+      for (var i = 0; i < days.length; i++) {
+        var pill = createEl('button', 'day-pill' + (activeDayFilter === days[i] ? ' active' : ''));
+        pill.textContent = formatDate(days[i]);
+        pill.setAttribute('data-day', days[i]);
+        filterRow.appendChild(pill);
+      }
+
+      dayFilterContainer.appendChild(filterRow);
+    }
+
+    function renderCurrentView() {
+      if (!activeTab) return;
+      var events = bucketEvents[activeTab] || [];
+      var panel = panelsByKey[activeTab];
+      if (!panel) return;
+
+      renderDayFilter(events);
+
+      var filtered = activeDayFilter ? filterByDay(events, activeDayFilter) : events;
+      renderEvents(filtered, panel);
+    }
+
+    function activateTab(tabName) {
+      activeTab = tabName;
+      activeDayFilter = null; // reset day filter on tab switch
+
+      var tabs = tabNav.querySelectorAll('.tab');
+      for (var t = 0; t < tabs.length; t++) {
+        var isActive = tabs[t].getAttribute('data-tab') === tabName;
+        if (isActive) tabs[t].classList.add('active');
+        else tabs[t].classList.remove('active');
+      }
+
+      var panels = panelsContainer.querySelectorAll('.tab-panel');
+      for (var p = 0; p < panels.length; p++) {
+        var isActivePanel = panels[p].getAttribute('data-panel') === tabName;
+        if (isActivePanel) panels[p].classList.add('active');
+        else panels[p].classList.remove('active');
+      }
+
+      try { localStorage.setItem('events-digest-tab', tabName); } catch(e) {}
+      renderCurrentView();
+    }
+
+    // Tab clicks
+    tabNav.addEventListener('click', function(e) {
+      var target = e.target;
+      while (target && target !== tabNav) {
+        if (target.classList && target.classList.contains('tab')) {
+          var tabName = target.getAttribute('data-tab');
+          if (tabName) activateTab(tabName);
+          return;
+        }
+        target = target.parentElement;
+      }
+    });
+
+    // Day filter clicks
+    dayFilterContainer.addEventListener('click', function(e) {
+      if (!e.target.classList || !e.target.classList.contains('day-pill')) return;
+      var dayVal = e.target.getAttribute('data-day');
+      activeDayFilter = dayVal || null;
+      renderCurrentView();
+    });
+
+    if (activeTab) activateTab(activeTab);
+
+    // Global click delegation for feedback, save, unsave
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+
+      // Feedback buttons
+      if (target.classList && target.classList.contains('feedback-btn')) {
+        var eventId = target.getAttribute('data-event-id');
+        var signal = target.getAttribute('data-signal');
+        var row = target.parentElement;
+        var siblings = row.querySelectorAll('.feedback-btn');
+        for (var i = 0; i < siblings.length; i++) {
+          siblings[i].classList.remove('selected-positive', 'selected-negative');
+        }
+        var isPositive = POSITIVE_SIGNALS.indexOf(signal) !== -1;
+        target.classList.add(isPositive ? 'selected-positive' : 'selected-negative');
+        // Feedback is session-only for now (static site, no backend).
+        return;
+      }
+
+      // Save button
+      if (target.classList && target.classList.contains('save-btn')) {
+        var saveId = target.getAttribute('data-event-id');
+        if (savedEvents[saveId]) {
+          delete savedEvents[saveId];
+          target.classList.remove('saved');
+          target.textContent = '\u2606';
+        } else {
+          savedEvents[saveId] = allEventsById[saveId] || { id: saveId };
+          target.classList.add('saved');
+          target.textContent = '\u2605';
+        }
+        persistSaved();
+        renderSavedSection();
+        return;
+      }
+
+      // Unsave button
+      if (target.classList && target.classList.contains('unsave-btn')) {
+        var unsaveId = target.getAttribute('data-unsave-id');
+        delete savedEvents[unsaveId];
+        persistSaved();
+        renderSavedSection();
+        // Also update the star in the main list if visible
+        var stars = document.querySelectorAll('.save-btn[data-event-id="' + unsaveId + '"]');
+        for (var si = 0; si < stars.length; si++) {
+          stars[si].classList.remove('saved');
+          stars[si].textContent = '\u2606';
+        }
+        return;
+      }
+    });
+
+    // Discovered sources
+    renderDiscoveredSources(data.discovered_sources || []);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+</body>
+</html>

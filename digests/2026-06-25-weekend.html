@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekend of June 26-28, 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f5f4;
+    color: #1c1917;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+
+  /* Tabs */
+  .tab-nav {
+    display: flex;
+    gap: 24px;
+    border-bottom: 1px solid #e7e5e4;
+    margin-bottom: 28px;
+  }
+
+  .tab {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 8px 0 10px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #78716c;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .tab:hover {
+    color: #44403c;
+  }
+
+  .tab.active {
+    color: #1c1917;
+    border-bottom-color: #1c1917;
+  }
+
+  .tab .count {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #a8a29e;
+    margin-left: 4px;
+  }
+
+  .tab.active .count {
+    color: #78716c;
+  }
+
+  /* Tab panels */
+  .tab-panel {
+    display: none;
+  }
+
+  .tab-panel.active {
+    display: block;
+  }
+
+  /* Category sections */
+  .category-section {
+    margin-top: 28px;
+  }
+
+  .category-section:first-child {
+    margin-top: 0;
+  }
+
+  .category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 4px 0 12px;
+    user-select: none;
+  }
+
+  .category-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #a8a29e;
+  }
+
+  .category-toggle {
+    font-size: 0.7rem;
+    color: #a8a29e;
+    transition: transform 0.2s;
+  }
+
+  .category-section.collapsed .category-toggle {
+    transform: rotate(-90deg);
+  }
+
+  .category-body {
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+
+  .category-section.collapsed .category-body {
+    max-height: 0 !important;
+    overflow: hidden;
+  }
+
+  /* Event cards */
+  .event-card {
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 8px;
+    border-left: 3px solid var(--accent, #a8a29e);
+    padding: 16px 18px;
+    margin-bottom: 12px;
+  }
+
+  .event-header {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+
+  .event-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1c1917;
+    text-decoration: none;
+  }
+
+  .event-name:hover {
+    text-decoration: underline;
+  }
+
+  .price-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  .price-badge.free {
+    background: #ecfdf5;
+    color: #059669;
+  }
+
+  .price-badge.paid {
+    background: #f5f5f4;
+    color: #78716c;
+  }
+
+  .event-meta {
+    font-size: 0.8rem;
+    color: #78716c;
+    margin-bottom: 6px;
+  }
+
+  .event-meta span + span::before {
+    content: "\00b7";
+    margin: 0 6px;
+  }
+
+  .event-why {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #57534e;
+    margin-bottom: 10px;
+  }
+
+  .feedback-row {
+    display: flex;
+    gap: 4px;
+  }
+
+  .feedback-btn {
+    font-family: inherit;
+    font-size: 0.85rem;
+    background: none;
+    border: none;
+    padding: 2px 4px;
+    cursor: pointer;
+    color: #d6d3d1;
+    transition: color 0.15s;
+    line-height: 1;
+  }
+
+  .feedback-btn:hover {
+    color: #78716c;
+  }
+
+  .feedback-btn.selected-positive {
+    color: #059669;
+  }
+
+  .feedback-btn.selected-negative {
+    color: #dc2626;
+  }
+
+  /* Save button */
+  .save-btn {
+    font-family: inherit;
+    font-size: 0.85rem;
+    background: none;
+    border: none;
+    padding: 2px 4px;
+    cursor: pointer;
+    color: #d6d3d1;
+    transition: color 0.15s;
+    line-height: 1;
+    margin-left: auto;
+  }
+
+  .save-btn:hover {
+    color: #f59e0b;
+  }
+
+  .save-btn.saved {
+    color: #f59e0b;
+  }
+
+  /* Day filter pills */
+  .day-filter {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .day-pill {
+    font-family: inherit;
+    font-size: 0.7rem;
+    font-weight: 500;
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 16px;
+    padding: 4px 12px;
+    cursor: pointer;
+    color: #78716c;
+    transition: all 0.15s;
+  }
+
+  .day-pill:hover {
+    border-color: #a8a29e;
+    color: #44403c;
+  }
+
+  .day-pill.active {
+    background: #1c1917;
+    border-color: #1c1917;
+    color: #fff;
+  }
+
+  /* Saved section */
+  .saved-section {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e7e5e4;
+  }
+
+  .saved-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 4px 0 12px;
+    user-select: none;
+  }
+
+  .saved-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #f59e0b;
+  }
+
+  .saved-empty {
+    font-size: 0.8rem;
+    color: #a8a29e;
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  .saved-card {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .saved-card .event-name {
+    font-size: 0.85rem;
+  }
+
+  .saved-card .saved-meta {
+    font-size: 0.75rem;
+    color: #78716c;
+  }
+
+  .saved-card .unsave-btn {
+    font-family: inherit;
+    font-size: 0.7rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #a8a29e;
+    margin-left: auto;
+  }
+
+  .saved-card .unsave-btn:hover {
+    color: #dc2626;
+  }
+
+  /* Discovered Sources */
+  .sources-section {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e7e5e4;
+  }
+
+  .sources-title {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #a8a29e;
+    margin-bottom: 12px;
+  }
+
+  .source-item {
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+  }
+
+  .source-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #1c1917;
+    text-decoration: none;
+  }
+
+  .source-name:hover {
+    text-decoration: underline;
+  }
+
+  .source-desc {
+    font-size: 0.8rem;
+    color: #78716c;
+    margin-top: 2px;
+  }
+
+  /* Collection stats */
+  .stats-bar {
+    font-size: 0.8rem;
+    color: #a8a29e;
+    margin-bottom: 16px;
+  }
+
+  .stats-bar a {
+    color: #3b82f6;
+    text-decoration: none;
+  }
+
+  .stats-bar a:hover {
+    text-decoration: underline;
+  }
+
+  /* Empty state */
+  .empty-state {
+    text-align: center;
+    padding: 48px 20px;
+    color: #a8a29e;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1 id="digest-title"></h1>
+  <div id="collection-stats"></div>
+  <div id="saved-container"></div>
+  <nav class="tab-nav" id="tab-nav"></nav>
+  <div id="day-filter-container"></div>
+  <div id="tab-panels"></div>
+  <div id="sources-container"></div>
+</div>
+
+<script>
+var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta": {"generated": "2026-06-25T00:00:00-04:00", "type": "weekend", "week_start": "2026-06-25", "week_end": "2026-06-28", "total_collected": 65, "title": "Weekend of June 26-28, 2026"}, "thisWeek": [], "thisWeekend": [{"id": "evt_87ddz5vo", "name": "Summer for the City: Dance Encounters — Ogemdi Ude Major", "date": "2026-06-26", "day": "Friday", "time": "5:00 PM", "venue": "Lincoln Center", "neighborhood": "Lincoln Square", "price": "Free", "url": "https://www.lincolncenter.org/series/summer-for-the-city", "category": "miscellaneous", "source": "The Skint", "why": "Part of Lincoln Center's campus-wide Summer for the City festival; the Dance Encounters performance by Ogemdi Ude Major runs Wednesday through Saturday at 5pm, free."}, {"id": "evt_g2j7k4m9", "name": "Gen&Juice — Drinks Night w/ AI Artists, Filmmakers, Tool Companies", "date": "2026-06-26", "day": "Friday", "time": "6:00 PM", "venue": "TBA (NYC)", "neighborhood": "Manhattan", "price": "Free", "url": "https://www.garysguide.com/events/7nwnfsi/Gen-Juice-Drinks-Night-w-AI-Artists-Filmmakers-Tool-Companies", "category": "tech_ai", "source": "Gary's Guide", "why": "Social drinks night connecting AI artists, filmmakers, and AI tool companies."}, {"id": "evt_n6k2p9x4", "name": "Obsession (2026)", "date": "2026-06-26", "day": "Friday", "time": "6:05 PM", "venue": "Nitehawk Cinema Williamsburg", "neighborhood": "Williamsburg", "price": "$18", "url": "https://nitehawkcinema.com/williamsburg/movies/obsession/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "First-run film screening at Nitehawk's Williamsburg dine-in cinema, with evening showtimes Friday."}, {"id": "evt_d8w4t2k0", "name": "Disclosure Day", "date": "2026-06-26", "day": "Friday", "time": "6:20 PM", "venue": "Nitehawk Cinema Williamsburg", "neighborhood": "Williamsburg", "price": "$18", "url": "https://nitehawkcinema.com/williamsburg/movies/disclosure-day/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "First-run film screening at Nitehawk's Williamsburg dine-in cinema, evening showtimes Friday."}, {"id": "evt_vepf39be", "name": "Hudson Classical Theater Company: Hamlet", "date": "2026-06-26", "day": "Friday", "time": "6:30 PM", "venue": "Soldiers' and Sailors' Monument, Riverside Park", "neighborhood": "Upper West Side", "price": "Free", "url": "https://www.hudsonclassicaltheatercompany.org/index.php", "category": "miscellaneous", "source": "The Skint", "why": "Hudson Classical Theater Company's 23rd summer season presents an intimate, outdoor production of Shakespeare's Hamlet, Thursdays through Sundays at 6:30pm, pay-what-you-can."}, {"id": "evt_bmiv1d2e", "name": "Member Evening: Iris van Herpen", "date": "2026-06-26", "day": "Friday", "time": "6:30 PM", "venue": "Brooklyn Museum", "neighborhood": "Prospect Heights", "price": "Free", "url": "https://www.brooklynmuseum.org/programs/member-evening-iris-van-herpen-june-2026/06-26-2026", "category": "art_exhibitions", "source": "Brooklyn Museum", "why": "An after-hours members-only evening viewing of the Iris van Herpen exhibition (free for members)."}, {"id": "evt_g6j2k8m1", "name": "AI Engineers — Game Night", "date": "2026-06-26", "day": "Friday", "time": "6:30 PM", "venue": "TBA (NYC)", "neighborhood": "Manhattan", "price": "Free", "url": "https://www.garysguide.com/events/oseeul1/AI-Engineers-Game-Night", "category": "tech_ai", "source": "Gary's Guide", "why": "Casual game night and social gathering for AI engineering professionals."}, {"id": "evt_bamsi7j8", "name": "Silence (Masahiro Shinoda)", "date": "2026-06-26", "day": "Friday", "time": "6:45 PM", "venue": "BAM Rose Cinemas", "neighborhood": "Fort Greene", "price": "$17", "url": "https://www.bam.org/film/2026/masahiro-shinoda-silence", "category": "film_screenings", "source": "BAM", "why": "A 35mm screening of Shinoda's Silence (1971), about two Portuguese Jesuit priests who sneak into 17th-century Japan to find their missing mentor. Part of the Shinoda retrospective."}, {"id": "evt_dy4m73xj", "name": "Looking for Laughs", "date": "2026-06-26", "day": "Friday", "time": "7:00 PM", "venue": "Caveat, 21A Clinton St.", "neighborhood": "Lower East Side", "price": "$22", "url": "https://www.caveat.nyc/events/looking-for-laughs-6-26-2026", "category": "miscellaneous", "source": "Caveat", "why": "A live onstage blind date crossed with improv comedy: two blindfolded singles meet while four comics riff. 21+."}, {"id": "evt_b3r7m1q8", "name": "Backrooms", "date": "2026-06-26", "day": "Friday", "time": "7:00 PM", "venue": "Nitehawk Cinema Williamsburg", "neighborhood": "Williamsburg", "price": "$18", "url": "https://nitehawkcinema.com/williamsburg/movies/backrooms/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "First-run horror film screening at Nitehawk's Williamsburg dine-in cinema, evening showtimes Friday."}, {"id": "evt_r5f9k2m8", "name": "Superman (2025) — Rooftop Films", "date": "2026-06-26", "day": "Friday", "time": "7:00 PM", "venue": "P.S. 503/506 Playground", "neighborhood": "Sunset Park", "price": "Free", "url": "https://rooftopfilms.com/event/superman-2025/", "category": "film_screenings", "source": "Rooftop Films", "why": "Free outdoor Rooftop Films screening of Superman (2025) in a Sunset Park schoolyard; free with RSVP."}, {"id": "evt_gw7af1k2", "name": "Green-Wood After Hours", "date": "2026-06-26", "day": "Friday", "time": "7:30 PM", "venue": "Green-Wood Cemetery", "neighborhood": "Greenwood Heights", "price": "$25", "url": "https://www.green-wood.com/event/green-wood-after-hours-47/2026-06-26/", "category": "tours_experiences", "source": "Green-Wood Cemetery", "why": "An evening exploration of the cemetery under the night sky highlighting notable New Yorkers' stories, with rare access to the underground Catacombs."}, {"id": "evt_bamia9k0", "name": "I'm Almost There", "date": "2026-06-26", "day": "Friday", "time": "7:30 PM", "venue": "BAM Fisher (Fishman Space)", "neighborhood": "Fort Greene", "price": "$48", "url": "https://www.bam.org/im-almost-there", "category": "miscellaneous", "source": "BAM", "why": "A musical theater work about a man crossing a sea of doubts to find happiness and good coffee."}, {"id": "evt_synthk29", "name": "Synthesizer Night @ NYC Resistor", "date": "2026-06-26", "day": "Friday", "time": "7:30 PM", "venue": "NYC Resistor", "neighborhood": "Boerum Hill", "price": "Free", "url": "https://www.eventbrite.com/e/synthesizer-night-nyc-resistor-tickets-1992426317751", "category": "tech_ai", "source": "NYC Resistor", "why": "A pay-what-you-wish gathering (suggested $8) for synthesizer enthusiasts with collaborative jam sessions, gear demos, and performances; bring your own synths. 18+."}, {"id": "evt_hpljndol", "name": "Boba Gays: Pride Comedy Show", "date": "2026-06-26", "day": "Friday", "time": "9:30 PM", "venue": "Caveat, 21A Clinton St.", "neighborhood": "Lower East Side", "price": "$19", "url": "https://www.caveat.nyc/events/boba-gays-pride-comedy-show-6-26-2026", "category": "miscellaneous", "source": "Caveat", "why": "An all-Asian, all-queer Pride comedy variety show of stand-up and sketch. 21+."}, {"id": "evt_s5p9v3z7", "name": "The Serpent's Skin", "date": "2026-06-26", "day": "Friday", "time": "11:55 PM", "venue": "Nitehawk Cinema Williamsburg", "neighborhood": "Williamsburg", "price": "$18", "url": "https://nitehawkcinema.com/williamsburg/movies/serpents-skin/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "Friday midnight genre screening at Nitehawk's Williamsburg dine-in cinema."}, {"id": "evt_ynhs0jr2", "name": "Johnny Marr's Guitars on View at Christie's", "date": "2026-06-27", "day": "Saturday", "time": "10:00 AM", "venue": "Christie's New York", "neighborhood": "Rockefeller Center", "price": "Free", "url": "https://www.brooklynvegan.com/johnny-marr-auctioning-off-nearly-100-of-his-guitars-collection-on-display-at-christies-ny-this-week/", "category": "art_exhibitions", "source": "The Skint", "why": "A close look at nearly 100 instruments from Johnny Marr's personal collection at Christie's New York (on view thru 7/1) before they go up for auction in London; free admission."}, {"id": "evt_bbgcg1x2", "name": "Container Gardening", "date": "2026-06-27", "day": "Saturday", "time": "10:00 AM", "venue": "Brooklyn Botanic Garden", "neighborhood": "Prospect Heights", "price": "$25", "url": "https://www.bbg.org/classes/container_gardening", "category": "workshops_classes", "source": "Brooklyn Botanic Garden", "why": "A hands-on class exploring the art and science of container gardening. Preregistration required."}, {"id": "evt_bmiv3f4g", "name": "Member Mornings: Iris van Herpen", "date": "2026-06-27", "day": "Saturday", "time": "10:00 AM", "venue": "Brooklyn Museum", "neighborhood": "Prospect Heights", "price": "Free", "url": "https://www.brooklynmuseum.org/programs/member-mornings-iris-van-herpen-2026/06-27-2026", "category": "art_exhibitions", "source": "Brooklyn Museum", "why": "An early members-only morning viewing of the Iris van Herpen exhibition before the museum opens to the public (free for members)."}, {"id": "evt_g9j3k7m4", "name": "SuperPlane Hackathon — Bash Script Funeral", "date": "2026-06-27", "day": "Saturday", "time": "10:00 AM", "venue": "TBA (NYC)", "neighborhood": "Manhattan", "price": "Free", "url": "https://www.garysguide.com/events/5s7rylm/SuperPlane-Hackathon-Bash-Script-Funeral", "category": "tech_ai", "source": "Gary's Guide", "why": "Hackathon event presented with Render for developers."}, {"id": "evt_bbgbk3y4", "name": "Urban Beekeeping Basics", "date": "2026-06-27", "day": "Saturday", "time": "10:30 AM", "venue": "Brooklyn Botanic Garden", "neighborhood": "Prospect Heights", "price": "$25", "url": "https://www.bbg.org/classes/urban_beekeeping_basics", "category": "workshops_classes", "source": "Brooklyn Botanic Garden", "why": "A class covering bee biology, hive care, and pest management with live bee observation. Preregistration required."}, {"id": "evt_d1w8t4k6", "name": "Disclosure Day", "date": "2026-06-27", "day": "Saturday", "time": "11:00 AM", "venue": "Nitehawk Cinema Williamsburg", "neighborhood": "Williamsburg", "price": "$18", "url": "https://nitehawkcinema.com/williamsburg/movies/disclosure-day/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "First-run film screening at Nitehawk's Williamsburg dine-in cinema, multiple Saturday showtimes including an open-captions show."}, {"id": "evt_e9k2n6x3", "name": "Bad Education (2019)", "date": "2026-06-27", "day": "Saturday", "time": "11:00 AM", "venue": "Nitehawk Cinema Williamsburg", "neighborhood": "Williamsburg", "price": "$18", "url": "https://nitehawkcinema.com/williamsburg/movies/bad-education-2019/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "Repertory brunch screening of the 2019 drama at Nitehawk's Williamsburg dine-in cinema."}, {"id": "evt_g4j8k2m6", "name": "Built In NYC w/ Vercel", "date": "2026-06-27", "day": "Saturday", "time": "11:00 AM", "venue": "TBA (NYC)", "neighborhood": "Manhattan", "price": "Free", "url": "https://www.garysguide.com/events/p2yoyx8/Built-In-NYC-w-Vercel", "category": "tech_ai", "source": "Gary's Guide", "why": "Tech community gathering featuring Vercel."}, {"id": "evt_y7k3n9m2", "name": "Special Workshop + Possible Walk: Forest Floor First Aid", "date": "2026-06-27", "day": "Saturday", "time": "11:00 AM", "venue": "Van Cortlandt Park East", "neighborhood": "Bronx", "price": "Free", "url": "https://www.newyorkmyc.org/event/special-workshop-forest-floor-first-aid-herbal-safety-skills-for-mushroom-walkers-van-cortlandt-park-east-saturday-june-27th/", "category": "workshops_classes", "source": "NY Mycological Society", "why": "Herbalist-led NYMS workshop on herbal safety skills for mushroom walkers, with a possible foray, at Van Cortlandt Park East."}, {"id": "evt_m4p7v2z9", "name": "Muppet Treasure Island", "date": "2026-06-27", "day": "Saturday", "time": "11:15 AM", "venue": "Nitehawk Cinema Williamsburg", "neighborhood": "Williamsburg", "price": "$18", "url": "https://nitehawkcinema.com/williamsburg/movies/muppet-treasure-island/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "Family brunch matinee screening of the 1996 Muppet film at Nitehawk's Williamsburg dine-in cinema."}, {"id": "evt_gwoc3p4q", "name": "Last Saturdays: Open Classroom", "date": "2026-06-27", "day": "Saturday", "time": "12:00 PM", "venue": "Green-Wood Cemetery", "neighborhood": "Greenwood Heights", "price": "Free", "url": "https://www.green-wood.com/event/last-saturdays-open-classroom/2026-06-27/", "category": "workshops_classes", "source": "Green-Wood Cemetery", "why": "A monthly drop-in featuring hands-on explorations of art, history, and nature, including monument design and recording family history."}, {"id": "evt_yoga7h3m", "name": "Yoga for Hackers", "date": "2026-06-27", "day": "Saturday", "time": "12:00 PM", "venue": "NYC Resistor", "neighborhood": "Boerum Hill", "price": "$25", "url": "https://www.eventbrite.com/e/yoga-for-hackers-tickets-1991795799855", "category": "workshops_classes", "source": "NYC Resistor", "why": "A yoga class for people who spend long hours at computers, covering fundamental postures, alignment, and breathing. Bring a mat; 18+."}, {"id": "evt_gwtr5r6s", "name": "Discover Green-Wood Trolley Tour", "date": "2026-06-27", "day": "Saturday", "time": "1:00 PM", "venue": "Green-Wood Cemetery", "neighborhood": "Greenwood Heights", "price": "$25", "url": "https://www.green-wood.com/event/discover-green-wood-trolley-tour-19/2026-06-27/", "category": "tours_experiences", "source": "Green-Wood Cemetery", "why": "An expert-led trolley tour across the 478-acre historic landscape covering notable residents' stories."}, {"id": "evt_bbgsh5z6", "name": "Seasonal Highlights Tour", "date": "2026-06-27", "day": "Saturday", "time": "1:00 PM", "venue": "Brooklyn Botanic Garden", "neighborhood": "Prospect Heights", "price": "Free", "url": "https://www.bbg.org/visit/event/seasonal_highlights_tour_june_2026", "category": "tours_experiences", "source": "Brooklyn Botanic Garden", "why": "A trained Garden Guide leads a tour of BBG's plants and gardens in peak bloom and other seasonal highlights (free with admission)."}, {"id": "evt_pwarb9c0", "name": "Arbrasson Workshop with Daniel Fishkin", "date": "2026-06-27", "day": "Saturday", "time": "1:00 PM", "venue": "Pioneer Works", "neighborhood": "Red Hook", "price": "$250", "url": "https://pioneerworks.org/classes/arbrasson-workshop-with-daniel-fishkin", "category": "workshops_classes", "source": "Pioneer Works", "why": "Artist-in-residence Daniel Fishkin gives a history and demonstration of the Arbrasson, a wooden friction idiophone, then leads participants in building their own; materials included, no experience required."}, {"id": "evt_bmft5h6i", "name": "Gallery Tours: A Few of Our Favorite Things", "date": "2026-06-27", "day": "Saturday", "time": "1:00 PM", "venue": "Brooklyn Museum", "neighborhood": "Prospect Heights", "price": "Free", "url": "https://www.brooklynmuseum.org/programs/tours-favorite-things-spring-2026/06-27-2026", "category": "tours_experiences", "source": "Brooklyn Museum", "why": "A free guided gallery tour highlighting a selection of favorite works from the Brooklyn Museum's collection (free with admission)."}, {"id": "evt_dredex5q", "name": "Dreams of Water, Bodies of Earth Exhibition", "date": "2026-06-27", "day": "Saturday", "time": "1:00 PM", "venue": "Gowanus Dredgers Boathouse", "neighborhood": "Gowanus", "price": "Free", "url": "https://gowanusdredgers.org/", "category": "art_exhibitions", "source": "Gowanus Dredgers", "why": "A free art gallery exhibition at the boathouse exploring environmental themes and human-nature relationships, open 1:00-5:00 PM."}, {"id": "evt_5hgiy1ny", "name": "Moms Against Sketch Comedy", "date": "2026-06-27", "day": "Saturday", "time": "1:30 PM", "venue": "Caveat, 21A Clinton St.", "neighborhood": "Lower East Side", "price": "$16", "url": "https://www.caveat.nyc/events/moms-against-sketch-comedy-6-27-2026", "category": "miscellaneous", "source": "Caveat", "why": "A sketch comedy group performs entirely original, never-before-seen sketches, performed on stilts. 21+."}, {"id": "evt_o2k6n8x1", "name": "Obsession (2026)", "date": "2026-06-27", "day": "Saturday", "time": "1:50 PM", "venue": "Nitehawk Cinema Williamsburg", "neighborhood": "Williamsburg", "price": "$18", "url": "https://nitehawkcinema.com/williamsburg/movies/obsession/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "First-run film screening at Nitehawk's Williamsburg dine-in cinema, multiple Saturday showtimes including an open-captions show."}, {"id": "evt_tavrn4kp", "name": "The Taverns of New York: A Cocktail Themed Tour of Colonial Manhattan", "date": "2026-06-27", "day": "Saturday", "time": "2:00 PM", "venue": "Meet at Zuccotti Park", "neighborhood": "Financial District", "price": "$75", "url": "https://brooklynbrainery.com/courses/the-taverns-of-new-york-a-cocktail-themed-tour-of-colonial-manhattan", "category": "tours_experiences", "source": "Brooklyn Brainery", "why": "A walking tour of colonial Manhattan's historic taverns including Fraunces Tavern, ending with two full-sized colonial-inspired cocktails. Runs 2:00-5:00 PM."}, {"id": "evt_b7m3q9w5", "name": "Backrooms", "date": "2026-06-27", "day": "Saturday", "time": "2:20 PM", "venue": "Nitehawk Cinema Williamsburg", "neighborhood": "Williamsburg", "price": "$18", "url": "https://nitehawkcinema.com/williamsburg/movies/backrooms/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "First-run horror film screening at Nitehawk's Williamsburg dine-in cinema, multiple Saturday showtimes."}, {"id": "evt_q4152ujj", "name": "Hanan Issa: Halal Habibis", "date": "2026-06-27", "day": "Saturday", "time": "4:00 PM", "venue": "Caveat, 21A Clinton St.", "neighborhood": "Lower East Side", "price": "$20", "url": "https://www.caveat.nyc/events/hanan-issa-halal-habibis-6-27-2026", "category": "talks_lectures", "source": "Caveat", "why": "A solo comedy show in which comedian Hanan Issa recounts growing up as a young Muslim woman in NYC and losing her mother at age nine. 21+."}, {"id": "evt_bamcl1m2", "name": "Under the Blossoming Cherry Trees (Masahiro Shinoda)", "date": "2026-06-27", "day": "Saturday", "time": "4:30 PM", "venue": "BAM Rose Cinemas", "neighborhood": "Fort Greene", "price": "$17", "url": "https://www.bam.org/film/2026/masahiro-shinoda-under-the-blossoming", "category": "film_screenings", "source": "BAM", "why": "A 35mm screening of Shinoda's Under the Blossoming Cherry Trees, in which a mountain thief, lured by a bewitching woman, descends into bloodshed and madness."}, {"id": "evt_bamas3n4", "name": "Assassination (Masahiro Shinoda)", "date": "2026-06-27", "day": "Saturday", "time": "6:45 PM", "venue": "BAM Rose Cinemas", "neighborhood": "Fort Greene", "price": "$17", "url": "https://www.bam.org/film/2026/masahiro-shinoda-assassination", "category": "film_screenings", "source": "BAM", "why": "A 35mm screening of Shinoda's Assassination, a non-linear samurai drama following a shady ronin amid rival political factions and themes of loyalty and deception."}, {"id": "evt_it2atksu", "name": "The Power Joker: A Robert Moses Comedy Show", "date": "2026-06-27", "day": "Saturday", "time": "7:00 PM", "venue": "Caveat, 21A Clinton St.", "neighborhood": "Lower East Side", "price": "$21", "url": "https://www.caveat.nyc/events/the-power-joker-a-robert-moses-comedy-show-6-27-2026", "category": "miscellaneous", "source": "Caveat", "why": "An hour of comedy imagining urban planner Robert Moses hosting a late-night talk show; this edition's theme is 'A Car-Free Future??' 21+."}, {"id": "evt_n3f7k9m2", "name": "New York Non-Fiction: A 30-Year Retrospective", "date": "2026-06-27", "day": "Saturday", "time": "7:00 PM", "venue": "New Design High School", "neighborhood": "Lower East Side", "price": "$18", "url": "https://rooftopfilms.com/event/new-york-non-fiction-a-30-year-retrospective/", "category": "film_screenings", "source": "Rooftop Films", "why": "Rooftop Films outdoor program showcasing a 30-year retrospective of New York non-fiction filmmaking."}, {"id": "evt_gw9af2m3", "name": "Green-Wood After Hours", "date": "2026-06-27", "day": "Saturday", "time": "7:30 PM", "venue": "Green-Wood Cemetery", "neighborhood": "Greenwood Heights", "price": "$25", "url": "https://www.green-wood.com/event/green-wood-after-hours-47/2026-06-27/", "category": "tours_experiences", "source": "Green-Wood Cemetery", "why": "An evening walking tour featuring cemetery history and notable residents, with rare access to the underground Catacombs."}, {"id": "evt_ebbflo7r", "name": "Cultural Ecologies Series 2026: Pop-Up 1 – Ebb and Flow", "date": "2026-06-27", "day": "Saturday", "time": "7:30 PM", "venue": "Gowanus Dredgers 2nd Street Boathouse", "neighborhood": "Gowanus", "price": "$15", "url": "https://gowanusdredgers.org/", "category": "tours_experiences", "source": "Gowanus Dredgers", "why": "A site-specific pop-up performance staged from canoes, tracing the Gowanus Canal's flow from the Flushing Tunnel to the 2nd Street Boathouse. Runs 7:30-9:00 PM."}, {"id": "evt_bampf5p6", "name": "Pale Flower (Masahiro Shinoda)", "date": "2026-06-27", "day": "Saturday", "time": "9:00 PM", "venue": "BAM Rose Cinemas", "neighborhood": "Fort Greene", "price": "$17", "url": "https://www.bam.org/film/2026/masahiro-shinoda-pale-flower", "category": "film_screenings", "source": "BAM", "why": "A DCP screening of Shinoda's haunting noir Pale Flower, about the relationship between a yakuza gangster and a mysterious woman."}, {"id": "evt_f577vjhh", "name": "Drunk Planet Earth", "date": "2026-06-27", "day": "Saturday", "time": "9:30 PM", "venue": "Caveat, 21A Clinton St.", "neighborhood": "Lower East Side", "price": "Free", "url": "https://www.caveat.nyc/events/drunk-planet-earth-6-27-2026", "category": "miscellaneous", "source": "Caveat", "why": "A live drinking game show blending Mystery Science Theater with animal documentaries. 21+."}, {"id": "evt_gwbi7t8u", "name": "Birding in Peace", "date": "2026-06-28", "day": "Sunday", "time": "6:00 AM", "venue": "Green-Wood Cemetery", "neighborhood": "Greenwood Heights", "price": "$25", "url": "https://www.green-wood.com/event/birding-in-peace-30/2026-06-28/", "category": "tours_experiences", "source": "Green-Wood Cemetery", "why": "An early-morning guided tour offering special access to discover the many birds that call Green-Wood home."}, {"id": "evt_gwgb9v0w", "name": "Grave Beginnings: Green-Wood by Trolley", "date": "2026-06-28", "day": "Sunday", "time": "11:00 AM", "venue": "Green-Wood Cemetery", "neighborhood": "Greenwood Heights", "price": "Free", "url": "https://www.green-wood.com/event/grave-beginnings-green-wood-by-trolley/2026-06-28/", "category": "tours_experiences", "source": "Green-Wood Cemetery", "why": "A one-hour introductory trolley tour for first-time visitors covering the landscape and notable residents including scientists and industrialists."}, {"id": "evt_4ebedx8i", "name": "Storytime w/ Sabina Hahn: The Wise Pickle", "date": "2026-06-28", "day": "Sunday", "time": "11:00 AM", "venue": "Books Are Magic (Montague Store), 122 Montague St.", "neighborhood": "Brooklyn Heights", "price": "Free", "url": "https://www.booksaremagic.net/event/5462220260628", "category": "miscellaneous", "source": "Books Are Magic", "why": "A children's storytime for ages 3-7 featuring Sabina Hahn's absurd, philosophical picture book about a withering pickle sharing hard-earned wisdom."}, {"id": "evt_cyanot8b", "name": "Cyanotype Workshop with Brian Ellis", "date": "2026-06-28", "day": "Sunday", "time": "11:00 AM", "venue": "Gowanus Dredgers Bunker (19th St/3rd Ave)", "neighborhood": "Gowanus", "price": "Free", "url": "https://gowanusdredgers.org/", "category": "workshops_classes", "source": "Gowanus Dredgers", "why": "A cyanotype printmaking workshop that includes gathering materials on a short canoe paddle in Gowanus Bay; $5-$10 suggested donation. Runs 11:00 AM-2:00 PM."}, {"id": "evt_d6w1t8k3", "name": "Disclosure Day", "date": "2026-06-28", "day": "Sunday", "time": "11:00 AM", "venue": "Nitehawk Cinema Williamsburg", "neighborhood": "Williamsburg", "price": "$18", "url": "https://nitehawkcinema.com/williamsburg/movies/disclosure-day/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "First-run film screening at Nitehawk's Williamsburg dine-in cinema, multiple Sunday showtimes including an open-captions show."}, {"id": "evt_e3k8n2x6", "name": "Bad Education (2019)", "date": "2026-06-28", "day": "Sunday", "time": "11:00 AM", "venue": "Nitehawk Cinema Williamsburg", "neighborhood": "Williamsburg", "price": "$18", "url": "https://nitehawkcinema.com/williamsburg/movies/bad-education-2019/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "Repertory brunch screening of the 2019 drama at Nitehawk's Williamsburg dine-in cinema."}, {"id": "evt_m7p4v9z2", "name": "Muppet Treasure Island", "date": "2026-06-28", "day": "Sunday", "time": "11:15 AM", "venue": "Nitehawk Cinema Williamsburg", "neighborhood": "Williamsburg", "price": "$18", "url": "https://nitehawkcinema.com/williamsburg/movies/muppet-treasure-island/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "Family brunch matinee screening of the 1996 Muppet film at Nitehawk's Williamsburg dine-in cinema."}, {"id": "evt_watrc6yt", "name": "Watercolor Fundamentals: The Very Basics", "date": "2026-06-28", "day": "Sunday", "time": "11:30 AM", "venue": "Prospect Heights Brainery", "neighborhood": "Prospect Heights", "price": "$30", "url": "https://brooklynbrainery.com/courses/watercolor-fundamentals-the-very-basics", "category": "workshops_classes", "source": "Brooklyn Brainery", "why": "An intro watercolor class covering wet-on-wet and layering techniques with hands-on practice and a closing group critique. Runs 11:30 AM-1:15 PM."}, {"id": "evt_bbgsh7a8", "name": "Seasonal Highlights Tour", "date": "2026-06-28", "day": "Sunday", "time": "1:00 PM", "venue": "Brooklyn Botanic Garden", "neighborhood": "Prospect Heights", "price": "Free", "url": "https://www.bbg.org/visit/event/seasonal_highlights_tour_june_2026", "category": "tours_experiences", "source": "Brooklyn Botanic Garden", "why": "A trained Garden Guide leads a tour of BBG's plants and gardens in peak bloom and other seasonal highlights (free with admission)."}, {"id": "evt_cormor3d", "name": "A Persistence of Cormorants Poetry Reading", "date": "2026-06-28", "day": "Sunday", "time": "1:30 PM", "venue": "Gowanus Dredgers shoreline", "neighborhood": "Gowanus", "price": "Free", "url": "https://gowanusdredgers.org/", "category": "talks_lectures", "source": "Gowanus Dredgers", "why": "A free summer poetry series reading shoreside, featuring accomplished New York-area poets. Runs 1:30-3:30 PM."}, {"id": "evt_o8k4n2x7", "name": "Obsession (2026)", "date": "2026-06-28", "day": "Sunday", "time": "1:50 PM", "venue": "Nitehawk Cinema Williamsburg", "neighborhood": "Williamsburg", "price": "$18", "url": "https://nitehawkcinema.com/williamsburg/movies/obsession/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "First-run film screening at Nitehawk's Williamsburg dine-in cinema, multiple Sunday showtimes including an open-captions show."}, {"id": "evt_bambs7q8", "name": "The Burning Sunset (aka Killers on Parade) (Masahiro Shinoda)", "date": "2026-06-28", "day": "Sunday", "time": "2:00 PM", "venue": "BAM Rose Cinemas", "neighborhood": "Fort Greene", "price": "$17", "url": "https://www.bam.org/film/2026/masahiro-shinoda-the-burning-sunset", "category": "film_screenings", "source": "BAM", "why": "A 35mm screening of Shinoda's colorful comedy-noir-musical following a journalist targeted by a group of assassins."}, {"id": "evt_kittn2vn", "name": "Kitten Meet & Greet", "date": "2026-06-28", "day": "Sunday", "time": "2:00 PM", "venue": "Prospect Heights Brainery", "neighborhood": "Prospect Heights", "price": "Free", "url": "https://brooklynbrainery.com/courses/kitten-meet-greet", "category": "miscellaneous", "source": "Brooklyn Brainery", "why": "A free drop-in to meet adoptable kittens and cats, with same-day adoption or fostering possible for pre-approved matches. Runs 2:00-4:00 PM."}, {"id": "evt_b2m9q7w4", "name": "Backrooms", "date": "2026-06-28", "day": "Sunday", "time": "2:20 PM", "venue": "Nitehawk Cinema Williamsburg", "neighborhood": "Williamsburg", "price": "$18", "url": "https://nitehawkcinema.com/williamsburg/movies/backrooms/", "category": "film_screenings", "source": "Nitehawk Cinema", "why": "First-run horror film screening at Nitehawk's Williamsburg dine-in cinema, multiple Sunday showtimes."}, {"id": "evt_df6t5ibf", "name": "Impossible New York Stories", "date": "2026-06-28", "day": "Sunday", "time": "2:30 PM", "venue": "Caveat, 21A Clinton St.", "neighborhood": "Lower East Side", "price": "$24", "url": "https://www.caveat.nyc/events/impossible-new-york-stories-6-28-2026", "category": "miscellaneous", "source": "Caveat", "why": "A Pride-month storytelling show in which LGBTQ comedians and storytellers share their wildest but true 'only in New York' tales. 21+."}, {"id": "evt_bamdp9r0", "name": "Demon Pond (Masahiro Shinoda)", "date": "2026-06-28", "day": "Sunday", "time": "4:30 PM", "venue": "BAM Rose Cinemas", "neighborhood": "Fort Greene", "price": "$17", "url": "https://www.bam.org/film/2026/masahiro-shinoda-demon-pond", "category": "film_screenings", "source": "BAM", "why": "A DCP screening of Shinoda's Demon Pond, a tale of a village's mysterious ritual that fuses cinema with traditional Japanese theater."}, {"id": "evt_bamia1s2", "name": "I'm Almost There", "date": "2026-06-28", "day": "Sunday", "time": "5:00 PM", "venue": "BAM Fisher (Fishman Space)", "neighborhood": "Fort Greene", "price": "$48", "url": "https://www.bam.org/im-almost-there", "category": "miscellaneous", "source": "BAM", "why": "A musical theater work about a man crossing a sea of doubts to find happiness and good coffee; closing weekend of the run."}, {"id": "evt_fingr8wz", "name": "Intro to Finger-crochet", "date": "2026-06-28", "day": "Sunday", "time": "5:00 PM", "venue": "NYC Resistor", "neighborhood": "Boerum Hill", "price": "$25", "url": "https://www.eventbrite.com/e/intro-to-finger-crochet-tickets-1992031884992", "category": "workshops_classes", "source": "NYC Resistor", "why": "A two-hour finger-crochet workshop teaching chain basics, row work, and joining pieces to make a scarf, headband, or pouch. Mask required; 18+."}, {"id": "evt_cj70x00m", "name": "Comedians Interview Experts (Preview)", "date": "2026-06-28", "day": "Sunday", "time": "7:30 PM", "venue": "Caveat, 21A Clinton St.", "neighborhood": "Lower East Side", "price": "Free", "url": "https://www.caveat.nyc/events/comedians-interview-experts-6-28-2026", "category": "talks_lectures", "source": "Caveat", "why": "A free trial show in which a comedian interviews an expert on a topic they've always wanted to know more about. 21+."}], "nextWeek": [], "nextWeekend": [], "later": [], "discovered_sources": []}/**/;
+
+(function() {
+  'use strict';
+
+  var CATEGORY_ORDER = [
+    'tech_ai',
+    'workshops_classes',
+    'tours_experiences',
+    'film_screenings',
+    'art_exhibitions',
+    'talks_lectures',
+    'miscellaneous'
+  ];
+
+  var CATEGORY_CONFIG = {
+    tech_ai:           { label: 'Tech & AI',            color: '#3b82f6' },
+    talks_lectures:    { label: 'Talks & Lectures',     color: '#8b5cf6' },
+    workshops_classes:  { label: 'Workshops & Classes',   color: '#f59e0b' },
+    tours_experiences:  { label: 'Tours & Experiences',   color: '#10b981' },
+    film_screenings:    { label: 'Film & Screenings',     color: '#ef4444' },
+    art_exhibitions:    { label: 'Art & Exhibitions',     color: '#ec4899' },
+    miscellaneous:      { label: 'Miscellaneous',         color: '#64748b' }
+  };
+
+  var POSITIVE_SIGNALS = ['thumbs_up'];
+
+  var SHORT_DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  var SHORT_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  function formatDate(dateStr) {
+    var parts = dateStr.split('-');
+    var d = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
+    return SHORT_DAYS[d.getDay()] + ', ' + SHORT_MONTHS[d.getMonth()] + ' ' + d.getDate();
+  }
+
+  function groupByCategory(events) {
+    var groups = {};
+    for (var i = 0; i < events.length; i++) {
+      var cat = events[i].category || 'other';
+      if (!groups[cat]) groups[cat] = [];
+      groups[cat].push(events[i]);
+    }
+    return groups;
+  }
+
+  function createEl(tag, className) {
+    var el = document.createElement(tag);
+    if (className) el.className = className;
+    return el;
+  }
+
+  // Destination for an event's title link. Prefer the real event URL; when one
+  // is missing, fall back to a web search for the event so the link still goes
+  // somewhere useful instead of dead-ending on this page.
+  function eventHref(evt) {
+    var u = (evt && evt.url ? String(evt.url) : '').trim();
+    if (/^https?:\/\//i.test(u)) return u;
+    var q = [evt && evt.name, evt && evt.venue, 'NYC'].filter(Boolean).join(' ');
+    return 'https://www.google.com/search?q=' + encodeURIComponent(q);
+  }
+
+  function createTabButton(label, tabKey, count) {
+    var btn = createEl('button', 'tab');
+    btn.setAttribute('data-tab', tabKey);
+    btn.appendChild(document.createTextNode(label + ' '));
+    var countSpan = createEl('span', 'count');
+    countSpan.textContent = String(count);
+    btn.appendChild(countSpan);
+    return btn;
+  }
+
+  function createEventCard(evt) {
+    var card = createEl('div', 'event-card');
+    var catConfig = CATEGORY_CONFIG[evt.category];
+    if (catConfig) {
+      card.style.setProperty('--accent', catConfig.color);
+    }
+
+    // Header: name link + price badge
+    var header = createEl('div', 'event-header');
+
+    var nameLink = createEl('a', 'event-name');
+    nameLink.textContent = evt.name;
+    nameLink.href = eventHref(evt);
+    nameLink.target = '_blank';
+    nameLink.rel = 'noopener noreferrer';
+    header.appendChild(nameLink);
+
+    if (evt.price) {
+      var badge = createEl('span', 'price-badge');
+      var isFree = evt.price.toLowerCase() === 'free';
+      badge.className = 'price-badge ' + (isFree ? 'free' : 'paid');
+      badge.textContent = evt.price;
+      header.appendChild(badge);
+    }
+
+    card.appendChild(header);
+
+    // Meta line
+    var meta = createEl('div', 'event-meta');
+    var metaParts = [];
+    if (evt.date) metaParts.push(formatDate(evt.date));
+    if (evt.time) metaParts.push(evt.time);
+    if (evt.venue) metaParts.push(evt.venue);
+    if (evt.neighborhood) metaParts.push(evt.neighborhood);
+
+    for (var m = 0; m < metaParts.length; m++) {
+      var span = createEl('span');
+      span.textContent = metaParts[m];
+      meta.appendChild(span);
+    }
+    card.appendChild(meta);
+
+    // Why sentence
+    if (evt.why) {
+      var why = createEl('div', 'event-why');
+      why.textContent = evt.why;
+      card.appendChild(why);
+    }
+
+    // Action row: feedback + save
+    var feedbackRow = createEl('div', 'feedback-row');
+    var signals = [
+      { key: 'thumbs_up',   label: '\u25B2' },
+      { key: 'thumbs_down', label: '\u25BC' }
+    ];
+
+    for (var s = 0; s < signals.length; s++) {
+      var btn = createEl('button', 'feedback-btn');
+      btn.textContent = signals[s].label;
+      btn.setAttribute('data-event-id', evt.id);
+      btn.setAttribute('data-signal', signals[s].key);
+      btn.setAttribute('title', signals[s].key === 'thumbs_up' ? 'More like this' : 'Less like this');
+      feedbackRow.appendChild(btn);
+    }
+
+    var saveBtn = createEl('button', 'save-btn');
+    saveBtn.textContent = '\u2606';
+    saveBtn.setAttribute('data-event-id', evt.id);
+    saveBtn.setAttribute('title', 'Save event');
+    if (savedEvents[evt.id]) {
+      saveBtn.classList.add('saved');
+      saveBtn.textContent = '\u2605';
+    }
+    feedbackRow.appendChild(saveBtn);
+
+    card.appendChild(feedbackRow);
+
+    return card;
+  }
+
+  // Saved events state (localStorage only — single-browser, static site)
+  var savedEvents = {};
+  try {
+    var saved = localStorage.getItem('events-digest-saved');
+    if (saved) savedEvents = JSON.parse(saved);
+  } catch(e) {}
+
+  // All events indexed by id for quick lookup
+  var allEventsById = {};
+
+  function persistSaved() {
+    try { localStorage.setItem('events-digest-saved', JSON.stringify(savedEvents)); } catch(e) {}
+  }
+
+  function renderEvents(events, container) {
+    container.textContent = '';
+    if (!events || events.length === 0) {
+      var empty = createEl('div', 'empty-state');
+      empty.textContent = 'No events yet.';
+      container.appendChild(empty);
+      return;
+    }
+
+    var groups = groupByCategory(events);
+
+    for (var c = 0; c < CATEGORY_ORDER.length; c++) {
+      var catKey = CATEGORY_ORDER[c];
+      var catEvents = groups[catKey];
+      if (!catEvents || catEvents.length === 0) continue;
+
+      var config = CATEGORY_CONFIG[catKey];
+
+      var section = createEl('div', 'category-section');
+      var header = createEl('div', 'category-header');
+      var label = createEl('div', 'category-label');
+      label.textContent = (config ? config.label : catKey) + ' (' + catEvents.length + ')';
+      var toggle = createEl('span', 'category-toggle');
+      toggle.textContent = '\u25BC';
+      header.appendChild(label);
+      header.appendChild(toggle);
+      section.appendChild(header);
+
+      var body = createEl('div', 'category-body');
+      for (var e = 0; e < catEvents.length; e++) {
+        body.appendChild(createEventCard(catEvents[e]));
+      }
+      section.appendChild(body);
+
+      header.addEventListener('click', (function(sec) {
+        return function() { sec.classList.toggle('collapsed'); };
+      })(section));
+
+      container.appendChild(section);
+    }
+
+    // Render any categories not in CATEGORY_ORDER
+    var knownKeys = {};
+    for (var k = 0; k < CATEGORY_ORDER.length; k++) knownKeys[CATEGORY_ORDER[k]] = true;
+    for (var otherKey in groups) {
+      if (groups.hasOwnProperty(otherKey) && !knownKeys[otherKey]) {
+        var otherSection = createEl('div', 'category-section');
+        var otherHeader = createEl('div', 'category-header');
+        var otherLabel = createEl('div', 'category-label');
+        otherLabel.textContent = otherKey;
+        otherHeader.appendChild(otherLabel);
+        otherSection.appendChild(otherHeader);
+        var otherBody = createEl('div', 'category-body');
+        for (var oe = 0; oe < groups[otherKey].length; oe++) {
+          otherBody.appendChild(createEventCard(groups[otherKey][oe]));
+        }
+        otherSection.appendChild(otherBody);
+        container.appendChild(otherSection);
+      }
+    }
+  }
+
+  function getUniqueDays(events) {
+    var seen = {};
+    var days = [];
+    for (var i = 0; i < events.length; i++) {
+      var d = events[i].date;
+      if (d && !seen[d]) {
+        seen[d] = true;
+        days.push(d);
+      }
+    }
+    days.sort();
+    return days;
+  }
+
+  function filterByDay(events, dateStr) {
+    if (!dateStr) return events;
+    var result = [];
+    for (var i = 0; i < events.length; i++) {
+      if (events[i].date === dateStr) result.push(events[i]);
+    }
+    return result;
+  }
+
+  function renderSavedSection() {
+    var container = document.getElementById('saved-container');
+    container.textContent = '';
+
+    var ids = Object.keys(savedEvents);
+    if (ids.length === 0) return;
+
+    var section = createEl('div', 'saved-section');
+    var headerEl = createEl('div', 'saved-header');
+    var labelEl = createEl('div', 'saved-label');
+    labelEl.textContent = 'Saved (' + ids.length + ')';
+    headerEl.appendChild(labelEl);
+    section.appendChild(headerEl);
+
+    for (var i = 0; i < ids.length; i++) {
+      var evt = allEventsById[ids[i]] || savedEvents[ids[i]];
+      if (!evt) continue;
+
+      var card = createEl('div', 'saved-card');
+
+      var nameLink = createEl('a', 'event-name');
+      nameLink.textContent = evt.name;
+      nameLink.href = eventHref(evt);
+      nameLink.target = '_blank';
+      nameLink.rel = 'noopener noreferrer';
+      card.appendChild(nameLink);
+
+      var metaSpan = createEl('span', 'saved-meta');
+      var parts = [];
+      if (evt.date) parts.push(formatDate(evt.date));
+      if (evt.time) parts.push(evt.time);
+      if (evt.venue) parts.push(evt.venue);
+      metaSpan.textContent = parts.join(' \u00b7 ');
+      card.appendChild(metaSpan);
+
+      var unsaveBtn = createEl('button', 'unsave-btn');
+      unsaveBtn.textContent = '\u2715';
+      unsaveBtn.setAttribute('data-unsave-id', ids[i]);
+      unsaveBtn.setAttribute('title', 'Remove from saved');
+      card.appendChild(unsaveBtn);
+
+      section.appendChild(card);
+    }
+
+    container.appendChild(section);
+  }
+
+  function renderDiscoveredSources(sources) {
+    var wrapper = document.getElementById('sources-container');
+    if (!sources || sources.length === 0) return;
+
+    var section = createEl('div', 'sources-section');
+
+    var title = createEl('div', 'sources-title');
+    title.textContent = 'Discovered Sources';
+    section.appendChild(title);
+
+    for (var i = 0; i < sources.length; i++) {
+      var src = sources[i];
+      var item = createEl('div', 'source-item');
+
+      var name = createEl('a', 'source-name');
+      name.textContent = src.name;
+      name.href = src.url || '#';
+      name.target = '_blank';
+      name.rel = 'noopener noreferrer';
+      item.appendChild(name);
+
+      if (src.description) {
+        var desc = createEl('div', 'source-desc');
+        desc.textContent = src.description;
+        item.appendChild(desc);
+      }
+
+      section.appendChild(item);
+    }
+
+    wrapper.appendChild(section);
+  }
+
+  function init() {
+    var data = EVENTS_DATA;
+    var BUCKETS = [
+      { key: 'thisWeek', label: 'This Week' },
+      { key: 'thisWeekend', label: 'This Weekend' },
+      { key: 'nextWeek', label: 'Next Week' },
+      { key: 'nextWeekend', label: 'Next Weekend' },
+      { key: 'later', label: 'Later' }
+    ];
+    var bucketEvents = {
+      thisWeek: data.thisWeek || [],
+      thisWeekend: data.thisWeekend || [],
+      nextWeek: data.nextWeek || [],
+      nextWeekend: data.nextWeekend || [],
+      later: data.later || []
+    };
+    // Only buckets with events get a tab — hides empty buckets, including
+    // "This Weekend" on Sunday runs (the build emits it empty).
+    var activeBuckets = BUCKETS.filter(function(b) { return bucketEvents[b.key].length > 0; });
+
+    // Index all events by id
+    var all = [];
+    for (var bk = 0; bk < BUCKETS.length; bk++) all = all.concat(bucketEvents[BUCKETS[bk].key]);
+    for (var ai = 0; ai < all.length; ai++) {
+      allEventsById[all[ai].id] = all[ai];
+    }
+
+    // Title
+    var titleEl = document.getElementById('digest-title');
+    titleEl.textContent = (data.meta && data.meta.title) ? data.meta.title : 'Events Digest';
+
+    // Collection stats
+    var statsContainer = document.getElementById('collection-stats');
+    var shown = all.length;
+    var total = (data.meta && data.meta.total_collected) ? data.meta.total_collected : null;
+    if (total && total > shown) {
+      var statsBar = createEl('div', 'stats-bar');
+      var digestDate = (data.meta && data.meta.week_start) ? data.meta.week_start : '';
+      var allFileUrl = '/digests/' + digestDate + '-all.json';
+      var statsText = document.createTextNode('Showing ' + shown + ' of ' + total + ' events found. ');
+      statsBar.appendChild(statsText);
+      var allLink = createEl('a');
+      allLink.href = allFileUrl;
+      allLink.target = '_blank';
+      allLink.textContent = 'View all ' + total;
+      statsBar.appendChild(allLink);
+      statsContainer.appendChild(statsBar);
+    }
+
+    // Saved section
+    renderSavedSection();
+
+    // Tab nav
+    var tabNav = document.getElementById('tab-nav');
+    var panelsContainer = document.getElementById('tab-panels');
+    var dayFilterContainer = document.getElementById('day-filter-container');
+
+    var panelsByKey = {};
+    for (var bi = 0; bi < activeBuckets.length; bi++) {
+      var bdef = activeBuckets[bi];
+      tabNav.appendChild(createTabButton(bdef.label, bdef.key, bucketEvents[bdef.key].length));
+      var panel = createEl('div', 'tab-panel');
+      panel.setAttribute('data-panel', bdef.key);
+      panelsContainer.appendChild(panel);
+      panelsByKey[bdef.key] = panel;
+    }
+
+    var activeTab = activeBuckets.length ? activeBuckets[0].key : null;
+    var activeDayFilter = null; // null = all days
+    try {
+      var st = localStorage.getItem('events-digest-tab');
+      if (st && bucketEvents[st] && bucketEvents[st].length > 0) activeTab = st;
+    } catch(e) {}
+
+    function renderDayFilter(events) {
+      dayFilterContainer.textContent = '';
+      var days = getUniqueDays(events);
+      if (days.length <= 1) return; // no filter needed for 0-1 days
+
+      var filterRow = createEl('div', 'day-filter');
+
+      var allPill = createEl('button', 'day-pill' + (activeDayFilter === null ? ' active' : ''));
+      allPill.textContent = 'All';
+      allPill.setAttribute('data-day', '');
+      filterRow.appendChild(allPill);
+
+      for (var i = 0; i < days.length; i++) {
+        var pill = createEl('button', 'day-pill' + (activeDayFilter === days[i] ? ' active' : ''));
+        pill.textContent = formatDate(days[i]);
+        pill.setAttribute('data-day', days[i]);
+        filterRow.appendChild(pill);
+      }
+
+      dayFilterContainer.appendChild(filterRow);
+    }
+
+    function renderCurrentView() {
+      if (!activeTab) return;
+      var events = bucketEvents[activeTab] || [];
+      var panel = panelsByKey[activeTab];
+      if (!panel) return;
+
+      renderDayFilter(events);
+
+      var filtered = activeDayFilter ? filterByDay(events, activeDayFilter) : events;
+      renderEvents(filtered, panel);
+    }
+
+    function activateTab(tabName) {
+      activeTab = tabName;
+      activeDayFilter = null; // reset day filter on tab switch
+
+      var tabs = tabNav.querySelectorAll('.tab');
+      for (var t = 0; t < tabs.length; t++) {
+        var isActive = tabs[t].getAttribute('data-tab') === tabName;
+        if (isActive) tabs[t].classList.add('active');
+        else tabs[t].classList.remove('active');
+      }
+
+      var panels = panelsContainer.querySelectorAll('.tab-panel');
+      for (var p = 0; p < panels.length; p++) {
+        var isActivePanel = panels[p].getAttribute('data-panel') === tabName;
+        if (isActivePanel) panels[p].classList.add('active');
+        else panels[p].classList.remove('active');
+      }
+
+      try { localStorage.setItem('events-digest-tab', tabName); } catch(e) {}
+      renderCurrentView();
+    }
+
+    // Tab clicks
+    tabNav.addEventListener('click', function(e) {
+      var target = e.target;
+      while (target && target !== tabNav) {
+        if (target.classList && target.classList.contains('tab')) {
+          var tabName = target.getAttribute('data-tab');
+          if (tabName) activateTab(tabName);
+          return;
+        }
+        target = target.parentElement;
+      }
+    });
+
+    // Day filter clicks
+    dayFilterContainer.addEventListener('click', function(e) {
+      if (!e.target.classList || !e.target.classList.contains('day-pill')) return;
+      var dayVal = e.target.getAttribute('data-day');
+      activeDayFilter = dayVal || null;
+      renderCurrentView();
+    });
+
+    if (activeTab) activateTab(activeTab);
+
+    // Global click delegation for feedback, save, unsave
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+
+      // Feedback buttons
+      if (target.classList && target.classList.contains('feedback-btn')) {
+        var eventId = target.getAttribute('data-event-id');
+        var signal = target.getAttribute('data-signal');
+        var row = target.parentElement;
+        var siblings = row.querySelectorAll('.feedback-btn');
+        for (var i = 0; i < siblings.length; i++) {
+          siblings[i].classList.remove('selected-positive', 'selected-negative');
+        }
+        var isPositive = POSITIVE_SIGNALS.indexOf(signal) !== -1;
+        target.classList.add(isPositive ? 'selected-positive' : 'selected-negative');
+        // Feedback is session-only for now (static site, no backend).
+        return;
+      }
+
+      // Save button
+      if (target.classList && target.classList.contains('save-btn')) {
+        var saveId = target.getAttribute('data-event-id');
+        if (savedEvents[saveId]) {
+          delete savedEvents[saveId];
+          target.classList.remove('saved');
+          target.textContent = '\u2606';
+        } else {
+          savedEvents[saveId] = allEventsById[saveId] || { id: saveId };
+          target.classList.add('saved');
+          target.textContent = '\u2605';
+        }
+        persistSaved();
+        renderSavedSection();
+        return;
+      }
+
+      // Unsave button
+      if (target.classList && target.classList.contains('unsave-btn')) {
+        var unsaveId = target.getAttribute('data-unsave-id');
+        delete savedEvents[unsaveId];
+        persistSaved();
+        renderSavedSection();
+        // Also update the star in the main list if visible
+        var stars = document.querySelectorAll('.save-btn[data-event-id="' + unsaveId + '"]');
+        for (var si = 0; si < stars.length; si++) {
+          stars[si].classList.remove('saved');
+          stars[si].textContent = '\u2606';
+        }
+        return;
+      }
+    });
+
+    // Discovered sources
+    renderDiscoveredSources(data.discovered_sources || []);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+</body>
+</html>

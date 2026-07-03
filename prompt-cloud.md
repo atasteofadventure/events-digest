@@ -54,7 +54,7 @@ From the emails, extract every individual event into an array and write it to
   "neighborhood": "Neighborhood",
   "price": "Free" or "$25",
   "url": "https://absolute-link-to-this-event",
-  "category": "one of: tech_ai, music_nightlife, comedy, film_screenings, art_exhibitions, talks_lectures, workshops_classes, tours_experiences, festivals_parties, miscellaneous",
+  "category": "one of: tech_ai, music_nightlife, comedy, film_screenings, art_exhibitions, talks_lectures, workshops_classes, tours_experiences, sports_fitness, festivals_parties, miscellaneous",
   "source": "organizer/venue name (not the newsletter)",
   "via": ["newsletter it came from — use the EXACT source `name` from config.json when the newsletter is listed there (e.g. \"The Skint\", \"Gary's Guide\"), otherwise the newsletter's plain display name (e.g. \"Museum of the Moving Image\"); do NOT invent slugs like \"garysguide-newsletter\""],
   "why": "one-sentence organizer description (not a personalized pitch)"
@@ -62,6 +62,15 @@ From the emails, extract every individual event into an array and write it to
 ```
 
 Rules:
+- **`why` must describe THE SPECIFIC EVENT** — what actually happens at it (the
+  talk, screening, exhibit, class, show). NEVER use institutional boilerplate
+  ("X is a museum dedicated to…", "The New-York Historical Society is…"),
+  newsletter intro/greeting text, or venue marketing copy. Describe the event, not
+  the organization or venue behind it. If the email contains no event-specific
+  description, set `why` to "" rather than substituting filler — an empty `why` is
+  correct and renders cleanly; boilerplate does not. (Real bug: an event "Songs of
+  America" got a `why` describing the museum as an institution instead of the
+  exhibit.)
 - **`dateISO`**: resolve relative dates ("this Saturday", "June 7") to the
   correct absolute upcoming date, including the year. Expand recurring or
   multi-date listings into one object per date.
@@ -85,9 +94,11 @@ Rules:
   do not be conservative about `art_exhibitions`. Use `music_nightlife` for concerts,
   DJ sets, dance parties, club nights, and drag/burlesque; `comedy` for stand-up and
   comedy shows; `festivals_parties` for street festivals, parades, Pride marches, and
-  large outdoor celebrations. **`miscellaneous` is a real option — use it as the
-  genuine catch-all when an event fits none of the others.** Do NOT force a poor fit
-  into `tours_experiences`; reserve that for actual tours and guided experiences.
+  large outdoor celebrations; `sports_fitness` for sports, fitness classes, yoga,
+  group runs/races, rec-center athletics, paddling/climbing, and similar active
+  recreation. **`miscellaneous` is a real option — use it as the genuine catch-all
+  when an event fits none of the others.** Do NOT force a poor fit into
+  `tours_experiences`; reserve that for actual tours and guided experiences.
 - Do not pre-filter by date — extract everything plausibly upcoming, however far
   out. The build buckets by date (anything past next weekend lands in a "Later"
   section) and drops only events whose date has already passed.

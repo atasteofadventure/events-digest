@@ -431,6 +431,7 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
     'talks_lectures',
     'workshops_classes',
     'tours_experiences',
+    'sports_fitness',
     'festivals_parties',
     'miscellaneous'
   ];
@@ -442,6 +443,7 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
     talks_lectures:    { label: 'Talks & Lectures',     color: '#8b5cf6' },
     workshops_classes:  { label: 'Workshops & Classes',   color: '#f59e0b' },
     tours_experiences:  { label: 'Tours & Experiences',   color: '#10b981' },
+    sports_fitness:     { label: 'Sports & Fitness',      color: '#22c55e' },
     film_screenings:    { label: 'Film & Screenings',     color: '#ef4444' },
     art_exhibitions:    { label: 'Art & Exhibitions',     color: '#ec4899' },
     festivals_parties: { label: 'Festivals & Parties',  color: '#06b6d4' },
@@ -523,20 +525,23 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
 
     card.appendChild(header);
 
-    // Meta line
-    var meta = createEl('div', 'event-meta');
+    // Meta line: only non-empty parts, joined by the CSS "·" separator. Skip the
+    // whole line when nothing is present so no empty element/blank line renders.
     var metaParts = [];
     if (evt.date) metaParts.push(formatDate(evt.date));
     if (evt.time) metaParts.push(evt.time);
     if (evt.venue) metaParts.push(evt.venue);
     if (evt.neighborhood) metaParts.push(evt.neighborhood);
 
-    for (var m = 0; m < metaParts.length; m++) {
-      var span = createEl('span');
-      span.textContent = metaParts[m];
-      meta.appendChild(span);
+    if (metaParts.length > 0) {
+      var meta = createEl('div', 'event-meta');
+      for (var m = 0; m < metaParts.length; m++) {
+        var span = createEl('span');
+        span.textContent = metaParts[m];
+        meta.appendChild(span);
+      }
+      card.appendChild(meta);
     }
-    card.appendChild(meta);
 
     // Why sentence
     if (evt.why) {

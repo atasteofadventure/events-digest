@@ -764,49 +764,56 @@
       "name": "Green-Wood Cemetery",
       "format": "ics",
       "feed_url": "https://www.green-wood.com/calendar/?ical=1",
-      "enabled": true
+      "enabled": true,
+      "default_category": "tours_experiences"
     },
     {
       "type": "feed",
       "name": "Gowanus Dredgers",
       "format": "ics",
       "feed_url": "https://gowanusdredgers.org/?ical=1",
-      "enabled": true
+      "enabled": true,
+      "default_category": "sports_fitness"
     },
     {
       "type": "feed",
       "name": "NY Mycological Society",
       "format": "ics",
       "feed_url": "https://www.newyorkmyc.org/events/?ical=1",
-      "enabled": true
+      "enabled": true,
+      "default_category": "tours_experiences"
     },
     {
       "type": "feed",
       "name": "Makeville Studio",
       "format": "ics",
       "feed_url": "https://calendar.google.com/calendar/ical/makeville.com_r8os53m99cg005fpqu036h3lc0%40group.calendar.google.com/public/basic.ics",
-      "enabled": true
+      "enabled": true,
+      "default_category": "workshops_classes"
     },
     {
       "type": "feed",
       "name": "Gotham Center",
       "format": "squarespace-json",
       "feed_url": "https://www.gothamcenter.org/upcoming-events?format=json",
-      "enabled": true
+      "enabled": true,
+      "default_category": "talks_lectures"
     },
     {
       "type": "feed",
       "name": "Club Free Time",
       "format": "jsonld",
       "feed_url": "https://www.clubfreetime.com/new-york-city-nyc/free-talks-lectures",
-      "enabled": true
+      "enabled": true,
+      "default_category": "talks_lectures"
     },
     {
       "type": "feed",
       "name": "Creative Coding NYC",
       "format": "ics",
       "feed_url": "https://www.meetup.com/creative-coding-nyc/events/ical/",
-      "enabled": true
+      "enabled": true,
+      "default_category": "tech_ai"
     },
     {
       "type": "feed",
@@ -847,7 +854,8 @@
       "name": "NYC Resistor",
       "format": "eventbrite-organizer",
       "feed_url": "https://www.eventbrite.com/o/nyc-resistor-52408308",
-      "enabled": true
+      "enabled": true,
+      "default_category": "workshops_classes"
     },
     {
       "type": "newsletter",
@@ -861,14 +869,16 @@
       "name": "Greenlight Bookstore",
       "format": "eventbrite-organizer",
       "feed_url": "https://www.eventbrite.com/o/greenlight-bookstore-13064382976",
-      "enabled": true
+      "enabled": true,
+      "default_category": "talks_lectures"
     },
     {
       "type": "feed",
       "name": "Photoville",
       "format": "eventbrite-organizer",
       "feed_url": "https://www.eventbrite.com/o/photoville-47122000073",
-      "enabled": true
+      "enabled": true,
+      "default_category": "tours_experiences"
     }
   ],
   "categories": {

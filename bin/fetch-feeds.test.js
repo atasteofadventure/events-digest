@@ -5,12 +5,23 @@ const { fetchFeeds, withinHorizon } = require('./fetch-feeds');
 
 const ICS = 'BEGIN:VCALENDAR\r\nBEGIN:VEVENT\r\nSUMMARY:A\r\nDTSTART:20260711T100000\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nSUMMARY:Ancient\r\nDTSTART:20200101T100000\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nSUMMARY:Far Future\r\nDTSTART:20301231T100000\r\nEND:VEVENT\r\nEND:VCALENDAR';
 
+// Responses expose arrayBuffer + headers (fetchOne reads bytes so it can honor
+// the declared charset). `bytes` (a Uint8Array) overrides `body` for testing
+// non-UTF-8 payloads; `contentType` sets the Content-Type header.
 const fakeFetch = (behavior) => async (url) => {
   const b = behavior[url];
   if (!b) throw new Error('unexpected url ' + url);
   if (b instanceof Error) throw b;
   const status = b.status || 200;
-  return { ok: status === 200, status, text: async () => b.body || '' };
+  const body = b.body || '';
+  const bytes = b.bytes || new TextEncoder().encode(body);
+  return {
+    ok: status === 200,
+    status,
+    headers: { get: (h) => (h.toLowerCase() === 'content-type' ? (b.contentType || '') : null) },
+    text: async () => body,
+    arrayBuffer: async () => bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength),
+  };
 };
 
 const NOW = '2026-07-02T12:00:00';
@@ -91,6 +102,66 @@ test('eventbrite-organizer format parses the embedded blob', async () => {
   assert.equal(events.length, 1);
   assert.equal(events[0].name, 'Workshop');
   assert.equal(events[0].price, 'Free');
+});
+
+test('charset: iso-8859-1 bytes (0xE9 = é) decode correctly, not as U+FFFD', async () => {
+  // Parks RSS declares iso-8859-1; the accented byte must round-trip to "é".
+  const xml = '<?xml version="1.0" encoding="iso-8859-1"?>'
+    + '<rss xmlns:event="x"><channel><item>'
+    + '<title><![CDATA[Café Concert]]></title><link>l</link>'
+    + '<description><![CDATA[Une soirée en plein air.]]></description>'
+    + '<registration_url><![CDATA[]]></registration_url>'
+    + '<event:parkids>B073</event:parkids><event:startdate>2026-07-05</event:startdate>'
+    + '<event:starttime>7:00 pm</event:starttime>'
+    + '<event:location><![CDATA[Café Plaza]]></event:location>'
+    + '<event:categories><![CDATA[Music]]></event:categories></item></channel></rss>';
+  const bytes = new Uint8Array(Buffer.from(xml, 'latin1')); // é -> single byte 0xE9
+  assert.ok(bytes.includes(0xE9)); // sanity: the accented byte is really there
+  const sources = [{ type: 'feed', name: 'NYC Parks', feed_url: 'https://parks/rss.xml', format: 'nycparks-rss', enabled: true }];
+  const { events } = await fetchFeeds(sources, fakeFetch({
+    'https://parks/rss.xml': { bytes, contentType: 'application/xml' }, // no charset in header -> sniff the XML decl
+  }), NOW);
+  assert.equal(events.length, 1);
+  assert.equal(events[0].name, 'Café Concert');
+  assert.equal(events[0].venue, 'Café Plaza');
+  assert.equal(events[0].why, 'Une soirée en plein air.');
+  assert.ok(!(events[0].name + events[0].why + events[0].venue).includes('�'));
+});
+
+test('eventbrite enrichment fills empty why + price from each event page', async () => {
+  const ev = { id: 'e1', name: 'Book Launch', url: 'https://www.eventbrite.com/e/book-launch-e1',
+    start_date: '2026-07-20', start_time: '19:00:00', primary_venue: { name: 'Greenlight' },
+    ticket_availability: {} }; // no summary, no price -> both empty
+  const organizer = '<script>{"organizer":{"upcomingEvents":' + JSON.stringify([ev]) + '}}</script>';
+  const eventPage = '<html><script type="application/ld+json">' + JSON.stringify({
+    '@type': 'Event', name: 'Book Launch', startDate: '2026-07-20T19:00:00-04:00',
+    description: 'An evening with the author, reading and Q&A.',
+    offers: { '@type': 'Offer', price: '12', priceCurrency: 'USD' },
+  }) + '</script></html>';
+  const sources = [{ type: 'feed', name: 'Greenlight (Eventbrite)', feed_url: 'https://eb/o/gl', format: 'eventbrite-organizer', enabled: true }];
+  const { events } = await fetchFeeds(sources, fakeFetch({
+    'https://eb/o/gl': { body: organizer },
+    'https://www.eventbrite.com/e/book-launch-e1': { body: eventPage },
+  }), NOW);
+  assert.equal(events.length, 1);
+  assert.equal(events[0].why, 'An evening with the author, reading and Q&A.');
+  assert.equal(events[0].price, '$12');
+});
+
+test('eventbrite enrichment failure leaves the event intact', async () => {
+  const ev = { id: 'e2', name: 'Talk', url: 'https://www.eventbrite.com/e/talk-e2',
+    start_date: '2026-07-20', start_time: '18:00:00', primary_venue: { name: 'V' },
+    ticket_availability: { is_free: true } }; // price Free (kept), why empty
+  const organizer = '<script>{"organizer":{"upcomingEvents":' + JSON.stringify([ev]) + '}}</script>';
+  const sources = [{ type: 'feed', name: 'X (Eventbrite)', feed_url: 'https://eb/o/x', format: 'eventbrite-organizer', enabled: true }];
+  const { events } = await fetchFeeds(sources, fakeFetch({
+    'https://eb/o/x': { body: organizer },
+    'https://www.eventbrite.com/e/talk-e2': new Error('ECONNRESET'), // enrichment fetch fails
+  }), NOW);
+  assert.equal(events.length, 1); // source did not fail
+  assert.equal(events[0].name, 'Talk');
+  assert.equal(events[0].price, 'Free'); // unchanged
+  assert.equal(events[0].why, ''); // still empty, no crash
 });
 
 test('shouldKeepExisting: total fetch failure must not clobber a good feed file', () => {

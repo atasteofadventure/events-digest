@@ -10,11 +10,66 @@ const path = require('path');
 const {
   icsToEvents, jsonLdToEvents, squarespaceJsonToEvents,
   nycParksRssToEvents, resistorRssToEvents, eventbriteOrganizerToEvents,
+  eventbriteEventPageInfo,
 } = require('../lib/feeds');
 
 const TIMEOUT_MS = 20000;
 const HORIZON_DAYS = 90; // keep today .. +90d (Makeville's gcal carries years of history)
 const UA = 'Mozilla/5.0 (compatible; events-digest/1.0; +https://events-digest.vercel.app)';
+const MAX_ENRICH_PER_SOURCE = 25; // per Eventbrite source (each is one extra fetch)
+
+const REQ_OPTS = () => ({
+  headers: { 'User-Agent': UA, Accept: 'text/calendar, application/json;q=0.9, text/html;q=0.8, */*;q=0.5' },
+  signal: AbortSignal.timeout(TIMEOUT_MS),
+});
+
+// Decode a response body honoring its declared charset. NYC Parks' RSS is
+// iso-8859-1 (accented bytes like 0xE9 for é); res.text() would assume UTF-8
+// and produce U+FFFD. Sniff charset from Content-Type, else the XML/HTML
+// declaration in the first ~200 bytes, else fall back to utf-8. TextDecoder
+// throws on unknown labels, so guard the construction.
+function decodeBody(buf, contentType) {
+  const bytes = new Uint8Array(buf);
+  let charset = '';
+  const ctm = /charset=([^;]+)/i.exec(contentType || '');
+  if (ctm) charset = ctm[1].trim().replace(/["']/g, '');
+  if (!charset) {
+    const head = new TextDecoder('latin1').decode(bytes.subarray(0, 200));
+    const xm = /encoding=["']([^"']+)["']/i.exec(head);
+    if (xm) charset = xm[1].trim();
+  }
+  try {
+    return new TextDecoder(charset || 'utf-8').decode(bytes);
+  } catch {
+    return new TextDecoder('utf-8').decode(bytes); // bogus label -> utf-8
+  }
+}
+
+async function fetchOne(fetchImpl, url) {
+  const res = await fetchImpl(url, REQ_OPTS());
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const ct = res.headers && typeof res.headers.get === 'function' ? res.headers.get('content-type') : '';
+  return decodeBody(await res.arrayBuffer(), ct);
+}
+
+// Eventbrite organizer blobs carry no description and often no price. Fill the
+// gaps from each event's own page (schema.org JSON-LD). Bounded, best-effort:
+// at most MAX_ENRICH_PER_SOURCE fetches, any failure leaves the event as-is.
+async function enrichEventbrite(events, fetchImpl) {
+  let fetched = 0;
+  for (const e of events) {
+    if ((e.why && e.price) || !e.url) continue;
+    if (fetched >= MAX_ENRICH_PER_SOURCE) break;
+    fetched++;
+    try {
+      const info = eventbriteEventPageInfo(await fetchOne(fetchImpl, e.url));
+      if (!e.why && info.why) e.why = info.why;
+      if (!e.price && info.price) e.price = info.price;
+    } catch (err) {
+      console.log(`  enrich FAIL ${e.url}: ${String((err && err.message) || err)}`);
+    }
+  }
+}
 
 // Keep only events from today (NY date) through +HORIZON_DAYS. nowISO is a
 // naive NY-local ISO string; comparison is by date component only.
@@ -27,7 +82,7 @@ function withinHorizon(dateISO, nowISO) {
 }
 
 function parseBody(src, body) {
-  const opts = { sourceName: src.name };
+  const opts = { sourceName: src.name, defaultCategory: src.default_category };
   switch (src.format) {
     case 'ics': return icsToEvents(body, opts);
     case 'jsonld': return jsonLdToEvents(body, opts);
@@ -50,12 +105,9 @@ async function fetchFeeds(sources, fetchImpl, nowISO) {
   const errors = [];
   for (const src of feeds) {
     try {
-      const res = await fetchImpl(src.feed_url, {
-        headers: { 'User-Agent': UA, Accept: 'text/calendar, application/json;q=0.9, text/html;q=0.8, */*;q=0.5' },
-        signal: AbortSignal.timeout(TIMEOUT_MS),
-      });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const parsed = parseBody(src, await res.text());
+      const parsed = parseBody(src, await fetchOne(fetchImpl, src.feed_url));
+      // Eventbrite: backfill empty why/price from each event's own page.
+      if (src.format === 'eventbrite-organizer') await enrichEventbrite(parsed, fetchImpl);
       const kept = parsed.filter((e) => withinHorizon(e.dateISO, nowISO));
       events.push(...kept);
       console.log(`feed ok   ${src.name}: ${kept.length} events (${parsed.length} parsed)`);

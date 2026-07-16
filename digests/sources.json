@@ -2,19 +2,31 @@
   "counts": [
     {
       "source": "NYC Parks",
-      "count": 188
+      "count": 197
+    },
+    {
+      "source": "The Skint",
+      "count": 98
+    },
+    {
+      "source": "Gary's Guide",
+      "count": 70
+    },
+    {
+      "source": "New York Adventure Club",
+      "count": 52
     },
     {
       "source": "Fort Greene Park Conservancy",
-      "count": 51
-    },
-    {
-      "source": "Club Free Time",
-      "count": 44
+      "count": 49
     },
     {
       "source": "Makeville Studio",
-      "count": 41
+      "count": 42
+    },
+    {
+      "source": "Club Free Time",
+      "count": 42
     },
     {
       "source": "Green-Wood Cemetery",
@@ -25,83 +37,55 @@
       "count": 30
     },
     {
-      "source": "Museum of the Moving Image",
-      "count": 22
-    },
-    {
-      "source": "Gary's Guide",
-      "count": 22
-    },
-    {
-      "source": "New York Public Library",
-      "count": 19
-    },
-    {
-      "source": "New York Transit Museum",
-      "count": 18
-    },
-    {
-      "source": "NY Historical Society",
-      "count": 16
+      "source": "Governors Island",
+      "count": 14
     },
     {
       "source": "NY Mycological Society",
-      "count": 14
+      "count": 13
     },
     {
       "source": "Greenlight Bookstore",
       "count": 11
     },
     {
-      "source": "New York Botanical Garden",
+      "source": "NYPL",
       "count": 10
     },
     {
-      "source": "Pioneer Works",
-      "count": 8
+      "source": "Little Island",
+      "count": 10
     },
     {
       "source": "AIANY",
-      "count": 7
+      "count": 9
     },
     {
-      "source": "NYC Resistor",
-      "count": 7
-    },
-    {
-      "source": "Governors Island",
-      "count": 5
+      "source": "Museum of the City of New York",
+      "count": 9
     },
     {
       "source": "Brooklyn Museum",
-      "count": 5
+      "count": 8
     },
     {
-      "source": "The Skint",
+      "source": "NYC Resistor",
+      "count": 6
+    },
+    {
+      "source": "Printed Matter",
+      "count": 4
+    },
+    {
+      "source": "Photoville",
       "count": 3
     },
     {
-      "source": "Municipal Art Society",
-      "count": 3
-    },
-    {
-      "source": "Cooper Union",
+      "source": "Cerebral Valley",
       "count": 2
     },
     {
       "source": "Brooklyn Brainery",
-      "count": 2
-    },
-    {
-      "source": "Photoville",
-      "count": 2
-    },
-    {
-      "source": "Museum of the City of New York",
-      "count": 1
-    },
-    {
-      "source": "Open House New York",
       "count": 1
     },
     {
@@ -113,9 +97,8 @@
     "Thought Gallery",
     "Center for Fiction",
     "BRIC",
-    "Cerebral Valley",
     "Creative Coding NYC",
     "Rooftop Films"
   ],
-  "contributing": 27
+  "contributing": 23
 }

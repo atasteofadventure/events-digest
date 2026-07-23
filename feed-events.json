@@ -1,102 +1,6 @@
 {
-  "generated": "2026-07-16T22:31:03.904Z",
+  "generated": "2026-07-23T22:32:29.140Z",
   "events": [
-    {
-      "id": "feed-fort-greene-park-conservancy-2026-07-18-shala-yoga",
-      "name": "Shala Yoga",
-      "dateISO": "2026-07-18T11:00:00",
-      "time": "11:00 AM",
-      "venue": "Fort Greene Park Conservancy",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.fortgreenepark.org/calendar/shala-yoga-071826",
-      "category": "sports_fitness",
-      "source": "Fort Greene Park Conservancy",
-      "via": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "why": "Join Shala Yoga in Fort Greene Park on the Eastern Panel of the Monument."
-    },
-    {
-      "id": "feed-fort-greene-park-conservancy-2026-07-18-one-love-community-fridge-packing-day",
-      "name": "One Love Community Fridge Packing Day",
-      "dateISO": "2026-07-18T11:00:00",
-      "time": "11:00 AM",
-      "venue": "Fort Greene Park Conservancy",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.fortgreenepark.org/calendar/one-love-community-fridge-volunteer-day",
-      "category": "miscellaneous",
-      "source": "Fort Greene Park Conservancy",
-      "via": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-fort-greene-park-conservancy-2026-07-18-young-naturalists-garden-day",
-      "name": "Young Naturalists: Garden day",
-      "dateISO": "2026-07-18T12:30:00",
-      "time": "12:30 PM",
-      "venue": "Fort Greene Park Conservancy",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.fortgreenepark.org/calendar/yn-071826",
-      "category": "miscellaneous",
-      "source": "Fort Greene Park Conservancy",
-      "via": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "why": "Young Naturalists is a youth-led program for kids ages 5-13 to share and grow their knowledge about the world around them using Fort Greene Park as their open lab. Sessions are free to attend! Simply…"
-    },
-    {
-      "id": "feed-fort-greene-park-conservancy-2026-07-20-amp-d-class-with-chelsea-piers-fitness",
-      "name": "AMP'd Class with Chelsea Piers Fitness",
-      "dateISO": "2026-07-20T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Fort Greene Park Conservancy",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.fortgreenepark.org/calendar/ampd-chelsea-piers-072026",
-      "category": "sports_fitness",
-      "source": "Fort Greene Park Conservancy",
-      "via": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "why": "Hit the grass and push your body to new limits with Chelsea Pier’s Coach Declan Julien at the top of Fort Greene Park, right next to the monument! This free, high-intensity interval training class…"
-    },
-    {
-      "id": "feed-fort-greene-park-conservancy-2026-07-21-run-club-with-chelsea-piers-fitness",
-      "name": "Run Club with Chelsea Piers Fitness",
-      "dateISO": "2026-07-21T18:30:00",
-      "time": "6:30 PM",
-      "venue": "Fort Greene Park Conservancy",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.fortgreenepark.org/calendar/runclub-chelsea-piers-072126",
-      "category": "sports_fitness",
-      "source": "Fort Greene Park Conservancy",
-      "via": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "why": "Join Coach Skye Massey for a 3-5 mile run starting at the monument in Fort Greene Park. Whether you're training for your first marathon or simply looking for a great workout and new connections, this…"
-    },
-    {
-      "id": "feed-fort-greene-park-conservancy-2026-07-22-storytime-in-the-park",
-      "name": "Storytime in the Park",
-      "dateISO": "2026-07-22T11:00:00",
-      "time": "11:00 AM",
-      "venue": "Fort Greene Park Conservancy",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.fortgreenepark.org/calendar/storytime-in-the-park-072226",
-      "category": "miscellaneous",
-      "source": "Fort Greene Park Conservancy",
-      "via": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "why": "Sing, read, and play with librarians from Brooklyn Public Library! Have fun hearing great picture books read aloud and playing with other children during this program featuring guest musical artists…"
-    },
     {
       "id": "feed-fort-greene-park-conservancy-2026-07-25-bi-weekly-volunteer-days",
       "name": "Bi-Weekly Volunteer Days",
@@ -594,6 +498,38 @@
       "why": "Hit the grass and push your body to new limits with Chelsea Pier’s Coach Declan Julien at the top of Fort Greene Park, right next to the monument! This free, high-intensity interval training class…"
     },
     {
+      "id": "feed-fort-greene-park-conservancy-2026-09-01-run-club-with-chelsea-piers-fitness",
+      "name": "Run Club with Chelsea Piers Fitness",
+      "dateISO": "2026-09-01T18:30:00",
+      "time": "6:30 PM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/runclub-chelsea-piers-090126",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Join Coach Skye Massey for a 3-5 mile run starting at the monument in Fort Greene Park. Whether you're training for your first marathon or simply looking for a great workout and new connections, this…"
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-09-02-storytime-in-the-park",
+      "name": "Storytime in the Park",
+      "dateISO": "2026-09-02T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/storytime-in-the-park-090226",
+      "category": "miscellaneous",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Sing, read, and play with librarians from Brooklyn Public Library! Have fun hearing great picture books read aloud and playing with other children during this program featuring guest musical artists…"
+    },
+    {
       "id": "feed-fort-greene-park-conservancy-2026-09-05-bi-weekly-volunteer-days",
       "name": "Bi-Weekly Volunteer Days",
       "dateISO": "2026-09-05T10:00:00",
@@ -608,6 +544,70 @@
         "feed: Fort Greene Park Conservancy"
       ],
       "why": "Come out for our Bi-Weekly Volunteer Days at Fort Greene Park! Open to volunteer groups, local organizations, and your average joes, Bi-weekly Volunteer Day Projects vary according to need, but…"
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-09-05-shala-yoga",
+      "name": "Shala Yoga",
+      "dateISO": "2026-09-05T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/shala-yoga-090526-f8cl5-n4k74-l3ml9-l7xkj-ay2g2-l9chb-t3mnk-2k4en-n9bfe-esltn-gn5kb-ylsbd-9pj3n-gx9zm-rys9t-k7649-8pd3m",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Join Shala Yoga in Fort Greene Park on the Eastern Panel of the Monument."
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-09-07-amp-d-class-with-chelsea-piers-fitness",
+      "name": "AMP'd Class with Chelsea Piers Fitness",
+      "dateISO": "2026-09-07T18:00:00",
+      "time": "6:00 PM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/ampd-chelsea-piers-090726",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Hit the grass and push your body to new limits with Chelsea Pier’s Coach Declan Julien at the top of Fort Greene Park, right next to the monument! This free, high-intensity interval training class…"
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-09-08-run-club-with-chelsea-piers-fitness",
+      "name": "Run Club with Chelsea Piers Fitness",
+      "dateISO": "2026-09-08T18:30:00",
+      "time": "6:30 PM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/runclub-chelsea-piers-090826",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Join Coach Skye Massey for a 3-5 mile run starting at the monument in Fort Greene Park. Whether you're training for your first marathon or simply looking for a great workout and new connections, this…"
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-09-09-storytime-in-the-park",
+      "name": "Storytime in the Park",
+      "dateISO": "2026-09-09T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/storytime-in-the-park-090926",
+      "category": "miscellaneous",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Sing, read, and play with librarians from Brooklyn Public Library! Have fun hearing great picture books read aloud and playing with other children during this program featuring guest musical artists…"
     },
     {
       "id": "feed-fort-greene-park-conservancy-2026-09-09-summer-movies-in-the-park-the-namesake",
@@ -626,6 +626,22 @@
       "why": "We heard you loud and clear...Summer Movies in the Park are back! Prospect Park Alliance, Fort Greene Park Conservancy and Rooftop Films announce Summer Movies in the Park, presented by…"
     },
     {
+      "id": "feed-fort-greene-park-conservancy-2026-09-12-shala-yoga",
+      "name": "Shala Yoga",
+      "dateISO": "2026-09-12T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/shala-yoga-091226-f8cl5-n4k74-l3ml9-l7xkj-ay2g2-l9chb-t3mnk-2k4en-n9bfe-esltn-gn5kb-ylsbd-9pj3n-gx9zm-rys9t-k7649-8pd3m-gswm4",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Join Shala Yoga in Fort Greene Park on the Eastern Panel of the Monument."
+    },
+    {
       "id": "feed-fort-greene-park-conservancy-2026-09-12-fort-greene-park-jazz-festival",
       "name": "Fort Greene Park Jazz Festival",
       "dateISO": "2026-09-12T15:00:00",
@@ -640,6 +656,54 @@
         "feed: Fort Greene Park Conservancy"
       ],
       "why": "The Jazz Festival provides live jazz entertainment for families, neighborhoods, communities, and New Yorkers each year. Bring a blanket and some friends to this event! Rain Date: September 13"
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-09-14-amp-d-class-with-chelsea-piers-fitness",
+      "name": "AMP'd Class with Chelsea Piers Fitness",
+      "dateISO": "2026-09-14T18:00:00",
+      "time": "6:00 PM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/ampd-chelsea-piers-091426",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Hit the grass and push your body to new limits with Chelsea Pier’s Coach Declan Julien at the top of Fort Greene Park, right next to the monument! This free, high-intensity interval training class…"
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-09-15-run-club-with-chelsea-piers-fitness",
+      "name": "Run Club with Chelsea Piers Fitness",
+      "dateISO": "2026-09-15T18:30:00",
+      "time": "6:30 PM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/runclub-chelsea-piers-091526",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Join Coach Skye Massey for a 3-5 mile run starting at the monument in Fort Greene Park. Whether you're training for your first marathon or simply looking for a great workout and new connections, this…"
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-09-16-storytime-in-the-park",
+      "name": "Storytime in the Park",
+      "dateISO": "2026-09-16T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/storytime-in-the-park-091626",
+      "category": "miscellaneous",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Sing, read, and play with librarians from Brooklyn Public Library! Have fun hearing great picture books read aloud and playing with other children during this program featuring guest musical artists…"
     },
     {
       "id": "feed-fort-greene-park-conservancy-2026-09-19-bi-weekly-volunteer-days",
@@ -674,6 +738,150 @@
       "why": "Experience the Black History and Culture of Fort Greene Tour led by local historian, Suzanne Spellen. Working with Spellen and our Tour Advisory Committee, we develop and refine the route and…"
     },
     {
+      "id": "feed-fort-greene-park-conservancy-2026-09-19-shala-yoga",
+      "name": "Shala Yoga",
+      "dateISO": "2026-09-19T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/shala-yoga-091926-f8cl5-n4k74-l3ml9-l7xkj-ay2g2-l9chb-t3mnk-2k4en-n9bfe-esltn-gn5kb-ylsbd-9pj3n-gx9zm-rys9t-k7649-8pd3m-gswm4-tdyge",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Join Shala Yoga in Fort Greene Park on the Eastern Panel of the Monument."
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-09-21-amp-d-class-with-chelsea-piers-fitness",
+      "name": "AMP'd Class with Chelsea Piers Fitness",
+      "dateISO": "2026-09-21T18:00:00",
+      "time": "6:00 PM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/ampd-chelsea-piers-092126",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Hit the grass and push your body to new limits with Chelsea Pier’s Coach Declan Julien at the top of Fort Greene Park, right next to the monument! This free, high-intensity interval training class…"
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-09-22-run-club-with-chelsea-piers-fitness",
+      "name": "Run Club with Chelsea Piers Fitness",
+      "dateISO": "2026-09-22T18:30:00",
+      "time": "6:30 PM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/runclub-chelsea-piers-092226",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Join Coach Skye Massey for a 3-5 mile run starting at the monument in Fort Greene Park. Whether you're training for your first marathon or simply looking for a great workout and new connections, this…"
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-09-23-storytime-in-the-park",
+      "name": "Storytime in the Park",
+      "dateISO": "2026-09-23T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/storytime-in-the-park-092326",
+      "category": "miscellaneous",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Sing, read, and play with librarians from Brooklyn Public Library! Have fun hearing great picture books read aloud and playing with other children during this program featuring guest musical artists…"
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-09-25-the-fling",
+      "name": "The Fling",
+      "dateISO": "2026-09-25T18:30:00",
+      "time": "6:30 PM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/the-fling-2024-xymcp-yr8jw",
+      "category": "miscellaneous",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Mark your calendars for The Fling at Fort Greene Park, a joyful, community-centered event to support the Conservancy and our mission to enrich and nurture Fort Greene Park as a public space that puts…"
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-09-26-shala-yoga",
+      "name": "Shala Yoga",
+      "dateISO": "2026-09-26T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/shala-yoga-092626-f8cl5-n4k74-l3ml9-l7xkj-ay2g2-l9chb-t3mnk-2k4en-n9bfe-esltn-gn5kb-ylsbd-9pj3n-gx9zm-rys9t-k7649-8pd3m-gswm4-tdyge-63wss",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Join Shala Yoga in Fort Greene Park on the Eastern Panel of the Monument."
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-09-28-amp-d-class-with-chelsea-piers-fitness",
+      "name": "AMP'd Class with Chelsea Piers Fitness",
+      "dateISO": "2026-09-28T18:00:00",
+      "time": "6:00 PM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/ampd-chelsea-piers-092826",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Hit the grass and push your body to new limits with Chelsea Pier’s Coach Declan Julien at the top of Fort Greene Park, right next to the monument! This free, high-intensity interval training class…"
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-09-29-run-club-with-chelsea-piers-fitness",
+      "name": "Run Club with Chelsea Piers Fitness",
+      "dateISO": "2026-09-29T18:30:00",
+      "time": "6:30 PM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/runclub-chelsea-piers-092926",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Join Coach Skye Massey for a 3-5 mile run starting at the monument in Fort Greene Park. Whether you're training for your first marathon or simply looking for a great workout and new connections, this…"
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-09-30-storytime-in-the-park",
+      "name": "Storytime in the Park",
+      "dateISO": "2026-09-30T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/storytime-in-the-park-093026",
+      "category": "miscellaneous",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Sing, read, and play with librarians from Brooklyn Public Library! Have fun hearing great picture books read aloud and playing with other children during this program featuring guest musical artists…"
+    },
+    {
       "id": "feed-fort-greene-park-conservancy-2026-10-03-bi-weekly-volunteer-days",
       "name": "Bi-Weekly Volunteer Days",
       "dateISO": "2026-10-03T10:00:00",
@@ -690,148 +898,148 @@
       "why": "Come out for our Bi-Weekly Volunteer Days at Fort Greene Park! Open to volunteer groups, local organizations, and your average joes, Bi-weekly Volunteer Day Projects vary according to need, but…"
     },
     {
-      "id": "feed-green-wood-cemetery-2026-07-16-a-night-at-niblo-s-garden-sold-out",
-      "name": "A Night at Niblo’s Garden (Sold Out)",
-      "dateISO": "2026-07-16T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/a-night-at-niblos-garden-13/2026-07-16/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": "Prepare to be amazed as Green-Wood’s annual spectacular roars back to life under the summer stars! This sellout event transports you to the dazzling world of nineteenth-century entertainment, where…"
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-07-17-a-night-at-niblo-s-garden-sold-out",
-      "name": "A Night at Niblo’s Garden (Sold Out)",
-      "dateISO": "2026-07-17T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/a-night-at-niblos-garden-13/2026-07-17/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": "Prepare to be amazed as Green-Wood’s annual spectacular roars back to life under the summer stars! This sellout event transports you to the dazzling world of nineteenth-century entertainment, where…"
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-07-18-america250-fourth-of-july-trolley-tour-a",
-      "name": "America250: Fourth of July Trolley Tour at Green-Wood",
-      "dateISO": "2026-07-18T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/america250-fourth-of-july-trolley-tour-at-green-wood/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": "Explore Green-Wood’s Revolutionary War history on a Fourth of July trolley tour through the site of the Battle of Brooklyn! Travel back to the summer of 1776 and explore Brooklyn’s pivotal role in…"
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-07-18-explore-green-wood-s-fungal-biodiversity",
-      "name": "Explore Green-Wood’s Fungal Biodiversity: Mushroom Hotspot",
-      "dateISO": "2026-07-18T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/explore-green-woods-fungal-biodiversity-mushroom-hotspot/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": "Come learn about fungi at Green-Wood! Join MYCOmmunity Mapping Project on a community science dig to learn about the fungal lives beneath our feet. We will take soil samples in one of Green-Wood’s…"
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-07-18-landscapes-in-dialogue-a-historical-ecol",
-      "name": "Landscapes in Dialogue: A Historical Ecology Walk at Green-Wood",
-      "dateISO": "2026-07-18T11:00:00",
+      "id": "feed-fort-greene-park-conservancy-2026-10-03-shala-yoga",
+      "name": "Shala Yoga",
+      "dateISO": "2026-10-03T11:00:00",
       "time": "11:00 AM",
-      "venue": "Green-Wood Cemetery",
+      "venue": "Fort Greene Park Conservancy",
       "neighborhood": "",
       "price": "",
-      "url": "https://www.green-wood.com/event/landscapes-in-dialogue-a-historical-ecology-walk-at-green-wood/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
+      "url": "https://www.fortgreenepark.org/calendar/shala-yoga-100326-f8cl5-n4k74-l3ml9-l7xkj-ay2g2-l9chb-t3mnk-2k4en-n9bfe-esltn-gn5kb-ylsbd-9pj3n-gx9zm-rys9t-k7649-8pd3m-gswm4-tdyge-63wss-ey2n7",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
       "via": [
-        "feed: Green-Wood Cemetery"
+        "feed: Fort Greene Park Conservancy"
       ],
-      "why": "Join NYBG’s Dr. Eric W. Sanderson and GWC’s Director of Living Collections and Curator, Sara Evans, for a conversational walking tour that brings Brooklyn’s past and present landscapes into dialogue…"
+      "why": "Join Shala Yoga in Fort Greene Park on the Eastern Panel of the Monument."
     },
     {
-      "id": "feed-green-wood-cemetery-2026-07-18-discover-green-wood-trolley-tour",
-      "name": "Discover Green-Wood Trolley Tour",
-      "dateISO": "2026-07-18T13:00:00",
-      "time": "1:00 PM",
-      "venue": "Green-Wood Cemetery",
+      "id": "feed-fort-greene-park-conservancy-2026-10-06-run-club-with-chelsea-piers-fitness",
+      "name": "Run Club with Chelsea Piers Fitness",
+      "dateISO": "2026-10-06T18:30:00",
+      "time": "6:30 PM",
+      "venue": "Fort Greene Park Conservancy",
       "neighborhood": "",
       "price": "",
-      "url": "https://www.green-wood.com/event/discover-green-wood-trolley-tour-19/2026-07-18/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
+      "url": "https://www.fortgreenepark.org/calendar/runclub-chelsea-piers-100626",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
       "via": [
-        "feed: Green-Wood Cemetery"
+        "feed: Fort Greene Park Conservancy"
       ],
-      "why": "Hop on board our cozy, warm trolley for an expert-led tour of Green-Wood’s historic landscape and some of the Cemetery’s most intriguing permanent residents. Whether you’re a first-time visitor or a…"
+      "why": "Join Coach Skye Massey for a 3-5 mile run starting at the monument in Fort Greene Park. Whether you're training for your first marathon or simply looking for a great workout and new connections, this…"
     },
     {
-      "id": "feed-green-wood-cemetery-2026-07-19-birding-in-peace",
-      "name": "Birding in Peace",
-      "dateISO": "2026-07-19T06:00:00",
-      "time": "6:00 AM",
-      "venue": "Green-Wood Cemetery",
+      "id": "feed-fort-greene-park-conservancy-2026-10-07-storytime-in-the-park",
+      "name": "Storytime in the Park",
+      "dateISO": "2026-10-07T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Fort Greene Park Conservancy",
       "neighborhood": "",
       "price": "",
-      "url": "https://www.green-wood.com/event/birding-in-peace-30/2026-07-19/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
+      "url": "https://www.fortgreenepark.org/calendar/storytime-in-the-park-100726",
+      "category": "miscellaneous",
+      "source": "Fort Greene Park Conservancy",
       "via": [
-        "feed: Green-Wood Cemetery"
+        "feed: Fort Greene Park Conservancy"
       ],
-      "why": "Before our gates open to the public, this early morning walking tour provides special access to discover the many birds that call Green-Wood home, at least temporarily. Throughout the season, you’ll…"
+      "why": "Sing, read, and play with librarians from Brooklyn Public Library! Have fun hearing great picture books read aloud and playing with other children during this program featuring guest musical artists…"
     },
     {
-      "id": "feed-green-wood-cemetery-2026-07-19-grave-beginnings-walking-green-wood",
-      "name": "Grave Beginnings: Walking Green-Wood",
-      "dateISO": "2026-07-19T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Green-Wood Cemetery",
+      "id": "feed-fort-greene-park-conservancy-2026-10-10-shala-yoga",
+      "name": "Shala Yoga",
+      "dateISO": "2026-10-10T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Fort Greene Park Conservancy",
       "neighborhood": "",
       "price": "",
-      "url": "https://www.green-wood.com/event/grave-beginnings-walking-green-wood-2/2026-07-19/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
+      "url": "https://www.fortgreenepark.org/calendar/shala-yoga-101026-f8cl5-n4k74-l3ml9-l7xkj-ay2g2-l9chb-t3mnk-2k4en-n9bfe-esltn-gn5kb-ylsbd-9pj3n-gx9zm-rys9t-k7649-8pd3m-gswm4-tdyge-63wss-ey2n7-xppw7",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
       "via": [
-        "feed: Green-Wood Cemetery"
+        "feed: Fort Greene Park Conservancy"
       ],
-      "why": "Green-Wood’s stunning landscape and remarkable history on this free 90-minute walking tour. Perfect for first-time visitors, this introductory tour takes you on a leisurely walk to hear about the…"
+      "why": "Join Shala Yoga in Fort Greene Park on the Eastern Panel of the Monument."
     },
     {
-      "id": "feed-green-wood-cemetery-2026-07-21-toddler-takeover-at-the-green-house",
-      "name": "Toddler Takeover at the Green-House",
-      "dateISO": "2026-07-21T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Green-Wood Cemetery",
+      "id": "feed-fort-greene-park-conservancy-2026-10-13-run-club-with-chelsea-piers-fitness",
+      "name": "Run Club with Chelsea Piers Fitness",
+      "dateISO": "2026-10-13T18:30:00",
+      "time": "6:30 PM",
+      "venue": "Fort Greene Park Conservancy",
       "neighborhood": "",
       "price": "",
-      "url": "https://www.green-wood.com/event/toddler-takeover-at-the-green-house-3/2026-07-21/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
+      "url": "https://www.fortgreenepark.org/calendar/runclub-chelsea-piers-101326",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
       "via": [
-        "feed: Green-Wood Cemetery"
+        "feed: Fort Greene Park Conservancy"
       ],
-      "why": "Move over, big kids! On Tuesday mornings, it’s toddler time at the Green-House. Bring your little ones to the most fun pop-up play zone in Sunset Park for a morning of open play and sensory…"
+      "why": "Join Coach Skye Massey for a 3-5 mile run starting at the monument in Fort Greene Park. Whether you're training for your first marathon or simply looking for a great workout and new connections, this…"
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-10-14-storytime-in-the-park",
+      "name": "Storytime in the Park",
+      "dateISO": "2026-10-14T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/storytime-in-the-park-101426",
+      "category": "miscellaneous",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Sing, read, and play with librarians from Brooklyn Public Library! Have fun hearing great picture books read aloud and playing with other children during this program featuring guest musical artists…"
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-10-17-black-history-and-culture-tour-of-fort-g",
+      "name": "Black History And Culture Tour Of Fort Greene",
+      "dateISO": "2026-10-17T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/black-history-culture-tour-101726",
+      "category": "miscellaneous",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Experience the Black History and Culture of Fort Greene Tour led by local historian, Suzanne Spellen. Working with Spellen and our Tour Advisory Committee, we develop and refine the route and…"
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-10-17-shala-yoga",
+      "name": "Shala Yoga",
+      "dateISO": "2026-10-17T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/shala-yoga-101726-f8cl5-n4k74-l3ml9-l7xkj-ay2g2-l9chb-t3mnk-2k4en-n9bfe-esltn-gn5kb-ylsbd-9pj3n-gx9zm-rys9t-k7649-8pd3m-gswm4-tdyge-63wss-ey2n7-xppw7-nfaa9",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Join Shala Yoga in Fort Greene Park on the Eastern Panel of the Monument."
+    },
+    {
+      "id": "feed-fort-greene-park-conservancy-2026-10-20-run-club-with-chelsea-piers-fitness",
+      "name": "Run Club with Chelsea Piers Fitness",
+      "dateISO": "2026-10-20T18:30:00",
+      "time": "6:30 PM",
+      "venue": "Fort Greene Park Conservancy",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.fortgreenepark.org/calendar/runclub-chelsea-piers-102026",
+      "category": "sports_fitness",
+      "source": "Fort Greene Park Conservancy",
+      "via": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "why": "Join Coach Skye Massey for a 3-5 mile run starting at the monument in Fort Greene Park. Whether you're training for your first marathon or simply looking for a great workout and new connections, this…"
     },
     {
       "id": "feed-green-wood-cemetery-2026-07-23-death-cafe",
@@ -841,13 +1049,29 @@
       "venue": "Green-Wood Cemetery",
       "neighborhood": "",
       "price": "",
-      "url": "https://www.green-wood.com/event/death-cafe-23/2026-07-23/",
+      "url": "https://www.green-wood.com/event/death-cafe-25/",
       "category": "tours_experiences",
       "source": "Green-Wood Cemetery",
       "via": [
         "feed: Green-Wood Cemetery"
       ],
       "why": "Death Cafe is a simple yet powerful idea: bring people together to openly discuss one of life’s greatest truths—death. With thousands of chapters in over 90 countries, Death Cafes are informal…"
+    },
+    {
+      "id": "feed-green-wood-cemetery-2026-07-23-rooftop-films-presents-the-oldest-person",
+      "name": "Rooftop Films Presents: The Oldest Person in the World",
+      "dateISO": "2026-07-23T19:45:00",
+      "time": "7:45 PM",
+      "venue": "Green-Wood Cemetery",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.green-wood.com/event/rooftop-films-presents-the-oldest-person-in-the-world/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
+      "via": [
+        "feed: Green-Wood Cemetery"
+      ],
+      "why": "The Oldest Person in the World is a decade-long odyssey chronicling the ever-changing record holders of the title of oldest person alive. As the title inevitably passes from one supercentenarian to…"
     },
     {
       "id": "feed-green-wood-cemetery-2026-07-24-green-wood-after-hours",
@@ -944,6 +1168,22 @@
         "feed: Green-Wood Cemetery"
       ],
       "why": "Green-Wood’s leisurely walking group, Rest in Pace. This welcoming gathering is designed for anyone who loves a good stroll and even better company. Together, we’ll meander through the Cemetery’s…"
+    },
+    {
+      "id": "feed-green-wood-cemetery-2026-07-26-explore-green-wood-s-fungal-biodiversity",
+      "name": "Explore Green-Wood’s Fungal Biodiversity: Mushroom Hotspot",
+      "dateISO": "2026-07-26T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Green-Wood Cemetery",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.green-wood.com/event/explore-green-woods-fungal-biodiversity-mushroom-hotspot/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
+      "via": [
+        "feed: Green-Wood Cemetery"
+      ],
+      "why": "Important Message: Due to the weather, this program was postponed to Sunday, July 26th, from 10am–12pm. Thank you for your understanding! Come learn about fungi at Green-Wood! Join MYCOmmunity…"
     },
     {
       "id": "feed-green-wood-cemetery-2026-07-26-grave-beginnings-green-wood-by-trolley",
@@ -1170,116 +1410,116 @@
       "why": "Green-Wood’s stunning landscapes, where history, nature, and community come together. Designed for parents and caregivers, this tour offers the perfect blend of discovery and connection as you…"
     },
     {
-      "id": "feed-gowanus-dredgers-2026-07-18-free-walk-up-paddling-2nd-st",
-      "name": "FREE Walk-Up Paddling - 2nd St.",
-      "dateISO": "2026-07-18T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "id": "feed-green-wood-cemetery-2026-08-07-green-wood-after-hours",
+      "name": "Green-Wood After Hours",
+      "dateISO": "2026-08-07T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Green-Wood Cemetery",
       "neighborhood": "",
       "price": "",
-      "url": "https://gowanusdredgers.org/event/free-walk-up-paddling-2nd-st/2026-07-18/",
-      "category": "sports_fitness",
-      "source": "Gowanus Dredgers",
+      "url": "https://www.green-wood.com/event/green-wood-after-hours-47/2026-08-07/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
       "via": [
-        "feed: Gowanus Dredgers"
+        "feed: Green-Wood Cemetery"
       ],
-      "why": "Dreams of Water, Bodies of Earth is a dual exhibition that explores the intersection of natural and synthetic ecosystems through radiant aquatic installations and fantastical entomological paintings…"
+      "why": "Explore Green-Wood under the night sky, where the Cemetery transforms after dark. Discover the stories of remarkable New Yorkers who shaped history and culture and end the evening with rare access to…"
     },
     {
-      "id": "feed-gowanus-dredgers-2026-07-18-brooklyn-tides-excerpts-from-new-york-wa",
-      "name": "Brooklyn Tides: Excerpts from New York Waterfront Diary",
-      "dateISO": "2026-07-18T13:00:00",
+      "id": "feed-green-wood-cemetery-2026-08-08-discover-green-wood-trolley-tour",
+      "name": "Discover Green-Wood Trolley Tour",
+      "dateISO": "2026-08-08T13:00:00",
       "time": "1:00 PM",
-      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "venue": "Green-Wood Cemetery",
       "neighborhood": "",
       "price": "",
-      "url": "https://gowanusdredgers.org/event/brooklyn-tides-excerpts-from-new-york-waterfront-diary/2026-07-18/",
-      "category": "sports_fitness",
-      "source": "Gowanus Dredgers",
+      "url": "https://www.green-wood.com/event/discover-green-wood-trolley-tour-19/2026-08-08/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
       "via": [
-        "feed: Gowanus Dredgers"
+        "feed: Green-Wood Cemetery"
       ],
-      "why": "Dreams of Water, Bodies of Earth is a dual exhibition that explores the intersection of natural and synthetic ecosystems through radiant aquatic installations and fantastical entomological paintings…"
+      "why": "Hop on board our cozy, warm trolley for an expert-led tour of Green-Wood’s historic landscape and some of the Cemetery’s most intriguing permanent residents. Whether you’re a first-time visitor or a…"
     },
     {
-      "id": "feed-gowanus-dredgers-2026-07-19-a-persistence-of-cormorants-poetry-readi",
-      "name": "A Persistence of Cormorants Poetry Reading",
-      "dateISO": "2026-07-19T13:30:00",
-      "time": "1:30 PM",
-      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "id": "feed-green-wood-cemetery-2026-08-08-revolutionary-spirits",
+      "name": "Revolutionary Spirits",
+      "dateISO": "2026-08-08T15:30:00",
+      "time": "3:30 PM",
+      "venue": "Green-Wood Cemetery",
       "neighborhood": "",
       "price": "",
-      "url": "https://gowanusdredgers.org/event/a-persistence-of-cormorants-poetry-reading-3/2026-07-19/",
-      "category": "sports_fitness",
-      "source": "Gowanus Dredgers",
+      "url": "https://www.green-wood.com/event/revolutionary-spirits-7/2026-08-08/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
       "via": [
-        "feed: Gowanus Dredgers"
+        "feed: Green-Wood Cemetery"
       ],
-      "why": "Dreams of Water, Bodies of Earth is a dual exhibition that explores the intersection of natural and synthetic ecosystems through radiant aquatic installations and fantastical entomological paintings…"
+      "why": "Courtesy of Fort Hamilton Distillery Delve into the storied past of distilled spirits in Brooklyn with Green-Wood and our neighbors at Fort Hamilton Distillery. The afternoon kicks off with a trolley…"
     },
     {
-      "id": "feed-gowanus-dredgers-2026-07-20-monthly-meeting-paddle",
-      "name": "Monthly Meeting + Paddle",
-      "dateISO": "2026-07-20T18:30:00",
-      "time": "6:30 PM",
-      "venue": "Gowanus Dredgers",
+      "id": "feed-green-wood-cemetery-2026-08-08-green-wood-after-hours",
+      "name": "Green-Wood After Hours",
+      "dateISO": "2026-08-08T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Green-Wood Cemetery",
       "neighborhood": "",
       "price": "",
-      "url": "https://gowanusdredgers.org/event/monthly-meeting-paddle-2/2026-07-20/",
-      "category": "sports_fitness",
-      "source": "Gowanus Dredgers",
+      "url": "https://www.green-wood.com/event/green-wood-after-hours-47/2026-08-08/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
       "via": [
-        "feed: Gowanus Dredgers"
+        "feed: Green-Wood Cemetery"
       ],
-      "why": "Dreams of Water, Bodies of Earth is a dual exhibition that explores the intersection of natural and synthetic ecosystems through radiant aquatic installations and fantastical entomological paintings…"
+      "why": "Explore Green-Wood under the night sky, where the Cemetery transforms after dark. Discover the stories of remarkable New Yorkers who shaped history and culture and end the evening with rare access to…"
     },
     {
-      "id": "feed-gowanus-dredgers-2026-07-21-gowanus-jug-string-band-sessions",
-      "name": "Gowanus Jug & String Band Sessions",
-      "dateISO": "2026-07-21T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "id": "feed-green-wood-cemetery-2026-08-09-birding-in-peace",
+      "name": "Birding in Peace",
+      "dateISO": "2026-08-09T06:00:00",
+      "time": "6:00 AM",
+      "venue": "Green-Wood Cemetery",
       "neighborhood": "",
       "price": "",
-      "url": "https://gowanusdredgers.org/event/gowanus-jug-string-band-sessions-3/2026-07-21/",
-      "category": "sports_fitness",
-      "source": "Gowanus Dredgers",
+      "url": "https://www.green-wood.com/event/birding-in-peace-30/2026-08-09/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
       "via": [
-        "feed: Gowanus Dredgers"
+        "feed: Green-Wood Cemetery"
       ],
-      "why": "Dreams of Water, Bodies of Earth is a dual exhibition that explores the intersection of natural and synthetic ecosystems through radiant aquatic installations and fantastical entomological paintings…"
+      "why": "Before our gates open to the public, this early morning walking tour provides special access to discover the many birds that call Green-Wood home, at least temporarily. Throughout the season, you’ll…"
     },
     {
-      "id": "feed-gowanus-dredgers-2026-07-22-free-walk-up-paddling-2nd-st",
-      "name": "FREE Walk-Up Paddling - 2nd St.",
-      "dateISO": "2026-07-22T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "id": "feed-green-wood-cemetery-2026-08-09-grave-beginnings-green-wood-by-trolley",
+      "name": "Grave Beginnings: Green-Wood by Trolley",
+      "dateISO": "2026-08-09T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Green-Wood Cemetery",
       "neighborhood": "",
       "price": "",
-      "url": "https://gowanusdredgers.org/event/free-walk-up-paddling-2nd-st/2026-07-22/",
-      "category": "sports_fitness",
-      "source": "Gowanus Dredgers",
+      "url": "https://www.green-wood.com/event/grave-beginnings-green-wood-by-trolley/2026-08-09/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
       "via": [
-        "feed: Gowanus Dredgers"
+        "feed: Green-Wood Cemetery"
       ],
-      "why": "Dreams of Water, Bodies of Earth is a dual exhibition that explores the intersection of natural and synthetic ecosystems through radiant aquatic installations and fantastical entomological paintings…"
+      "why": "Green-Wood’s stunning landscape and remarkable history on this free hour-long trolley tour. Perfect for first-time visitors, this accessible introduction takes you on a leisurely ride to hear about…"
     },
     {
-      "id": "feed-gowanus-dredgers-2026-07-22-boathouse-bluegrass-jam",
-      "name": "Boathouse Bluegrass Jam",
-      "dateISO": "2026-07-22T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "id": "feed-green-wood-cemetery-2026-08-11-toddler-takeover-at-the-green-house",
+      "name": "Toddler Takeover at the Green-House",
+      "dateISO": "2026-08-11T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Green-Wood Cemetery",
       "neighborhood": "",
       "price": "",
-      "url": "https://gowanusdredgers.org/event/boathouse-bluegrass-jam-2/2026-07-22/",
-      "category": "sports_fitness",
-      "source": "Gowanus Dredgers",
+      "url": "https://www.green-wood.com/event/toddler-takeover-at-the-green-house-3/2026-08-11/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
       "via": [
-        "feed: Gowanus Dredgers"
+        "feed: Green-Wood Cemetery"
       ],
-      "why": "Dreams of Water, Bodies of Earth is a dual exhibition that explores the intersection of natural and synthetic ecosystems through radiant aquatic installations and fantastical entomological paintings…"
+      "why": "Move over, big kids! On Tuesday mornings, it’s toddler time at the Green-House. Bring your little ones to the most fun pop-up play zone in Sunset Park for a morning of open play and sensory…"
     },
     {
       "id": "feed-gowanus-dredgers-2026-07-25-brooklyn-tides-excerpts-from-new-york-wa",
@@ -1650,20 +1890,116 @@
       "why": "Dreams of Water, Bodies of Earth is a dual exhibition that explores the intersection of natural and synthetic ecosystems through radiant aquatic installations and fantastical entomological paintings…"
     },
     {
-      "id": "feed-ny-mycological-society-2026-07-19-van-cortlandt-park-west-bronx-ny-sunday-",
-      "name": "Van Cortlandt Park (West), Bronx, NY - Sunday, July 19th",
-      "dateISO": "2026-07-19T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Van Cortlandt Park West, 242nd st & Broadway, New York, NY, United States",
+      "id": "feed-gowanus-dredgers-2026-08-18-gowanus-jug-string-band-sessions",
+      "name": "Gowanus Jug & String Band Sessions",
+      "dateISO": "2026-08-18T18:00:00",
+      "time": "6:00 PM",
+      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
       "neighborhood": "",
       "price": "",
-      "url": "https://www.newyorkmyc.org/event/van-cortlandt-park-west-bronx-ny-sunday-july-19th/",
-      "category": "tours_experiences",
-      "source": "NY Mycological Society",
+      "url": "https://gowanusdredgers.org/event/gowanus-jug-string-band-sessions-3/2026-08-18/",
+      "category": "sports_fitness",
+      "source": "Gowanus Dredgers",
       "via": [
-        "feed: NY Mycological Society"
+        "feed: Gowanus Dredgers"
       ],
-      "why": "Join us for a walk in Van Cortlandt Park (West), Bronx, NY on Sunday, July 19th. During last year’s summer walk in Van Cortlandt Park, NYMS members found two species of ascomycetes that were new to…"
+      "why": "Dreams of Water, Bodies of Earth is a dual exhibition that explores the intersection of natural and synthetic ecosystems through radiant aquatic installations and fantastical entomological paintings…"
+    },
+    {
+      "id": "feed-gowanus-dredgers-2026-08-19-boathouse-bluegrass-jam",
+      "name": "Boathouse Bluegrass Jam",
+      "dateISO": "2026-08-19T18:00:00",
+      "time": "6:00 PM",
+      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://gowanusdredgers.org/event/boathouse-bluegrass-jam-2/2026-08-19/",
+      "category": "sports_fitness",
+      "source": "Gowanus Dredgers",
+      "via": [
+        "feed: Gowanus Dredgers"
+      ],
+      "why": "Dreams of Water, Bodies of Earth is a dual exhibition that explores the intersection of natural and synthetic ecosystems through radiant aquatic installations and fantastical entomological paintings…"
+    },
+    {
+      "id": "feed-gowanus-dredgers-2026-08-22-city-fragments-carol-dronsfield-leigh-kl",
+      "name": "City Fragments | Carol Dronsfield & Leigh Klonsky",
+      "dateISO": "2026-08-22T13:00:00",
+      "time": "1:00 PM",
+      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://gowanusdredgers.org/event/city-fragments-carol-dronsfield-leigh-klonsky/2026-08-22/",
+      "category": "sports_fitness",
+      "source": "Gowanus Dredgers",
+      "via": [
+        "feed: Gowanus Dredgers"
+      ],
+      "why": "Dreams of Water, Bodies of Earth is a dual exhibition that explores the intersection of natural and synthetic ecosystems through radiant aquatic installations and fantastical entomological paintings…"
+    },
+    {
+      "id": "feed-gowanus-dredgers-2026-08-23-a-persistence-of-cormorants-poetry-readi",
+      "name": "A Persistence of Cormorants Poetry Reading",
+      "dateISO": "2026-08-23T13:30:00",
+      "time": "1:30 PM",
+      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://gowanusdredgers.org/event/a-persistence-of-cormorants-poetry-reading-3/2026-08-23/",
+      "category": "sports_fitness",
+      "source": "Gowanus Dredgers",
+      "via": [
+        "feed: Gowanus Dredgers"
+      ],
+      "why": "Dreams of Water, Bodies of Earth is a dual exhibition that explores the intersection of natural and synthetic ecosystems through radiant aquatic installations and fantastical entomological paintings…"
+    },
+    {
+      "id": "feed-gowanus-dredgers-2026-08-23-free-walk-up-paddling-2nd-st",
+      "name": "FREE Walk-Up Paddling - 2nd St.",
+      "dateISO": "2026-08-23T15:00:00",
+      "time": "3:00 PM",
+      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://gowanusdredgers.org/event/free-walk-up-paddling-2nd-st/2026-08-23/",
+      "category": "sports_fitness",
+      "source": "Gowanus Dredgers",
+      "via": [
+        "feed: Gowanus Dredgers"
+      ],
+      "why": "Dreams of Water, Bodies of Earth is a dual exhibition that explores the intersection of natural and synthetic ecosystems through radiant aquatic installations and fantastical entomological paintings…"
+    },
+    {
+      "id": "feed-gowanus-dredgers-2026-08-25-gowanus-jug-string-band-sessions",
+      "name": "Gowanus Jug & String Band Sessions",
+      "dateISO": "2026-08-25T18:00:00",
+      "time": "6:00 PM",
+      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://gowanusdredgers.org/event/gowanus-jug-string-band-sessions-3/2026-08-25/",
+      "category": "sports_fitness",
+      "source": "Gowanus Dredgers",
+      "via": [
+        "feed: Gowanus Dredgers"
+      ],
+      "why": "Dreams of Water, Bodies of Earth is a dual exhibition that explores the intersection of natural and synthetic ecosystems through radiant aquatic installations and fantastical entomological paintings…"
+    },
+    {
+      "id": "feed-gowanus-dredgers-2026-08-26-free-walk-up-paddling-2nd-st",
+      "name": "FREE Walk-Up Paddling - 2nd St.",
+      "dateISO": "2026-08-26T18:00:00",
+      "time": "6:00 PM",
+      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://gowanusdredgers.org/event/free-walk-up-paddling-2nd-st/2026-08-26/",
+      "category": "sports_fitness",
+      "source": "Gowanus Dredgers",
+      "via": [
+        "feed: Gowanus Dredgers"
+      ],
+      "why": "Dreams of Water, Bodies of Earth is a dual exhibition that explores the intersection of natural and synthetic ecosystems through radiant aquatic installations and fantastical entomological paintings…"
     },
     {
       "id": "feed-ny-mycological-society-2026-07-25-stony-brook-rockland-county-saturday-jul",
@@ -1680,6 +2016,22 @@
         "feed: NY Mycological Society"
       ],
       "why": "Join us in Stony Brook in Harriman Park for a walk on Saturday, July 25th. On our walk at Stony Brook last July we observed over 100 species of fungi, including 18 boletes. There were also two…"
+    },
+    {
+      "id": "feed-ny-mycological-society-2026-07-27-come-join-us-for-our-online-id-meeting-t",
+      "name": "Come join us for our online ID meeting this Monday, July 27",
+      "dateISO": "2026-07-27T18:30:00",
+      "time": "6:30 PM",
+      "venue": "https://www.newyorkmyc.org/event/come-join-us-for-our-online-id-meeting-this-monday-july-27/",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.newyorkmyc.org/event/come-join-us-for-our-online-id-meeting-this-monday-july-27/",
+      "category": "tours_experiences",
+      "source": "NY Mycological Society",
+      "via": [
+        "feed: NY Mycological Society"
+      ],
+      "why": "Next Monday’s ID meeting will be online. Share anything you have found recently, or share older observations for which you haven’t gotten a species ID. Show off mushrooms from your travels, nearby or…"
     },
     {
       "id": "feed-ny-mycological-society-2026-08-09-high-rock-park-staten-island-ny-sunday-a",
@@ -1842,58 +2194,42 @@
       "why": "Join us for a walk in Van Cortlandt Park (West), Bronx on Saturday, October 10th. Van Cortlandt is the most species-rich park that we visit as a club, with (as of this writing) over 700 species of…"
     },
     {
-      "id": "feed-makeville-studio-2026-08-17-wood-shop-basics-serving-board-lb",
-      "name": "Wood Shop Basics - Serving Board LB",
-      "dateISO": "2026-08-17T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
+      "id": "feed-ny-mycological-society-2026-10-17-tallman-state-park-rockland-county-ny-sa",
+      "name": "Tallman State Park, Rockland County, NY - Saturday, October 3rd",
+      "dateISO": "2026-10-17T08:00:00",
+      "time": "8:00 AM",
+      "venue": "Tallman State Park, US-9W, Sparkill, NY, 10976, United States",
       "neighborhood": "",
       "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
+      "url": "https://www.newyorkmyc.org/event/tallman-state-park-rockland-county/",
+      "category": "tours_experiences",
+      "source": "NY Mycological Society",
       "via": [
-        "feed: Makeville Studio"
+        "feed: NY Mycological Society"
       ],
-      "why": ""
+      "why": "Join us for a walk in Tallman State Park in Rockland County this Saturday, October 3rd. We have not visited Tallman as a club since 2019. Pluteus aurantiorugosus, a beautiful and stunning and…"
     },
     {
-      "id": "feed-makeville-studio-2026-07-19-plant-stand-all-day-bc",
-      "name": "Plant Stand - All day BC",
-      "dateISO": "2026-07-19T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
+      "id": "feed-ny-mycological-society-2026-10-17-clove-lakes-park-staten-island-ny-on-sat",
+      "name": "Clove Lakes Park, Staten Island, NY on Saturday, October 17th",
+      "dateISO": "2026-10-17T10:30:00",
+      "time": "10:30 AM",
+      "venue": "Cloves Lakes Park, 1305 Victory Blvd, Staten Island, NY, 10301, United States",
       "neighborhood": "",
       "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
+      "url": "https://www.newyorkmyc.org/event/clove-lakes-park-staten-island-ny-on-sunday-october-27th/",
+      "category": "tours_experiences",
+      "source": "NY Mycological Society",
       "via": [
-        "feed: Makeville Studio"
+        "feed: NY Mycological Society"
       ],
-      "why": ""
+      "why": "Join us for a walk in Clove Lakes Park, Staten Island on Saturday, October 17th. Clove Lakes can be hit or miss. On one visit in October of 2023 we found at least four (1, 2, 3, 4) distinct species…"
     },
     {
-      "id": "feed-makeville-studio-2026-08-17-3-furniture-making-table-kj",
-      "name": "#3 Furniture Making: Table - KJ",
-      "dateISO": "2026-08-17T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-07-27-lathe-101-bottle-stoppers-jg",
-      "name": "Lathe 101 Bottle Stoppers - JG",
-      "dateISO": "2026-07-27T19:00:00",
-      "time": "7:00 PM",
+      "id": "feed-makeville-studio-2026-08-22-wood-shop-basics-coat-hangers-sc",
+      "name": "Wood Shop Basics - Coat Hangers SC",
+      "dateISO": "2026-08-22T14:00:00",
+      "time": "2:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -1938,6 +2274,182 @@
       "why": ""
     },
     {
+      "id": "feed-makeville-studio-2026-08-13-spoon-carving-esg",
+      "name": "Spoon Carving - ESG",
+      "dateISO": "2026-08-13T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-16-learn-to-turn-bottle-stoppers-jg",
+      "name": "Learn to Turn: Bottle Stoppers - JG",
+      "dateISO": "2026-08-16T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-07-28-4-furniture-making-table-jg",
+      "name": "#4 Furniture Making: Table - JG",
+      "dateISO": "2026-07-28T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-24-women-furniture-making-table-bc",
+      "name": "Women+ Furniture Making: Table - BC",
+      "dateISO": "2026-08-24T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-03-bowl-turning-for-beginners-ad",
+      "name": "Bowl Turning for Beginners - AD",
+      "dateISO": "2026-08-03T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-04-plywood-storage-sb",
+      "name": "Plywood Storage: SB",
+      "dateISO": "2026-08-04T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-10-2-furniture-making-table-kj",
+      "name": "#2 Furniture Making: Table - KJ",
+      "dateISO": "2026-08-10T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-05-lathe-101-ad",
+      "name": "Lathe 101: AD",
+      "dateISO": "2026-08-05T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-07-27-4-furniture-making-table-jg",
+      "name": "#4 Furniture Making: Table - JG",
+      "dateISO": "2026-07-27T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-17-wood-shop-basics-serving-board-lb",
+      "name": "Wood Shop Basics - Serving Board LB",
+      "dateISO": "2026-08-17T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-02-plant-stand-workshop-bc",
+      "name": "Plant Stand Workshop - BC",
+      "dateISO": "2026-08-02T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
       "id": "feed-makeville-studio-2026-08-03-wood-shop-basics-serving-board-lb",
       "name": "Wood Shop Basics - Serving Board LB",
       "dateISO": "2026-08-03T10:00:00",
@@ -1970,9 +2482,41 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-07-20-2-start-woodworking-bc",
-      "name": "#2 Start Woodworking! - BC",
-      "dateISO": "2026-07-20T19:00:00",
+      "id": "feed-makeville-studio-2026-07-27-4-furniture-making-table-kj",
+      "name": "#4 Furniture Making: Table - KJ",
+      "dateISO": "2026-07-27T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-31-3-start-woodworking-bc",
+      "name": "#3 Start Woodworking! - BC",
+      "dateISO": "2026-08-31T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-07-29-2-wood-shop-basics-serving-board-esg",
+      "name": "#2 Wood Shop Basics - Serving Board ESG",
+      "dateISO": "2026-07-29T19:00:00",
       "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
@@ -1990,6 +2534,150 @@
       "name": "Intro to Hand Tools: Mallet - JG",
       "dateISO": "2026-08-11T19:00:00",
       "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-17-3-furniture-making-table-kj",
+      "name": "#3 Furniture Making: Table - KJ",
+      "dateISO": "2026-08-17T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-10-women-start-woodworking-jg",
+      "name": "Women+ Start Woodworking! - JG",
+      "dateISO": "2026-08-10T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-31-carving-for-beginners-esg",
+      "name": "Carving for Beginners: ESG",
+      "dateISO": "2026-08-31T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-07-27-plywood-storage-sb",
+      "name": "Plywood Storage - SB",
+      "dateISO": "2026-07-27T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-24-2-start-woodworking-kj",
+      "name": "#2 Start Woodworking! - KJ",
+      "dateISO": "2026-08-24T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-08-furniture-making-step-stool-sc",
+      "name": "Furniture Making: Step Stool - SC",
+      "dateISO": "2026-08-08T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-17-router-101-cutting-board-sb",
+      "name": "Router 101 - Cutting Board SB",
+      "dateISO": "2026-08-17T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-10-2-furniture-making-table-kj",
+      "name": "#2 Furniture Making: Table - KJ",
+      "dateISO": "2026-08-10T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "",
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-08-09-1-start-woodworking-jg",
+      "name": "#1 Start Woodworking! - JG",
+      "dateISO": "2026-08-09T14:00:00",
+      "time": "2:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -2034,358 +2722,6 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-07-27-plywood-storage-sb",
-      "name": "Plywood Storage - SB",
-      "dateISO": "2026-07-27T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-13-spoon-carving-esg",
-      "name": "Spoon Carving - ESG",
-      "dateISO": "2026-08-13T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-10-2-furniture-making-table-kj",
-      "name": "#2 Furniture Making: Table - KJ",
-      "dateISO": "2026-08-10T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-17-router-101-cutting-board-sb",
-      "name": "Router 101 - Cutting Board SB",
-      "dateISO": "2026-08-17T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-04-plywood-storage-sb",
-      "name": "Plywood Storage: SB",
-      "dateISO": "2026-08-04T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-05-lathe-101-ad",
-      "name": "Lathe 101: AD",
-      "dateISO": "2026-08-05T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-31-carving-for-beginners-esg",
-      "name": "Carving for Beginners: ESG",
-      "dateISO": "2026-08-31T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-24-2-start-woodworking-kj",
-      "name": "#2 Start Woodworking! - KJ",
-      "dateISO": "2026-08-24T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-16-learn-to-turn-bottle-stoppers-jg",
-      "name": "Learn to Turn: Bottle Stoppers - JG",
-      "dateISO": "2026-08-16T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-07-20-3-furniture-making-table-sb",
-      "name": "#3 Furniture Making: Table - SB",
-      "dateISO": "2026-07-20T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-09-1-start-woodworking-jg",
-      "name": "#1 Start Woodworking! - JG",
-      "dateISO": "2026-08-09T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-07-18-3-start-woodworking-sc",
-      "name": "#3 Start Woodworking! - SC",
-      "dateISO": "2026-07-18T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-10-2-furniture-making-table-kj",
-      "name": "#2 Furniture Making: Table - KJ",
-      "dateISO": "2026-08-10T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-22-wood-shop-basics-coat-hangers-sc",
-      "name": "Wood Shop Basics - Coat Hangers SC",
-      "dateISO": "2026-08-22T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-24-women-furniture-making-table-bc",
-      "name": "Women+ Furniture Making: Table - BC",
-      "dateISO": "2026-08-24T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-10-women-start-woodworking-jg",
-      "name": "Women+ Start Woodworking! - JG",
-      "dateISO": "2026-08-10T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-02-plant-stand-workshop-bc",
-      "name": "Plant Stand Workshop - BC",
-      "dateISO": "2026-08-02T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-31-3-start-woodworking-bc",
-      "name": "#3 Start Woodworking! - BC",
-      "dateISO": "2026-08-31T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-08-furniture-making-step-stool-sc",
-      "name": "Furniture Making: Step Stool - SC",
-      "dateISO": "2026-08-08T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-07-29-2-wood-shop-basics-serving-board-esg",
-      "name": "#2 Wood Shop Basics - Serving Board ESG",
-      "dateISO": "2026-07-29T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-03-bowl-turning-for-beginners-ad",
-      "name": "Bowl Turning for Beginners - AD",
-      "dateISO": "2026-08-03T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-07-27-4-furniture-making-table-kj",
-      "name": "#4 Furniture Making: Table - KJ",
-      "dateISO": "2026-07-27T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
       "id": "feed-gotham-center-2026-09-21-washington-irving-literary-godfather-of-",
       "name": "Washington Irving: Literary Godfather of New York",
       "dateISO": "2026-09-21T18:30:00",
@@ -2402,196 +2738,20 @@
       "why": ""
     },
     {
-      "id": "feed-club-free-time-2026-07-16-luddite-book-club-more-than-words-how-to",
-      "name": "Luddite Book Club -- More Than Words: How to Think About Writing in the Age of AI by John Warner",
-      "dateISO": "2026-07-16T18:30:00",
+      "id": "feed-gotham-center-2026-10-19-nonstop-bodies-how-dance-shaped-new-york",
+      "name": "Nonstop Bodies: How Dance Shaped New York City",
+      "dateISO": "2026-10-19T18:30:00",
       "time": "6:30 PM",
-      "venue": "New York City ( NYC )",
+      "venue": "Gotham Center",
       "neighborhood": "",
-      "price": "Free",
-      "url": "",
+      "price": "",
+      "url": "https://www.gothamcenter.org/upcoming-events/nonstop-bodies-how-dance-shaped-new-york-city",
       "category": "talks_lectures",
-      "source": "Club Free Time",
+      "source": "Gotham Center",
       "via": [
-        "feed: Club Free Time"
+        "feed: Gotham Center"
       ],
-      "why": "This offline book club is a space for in-person conversation about the role technology plays in the world, where the group will be discussing More Than Words: How to Think About Writing in the Age of…"
-    },
-    {
-      "id": "feed-club-free-time-2026-07-16-an-inside-look-at-the-new-novel-the-futu",
-      "name": "An Inside Look at the New Novel The Future Perfect",
-      "dateISO": "2026-07-16T19:00:00",
-      "time": "7:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Author Cay Kim in conversation with Hannah Bae about her new book, The Future Perfect. About the book: A radiant portrait of a young woman caught between cultures, and what is lost and found in the…"
-    },
-    {
-      "id": "feed-club-free-time-2026-07-17-arts-wellness-policy-experts-discuss-art",
-      "name": "Arts, Wellness, & Policy Experts Discuss Artistic Engagement & Wellbeing at a Major NYC Concert Hall (+ Live String Quartet Music)",
-      "dateISO": "2026-07-17T18:00:00",
-      "time": "6:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Against the backdrop of the world's celebration of soccer, this conversation explores how creativity can be understood as a health-creating behavior alongside physical activity, supporting not only…"
-    },
-    {
-      "id": "feed-club-free-time-2026-07-18-scholar-shares-her-new-book-on-turkish-s",
-      "name": "Scholar Shares Her New Book on Turkish Sufi Philosopher Semiha Cemal (+ Live Sufi Music)",
-      "dateISO": "2026-07-18T13:30:00",
-      "time": "1:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "A book talk with Dr. Arzu Eylul Yalcınkaya for Semiha Cemal: A Portrait of a Turkish Sufi Philosopher, accompanied by a Sufi music performance by Istanbul Mesk Ensemble.Semiha Cemal: A Portrait of a…"
-    },
-    {
-      "id": "feed-club-free-time-2026-07-18-sapphic-nbsp-book-club-lesbian-love-stor",
-      "name": "Sapphic Book Club -- Lesbian Love Story: A Memoir in Archives by Amelia Possanza",
-      "dateISO": "2026-07-18T14:30:00",
-      "time": "2:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "At this event, attendees come ready to discuss, rant, and rave with other sapphic book lovers! This discussion will center around Lesbian Love Story: A Memoir in Archives by Amelia Possanza.Synopsis…"
-    },
-    {
-      "id": "feed-club-free-time-2026-07-20-journalist-film-critic-shares-his-new-bo",
-      "name": "Journalist & Film Critic Shares His New Book, The Worlds of Hayao Miyazaki",
-      "dateISO": "2026-07-20T12:30:00",
-      "time": "12:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "A talk with Nicolas Rapold, the author of The Worlds of Hayao Miyazaki. A master animator and one of cinema's greatest artists, Hayao Miyazaki is able to imagine and populate worlds like no other…"
-    },
-    {
-      "id": "feed-club-free-time-2026-07-21-poetry-discussion-usa-at-250",
-      "name": "Poetry Discussion: USA at 250",
-      "dateISO": "2026-07-21T14:30:00",
-      "time": "2:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Poetry enthusiasts unpack the layered meanings of poetry through an informal group discussion. Discuss poems related to civic ideals and democracy as the group honors America at 250.Please note that…"
-    },
-    {
-      "id": "feed-club-free-time-2026-07-21-award-winning-nyt-bestselling-novel-the-",
-      "name": "Award-Winning, NYT Bestselling Novel The City We Became Discussion",
-      "dateISO": "2026-07-21T16:00:00",
-      "time": "4:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "A book club centered around The City We Became by N.K. Jemisin.About the book: Three-time Hugo Award-winning and New York Times bestselling author N.K. Jemisin crafts her most incredible novel yet, a…"
-    },
-    {
-      "id": "feed-club-free-time-2026-07-21-ai-panel-discussion-experts-share-how-ai",
-      "name": "AI Panel Discussion: Experts Share How AI Affects Entrepeneurs",
-      "dateISO": "2026-07-21T18:30:00",
-      "time": "6:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "A panel discussion that aims to make sense of how AI might affect your daily life, whether you're a professional, small business owner, artist, parent, student, or simply curious. You’ll hear about…"
-    },
-    {
-      "id": "feed-club-free-time-2026-07-22-new-york-times-bestselling-nbsp-authors-",
-      "name": "New York TImes-Bestselling Authors Share Their Summer Romance Reads in the Park",
-      "dateISO": "2026-07-22T12:30:00",
-      "time": "12:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Start a summer fling with a novel you won’t want to break up with at this author panel featuring Cara Bastone, Call Me Maybe; Amy Ewing, The Irish Goodbye; Jennifer O’Brien, The Summer I Found You…"
-    },
-    {
-      "id": "feed-club-free-time-2026-07-22-quiet-reading-meet-up",
-      "name": "Quiet Reading Meet Up",
-      "dateISO": "2026-07-22T18:00:00",
-      "time": "6:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Bring a book or check one out of the library to read to yourself for one hour. After that, spend an hour socializing with those around you!"
-    },
-    {
-      "id": "feed-club-free-time-2026-07-22-award-winning-nonfiction-writer-shares-h",
-      "name": "Award-Winning Nonfiction Writer Shares Her New Biography on Angelica Schuyler",
-      "dateISO": "2026-07-22T19:00:00",
-      "time": "7:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Angelica: For Love & Country in a Time of Revolution is a vivid biography of Angelica Schuyler “Carter” Church, a leading American woman whose web of influence spanned the American War for…"
+      "why": ""
     },
     {
       "id": "feed-club-free-time-2026-07-23-book-launch-deeply-satisfying-nbsp-novel",
@@ -2610,6 +2770,22 @@
       "why": "Clare Osongco in conversation with Lauren Kung Jessen about her new book Unfinished Business. About the book: In this funny, warmly chaotic novel, a floundering office worker discovers her mother's…"
     },
     {
+      "id": "feed-club-free-time-2026-07-24-silent-reading-in-a-historic-reading-roo",
+      "name": "Silent Reading in a Historic Reading Room",
+      "dateISO": "2026-07-24T18:30:00",
+      "time": "6:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Are you looking for a quiet hour of communing with fellow readers? This is the event for you!There's no assigned reading. Bring whatever book you're currently working on--paper, e-book, or audio with…"
+    },
+    {
       "id": "feed-club-free-time-2026-07-24-sustainable-food-systems-expert-shares-h",
       "name": "Sustainable Food Systems Expert SHares His New Book, North Stars of Emancipation",
       "dateISO": "2026-07-24T19:00:00",
@@ -2624,6 +2800,22 @@
         "feed: Club Free Time"
       ],
       "why": "Researcher Antonio Roman-Alcalá discusses his new book, North Stars of Emancipation: California's Diverse Food and Farming Movements in Times of Racial Reckoning, on how greater racial inclusion can…"
+    },
+    {
+      "id": "feed-club-free-time-2026-07-25-discuss-your-favorite-romance-books-with",
+      "name": "Discuss Your Favorite Romance Books with Fellow Readers",
+      "dateISO": "2026-07-25T10:15:00",
+      "time": "10:15 AM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "If you love romance or want to get into it, you're welcome at this romance book club! Attendees will be discussing their favorite romance books, current reads, and more!"
     },
     {
       "id": "feed-club-free-time-2026-07-26-the-social-practice-of-oral-history-in-a",
@@ -2690,8 +2882,8 @@
       "why": "A conversation with Rosa Campbell to celebrate the launch of The Miraculous Season Selected Poems by V.R. \"Bunny\" Lang, a collection of poems by the eccentric V. R. \"Bunny\" Lang. Most of the included…"
     },
     {
-      "id": "feed-club-free-time-2026-07-28-discover-how-nyc-s-green-spaces-foster-b",
-      "name": "Discover How NYC's Green Spaces Foster Bird Migration",
+      "id": "feed-club-free-time-2026-07-28-learn-how-nyc-s-green-spaces-foster-bird",
+      "name": "Learn How NYC's Green Spaces Foster Bird Migration",
       "dateISO": "2026-07-28T18:00:00",
       "time": "6:00 PM",
       "venue": "New York City ( NYC )",
@@ -2720,6 +2912,22 @@
         "feed: Club Free Time"
       ],
       "why": "You are invited to discuss Tokyo Express by Seicho Matsumoto. To miss this would be a crime.About the book: In a rocky cove at Hakata Bay, the bodies of a young and beautiful couple are discovered…"
+    },
+    {
+      "id": "feed-club-free-time-2026-07-28-two-photographers-discuss-new-exhibition",
+      "name": "Two Photographers Discuss New Exhibition Exploring Gender SIgnifiers",
+      "dateISO": "2026-07-28T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Photographer Res Julian and photographer, educator, and magazine editor Matthew Leifheit have a conversation about Res's solo show, True Hole."
     },
     {
       "id": "feed-club-free-time-2026-07-28-book-launch-compulsive-thriller-nbsp-the",
@@ -2802,6 +3010,22 @@
       "why": "Nicholas Freudenberg discusses his new book, Fighting for New York: Activism for Health and Social Justice Since the 1960s, with Merlin Chowkwanyun, author of All Health Politics Is Local.Fighting…"
     },
     {
+      "id": "feed-club-free-time-2026-07-30-prize-winning-author-shares-her-latest-s",
+      "name": "Prize-Winning Author Shares Her Latest Short Story Collection: Horizon Hong Kong",
+      "dateISO": "2026-07-30T19:00:00",
+      "time": "7:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Novelist Xu Xi in conversation with author Robert Anthony Siegel.About the Book: One of Hong Kong’s leading English writers, Xu Xi investigates and invigorates the transnational, transcultural, and…"
+    },
+    {
       "id": "feed-club-free-time-2026-07-31-panel-of-experts-discuss-the-benefits-of",
       "name": "Panel of Experts Discuss the Benefits of Collective Singing (+ Orchestral Performance of Works by William Grant Still & George Gershwin)",
       "dateISO": "2026-07-31T18:00:00",
@@ -2816,6 +3040,150 @@
         "feed: Club Free Time"
       ],
       "why": "Bringing together voices from music, neuroscience, public health, and community practice, this event explores how collective singing can be understood not only as cultural expression, but as a…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-01-artists-journalists-discuss-migration-sa",
+      "name": "Artists & Journalists Discuss Migration, Sanctuary, & the Role of Art in the Current Political Climate",
+      "dateISO": "2026-08-01T19:00:00",
+      "time": "7:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "As part of the exhibition Living in Sanctuary, artist Cinthya Santos Briones and scholar Michelle Castañeda, author of Disappearing Rooms, will engage in a conversation. They will discuss migration…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-03-entertainment-journalist-discusses-the-m",
+      "name": "Entertainment Journalist DIscusses the Making of Hitchcock's Rear Window",
+      "dateISO": "2026-08-03T12:30:00",
+      "time": "12:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A talk with Jennifer O'Callaghan, the author of Rear Window: The Making of a Hitchcock Masterpiece in the Hollywood Golden Age. Alfred Hitchcock called his audience a race of Peeping Toms, and with…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-03-ferrari-designer-shares-his-new-book-fer",
+      "name": "Ferrari Designer Shares His New Book, Ferrari Design: Creative Journeys (+ Signing)",
+      "dateISO": "2026-08-03T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Flavio Manzoni celebrates the launch of Ferrari Design: Creative Journeys, a volume that traces the creative evolution of the Ferrari Styling Centre since its establishment in 2010. The talk will be…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-04-book-release-discussion-for-nbsp-shakesp",
+      "name": "Book Release Discussion for Shakespeare's Margaret: The Dramatic Life of a Warrior Queen",
+      "dateISO": "2026-08-04T19:00:00",
+      "time": "7:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A conversation with Charles O’Malley and Scott W. Stern to celebrate the recent release of Shakespeare's Margaret: The Dramatic Life of a Warrior Queen. About the book: Shakespeare's most powerful…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-05-fandom-centric-author-discussion-writers",
+      "name": "\"Fandom\"-Centric Author Discussion: Writers for Marvel, DC, Star Wars, & More",
+      "dateISO": "2026-08-05T12:30:00",
+      "time": "12:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "See characters you know and love from a different angle or discover a new favorite at this author panel with Zoraida Cordova, Kiss the Girl (Meant to Be); Maria Hoey, The Shadower; Alex Segura, Enemy…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-05-inside-the-history-of-new-york-city-publ",
+      "name": "Inside the History of New York City Public Pools",
+      "dateISO": "2026-08-05T18:30:00",
+      "time": "6:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Explore the history and future of New York City’s public pools in this engaging, interactive session focused on their significance in city life. The talk covers topics from floating bathhouses and…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-05-new-york-times-nbsp-bestselling-author-d",
+      "name": "New York Times Bestselling Author Discusses Her Latest Book on Lady Bird Johnson",
+      "dateISO": "2026-08-05T19:00:00",
+      "time": "7:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A lecture and conversation with Shannon McKenna Schmidt, the author of You Can’t Catch Us: Lady Bird Johnson’s Trailblazing 1964 Campaign Train and the Women Who Rode with Her.In October 1964, Lady…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-05-cultural-historian-shares-her-new-book-d",
+      "name": "Cultural Historian Shares Her New Book, Darkology: Blackface and the American Way of Entertainment",
+      "dateISO": "2026-08-05T19:00:00",
+      "time": "7:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A discussion with Rhae Lynn Barnes on her recent book, Darkology. Karl Jacoby will join in conversation.About the book: A groundbreaking history, decades in the making, that chronicles how blackface…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-06-book-release-discussion-time-magazine-fe",
+      "name": "Book Release Discussion: Time Magazine-Featured Book, Maggie; or, A Man and a Woman Walk Into a Bar (+ Signing)",
+      "dateISO": "2026-08-06T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A conversation with Katie Yee to celebrate the paperback release of her book, a hilarious and deeply moving portrait of a woman experiencing all the tragedies and truths of womanhood. The…"
     },
     {
       "id": "feed-club-free-time-2026-08-06-discussion-on-bestselling-urban-fantasy-",
@@ -2866,6 +3234,310 @@
       "why": "An informal, group-directed discussion of death with no agenda, objectives or themes. The purpose of Death Cafe is \"to increase awareness of death with a view to helping people make the most of their…"
     },
     {
+      "id": "feed-club-free-time-2026-08-09-community-book-trade-bring-a-book-take-a",
+      "name": "Community Book Trade: Bring a Book, Take a Book, & Discuss Your Favorite Reads",
+      "dateISO": "2026-08-09T13:00:00",
+      "time": "1:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Bring a book, take a book - or books! Need something to read this Summer? Come and browse, and meet your neighbors!"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-09-book-talk-with-the-author-was-it-just-a-",
+      "name": "Book Talk with the Author: Was It Just a Matter of Luck?",
+      "dateISO": "2026-08-09T14:30:00",
+      "time": "2:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "In Was it Just a Matter of Luck? Dr. Charles Kaner weaves an unflinching, moving account of his family's survival during the Holocaust with the story of how those memories - and his mother's fierce…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-10-criterion-collector-curator-discusses-bl",
+      "name": "Criterion Collector Curator Discusses Black Film History",
+      "dateISO": "2026-08-10T12:30:00",
+      "time": "12:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A talk with Ashley Clark, the writer of The World of Black Film, an entertaining, informed, and thought-provoking survey of important and influential Black films from around the globe. Starting with…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-11-discuss-jane-austen-s-classic-novel-sens",
+      "name": "Discuss Jane Austen's Classic Novel, Sense and Sensibility, in the Park",
+      "dateISO": "2026-08-11T12:30:00",
+      "time": "12:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "This immersive book club event features Sense and Sensibility, along with beloved characters from the book. Hosted by Sarah Rose Kearns, Jane Austin Society of North America - New York Metropolitan…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-11-strikingly-original-novel-release-hothou",
+      "name": "\"Strikingly Original\" Novel Release, Hothouse Bloom, with the Author (+ Signing)",
+      "dateISO": "2026-08-11T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A conversation with Austyn Wohlers to celebrate the paperback release of her book, a millennial pastoral that is equal parts painterly and critical in its reflections on art, permaculture, and the…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-12-new-york-times-bestselling-authors-discu",
+      "name": "New York Times Bestselling Authors Discuss the Art of Writing with Purpose",
+      "dateISO": "2026-08-12T12:30:00",
+      "time": "12:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Discover some examples of creativity as public service at this author panel with Sam Roberts, Are They Dead Yet: The Art of the Obit; Jennifer Shahade, Thinking Sideways: How to Think Like a Chess…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-12-johns-hopkins-university-mathematician-b",
+      "name": "Johns Hopkins University Mathematician Breaks Down Abstract Concepts with 3D Printing",
+      "dateISO": "2026-08-12T16:00:00",
+      "time": "4:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "In this interactive presentation, Mario Micheli explores how mathematicians bring abstract concepts to life. From geometric surfaces and fractals to stereographic projections, polyhedra, and art…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-12-read-analyze-a-modernist-poem-by-pulitze",
+      "name": "Read & Analyze a Modernist Poem by Pulitzer Prize-Winning Poet Marianne Moore",
+      "dateISO": "2026-08-12T16:30:00",
+      "time": "4:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A poetry discussion on Marianne Moore's 1923 poem of nearly three hundred lines, \"Marriage.\""
+    },
+    {
+      "id": "feed-club-free-time-2026-08-12-lambda-award-winning-writers-share-their",
+      "name": "Lambda Award-Winning Writers Share Their New Book, Call Me by Your Name: The Graphic Novel (+ Signing)",
+      "dateISO": "2026-08-12T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A conversation with André Aciman and Sarah Maxwell-McNicol to celebrate their new book, Call Me by Your Name: The Graphic Novel, the graphic novel adaptation of Elio and Oliver's timeless summer…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-12-huffpost-journalist-shares-insights-from",
+      "name": "HuffPost Journalist Shares Insights from His Book, To Catch a Fascist",
+      "dateISO": "2026-08-12T19:00:00",
+      "time": "7:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A lecture and conversation with Christopher Mathias, a journalist covering the far right. His latest book, To Catch a Fascist: The Fight to Expose the Radical Right, follows different factions of…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-12-johns-hopkins-university-mathematician-b",
+      "name": "Johns Hopkins University Mathematician Breaks Down Abstract Concepts with 3D Printing",
+      "dateISO": "2026-08-12T19:00:00",
+      "time": "7:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "In this interactive presentation, Mario Micheli explores how mathematicians bring abstract concepts to life. From geometric surfaces and fractals to stereographic projections, polyhedra, and art…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-13-fine-art-portrait-photographer-worked-wi",
+      "name": "Fine Art Portrait Photographer (Worked with UK Prime Ministers & Royalty) Discusses His Craft & Career",
+      "dateISO": "2026-08-13T13:00:00",
+      "time": "1:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A lecture and open Q&A with British portrait photographer Rory Lewis. His sitters have ranged from Sir Patrick Stewart, Sir Ian McKellen, David Warner and Rufus Sewell to former Prime Ministers Tony…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-13-music-historian-journalist-shares-her-ne",
+      "name": "Music Historian/Journalist Shares Her New Book on Paul Simon, Days of Miracle and Wonder",
+      "dateISO": "2026-08-13T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A conversation with Ashley Kahn to celebrate his new book, a comprehensive history of the origins, anecdotes, and collaborations that went into the production of Paul Simon's timeless album…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-14-discussing-the-classic-short-story-colle",
+      "name": "Discussing the Classic Short Story Collection: Borges' Labyrinths",
+      "dateISO": "2026-08-14T19:00:00",
+      "time": "7:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A book club meeting focusing on Labyrinths by Jorge Luis Borges. While your hosts will come with some talking points and questions to kick off the discussion, please don’t be afraid to share your…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-17-grady-hendrix-discusses-bruce-lee-film-h",
+      "name": "Grady Hendrix Discusses Bruce Lee & Film History",
+      "dateISO": "2026-08-17T12:30:00",
+      "time": "12:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A discussion about the 1973 Hong Kong movie, Five Fingers of Death, which opened in New York City and became a blockbuster hit. Within five years, Bruce Lee posters were on the walls of every…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-18-discuss-the-thriller-novel-nbsp-when-no-",
+      "name": "Discuss the Thriller Novel When No One Is Watching",
+      "dateISO": "2026-08-18T16:00:00",
+      "time": "4:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Read and analyze When No One Is Watching with a group.About the Book: Part Rear Window, part Get Out, NY Times Notable Author Alyssa Cole weaves a gripping thriller in which the gentrification of a…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-18-discuss-nbsp-no-more-tears-the-dark-secr",
+      "name": "Discuss No More Tears: The Dark Secrets of Johnson & Johnson with Fellow Readers",
+      "dateISO": "2026-08-18T16:00:00",
+      "time": "4:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Read and analyze this award-winning nonfiction book by Gardiner Harris.About the Book: One day in 2004, Gardiner Harris, a pharmaceutical reporter for The New York Times, was early for a flight and…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-19-anthology-contributors-editors-disucss-t",
+      "name": "Anthology Contributors/Editors Disucss Their Craft & Careers",
+      "dateISO": "2026-08-19T12:30:00",
+      "time": "12:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "This conversation features Kathy Curto, editor of What Are You Waiting For?: An Anthology, with contributors Terri Linton and Christopher L. Vaughan, as well as anthology editor and author Domenica…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-19-discuss-analyze-the-genre-bending-novell",
+      "name": "Discuss & Analyze the Genre-Bending Novella, Meville: A Novel",
+      "dateISO": "2026-08-19T16:30:00",
+      "time": "4:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "The group is reading Jean Giono's 1941 work, Melville: A Novel, translated from the French by Paul Eprile in 2017.About the book: In the fall of 1849, Herman Melville traveled to London to deliver…"
+    },
+    {
       "id": "feed-club-free-time-2026-08-19-award-winning-filmmaker-public-speaker-s",
       "name": "Award-Winning Filmmaker & Public Speaker Shares Her New Nonfiction Book, What Will They Say?",
       "dateISO": "2026-08-19T19:00:00",
@@ -2882,36 +3554,148 @@
       "why": "Denise Soler Cox discusses her new book, What Will They Say?: Confront Cultural Taboos and Discover Your Inner Power, which exposes nine common Latin cultural taboos no one dares discuss and shares…"
     },
     {
-      "id": "feed-nyc-resistor-2026-07-20-public-craft-night-mondays-and-thursdays",
-      "name": "Public Craft Night Mondays and Thursdays!",
-      "dateISO": "2026-07-20T18:30:00",
-      "time": "6:30 PM",
-      "venue": "NYC Resistor",
+      "id": "feed-club-free-time-2026-08-19-pulitzer-prize-finalist-journalist-share",
+      "name": "Pulitzer Prize Finalist Journalist Shares Insights from His Latest Book, Revenge for the Sixties",
+      "dateISO": "2026-08-19T19:00:00",
+      "time": "7:00 PM",
+      "venue": "New York City ( NYC )",
       "neighborhood": "",
       "price": "Free",
-      "url": "https://www.eventbrite.com/e/public-craft-night-mondays-and-thursdays-tickets-162729866411",
-      "category": "workshops_classes",
-      "source": "NYC Resistor",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
       "via": [
-        "feed: NYC Resistor"
+        "feed: Club Free Time"
       ],
-      "why": "Learn, make and share at NYC Resistor (all events18+)"
+      "why": "A lecture and conversation with Peter S. Canellos, the author of The Great Dissenter: The Story of John Marshall Harlan, America’s Judicial Hero, and the editor of the bestselling Last Lion: The Fall…"
     },
     {
-      "id": "feed-nyc-resistor-2026-07-22-nycresistor-ham-radio-club",
-      "name": "NYCResistor Ham Radio Club",
-      "dateISO": "2026-07-22T20:00:00",
-      "time": "8:00 PM",
+      "id": "feed-club-free-time-2026-08-24-on-the-making-legacy-of-nbsp-eyes-wide-s",
+      "name": "On the Making & Legacy of Eyes Wide Shut with New York Times Bestselling Author",
+      "dateISO": "2026-08-24T12:30:00",
+      "time": "12:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A conversation on Eyes Wide Shut with author Megan Abbott and host Scott Adlerberg.Megan Abbott is the award-winning author of twelve crime novels, including You Will Know Me, Beware the Woman, and…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-25-discuss-jane-austen-s-classic-novel-nbsp",
+      "name": "Discuss Jane Austen's Classic Novel, Persuasion, in the Park",
+      "dateISO": "2026-08-25T12:30:00",
+      "time": "12:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "This immersive BookClub event features Persuasion, along with beloved characters from the book. Hosted by Sarah Rose Kearns, Jane Austin Society of North America – New York Metropolitan. Sign up in…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-25-exploring-how-sesame-street-helped-kids-",
+      "name": "Exploring How Sesame Street Helped Kids Navigate the Aftermath of 9/11 (In Person AND Online!)",
+      "dateISO": "2026-08-25T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "In conversation with 9/11 Memorial & Museum President and CEO Beth Hillman, Sesame Workshop’s Senior Vice President of Global Education Dr. Rosemarie Truglio, television producer Carol-Lynn Parente…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-26-pulitzer-prize-winning-author-shares-his",
+      "name": "Pulitzer Prize-Winning Author Shares His New Novel, Villa Coco (+ Signing)",
+      "dateISO": "2026-08-26T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A conversation with author Andrew Sean Greer, to celebrate his book, a witty yet insightful meditation on what you give and take and becoming who you've always wanted to be. The conversation will be…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-26-civil-war-historian-shares-his-new-book-",
+      "name": "Civil War Historian Shares His New Book, Boss Lincoln: The Partisan Life of Abraham Lincoln",
+      "dateISO": "2026-08-26T19:00:00",
+      "time": "7:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A lecture and conversation with Matthew Pinsker, who serves as Director of the House Divided Project, a popular educational initiative on nineteenth-century US history. He is the author of three…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-27-architect-celebrates-his-new-book-shingl",
+      "name": "Architect Celebrates His New Book, Shingle Style Houses: The Evolution of an Inventive Architecture (+ Signing)",
+      "dateISO": "2026-08-27T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A conversation with John R. DaSilva to share his new book, a comprehensive survey of historical and modern American shingle-style homes. He will be joined in conversation with Thomas A. Kligerman…"
+    },
+    {
+      "id": "feed-club-free-time-2026-08-30-new-york-times-nbsp-journalist-shares-he",
+      "name": "New York Times Journalist Shares Her Book on Crime in Guilded Age NYC (In Person AND Online!)",
+      "dateISO": "2026-08-30T14:00:00",
+      "time": "2:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A book talk on The Talented Mrs. Mandelbaum with author Margalit Fox.About the book: The Talented Mrs. Mandelbaum paints a vivid portrait of Gilded Age New York—a city teeming with nefarious rogues…"
+    },
+    {
+      "id": "feed-nyc-resistor-2026-07-24-synthesizer-night-nyc-resistor",
+      "name": "Synthesizer Night @ NYC Resistor",
+      "dateISO": "2026-07-24T19:30:00",
+      "time": "7:30 PM",
       "venue": "NYC Resistor",
       "neighborhood": "",
       "price": "Free",
-      "url": "https://www.eventbrite.com/e/nycresistor-ham-radio-club-tickets-1112940648439",
+      "url": "https://www.eventbrite.com/e/synthesizer-night-nyc-resistor-tickets-1994608162708",
       "category": "workshops_classes",
       "source": "NYC Resistor",
       "via": [
         "feed: NYC Resistor"
       ],
-      "why": "Monthly Amateur Radio club meeting of NYCResistor"
+      "why": "Gathering musicians, enthusiasts, and curious minds to connect, collaborate, and share their passion for synthesis. BYO synth encouraged!"
     },
     {
       "id": "feed-nyc-resistor-2026-07-25-yoga-for-hackers",
@@ -2930,6 +3714,70 @@
       "why": "Hack your body. We'll cover fundamental yoga postures, with an emphasis on alignment, breathing practices and strength. All are welcome!"
     },
     {
+      "id": "feed-nyc-resistor-2026-07-27-public-craft-night-mondays-and-thursdays",
+      "name": "Public Craft Night Mondays and Thursdays!",
+      "dateISO": "2026-07-27T18:30:00",
+      "time": "6:30 PM",
+      "venue": "NYC Resistor",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.eventbrite.com/e/public-craft-night-mondays-and-thursdays-tickets-162729866411",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
+      "via": [
+        "feed: NYC Resistor"
+      ],
+      "why": "Learn, make and share at NYC Resistor (all events18+)"
+    },
+    {
+      "id": "feed-nyc-resistor-2026-07-29-study-hall-x-nyc-resistor-vol-9",
+      "name": "STUDY HALL x NYC Resistor | vol. 9",
+      "dateISO": "2026-07-29T18:00:00",
+      "time": "6:00 PM",
+      "venue": "NYCResistor",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.eventbrite.com/e/study-hall-x-nyc-resistor-vol-9-tickets-1994898412854",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
+      "via": [
+        "feed: NYC Resistor"
+      ],
+      "why": "An open, collaborative creative-building series. Bring something to share, something to work on, or just an open mind."
+    },
+    {
+      "id": "feed-nyc-resistor-2026-08-01-repair-your-broken-items-at-repair-cafe",
+      "name": "Repair your broken items at Repair Cafe!",
+      "dateISO": "2026-08-01T14:00:00",
+      "time": "2:00 PM",
+      "venue": "NYCResistor",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.eventbrite.com/e/repair-your-broken-items-at-repair-cafe-tickets-1994287173621",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
+      "via": [
+        "feed: NYC Resistor"
+      ],
+      "why": "Repair can be intimidating if you haven’t done it before, and the hardest part often is getting started. It’s easier with support!"
+    },
+    {
+      "id": "feed-nyc-resistor-2026-08-05-intro-to-soldering-workshop-make-an-led-",
+      "name": "Intro to Soldering Workshop: Make an LED Tile",
+      "dateISO": "2026-08-05T18:00:00",
+      "time": "6:00 PM",
+      "venue": "NYC Resistor",
+      "neighborhood": "",
+      "price": "$90",
+      "url": "https://www.eventbrite.com/e/intro-to-soldering-workshop-make-an-led-tile-tickets-1994510406316",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
+      "via": [
+        "feed: NYC Resistor"
+      ],
+      "why": "Soldering is one of the most important skills you'll need for working with electronics. Come join us for an introductory through-hole solder"
+    },
+    {
       "id": "feed-nyc-resistor-2026-08-07-public-craft-night-1st-fridays-and-3rd-w",
       "name": "Public Craft Night 1st Fridays and 3rd Wednesdays of the Month",
       "dateISO": "2026-08-07T18:30:00",
@@ -2944,6 +3792,86 @@
         "feed: NYC Resistor"
       ],
       "why": "Learn, make, and share at NYC Resistor (18+; high quality masks required and provided on request)"
+    },
+    {
+      "id": "feed-nyc-resistor-2026-08-08-learn-to-use-a-sewing-machine",
+      "name": "Learn to Use a Sewing Machine!",
+      "dateISO": "2026-08-08T13:00:00",
+      "time": "1:00 PM",
+      "venue": "NYCResistor",
+      "neighborhood": "",
+      "price": "$103.22",
+      "url": "https://www.eventbrite.com/e/learn-to-use-a-sewing-machine-tickets-1994633558668",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
+      "via": [
+        "feed: NYC Resistor"
+      ],
+      "why": "Sewing machine operation for absolute beginners!"
+    },
+    {
+      "id": "feed-nyc-resistor-2026-08-09-touchdesigner-intro-to-tdableton",
+      "name": "TouchDesigner: Intro to TDableton",
+      "dateISO": "2026-08-09T15:00:00",
+      "time": "3:00 PM",
+      "venue": "NYC Resistor",
+      "neighborhood": "",
+      "price": "$80",
+      "url": "https://www.eventbrite.com/e/touchdesigner-intro-to-tdableton-tickets-1994608274041",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
+      "via": [
+        "feed: NYC Resistor"
+      ],
+      "why": "Dive into the dynamic real-time syncing of visuals and music by learning to integrate TouchDesigner with Ableton Live."
+    },
+    {
+      "id": "feed-nyc-resistor-2026-08-15-intro-to-soldering-workshop-make-an-led-",
+      "name": "Intro to Soldering Workshop: Make an LED Tile",
+      "dateISO": "2026-08-15T13:00:00",
+      "time": "1:00 PM",
+      "venue": "NYC Resistor",
+      "neighborhood": "",
+      "price": "$97.88",
+      "url": "https://www.eventbrite.com/e/intro-to-soldering-workshop-make-an-led-tile-tickets-1994510544730",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
+      "via": [
+        "feed: NYC Resistor"
+      ],
+      "why": "Soldering is one of the most important skills you'll need for working with electronics. Come join us for an introductory through-hole solder"
+    },
+    {
+      "id": "feed-nyc-resistor-2026-08-26-nycresistor-ham-radio-club",
+      "name": "NYCResistor Ham Radio Club",
+      "dateISO": "2026-08-26T20:00:00",
+      "time": "8:00 PM",
+      "venue": "NYC Resistor",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.eventbrite.com/e/nycresistor-ham-radio-club-tickets-1112940648439",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
+      "via": [
+        "feed: NYC Resistor"
+      ],
+      "why": "Monthly Amateur Radio club meeting of NYCResistor"
+    },
+    {
+      "id": "feed-greenlight-bookstore-2026-07-27-nature-writing-book-group",
+      "name": "Nature Writing Book Group",
+      "dateISO": "2026-07-27T18:30:00",
+      "time": "6:30 PM",
+      "venue": "Greene Garden",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.eventbrite.com/e/nature-writing-book-group-tickets-1990202219413",
+      "category": "talks_lectures",
+      "source": "Greenlight Bookstore",
+      "via": [
+        "feed: Greenlight Bookstore"
+      ],
+      "why": "From June to September, our Nature Writing group meets monthly to discuss great works of nature writing, in our local community garden."
     },
     {
       "id": "feed-greenlight-bookstore-2026-08-02-find-waldo-local-in-fort-greene-finale-p",
@@ -3120,22 +4048,6 @@
         "feed: Greenlight Bookstore"
       ],
       "why": "Meet and mingle with your hosts and fellow readers as we welcome our book groups back for fall—with discounts, free merch, wine, and more!"
-    },
-    {
-      "id": "feed-photoville-2026-07-18-photoville-summer-artist-walk-alice-aust",
-      "name": "Photoville Summer Artist Walk: Alice Austen House",
-      "dateISO": "2026-07-18T13:00:00",
-      "time": "1:00 PM",
-      "venue": "Alice Austen House",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/photoville-summer-artist-walk-alice-austen-house-tickets-1992775884314",
-      "category": "tours_experiences",
-      "source": "Photoville",
-      "via": [
-        "feed: Photoville"
-      ],
-      "why": "Join photographers at the Alice Austen House for the stories behind their Photoville 2026 exhibitions!"
     },
     {
       "id": "feed-photoville-2026-08-01-photoville-summer-artist-walk-hudson-yar",

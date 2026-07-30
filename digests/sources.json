@@ -1,32 +1,16 @@
 {
   "counts": [
     {
-      "source": "NYC Parks",
-      "count": 197
-    },
-    {
-      "source": "The Skint",
-      "count": 98
-    },
-    {
-      "source": "Gary's Guide",
-      "count": 70
-    },
-    {
-      "source": "New York Adventure Club",
-      "count": 52
-    },
-    {
       "source": "Fort Greene Park Conservancy",
-      "count": 49
-    },
-    {
-      "source": "Makeville Studio",
-      "count": 42
+      "count": 75
     },
     {
       "source": "Club Free Time",
-      "count": 42
+      "count": 58
+    },
+    {
+      "source": "Makeville Studio",
+      "count": 31
     },
     {
       "source": "Green-Wood Cemetery",
@@ -37,68 +21,116 @@
       "count": 30
     },
     {
-      "source": "Governors Island",
-      "count": 14
+      "source": "Gary's Guide",
+      "count": 24
+    },
+    {
+      "source": "Museum of the Moving Image",
+      "count": 16
     },
     {
       "source": "NY Mycological Society",
-      "count": 13
+      "count": 14
     },
     {
       "source": "Greenlight Bookstore",
-      "count": 11
-    },
-    {
-      "source": "NYPL",
-      "count": 10
-    },
-    {
-      "source": "Little Island",
-      "count": 10
-    },
-    {
-      "source": "AIANY",
-      "count": 9
-    },
-    {
-      "source": "Museum of the City of New York",
-      "count": 9
-    },
-    {
-      "source": "Brooklyn Museum",
-      "count": 8
+      "count": 12
     },
     {
       "source": "NYC Resistor",
-      "count": 6
+      "count": 11
     },
     {
-      "source": "Printed Matter",
+      "source": "Brooklyn Public Library",
+      "count": 10
+    },
+    {
+      "source": "New York Botanical Garden",
+      "count": 10
+    },
+    {
+      "source": "The Skint",
+      "count": 8
+    },
+    {
+      "source": "Museum of the City of New York",
+      "count": 8
+    },
+    {
+      "source": "New York Transit Museum",
+      "count": 7
+    },
+    {
+      "source": "Brooklyn Museum",
+      "count": 5
+    },
+    {
+      "source": "Governors Island",
       "count": 4
     },
     {
-      "source": "Photoville",
+      "source": "Center for Brooklyn History",
+      "count": 4
+    },
+    {
+      "source": "Thought Gallery",
+      "count": 4
+    },
+    {
+      "source": "Brooklyn Craft Company",
+      "count": 4
+    },
+    {
+      "source": "New-York Historical Society",
       "count": 3
     },
     {
-      "source": "Cerebral Valley",
+      "source": "Pioneer Works",
       "count": 2
     },
     {
-      "source": "Brooklyn Brainery",
-      "count": 1
+      "source": "Brooklyn Book Festival",
+      "count": 2
+    },
+    {
+      "source": "Prospect Park Alliance",
+      "count": 2
     },
     {
       "source": "Gotham Center",
+      "count": 2
+    },
+    {
+      "source": "Architectural League of New York",
+      "count": 1
+    },
+    {
+      "source": "Cooper Union",
+      "count": 1
+    },
+    {
+      "source": "AIANY / Center for Architecture",
+      "count": 1
+    },
+    {
+      "source": "Photoville",
       "count": 1
     }
   ],
   "empty": [
-    "Thought Gallery",
+    "Brooklyn Brainery",
     "Center for Fiction",
     "BRIC",
+    "Cerebral Valley",
     "Creative Coding NYC",
+    "NYC Parks",
     "Rooftop Films"
   ],
-  "contributing": 23
+  "contributing": 29,
+  "feedErrors": [
+    {
+      "source": "NYC Parks",
+      "error": "HTTP 403"
+    }
+  ]
 }

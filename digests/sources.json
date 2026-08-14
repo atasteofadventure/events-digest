@@ -1,16 +1,20 @@
 {
   "counts": [
     {
-      "source": "NYC Parks",
-      "count": 182
-    },
-    {
-      "source": "Fort Greene Park Conservancy",
-      "count": 74
+      "source": "The Skint",
+      "count": 58
     },
     {
       "source": "Club Free Time",
-      "count": 49
+      "count": 58
+    },
+    {
+      "source": "Fort Greene Park Conservancy",
+      "count": 56
+    },
+    {
+      "source": "Makeville Studio",
+      "count": 32
     },
     {
       "source": "Green-Wood Cemetery",
@@ -21,51 +25,55 @@
       "count": 30
     },
     {
-      "source": "Makeville Studio",
-      "count": 26
-    },
-    {
-      "source": "Gary's Guide",
-      "count": 24
-    },
-    {
-      "source": "Museum of the Moving Image",
-      "count": 16
-    },
-    {
-      "source": "NY Mycological Society",
-      "count": 14
+      "source": "Brooklyn Craft Company",
+      "count": 12
     },
     {
       "source": "Greenlight Bookstore",
       "count": 11
     },
     {
-      "source": "Brooklyn Public Library",
-      "count": 10
-    },
-    {
-      "source": "New York Botanical Garden",
-      "count": 10
+      "source": "New York Transit Museum",
+      "count": 8
     },
     {
       "source": "NYC Resistor",
-      "count": 9
-    },
-    {
-      "source": "The Skint",
       "count": 8
-    },
-    {
-      "source": "Museum of the City of New York",
-      "count": 8
-    },
-    {
-      "source": "New York Transit Museum",
-      "count": 7
     },
     {
       "source": "Brooklyn Museum",
+      "count": 7
+    },
+    {
+      "source": "New York Public Library",
+      "count": 7
+    },
+    {
+      "source": "Thought Gallery",
+      "count": 7
+    },
+    {
+      "source": "AIANY",
+      "count": 6
+    },
+    {
+      "source": "New York Botanical Garden",
+      "count": 6
+    },
+    {
+      "source": "New-York Historical Society",
+      "count": 5
+    },
+    {
+      "source": "Little Island",
+      "count": 5
+    },
+    {
+      "source": "Rooftop Cinema Club",
+      "count": 5
+    },
+    {
+      "source": "Museum of the Moving Image",
       "count": 5
     },
     {
@@ -73,61 +81,51 @@
       "count": 4
     },
     {
-      "source": "Center for Brooklyn History",
+      "source": "Museum of the City of New York",
       "count": 4
     },
     {
-      "source": "Thought Gallery",
-      "count": 4
-    },
-    {
-      "source": "Brooklyn Craft Company",
-      "count": 4
-    },
-    {
-      "source": "New-York Historical Society",
+      "source": "Municipal Art Society",
       "count": 3
     },
     {
       "source": "Pioneer Works",
-      "count": 2
+      "count": 3
     },
     {
-      "source": "Brooklyn Book Festival",
-      "count": 2
+      "source": "Brooklyn Botanic Garden",
+      "count": 3
     },
     {
-      "source": "Prospect Park Alliance",
+      "source": "Printed Matter",
       "count": 2
     },
     {
       "source": "Gotham Center",
       "count": 2
-    },
-    {
-      "source": "Architectural League of New York",
-      "count": 1
-    },
-    {
-      "source": "Cooper Union",
-      "count": 1
-    },
-    {
-      "source": "AIANY / Center for Architecture",
-      "count": 1
-    },
-    {
-      "source": "Photoville",
-      "count": 1
     }
   ],
   "empty": [
     "Brooklyn Brainery",
     "Center for Fiction",
     "BRIC",
+    "Gary's Guide",
     "Cerebral Valley",
+    "NY Mycological Society",
     "Creative Coding NYC",
-    "Rooftop Films"
+    "NYC Parks",
+    "Rooftop Films",
+    "Photoville"
   ],
-  "contributing": 30
+  "contributing": 26,
+  "feedErrors": [
+    {
+      "source": "NY Mycological Society",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "NYC Parks",
+      "error": "HTTP 405"
+    }
+  ]
 }

@@ -16,3 +16,6 @@ node_modules/
 .env.*
 !.env.example
 .vercel
+
+# Per-source extraction batches (merged into events.json by bin/merge-events.js)
+events-inbox/

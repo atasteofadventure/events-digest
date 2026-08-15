@@ -1,7 +1,7 @@
 name: Weekly digest email
 
 # Sends the email-safe digest (digests/email.html) whenever a digest build is
-# pushed. The cloud routine runs Thursdays 22:00 UTC; a recovery/manual run on
+# pushed. The cloud routine runs Tuesdays 22:00 UTC; a recovery/manual run on
 # any other day now emails too — the `digest:` commit prefix is the guard, not
 # the day of week. Trigger manually any time via the "Run workflow" button.
 on:

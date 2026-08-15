@@ -4,11 +4,11 @@ name: Fetch feeds
 # NYC Parks RSS / Eventbrite organizer pages) and commits feed-events.json.
 # This runs HERE, not in the cloud routine, because the routine's sandbox has
 # restricted network egress — every outbound fetch 403s (observed 2026-07-02).
-# Schedule: Thursday 21:30 UTC, thirty minutes before the 22:00 UTC routine run,
+# Schedule: Tuesday 21:30 UTC, thirty minutes before the 22:00 UTC routine run,
 # so the routine's fresh clone already contains today's feed data.
 on:
   schedule:
-    - cron: '30 21 * * 4'
+    - cron: '30 21 * * 2'
   workflow_dispatch: {}
 
 permissions:

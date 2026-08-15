@@ -1,12 +1,12 @@
 name: Digest watchdog
 
-# Dead-man switch. Runs Friday 15:00 UTC (~11am ET), ~17 hours after the
-# Thursday 22:00 UTC cloud-routine run. If no `digest:` commit landed in the
+# Dead-man switch. Runs Wednesday 15:00 UTC (~11am ET), ~17 hours after the
+# Tuesday 22:00 UTC cloud-routine run. If no `digest:` commit landed in the
 # last 40 hours, emails an alert — a silently failed routine (no digest, no
 # email, no signal) is exactly how the 2026-06-25 miss went unnoticed.
 on:
   schedule:
-    - cron: '0 15 * * 5'
+    - cron: '0 15 * * 3'
   workflow_dispatch: {}
 
 jobs:

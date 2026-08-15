@@ -144,7 +144,7 @@ Rules:
 ## 2.5 Structured feeds (pre-fetched — do not fetch here)
 
 Venue-calendar events (`type:"feed"` in config.json) are fetched by a GitHub
-Action ("Fetch feeds", Thursdays 21:30 UTC) that commits `feed-events.json`
+Action ("Fetch feeds", Tuesdays 21:30 UTC) that commits `feed-events.json`
 to the repo BEFORE this run — your clone already contains today's feed data.
 
 You may still run `node bin/fetch-feeds.js`; in this sandbox every outbound
@@ -182,7 +182,7 @@ RUN_DATE="$(date -u +%Y-%m-%dT%H:%M:%S)" node bin/build-digest.js
 ```
 
 This writes `digests/<YYYY-MM-DD>.html`, `digests/index.html`, an email-safe
-`digests/email.html` (a GitHub Action emails it on Thursdays), and an updated
+`digests/email.html` (a GitHub Action emails it on every `digest:` push), and an updated
 `state.json`. The publish step below commits all of `digests/`, so `email.html`
 ships automatically — no extra action needed from you.
 

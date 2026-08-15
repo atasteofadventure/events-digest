@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 'use strict';
 // Dead-man switch: if no `digest:` commit landed recently, email an alert.
-// Runs from .github/workflows/watchdog.yml every Friday 15:00 UTC — ~17h after
-// the Thursday 22:00 UTC routine run. The routine failing silently (no digest,
+// Runs from .github/workflows/watchdog.yml every Wednesday 15:00 UTC — ~17h after
+// the Tuesday 22:00 UTC routine run. The routine failing silently (no digest,
 // no email, no signal — see the 2026-06-25 incident) is what this guards against.
 const { execFileSync } = require('child_process');
 const { sendEmail } = require('./send-email');
 
-// Healthy gap is ~17h (Thu 22:00 → Fri 15:00); 40h catches a missed run while
-// tolerating a same-week manual re-run on Friday morning.
+// Healthy gap is ~17h (Tue 22:00 → Wed 15:00); 40h catches a missed run while
+// tolerating a same-week manual re-run on Wednesday morning.
 const MAX_AGE_HOURS = 40;
 
 function isStale(lastEpochSec, nowEpochSec, maxAgeHours) {

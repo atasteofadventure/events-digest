@@ -18,8 +18,8 @@ test('missing digest (no commit found) is stale', () => {
   assert.equal(isStale(0, 1_800_000_000, 40), true);
 });
 
-test('default threshold clears a healthy Thursday-to-Friday gap', () => {
-  // Routine: Thu 22:00 UTC. Watchdog: Fri 15:00 UTC. Gap = 17h; threshold must exceed it.
+test('default threshold clears a healthy Tuesday-to-Wednesday gap', () => {
+  // Routine: Tue 22:00 UTC. Watchdog: Wed 15:00 UTC. Gap = 17h; threshold must exceed it.
   assert.ok(MAX_AGE_HOURS > 17);
   // ...but must catch a fully missed week (7 days).
   assert.ok(MAX_AGE_HOURS < 7 * 24);

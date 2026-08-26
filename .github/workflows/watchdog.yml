@@ -1,7 +1,9 @@
 name: Digest watchdog
 
 # Dead-man switch. Runs Wednesday 15:00 UTC (~11am ET), ~17 hours after the
-# Tuesday 22:00 UTC cloud-routine run. If no `digest:` commit landed in the
+# Tuesday 22:00 UTC cloud-routine run and ~2 hours after the Wednesday 13:00 UTC
+# retry routine (which only runs if Tuesday left no `digest:` commit — e.g. a
+# weekly usage-limit rejection). If no `digest:` commit landed in the
 # last 40 hours, emails an alert — a silently failed routine (no digest, no
 # email, no signal) is exactly how the 2026-06-25 miss went unnoticed.
 on:

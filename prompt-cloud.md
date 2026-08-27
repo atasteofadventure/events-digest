@@ -118,10 +118,12 @@ Rules:
   links in a tracking/redirect (e.g. mailchimp, substack, sendgrid) — that is fine,
   use the wrapped link; it resolves to the event. If an event genuinely has no link
   in the email, use the organizer/venue's event page; only if that is impossible,
-  set `url` to "". Do NOT leave `url` blank when the email contains a link — **the
-  build DROPS any event without a real `https://` URL** (it must never link to a web
-  search), so a blank url means the event silently disappears. Never invent a search
-  URL. This was a real bug: a prior run left every url empty.
+  set `url` to "". Do NOT leave `url` blank when the email contains a link. A blank
+  url is shown to the reader with a "no event page in the source" warning and a web
+  search — acceptable for the rare event with no link, embarrassing if it is from
+  laziness. Never invent a search URL yourself. The build prints `No URL: N`; more
+  than a handful means extraction skipped links. This was a real bug: a prior run
+  left every url empty.
 - **Drop invalid listings**: anything without a real date, non-NYC events,
   sold-out/waitlisted events, and non-event promos (merch, fundraising appeals,
   "support us").
@@ -188,11 +190,11 @@ so overlap between batches is fine.
 
 Run the deterministic build. It buckets every event by date into five sections
 (This Week = Mon–Thu / This Weekend = Fri–Sun / Next Week / Next Weekend / Later),
-applies the standing exclusions (kids, comedy, virtual, book talks), drops events
-with no real URL, de-duplicates across sources (merging where an event was seen),
+applies the standing exclusions (kids, comedy, virtual, book talks, cancelled), flags
+events with no real URL, de-duplicates across sources (merging where an event was seen),
 collapses repeating series to their first date, sorts each section
 chronologically, and renders the page. It does NOT rank, cap, or hide
-previously-shown events. The build prints `Excluded: ...` / `No URL: N` /
+previously-shown events. The build prints `Excluded: ...` / `No URL (kept, flagged as web search): N` /
 `Collapsed series: N` lines — include them in your report:
 
 ```bash

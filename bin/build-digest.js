@@ -167,7 +167,7 @@ function main() {
   const st = curated._stats || {};
   const ex = Object.entries(st.excluded || {}).map(([k, v]) => `${k} ${v}`).join(', ') || 'none';
   console.log(`Excluded: ${ex}`);
-  console.log(`No URL (dropped): ${st.noUrl || 0}`);
+  console.log(`No URL (kept, flagged as web search): ${st.noUrl || 0}`);
   console.log(`Collapsed series occurrences: ${st.collapsed || 0}`);
   if (report.feedErrors) {
     for (const fe of report.feedErrors) console.log(`feed error: ${fe.source} — ${fe.error}`);

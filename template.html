@@ -189,6 +189,12 @@
     margin-bottom: 10px;
   }
 
+  .event-nolink {
+    font-size: 0.72rem;
+    color: #b45309;
+    margin-top: 6px;
+  }
+
   .event-source {
     font-size: 0.72rem;
     color: #a8a29e;
@@ -502,11 +508,14 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
   // Destination for an event's title link. Prefer the real event URL; when one
   // is missing, fall back to a web search for the event so the link still goes
   // somewhere useful instead of dead-ending on this page.
-  // The build drops events without a real URL, so this never needs a search
-  // fallback (the old Google-search fallback produced junk destinations).
+  // Real event page when we have one. When no source carried a link the build
+  // flags `urlMissing`; the card then shows an explicit "no event page found"
+  // note and links to a web search so the event is still reachable.
   function eventHref(evt) {
     var u = (evt && evt.url ? String(evt.url) : '').trim();
-    return /^https?:\/\//i.test(u) ? u : '#';
+    if (/^https?:\/\//i.test(u)) return u;
+    var q = [evt && evt.name, evt && evt.venue, 'NYC'].filter(Boolean).join(' ');
+    return 'https://www.google.com/search?q=' + encodeURIComponent(q);
   }
 
   // "feed: Green-Wood Cemetery" -> "Green-Wood Cemetery (calendar feed)";
@@ -623,6 +632,12 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
     feedbackRow.appendChild(saveBtn);
 
     card.appendChild(feedbackRow);
+
+    if (evt.urlMissing) {
+      var nolink = createEl('div', 'event-nolink');
+      nolink.textContent = 'No event page in the source; title links to a web search.';
+      card.appendChild(nolink);
+    }
 
     var srcText = eventSourceText(evt);
     if (srcText) {

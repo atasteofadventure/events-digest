@@ -10,8 +10,7 @@ const path = require('path');
 const {
   icsToEvents, jsonLdToEvents, squarespaceJsonToEvents,
   nycParksRssToEvents, resistorRssToEvents, eventbriteOrganizerToEvents,
-  eventbriteEventPageInfo,
-} = require('../lib/feeds');
+  eventbriteEventPageInfo, stripSharedWhy } = require('../lib/feeds');
 
 const TIMEOUT_MS = 20000;
 const HORIZON_DAYS = 90; // keep today .. +90d (Makeville's gcal carries years of history)
@@ -82,7 +81,11 @@ function withinHorizon(dateISO, nowISO) {
 }
 
 function parseBody(src, body) {
-  const opts = { sourceName: src.name, defaultCategory: src.default_category };
+  return stripSharedWhy(parseBodyRaw(src, body));
+}
+
+function parseBodyRaw(src, body) {
+  const opts = { sourceName: src.name, defaultCategory: src.default_category, fallbackUrl: src.fallback_url };
   switch (src.format) {
     case 'ics': return icsToEvents(body, opts);
     case 'jsonld': return jsonLdToEvents(body, opts);

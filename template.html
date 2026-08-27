@@ -425,7 +425,6 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
   var CATEGORY_ORDER = [
     'tech_ai',
     'music_nightlife',
-    'comedy',
     'film_screenings',
     'art_exhibitions',
     'talks_lectures',
@@ -439,7 +438,6 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
   var CATEGORY_CONFIG = {
     tech_ai:           { label: 'Tech & AI',            color: '#3b82f6' },
     music_nightlife:   { label: 'Music & Nightlife',    color: '#6366f1' },
-    comedy:            { label: 'Comedy',               color: '#f97316' },
     talks_lectures:    { label: 'Talks & Lectures',     color: '#8b5cf6' },
     workshops_classes:  { label: 'Workshops & Classes',   color: '#f59e0b' },
     tours_experiences:  { label: 'Tours & Experiences',   color: '#10b981' },
@@ -481,11 +479,18 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
   // Destination for an event's title link. Prefer the real event URL; when one
   // is missing, fall back to a web search for the event so the link still goes
   // somewhere useful instead of dead-ending on this page.
+  // The build drops events without a real URL, so this never needs a search
+  // fallback (the old Google-search fallback produced junk destinations).
   function eventHref(evt) {
     var u = (evt && evt.url ? String(evt.url) : '').trim();
-    if (/^https?:\/\//i.test(u)) return u;
-    var q = [evt && evt.name, evt && evt.venue, 'NYC'].filter(Boolean).join(' ');
-    return 'https://www.google.com/search?q=' + encodeURIComponent(q);
+    return /^https?:\/\//i.test(u) ? u : '#';
+  }
+
+  function runsThroughLabel(evt) {
+    if (!evt || !evt.runsThrough) return '';
+    var d = new Date(evt.runsThrough + 'T12:00:00');
+    if (isNaN(d)) return '';
+    return 'Runs through ' + formatDate(evt.runsThrough) + (evt.occurrences ? ' (' + evt.occurrences + ' dates)' : '');
   }
 
   function createTabButton(label, tabKey, count) {
@@ -532,6 +537,7 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
     if (evt.time) metaParts.push(evt.time);
     if (evt.venue) metaParts.push(evt.venue);
     if (evt.neighborhood) metaParts.push(evt.neighborhood);
+    if (runsThroughLabel(evt)) metaParts.push(runsThroughLabel(evt));
 
     if (metaParts.length > 0) {
       var meta = createEl('div', 'event-meta');

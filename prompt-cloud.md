@@ -92,7 +92,7 @@ Each event is an object:
   "neighborhood": "Neighborhood",
   "price": "Free" or "$25",
   "url": "https://absolute-link-to-this-event",
-  "category": "one of: tech_ai, music_nightlife, comedy, film_screenings, art_exhibitions, talks_lectures, workshops_classes, tours_experiences, sports_fitness, festivals_parties, miscellaneous",
+  "category": "one of: tech_ai, music_nightlife, film_screenings, art_exhibitions, talks_lectures, workshops_classes, tours_experiences, sports_fitness, festivals_parties, miscellaneous",
   "source": "organizer/venue name (not the newsletter)",
   "via": ["newsletter it came from — use the EXACT source `name` from config.json when the newsletter is listed there (e.g. \"The Skint\", \"Gary's Guide\"), otherwise the newsletter's plain display name (e.g. \"Museum of the Moving Image\"); do NOT invent slugs like \"garysguide-newsletter\""],
   "why": "one-sentence organizer description (not a personalized pitch)"
@@ -118,20 +118,35 @@ Rules:
   links in a tracking/redirect (e.g. mailchimp, substack, sendgrid) — that is fine,
   use the wrapped link; it resolves to the event. If an event genuinely has no link
   in the email, use the organizer/venue's event page; only if that is impossible,
-  set `url` to "". Do NOT leave `url` blank when the email contains a link — a blank
-  url produces a dead link on the page. This was a real bug: a prior run left every
-  url empty.
-- **Drop only invalid listings**: anything without a real date, non-NYC events,
+  set `url` to "". Do NOT leave `url` blank when the email contains a link — **the
+  build DROPS any event without a real `https://` URL** (it must never link to a web
+  search), so a blank url means the event silently disappears. Never invent a search
+  URL. This was a real bug: a prior run left every url empty.
+- **Drop invalid listings**: anything without a real date, non-NYC events,
   sold-out/waitlisted events, and non-event promos (merch, fundraising appeals,
-  "support us"). These are validity checks, not taste judgments.
-- **No taste filtering or ranking.** Extract EVERY valid upcoming event you find.
-  Do not decide what is "interesting", on-taste, or worth keeping — the reader
-  does that themselves. There is no relevance score and no cap; whatever you
-  extract is what gets shown.
+  "support us").
+- **Standing exclusions (reader directive, 2026-08-27) — do NOT extract these:**
+  - **Child-oriented events**: storytimes, kids'/children's/toddler/teen/family
+    programs, anything aimed at an age range under 18.
+  - **Comedy**: stand-up, improv, sketch, comedy shows of any kind. (There is no
+    `comedy` category any more.)
+  - **Virtual / online-only events**: webinars, Zoom talks, livestreams. A hybrid
+    event that is ALSO in person stays (tag it by its in-person venue).
+  - **Book talks**: launches, signings, author readings/conversations about a
+    book, book clubs. (Talks that are not about a book are fine.)
+  `bin/build-digest.js` enforces the same rules by keyword afterwards, but you
+  see the full email text and catch what keywords miss — when in doubt, skip.
+- **Recurring / daily listings**: extract a repeating series (an exhibition open
+  every day, a weekly class) as ONE object at its first upcoming date, with the
+  closing/last date noted in `why` (e.g. "Opens Aug 28, runs through Jan 3").
+  Do not emit one object per day. The build also collapses any series it finds
+  on 3+ dates to its first date.
+- **No taste filtering or ranking beyond the exclusions above.** Extract EVERY
+  other valid upcoming event you find. Do not decide what is "interesting" —
+  the reader does that. There is no relevance score and no cap.
 - **`category`**: tag each event with the closest category. Nothing is capped, so
   do not be conservative about `art_exhibitions`. Use `music_nightlife` for concerts,
-  DJ sets, dance parties, club nights, and drag/burlesque; `comedy` for stand-up and
-  comedy shows; `festivals_parties` for street festivals, parades, Pride marches, and
+  DJ sets, dance parties, club nights, and drag/burlesque; `festivals_parties` for street festivals, parades, Pride marches, and
   large outdoor celebrations; `sports_fitness` for sports, fitness classes, yoga,
   group runs/races, rec-center athletics, paddling/climbing, and similar active
   recreation. **`miscellaneous` is a real option — use it as the genuine catch-all
@@ -172,10 +187,13 @@ so overlap between batches is fine.
 ## 3. Build the digest
 
 Run the deterministic build. It buckets every event by date into five sections
-(This Week / This Weekend / Next Week / Next Weekend / Later), de-duplicates
-across sources (merging where an event was seen), sorts each section
-chronologically, and renders the page. It does NOT rank, filter by taste, cap, or
-hide previously-shown events — every event you extract is shown:
+(This Week = Mon–Thu / This Weekend = Fri–Sun / Next Week / Next Weekend / Later),
+applies the standing exclusions (kids, comedy, virtual, book talks), drops events
+with no real URL, de-duplicates across sources (merging where an event was seen),
+collapses repeating series to their first date, sorts each section
+chronologically, and renders the page. It does NOT rank, cap, or hide
+previously-shown events. The build prints `Excluded: ...` / `No URL: N` /
+`Collapsed series: N` lines — include them in your report:
 
 ```bash
 RUN_DATE="$(date -u +%Y-%m-%dT%H:%M:%S)" node bin/build-digest.js
@@ -207,7 +225,8 @@ feed errors from `feed-events.json`.
 
 ## Notes
 
-- This digest does not curate. It shows every valid upcoming event you extract,
+- Apart from the standing exclusions (kids, comedy, virtual, book talks) this
+  digest does not curate. It shows every other valid upcoming event you extract,
   de-duplicated and bucketed by date, so the reader decides what is interesting.
   There is no taste ranking, no per-bucket cap, and no hiding of events shown in
   earlier digests.

@@ -789,7 +789,8 @@
       "format": "ics",
       "feed_url": "https://calendar.google.com/calendar/ical/makeville.com_r8os53m99cg005fpqu036h3lc0%40group.calendar.google.com/public/basic.ics",
       "enabled": true,
-      "default_category": "workshops_classes"
+      "default_category": "workshops_classes",
+      "fallback_url": "https://www.makeville.com/classes"
     },
     {
       "type": "feed",
@@ -805,7 +806,8 @@
       "format": "jsonld",
       "feed_url": "https://www.clubfreetime.com/new-york-city-nyc/free-talks-lectures",
       "enabled": true,
-      "default_category": "talks_lectures"
+      "default_category": "talks_lectures",
+      "fallback_url": "https://www.clubfreetime.com/new-york-city-nyc/free-talks-lectures"
     },
     {
       "type": "feed",
@@ -869,8 +871,9 @@
       "name": "Greenlight Bookstore",
       "format": "eventbrite-organizer",
       "feed_url": "https://www.eventbrite.com/o/greenlight-bookstore-13064382976",
-      "enabled": true,
-      "default_category": "talks_lectures"
+      "enabled": false,
+      "default_category": "talks_lectures",
+      "disabled_reason": "bookstore calendar = book talks, excluded by user directive 2026-08-27"
     },
     {
       "type": "feed",

@@ -81,24 +81,36 @@ function sourceKey(s) {
 
 // Visibility: which sources actually contributed this run, and which configured
 // sources produced nothing (dead subscription, broken feed, or a quiet week).
-function sourceReport(events, configuredNames) {
+// A feed ("feed: X") and a newsletter ("X") from the same organization are
+// tracked separately — the dashboard shows which channel delivered what.
+// `configured` entries may be plain names (matched against either channel) or
+// { name, type } objects from config.json (type "feed" matches only the feed).
+function sourceReport(events, configured) {
   const tally = new Map(); // key -> { source: display label, count }
+  const isFeed = (v) => /^feed:\s*/i.test(String(v));
+  const keyFor = (v, feed) => (feed ? 'feed:' : '') + sourceKey(v);
   for (const e of events || []) {
     const vias = Array.isArray(e.via) && e.via.length ? e.via : [e.source || 'unknown'];
     for (const v of vias) {
-      const key = sourceKey(v);
-      const cur = tally.get(key) || { source: String(v).replace(/^feed:\s*/, ''), count: 0 };
+      const feed = isFeed(v);
+      const key = keyFor(v, feed);
+      const cur = tally.get(key) || { source: (feed ? 'feed: ' : '') + String(v).replace(/^feed:\s*/i, ''), count: 0 };
       cur.count += 1;
       tally.set(key, cur);
     }
   }
+  const entries = (configured || []).map((c) => (typeof c === 'string' ? { name: c } : c));
+  const keysFor = (c) => c.type === 'feed' ? [keyFor(c.name, true)]
+    : c.type ? [keyFor(c.name, false)] : [keyFor(c.name, false), keyFor(c.name, true)];
   // Prefer the configured display name where a key matches.
-  for (const n of configuredNames || []) {
-    const hit = tally.get(sourceKey(n));
-    if (hit) hit.source = n;
+  for (const c of entries) {
+    for (const k of keysFor(c)) {
+      const hit = tally.get(k);
+      if (hit) hit.source = (k.startsWith('feed:') ? 'feed: ' : '') + c.name;
+    }
   }
   const counts = [...tally.values()].sort((a, b) => b.count - a.count);
-  const empty = (configuredNames || []).filter((n) => !tally.has(sourceKey(n)));
+  const empty = entries.filter((c) => !keysFor(c).some((k) => tally.has(k))).map((c) => c.name);
   return { counts, empty, contributing: counts.length };
 }
 
@@ -119,7 +131,7 @@ function main() {
 
   const config = JSON.parse(fs.readFileSync(path.join(root, 'config.json'), 'utf8'));
   const configuredNames = (config.sources || [])
-    .filter((s) => s.enabled !== false).map((s) => s.name);
+    .filter((s) => s.enabled !== false).map((s) => ({ name: s.name, type: s.type }));
   const report = sourceReport(events, configuredNames);
   if (feedFile && Array.isArray(feedFile.errors) && feedFile.errors.length) {
     report.feedErrors = feedFile.errors;
@@ -129,7 +141,7 @@ function main() {
   const curated = curate(events, runDateISO);
   const data = buildData(curated, runDateISO, {
     title: `Week of ${runDateISO.slice(0, 10)}`, type: 'week', total_collected: total,
-    source_report: { contributing: report.contributing, empty: report.empty },
+    source_report: { contributing: report.contributing, empty: report.empty, counts: report.counts },
   });
   let out = injectData(template, data);
   out = injectTitle(out, data.meta.title || 'Events Digest');

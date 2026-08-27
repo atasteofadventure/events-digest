@@ -189,6 +189,29 @@
     margin-bottom: 10px;
   }
 
+  .event-source {
+    font-size: 0.72rem;
+    color: #a8a29e;
+    margin-top: 8px;
+  }
+
+  .source-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 6px 0;
+    border-bottom: 1px solid #f0edea;
+    font-size: 0.85rem;
+  }
+  .source-row .count { color: #78716c; white-space: nowrap; }
+  .source-empty { color: #b45309; }
+  .source-kind { color: #a8a29e; font-weight: 400; }
+  .sources-sub {
+    font-size: 0.8rem;
+    color: #78716c;
+    margin: 16px 0 6px;
+  }
+
   .feedback-row {
     display: flex;
     gap: 4px;
@@ -486,6 +509,23 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
     return /^https?:\/\//i.test(u) ? u : '#';
   }
 
+  // "feed: Green-Wood Cemetery" -> "Green-Wood Cemetery (calendar feed)";
+  // anything else came from an email newsletter -> "(email list)".
+  function sourceLabel(via) {
+    var v = String(via || '');
+    if (/^feed:\s*/i.test(v)) return v.replace(/^feed:\s*/i, '') + ' (calendar feed)';
+    return v + ' (email list)';
+  }
+  function eventSourceText(evt) {
+    var vias = (evt && evt.via && evt.via.length) ? evt.via : (evt && evt.source ? [evt.source] : []);
+    var seen = {}, parts = [];
+    for (var i = 0; i < vias.length; i++) {
+      var l = sourceLabel(vias[i]);
+      if (!seen[l]) { seen[l] = true; parts.push(l); }
+    }
+    return parts.length ? 'Source: ' + parts.join(', ') : '';
+  }
+
   function runsThroughLabel(evt) {
     if (!evt || !evt.runsThrough) return '';
     var d = new Date(evt.runsThrough + 'T12:00:00');
@@ -583,6 +623,13 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
     feedbackRow.appendChild(saveBtn);
 
     card.appendChild(feedbackRow);
+
+    var srcText = eventSourceText(evt);
+    if (srcText) {
+      var srcEl = createEl('div', 'event-source');
+      srcEl.textContent = srcText;
+      card.appendChild(srcEl);
+    }
 
     return card;
   }
@@ -731,6 +778,66 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
     }
 
     container.appendChild(section);
+  }
+
+  // Per-source summary: events shown per source (descending), then configured
+  // sources that yielded nothing — the quickest way to spot a broken feed or a
+  // newsletter that stopped arriving.
+  function renderSourceSummary(data, allEvents) {
+    var wrapper = document.getElementById('sources-container');
+    var rep = data.meta && data.meta.source_report;
+    if (!rep) return;
+
+    var shownBy = {};
+    for (var i = 0; i < allEvents.length; i++) {
+      var vias = (allEvents[i].via && allEvents[i].via.length) ? allEvents[i].via : [allEvents[i].source || 'unknown'];
+      var seen = {};
+      for (var v = 0; v < vias.length; v++) {
+        var l = sourceLabel(vias[v]);
+        if (seen[l]) continue;
+        seen[l] = true;
+        shownBy[l] = (shownBy[l] || 0) + 1;
+      }
+    }
+    var counts = (rep.counts || []).map(function(c) {
+      var label = sourceLabel(c.source);
+      return { label: label, collected: c.count, shown: shownBy[label] || 0 };
+    });
+    counts.sort(function(a, b) { return b.shown - a.shown || b.collected - a.collected; });
+
+    var section = createEl('div', 'sources-section');
+    var title = createEl('div', 'sources-title');
+    title.textContent = 'Sources';
+    section.appendChild(title);
+
+    var sub = createEl('div', 'sources-sub');
+    sub.textContent = 'Events shown per source (collected before exclusions in parentheses).';
+    section.appendChild(sub);
+
+    for (var c = 0; c < counts.length; c++) {
+      var row = createEl('div', 'source-row');
+      var name = createEl('span');
+      var m = /^(.*) \((email list|calendar feed)\)$/.exec(counts[c].label);
+      name.textContent = m ? m[1] + ' ' : counts[c].label;
+      if (m) { var kind = createEl('span', 'source-kind'); kind.textContent = '(' + m[2] + ')'; name.appendChild(kind); }
+      var cnt = createEl('span', 'count');
+      cnt.textContent = counts[c].shown + (counts[c].collected !== counts[c].shown ? ' (' + counts[c].collected + ')' : '');
+      row.appendChild(name); row.appendChild(cnt);
+      section.appendChild(row);
+    }
+
+    var empty = rep.empty || [];
+    var sub2 = createEl('div', 'sources-sub');
+    sub2.textContent = empty.length ? 'No events from ' + empty.length + ' configured source' + (empty.length === 1 ? '' : 's') + ' (possibly broken):' : 'Every configured source contributed.';
+    section.appendChild(sub2);
+    for (var e = 0; e < empty.length; e++) {
+      var er = createEl('div', 'source-row source-empty');
+      var en = createEl('span'); en.textContent = empty[e];
+      var ec = createEl('span', 'count'); ec.textContent = '0';
+      er.appendChild(en); er.appendChild(ec);
+      section.appendChild(er);
+    }
+    wrapper.appendChild(section);
   }
 
   function renderDiscoveredSources(sources) {
@@ -972,6 +1079,7 @@ var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Sample Week","type":"week
     });
 
     // Discovered sources
+    renderSourceSummary(data, all);
     renderDiscoveredSources(data.discovered_sources || []);
   }
 

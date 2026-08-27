@@ -74,7 +74,7 @@ test('sourceReport counts per via-source and lists empty configured sources', ()
   ];
   const rep = sourceReport(events, ['The Skint', 'Park', 'Nonsense NYC']);
   assert.deepEqual(rep.counts[0], { source: 'The Skint', count: 2 });
-  assert.deepEqual(rep.counts[1], { source: 'Park', count: 2 }); // "feed: " prefix normalized
+  assert.deepEqual(rep.counts[1], { source: 'feed: Park', count: 2 }); // feed channel kept distinct
   assert.deepEqual(rep.empty, ['Nonsense NYC']);
   assert.equal(rep.contributing, 2);
 });
@@ -94,4 +94,15 @@ test('sourceReport matches model-invented via slugs to configured names', () => 
   assert.deepEqual(rep.empty, ['BRIC']);
   // counts display the configured name when matched
   assert.ok(rep.counts.some(c => c.source === "Gary's Guide"));
+});
+
+test('build embeds per-source counts in meta.source_report for the dashboard', () => {
+  const { sourceReport } = require('./build-digest');
+  const rep = sourceReport([{ via: ['feed: A'] }, { via: ['feed: A'] }, { via: ['B'] }], ['A', 'B', 'C']);
+  assert.deepEqual(rep.counts.map((c) => [c.source, c.count]), [['feed: A', 2], ['B', 1]]);
+  assert.deepEqual(rep.empty, ['C']);
+  // same org on both channels stays two rows; a feed-typed config entry is only satisfied by the feed
+  const r2 = sourceReport([{ via: ['Park'] }], [{ name: 'Park', type: 'feed' }, { name: 'Park', type: 'newsletter' }]);
+  assert.deepEqual(r2.empty, ['Park']);
+  assert.deepEqual(r2.counts, [{ source: 'Park', count: 1 }]);
 });

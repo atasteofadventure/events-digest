@@ -1,12 +1,16 @@
 {
   "counts": [
     {
+      "source": "NYC Parks",
+      "count": 173
+    },
+    {
       "source": "Club Free Time",
-      "count": 74
+      "count": 73
     },
     {
       "source": "Fort Greene Park Conservancy",
-      "count": 56
+      "count": 52
     },
     {
       "source": "NY Adventure Club",
@@ -45,10 +49,6 @@
       "count": 11
     },
     {
-      "source": "Greenlight Bookstore",
-      "count": 11
-    },
-    {
       "source": "Museum of the Moving Image",
       "count": 10
     },
@@ -66,6 +66,10 @@
     },
     {
       "source": "Brooklyn Craft Company",
+      "count": 5
+    },
+    {
+      "source": "Gotham Center",
       "count": 5
     },
     {
@@ -90,10 +94,6 @@
     },
     {
       "source": "Architectural League",
-      "count": 3
-    },
-    {
-      "source": "Gotham Center",
       "count": 3
     },
     {
@@ -138,15 +138,8 @@
     "Center for Fiction",
     "BRIC",
     "Creative Coding NYC",
-    "NYC Parks",
     "Rooftop Films",
     "Photoville"
   ],
-  "contributing": 33,
-  "feedErrors": [
-    {
-      "source": "NYC Parks",
-      "error": "HTTP 405"
-    }
-  ]
+  "contributing": 33
 }

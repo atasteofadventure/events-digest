@@ -137,8 +137,18 @@ function main() {
     report.feedErrors = feedFile.errors;
   }
 
+  // LLM tie-breaker verdicts (optional; see bin/dedupe-review.js).
+  let verdicts = [];
+  const verdictPath = path.join(root, 'events-inbox', '_merges.json');
+  if (fs.existsSync(verdictPath)) {
+    try {
+      const parsed = JSON.parse(fs.readFileSync(verdictPath, 'utf8'));
+      verdicts = Array.isArray(parsed) ? parsed : (parsed && Array.isArray(parsed.verdicts) ? parsed.verdicts : []);
+    } catch (err) { console.error(`warning: events-inbox/_merges.json unreadable (${err.message}); ignoring verdicts`); }
+  }
+
   const total = Array.isArray(events) ? events.length : 0;
-  const curated = curate(events, runDateISO);
+  const curated = curate(events, runDateISO, { verdicts });
   const data = buildData(curated, runDateISO, {
     title: `Week of ${runDateISO.slice(0, 10)}`, type: 'week', total_collected: total,
     source_report: { contributing: report.contributing, empty: report.empty, counts: report.counts },
@@ -152,6 +162,13 @@ function main() {
   fs.writeFileSync(path.join(root, 'digests', 'index.html'), out);
   // Email-safe flat version (sent weekly by the GitHub Action; see bin/send-email.js).
   fs.writeFileSync(path.join(root, 'digests', 'email.html'), buildEmailHtml(data));
+
+  // Merge audit log: every fuzzy/LLM merge with its reason, so a wrong or missed
+  // merge can be turned into a dedupe.test.js case.
+  const st0 = curated._stats || {};
+  fs.writeFileSync(path.join(root, 'digests', 'merges.json'), JSON.stringify({
+    generated: runDateISO, verdictsApplied: verdicts.length, merges: st0.merges || [],
+  }, null, 2));
 
   // Per-source coverage report — makes lopsided sourcing visible instead of silent.
   fs.writeFileSync(path.join(root, 'digests', 'sources.json'), JSON.stringify(report, null, 2));
@@ -169,6 +186,9 @@ function main() {
   console.log(`Excluded: ${ex}`);
   console.log(`No URL (kept, flagged as web search): ${st.noUrl || 0}`);
   console.log(`Collapsed series occurrences: ${st.collapsed || 0}`);
+  const m = st.merges || [];
+  const llm = m.filter((x) => x.reason === 'llm-same').length;
+  console.log(`Fuzzy merges: ${m.length} (${llm} from LLM verdicts; ${verdicts.length} verdicts supplied) — see digests/merges.json`);
   if (report.feedErrors) {
     for (const fe of report.feedErrors) console.log(`feed error: ${fe.source} — ${fe.error}`);
   }

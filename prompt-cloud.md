@@ -186,16 +186,40 @@ file, rewrite THAT ONE small file and re-run the merge — never hand-write
 `events.json` to work around it. The build then de-duplicates across sources,
 so overlap between batches is fine.
 
+## 2.95 Duplicate tie-breaker (small, bounded)
+
+The build merges cross-source duplicates deterministically (`lib/dedupe.js`). A
+few pairs each week fall in an ambiguous band it will not decide alone. Run:
+
+```bash
+RUN_DATE="$(date -u +%Y-%m-%dT%H:%M:%S)" node bin/dedupe-review.js
+```
+
+It prints at most ~60 numbered pairs (name, venue, time, source, blurb for A and
+B). For each, decide whether A and B are **the same event** (one happening,
+listed twice with different wording) or **different events** (a different film,
+session, sub-event, or borough). Then write ONE small file:
+
+```
+events-inbox/_merges.json
+[{"a":"<id of A>","b":"<id of B>","same":true}, {"a":"...","b":"...","same":false}]
+```
+
+Use the exact ids shown in brackets. Include every printed pair. If the script
+prints "Nothing to review", skip the file. Do not review or merge anything the
+script did not print — the build applies verdicts only to those pairs, and logs
+every merge with its reason to `digests/merges.json`.
+
 ## 3. Build the digest
 
 Run the deterministic build. It buckets every event by date into five sections
 (This Week = Mon–Thu / This Weekend = Fri–Sun / Next Week / Next Weekend / Later),
 applies the standing exclusions (kids, comedy, virtual, book talks, cancelled), flags
 events with no real URL, de-duplicates across sources (merging where an event was seen),
-collapses repeating series to their first date, sorts each section
-chronologically, and renders the page. It does NOT rank, cap, or hide
+collapses repeating series to their first date, applies your `_merges.json` verdicts,
+sorts each section chronologically, and renders the page. It does NOT rank, cap, or hide
 previously-shown events. The build prints `Excluded: ...` / `No URL (kept, flagged as web search): N` /
-`Collapsed series: N` lines — include them in your report:
+`Collapsed series: N` / `Fuzzy merges: N` lines — include them in your report:
 
 ```bash
 RUN_DATE="$(date -u +%Y-%m-%dT%H:%M:%S)" node bin/build-digest.js

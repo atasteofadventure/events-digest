@@ -1,54 +1,6 @@
 {
-  "generated": "2026-08-27T21:51:44.398Z",
+  "generated": "2026-09-01T23:27:06.646Z",
   "events": [
-    {
-      "id": "feed-fort-greene-park-conservancy-2026-08-29-shala-yoga",
-      "name": "Shala Yoga",
-      "dateISO": "2026-08-29T11:00:00",
-      "time": "11:00 AM",
-      "venue": "Fort Greene Park Conservancy",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.fortgreenepark.org/calendar/shala-yoga-082926-f8cl5-n4k74-l3ml9-l7xkj-ay2g2-l9chb-t3mnk-2k4en-n9bfe-esltn-gn5kb-ylsbd-9pj3n-gx9zm-rys9t-k7649",
-      "category": "sports_fitness",
-      "source": "Fort Greene Park Conservancy",
-      "via": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-fort-greene-park-conservancy-2026-08-29-spike-lee-s-bk-loves-mj",
-      "name": "Spike Lee’s BK Loves MJ",
-      "dateISO": "2026-08-29T12:00:00",
-      "time": "12:00 PM",
-      "venue": "Fort Greene Park Conservancy",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.fortgreenepark.org/calendar/brooklyn-loves-michael-jackson-2026",
-      "category": "miscellaneous",
-      "source": "Fort Greene Park Conservancy",
-      "via": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "why": "BK Loves MJ, a Spike Lee Joint, is BACK at Fort Greene Park on Michael Jackson’s birthday! Get ready to celebrate and dance with music by DJ. You won't want to miss this one. SHAMON!"
-    },
-    {
-      "id": "feed-fort-greene-park-conservancy-2026-08-31-amp-d-class-with-chelsea-piers-fitness",
-      "name": "AMP'd Class with Chelsea Piers Fitness",
-      "dateISO": "2026-08-31T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Fort Greene Park Conservancy",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.fortgreenepark.org/calendar/ampd-chelsea-piers-083126",
-      "category": "workshops_classes",
-      "source": "Fort Greene Park Conservancy",
-      "via": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "why": ""
-    },
     {
       "id": "feed-fort-greene-park-conservancy-2026-09-01-run-club-with-chelsea-piers-fitness",
       "name": "Run Club with Chelsea Piers Fitness",
@@ -722,118 +674,6 @@
       "why": ""
     },
     {
-      "id": "feed-green-wood-cemetery-2026-08-27-moonlight-tour",
-      "name": "Moonlight Tour",
-      "dateISO": "2026-08-27T19:45:00",
-      "time": "7:45 PM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/moonlight-tour-14/2026-08-27/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": "There’s no better way to experience Green-Wood than by moonlight. Walk alongside fellow night owls through winding paths and hidden corners, as the stories of the Cemetery’s most extraordinary…"
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-08-29-last-saturdays-open-classroom",
-      "name": "Last Saturdays: Open Classroom",
-      "dateISO": "2026-08-29T12:00:00",
-      "time": "12:00 PM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/last-saturdays-open-classroom/2026-08-29/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": "Mark your calendars for the last Saturday of every month! May through November, the Green-House is opening its classroom space for free, drop-in fun for visitors of all ages. Expect two themed…"
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-08-29-discover-green-wood-trolley-tour",
-      "name": "Discover Green-Wood Trolley Tour",
-      "dateISO": "2026-08-29T13:00:00",
-      "time": "1:00 PM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/discover-green-wood-trolley-tour-19/2026-08-29/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-08-30-birding-in-peace",
-      "name": "Birding In Peace",
-      "dateISO": "2026-08-30T06:30:00",
-      "time": "6:30 AM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/birding-in-peace-32/2026-08-30/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-08-30-bee-the-solution-community-science-with-",
-      "name": "Bee the Solution: Community Science with The Bee Conservancy at Green-Wood",
-      "dateISO": "2026-08-30T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/bee-the-solution-community-science-with-the-bee-conservancy-at-green-wood/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": "Photo Credit: Matthew Wills, via iNaturalist.org Learn about your bee neighbors in Green-Wood and collect data to help support pollinator research! We invite you to join The Bee Conservancy at the…"
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-08-30-rest-in-pace",
-      "name": "Rest in Pace",
-      "dateISO": "2026-08-30T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/rest-in-pace-green-house-2/2026-08-30/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": "Green-Wood’s leisurely walking group, Rest in Pace. This welcoming gathering is designed for anyone who loves a good stroll and even better company. Together, we’ll meander through the Cemetery’s…"
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-08-30-grave-beginnings-green-wood-by-trolley",
-      "name": "Grave Beginnings: Green-Wood by Trolley",
-      "dateISO": "2026-08-30T11:00:00",
-      "time": "11:00 AM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/grave-beginnings-green-wood-by-trolley/2026-08-30/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": "Green-Wood’s stunning landscape and remarkable history on this free hour-long trolley tour. Perfect for first-time visitors, this accessible introduction takes you on a leisurely ride to hear about…"
-    },
-    {
       "id": "feed-green-wood-cemetery-2026-09-02-green-wood-on-wheels-stroller-friendly-t",
       "name": "Green-Wood on Wheels: Stroller-Friendly Tour",
       "dateISO": "2026-09-02T10:30:00",
@@ -1202,68 +1042,116 @@
       "why": "Batter up! Get ready for the World Series with baseball historian Tom Gilbert. On this trolley tour, you’ll visit the monuments and gravesites of Henry Chadwick, the “Father of Baseball,” who…"
     },
     {
-      "id": "feed-gowanus-dredgers-2026-08-28-full-moon-gowanus-voyage-august",
-      "name": "Full Moon Gowanus Voyage - AUGUST",
-      "dateISO": "2026-08-28T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Gowanus Dredgers Bunker (19th St.), 2 19th St., Brooklyn, NY",
+      "id": "feed-green-wood-cemetery-2026-09-26-last-saturdays-open-classroom",
+      "name": "Last Saturdays: Open Classroom",
+      "dateISO": "2026-09-26T12:00:00",
+      "time": "12:00 PM",
+      "venue": "Green-Wood Cemetery",
       "neighborhood": "",
       "price": "",
-      "url": "https://gowanusdredgers.org/event/full-moon-gowanus-voyage-august-2/",
-      "category": "sports_fitness",
-      "source": "Gowanus Dredgers",
+      "url": "https://www.green-wood.com/event/last-saturdays-open-classroom-4/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
       "via": [
-        "feed: Gowanus Dredgers"
+        "feed: Green-Wood Cemetery"
       ],
-      "why": ""
+      "why": "Mark your calendars for the last Saturday of every month! May through November, the Green-House is opening its classroom space for free, drop-in fun for visitors of all ages. Expect two themed…"
     },
     {
-      "id": "feed-gowanus-dredgers-2026-08-29-cyanotype-workshop-with-brian-ellis-and-",
-      "name": "Cyanotype Workshop with Brian Ellis and The Gowanus Dredgers",
-      "dateISO": "2026-08-29T11:00:00",
-      "time": "11:00 AM",
-      "venue": "Gowanus Dredgers Bunker (19th St.), 2 19th St., Brooklyn, NY",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://gowanusdredgers.org/event/cyanotype-workshop-with-brian-ellis-and-the-gowanus-dredgers/",
-      "category": "workshops_classes",
-      "source": "Gowanus Dredgers",
-      "via": [
-        "feed: Gowanus Dredgers"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-gowanus-dredgers-2026-08-29-city-fragments-carol-dronsfield-leigh-kl",
-      "name": "City Fragments | Carol Dronsfield & Leigh Klonsky",
-      "dateISO": "2026-08-29T13:00:00",
+      "id": "feed-green-wood-cemetery-2026-09-26-discover-green-wood-trolley-tour",
+      "name": "Discover Green-Wood Trolley Tour",
+      "dateISO": "2026-09-26T13:00:00",
       "time": "1:00 PM",
-      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "venue": "Green-Wood Cemetery",
       "neighborhood": "",
       "price": "",
-      "url": "https://gowanusdredgers.org/event/city-fragments-carol-dronsfield-leigh-klonsky/2026-08-29/",
-      "category": "art_exhibitions",
-      "source": "Gowanus Dredgers",
+      "url": "https://www.green-wood.com/event/discover-green-wood-trolley-tour-19/2026-09-26/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
       "via": [
-        "feed: Gowanus Dredgers"
+        "feed: Green-Wood Cemetery"
       ],
       "why": ""
     },
     {
-      "id": "feed-gowanus-dredgers-2026-08-30-a-persistence-of-cormorants-poetry-readi",
-      "name": "A Persistence of Cormorants Poetry Reading",
-      "dateISO": "2026-08-30T13:30:00",
-      "time": "1:30 PM",
-      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "id": "feed-green-wood-cemetery-2026-09-26-explore-green-wood-s-fungal-biodiversity",
+      "name": "Explore Green-Wood’s Fungal Biodiversity: Cemetery Meadow",
+      "dateISO": "2026-09-26T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Green-Wood Cemetery",
       "neighborhood": "",
       "price": "",
-      "url": "https://gowanusdredgers.org/event/a-persistence-of-cormorants-poetry-reading-3/2026-08-30/",
-      "category": "art_exhibitions",
-      "source": "Gowanus Dredgers",
+      "url": "https://www.green-wood.com/event/explore-green-woods-fungal-biodiversity-cemetery-meadow/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
       "via": [
-        "feed: Gowanus Dredgers"
+        "feed: Green-Wood Cemetery"
+      ],
+      "why": "Photo Credit: MYCOmmunity Mapping Project Come learn about fungi at Green-Wood! Join MYCOmmunity Mapping Project on a community science dig to learn about the fungal lives beneath our feet. We will…"
+    },
+    {
+      "id": "feed-green-wood-cemetery-2026-09-27-birding-in-peace",
+      "name": "Birding In Peace",
+      "dateISO": "2026-09-27T06:30:00",
+      "time": "6:30 AM",
+      "venue": "Green-Wood Cemetery",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.green-wood.com/event/birding-in-peace-32/2026-09-27/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
+      "via": [
+        "feed: Green-Wood Cemetery"
       ],
       "why": ""
+    },
+    {
+      "id": "feed-green-wood-cemetery-2026-09-27-grave-beginnings-green-wood-by-trolley",
+      "name": "Grave Beginnings: Green-Wood by Trolley",
+      "dateISO": "2026-09-27T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Green-Wood Cemetery",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.green-wood.com/event/grave-beginnings-green-wood-by-trolley/2026-09-27/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
+      "via": [
+        "feed: Green-Wood Cemetery"
+      ],
+      "why": "Green-Wood’s stunning landscape and remarkable history on this free hour-long trolley tour. Perfect for first-time visitors, this accessible introduction takes you on a leisurely ride to hear about…"
+    },
+    {
+      "id": "feed-green-wood-cemetery-2026-09-27-green-wood-s-greatest-hits",
+      "name": "Green-Wood's Greatest Hits",
+      "dateISO": "2026-09-27T13:00:00",
+      "time": "1:00 PM",
+      "venue": "Green-Wood Cemetery",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.green-wood.com/event/green-woods-greatest-hits-13/2026-09-27/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
+      "via": [
+        "feed: Green-Wood Cemetery"
+      ],
+      "why": "Whether it’s your first visit to Green-Wood or your hundredth, this walking tour offers a fresh perspective on one of New York City’s most iconic landmarks. Led by one of our expert guides, this tour…"
+    },
+    {
+      "id": "feed-green-wood-cemetery-2026-10-01-fall-teacher-happy-hour-green-house-and-",
+      "name": "Fall Teacher Happy Hour: Green-House and Trolley Tour",
+      "dateISO": "2026-10-01T17:00:00",
+      "time": "5:00 PM",
+      "venue": "Green-Wood Cemetery",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.green-wood.com/event/fall-teacher-happy-hour-green-house-and-trolley-tour/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
+      "via": [
+        "feed: Green-Wood Cemetery"
+      ],
+      "why": "Calling all Pre-K through 12th grade teachers and school staff! Join Green-Wood’s Education Department for a special after-school outing. Kick back and explore the Cemetery on a sunset trolley tour…"
     },
     {
       "id": "feed-gowanus-dredgers-2026-09-01-gowanus-jug-string-band-sessions",
@@ -1682,36 +1570,100 @@
       "why": ""
     },
     {
-      "id": "feed-ny-mycological-society-2026-08-29-beech-brook-passaic-co-nj-saturday-augus",
-      "name": "Beech Brook, Passaic Co., NJ - Saturday, August 29th",
-      "dateISO": "2026-08-29T11:00:00",
-      "time": "11:00 AM",
-      "venue": "Beech Brook, Greenwood Lake Turnpike and Beech Road, Ringwood, NY, 7456, United States",
+      "id": "feed-gowanus-dredgers-2026-09-27-a-persistence-of-cormorants-poetry-readi",
+      "name": "A Persistence of Cormorants Poetry Reading",
+      "dateISO": "2026-09-27T13:30:00",
+      "time": "1:30 PM",
+      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
       "neighborhood": "",
       "price": "",
-      "url": "https://www.newyorkmyc.org/event/beech-brook-passaic-co-nj-saturday-august-29th/",
-      "category": "tours_experiences",
-      "source": "NY Mycological Society",
+      "url": "https://gowanusdredgers.org/event/a-persistence-of-cormorants-poetry-reading-3/2026-09-27/",
+      "category": "art_exhibitions",
+      "source": "Gowanus Dredgers",
       "via": [
-        "feed: NY Mycological Society"
+        "feed: Gowanus Dredgers"
       ],
-      "why": "Join us for a walk in Beech Brook, Passaic County, NJ, Saturday, August 29th. On a 2019 Beech Brook walk, NYMS members observed over 200 species of fungi. Let’s see if we can get anywhere close to…"
+      "why": ""
     },
     {
-      "id": "feed-ny-mycological-society-2026-08-31-come-join-us-for-an-in-person-id-meeting",
-      "name": "Come join us for an in-person ID meeting this Monday, August 31",
-      "dateISO": "2026-08-31T18:30:00",
-      "time": "6:30 PM",
-      "venue": "Sigrid Jakob’s, 259 21st Street, 3J, Brooklyn, NY, 11215, United States",
+      "id": "feed-gowanus-dredgers-2026-09-29-gowanus-jug-string-band-sessions",
+      "name": "Gowanus Jug & String Band Sessions",
+      "dateISO": "2026-09-29T18:00:00",
+      "time": "6:00 PM",
+      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
       "neighborhood": "",
       "price": "",
-      "url": "https://www.newyorkmyc.org/event/come-join-us-for-an-in-person-id-meeting-this-monday-august-31/",
+      "url": "https://gowanusdredgers.org/event/gowanus-jug-string-band-sessions-3/2026-09-29/",
+      "category": "music_nightlife",
+      "source": "Gowanus Dredgers",
+      "via": [
+        "feed: Gowanus Dredgers"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-gowanus-dredgers-2026-09-30-boathouse-bluegrass-jam",
+      "name": "Boathouse Bluegrass Jam",
+      "dateISO": "2026-09-30T18:00:00",
+      "time": "6:00 PM",
+      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://gowanusdredgers.org/event/boathouse-bluegrass-jam-2/2026-09-30/",
+      "category": "music_nightlife",
+      "source": "Gowanus Dredgers",
+      "via": [
+        "feed: Gowanus Dredgers"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-gowanus-dredgers-2026-10-03-free-walk-up-paddling-2nd-st",
+      "name": "FREE Walk-Up Paddling - 2nd St.",
+      "dateISO": "2026-10-03T13:00:00",
+      "time": "1:00 PM",
+      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://gowanusdredgers.org/event/free-walk-up-paddling-2nd-st/2026-10-03/",
+      "category": "sports_fitness",
+      "source": "Gowanus Dredgers",
+      "via": [
+        "feed: Gowanus Dredgers"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-ny-mycological-society-2026-09-06-nyms-pop-up-walk-alley-pond-park-queens-",
+      "name": "NYMS pop-up walk, Alley Pond Park, Queens, Sunday, September 6th",
+      "dateISO": "2026-09-06T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Alley Pond Park, 79 Winchester Boulevard, Queens, NY, 11427, United States",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.newyorkmyc.org/event/nyms-pop-up-walk-alley-pond-park-queens-sunday-september-6th/",
       "category": "tours_experiences",
       "source": "NY Mycological Society",
       "via": [
         "feed: NY Mycological Society"
       ],
-      "why": "Our next ID meeting will take place on Monday, August 31, from 6:30 to 8:30 at Sigrid Jakob’s apartment in South Slope/Greenwood Heights. Attendees can of course arrive later and leave earlier…"
+      "why": "Join us for a walk in Alley Pond Park, Queens this Sunday, September 6th. Last summer at Alley Pond Park, our former president, Sigrid Jakob, found a new to the city species, Inocybe subfulva. On the…"
+    },
+    {
+      "id": "feed-ny-mycological-society-2026-09-08-come-join-us-for-an-in-person-id-meeting",
+      "name": "Come join us for an in-person ID meeting this TUESDAY, September 8th",
+      "dateISO": "2026-09-08T18:30:00",
+      "time": "6:30 PM",
+      "venue": "Paul Sadowski’s Apartment, 236 West 26th Street #1101, New York, 10001, United States",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.newyorkmyc.org/event/come-join-us-for-an-in-person-id-meeting-this-tuesday-september-8th/",
+      "category": "tours_experiences",
+      "source": "NY Mycological Society",
+      "via": [
+        "feed: NY Mycological Society"
+      ],
+      "why": "The next in-person id meeting will take place this TUESDAY from 6.30 to 8.30 at Paul Sadowski’s apartment in Chelsea, Manhattan. Attendees can of course arrive later and leave earlier. Please bring…"
     },
     {
       "id": "feed-ny-mycological-society-2026-09-12-wawayanda-state-park-passaic-co-nj-satur",
@@ -1730,8 +1682,8 @@
       "why": "Join us for a walk in Wawayanda State Park, Passaic Co., NJ – Saturday, September 12th Entomopathogenic fungi which infect insects can frequently be found on the undersides of Rhododendron leaves…"
     },
     {
-      "id": "feed-ny-mycological-society-2026-09-19-storm-king-art-center-orange-county-ny-s",
-      "name": "Storm King Art Center, Orange County, NY - Saturday, September 19th",
+      "id": "feed-ny-mycological-society-2026-09-19-fungi-in-the-field-storm-king-art-center",
+      "name": "Fungi in the Field: Storm King Art Center, Orange County, NY - Saturday, September 19th",
       "dateISO": "2026-09-19T11:00:00",
       "time": "11:00 AM",
       "venue": "Strorm King Art Center, 1 Museum Rd, New Windsor, 12553, United States",
@@ -1743,7 +1695,7 @@
       "via": [
         "feed: NY Mycological Society"
       ],
-      "why": "Please note: There is limited capacity for this event. Tickets are required. A notification will be sent via email when ticketing begins. Join us for a program called Fungi in the Field at Storm King…"
+      "why": "Please note: There are a limited number of free passes for this event for NYMS members. Please use the ticketing box below to reserve a free pass.. Join us for a program called Fungi in the Field at…"
     },
     {
       "id": "feed-ny-mycological-society-2026-09-20-south-mountain-reservation-millburn-nj-s",
@@ -1826,6 +1778,22 @@
       "why": "Join us for a walk in Van Cortlandt Park (West), Bronx on Saturday, October 10th. Van Cortlandt is the most species-rich park that we visit as a club, with (as of this writing) over 700 species of…"
     },
     {
+      "id": "feed-ny-mycological-society-2026-10-15-join-us-10-15-for-virtual-myco-book-club",
+      "name": "Join us 10.15 for (Virtual) Myco Book Club !",
+      "dateISO": "2026-10-15T19:00:00",
+      "time": "7:00 PM",
+      "venue": "https://www.newyorkmyc.org/event/join-us-10-15-for-virtual-myco-book-club/",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.newyorkmyc.org/event/join-us-10-15-for-virtual-myco-book-club/",
+      "category": "tours_experiences",
+      "source": "NY Mycological Society",
+      "via": [
+        "feed: NY Mycological Society"
+      ],
+      "why": "Please join us on Thursday, October 15, 2026, 7-9PM ET for a virtual discussion of the new book Tiny Gardens Everywhere by Kate Brown, an avid gardener, distinguished professor in the history of…"
+    },
+    {
       "id": "feed-ny-mycological-society-2026-10-17-clove-lakes-park-staten-island-ny-on-sat",
       "name": "Clove Lakes Park, Staten Island, NY on Saturday, October 17th",
       "dateISO": "2026-10-17T10:30:00",
@@ -1906,27 +1874,10 @@
       "why": "Joint walk with Long Island Mycological Club (LIMC) at Edgewood Oak Brush Plains Preserve, Deer Park, NY – Saturday, November 14th. Edgewood Oak Brush Plains Preserve features a rare pitch pine/scrub…"
     },
     {
-      "id": "feed-makeville-studio-2026-09-13-wood-shop-basics-serving-board-bc",
-      "name": "Wood Shop Basics: Serving Board - BC",
-      "dateISO": "2026-09-13T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-12-woodworking-ii-shaker-table-sc",
-      "name": "Woodworking II - Shaker Table - SC",
-      "dateISO": "2026-09-12T14:00:00",
-      "time": "2:00 PM",
+      "id": "feed-makeville-studio-2026-09-09-wood-shop-basics-serving-board-esg",
+      "name": "Wood Shop Basics - Serving Board - ESG",
+      "dateISO": "2026-09-09T19:00:00",
+      "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -1957,10 +1908,27 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-09-11-post-rung-stool-jg",
-      "name": "Post & Rung Stool - JG",
-      "dateISO": "2026-09-11T15:00:00",
-      "time": "3:00 PM",
+      "id": "feed-makeville-studio-2026-10-19-2-furniture-making-table-kj",
+      "name": "#2 Furniture Making: Table - KJ",
+      "dateISO": "2026-10-19T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": "Join with Google Meet: https://meet.google.com/kvv-txyv-hsk Or dial: (US) +1 601-909-0050 PIN: 349255714# More phone numbers: https://tel.meet/kvv-txyv-hsk?pin=4022531700998&hs=7 Learn more about…"
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-21-simple-plywood-storage-sb",
+      "name": "Simple Plywood Storage - SB",
+      "dateISO": "2026-09-21T19:00:00",
+      "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -1974,10 +1942,163 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-09-15-1-furniture-making-table-kj",
-      "name": "#1 Furniture Making: Table - KJ",
-      "dateISO": "2026-09-15T19:00:00",
+      "id": "feed-makeville-studio-2026-10-04-wood-shop-basics-serving-board-bc",
+      "name": "Wood Shop Basics - Serving Board BC",
+      "dateISO": "2026-10-04T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-26-women-furniture-making-table-jg",
+      "name": "Women+ Furniture Making: Table - JG",
+      "dateISO": "2026-10-26T19:00:00",
       "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-14-bowls-for-beginners",
+      "name": "Bowls for Beginners",
+      "dateISO": "2026-10-14T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-12-bowls-ii-ad",
+      "name": "Bowls II - AD",
+      "dateISO": "2026-10-12T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-28-lathe-101-esg",
+      "name": "Lathe 101 - ESG",
+      "dateISO": "2026-09-28T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-25-wood-shop-basics-serving-board-sc",
+      "name": "Wood Shop Basics - Serving Board SC",
+      "dateISO": "2026-10-25T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-20-woodworking-ii-cabinets-sb",
+      "name": "Woodworking II: Cabinets - SB",
+      "dateISO": "2026-10-20T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-06-lathe-101-jg",
+      "name": "Lathe 101 - JG",
+      "dateISO": "2026-10-06T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-13-start-woodworking",
+      "name": "Start Woodworking!",
+      "dateISO": "2026-10-13T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-13-intro-to-hand-tools-mallet-jg",
+      "name": "Intro to Hand Tools: Mallet - JG",
+      "dateISO": "2026-10-13T10:00:00",
+      "time": "10:00 AM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -2008,10 +2129,129 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-09-21-simple-plywood-storage-sb",
-      "name": "Simple Plywood Storage - SB",
-      "dateISO": "2026-09-21T19:00:00",
+      "id": "feed-makeville-studio-2026-09-06-plant-stand-workshop-bc",
+      "name": "Plant Stand Workshop - BC",
+      "dateISO": "2026-09-06T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-11-plant-stand-workshop-bc",
+      "name": "Plant Stand Workshop - BC",
+      "dateISO": "2026-10-11T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-08-1-furniture-making-table-kj",
+      "name": "#1 Furniture Making: Table - KJ",
+      "dateISO": "2026-09-08T19:00:00",
       "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-19-woodworking-ii-cabinets-sb",
+      "name": "Woodworking II: Cabinets - SB",
+      "dateISO": "2026-10-19T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-14-2-sept-furniture-making-table-kj",
+      "name": "#2 Sept Furniture Making: Table - KJ",
+      "dateISO": "2026-09-14T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-22-spoon-carving-esg",
+      "name": "Spoon Carving - ESG",
+      "dateISO": "2026-10-22T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-09-wood-shop-basics-utensils-jg",
+      "name": "Wood Shop Basics - Utensils JG",
+      "dateISO": "2026-10-09T15:00:00",
+      "time": "3:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-20-wood-shop-basics-utensils-jg",
+      "name": "Wood Shop Basics - Utensils - JG",
+      "dateISO": "2026-09-20T10:00:00",
+      "time": "10:00 AM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -2028,6 +2268,91 @@
       "id": "feed-makeville-studio-2026-09-14-router-101-serving-board-sb",
       "name": "Router 101: Serving Board - SB",
       "dateISO": "2026-09-14T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-04-1-furniture-making-table-sc",
+      "name": "#1 Furniture Making: Table - SC",
+      "dateISO": "2026-10-04T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-10-intro-to-hand-tools-milling-sb",
+      "name": "Intro to Hand Tools: Milling - SB",
+      "dateISO": "2026-09-10T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-09-1-start-woodworking-kj",
+      "name": "#1 Start Woodworking! - KJ",
+      "dateISO": "2026-09-09T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-06-routers-101-sb",
+      "name": "Routers 101 - SB",
+      "dateISO": "2026-10-06T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-13-start-woodworking-kj",
+      "name": "Start Woodworking! - KJ",
+      "dateISO": "2026-10-13T19:00:00",
       "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
@@ -2076,6 +2401,23 @@
       "why": ""
     },
     {
+      "id": "feed-makeville-studio-2026-09-13-wood-shop-basics-serving-board-bc",
+      "name": "Wood Shop Basics: Serving Board - BC",
+      "dateISO": "2026-09-13T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
       "id": "feed-makeville-studio-2026-09-28-dovetails-by-hand",
       "name": "Dovetails by Hand",
       "dateISO": "2026-09-28T19:00:00",
@@ -2093,10 +2435,10 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-08-29-wood-shop-basics-book-ends-sc",
-      "name": "Wood Shop Basics - Book Ends SC",
-      "dateISO": "2026-08-29T14:00:00",
-      "time": "2:00 PM",
+      "id": "feed-makeville-studio-2026-10-26-simple-plywood-storage-sb",
+      "name": "Simple Plywood Storage - SB",
+      "dateISO": "2026-10-26T19:00:00",
+      "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -2110,10 +2452,78 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-08-31-carving-for-beginners-esg",
-      "name": "Carving for Beginners: ESG",
-      "dateISO": "2026-08-31T19:00:00",
+      "id": "feed-makeville-studio-2026-09-15-1-furniture-making-table-kj",
+      "name": "#1 Furniture Making: Table - KJ",
+      "dateISO": "2026-09-15T19:00:00",
       "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-11-post-rung-stool-jg",
+      "name": "Post & Rung Stool - JG",
+      "dateISO": "2026-09-11T15:00:00",
+      "time": "3:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-10-furniture-making-step-stool-sc",
+      "name": "Furniture Making: Step Stool - SC",
+      "dateISO": "2026-10-10T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-19-woodworking-ii-cabinets-sb",
+      "name": "Woodworking II: Cabinets - SB",
+      "dateISO": "2026-10-19T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-31-wood-shop-basics-coat-hangers-sc",
+      "name": "Wood Shop Basics - Coat Hangers SC",
+      "dateISO": "2026-10-31T14:00:00",
+      "time": "2:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -2144,163 +2554,10 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-08-31-3-start-woodworking-bc",
-      "name": "#3 Start Woodworking! - BC",
-      "dateISO": "2026-08-31T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-06-plant-stand-workshop-bc",
-      "name": "Plant Stand Workshop - BC",
-      "dateISO": "2026-09-06T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-20-wood-shop-basics-utensils-jg",
-      "name": "Wood Shop Basics - Utensils - JG",
-      "dateISO": "2026-09-20T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-09-1-start-woodworking-kj",
-      "name": "#1 Start Woodworking! - KJ",
-      "dateISO": "2026-09-09T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-08-1-furniture-making-table-kj",
-      "name": "#1 Furniture Making: Table - KJ",
-      "dateISO": "2026-09-08T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-14-2-sept-furniture-making-table-kj",
-      "name": "#2 Sept Furniture Making: Table - KJ",
-      "dateISO": "2026-09-14T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-08-31-bowls-ii-ad",
-      "name": "Bowls II - AD",
-      "dateISO": "2026-08-31T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-09-wood-shop-basics-serving-board-esg",
-      "name": "Wood Shop Basics - Serving Board - ESG",
-      "dateISO": "2026-09-09T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-28-lathe-101-esg",
-      "name": "Lathe 101 - ESG",
-      "dateISO": "2026-09-28T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-10-intro-to-hand-tools-milling-sb",
-      "name": "Intro to Hand Tools: Milling - SB",
-      "dateISO": "2026-09-10T10:00:00",
-      "time": "10:00 AM",
+      "id": "feed-makeville-studio-2026-09-12-woodworking-ii-shaker-table-sc",
+      "name": "Woodworking II - Shaker Table - SC",
+      "dateISO": "2026-09-12T14:00:00",
+      "time": "2:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -2392,106 +2649,6 @@
         "feed: Gotham Center"
       ],
       "why": ""
-    },
-    {
-      "id": "feed-club-free-time-2026-08-27-discuss-a-nonfiction-book-about-the-natu",
-      "name": "Discuss a Nonfiction Book about the Nature of Consciousness",
-      "dateISO": "2026-08-27T16:30:00",
-      "time": "4:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-club/2026-08-27/event/758035",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Discuss A World Appears: A Journey Into Consciousness by Michael Pollan!Book Synopsis: When it comes to the phenomenon that is consciousness, there is one point on which scientists, philosophers, and…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-08-27-architect-celebrates-his-new-book-shingl",
-      "name": "Architect Celebrates His New Book, Shingle Style Houses: The Evolution of an Inventive Architecture (+ Signing)",
-      "dateISO": "2026-08-27T18:00:00",
-      "time": "6:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-08-27/event/753148",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "A conversation with John R. DaSilva to share his new book, a comprehensive survey of historical and modern American shingle-style homes. He will be joined in conversation with Thomas A. Kligerman…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-08-27-exploring-the-new-seafood-anthology-nbsp",
-      "name": "Exploring the New Seafood Anthology, Eating the Whole Fish",
-      "dateISO": "2026-08-27T18:00:00",
-      "time": "6:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-08-27/event/759145",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Annie Chen and Zoe Lee discuss their new book.About the book: A seafood anthology on coastal culture, ocean health, and whole fish cooking. From BEAM Studio, in collaboration with nonprofit Eating…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-08-27-faq-nyc-live-historian-discuses-nyc-riot",
-      "name": "FAQ NYC Live: Historian Discuses NYC Riot History",
-      "dateISO": "2026-08-27T18:30:00",
-      "time": "6:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-08-27/event/759130",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "A live podcast recording with Christina Greer, Katie Honan, and Harry Siegel, and special guest Asad Dandia!. This live taping digs into seminal moments in New York City that speak to the past…"
-    },
-    {
-      "id": "feed-club-free-time-2026-08-29-artists-discuss-photography-archives-geo",
-      "name": "Artists Discuss Photography, Archives, & Geographical & Family Histories",
-      "dateISO": "2026-08-29T13:00:00",
-      "time": "1:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-08-29/event/759604",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Fade artists Harlan Bozeman and Andina Marie Osorio discuss their practices. They guide participants in a discussion considering photography, archives, and geographical and familial histories."
-    },
-    {
-      "id": "feed-club-free-time-2026-08-30-new-york-times-journalist-shares-her-boo",
-      "name": "New York Times Journalist Shares Her Book on Crime in Guilded Age NYC (In Person AND Online!)",
-      "dateISO": "2026-08-30T14:00:00",
-      "time": "2:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-08-30/event/753802",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "A book talk on The Talented Mrs. Mandelbaum with author Margalit Fox.About the book: The Talented Mrs. Mandelbaum paints a vivid portrait of Gilded Age New York--a city teeming with nefarious rogues…",
-      "literary": true
     },
     {
       "id": "feed-club-free-time-2026-09-01-media-lawyer-shares-his-new-book-on-the-",
@@ -2592,6 +2749,23 @@
         "feed: Club Free Time"
       ],
       "why": "A visual journey through Georgia, presented through the black-and-white photography of Georgian photographer Zakaria Chelidze.Through a curated selection of images, Zakaria captures the country's…"
+    },
+    {
+      "id": "feed-club-free-time-2026-09-03-scholars-discuss-their-works-on-politica",
+      "name": "Scholars Discuss Their Works on Political Theater",
+      "dateISO": "2026-09-03T17:30:00",
+      "time": "5:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-09-03/event/760069",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A talk by Benjamin Lewis Robinson (NYU) and Teresa Kovacs (Indiana University, Bloomington). The conversation will focus on their recent books on political theater in times of crisis.",
+      "literary": true
     },
     {
       "id": "feed-club-free-time-2026-09-03-book-launch-nbsp-all-our-evenings-by-nbs",
@@ -2763,6 +2937,39 @@
       "literary": true
     },
     {
+      "id": "feed-club-free-time-2026-09-09-one-of-the-most-important-new-thinkers-v",
+      "name": "\"One of the Most Important New Thinkers\" (Vanity Fair) Discusses Her New Memoir",
+      "dateISO": "2026-09-09T19:30:00",
+      "time": "7:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-09-09/event/760102",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "\"One of the Most Important New Thinkers\" (Vanity Fair) Discusses Her New Memoir",
+      "literary": true
+    },
+    {
+      "id": "feed-club-free-time-2026-09-10-archtiectural-sketch-artist-nbsp-pablo-b",
+      "name": "Archtiectural Sketch Artist Pablo Bronstein Discusses His New Exhibition, Clocks",
+      "dateISO": "2026-09-10T17:00:00",
+      "time": "5:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-gallery-talk/2026-09-10/event/760222",
+      "category": "art_exhibitions",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A conversation between artist Pablo Bronstein and Dr. Edward Town, Associate Curator of Paintings and Sculpture at the Yale Center for British Art, within Pablo Bronstein new exhibition, Clocks. The…"
+    },
+    {
       "id": "feed-club-free-time-2026-09-10-discussions-panel-conversations-artistic",
       "name": "Discussions, Panel Conversations, & Artistic Presentations Celebrating Nobel Prize Laureate",
       "dateISO": "2026-09-10T17:00:00",
@@ -2777,6 +2984,22 @@
         "feed: Club Free Time"
       ],
       "why": "An evening of conversations, performances, and international perspectives celebrating e Elfriede Jelinek on the occasion of her 80th birthday. Bringing together leading scholars and artists from…"
+    },
+    {
+      "id": "feed-club-free-time-2026-09-10-archival-team-discusses-preserving-memor",
+      "name": "Archival Team Discusses Preserving memories of 9/11",
+      "dateISO": "2026-09-10T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-09-10/event/760231",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Created after September 11, 2001, the September 11 Digital Archive was a groundbreaking digital public history project, preserving more than 150,000 materials. Twenty-five years later, members of the…"
     },
     {
       "id": "feed-club-free-time-2026-09-10-classicist-discusses-the-life-craft-of-b",
@@ -3060,6 +3283,39 @@
         "feed: Club Free Time"
       ],
       "why": "Dr. Willis explores the history and legacy of Black photography through images that reveal how Black photographers have shaped self-representation and cultural memory from the nineteenth century to…"
+    },
+    {
+      "id": "feed-club-free-time-2026-09-15-photography-experts-discuss-the-work-of-",
+      "name": "Photography Experts Discuss the Work of MoMA-Featured Photographer",
+      "dateISO": "2026-09-15T19:00:00",
+      "time": "7:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-09-15/event/760129",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A panel discussion about Jade Doskow's long-running work in Freshkills Park in Staten Island, New York City, and her upcoming exhibition, The Dark Bright Sky: A September 11th Memorial Exhibition…"
+    },
+    {
+      "id": "feed-club-free-time-2026-09-15-celebrate-the-works-of-a-pulitzer-prize-",
+      "name": "Celebrate the Works of a Pulitzer Prize-Winning Writer",
+      "dateISO": "2026-09-15T19:30:00",
+      "time": "7:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-09-15/event/760105",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Celebrate the Works of a Pulitzer Prize-Winning Writer",
+      "literary": true
     },
     {
       "id": "feed-club-free-time-2026-09-16-person-place-thing-live-podcast-recordin",
@@ -3609,2836 +3865,20 @@
       "literary": true
     },
     {
-      "id": "feed-nyc-parks-2026-08-27-total-body-fitness",
-      "name": "Total Body Fitness",
-      "dateISO": "2026-08-27T08:00:00",
-      "time": "8:00 AM",
-      "venue": "Gymnasium (in St. John's Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=788de700-cbb6-4c74-ad6e-82571e257a3c&occurrenceDate=20260827",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-27-summer-on-the-hudson-art-in-the-park",
-      "name": "Summer on the Hudson: Art in the Park",
-      "dateISO": "2026-08-27T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Riverbank (Camel) Playground (in Riverside Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/27/summer-on-the-hudson-art-in-the-park",
-      "category": "art_exhibitions",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Art in the Park invites children ages 3-8 to learn about their local environment through a mix of arts & crafts activities. This hands-on, place-based curriculum builds kids' appreciation for the…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-27-summer-sports-experience-basketball-skil",
-      "name": "Summer Sports Experience: Basketball: Skills and Drills",
-      "dateISO": "2026-08-27T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/27/summer-sports-experience-basketball-skills-and-drills",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-27-kids-in-motion-cherry-tree-park",
-      "name": "Kids In Motion: Cherry Tree Park",
-      "dateISO": "2026-08-27T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Cherry Tree Park Playground (in Cherry Tree Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/27/kids-in-motion-cherry-tree-park",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-27-piano-in-bryant-park",
-      "name": "Piano in Bryant Park",
-      "dateISO": "2026-08-27T12:30:00",
-      "time": "12:30 PM",
-      "venue": "Upper Terrace (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/08/27/piano-in-bryant-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-27-summer-sports-experience-flag-football",
-      "name": "Summer Sports Experience: Flag Football",
-      "dateISO": "2026-08-27T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/27/summer-sports-experience-flag-football",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-27-brooklyn-bridge-park-movies-with-a-view-",
-      "name": "Brooklyn Bridge Park Movies With A View presented by Persol",
-      "dateISO": "2026-08-27T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Brooklyn Bridge Park Pier 1 Brooklyn, NY 11201 (in Brooklyn Bridge Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://eventvesta.com/events/149433/t/tickets",
-      "category": "film_screenings",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Brooklyn Bridge Park's free outdoor film series, Movies With A View presented by Persol, is back for 2026! Enjoy free screenings on Thursday evenings in July and August – expanding with an additional…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-27-golden-hour-at-greeley-square-park",
-      "name": "Golden Hour at Greeley Square Park",
-      "dateISO": "2026-08-27T18:30:00",
-      "time": "6:30 PM",
-      "venue": "Greeley Square Park",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/08/27/golden-hour-at-greeley-square-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-27-dance-fitness",
-      "name": "Dance Fitness",
-      "dateISO": "2026-08-27T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Dance Room (in Nostrand Playground)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=57d78315-eb4a-4982-afe4-30c0ed484d64&occurrenceDate=20260827",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-27-bats-night-walk",
-      "name": "Bats! Night Walk",
-      "dateISO": "2026-08-27T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Seba Playground (in Marine Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/27/bats-night-walk",
-      "category": "tours_experiences",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Join MPA and Gotham Bat Conservancy as we discover the secret lives of bats. Watch them swoop, listen to their hidden calls, and learn why these nighttime neighbors are some of the park’s most…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-27-movies-under-the-stars-guardians-of-the-",
-      "name": "Movies Under the Stars: Guardians of The Galaxy Vol. 3 (2023)",
-      "dateISO": "2026-08-27T20:00:00",
-      "time": "8:00 PM",
-      "venue": "Playground (in Cooper Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=632dcb3a-543f-4347-9ff6-9d0604bea4d8&occurrenceDate=20260827",
-      "category": "film_screenings",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-28-line-dance-fitness",
-      "name": "Line Dance Fitness",
-      "dateISO": "2026-08-28T08:00:00",
-      "time": "8:00 AM",
-      "venue": "Handball Court (in Betsy Head Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=0d1342b0-deef-4b79-bbf5-30b58b63d682&occurrenceDate=20260828",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-28-summer-sports-experience-basketball-skil",
-      "name": "Summer Sports Experience: Basketball: Skills and Drills",
-      "dateISO": "2026-08-28T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/28/summer-sports-experience-basketball-skills-and-drills",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-28-kids-in-motion-cherry-tree-park",
-      "name": "Kids In Motion: Cherry Tree Park",
-      "dateISO": "2026-08-28T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Cherry Tree Park Playground (in Cherry Tree Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/28/kids-in-motion-cherry-tree-park",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-28-nature-talks-at-bryant-park-reading-room",
-      "name": "Nature Talks at Bryant Park Reading Room: NYC Wildlife Rehabilitation with The Wild Bird Fund",
-      "dateISO": "2026-08-28T12:00:00",
-      "time": "12:00 PM",
-      "venue": "Reading Room (in Bryant Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/28/nature-talks-at-bryant-park-reading-room-nyc-wildlife-rehabi",
-      "category": "talks_lectures",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "New York City is wilder than you might think. Thousands of species of birds, mammals, insects, plants, fungi, and more are surviving, and thriving, in every part of our city. This new lecture series…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-28-piano-in-bryant-park",
-      "name": "Piano in Bryant Park",
-      "dateISO": "2026-08-28T12:30:00",
-      "time": "12:30 PM",
-      "venue": "Upper Terrace (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/08/28/piano-in-bryant-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-28-juggling-in-greeley-square-park",
-      "name": "Juggling in Greeley Square Park",
-      "dateISO": "2026-08-28T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Greeley Square Park",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/28/juggling-in-greeley-square-park",
-      "category": "miscellaneous",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Learn to juggle for free, or just enjoy the show! Join our juggling expert every weekday from 2pm-3pm in Greeley Square Park, from May through the end of October. All skill levels welcome, and…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-28-summer-sports-experience-flag-football",
-      "name": "Summer Sports Experience: Flag Football",
-      "dateISO": "2026-08-28T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/28/summer-sports-experience-flag-football",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-28-west-harlem-summer-jazz-festival",
-      "name": "West Harlem Summer Jazz Festival",
-      "dateISO": "2026-08-28T18:00:00",
-      "time": "6:00 PM",
-      "venue": "James Baldwin Lawn (in St. Nicholas Park),135th Street and St. Nicholas Avenue (in St. Nicholas Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/08/28/west-harlem-summer-jazz-festival",
-      "category": "festivals_parties",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Join West Harlem Arts Alliance, Harlem Late Night Jazz and NYC Parks for the annual jazz festival. The Jazz Festival takes place in Morningside, St. Nicholas, Jackie Robinson from May to September…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-28-social-salsa-at-greeley-square-park",
-      "name": "Social Salsa at Greeley Square Park",
-      "dateISO": "2026-08-28T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Greeley Square Park",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/28/social-salsa-at-greeley-square-park",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Learn new moves from New York City's finest salsa instructors, then show off your style on the dance floor with a full hour of social dancing! Participants are welcome to bring their own partner…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-28-family-camping-manhattan",
-      "name": "Family Camping: Manhattan",
-      "dateISO": "2026-08-28T18:00:00",
-      "time": "6:00 PM",
-      "venue": "West 218th Street and Indian Road (in Inwood Hill Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/28/family-camping-manhattan",
-      "category": "miscellaneous",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-28-summer-on-the-hudson-friday-night-jams-f",
-      "name": "Summer on the Hudson: Friday Night Jams featuring Ilana Morris",
-      "dateISO": "2026-08-28T19:00:00",
-      "time": "7:00 PM",
-      "venue": "125th Street and Marginal Street (in West Harlem Piers)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/1992010557200",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Get out to the park and kick off the weekend with some local sounds at this monthly musical get-happy hour. Friday Night Jams takes place on the last Friday of the month from May through August. May…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-28-bryant-park-picnic-performance-accordion",
-      "name": "Bryant Park Picnic Performance: Accordion Festival: Jourdan Thibodeaux et les Rôdailleurs, Saami Brothers, and Chicha Libre",
-      "dateISO": "2026-08-28T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Bryant Park Lawn (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/08/28/bryant-park-picnic-performance-accordion-festival-jourdan-th",
-      "category": "festivals_parties",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "The accordion in global genres-- Cajun music from Louisiana, Qawwali and Khayal from Pakistan, and psychedelic cumbia inspired by Peru by way of Brooklyn. Accordion Festival is curated by Ariana…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-28-summer-on-the-hudson-riverside-comedy-cl",
-      "name": "Summer on the Hudson: Riverside Comedy Club",
-      "dateISO": "2026-08-28T19:30:00",
+      "id": "feed-club-free-time-2026-10-14-artistic-exploration-of-historical-gende",
+      "name": "Artistic Exploration of Historical Gender Flexibility with Artists & Historians",
+      "dateISO": "2026-10-14T19:30:00",
       "time": "7:30 PM",
-      "venue": "Pier I (in Riverside Park South)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/28/summer-on-the-hudson-riverside-comedy-club",
-      "category": "tours_experiences",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Join host Nat Towsen (The Tonight Show, Nickelodeon) and some of New York’s most exciting comedians for a hilarious evening on Pier I. This event is rated PG-13: Parental discretion is advised."
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-28-wheel-fun-rentals-celebrates-america-s-2",
-      "name": "Wheel Fun Rentals Celebrates America's 250th with Patriotic LED Bike Ride",
-      "dateISO": "2026-08-28T20:00:00",
-      "time": "8:00 PM",
-      "venue": "Meadow Lake North (in Flushing Meadows Corona Park),Sand Lane and Father Capadanno Boulevard (in Franklin D. Roosevelt Boardwalk and Beach),Marine Park,Bensonhurst Park,David Dinkins Circle (in Flushing Meadows Corona Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "miscellaneous",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-28-movies-under-the-stars-smurfs",
-      "name": "Movies Under the Stars: Smurfs",
-      "dateISO": "2026-08-28T20:15:00",
-      "time": "8:15 PM",
-      "venue": "Entrance - East Broadway & Essex St (in Seward Park)",
+      "venue": "New York City ( NYC )",
       "neighborhood": "",
       "price": "Free",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=b0aa2b7b-eee0-4bb9-bb9b-b8b7f9a1b34d&occurrenceDate=20260828",
-      "category": "film_screenings",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-summer-on-the-hudson-birding-tour",
-      "name": "Summer on the Hudson: Birding Tour",
-      "dateISO": "2026-08-29T08:00:00",
-      "time": "8:00 AM",
-      "venue": "116th Street and Riverside Drive (in Riverside Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/29/summer-on-the-hudson-birding-tour",
-      "category": "tours_experiences",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Monthly walks through birding hotspots in Riverside Park, led by Riverside Park Conservancy Field Staff. Learn and build a birding community! Open to birders of all ages and experience. Meet at 116th…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-no-excuses-circuit-training",
-      "name": "No Excuses Circuit Training",
-      "dateISO": "2026-08-29T09:00:00",
-      "time": "9:00 AM",
-      "venue": "Dance Room (in St. John's Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=55ae0fb4-518e-4fba-b1d1-43b8aa9c0eeb&occurrenceDate=20260829",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "A high-energy beginner-friendly workout that combines strength and endurance exercises performed in timed stations with minimal rest. Participants rotate through movements targeting different muscle…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-summer-on-the-hudson-meet-the-fleet",
-      "name": "Summer on the Hudson: Meet the Fleet",
-      "dateISO": "2026-08-29T10:00:00",
-      "time": "10:00 AM",
-      "venue": "95th St. Compost Compound (in Riverside Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/29/summer-on-the-hudson-meet-the-fleet",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-10-14/event/760180",
       "category": "talks_lectures",
-      "source": "NYC Parks",
+      "source": "Club Free Time",
       "via": [
-        "feed: NYC Parks"
+        "feed: Club Free Time"
       ],
-      "why": "Join us at the 95th Street Compost Compound for a behind-the-scenes look at the Conservancy’s diverse fleet of vehicles. Meet staff members, explore our cars, trucks, and heavy equipment, and learn…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-zumba",
-      "name": "Zumba",
-      "dateISO": "2026-08-29T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Gymnasium (in St. John's Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=6edc4046-45b9-4a97-a35d-954f987e5978&occurrenceDate=20260829",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Zumba is a fusion of Latin, International and popular music dance themes creating a dynamic, exciting, effective fitness system! The routines feature aerobic, fitness interval training with a…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-summer-sports-experience-basketball-skil",
-      "name": "Summer Sports Experience: Basketball: Skills and Drills",
-      "dateISO": "2026-08-29T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/29/summer-sports-experience-basketball-skills-and-drills",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-dance-fitness-upbeat-pop",
-      "name": "Dance Fitness- Upbeat Pop!",
-      "dateISO": "2026-08-29T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Audubon Center at the Boathouse (in Prospect Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=cd80867a-bd95-4b8a-9968-ae6e3a2f9854&occurrenceDate=20260829",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "A 45-minute dance fitness class to your favorite upbeat pop songs! Come prepared to shake, roll, grapevine, and clap. We will use this time to cultivate joy and silliness while getting a great…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-kids-in-motion-cherry-tree-park",
-      "name": "Kids In Motion: Cherry Tree Park",
-      "dateISO": "2026-08-29T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Cherry Tree Park Playground (in Cherry Tree Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/29/kids-in-motion-cherry-tree-park",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-bodyweight-burn-circuit-training",
-      "name": "Bodyweight Burn Circuit Training",
-      "dateISO": "2026-08-29T10:30:00",
-      "time": "10:30 AM",
-      "venue": "Brooklyn Public Library - Brooklyn Heights (in Cadman Plaza Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=b2ac95e2-118b-403e-97ff-fc58ccb480ff&occurrenceDate=20260829",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "A bodyweight circuit class combining cardio, strength, and core-focused movements for a dynamic full-body workout! This class welcomes all fitness levels."
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-total-body-reset",
-      "name": "Total Body Reset",
-      "dateISO": "2026-08-29T11:00:00",
-      "time": "11:00 AM",
-      "venue": "Herbert Von King Park",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=ccd74d1e-5ad4-44fa-b8a0-1b2ab381f7dd&occurrenceDate=20260829",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "This fun low-impact full-body workout includes cardio, strength and balance exercises to improve your overall fitness. Class will meet on the Greene Avenue lawn area."
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-chair-yoga",
-      "name": "Chair Yoga",
-      "dateISO": "2026-08-29T12:00:00",
-      "time": "12:00 PM",
-      "venue": "Ballroom (in John J Carty Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=b7346f56-a4dc-4c02-8468-978e11891ebc&occurrenceDate=20260829",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Connect with yourself in Chair Yoga, a class to be enjoyed by all- but designed for those who prefer to be seated. Experience a fun and light-hearted class that provides a seated flow. The goal is to…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-herbal-medicine-workshop",
-      "name": "Herbal Medicine Workshop",
-      "dateISO": "2026-08-29T13:00:00",
-      "time": "1:00 PM",
-      "venue": "Urban Farm (in Randall's Island Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.eventbrite.com/e/1997715491813?aff=oddtdtcreator",
-      "category": "workshops_classes",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Join us for a journey into the world of herbal medicine amidst the vibrant setting of our Urban Farm! Led by seasoned herbalist Sebastian Bouknight , this hands-on workshop will guide you through…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-into-the-woods-hike",
-      "name": "Into The Woods Hike",
-      "dateISO": "2026-08-29T13:00:00",
-      "time": "1:00 PM",
-      "venue": "Picnic House (in Prospect Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/29/into-the-woods-hike",
-      "category": "tours_experiences",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Hone your naturalist skills by exploring Brooklyn’s oldest forest with the Urban Park Rangers. Learn all about our beloved native plant, animal, and insect species that call these woods home."
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-summer-sports-experience-flag-football",
-      "name": "Summer Sports Experience: Flag Football",
-      "dateISO": "2026-08-29T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/29/summer-sports-experience-flag-football",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-bryant-park-picnic-performance-parallel-",
-      "name": "Bryant Park Picnic Performance: Parallel Exit: Sunset Circus",
-      "dateISO": "2026-08-29T17:00:00",
-      "time": "5:00 PM",
-      "venue": "Bryant Park Lawn (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/08/29/bryant-park-picnic-performance-parallel-exit-sunset-circus",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Fun for the whole family! Aerial, juggling, acrobatics, and physical comedy. Featuring circus artists from Cirque du Soleil, Big Apple Circus, and beyond, Parallel Exit's Sunset Circus features a…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-summer-on-the-hudson-vinyl-nights",
-      "name": "Summer on the Hudson: Vinyl Nights",
-      "dateISO": "2026-08-29T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Pier I (in Riverside Park South)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/29/summer-on-the-hudson-vinyl-nights",
-      "category": "tours_experiences",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Vinyl Nights : A vibrant, inclusive celebration of everything New York, featuring live vinyl DJs spinning vintage tunes."
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-herbert-holler-8217-s-freedom-party-outs",
-      "name": "Herbert Holler’s Freedom Party Outside",
-      "dateISO": "2026-08-29T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Brooklyn Bridge Park",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/08/29/herbert-hollers-freedom-party-outside",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "NYC’s longest-running throwback dance party comes outdoors, with Herbert Holler’s Freedom™ Party Outside on Saturday, August 29 at Brooklyn Bridge Park. Join as Herbert Holler spins hip-hop, R&B…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-wheel-fun-rentals-celebrates-america-s-2",
-      "name": "Wheel Fun Rentals Celebrates America's 250th with Patriotic LED Bike Ride",
-      "dateISO": "2026-08-29T20:00:00",
-      "time": "8:00 PM",
-      "venue": "Meadow Lake North (in Flushing Meadows Corona Park),Sand Lane and Father Capadanno Boulevard (in Franklin D. Roosevelt Boardwalk and Beach),Marine Park,Bensonhurst Park,David Dinkins Circle (in Flushing Meadows Corona Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "miscellaneous",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-29-movies-under-the-stars-eternal-sunshine-",
-      "name": "Movies Under the Stars: Eternal Sunshine of the Spotless Mind",
-      "dateISO": "2026-08-29T20:00:00",
-      "time": "8:00 PM",
-      "venue": "Lawn Area - Monitor Street and Driggs Avenue (in Msgr. McGolrick Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=0aaf68be-1674-4d4d-bf38-c3a80a2fc4c1&occurrenceDate=20260829",
-      "category": "film_screenings",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-30-strength-cardio-circuit-training",
-      "name": "Strength & Cardio Circuit Training",
-      "dateISO": "2026-08-30T09:30:00",
-      "time": "9:30 AM",
-      "venue": "Dance Room (in St. John's Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=8989a499-4c44-4d93-82d0-923adb48e6e0&occurrenceDate=20260830",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "This circuit training class combines bodyweight resistance training and conditioning to provide you with a dynamic full body workout. Whether you are a beginneror looking for a challenge; this class…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-30-lablast-174-fitness",
-      "name": "LaBlast® Fitness",
-      "dateISO": "2026-08-30T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Parachute Jump (in Coney Island Beach & Boardwalk)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=f381edc0-2459-4af8-b55e-0f35830f66fd&occurrenceDate=20260830",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "This dance fitness program is based on ballroom dances, including those seen on Dancing with the Stars. This workout in disguise blends dance patterns, fitness, and music to create a low impact…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-30-summer-on-the-hudson-sketch-jam",
-      "name": "Summer on the Hudson: Sketch Jam",
-      "dateISO": "2026-08-30T11:00:00",
-      "time": "11:00 AM",
-      "venue": "Garden Peoples Garden (in Riverside Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/30/summer-on-the-hudson-sketch-jam",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Bring your favorite art supplies to this observational drawing event led by artist and illustrator Ishita Jain . Some basic supplies provided."
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-30-grand-army-plaza-arch-tour",
-      "name": "Grand Army Plaza Arch Tour",
-      "dateISO": "2026-08-30T11:00:00",
-      "time": "11:00 AM",
-      "venue": "Grand Army Plaza Arch (in Grand Army Plaza)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/30/grand-army-plaza-arch-tour",
-      "category": "tours_experiences",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Join the Urban Park Rangers for a special access tour of Prospect Park's Grand Army Plaza and Soldiers’ and Sailors’ Memorial Arch. Rangers will discuss the history of the arch and the plaza…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-30-trees-count-at-morningside-park-with-the",
-      "name": "Trees Count at Morningside Park with the Urban Park Rangers",
-      "dateISO": "2026-08-30T13:00:00",
-      "time": "1:00 PM",
-      "venue": "West 114th Street and Morningside Drive (in Morningside Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/08/30/trees-count-at-morningside-park-with-the-urban-park-rangers",
-      "category": "tours_experiences",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Volunteer with NYC Parks for Trees Count 2025! At each event you will receive a tote bag with all the materials needed to count trees. Next, we'll provide a 30-minute training session that includes…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-30-sungazing-in-the-park",
-      "name": "Sungazing in the Park",
-      "dateISO": "2026-08-30T16:30:00",
-      "time": "4:30 PM",
-      "venue": "Cloisters Lawn (in Fort Tryon Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.eventbrite.com/e/1995469599288?aff=oddtdtcreator",
-      "category": "talks_lectures",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Experience the Sun like never before with local astronomer Novaughn Miller during this fascinating afternoon of safe solar observation. Using specially filtered telescopes, participants will get an…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-30-wheel-fun-rentals-celebrates-america-s-2",
-      "name": "Wheel Fun Rentals Celebrates America's 250th with Patriotic LED Bike Ride",
-      "dateISO": "2026-08-30T20:00:00",
-      "time": "8:00 PM",
-      "venue": "Meadow Lake North (in Flushing Meadows Corona Park),Sand Lane and Father Capadanno Boulevard (in Franklin D. Roosevelt Boardwalk and Beach),Marine Park,Bensonhurst Park,David Dinkins Circle (in Flushing Meadows Corona Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "miscellaneous",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-31-line-dance-fitness",
-      "name": "Line Dance Fitness",
-      "dateISO": "2026-08-31T08:00:00",
-      "time": "8:00 AM",
-      "venue": "Handball Court (in Betsy Head Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=0d1342b0-deef-4b79-bbf5-30b58b63d682&occurrenceDate=20260831",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-31-piano-in-bryant-park",
-      "name": "Piano in Bryant Park",
-      "dateISO": "2026-08-31T12:30:00",
-      "time": "12:30 PM",
-      "venue": "Upper Terrace (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/08/31/piano-in-bryant-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-31-bryant-park-movie-nights",
-      "name": "Bryant Park Movie Nights",
-      "dateISO": "2026-08-31T17:00:00",
-      "time": "5:00 PM",
-      "venue": "Bryant Park Lawn (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/08/31/bryant-park-movie-nights",
-      "category": "film_screenings",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Movie Nights at Bryant Park returns for its 33rd season! Bring a blanket and a friend and grab your spot on the lawn to watch a feature film on the big screen under the stars. The lawn opens at 5pm…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-31-bodyweight-circuit-training",
-      "name": "Bodyweight Circuit Training",
-      "dateISO": "2026-08-31T17:30:00",
-      "time": "5:30 PM",
-      "venue": "MVMNT Fitness and Health Studio (in Prospect Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=1cffd1b3-bdcf-48c4-b11c-887d6d6a0794&occurrenceDate=20260831",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "This circuit training class combines bodyweight resistance training and conditioning to provide you with a dynamic full body workout. Whether you are a beginner or looking for a challenge; this class…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-31-canceled-bodyweight-interval-training",
-      "name": "CANCELED: Bodyweight Interval Training",
-      "dateISO": "2026-08-31T17:45:00",
-      "time": "5:45 PM",
-      "venue": "Multi-Use Room C (in McCarren Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=276e537d-bd1c-4354-9bf0-518c249f0f7e&occurrenceDate=20260831",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Bodyweight Interval Training is an energetic yet low impact exercise class that will get your muscles moving! This mix of cardio and body weight strength exercises is a great way to get a full body…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-08-31-big-city-folk-in-greeley-square-park",
-      "name": "Big City Folk in Greeley Square Park",
-      "dateISO": "2026-08-31T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Greeley Square Park",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/08/31/big-city-folk-in-greeley-square-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "See New York City’s finest singer-songwriters showcase their newest work, presented by Big City Folk and hosted by songsmith Niall Connolly. With a list of past featured artists including Lana Del…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-01-total-body-fitness",
-      "name": "Total Body Fitness",
-      "dateISO": "2026-09-01T08:00:00",
-      "time": "8:00 AM",
-      "venue": "Gymnasium (in St. John's Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=788de700-cbb6-4c74-ad6e-82571e257a3c&occurrenceDate=20260901",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-01-summer-sports-experience-basketball-skil",
-      "name": "Summer Sports Experience: Basketball: Skills and Drills",
-      "dateISO": "2026-09-01T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/01/summer-sports-experience-basketball-skills-and-drills",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-01-kids-in-motion-cherry-tree-park",
-      "name": "Kids In Motion: Cherry Tree Park",
-      "dateISO": "2026-09-01T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Cherry Tree Park Playground (in Cherry Tree Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/01/kids-in-motion-cherry-tree-park",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-01-piano-in-bryant-park",
-      "name": "Piano in Bryant Park",
-      "dateISO": "2026-09-01T12:30:00",
-      "time": "12:30 PM",
-      "venue": "Upper Terrace (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/01/piano-in-bryant-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-01-street-lab",
-      "name": "Street Lab",
-      "dateISO": "2026-09-01T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Holley Plaza (in Washington Square Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/01/street-lab",
-      "category": "art_exhibitions",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Every first Tuesday of the month, join our friends at Street Lab for a collaborative open-air studio! Upcoming Themes: 5/5: DRAW 6/2: DRAW 7/7: WRITE 8/4: DRAW 9/1: WRITE + IMAGINE 10/6: READ"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-01-summer-sports-experience-flag-football",
-      "name": "Summer Sports Experience: Flag Football",
-      "dateISO": "2026-09-01T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/01/summer-sports-experience-flag-football",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-01-poetry-at-bryant-park-reading-room",
-      "name": "Poetry at Bryant Park Reading Room",
-      "dateISO": "2026-09-01T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Reading Room (in Bryant Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/01/poetry-at-bryant-park-reading-room",
-      "category": "talks_lectures",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Join us for a Celebration of Poetry and Healing featuring writers Danielle Ofri and Thomas Dooley. Danielle Ofri is a physician, author, and editor-in-chief of Bellevue Literary Review , the…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-01-hatha-flow",
-      "name": "Hatha Flow",
-      "dateISO": "2026-09-01T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Dance Room (in St. John's Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=0bb193c5-2c2d-4c7c-ac8d-fba3747e392d&occurrenceDate=20260901",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "The alignment-based hatha class invites you to slow down and reconnect with your breath and body through mindful movement. Together we’ll explore accessible postures, mobility, and body awareness in…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-01-stargazing-on-the-high-line",
-      "name": "Stargazing on the High Line",
-      "dateISO": "2026-09-01T20:15:00",
-      "time": "8:15 PM",
-      "venue": "On the High Line at 13th Street (in The High Line),under The Standard, at 13th St. (in The High Line)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/01/stargazing-on-the-high-line",
-      "category": "talks_lectures",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Immerse yourself in the wonders of the night sky every Tuesday on the High Line! The friendly team from the Amateur Astronomers Association—with whom we’ve been partnering since the park’s…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-02-line-dance-fitness",
-      "name": "Line Dance Fitness",
-      "dateISO": "2026-09-02T08:00:00",
-      "time": "8:00 AM",
-      "venue": "Handball Court (in Betsy Head Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=0d1342b0-deef-4b79-bbf5-30b58b63d682&occurrenceDate=20260902",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-02-summer-sports-experience-basketball-skil",
-      "name": "Summer Sports Experience: Basketball: Skills and Drills",
-      "dateISO": "2026-09-02T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/02/summer-sports-experience-basketball-skills-and-drills",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-02-kids-in-motion-cherry-tree-park",
-      "name": "Kids In Motion: Cherry Tree Park",
-      "dateISO": "2026-09-02T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Cherry Tree Park Playground (in Cherry Tree Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/02/kids-in-motion-cherry-tree-park",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-02-piano-in-bryant-park",
-      "name": "Piano in Bryant Park",
-      "dateISO": "2026-09-02T12:30:00",
-      "time": "12:30 PM",
-      "venue": "Upper Terrace (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/02/piano-in-bryant-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-02-summer-sports-experience-flag-football",
-      "name": "Summer Sports Experience: Flag Football",
-      "dateISO": "2026-09-02T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/02/summer-sports-experience-flag-football",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-02-midtown-music-in-greeley-square-park",
-      "name": "Midtown Music in Greeley Square Park",
-      "dateISO": "2026-09-02T14:30:00",
-      "time": "2:30 PM",
-      "venue": "Greeley Square Park",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/02/midtown-music-in-greeley-square-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Featuring a multitude of musical moods ranging from pop-up performances for passers-by to festival shows curated by cultural partners, Midtown Music has something for every ear. Hear NYC’s finest…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-02-nature-book-club",
-      "name": "Nature Book Club",
-      "dateISO": "2026-09-02T17:00:00",
-      "time": "5:00 PM",
-      "venue": "West 218th Street and Indian Road (in Inwood Hill Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/02/nature-book-club",
-      "category": "tours_experiences",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Join the Urban Park Rangers for a monthly discussion of a nature-themed book. This month's book will be The Botany of Desire by Michael Pollan. Please have the book read before the meeting…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-02-waterfront-workouts-amp-d-bootcamp",
-      "name": "Waterfront Workouts: Amp'd Bootcamp",
-      "dateISO": "2026-09-02T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Pier 2 (in Brooklyn Bridge Park),Brooklyn Bridge Park",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://eventvesta.com/events/144714/t/tickets",
-      "category": "workshops_classes",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Push yourself with this free Amp’d Bootcamp class Brooklyn Bridge Park! This all-level one hour fitness class is open to all ages and abilities, led by instructors from Chelsea Piers Fitness. This is…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-02-midtown-dance-mucho-s-estilo-s-in-greele",
-      "name": "Midtown Dance: Mucho(s) Estilo(s) in Greeley Square Park",
-      "dateISO": "2026-09-02T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Greeley Square Park",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.eventbrite.com/cc/midtown-dance-4839870",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "From salsa to swing, bachata to pachanga, dance your way around the world every Wednesday with some of New York City’s most eclectic instructors! Mucho(s) Estilo(s) is hosted by Talia Castro-Pozo…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-02-circus-arts-in-herald-square-park",
-      "name": "Circus Arts in Herald Square Park",
-      "dateISO": "2026-09-02T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Herald Square",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/02/circus-arts-in-herald-square-park",
-      "category": "art_exhibitions",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Try silk fan dancing, hoop tricks, contact juggling, plate spinning, and more! Our instructors can give you one-on-one guidance in a variety of flow and circus arts skills, or just drop by, pick up a…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-02-pa-la-calle-wednesdays-free-salsa-and-ba",
-      "name": "Pa' La Calle Wednesdays - Free Salsa and Bachata Dancing",
-      "dateISO": "2026-09-02T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Bella Abzug Park Fountains (in Bella Abzug Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/02/pa-la-calle-wednesdays-free-salsa-and-bachata-dancing",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "FREE OUTDOOR SALSA AND BACHATA PARTY STARTING JUNE 17TH, 2026 ?Bella Abzug Park, 539 w 34th Street You’re invited to the ultimate Latin Dance party in the beautiful Bella Abzug Park in Hudson Yards…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-02-tango-in-the-park-at-sutton-place-park",
-      "name": "Tango in the Park at Sutton Place Park",
-      "dateISO": "2026-09-02T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Sutton Place Park",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=e84759e7-dc80-4331-afdd-fcb181928e0a&occurrenceDate=20260902",
-      "category": "miscellaneous",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Tango in the Park at Sutton Place Park Step into the rhythm of Buenos Aires right here in New York City! NYC Parks and Council Member Julie Menin invite you to experience the passion and elegance of…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-02-body-centric-circuit-training",
-      "name": "Body-Centric Circuit Training",
-      "dateISO": "2026-09-02T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Multi-Use Room A (in McCarren Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=e9b68ff8-ecb8-433a-bdb7-66a98ed184ea&occurrenceDate=20260902",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "A low impact bodyweight workout, integrating holistic body empowering movements for improved overall strength and endurance. Align with your mindfulness to support inner strength and to connect with…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-02-total-body-fitness",
-      "name": "Total Body Fitness",
-      "dateISO": "2026-09-02T18:30:00",
-      "time": "6:30 PM",
-      "venue": "Multipurpose Room (in Nostrand Playground)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=05b3c999-d0e9-48b3-b6e4-b74b8a7d812a&occurrenceDate=20260902",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "This fun low-impact full-body workout includes cardio, strength and balance exercises to improve your overall fitness. Participants must sign in at the front desk and bring locks to lock up their…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-02-non-fiction-at-bryant-park-reading-room",
-      "name": "Non-Fiction at Bryant Park Reading Room",
-      "dateISO": "2026-09-02T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Reading Room (in Bryant Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/02/nonfiction-at-bryant-park-reading-room",
-      "category": "talks_lectures",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "The Only Plane in the Sky reconstructs the harrowing events of 9/11 minute-by-minute through the voices of those who lived it—passengers, air traffic controllers, first responders, military leaders…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-02-movies-under-the-stars-akeelah-and-the-b",
-      "name": "Movies Under the Stars : Akeelah and the Bee",
-      "dateISO": "2026-09-02T19:15:00",
-      "time": "7:15 PM",
-      "venue": "135th Street and St. Nicholas Avenue (in St. Nicholas Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=33ba9f93-680c-47be-a370-ea2c630adbf7&occurrenceDate=20260902",
-      "category": "film_screenings",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-03-total-body-fitness",
-      "name": "Total Body Fitness",
-      "dateISO": "2026-09-03T08:00:00",
-      "time": "8:00 AM",
-      "venue": "Gymnasium (in St. John's Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=788de700-cbb6-4c74-ad6e-82571e257a3c&occurrenceDate=20260903",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-03-summer-sports-experience-basketball-skil",
-      "name": "Summer Sports Experience: Basketball: Skills and Drills",
-      "dateISO": "2026-09-03T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/03/summer-sports-experience-basketball-skills-and-drills",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-03-kids-in-motion-cherry-tree-park",
-      "name": "Kids In Motion: Cherry Tree Park",
-      "dateISO": "2026-09-03T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Cherry Tree Park Playground (in Cherry Tree Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/03/kids-in-motion-cherry-tree-park",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-03-piano-in-bryant-park",
-      "name": "Piano in Bryant Park",
-      "dateISO": "2026-09-03T12:30:00",
-      "time": "12:30 PM",
-      "venue": "Upper Terrace (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/03/piano-in-bryant-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-03-summer-sports-experience-flag-football",
-      "name": "Summer Sports Experience: Flag Football",
-      "dateISO": "2026-09-03T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/03/summer-sports-experience-flag-football",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-03-spotlight-tour-horticulture",
-      "name": "Spotlight tour: Horticulture",
-      "dateISO": "2026-09-03T17:30:00",
-      "time": "5:30 PM",
-      "venue": "The High Line",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.eventbrite.com/e/high-line-spotlight-horticulture-tickets-1998764398120",
-      "category": "tours_experiences",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Dig deep into the High Line’s horticulture with a garden-focused tour! Each led by a knowledgeable High Line Docent, these 90-minute specialized tours offer an immersive look into the High Line’s…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-03-golden-hour-at-greeley-square-park",
-      "name": "Golden Hour at Greeley Square Park",
-      "dateISO": "2026-09-03T18:30:00",
-      "time": "6:30 PM",
-      "venue": "Greeley Square Park",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/03/golden-hour-at-greeley-square-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-03-dance-fitness",
-      "name": "Dance Fitness",
-      "dateISO": "2026-09-03T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Dance Room (in Nostrand Playground)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=57d78315-eb4a-4982-afe4-30c0ed484d64&occurrenceDate=20260903",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-03-bryant-park-picnic-performance-asian-ame",
-      "name": "Bryant Park Picnic Performance: Asian American Arts Alliance: Grace Kelly, Ashni",
-      "dateISO": "2026-09-03T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Bryant Park Lawn (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/03/bryant-park-picnic-performance-asian-american-arts-alliance1",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Grace Kelly is a saxophonist, singer, songwriter, and bandleader who has performed over 1,500 concerts in more than 40 countries. As a bandleader, she has appeared at major venues and festivals…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-03-movies-under-the-stars-in-the-heights",
-      "name": "Movies Under the Stars: In the Heights",
-      "dateISO": "2026-09-03T19:15:00",
-      "time": "7:15 PM",
-      "venue": "Southern End (in Madison Square Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=0cffab7a-aa83-4c0d-a0e9-5aed56c510a6&occurrenceDate=20260903",
-      "category": "film_screenings",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-03-summer-on-the-hudson-climate-film-festiv",
-      "name": "Summer on the Hudson: Climate Film Festival",
-      "dateISO": "2026-09-03T19:30:00",
-      "time": "7:30 PM",
-      "venue": "102nd Street Field House (in Riverside Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.eventbrite.com/e/summer-on-the-hudson-x-climate-film-festival-tickets-1998265431698?aff=oddtdtcreator",
-      "category": "film_screenings",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Join Riverside Park Conservancy and the Climate Film Festival for a special preview screening of four short films exploring our local environment and the people working to help cities and wildlife…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-04-line-dance-fitness",
-      "name": "Line Dance Fitness",
-      "dateISO": "2026-09-04T08:00:00",
-      "time": "8:00 AM",
-      "venue": "Handball Court (in Betsy Head Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=0d1342b0-deef-4b79-bbf5-30b58b63d682&occurrenceDate=20260904",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-04-summer-sports-experience-basketball-skil",
-      "name": "Summer Sports Experience: Basketball: Skills and Drills",
-      "dateISO": "2026-09-04T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/04/summer-sports-experience-basketball-skills-and-drills",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-04-kids-in-motion-cherry-tree-park",
-      "name": "Kids In Motion: Cherry Tree Park",
-      "dateISO": "2026-09-04T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Cherry Tree Park Playground (in Cherry Tree Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/04/kids-in-motion-cherry-tree-park",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-04-piano-in-bryant-park",
-      "name": "Piano in Bryant Park",
-      "dateISO": "2026-09-04T12:30:00",
-      "time": "12:30 PM",
-      "venue": "Upper Terrace (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/04/piano-in-bryant-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-04-juggling-in-greeley-square-park",
-      "name": "Juggling in Greeley Square Park",
-      "dateISO": "2026-09-04T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Greeley Square Park",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/04/juggling-in-greeley-square-park",
-      "category": "miscellaneous",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Learn to juggle for free, or just enjoy the show! Join our juggling expert every weekday from 2pm-3pm in Greeley Square Park, from May through the end of October. All skill levels welcome, and…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-04-summer-sports-experience-flag-football",
-      "name": "Summer Sports Experience: Flag Football",
-      "dateISO": "2026-09-04T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/04/summer-sports-experience-flag-football",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-04-social-salsa-at-greeley-square-park",
-      "name": "Social Salsa at Greeley Square Park",
-      "dateISO": "2026-09-04T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Greeley Square Park",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/04/social-salsa-at-greeley-square-park",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Learn new moves from New York City's finest salsa instructors, then show off your style on the dance floor with a full hour of social dancing! Participants are welcome to bring their own partner…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-04-summer-on-the-hudson-trivia",
-      "name": "Summer on the Hudson: Trivia",
-      "dateISO": "2026-09-04T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Pier I (in Riverside Park South)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/04/summer-on-the-hudson-trivia",
-      "category": "tours_experiences",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Test your knowledge at this pop culture trivia night hosted by the NYC Trivia League ."
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-04-bryant-park-picnic-performance-brass-fes",
-      "name": "Bryant Park Picnic Performance: Brass Festival: New Breed Brass Band, Aberdeen, and Brass Queens",
-      "dateISO": "2026-09-04T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Bryant Park Lawn (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/04/bryant-park-picnic-performance-brass-festival-new-breed-bras",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Bryant Park's first-ever Brass Festival brings three incredible incredible brass ensembles to the main stage. From Brass Queens' female-led upbeat horns, to Aberdeen 's inventive jazz/indie rock…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-04-movies-under-the-stars-eternity",
-      "name": "Movies Under the Stars: Eternity",
-      "dateISO": "2026-09-04T19:15:00",
-      "time": "7:15 PM",
-      "venue": "Bocce Courts (in James J Walker Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=b893ede3-100b-4942-9fb3-ecb190b78dc2&occurrenceDate=20260904",
-      "category": "film_screenings",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-04-wheel-fun-rentals-celebrates-america-s-2",
-      "name": "Wheel Fun Rentals Celebrates America's 250th with Patriotic LED Bike Ride",
-      "dateISO": "2026-09-04T20:00:00",
-      "time": "8:00 PM",
-      "venue": "Meadow Lake North (in Flushing Meadows Corona Park),Sand Lane and Father Capadanno Boulevard (in Franklin D. Roosevelt Boardwalk and Beach),Marine Park,Bensonhurst Park,David Dinkins Circle (in Flushing Meadows Corona Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "miscellaneous",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-05-no-excuses-circuit-training",
-      "name": "No Excuses Circuit Training",
-      "dateISO": "2026-09-05T09:00:00",
-      "time": "9:00 AM",
-      "venue": "Dance Room (in St. John's Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=55ae0fb4-518e-4fba-b1d1-43b8aa9c0eeb&occurrenceDate=20260905",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "A high-energy beginner-friendly workout that combines strength and endurance exercises performed in timed stations with minimal rest. Participants rotate through movements targeting different muscle…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-05-zumba",
-      "name": "Zumba",
-      "dateISO": "2026-09-05T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Gymnasium (in St. John's Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=6edc4046-45b9-4a97-a35d-954f987e5978&occurrenceDate=20260905",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Zumba is a fusion of Latin, International and popular music dance themes creating a dynamic, exciting, effective fitness system! The routines feature aerobic, fitness interval training with a…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-05-summer-sports-experience-basketball-skil",
-      "name": "Summer Sports Experience: Basketball: Skills and Drills",
-      "dateISO": "2026-09-05T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/05/summer-sports-experience-basketball-skills-and-drills",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-05-dance-fitness-upbeat-pop",
-      "name": "Dance Fitness- Upbeat Pop!",
-      "dateISO": "2026-09-05T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Audubon Center at the Boathouse (in Prospect Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=cd80867a-bd95-4b8a-9968-ae6e3a2f9854&occurrenceDate=20260905",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "A 45-minute dance fitness class to your favorite upbeat pop songs! Come prepared to shake, roll, grapevine, and clap. We will use this time to cultivate joy and silliness while getting a great…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-05-kids-in-motion-cherry-tree-park",
-      "name": "Kids In Motion: Cherry Tree Park",
-      "dateISO": "2026-09-05T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Cherry Tree Park Playground (in Cherry Tree Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/05/kids-in-motion-cherry-tree-park",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-05-bodyweight-burn-circuit-training",
-      "name": "Bodyweight Burn Circuit Training",
-      "dateISO": "2026-09-05T10:30:00",
-      "time": "10:30 AM",
-      "venue": "Brooklyn Public Library - Brooklyn Heights (in Cadman Plaza Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=b2ac95e2-118b-403e-97ff-fc58ccb480ff&occurrenceDate=20260905",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "A bodyweight circuit class combining cardio, strength, and core-focused movements for a dynamic full-body workout! This class welcomes all fitness levels."
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-05-summer-on-the-hudson-sketch-jam",
-      "name": "Summer on the Hudson: Sketch Jam",
-      "dateISO": "2026-09-05T11:00:00",
-      "time": "11:00 AM",
-      "venue": "Sakura Park",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/05/summer-on-the-hudson-sketch-jam",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Bring your favorite art supplies to this observational drawing event led by artist and illustrator Ishita Jain . Some basic supplies provided."
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-05-total-body-reset",
-      "name": "Total Body Reset",
-      "dateISO": "2026-09-05T11:00:00",
-      "time": "11:00 AM",
-      "venue": "Herbert Von King Park",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=ccd74d1e-5ad4-44fa-b8a0-1b2ab381f7dd&occurrenceDate=20260905",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "This fun low-impact full-body workout includes cardio, strength and balance exercises to improve your overall fitness. Class will meet on the Greene Avenue lawn area."
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-05-nature-exploration-urban-wildlife",
-      "name": "Nature Exploration: Urban Wildlife",
-      "dateISO": "2026-09-05T11:00:00",
-      "time": "11:00 AM",
-      "venue": "east lawn (in Saratoga Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/05/nature-exploration-urban-wildlife",
-      "category": "tours_experiences",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Learn about the diverse wildlife found in New York City’s parks and the best ways for people and animals to coexist, including the many benefits of having so many animals in our city!"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-05-canceled-chair-yoga",
-      "name": "CANCELED: Chair Yoga",
-      "dateISO": "2026-09-05T12:00:00",
-      "time": "12:00 PM",
-      "venue": "Ballroom (in John J Carty Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=b7346f56-a4dc-4c02-8468-978e11891ebc&occurrenceDate=20260905",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Connect with yourself in Chair Yoga, a class to be enjoyed by all- but designed for those who prefer to be seated. Experience a fun and light-hearted class that provides a seated flow. The goal is to…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-05-discovery-hike-ecosystem-engineers",
-      "name": "Discovery Hike: Ecosystem Engineers",
-      "dateISO": "2026-09-05T13:00:00",
-      "time": "1:00 PM",
-      "venue": "West 108th Street and Riverside Drive (in Riverside Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/05/discovery-hike-ecosystem-engineers",
-      "category": "tours_experiences",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Join the Urban Park Rangers on a hike through Riverside Park as we discuss the different ecosystems and biodiversity found within NYC. We will explore the impact of our ‘ecosystem engineers’ and the…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-05-walking-tour-the-tredwells-8217-world-of",
-      "name": "Walking Tour: The Tredwells’ World of 19th Century Noho",
-      "dateISO": "2026-09-05T13:30:00",
-      "time": "1:30 PM",
-      "venue": "Merchant's House Museum",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.zeffy.com/en-US/ticketing/walking-tour-the-tredwells-world-of-19th-century-noho-copy",
-      "category": "tours_experiences",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "With the 1825 opening of the Erie Canal, the city’s economy boomed and wealthy merchant families escaped the increasing noise, congestion, and commercialization of the seaport area to move “uptown,”…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-05-summer-sports-experience-flag-football",
-      "name": "Summer Sports Experience: Flag Football",
-      "dateISO": "2026-09-05T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/05/summer-sports-experience-flag-football",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-05-moli-232-re-in-the-park-presents-don-jua",
-      "name": "Molière in the Park presents: DON JUAN",
-      "dateISO": "2026-09-05T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Lefrak Center at Lakeside (in Prospect Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/don-juan-free-theater-in-prospect-park-tickets-1990527302746",
-      "category": "art_exhibitions",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-05-movies-under-the-stars-david",
-      "name": "Movies Under the Stars: David",
-      "dateISO": "2026-09-05T19:15:00",
-      "time": "7:15 PM",
-      "venue": "Field (in Frederick Douglass Playground)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=d280c2af-a9c1-4e5b-a1b7-5abd12cb1c7c&occurrenceDate=20260905",
-      "category": "film_screenings",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-05-wheel-fun-rentals-celebrates-america-s-2",
-      "name": "Wheel Fun Rentals Celebrates America's 250th with Patriotic LED Bike Ride",
-      "dateISO": "2026-09-05T20:00:00",
-      "time": "8:00 PM",
-      "venue": "Meadow Lake North (in Flushing Meadows Corona Park),Sand Lane and Father Capadanno Boulevard (in Franklin D. Roosevelt Boardwalk and Beach),Marine Park,Bensonhurst Park,David Dinkins Circle (in Flushing Meadows Corona Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "miscellaneous",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-06-strength-cardio-circuit-training",
-      "name": "Strength & Cardio Circuit Training",
-      "dateISO": "2026-09-06T09:30:00",
-      "time": "9:30 AM",
-      "venue": "Dance Room (in St. John's Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=8989a499-4c44-4d93-82d0-923adb48e6e0&occurrenceDate=20260906",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "This circuit training class combines bodyweight resistance training and conditioning to provide you with a dynamic full body workout. Whether you are a beginneror looking for a challenge; this class…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-06-lablast-174-fitness",
-      "name": "LaBlast® Fitness",
-      "dateISO": "2026-09-06T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Parachute Jump (in Coney Island Beach & Boardwalk)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=f381edc0-2459-4af8-b55e-0f35830f66fd&occurrenceDate=20260906",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "This dance fitness program is based on ballroom dances, including those seen on Dancing with the Stars. This workout in disguise blends dance patterns, fitness, and music to create a low impact…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-06-hatha-flow",
-      "name": "Hatha Flow",
-      "dateISO": "2026-09-06T13:00:00",
-      "time": "1:00 PM",
-      "venue": "Brower Park Lawn (in Brower Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=ac4307e3-a0bb-460d-9de8-4110829e96ca&occurrenceDate=20260906",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "This outdoor class combines gentle movement and mediation to help you reconnect with your breath, body, and surroundings. Expect grounding, accessible practice focused on mindful movement, presence…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-06-moli-232-re-in-the-park-presents-don-jua",
-      "name": "Molière in the Park presents: DON JUAN",
-      "dateISO": "2026-09-06T15:00:00",
-      "time": "3:00 PM",
-      "venue": "Lefrak Center at Lakeside (in Prospect Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/don-juan-free-theater-in-prospect-park-tickets-1990527302746",
-      "category": "art_exhibitions",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-06-family-camping-manhattan",
-      "name": "Family Camping: Manhattan",
-      "dateISO": "2026-09-06T18:00:00",
-      "time": "6:00 PM",
-      "venue": "West 218th Street and Indian Road (in Inwood Hill Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=9ddbf4d9-1bae-4161-ac1f-92856a05a932",
-      "category": "miscellaneous",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-06-family-camping-brooklyn",
-      "name": "Family Camping: Brooklyn",
-      "dateISO": "2026-09-06T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Salt Marsh Nature Center (in Marine Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=08629b62-c052-424f-a7b5-1b421649a0f1",
-      "category": "miscellaneous",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-06-moli-232-re-in-the-park-presents-don-jua",
-      "name": "Molière in the Park presents: DON JUAN",
-      "dateISO": "2026-09-06T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Lefrak Center at Lakeside (in Prospect Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/don-juan-free-theater-in-prospect-park-tickets-1990527302746",
-      "category": "art_exhibitions",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-06-wheel-fun-rentals-celebrates-america-s-2",
-      "name": "Wheel Fun Rentals Celebrates America's 250th with Patriotic LED Bike Ride",
-      "dateISO": "2026-09-06T20:00:00",
-      "time": "8:00 PM",
-      "venue": "Meadow Lake North (in Flushing Meadows Corona Park),Sand Lane and Father Capadanno Boulevard (in Franklin D. Roosevelt Boardwalk and Beach),Marine Park,Bensonhurst Park,David Dinkins Circle (in Flushing Meadows Corona Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "",
-      "category": "miscellaneous",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-07-piano-in-bryant-park",
-      "name": "Piano in Bryant Park",
-      "dateISO": "2026-09-07T12:30:00",
-      "time": "12:30 PM",
-      "venue": "Upper Terrace (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/07/piano-in-bryant-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-07-bryant-park-movie-nights",
-      "name": "Bryant Park Movie Nights",
-      "dateISO": "2026-09-07T17:00:00",
-      "time": "5:00 PM",
-      "venue": "Bryant Park Lawn (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/07/bryant-park-movie-nights",
-      "category": "film_screenings",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Movie Nights at Bryant Park returns for its 33rd season! Bring a blanket and a friend and grab your spot on the lawn to watch a feature film on the big screen under the stars. The lawn opens at 5pm…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-07-canceled-bodyweight-circuit-training",
-      "name": "CANCELED: Bodyweight Circuit Training",
-      "dateISO": "2026-09-07T17:30:00",
-      "time": "5:30 PM",
-      "venue": "MVMNT Fitness and Health Studio (in Prospect Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=1cffd1b3-bdcf-48c4-b11c-887d6d6a0794&occurrenceDate=20260907",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "This circuit training class combines bodyweight resistance training and conditioning to provide you with a dynamic full body workout. Whether you are a beginner or looking for a challenge; this class…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-07-canceled-bodyweight-interval-training",
-      "name": "CANCELED: Bodyweight Interval Training",
-      "dateISO": "2026-09-07T17:45:00",
-      "time": "5:45 PM",
-      "venue": "Multi-Use Room C (in McCarren Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=276e537d-bd1c-4354-9bf0-518c249f0f7e&occurrenceDate=20260907",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Bodyweight Interval Training is an energetic yet low impact exercise class that will get your muscles moving! This mix of cardio and body weight strength exercises is a great way to get a full body…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-07-big-city-folk-in-greeley-square-park",
-      "name": "Big City Folk in Greeley Square Park",
-      "dateISO": "2026-09-07T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Greeley Square Park",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/07/big-city-folk-in-greeley-square-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "See New York City’s finest singer-songwriters showcase their newest work, presented by Big City Folk and hosted by songsmith Niall Connolly. With a list of past featured artists including Lana Del…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-07-moli-232-re-in-the-park-presents-don-jua",
-      "name": "Molière in the Park presents: DON JUAN",
-      "dateISO": "2026-09-07T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Lefrak Center at Lakeside (in Prospect Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/don-juan-free-theater-in-prospect-park-tickets-1990527302746",
-      "category": "art_exhibitions",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-08-total-body-fitness",
-      "name": "Total Body Fitness",
-      "dateISO": "2026-09-08T08:00:00",
-      "time": "8:00 AM",
-      "venue": "Gymnasium (in St. John's Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=788de700-cbb6-4c74-ad6e-82571e257a3c&occurrenceDate=20260908",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-08-summer-sports-experience-basketball-skil",
-      "name": "Summer Sports Experience: Basketball: Skills and Drills",
-      "dateISO": "2026-09-08T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/08/summer-sports-experience-basketball-skills-and-drills",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-08-kids-in-motion-cherry-tree-park",
-      "name": "Kids In Motion: Cherry Tree Park",
-      "dateISO": "2026-09-08T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Cherry Tree Park Playground (in Cherry Tree Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/08/kids-in-motion-cherry-tree-park",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-08-piano-in-bryant-park",
-      "name": "Piano in Bryant Park",
-      "dateISO": "2026-09-08T12:30:00",
-      "time": "12:30 PM",
-      "venue": "Upper Terrace (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/08/piano-in-bryant-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-08-summer-sports-experience-flag-football",
-      "name": "Summer Sports Experience: Flag Football",
-      "dateISO": "2026-09-08T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/08/summer-sports-experience-flag-football",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-08-folk-jams-in-greeley-square-park",
-      "name": "Folk Jams in Greeley Square Park",
-      "dateISO": "2026-09-08T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Greeley Square Park",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/08/folk-jams-in-greeley-square",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Whether you're picking along to bluegrass jams, joining in with the kalimba orchestra, or lending your voice to an impromptu choir, become a part of the music of the city at Folk Jams. On select…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-08-poetry-at-bryant-park-reading-room",
-      "name": "Poetry at Bryant Park Reading Room",
-      "dateISO": "2026-09-08T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Reading Room (in Bryant Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/08/poetry-at-bryant-park-reading-room",
-      "category": "miscellaneous",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Cai Sherley (he/him) is a Black trans poet-educator with roots in Boston, MA. Cai is a two-time Pushcart Prize nominee, with work published or forthcoming in Best New Poets , swamp pink , Peach Mag…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-08-hatha-flow",
-      "name": "Hatha Flow",
-      "dateISO": "2026-09-08T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Dance Room (in St. John's Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=0bb193c5-2c2d-4c7c-ac8d-fba3747e392d&occurrenceDate=20260908",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "The alignment-based hatha class invites you to slow down and reconnect with your breath and body through mindful movement. Together we’ll explore accessible postures, mobility, and body awareness in…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-08-moli-232-re-in-the-park-presents-don-jua",
-      "name": "Molière in the Park presents: DON JUAN",
-      "dateISO": "2026-09-08T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Lefrak Center at Lakeside (in Prospect Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/don-juan-free-theater-in-prospect-park-tickets-1990527302746",
-      "category": "art_exhibitions",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-08-stargazing-on-the-high-line",
-      "name": "Stargazing on the High Line",
-      "dateISO": "2026-09-08T20:15:00",
-      "time": "8:15 PM",
-      "venue": "On the High Line at 13th Street (in The High Line),under The Standard, at 13th St. (in The High Line)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/08/stargazing-on-the-high-line",
-      "category": "talks_lectures",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Immerse yourself in the wonders of the night sky every Tuesday on the High Line! The friendly team from the Amateur Astronomers Association—with whom we’ve been partnering since the park’s…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-line-dance-fitness",
-      "name": "Line Dance Fitness",
-      "dateISO": "2026-09-09T08:00:00",
-      "time": "8:00 AM",
-      "venue": "Handball Court (in Betsy Head Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=0d1342b0-deef-4b79-bbf5-30b58b63d682&occurrenceDate=20260909",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-summer-sports-experience-basketball-skil",
-      "name": "Summer Sports Experience: Basketball: Skills and Drills",
-      "dateISO": "2026-09-09T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/09/summer-sports-experience-basketball-skills-and-drills",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-kids-in-motion-cherry-tree-park",
-      "name": "Kids In Motion: Cherry Tree Park",
-      "dateISO": "2026-09-09T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Cherry Tree Park Playground (in Cherry Tree Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/09/kids-in-motion-cherry-tree-park",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-piano-in-bryant-park",
-      "name": "Piano in Bryant Park",
-      "dateISO": "2026-09-09T12:30:00",
-      "time": "12:30 PM",
-      "venue": "Upper Terrace (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/09/piano-in-bryant-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-monthly-nature-exploration-hike-series",
-      "name": "Monthly Nature Exploration Hike Series",
-      "dateISO": "2026-09-09T13:00:00",
-      "time": "1:00 PM",
-      "venue": "West 218th Street and Indian Road (in Inwood Hill Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/09/monthly-nature-exploration-hike-series",
-      "category": "tours_experiences",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Join the Urban Park Rangers for a monthly hike exploring Inwood Hill Park. The hike will begin at the Inwood Hill Nature Center. This month’s hike will focus on late-summer plant exploration"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-summer-sports-experience-flag-football",
-      "name": "Summer Sports Experience: Flag Football",
-      "dateISO": "2026-09-09T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/09/summer-sports-experience-flag-football",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-midtown-music-in-greeley-square-park",
-      "name": "Midtown Music in Greeley Square Park",
-      "dateISO": "2026-09-09T14:30:00",
-      "time": "2:30 PM",
-      "venue": "Greeley Square Park",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/09/midtown-music-in-greeley-square-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Featuring a multitude of musical moods ranging from pop-up performances for passers-by to festival shows curated by cultural partners, Midtown Music has something for every ear. Hear NYC’s finest…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-osl-music-at-bella-abzug-park",
-      "name": "OSL Music at Bella Abzug Park",
-      "dateISO": "2026-09-09T16:00:00",
-      "time": "4:00 PM",
-      "venue": "Bella Abzug Park",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.eventbrite.com/e/osl-music-at-bella-abzug-park-tickets-1998506668243?aff=oddtdtcreator",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Join the Orchestra of St. Luke's for an immersive outdoor evening of live music, food, and community over two blocks of Bella Abzug Park. As the sun sets, Bella Abzug Park comes alive with…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-waterfront-workouts-amp-d-bootcamp",
-      "name": "Waterfront Workouts: Amp'd Bootcamp",
-      "dateISO": "2026-09-09T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Pier 2 (in Brooklyn Bridge Park),Brooklyn Bridge Park",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://eventvesta.com/events/144714/t/tickets",
-      "category": "workshops_classes",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Push yourself with this free Amp’d Bootcamp class Brooklyn Bridge Park! This all-level one hour fitness class is open to all ages and abilities, led by instructors from Chelsea Piers Fitness. This is…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-midtown-dance-mucho-s-estilo-s-in-greele",
-      "name": "Midtown Dance: Mucho(s) Estilo(s) in Greeley Square Park",
-      "dateISO": "2026-09-09T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Greeley Square Park",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.eventbrite.com/cc/midtown-dance-4839870",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "From salsa to swing, bachata to pachanga, dance your way around the world every Wednesday with some of New York City’s most eclectic instructors! Mucho(s) Estilo(s) is hosted by Talia Castro-Pozo…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-circus-arts-in-herald-square-park",
-      "name": "Circus Arts in Herald Square Park",
-      "dateISO": "2026-09-09T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Herald Square",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/09/circus-arts-in-herald-square-park",
-      "category": "art_exhibitions",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Try silk fan dancing, hoop tricks, contact juggling, plate spinning, and more! Our instructors can give you one-on-one guidance in a variety of flow and circus arts skills, or just drop by, pick up a…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-summer-movies-in-the-park-the-namesake",
-      "name": "Summer Movies in the Park | The Namesake",
-      "dateISO": "2026-09-09T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Dekalb Ave and Washington Park Entrance (in Fort Greene Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/the-namesake-20th-anniversary-screening-tickets-1992959078252?aff=oddtdtcreator&keep_tld=true",
-      "category": "film_screenings",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "An immigrant family maintains a delicate balancing act between the traditions of their native India and blending into American culture. Prospect Park Alliance, Fort Greene Park Conservancy, and…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-pa-la-calle-wednesdays-free-salsa-and-ba",
-      "name": "Pa' La Calle Wednesdays - Free Salsa and Bachata Dancing",
-      "dateISO": "2026-09-09T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Bella Abzug Park Fountains (in Bella Abzug Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/09/pa-la-calle-wednesdays-free-salsa-and-bachata-dancing",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "FREE OUTDOOR SALSA AND BACHATA PARTY STARTING JUNE 17TH, 2026 ?Bella Abzug Park, 539 w 34th Street You’re invited to the ultimate Latin Dance party in the beautiful Bella Abzug Park in Hudson Yards…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-tango-in-the-park-at-sutton-place-park",
-      "name": "Tango in the Park at Sutton Place Park",
-      "dateISO": "2026-09-09T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Sutton Place Park",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=e84759e7-dc80-4331-afdd-fcb181928e0a&occurrenceDate=20260909",
-      "category": "miscellaneous",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Tango in the Park at Sutton Place Park Step into the rhythm of Buenos Aires right here in New York City! NYC Parks and Council Member Julie Menin invite you to experience the passion and elegance of…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-body-centric-circuit-training",
-      "name": "Body-Centric Circuit Training",
-      "dateISO": "2026-09-09T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Multi-Use Room A (in McCarren Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=e9b68ff8-ecb8-433a-bdb7-66a98ed184ea&occurrenceDate=20260909",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "A low impact bodyweight workout, integrating holistic body empowering movements for improved overall strength and endurance. Align with your mindfulness to support inner strength and to connect with…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-total-body-fitness",
-      "name": "Total Body Fitness",
-      "dateISO": "2026-09-09T18:30:00",
-      "time": "6:30 PM",
-      "venue": "Multipurpose Room (in Nostrand Playground)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=05b3c999-d0e9-48b3-b6e4-b74b8a7d812a&occurrenceDate=20260909",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "This fun low-impact full-body workout includes cardio, strength and balance exercises to improve your overall fitness. Participants must sign in at the front desk and bring locks to lock up their…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-non-fiction-at-bryant-park-reading-room",
-      "name": "Non-Fiction at Bryant Park Reading Room",
-      "dateISO": "2026-09-09T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Reading Room (in Bryant Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/09/nonfiction-at-bryant-park-reading-room",
-      "category": "talks_lectures",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Fire in the Heart of the City details the riveting story of what happened when a tragic fire in Greenwich Village threw Adolph Ochs, the ambitious new publisher of the New York Times , and Rose…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-09-movies-under-the-stars-michael",
-      "name": "Movies Under the Stars: Michael",
-      "dateISO": "2026-09-09T19:15:00",
-      "time": "7:15 PM",
-      "venue": "Play Area (in James Weldon Johnson Playground)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=479a5f12-451b-4f75-96a7-a38eb5d8fd52&occurrenceDate=20260909",
-      "category": "film_screenings",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-10-total-body-fitness",
-      "name": "Total Body Fitness",
-      "dateISO": "2026-09-10T08:00:00",
-      "time": "8:00 AM",
-      "venue": "Gymnasium (in St. John's Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=788de700-cbb6-4c74-ad6e-82571e257a3c&occurrenceDate=20260910",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-10-summer-sports-experience-basketball-skil",
-      "name": "Summer Sports Experience: Basketball: Skills and Drills",
-      "dateISO": "2026-09-10T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/10/summer-sports-experience-basketball-skills-and-drills",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-10-kids-in-motion-cherry-tree-park",
-      "name": "Kids In Motion: Cherry Tree Park",
-      "dateISO": "2026-09-10T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Cherry Tree Park Playground (in Cherry Tree Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/10/kids-in-motion-cherry-tree-park",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-10-piano-in-bryant-park",
-      "name": "Piano in Bryant Park",
-      "dateISO": "2026-09-10T12:30:00",
-      "time": "12:30 PM",
-      "venue": "Upper Terrace (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/10/piano-in-bryant-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-10-summer-sports-experience-flag-football",
-      "name": "Summer Sports Experience: Flag Football",
-      "dateISO": "2026-09-10T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Basketball Courts (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/10/summer-sports-experience-flag-football",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-10-9-11-vigil",
-      "name": "9/11 Vigil",
-      "dateISO": "2026-09-10T17:00:00",
-      "time": "5:00 PM",
-      "venue": "Carmine Carro Community Center (in Marine Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "http://www.nycgovparks.org/events/2026/09/10/911-vigil",
-      "category": "tours_experiences",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Assembly member Jaime Williams leads remembrance on this 25th anniversary of the tragedy."
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-10-opening-reception-new-dendrology-at-the-",
-      "name": "Opening Reception: New Dendrology at the Arsenal Gallery",
-      "dateISO": "2026-09-10T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Arsenal (in Central Park)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.eventbrite.com/e/opening-reception-new-dendrology-at-the-arsenal-gallery-tickets-1998897567433",
-      "category": "art_exhibitions",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "New Dendrology is a group exhibition featuring eleven artists whose work contributes to the study of trees, offering new insight and connection between humans and their arboreal neighbors. From…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-10-golden-hour-at-greeley-square-park",
-      "name": "Golden Hour at Greeley Square Park",
-      "dateISO": "2026-09-10T18:30:00",
-      "time": "6:30 PM",
-      "venue": "Greeley Square Park",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/10/golden-hour-at-greeley-square-park",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-10-dance-fitness",
-      "name": "Dance Fitness",
-      "dateISO": "2026-09-10T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Dance Room (in Nostrand Playground)",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=57d78315-eb4a-4982-afe4-30c0ed484d64&occurrenceDate=20260910",
-      "category": "sports_fitness",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-10-bryant-park-picnic-performance-dance-par",
-      "name": "Bryant Park Picnic Performance: Dance Party All-Stars Alfredo de la Fé All Star Band and George Gee Swing Orchestra",
-      "dateISO": "2026-09-10T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Bryant Park Lawn (in Bryant Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "http://www.nycgovparks.org/events/2026/09/10/bryant-park-picnic-performance-dance-party-allstars-alfredo",
-      "category": "music_nightlife",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": "Lindy hop and jitterbug followed by Latin jazz and salsa. Alfredo De La Fé is an internationally acclaimed violinist, best known for revolutionizing the role of the violin in salsa and Latin music…"
-    },
-    {
-      "id": "feed-nyc-parks-2026-09-10-movies-under-the-stars-blue-beetle",
-      "name": "Movies Under the Stars: Blue Beetle",
-      "dateISO": "2026-09-10T20:30:00",
-      "time": "8:30 PM",
-      "venue": "Lawn (in J. Hood Wright Park)",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://nycparks.perfectmind.com/24936/Clients/BookMe4LandingPages/Class?widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False&redirectedFromEmbededMode=False&classId=2f88f8cc-f8b8-4f8a-b6a6-6599296b49a7&occurrenceDate=20260910",
-      "category": "film_screenings",
-      "source": "NYC Parks",
-      "via": [
-        "feed: NYC Parks"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-nyc-resistor-2026-08-27-public-craft-night-mondays-and-thursdays",
-      "name": "Public Craft Night Mondays and Thursdays!",
-      "dateISO": "2026-08-27T18:30:00",
-      "time": "6:30 PM",
-      "venue": "NYC Resistor",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/public-craft-night-mondays-and-thursdays-tickets-162729866411",
-      "category": "workshops_classes",
-      "source": "NYC Resistor",
-      "via": [
-        "feed: NYC Resistor"
-      ],
-      "why": "Learn, make and share at NYC Resistor (all events18+)"
-    },
-    {
-      "id": "feed-nyc-resistor-2026-08-28-synthesizer-night-nyc-resistor",
-      "name": "Synthesizer Night @ NYC Resistor",
-      "dateISO": "2026-08-28T19:30:00",
-      "time": "7:30 PM",
-      "venue": "NYC Resistor",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/synthesizer-night-nyc-resistor-tickets-1997646041084",
-      "category": "workshops_classes",
-      "source": "NYC Resistor",
-      "via": [
-        "feed: NYC Resistor"
-      ],
-      "why": "Gathering musicians, enthusiasts, and curious minds to connect, collaborate, and share their passion for synthesis. BYO synth encouraged!"
-    },
-    {
-      "id": "feed-nyc-resistor-2026-08-29-yoga-for-hackers",
-      "name": "Yoga for Hackers",
-      "dateISO": "2026-08-29T12:00:00",
-      "time": "12:00 PM",
-      "venue": "NYCResistor",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/yoga-for-hackers-tickets-1997087923740",
-      "category": "sports_fitness",
-      "source": "NYC Resistor",
-      "via": [
-        "feed: NYC Resistor"
-      ],
-      "why": "Hack your body. We'll cover fundamental yoga postures, with an emphasis on alignment, breathing practices and strength. All are welcome!"
-    },
-    {
-      "id": "feed-nyc-resistor-2026-08-30-learn-to-use-a-fiber-laser-cutter-to-etc",
-      "name": "Learn to Use a Fiber Laser Cutter to Etch Your Own Designs in Metal",
-      "dateISO": "2026-08-30T14:00:00",
-      "time": "2:00 PM",
-      "venue": "NYC Resistor",
-      "neighborhood": "",
-      "price": "$85",
-      "url": "https://www.eventbrite.com/e/learn-to-use-a-fiber-laser-cutter-to-etch-your-own-designs-in-metal-tickets-1994965147459",
-      "category": "workshops_classes",
-      "source": "NYC Resistor",
-      "via": [
-        "feed: NYC Resistor"
-      ],
-      "why": "Harness the power of an Xtool Fiber Laser! In this class you'll learn everything you need."
+      "why": "Sophia Club brings its unique blend of philosophy and performance to the stage. For this debut, New York–based choreographer, composer, and performance artist Kinlaw joins classicist Kristina Milnor…"
     },
     {
       "id": "feed-nyc-resistor-2026-09-02-learn-to-use-a-laser-cutter-to-cut-and-e",
@@ -6455,6 +3895,22 @@
         "feed: NYC Resistor"
       ],
       "why": "Harness the power of an Epilog 60 Watt Laser! In this class you'll learn everything you need."
+    },
+    {
+      "id": "feed-nyc-resistor-2026-09-03-public-craft-night-mondays-and-thursdays",
+      "name": "Public Craft Night Mondays and Thursdays!",
+      "dateISO": "2026-09-03T18:30:00",
+      "time": "6:30 PM",
+      "venue": "NYC Resistor",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.eventbrite.com/e/public-craft-night-mondays-and-thursdays-tickets-162729866411",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
+      "via": [
+        "feed: NYC Resistor"
+      ],
+      "why": "Learn, make and share at NYC Resistor (all events18+)"
     },
     {
       "id": "feed-nyc-resistor-2026-09-04-public-craft-night-1st-fridays-and-3rd-w",
@@ -6553,6 +4009,22 @@
       "why": "Soldering is one of the most important skills you'll need for working with electronics. Come join us for an introductory through-hole solder"
     },
     {
+      "id": "feed-nyc-resistor-2026-09-20-learn-to-use-a-laser-cutter-to-cut-and-e",
+      "name": "Learn to Use a Laser Cutter to Cut and Etch Your Own Designs",
+      "dateISO": "2026-09-20T13:00:00",
+      "time": "1:00 PM",
+      "venue": "NYC Resistor",
+      "neighborhood": "",
+      "price": "$85",
+      "url": "https://www.eventbrite.com/e/learn-to-use-a-laser-cutter-to-cut-and-etch-your-own-designs-tickets-1998496348376",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
+      "via": [
+        "feed: NYC Resistor"
+      ],
+      "why": "Harness the power of an Epilog 60 Watt Laser! In this class you'll learn everything you need."
+    },
+    {
       "id": "feed-nyc-resistor-2026-09-23-nycresistor-ham-radio-club",
       "name": "NYCResistor Ham Radio Club",
       "dateISO": "2026-09-23T20:00:00",
@@ -6567,7 +4039,28 @@
         "feed: NYC Resistor"
       ],
       "why": "Monthly Amateur Radio club meeting of NYCResistor"
+    },
+    {
+      "id": "feed-nyc-resistor-2026-10-07-learn-to-use-a-laser-cutter-to-cut-and-e",
+      "name": "Learn to Use a Laser Cutter to Cut and Etch Your Own Designs",
+      "dateISO": "2026-10-07T18:00:00",
+      "time": "6:00 PM",
+      "venue": "NYC Resistor",
+      "neighborhood": "",
+      "price": "$85",
+      "url": "https://www.eventbrite.com/e/learn-to-use-a-laser-cutter-to-cut-and-etch-your-own-designs-tickets-1998496159812",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
+      "via": [
+        "feed: NYC Resistor"
+      ],
+      "why": "Harness the power of an Epilog 60 Watt Laser! In this class you'll learn everything you need."
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "source": "NYC Parks",
+      "error": "HTTP 405"
+    }
+  ]
 }

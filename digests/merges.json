@@ -1,0 +1,32 @@
+{
+  "generated": "2026-09-02T13:39:43",
+  "verdictsApplied": 1,
+  "merges": [
+    {
+      "day": "2026-09-25",
+      "kept": "The Fling 2026 at Fort Greene Park",
+      "keptVia": [
+        "Fort Greene Park Conservancy"
+      ],
+      "dup": "The Fling",
+      "dupVia": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "reason": "jaccard",
+      "score": 1
+    },
+    {
+      "day": "2026-10-13",
+      "kept": "Start Woodworking!",
+      "keptVia": [
+        "feed: Makeville Studio"
+      ],
+      "dup": "Start Woodworking! - KJ",
+      "dupVia": [
+        "feed: Makeville Studio"
+      ],
+      "reason": "dice",
+      "score": 0.94
+    }
+  ]
+}

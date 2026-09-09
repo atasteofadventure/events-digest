@@ -1,19 +1,45 @@
 {
-  "generated": "2026-09-02T13:39:43",
-  "verdictsApplied": 1,
+  "generated": "2026-09-09T13:29:42",
+  "verdictsApplied": 3,
   "merges": [
     {
-      "day": "2026-09-25",
-      "kept": "The Fling 2026 at Fort Greene Park",
+      "day": "2026-09-12",
+      "kept": "Fort Greene Park Jazz Festival",
       "keptVia": [
         "Fort Greene Park Conservancy"
       ],
-      "dup": "The Fling",
+      "dup": "Fort Greene Park Jazz Festival",
+      "dupVia": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "reason": "containment",
+      "score": 1
+    },
+    {
+      "day": "2026-09-19",
+      "kept": "Black History & Culture Tour of Fort Greene: Heart of Black Fort Greene (Fulton Street)",
+      "keptVia": [
+        "Fort Greene Park Conservancy"
+      ],
+      "dup": "Black History And Culture Tour Of Fort Greene",
       "dupVia": [
         "feed: Fort Greene Park Conservancy"
       ],
       "reason": "jaccard",
-      "score": 1
+      "score": 0.86
+    },
+    {
+      "day": "2026-11-14",
+      "kept": "America's 250th Anniversary Tour of Fort Greene Park",
+      "keptVia": [
+        "Fort Greene Park Conservancy"
+      ],
+      "dup": "America's 250th Anniversary Tour of Fort Greene",
+      "dupVia": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "reason": "dice",
+      "score": 0.95
     },
     {
       "day": "2026-10-13",
@@ -27,6 +53,19 @@
       ],
       "reason": "dice",
       "score": 0.94
+    },
+    {
+      "day": "2026-09-22",
+      "kept": "Artist Discusses Her New Sculptural Works in a Landmark Museum",
+      "keptVia": [
+        "feed: Club Free Time"
+      ],
+      "dup": "Varied Media Artist Discusses His Work at a Landmark Museum",
+      "dupVia": [
+        "feed: Club Free Time"
+      ],
+      "reason": "llm-same",
+      "score": 1
     }
   ]
 }

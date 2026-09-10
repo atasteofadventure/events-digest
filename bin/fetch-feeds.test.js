@@ -1,6 +1,7 @@
 'use strict';
 const { test } = require('node:test');
 const assert = require('node:assert');
+process.env.FEED_RETRY_DELAY_MS = '0';
 const { fetchFeeds, withinHorizon } = require('./fetch-feeds');
 
 const ICS = 'BEGIN:VCALENDAR\r\nBEGIN:VEVENT\r\nSUMMARY:A\r\nDTSTART:20260711T100000\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nSUMMARY:Ancient\r\nDTSTART:20200101T100000\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nSUMMARY:Far Future\r\nDTSTART:20301231T100000\r\nEND:VEVENT\r\nEND:VCALENDAR';
@@ -51,6 +52,18 @@ test('a failing feed is recorded as an error, not thrown; others still parse', a
   assert.equal(events.length, 1);
   assert.equal(errors.length, 1);
   assert.equal(errors[0].source, 'Bad');
+});
+
+test('a transient failure is retried once (Eventbrite 502d from CI once, then answered)', async () => {
+  const base = 'https://www.eventbrite.com/api/v3/organizers/1/events/?status=live';
+  const ok = fakeFetch({ [base]: { body: JSON.stringify({ pagination: {}, events: [apiEv('a', 'Talk A', '2026-07-10')] }) } });
+  let calls = 0;
+  const flaky = async (url, opts) => (++calls === 1 ? fakeFetch({ [url]: { status: 502 } })(url) : ok(url, opts));
+  const { events, errors } = await fetchFeeds(
+    [{ type: 'feed', name: 'LoT', feed_url: base, format: 'eventbrite-api', enabled: true }], flaky, NOW);
+  assert.deepEqual(errors, []);
+  assert.equal(events.length, 1);
+  assert.equal(calls, 2);
 });
 
 test('non-200 responses are errors too', async () => {

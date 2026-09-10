@@ -44,11 +44,24 @@ function decodeBody(buf, contentType) {
   }
 }
 
-async function fetchOne(fetchImpl, url) {
+async function fetchOnce(fetchImpl, url) {
   const res = await fetchImpl(url, REQ_OPTS());
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const ct = res.headers && typeof res.headers.get === 'function' ? res.headers.get('content-type') : '';
   return decodeBody(await res.arrayBuffer(), ct);
+}
+
+// One retry on any failure: from CI, Eventbrite answered 502 and NY Mycological
+// 403 on one run and 200 on the next (2026-09-10). A persistent failure still
+// surfaces as a feed error after the second attempt.
+const RETRY_DELAY_MS = Number(process.env.FEED_RETRY_DELAY_MS || 2000);
+async function fetchOne(fetchImpl, url) {
+  try {
+    return await fetchOnce(fetchImpl, url);
+  } catch {
+    await new Promise((r) => setTimeout(r, RETRY_DELAY_MS));
+    return fetchOnce(fetchImpl, url);
+  }
 }
 
 // Eventbrite organizer blobs carry no description and often no price. Fill the

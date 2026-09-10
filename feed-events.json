@@ -1,54 +1,6 @@
 {
-  "generated": "2026-09-08T23:30:14.633Z",
+  "generated": "2026-09-10T14:59:00.254Z",
   "events": [
-    {
-      "id": "feed-fort-greene-park-conservancy-2026-09-08-run-club-with-chelsea-piers-fitness",
-      "name": "Run Club with Chelsea Piers Fitness",
-      "dateISO": "2026-09-08T18:30:00",
-      "time": "6:30 PM",
-      "venue": "Fort Greene Park Conservancy",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.fortgreenepark.org/calendar/runclub-chelsea-piers-090826",
-      "category": "sports_fitness",
-      "source": "Fort Greene Park Conservancy",
-      "via": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-fort-greene-park-conservancy-2026-09-09-cancelled-storytime-in-the-park",
-      "name": "Cancelled: Storytime in the Park",
-      "dateISO": "2026-09-09T11:00:00",
-      "time": "11:00 AM",
-      "venue": "Fort Greene Park Conservancy",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.fortgreenepark.org/calendar/storytime-in-the-park-090926",
-      "category": "miscellaneous",
-      "source": "Fort Greene Park Conservancy",
-      "via": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-fort-greene-park-conservancy-2026-09-09-summer-movies-in-the-park-the-namesake",
-      "name": "Summer Movies in the Park: The Namesake",
-      "dateISO": "2026-09-09T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Fort Greene Park Conservancy",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.fortgreenepark.org/calendar/summer-movies-in-the-park-smczr",
-      "category": "miscellaneous",
-      "source": "Fort Greene Park Conservancy",
-      "via": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "why": "We heard you loud and clear...Summer Movies in the Park are back! Prospect Park Alliance, Fort Greene Park Conservancy and Rooftop Films announce Summer Movies in the Park, presented by…"
-    },
     {
       "id": "feed-fort-greene-park-conservancy-2026-09-12-slow-skills-to-sustain-you-shibori-resis",
       "name": "Slow Skills to Sustain You - Shibori/Resist Dyeing Workshop",
@@ -610,38 +562,6 @@
       "why": "Mark your calendars and join us for the 12th Annual Tree Lighting Ceremony in partnership with Myrtle Avenue Brooklyn Partnership. Meet us at Myrtle Ave and St Edwards Street entrance on Friday…"
     },
     {
-      "id": "feed-green-wood-cemetery-2026-09-09-birding-in-peace",
-      "name": "Birding In Peace",
-      "dateISO": "2026-09-09T06:30:00",
-      "time": "6:30 AM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/birding-in-peace-32/2026-09-09/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-09-09-signatures-for-safekeeping-preparing-end",
-      "name": "Signatures for Safekeeping: Preparing End-of-Life Documents",
-      "dateISO": "2026-09-09T18:30:00",
-      "time": "6:30 PM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/signatures-for-safekeeping-preparing-end-of-life-documents/2026-09-09/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": "Most of our decisions around end-of-life not only involve answering the big questions, but also handling complex paperwork. This program offers practical and accessible guidance on the documents that…"
-    },
-    {
       "id": "feed-green-wood-cemetery-2026-09-11-notes-of-tribute-viewing-the-9-11-memori",
       "name": "Notes of Tribute: Viewing the 9/11 Memorial Lights",
       "dateISO": "2026-09-11T19:00:00",
@@ -719,7 +639,7 @@
       "via": [
         "feed: Green-Wood Cemetery"
       ],
-      "why": ""
+      "why": "Before our gates open to the public, this early morning walking tour provides exclusive access to discover the many birds that call Green-Wood home, at least temporarily. Stop by this fall and you…"
     },
     {
       "id": "feed-green-wood-cemetery-2026-09-13-birding-in-peace-late-risers-edition-mem",
@@ -975,7 +895,7 @@
       "via": [
         "feed: Green-Wood Cemetery"
       ],
-      "why": ""
+      "why": "Before our gates open to the public, this early morning walking tour provides exclusive access to discover the many birds that call Green-Wood home, at least temporarily. Stop by this fall and you…"
     },
     {
       "id": "feed-green-wood-cemetery-2026-09-27-grave-beginnings-green-wood-by-trolley",
@@ -1042,6 +962,22 @@
       "why": "Embark on a journey into the extraordinary, where captivating stories and enigmatic characters await. Uncover the mysterious life of John Lockitt, whose secret marriage was announced on the same day…"
     },
     {
+      "id": "feed-green-wood-cemetery-2026-10-03-celebrate-city-of-forest-day-at-green-wo",
+      "name": "Celebrate City of Forest Day at Green-Wood!",
+      "dateISO": "2026-10-03T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Green-Wood Cemetery",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.green-wood.com/event/celebrate-city-of-forest-day-at-green-wood/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
+      "via": [
+        "feed: Green-Wood Cemetery"
+      ],
+      "why": "Join Green-Wood’s horticulturists for a morning dedicated to growing a greener, healthier New York City by helping to plant some trees while connecting with with neighbors who care about the future…"
+    },
+    {
       "id": "feed-green-wood-cemetery-2026-10-03-dinosaurs-in-action-green-wood-s-birds-o",
       "name": "Dinosaurs in Action: Green-Wood’s Birds of Prey",
       "dateISO": "2026-10-03T10:15:00",
@@ -1090,36 +1026,20 @@
       "why": "While we love the spirit of the Halloween season, Green-Wood remains an active cemetery. Out of respect for the grounds, masks and costumes are not permitted and guests wearing them will not be…"
     },
     {
-      "id": "feed-gowanus-dredgers-2026-09-08-gowanus-jug-string-band-sessions",
-      "name": "Gowanus Jug & String Band Sessions",
-      "dateISO": "2026-09-08T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "id": "feed-green-wood-cemetery-2026-10-03-green-wood-after-hours",
+      "name": "Green-Wood After Hours",
+      "dateISO": "2026-10-03T18:30:00",
+      "time": "6:30 PM",
+      "venue": "Green-Wood Cemetery",
       "neighborhood": "",
       "price": "",
-      "url": "https://gowanusdredgers.org/event/gowanus-jug-string-band-sessions-3/2026-09-08/",
-      "category": "music_nightlife",
-      "source": "Gowanus Dredgers",
+      "url": "https://www.green-wood.com/event/green-wood-after-hours-49/2026-10-03/2/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
       "via": [
-        "feed: Gowanus Dredgers"
+        "feed: Green-Wood Cemetery"
       ],
-      "why": ""
-    },
-    {
-      "id": "feed-gowanus-dredgers-2026-09-09-boathouse-bluegrass-jam",
-      "name": "Boathouse Bluegrass Jam",
-      "dateISO": "2026-09-09T18:00:00",
-      "time": "6:00 PM",
-      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://gowanusdredgers.org/event/boathouse-bluegrass-jam-2/2026-09-09/",
-      "category": "music_nightlife",
-      "source": "Gowanus Dredgers",
-      "via": [
-        "feed: Gowanus Dredgers"
-      ],
-      "why": ""
+      "why": "While we love the spirit of the Halloween season, Green-Wood remains an active cemetery. Out of respect for the grounds, masks and costumes are not permitted and guests wearing them will not be…"
     },
     {
       "id": "feed-gowanus-dredgers-2026-09-12-on-location-with-artichoke-dance-robin-m",
@@ -1570,20 +1490,36 @@
       "why": ""
     },
     {
-      "id": "feed-ny-mycological-society-2026-09-08-come-join-us-for-an-in-person-id-meeting",
-      "name": "Come join us for an in-person ID meeting this TUESDAY, September 8th",
-      "dateISO": "2026-09-08T18:30:00",
+      "id": "feed-gowanus-dredgers-2026-10-19-monthly-meeting-paddle",
+      "name": "Monthly Meeting + Paddle",
+      "dateISO": "2026-10-19T18:30:00",
       "time": "6:30 PM",
-      "venue": "Paul Sadowski’s Apartment, 236 West 26th Street #1101, New York, 10001, United States",
+      "venue": "Gowanus Dredgers",
       "neighborhood": "",
       "price": "",
-      "url": "https://www.newyorkmyc.org/event/come-join-us-for-an-in-person-id-meeting-this-tuesday-september-8th/",
-      "category": "tours_experiences",
-      "source": "NY Mycological Society",
+      "url": "https://gowanusdredgers.org/event/monthly-meeting-paddle-2/2026-10-19/",
+      "category": "sports_fitness",
+      "source": "Gowanus Dredgers",
       "via": [
-        "feed: NY Mycological Society"
+        "feed: Gowanus Dredgers"
       ],
-      "why": "The next in-person id meeting will take place this TUESDAY from 6.30 to 8.30 at Paul Sadowski’s apartment in Chelsea, Manhattan. Attendees can of course arrive later and leave earlier. Please bring…"
+      "why": ""
+    },
+    {
+      "id": "feed-gowanus-dredgers-2026-10-20-gowanus-jug-string-band-sessions",
+      "name": "Gowanus Jug & String Band Sessions",
+      "dateISO": "2026-10-20T18:00:00",
+      "time": "6:00 PM",
+      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://gowanusdredgers.org/event/gowanus-jug-string-band-sessions-3/2026-10-20/",
+      "category": "music_nightlife",
+      "source": "Gowanus Dredgers",
+      "via": [
+        "feed: Gowanus Dredgers"
+      ],
+      "why": ""
     },
     {
       "id": "feed-ny-mycological-society-2026-09-12-wawayanda-state-park-passaic-co-nj-satur",
@@ -1810,112 +1746,10 @@
       "why": "Joint walk with Long Island Mycological Club (LIMC) at Edgewood Oak Brush Plains Preserve, Deer Park, NY – Saturday, November 14th. Edgewood Oak Brush Plains Preserve features a rare pitch pine/scrub…"
     },
     {
-      "id": "feed-makeville-studio-2026-10-26-women-furniture-making-table-jg",
-      "name": "Women+ Furniture Making: Table - JG",
-      "dateISO": "2026-10-26T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-20-woodworking-ii-cabinets-sb",
-      "name": "Woodworking II: Cabinets - SB",
-      "dateISO": "2026-10-20T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-14-bowls-for-beginners",
-      "name": "Bowls for Beginners",
-      "dateISO": "2026-10-14T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-19-2-furniture-making-table-kj",
-      "name": "#2 Furniture Making: Table - KJ",
-      "dateISO": "2026-10-19T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": "Join with Google Meet: https://meet.google.com/kvv-txyv-hsk Or dial: (US) +1 601-909-0050 PIN: 349255714# More phone numbers: https://tel.meet/kvv-txyv-hsk?pin=4022531700998&hs=7 Learn more about…"
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-09-1-start-woodworking-kj",
-      "name": "#1 Start Woodworking! - KJ",
-      "dateISO": "2026-09-09T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-25-wood-shop-basics-serving-board-sc",
-      "name": "Wood Shop Basics - Serving Board SC",
-      "dateISO": "2026-10-25T14:00:00",
+      "id": "feed-makeville-studio-2026-10-31-wood-shop-basics-coat-hangers-sc",
+      "name": "Wood Shop Basics - Coat Hangers SC",
+      "dateISO": "2026-10-31T14:00:00",
       "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-08-1-furniture-making-table-kj",
-      "name": "#1 Furniture Making: Table - KJ",
-      "dateISO": "2026-09-08T19:00:00",
-      "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -1946,129 +1780,10 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-10-04-wood-shop-basics-serving-board-bc",
-      "name": "Wood Shop Basics - Serving Board BC",
-      "dateISO": "2026-10-04T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-26-simple-plywood-storage-sb",
-      "name": "Simple Plywood Storage - SB",
-      "dateISO": "2026-10-26T19:00:00",
+      "id": "feed-makeville-studio-2026-09-28-dovetails-by-hand",
+      "name": "Dovetails by Hand",
+      "dateISO": "2026-09-28T19:00:00",
       "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-27-shou-sugi-ban-planter-bc",
-      "name": "Shou Sugi Ban Planter - BC",
-      "dateISO": "2026-09-27T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-20-wood-shop-basics-book-ends-lb",
-      "name": "Wood Shop Basics - Book Ends LB",
-      "dateISO": "2026-10-20T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-15-1-furniture-making-table-kj",
-      "name": "#1 Furniture Making: Table - KJ",
-      "dateISO": "2026-09-15T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-13-intro-to-hand-tools-mallet-jg",
-      "name": "Intro to Hand Tools: Mallet - JG",
-      "dateISO": "2026-10-13T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-14-router-101-serving-board-sb",
-      "name": "Router 101: Serving Board - SB",
-      "dateISO": "2026-09-14T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-19-woodworking-ii-cabinets-sb",
-      "name": "Woodworking II: Cabinets - SB",
-      "dateISO": "2026-10-19T10:00:00",
-      "time": "10:00 AM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -2102,6 +1817,108 @@
       "id": "feed-makeville-studio-2026-10-22-spoon-carving-esg",
       "name": "Spoon Carving - ESG",
       "dateISO": "2026-10-22T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-19-woodworking-ii-cabinets-sb",
+      "name": "Woodworking II: Cabinets - SB",
+      "dateISO": "2026-10-19T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-19-woodworking-ii-cabinets-sb",
+      "name": "Woodworking II: Cabinets - SB",
+      "dateISO": "2026-10-19T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-13-intro-to-hand-tools-mallet-jg",
+      "name": "Intro to Hand Tools: Mallet - JG",
+      "dateISO": "2026-09-13T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-12-bowls-ii-ad",
+      "name": "Bowls II - AD",
+      "dateISO": "2026-10-12T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-14-2-sept-furniture-making-table-kj",
+      "name": "#2 Sept Furniture Making: Table - KJ",
+      "dateISO": "2026-09-14T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-13-start-woodworking-kj",
+      "name": "Start Woodworking! - KJ",
+      "dateISO": "2026-10-13T19:00:00",
       "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
@@ -2150,10 +1967,10 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-10-10-furniture-making-step-stool-sc",
-      "name": "Furniture Making: Step Stool - SC",
-      "dateISO": "2026-10-10T10:00:00",
-      "time": "10:00 AM",
+      "id": "feed-makeville-studio-2026-09-27-shou-sugi-ban-planter-bc",
+      "name": "Shou Sugi Ban Planter - BC",
+      "dateISO": "2026-09-27T14:00:00",
+      "time": "2:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -2167,8 +1984,8 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-09-14-2-sept-furniture-making-table-kj",
-      "name": "#2 Sept Furniture Making: Table - KJ",
+      "id": "feed-makeville-studio-2026-09-14-router-101-serving-board-sb",
+      "name": "Router 101: Serving Board - SB",
       "dateISO": "2026-09-14T19:00:00",
       "time": "7:00 PM",
       "venue": "Makeville Studio",
@@ -2184,9 +2001,26 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-09-09-wood-shop-basics-serving-board-esg",
-      "name": "Wood Shop Basics - Serving Board - ESG",
-      "dateISO": "2026-09-09T19:00:00",
+      "id": "feed-makeville-studio-2026-10-04-wood-shop-basics-serving-board-bc",
+      "name": "Wood Shop Basics - Serving Board BC",
+      "dateISO": "2026-10-04T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-14-bowls-for-beginners",
+      "name": "Bowls for Beginners",
+      "dateISO": "2026-10-14T19:00:00",
       "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
@@ -2201,9 +2035,196 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-10-13-start-woodworking",
-      "name": "Start Woodworking!",
-      "dateISO": "2026-10-13T19:00:00",
+      "id": "feed-makeville-studio-2026-10-06-routers-101-sb",
+      "name": "Routers 101 - SB",
+      "dateISO": "2026-10-06T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-19-2-furniture-making-table-kj",
+      "name": "#2 Furniture Making: Table - KJ",
+      "dateISO": "2026-10-19T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": "Join with Google Meet: https://meet.google.com/kvv-txyv-hsk Or dial: (US) +1 601-909-0050 PIN: 349255714# More phone numbers: https://tel.meet/kvv-txyv-hsk?pin=4022531700998&hs=7 Learn more about…"
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-20-wood-shop-basics-book-ends-lb",
+      "name": "Wood Shop Basics - Book Ends LB",
+      "dateISO": "2026-10-20T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-04-1-furniture-making-table-sc",
+      "name": "#1 Furniture Making: Table - SC",
+      "dateISO": "2026-10-04T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-25-wood-shop-basics-serving-board-sc",
+      "name": "Wood Shop Basics - Serving Board SC",
+      "dateISO": "2026-10-25T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-13-wood-shop-basics-serving-board-bc",
+      "name": "Wood Shop Basics: Serving Board - BC",
+      "dateISO": "2026-09-13T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-20-wood-shop-basics-utensils-jg",
+      "name": "Wood Shop Basics - Utensils - JG",
+      "dateISO": "2026-09-20T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-20-woodworking-ii-cabinets-sb",
+      "name": "Woodworking II: Cabinets - SB",
+      "dateISO": "2026-10-20T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-10-2-start-woodworking-bc",
+      "name": "#2 Start Woodworking! - BC",
+      "dateISO": "2026-09-10T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-13-intro-to-hand-tools-mallet-jg",
+      "name": "Intro to Hand Tools: Mallet - JG",
+      "dateISO": "2026-10-13T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-26-women-furniture-making-table-jg",
+      "name": "Women+ Furniture Making: Table - JG",
+      "dateISO": "2026-10-26T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-15-1-furniture-making-table-kj",
+      "name": "#1 Furniture Making: Table - KJ",
+      "dateISO": "2026-09-15T19:00:00",
       "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
@@ -2235,61 +2256,10 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-09-10-2-start-woodworking-bc",
-      "name": "#2 Start Woodworking! - BC",
-      "dateISO": "2026-09-10T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-13-start-woodworking-kj",
-      "name": "Start Woodworking! - KJ",
+      "id": "feed-makeville-studio-2026-10-13-start-woodworking",
+      "name": "Start Woodworking!",
       "dateISO": "2026-10-13T19:00:00",
       "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-12-bowls-ii-ad",
-      "name": "Bowls II - AD",
-      "dateISO": "2026-10-12T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-11-plant-stand-workshop-bc",
-      "name": "Plant Stand Workshop - BC",
-      "dateISO": "2026-10-11T14:00:00",
-      "time": "2:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -2320,6 +2290,40 @@
       "why": ""
     },
     {
+      "id": "feed-makeville-studio-2026-10-11-plant-stand-workshop-bc",
+      "name": "Plant Stand Workshop - BC",
+      "dateISO": "2026-10-11T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-26-simple-plywood-storage-sb",
+      "name": "Simple Plywood Storage - SB",
+      "dateISO": "2026-10-26T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
       "id": "feed-makeville-studio-2026-09-28-lathe-101-esg",
       "name": "Lathe 101 - ESG",
       "dateISO": "2026-09-28T19:00:00",
@@ -2337,129 +2341,10 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-09-13-intro-to-hand-tools-mallet-jg",
-      "name": "Intro to Hand Tools: Mallet - JG",
-      "dateISO": "2026-09-13T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-19-woodworking-ii-cabinets-sb",
-      "name": "Woodworking II: Cabinets - SB",
-      "dateISO": "2026-10-19T10:00:00",
+      "id": "feed-makeville-studio-2026-10-10-furniture-making-step-stool-sc",
+      "name": "Furniture Making: Step Stool - SC",
+      "dateISO": "2026-10-10T10:00:00",
       "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-04-1-furniture-making-table-sc",
-      "name": "#1 Furniture Making: Table - SC",
-      "dateISO": "2026-10-04T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-31-wood-shop-basics-coat-hangers-sc",
-      "name": "Wood Shop Basics - Coat Hangers SC",
-      "dateISO": "2026-10-31T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-28-dovetails-by-hand",
-      "name": "Dovetails by Hand",
-      "dateISO": "2026-09-28T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-20-wood-shop-basics-utensils-jg",
-      "name": "Wood Shop Basics - Utensils - JG",
-      "dateISO": "2026-09-20T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-13-wood-shop-basics-serving-board-bc",
-      "name": "Wood Shop Basics: Serving Board - BC",
-      "dateISO": "2026-09-13T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-06-routers-101-sb",
-      "name": "Routers 101 - SB",
-      "dateISO": "2026-10-06T19:00:00",
-      "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -2491,8 +2376,8 @@
     {
       "id": "feed-gotham-center-2026-10-07-city-of-fortune-inequality-and-the-makin",
       "name": "City of Fortune: Inequality and the Making of Contemporary New York",
-      "dateISO": "2026-10-07T09:00:00",
-      "time": "9:00 AM",
+      "dateISO": "2026-10-07T18:30:00",
+      "time": "6:30 PM",
       "venue": "Gotham Center",
       "neighborhood": "",
       "price": "",
@@ -2569,173 +2454,20 @@
       "why": ""
     },
     {
-      "id": "feed-club-free-time-2026-09-08-erudite-elegant-stubbornly-experimental-",
-      "name": "\"Erudite, Elegant & Stubbornly Experimental\" (New York Times) Writer Shares Her New Short Story Collection",
-      "dateISO": "2026-09-08T18:00:00",
-      "time": "6:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-09-08/event/756487",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Diane Williams has been called one of the great masters of the American short story: her tiny, coruscating tales are among the most tender, funny, peculiar, and searching works in all of contemporary…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-09-08-book-launch-nbsp-the-chinese-lady-nbsp-b",
-      "name": "Book Launch: The Chinese Lady by Bo Wang",
-      "dateISO": "2026-09-08T18:00:00",
-      "time": "6:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-09-08/event/759265",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "An immersive debut historical novel immortalizes the life of the first Chinese woman to be brought to the United States in the 1800s.",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-09-08-national-book-award-pushcart-prize-winni",
-      "name": "National Book Award- & Pushcart Prize-Winning Author Shares Her Latest Work, Dèy (In Person AND Online!)",
-      "dateISO": "2026-09-08T19:00:00",
-      "time": "7:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-09-08/event/756448",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "The author Edwidge Danticat introduces her new novel of family, grief, and the meaning of home. Edwidge Danticat discusses with author Nicole Dennis-Benn Dèy and the questions that drive its…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-09-09-person-place-thing-live-podcast-recordin",
-      "name": "Person Place Thing: Live Podcast Recording with Ballet Choreographer",
-      "dateISO": "2026-09-09T17:30:00",
-      "time": "5:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-09-09/event/758719",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Experience the public radio interview program created and hosted by Randy Cohen. Built around the idea that people are especially engaging when they speak about something they care about, each…"
-    },
-    {
-      "id": "feed-club-free-time-2026-09-09-french-history-scholar-discusses-writing",
-      "name": "French & History Scholar Discusses Writing Colonial History",
-      "dateISO": "2026-09-09T18:00:00",
-      "time": "6:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-09-09/event/758311",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Emmanuelle Saada, in conversation with Youssef Ben Ismail, John Tachiang Ma, and Gregory Mann, moderated by Madeleine Dobie.Colonial legacies dominate many contemporary political debates around the…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-09-09-quiet-reading-meet-up",
-      "name": "Quiet Reading Meet Up",
-      "dateISO": "2026-09-09T18:00:00",
-      "time": "6:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-09-09/event/756706",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-09-09-book-launch-panorama-style-photo-book-ch",
-      "name": "Book Launch: Panorama-Style Photo Book, Chronicle",
-      "dateISO": "2026-09-09T18:30:00",
+      "id": "feed-gotham-center-2026-12-09-seneca-village-a-story-of-black-freedom-",
+      "name": "Seneca Village: A Story of Black Freedom and Manhattan Real Estate",
+      "dateISO": "2026-12-09T18:30:00",
       "time": "6:30 PM",
-      "venue": "New York City ( NYC )",
+      "venue": "Gotham Center",
       "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-09-09/event/758710",
+      "price": "",
+      "url": "https://www.gothamcenter.org/upcoming-events/seneca-village-a-story-of-black-freedom-and-manhattan-real-estate",
       "category": "talks_lectures",
-      "source": "Club Free Time",
+      "source": "Gotham Center",
       "via": [
-        "feed: Club Free Time"
+        "feed: Gotham Center"
       ],
-      "why": "Editha Mesina presents photographic work of family life, tracing an intimate geography that stretches from Quezon City, Philippines, her birthplace, to her home in New York. These views meditate on…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-09-09-the-new-yorker-contributing-journalist-s",
-      "name": "The New Yorker-Contributing Journalist Shares Her New Book, Seasons of Fury (In Person AND Online!)",
-      "dateISO": "2026-09-09T19:00:00",
-      "time": "7:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-09-09/event/756454",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "An award-winning journalist examines the U.S. government’s broken compact with its Muslim citizens.In this sweeping narrative history, Rozina Ali demonstrates how the War on Terror, conceived in the…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-09-09-historian-journalist-discusses-his-book-",
-      "name": "Historian/Journalist Discusses His Book, Fire in the Heart of the City: The Triangle Shirtwaist Tragedy and the Origins of Modern Charity",
-      "dateISO": "2026-09-09T19:00:00",
-      "time": "7:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-09-09/event/757816",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "David Conrad-Pérez shares his book detailing the story of what happened when a tragic fire in Greenwich Village threw Adolph Ochs, the ambitious new publisher of the New York Times, and Rose…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-09-09-one-of-the-most-important-new-thinkers-v",
-      "name": "\"One of the Most Important New Thinkers\" (Vanity Fair) Discusses Her New Memoir",
-      "dateISO": "2026-09-09T19:30:00",
-      "time": "7:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-09-09/event/760102",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "\"One of the Most Important New Thinkers\" (Vanity Fair) Discusses Her New Memoir",
-      "literary": true
+      "why": ""
     },
     {
       "id": "feed-club-free-time-2026-09-10-archtiectural-sketch-artist-nbsp-pablo-b",
@@ -3401,6 +3133,22 @@
       "literary": true
     },
     {
+      "id": "feed-club-free-time-2026-09-22-renaissance-scholar-discusses-her-succes",
+      "name": "Renaissance Scholar Discusses Her Successful Raphael Metropolitan Museum of Art Exhibition",
+      "dateISO": "2026-09-22T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-09-22/event/761470",
+      "category": "art_exhibitions",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "In a conversation with Columbia Professor Michael Cole, curator Carmen C. Bambach will look back at the planning and the triumphant execution of this year’s exhibition, which was seen by more than…"
+    },
+    {
       "id": "feed-club-free-time-2026-09-22-new-york-times-food-writer-discusses-her",
       "name": "New York Times' Food Writer DIscusses Her Craft & Career",
       "dateISO": "2026-09-22T18:30:00",
@@ -3448,6 +3196,23 @@
         "feed: Club Free Time"
       ],
       "why": "Artist Liu Wei and curator Lesley Ma have a conversation about The Genesis Facade Commission: Liu Wei, Speculation, a suite of four large-scale sculptures. Using a variety of materials and remixing…"
+    },
+    {
+      "id": "feed-club-free-time-2026-09-22-activists-discuss-their-new-book-on-the-",
+      "name": "Activists Discuss Their New Book on the Climate Movement",
+      "dateISO": "2026-09-22T19:00:00",
+      "time": "7:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-09-22/event/761299",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Four European climate activists from the A22 Network host an in-person conversation about direct action and civil resistance, followed by a workshop.",
+      "literary": true
     },
     {
       "id": "feed-club-free-time-2026-09-23-book-launch-nbsp-vanity-fair-featured-wr",
@@ -3831,7 +3596,24 @@
       "literary": true
     },
     {
-      "id": "feed-club-free-time-2026-10-07-art-historians-discuss-their-new-book-nb",
+      "id": "feed-club-free-time-2026-10-01-new-york-times-journalist-shares-his-new",
+      "name": "New York Times Journalist Shares His New Book, The Yahoo Boys",
+      "dateISO": "2026-10-01T18:30:00",
+      "time": "6:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-10-01/event/761473",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Carlos Barragan discusses his work of immersion journalism about four young romance scammers in Lagos, Nigeria, exploring how and why they scam, and the moral dilemmas they face. Through the Yahoo…",
+      "literary": true
+    },
+    {
+      "id": "feed-club-free-time-2026-10-07-art-historians-discuss-their-new-book-wh",
       "name": "Art Historians Discuss Their New Book, What Was America?",
       "dateISO": "2026-10-07T18:00:00",
       "time": "6:00 PM",
@@ -3844,7 +3626,7 @@
       "via": [
         "feed: Club Free Time"
       ],
-      "why": "Elise Armani and Katy Siegel will be joined by Lauren O’Neill-Butler in a lively conversation about artists, communities, and citizens at a moment when art and culture were seen (and supported) as a…",
+      "why": "Elise Armani and Katy Siegel will be joined by Lauren O'Neill-Butler in a lively conversation about artists, communities, and citizens at a moment when art and culture were seen (and supported) as a…",
       "literary": true
     },
     {
@@ -3880,22 +3662,6 @@
       "why": "Sophia Club brings its unique blend of philosophy and performance to the stage. For this debut, New York–based choreographer, composer, and performance artist Kinlaw joins classicist Kristina Milnor…"
     },
     {
-      "id": "feed-nyc-resistor-2026-09-09-diy-picture-mat-cutting-make-along-this-",
-      "name": "DIY Picture Mat Cutting - Make-Along This Pro Framing Element",
-      "dateISO": "2026-09-09T19:30:00",
-      "time": "7:30 PM",
-      "venue": "NYC Resistor",
-      "neighborhood": "",
-      "price": "$25",
-      "url": "https://www.eventbrite.com/e/diy-picture-mat-cutting-make-along-this-pro-framing-element-tickets-1998236764955",
-      "category": "workshops_classes",
-      "source": "NYC Resistor",
-      "via": [
-        "feed: NYC Resistor"
-      ],
-      "why": "Learn how to bevel cut mat board to give your photos and art that professional look! Mat board, foam, and pro-grade cutter access provided."
-    },
-    {
       "id": "feed-nyc-resistor-2026-09-10-public-craft-night-mondays-and-thursdays",
       "name": "Public Craft Night Mondays and Thursdays!",
       "dateISO": "2026-09-10T18:30:00",
@@ -3912,38 +3678,6 @@
       "why": "Learn, make and share at NYC Resistor (all events18+)"
     },
     {
-      "id": "feed-nyc-resistor-2026-09-11-soft-robotics-an-intro-talk-for-curious-",
-      "name": "Soft Robotics: An Intro Talk for Curious Artists/Tinkerers",
-      "dateISO": "2026-09-11T19:00:00",
-      "time": "7:00 PM",
-      "venue": "NYCResistor",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/soft-robotics-an-intro-talk-for-curious-artiststinkerers-tickets-1999421190604",
-      "category": "talks_lectures",
-      "source": "NYC Resistor",
-      "via": [
-        "feed: NYC Resistor"
-      ],
-      "why": "A lighthearted lecture with serious learning about the field of soft robotics, what softness is, and a playful approach to materiality."
-    },
-    {
-      "id": "feed-nyc-resistor-2026-09-13-locksport-workshop",
-      "name": "Locksport Workshop",
-      "dateISO": "2026-09-13T19:00:00",
-      "time": "7:00 PM",
-      "venue": "NYCResistor",
-      "neighborhood": "",
-      "price": "$15",
-      "url": "https://www.eventbrite.com/e/locksport-workshop-tickets-2000161469799",
-      "category": "workshops_classes",
-      "source": "NYC Resistor",
-      "via": [
-        "feed: NYC Resistor"
-      ],
-      "why": "Ethics, theory and hands on practice of lockpicking"
-    },
-    {
       "id": "feed-nyc-resistor-2026-09-16-public-craft-night-1st-fridays-and-3rd-w",
       "name": "Public Craft Night 1st Fridays and 3rd Wednesdays of the Month",
       "dateISO": "2026-09-16T18:30:00",
@@ -3958,6 +3692,22 @@
         "feed: NYC Resistor"
       ],
       "why": "Learn, make, and share at NYC Resistor (18+; high quality masks required and provided on request)"
+    },
+    {
+      "id": "feed-nyc-resistor-2026-09-18-drum-leaf-binding-books-that-open-flat",
+      "name": "Drum Leaf Binding: Books That Open Flat",
+      "dateISO": "2026-09-18T19:00:00",
+      "time": "7:00 PM",
+      "venue": "NYCResistor",
+      "neighborhood": "",
+      "price": "$80",
+      "url": "https://www.eventbrite.com/e/drum-leaf-binding-books-that-open-flat-tickets-2000344444080",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
+      "via": [
+        "feed: NYC Resistor"
+      ],
+      "why": "Learn how to make books that lay flat with a cool drum leaf binding technique in this fun, hands-on workshop."
     },
     {
       "id": "feed-nyc-resistor-2026-09-20-learn-to-use-a-laser-cutter-to-cut-and-e",
@@ -4040,26 +3790,30 @@
       "why": "A TWO-DAY workshop for building your own analog synthesizer in a small box or tin. E-waste gives each synth its own unique sound and style."
     },
     {
-      "id": "feed-nyc-resistor-2026-10-07-learn-to-use-a-laser-cutter-to-cut-and-e",
-      "name": "Learn to Use a Laser Cutter to Cut and Etch Your Own Designs",
-      "dateISO": "2026-10-07T18:00:00",
-      "time": "6:00 PM",
+      "id": "feed-nyc-resistor-2026-10-04-intro-to-soldering-workshop-make-an-led-",
+      "name": "Intro to Soldering Workshop: Make an LED Tile",
+      "dateISO": "2026-10-04T12:00:00",
+      "time": "12:00 PM",
       "venue": "NYC Resistor",
       "neighborhood": "",
-      "price": "$85",
-      "url": "https://www.eventbrite.com/e/learn-to-use-a-laser-cutter-to-cut-and-etch-your-own-designs-tickets-1998496159812",
+      "price": "$97.88",
+      "url": "https://www.eventbrite.com/e/intro-to-soldering-workshop-make-an-led-tile-tickets-2000420690134",
       "category": "workshops_classes",
       "source": "NYC Resistor",
       "via": [
         "feed: NYC Resistor"
       ],
-      "why": "Harness the power of an Epilog 60 Watt Laser! In this class you'll learn everything you need."
+      "why": "Soldering is one of the most important skills you'll need for working with electronics. Come join us for an introductory through-hole solder"
     }
   ],
   "errors": [
     {
       "source": "NYC Parks",
       "error": "HTTP 405"
+    },
+    {
+      "source": "Lectures on Tap",
+      "error": "HTTP 502"
     }
   ]
 }

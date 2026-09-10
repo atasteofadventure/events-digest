@@ -892,6 +892,16 @@
       "default_category": "talks_lectures",
       "fixed_category": "talks_lectures",
       "note": "organizer https://www.eventbrite.com/o/lectures-on-tap-86136754923 runs ~10 cities; parser keeps five-borough venues only and drops sold-out (has_available_tickets:false) events. Added 2026-09-10."
+    },
+    {
+      "type": "feed",
+      "name": "The Wisdom Bar",
+      "format": "eventbrite-api",
+      "feed_url": "https://www.eventbrite.com/api/v3/organizers/121303839305/events/?status=live&order_by=start_asc&expand=venue,ticket_availability",
+      "enabled": true,
+      "default_category": "talks_lectures",
+      "fixed_category": "talks_lectures",
+      "note": "organizer https://www.eventbrite.com/o/the-wisdom-bar-121303839305 (user linked the NYC lecture calendar collection); also lists Tappan NY and Lancaster PA events, dropped by the NYC filter. Added 2026-09-10."
     }
   ],
   "categories": {

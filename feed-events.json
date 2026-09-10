@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T15:23:21.347Z",
+  "generated": "2026-09-10T16:00:20.621Z",
   "events": [
     {
       "id": "feed-fort-greene-park-conservancy-2026-09-12-slow-skills-to-sustain-you-shibori-resis",
@@ -1746,9 +1746,26 @@
       "why": "Joint walk with Long Island Mycological Club (LIMC) at Edgewood Oak Brush Plains Preserve, Deer Park, NY – Saturday, November 14th. Edgewood Oak Brush Plains Preserve features a rare pitch pine/scrub…"
     },
     {
-      "id": "feed-makeville-studio-2026-09-13-intro-to-hand-tools-mallet-jg",
-      "name": "Intro to Hand Tools: Mallet - JG",
-      "dateISO": "2026-09-13T14:00:00",
+      "id": "feed-makeville-studio-2026-09-28-dovetails-by-hand",
+      "name": "Dovetails by Hand",
+      "dateISO": "2026-09-28T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-31-wood-shop-basics-coat-hangers-sc",
+      "name": "Wood Shop Basics - Coat Hangers SC",
+      "dateISO": "2026-10-31T14:00:00",
       "time": "2:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
@@ -1763,43 +1780,9 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-10-25-wood-shop-basics-serving-board-sc",
-      "name": "Wood Shop Basics - Serving Board SC",
-      "dateISO": "2026-10-25T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-13-wood-shop-basics-serving-board-bc",
-      "name": "Wood Shop Basics: Serving Board - BC",
-      "dateISO": "2026-09-13T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-06-routers-101-sb",
-      "name": "Routers 101 - SB",
-      "dateISO": "2026-10-06T19:00:00",
+      "id": "feed-makeville-studio-2026-10-22-spoon-carving-esg",
+      "name": "Spoon Carving - ESG",
+      "dateISO": "2026-10-22T19:00:00",
       "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
@@ -1814,9 +1797,9 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-09-10-2-start-woodworking-bc",
-      "name": "#2 Start Woodworking! - BC",
-      "dateISO": "2026-09-10T19:00:00",
+      "id": "feed-makeville-studio-2026-10-26-women-furniture-making-table-jg",
+      "name": "Women+ Furniture Making: Table - JG",
+      "dateISO": "2026-10-26T19:00:00",
       "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
@@ -1831,44 +1814,10 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-10-20-wood-shop-basics-book-ends-lb",
-      "name": "Wood Shop Basics - Book Ends LB",
-      "dateISO": "2026-10-20T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-14-2-sept-furniture-making-table-kj",
-      "name": "#2 Sept Furniture Making: Table - KJ",
-      "dateISO": "2026-09-14T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-14-bowls-for-beginners",
-      "name": "Bowls for Beginners",
-      "dateISO": "2026-10-14T19:00:00",
-      "time": "7:00 PM",
+      "id": "feed-makeville-studio-2026-10-19-woodworking-ii-cabinets-sb",
+      "name": "Woodworking II: Cabinets - SB",
+      "dateISO": "2026-10-19T10:00:00",
+      "time": "10:00 AM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -1885,6 +1834,23 @@
       "id": "feed-makeville-studio-2026-10-12-bowls-ii-ad",
       "name": "Bowls II - AD",
       "dateISO": "2026-10-12T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-28-lathe-101-esg",
+      "name": "Lathe 101 - ESG",
+      "dateISO": "2026-09-28T19:00:00",
       "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
@@ -1933,9 +1899,9 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-09-28-lathe-101-esg",
-      "name": "Lathe 101 - ESG",
-      "dateISO": "2026-09-28T19:00:00",
+      "id": "feed-makeville-studio-2026-09-10-2-start-woodworking-bc",
+      "name": "#2 Start Woodworking! - BC",
+      "dateISO": "2026-09-10T19:00:00",
       "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
@@ -1950,10 +1916,10 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-09-11-post-rung-stool-jg",
-      "name": "Post & Rung Stool - JG",
-      "dateISO": "2026-09-11T15:00:00",
-      "time": "3:00 PM",
+      "id": "feed-makeville-studio-2026-10-26-simple-plywood-storage-sb",
+      "name": "Simple Plywood Storage - SB",
+      "dateISO": "2026-10-26T19:00:00",
+      "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -1967,9 +1933,26 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-10-22-spoon-carving-esg",
-      "name": "Spoon Carving - ESG",
-      "dateISO": "2026-10-22T19:00:00",
+      "id": "feed-makeville-studio-2026-09-13-intro-to-hand-tools-mallet-jg",
+      "name": "Intro to Hand Tools: Mallet - JG",
+      "dateISO": "2026-09-13T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-14-bowls-for-beginners",
+      "name": "Bowls for Beginners",
+      "dateISO": "2026-10-14T19:00:00",
       "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
@@ -2001,10 +1984,10 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-10-31-wood-shop-basics-coat-hangers-sc",
-      "name": "Wood Shop Basics - Coat Hangers SC",
-      "dateISO": "2026-10-31T14:00:00",
-      "time": "2:00 PM",
+      "id": "feed-makeville-studio-2026-09-15-1-furniture-making-table-kj",
+      "name": "#1 Furniture Making: Table - KJ",
+      "dateISO": "2026-09-15T19:00:00",
+      "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -2021,6 +2004,57 @@
       "id": "feed-makeville-studio-2026-10-04-wood-shop-basics-serving-board-bc",
       "name": "Wood Shop Basics - Serving Board BC",
       "dateISO": "2026-10-04T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-09-wood-shop-basics-utensils-jg",
+      "name": "Wood Shop Basics - Utensils JG",
+      "dateISO": "2026-10-09T15:00:00",
+      "time": "3:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-10-furniture-making-step-stool-sc",
+      "name": "Furniture Making: Step Stool - SC",
+      "dateISO": "2026-10-10T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-27-shou-sugi-ban-planter-bc",
+      "name": "Shou Sugi Ban Planter - BC",
+      "dateISO": "2026-09-27T14:00:00",
       "time": "2:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
@@ -2052,179 +2086,9 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-09-14-router-101-serving-board-sb",
-      "name": "Router 101: Serving Board - SB",
-      "dateISO": "2026-09-14T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-15-1-furniture-making-table-kj",
-      "name": "#1 Furniture Making: Table - KJ",
-      "dateISO": "2026-09-15T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-11-plant-stand-workshop-bc",
-      "name": "Plant Stand Workshop - BC",
-      "dateISO": "2026-10-11T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-13-start-woodworking",
-      "name": "Start Woodworking!",
-      "dateISO": "2026-10-13T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-27-shou-sugi-ban-planter-bc",
-      "name": "Shou Sugi Ban Planter - BC",
-      "dateISO": "2026-09-27T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-19-woodworking-ii-cabinets-sb",
-      "name": "Woodworking II: Cabinets - SB",
-      "dateISO": "2026-10-19T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-19-2-furniture-making-table-kj",
-      "name": "#2 Furniture Making: Table - KJ",
-      "dateISO": "2026-10-19T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": "Join with Google Meet: https://meet.google.com/kvv-txyv-hsk Or dial: (US) +1 601-909-0050 PIN: 349255714# More phone numbers: https://tel.meet/kvv-txyv-hsk?pin=4022531700998&hs=7 Learn more about…"
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-09-wood-shop-basics-utensils-jg",
-      "name": "Wood Shop Basics - Utensils JG",
-      "dateISO": "2026-10-09T15:00:00",
-      "time": "3:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-06-lathe-101-jg",
-      "name": "Lathe 101 - JG",
-      "dateISO": "2026-10-06T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-09-21-simple-plywood-storage-sb",
-      "name": "Simple Plywood Storage - SB",
-      "dateISO": "2026-09-21T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-20-woodworking-ii-cabinets-sb",
-      "name": "Woodworking II: Cabinets - SB",
-      "dateISO": "2026-10-20T10:00:00",
+      "id": "feed-makeville-studio-2026-10-04-1-furniture-making-table-sc",
+      "name": "#1 Furniture Making: Table - SC",
+      "dateISO": "2026-10-04T10:00:00",
       "time": "10:00 AM",
       "venue": "Makeville Studio",
       "neighborhood": "",
@@ -2256,74 +2120,6 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-10-10-furniture-making-step-stool-sc",
-      "name": "Furniture Making: Step Stool - SC",
-      "dateISO": "2026-10-10T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-26-simple-plywood-storage-sb",
-      "name": "Simple Plywood Storage - SB",
-      "dateISO": "2026-10-26T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-04-1-furniture-making-table-sc",
-      "name": "#1 Furniture Making: Table - SC",
-      "dateISO": "2026-10-04T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-10-26-women-furniture-making-table-jg",
-      "name": "Women+ Furniture Making: Table - JG",
-      "dateISO": "2026-10-26T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
       "id": "feed-makeville-studio-2026-09-12-woodworking-ii-shaker-table-sc",
       "name": "Woodworking II - Shaker Table - SC",
       "dateISO": "2026-09-12T14:00:00",
@@ -2341,9 +2137,213 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-09-28-dovetails-by-hand",
-      "name": "Dovetails by Hand",
-      "dateISO": "2026-09-28T19:00:00",
+      "id": "feed-makeville-studio-2026-09-21-simple-plywood-storage-sb",
+      "name": "Simple Plywood Storage - SB",
+      "dateISO": "2026-09-21T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-13-start-woodworking",
+      "name": "Start Woodworking!",
+      "dateISO": "2026-10-13T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-19-2-furniture-making-table-kj",
+      "name": "#2 Furniture Making: Table - KJ",
+      "dateISO": "2026-10-19T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": "Join with Google Meet: https://meet.google.com/kvv-txyv-hsk Or dial: (US) +1 601-909-0050 PIN: 349255714# More phone numbers: https://tel.meet/kvv-txyv-hsk?pin=4022531700998&hs=7 Learn more about…"
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-14-router-101-serving-board-sb",
+      "name": "Router 101: Serving Board - SB",
+      "dateISO": "2026-09-14T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-20-woodworking-ii-cabinets-sb",
+      "name": "Woodworking II: Cabinets - SB",
+      "dateISO": "2026-10-20T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-25-wood-shop-basics-serving-board-sc",
+      "name": "Wood Shop Basics - Serving Board SC",
+      "dateISO": "2026-10-25T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-06-routers-101-sb",
+      "name": "Routers 101 - SB",
+      "dateISO": "2026-10-06T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-13-wood-shop-basics-serving-board-bc",
+      "name": "Wood Shop Basics: Serving Board - BC",
+      "dateISO": "2026-09-13T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-06-lathe-101-jg",
+      "name": "Lathe 101 - JG",
+      "dateISO": "2026-10-06T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-11-plant-stand-workshop-bc",
+      "name": "Plant Stand Workshop - BC",
+      "dateISO": "2026-10-11T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-10-20-wood-shop-basics-book-ends-lb",
+      "name": "Wood Shop Basics - Book Ends LB",
+      "dateISO": "2026-10-20T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-11-post-rung-stool-jg",
+      "name": "Post & Rung Stool - JG",
+      "dateISO": "2026-09-11T15:00:00",
+      "time": "3:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-09-14-2-sept-furniture-making-table-kj",
+      "name": "#2 Sept Furniture Making: Table - KJ",
+      "dateISO": "2026-09-14T19:00:00",
       "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
@@ -4108,6 +4108,54 @@
         "feed: The Wisdom Bar"
       ],
       "why": ""
+    },
+    {
+      "id": "feed-nerd-nite-nyc-2026-09-11-nerd-nite",
+      "name": "Nerd Nite",
+      "dateISO": "2026-09-11T19:00:00",
+      "time": "7:00 PM",
+      "venue": "littlefield, Brooklyn",
+      "neighborhood": "",
+      "price": "$14.86-19.74",
+      "url": "https://www.eventbrite.com/e/nerd-nite-tickets-1993612401359",
+      "category": "talks_lectures",
+      "source": "Nerd Nite NYC",
+      "via": [
+        "feed: Nerd Nite NYC"
+      ],
+      "why": "Join us back in Brooklyn at Littlefield for three fun-yet-informative presentations and TRIVIA!"
+    },
+    {
+      "id": "feed-nerd-nite-nyc-2026-10-10-nerd-nite",
+      "name": "Nerd Nite",
+      "dateISO": "2026-10-10T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Caveat, Manhattan",
+      "neighborhood": "",
+      "price": "$20.29-25.54",
+      "url": "https://www.eventbrite.com/e/nerd-nite-tickets-1996534120299",
+      "category": "talks_lectures",
+      "source": "Nerd Nite NYC",
+      "via": [
+        "feed: Nerd Nite NYC"
+      ],
+      "why": "Nerd Nite NYC is back at Caveat NYC with three fun-yet-informative presentations!"
+    },
+    {
+      "id": "feed-nerd-nite-nyc-2026-11-05-nerd-nite",
+      "name": "Nerd Nite",
+      "dateISO": "2026-11-05T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Caveat, Manhattan",
+      "neighborhood": "",
+      "price": "$20.29-25.54",
+      "url": "https://www.eventbrite.com/e/nerd-nite-tickets-1999866227722",
+      "category": "talks_lectures",
+      "source": "Nerd Nite NYC",
+      "via": [
+        "feed: Nerd Nite NYC"
+      ],
+      "why": "Nerd Nite NYC is back at Caveat NYC with three fun-yet-informative presentations!"
     }
   ],
   "errors": [

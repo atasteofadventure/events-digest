@@ -94,8 +94,7 @@ function withinHorizon(dateISO, nowISO) {
 }
 
 // Eventbrite v3 API: follow the continuation token through every page and
-// return the combined events array (as JSON text, so fetchFeeds treats every
-// format the same). MAX_API_PAGES bounds a misbehaving token.
+// return the combined events array. MAX_API_PAGES bounds a misbehaving token.
 const MAX_API_PAGES = 10;
 async function fetchEventbriteApi(fetchImpl, url) {
   const all = [];
@@ -109,11 +108,23 @@ async function fetchEventbriteApi(fetchImpl, url) {
     next.searchParams.set('continuation', p.continuation);
     pageUrl = next.toString();
   }
+  return all;
+}
+
+// feed_urls: one source can span several organizers (a series that sells
+// through whichever venue hosts it).
+async function fetchEventbriteApiAll(fetchImpl, urls) {
+  const all = [];
+  for (const url of urls) all.push(...await fetchEventbriteApi(fetchImpl, url));
   return JSON.stringify(all);
 }
 
+// title_includes: keep only events whose name contains this text (case-
+// insensitive) — for a series sold through a venue's mostly-unrelated calendar.
 function parseBody(src, body, nowISO) {
-  const events = stripSharedWhy(parseBodyRaw(src, body, nowISO));
+  const needle = String(src.title_includes || '').toLowerCase();
+  const events = stripSharedWhy(parseBodyRaw(src, body, nowISO)
+    .filter((e) => !needle || e.name.toLowerCase().includes(needle)));
   if (src.fixed_category) for (const e of events) e.category = src.fixed_category;
   return events;
 }
@@ -144,7 +155,7 @@ async function fetchFeeds(sources, fetchImpl, nowISO) {
   for (const src of feeds) {
     try {
       const body = src.format === 'eventbrite-api'
-        ? await fetchEventbriteApi(fetchImpl, src.feed_url)
+        ? await fetchEventbriteApiAll(fetchImpl, src.feed_urls || [src.feed_url])
         : await fetchOne(fetchImpl, src.feed_url);
       const parsed = parseBody(src, body, nowISO);
       // Eventbrite: backfill empty why/price from each event's own page.

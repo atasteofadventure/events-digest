@@ -902,6 +902,20 @@
       "default_category": "talks_lectures",
       "fixed_category": "talks_lectures",
       "note": "organizer https://www.eventbrite.com/o/the-wisdom-bar-121303839305 (user linked the NYC lecture calendar collection); also lists Tappan NY and Lancaster PA events, dropped by the NYC filter. Added 2026-09-10."
+    },
+    {
+      "type": "feed",
+      "name": "Nerd Nite NYC",
+      "format": "eventbrite-api",
+      "feed_urls": [
+        "https://www.eventbrite.com/api/v3/organizers/18046024060/events/?status=live&order_by=start_asc&expand=venue,ticket_availability",
+        "https://www.eventbrite.com/api/v3/organizers/13580085802/events/?status=live&order_by=start_asc&expand=venue,ticket_availability"
+      ],
+      "title_includes": "nerd nite",
+      "enabled": true,
+      "default_category": "talks_lectures",
+      "fixed_category": "talks_lectures",
+      "note": "Nerd Nite has no Eventbrite organizer of its own; tickets sell through the host venues: Littlefield (Brooklyn, 18046024060) and Caveat (LES, 13580085802). Their other listings (mostly comedy) are dropped by title_includes. If Nerd Nite moves venues, add that venue's organizer URL here. Added 2026-09-10."
     }
   ],
   "categories": {

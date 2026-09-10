@@ -54,6 +54,21 @@ test('a failing feed is recorded as an error, not thrown; others still parse', a
   assert.equal(errors[0].source, 'Bad');
 });
 
+test('eventbrite-api: feed_urls merges several organizers; title_includes keeps only matching titles', async () => {
+  // Nerd Nite NYC sells through its host venues' organizers (Littlefield, Caveat),
+  // whose calendars are otherwise mostly comedy.
+  const lf = 'https://www.eventbrite.com/api/v3/organizers/1/events/?status=live';
+  const cv = 'https://www.eventbrite.com/api/v3/organizers/2/events/?status=live';
+  const sources = [{ type: 'feed', name: 'Nerd Nite NYC', format: 'eventbrite-api', enabled: true,
+    feed_urls: [lf, cv], title_includes: 'nerd nite' }];
+  const { events, errors } = await fetchFeeds(sources, fakeFetch({
+    [lf]: { body: JSON.stringify({ pagination: {}, events: [apiEv('a', 'Nerd Nite', '2026-07-10'), apiEv('b', 'Stand-Up Showcase', '2026-07-10')] }) },
+    [cv]: { body: JSON.stringify({ pagination: {}, events: [apiEv('c', 'NERD NITE: Season Opener', '2026-07-12'), apiEv('d', 'Cabaret', '2026-07-12')] }) },
+  }), NOW);
+  assert.deepEqual(errors, []);
+  assert.deepEqual(events.map((e) => e.name), ['Nerd Nite', 'NERD NITE: Season Opener']);
+});
+
 test('a transient failure is retried once (Eventbrite 502d from CI once, then answered)', async () => {
   const base = 'https://www.eventbrite.com/api/v3/organizers/1/events/?status=live';
   const ok = fakeFetch({ [base]: { body: JSON.stringify({ pagination: {}, events: [apiEv('a', 'Talk A', '2026-07-10')] }) } });

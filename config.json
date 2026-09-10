@@ -882,6 +882,16 @@
       "feed_url": "https://www.eventbrite.com/o/photoville-47122000073",
       "enabled": true,
       "default_category": "tours_experiences"
+    },
+    {
+      "type": "feed",
+      "name": "Lectures on Tap",
+      "format": "eventbrite-api",
+      "feed_url": "https://www.eventbrite.com/api/v3/organizers/86136754923/events/?status=live&order_by=start_asc&expand=venue,ticket_availability",
+      "enabled": true,
+      "default_category": "talks_lectures",
+      "fixed_category": "talks_lectures",
+      "note": "organizer https://www.eventbrite.com/o/lectures-on-tap-86136754923 runs ~10 cities; parser keeps five-borough venues only and drops sold-out (has_available_tickets:false) events. Added 2026-09-10."
     }
   ],
   "categories": {

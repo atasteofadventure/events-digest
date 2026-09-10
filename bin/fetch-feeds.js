@@ -10,7 +10,7 @@ const path = require('path');
 const {
   icsToEvents, jsonLdToEvents, squarespaceJsonToEvents,
   nycParksRssToEvents, resistorRssToEvents, eventbriteOrganizerToEvents,
-  eventbriteEventPageInfo, stripSharedWhy } = require('../lib/feeds');
+  eventbriteApiToEvents, eventbriteEventPageInfo, stripSharedWhy } = require('../lib/feeds');
 
 const TIMEOUT_MS = 20000;
 const HORIZON_DAYS = 90; // keep today .. +90d (Makeville's gcal carries years of history)
@@ -80,11 +80,32 @@ function withinHorizon(dateISO, nowISO) {
   return day >= today && day <= max;
 }
 
-function parseBody(src, body) {
-  return stripSharedWhy(parseBodyRaw(src, body));
+// Eventbrite v3 API: follow the continuation token through every page and
+// return the combined events array (as JSON text, so fetchFeeds treats every
+// format the same). MAX_API_PAGES bounds a misbehaving token.
+const MAX_API_PAGES = 10;
+async function fetchEventbriteApi(fetchImpl, url) {
+  const all = [];
+  let pageUrl = url;
+  for (let n = 0; n < MAX_API_PAGES; n++) {
+    const page = JSON.parse(await fetchOne(fetchImpl, pageUrl));
+    all.push(...(page.events || []));
+    const p = page.pagination || {};
+    if (!p.has_more_items || !p.continuation) break;
+    const next = new URL(url);
+    next.searchParams.set('continuation', p.continuation);
+    pageUrl = next.toString();
+  }
+  return JSON.stringify(all);
 }
 
-function parseBodyRaw(src, body) {
+function parseBody(src, body, nowISO) {
+  const events = stripSharedWhy(parseBodyRaw(src, body, nowISO));
+  if (src.fixed_category) for (const e of events) e.category = src.fixed_category;
+  return events;
+}
+
+function parseBodyRaw(src, body, nowISO) {
   const opts = { sourceName: src.name, defaultCategory: src.default_category, fallbackUrl: src.fallback_url };
   switch (src.format) {
     case 'ics': return icsToEvents(body, opts);
@@ -98,6 +119,7 @@ function parseBodyRaw(src, body) {
     });
     case 'rss-title-date': return resistorRssToEvents(body, opts);
     case 'eventbrite-organizer': return eventbriteOrganizerToEvents(body, opts);
+    case 'eventbrite-api': return eventbriteApiToEvents(JSON.parse(body), { ...opts, nowISO });
     default: throw new Error(`unknown feed format "${src.format}"`);
   }
 }
@@ -108,7 +130,10 @@ async function fetchFeeds(sources, fetchImpl, nowISO) {
   const errors = [];
   for (const src of feeds) {
     try {
-      const parsed = parseBody(src, await fetchOne(fetchImpl, src.feed_url));
+      const body = src.format === 'eventbrite-api'
+        ? await fetchEventbriteApi(fetchImpl, src.feed_url)
+        : await fetchOne(fetchImpl, src.feed_url);
+      const parsed = parseBody(src, body, nowISO);
       // Eventbrite: backfill empty why/price from each event's own page.
       if (src.format === 'eventbrite-organizer') await enrichEventbrite(parsed, fetchImpl);
       const kept = parsed.filter((e) => withinHorizon(e.dateISO, nowISO));

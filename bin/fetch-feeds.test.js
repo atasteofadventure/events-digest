@@ -104,6 +104,37 @@ test('eventbrite-organizer format parses the embedded blob', async () => {
   assert.equal(events[0].price, 'Free');
 });
 
+const apiEv = (id, title, day) => ({
+  id, name: { text: title }, url: `https://www.eventbrite.com/e/${id}`,
+  start: { local: `${day}T18:30:00` }, status: 'live', online_event: false,
+  venue: { name: 'Williamsburg', address: { city: 'Brooklyn', region: 'NY', postal_code: '11249' } },
+  ticket_availability: { has_available_tickets: true, is_sold_out: false },
+});
+
+test('eventbrite-api follows the continuation token across pages until has_more_items is false', async () => {
+  const base = 'https://www.eventbrite.com/api/v3/organizers/1/events/?status=live';
+  const sources = [{ type: 'feed', name: 'LoT', feed_url: base, format: 'eventbrite-api', enabled: true }];
+  const { events, errors } = await fetchFeeds(sources, fakeFetch({
+    [base]: { body: JSON.stringify({ pagination: { has_more_items: true, continuation: 'P2' },
+      events: [apiEv('a', 'Talk A', '2026-07-10')] }) },
+    [base + '&continuation=P2']: { body: JSON.stringify({ pagination: { has_more_items: false },
+      events: [apiEv('b', 'Talk B', '2026-07-11')] }) },
+  }), NOW);
+  assert.deepEqual(errors, []);
+  assert.deepEqual(events.map((e) => e.name), ['Talk A', 'Talk B']);
+});
+
+test('fixed_category pins every event of a source, beating title keywords', async () => {
+  const base = 'https://www.eventbrite.com/api/v3/organizers/1/events/?status=live';
+  const sources = [{ type: 'feed', name: 'LoT', feed_url: base, format: 'eventbrite-api',
+    enabled: true, fixed_category: 'talks_lectures' }];
+  const { events } = await fetchFeeds(sources, fakeFetch({
+    [base]: { body: JSON.stringify({ pagination: { has_more_items: false },
+      events: [apiEv('r', 'Race, Politics, and Film', '2026-07-10')] }) },
+  }), NOW);
+  assert.equal(events[0].category, 'talks_lectures'); // titleCategory alone says sports ("race")
+});
+
 test('charset: iso-8859-1 bytes (0xE9 = é) decode correctly, not as U+FFFD', async () => {
   // Parks RSS declares iso-8859-1; the accented byte must round-trip to "é".
   const xml = '<?xml version="1.0" encoding="iso-8859-1"?>'

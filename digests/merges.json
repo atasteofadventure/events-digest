@@ -1,10 +1,23 @@
 {
-  "generated": "2026-09-15T22:31:27",
-  "verdictsApplied": 4,
+  "generated": "2026-09-23T13:36:32",
+  "verdictsApplied": 9,
   "merges": [
     {
+      "day": "2026-09-24",
+      "kept": "Ric Burns and James Sanders – 'New York: The Future of Cities'",
+      "keptVia": [
+        "The Skint"
+      ],
+      "dup": "New York: The Future of Cities – Screening & Conversation",
+      "dupVia": [
+        "Thought Gallery"
+      ],
+      "reason": "llm-same",
+      "score": 1
+    },
+    {
       "day": "2026-09-25",
-      "kept": "The Fling at Fort Greene Park (25th Anniversary Benefit)",
+      "kept": "The Fling at Fort Greene Park – 25th Anniversary",
       "keptVia": [
         "Fort Greene Park Conservancy"
       ],
@@ -29,12 +42,25 @@
       "score": 0.94
     },
     {
-      "day": "2026-09-22",
-      "kept": "Artist Discusses Her New Sculptural Works in a Landmark Museum",
+      "day": "2026-09-28",
+      "kept": "Shakespeare and Verdi's Macbeth: Discussion and Performance",
       "keptVia": [
+        "The Cooper Union"
+      ],
+      "dup": "Met Opera & Public Theater Professionals Discuss Shakespeare Adaptations + Performance from Met Opera Cast",
+      "dupVia": [
         "feed: Club Free Time"
       ],
-      "dup": "Varied Media Artist Discusses His Work at a Landmark Museum",
+      "reason": "llm-same",
+      "score": 1
+    },
+    {
+      "day": "2026-09-29",
+      "kept": "Choosing the End: Ethics & Medical Aid in Dying",
+      "keptVia": [
+        "New York Public Library"
+      ],
+      "dup": "Bioethics Experts Discuss Ethics and Medical Aid in Dying (In Person AND Online!)",
       "dupVia": [
         "feed: Club Free Time"
       ],

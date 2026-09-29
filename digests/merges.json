@@ -1,33 +1,7 @@
 {
-  "generated": "2026-09-23T13:36:32",
-  "verdictsApplied": 9,
+  "generated": "2026-09-29T22:31:12",
+  "verdictsApplied": 3,
   "merges": [
-    {
-      "day": "2026-09-24",
-      "kept": "Ric Burns and James Sanders – 'New York: The Future of Cities'",
-      "keptVia": [
-        "The Skint"
-      ],
-      "dup": "New York: The Future of Cities – Screening & Conversation",
-      "dupVia": [
-        "Thought Gallery"
-      ],
-      "reason": "llm-same",
-      "score": 1
-    },
-    {
-      "day": "2026-09-25",
-      "kept": "The Fling at Fort Greene Park – 25th Anniversary",
-      "keptVia": [
-        "Fort Greene Park Conservancy"
-      ],
-      "dup": "The Fling",
-      "dupVia": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "reason": "dice",
-      "score": 1
-    },
     {
       "day": "2026-10-13",
       "kept": "Start Woodworking! - KJ",
@@ -42,12 +16,12 @@
       "score": 0.94
     },
     {
-      "day": "2026-09-28",
-      "kept": "Shakespeare and Verdi's Macbeth: Discussion and Performance",
+      "day": "2026-09-29",
+      "kept": "Choosing the End: Ethics & Medical Aid in Dying",
       "keptVia": [
-        "The Cooper Union"
+        "New York Public Library"
       ],
-      "dup": "Met Opera & Public Theater Professionals Discuss Shakespeare Adaptations + Performance from Met Opera Cast",
+      "dup": "Bioethics Experts Discuss Ethics and Medical Aid in Dying (In Person AND Online!)",
       "dupVia": [
         "feed: Club Free Time"
       ],
@@ -55,12 +29,12 @@
       "score": 1
     },
     {
-      "day": "2026-09-29",
-      "kept": "Choosing the End: Ethics & Medical Aid in Dying",
+      "day": "2026-10-01",
+      "kept": "The King of Japanese Kawaii: Sebastian Masuda in Conversation",
       "keptVia": [
-        "New York Public Library"
+        "The Skint"
       ],
-      "dup": "Bioethics Experts Discuss Ethics and Medical Aid in Dying (In Person AND Online!)",
+      "dup": "Japanese Kawaii Subculture as a Mode of Rebellion & Resistance",
       "dupVia": [
         "feed: Club Free Time"
       ],

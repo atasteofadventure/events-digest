@@ -135,7 +135,8 @@ Rules:
   - **Virtual / online-only events**: webinars, Zoom talks, livestreams. A hybrid
     event that is ALSO in person stays (tag it by its in-person venue).
   - **Book talks**: launches, signings, author readings/conversations about a
-    book, book clubs. (Talks that are not about a book are fine.)
+    book, book clubs. (Talks that are not about a book are fine.) Exception:
+    Greenlight Bookstore events, book talks included, are wanted (2026-09-30).
   `bin/build-digest.js` enforces the same rules by keyword afterwards, but you
   see the full email text and catch what keywords miss — when in doubt, skip.
 - **Recurring / daily listings**: extract a repeating series (an exhibition open

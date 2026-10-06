@@ -2,7 +2,7 @@
   "counts": [
     {
       "source": "feed: Club Free Time",
-      "count": 107
+      "count": 87
     },
     {
       "source": "feed: Green-Wood Cemetery",
@@ -10,38 +10,74 @@
     },
     {
       "source": "feed: Makeville Studio",
-      "count": 27
-    },
-    {
-      "source": "feed: Fort Greene Park Conservancy",
-      "count": 25
-    },
-    {
-      "source": "feed: Gowanus Dredgers",
-      "count": 24
-    },
-    {
-      "source": "The Skint",
       "count": 23
     },
     {
-      "source": "New York Adventure Club",
-      "count": 21
+      "source": "feed: Fort Greene Park Conservancy",
+      "count": 20
+    },
+    {
+      "source": "The Skint",
+      "count": 19
+    },
+    {
+      "source": "feed: Lectures on Tap",
+      "count": 19
+    },
+    {
+      "source": "NYPL",
+      "count": 17
+    },
+    {
+      "source": "feed: Gowanus Dredgers",
+      "count": 16
+    },
+    {
+      "source": "Pioneer Works",
+      "count": 13
+    },
+    {
+      "source": "AIANY",
+      "count": 11
     },
     {
       "source": "feed: NY Mycological Society",
-      "count": 12
+      "count": 11
     },
     {
-      "source": "feed: NYC Resistor",
+      "source": "NY Adventure Club",
       "count": 10
     },
     {
-      "source": "New-York Historical Society",
-      "count": 6
+      "source": "MoMI",
+      "count": 9
+    },
+    {
+      "source": "feed: NYC Resistor",
+      "count": 9
     },
     {
       "source": "NY Transit Museum",
+      "count": 8
+    },
+    {
+      "source": "New-York Historical Society",
+      "count": 7
+    },
+    {
+      "source": "NYBG",
+      "count": 7
+    },
+    {
+      "source": "Cooper Union",
+      "count": 6
+    },
+    {
+      "source": "Fort Greene Park Conservancy",
+      "count": 6
+    },
+    {
+      "source": "Printed Matter",
       "count": 6
     },
     {
@@ -49,15 +85,15 @@
       "count": 6
     },
     {
-      "source": "Cooper Union",
-      "count": 5
-    },
-    {
-      "source": "Brooklyn Public Library",
-      "count": 5
-    },
-    {
       "source": "Governors Island",
+      "count": 5
+    },
+    {
+      "source": "Center for Brooklyn History / BPL",
+      "count": 5
+    },
+    {
+      "source": "MCNY",
       "count": 4
     },
     {
@@ -65,23 +101,15 @@
       "count": 4
     },
     {
-      "source": "Museum of the Moving Image",
+      "source": "Municipal Art Society",
       "count": 3
     },
     {
-      "source": "Museum of the City of New York",
+      "source": "Open House New York",
       "count": 3
     },
     {
-      "source": "Pioneer Works",
-      "count": 3
-    },
-    {
-      "source": "Center for Brooklyn History",
-      "count": 3
-    },
-    {
-      "source": "feed: Lectures on Tap",
+      "source": "Lower East Side Printshop",
       "count": 3
     },
     {
@@ -89,27 +117,11 @@
       "count": 2
     },
     {
-      "source": "Brooklyn Museum",
+      "source": "Brooklyn Botanic Garden",
       "count": 2
     },
     {
-      "source": "Open House New York",
-      "count": 2
-    },
-    {
-      "source": "Tenement Museum",
-      "count": 2
-    },
-    {
-      "source": "Lower East Side Printshop",
-      "count": 2
-    },
-    {
-      "source": "Untapped New York",
-      "count": 2
-    },
-    {
-      "source": "New York Public Library",
+      "source": "Center for Brooklyn History",
       "count": 2
     },
     {
@@ -117,7 +129,19 @@
       "count": 2
     },
     {
-      "source": "Municipal Art Society of New York",
+      "source": "Brooklyn Museum",
+      "count": 1
+    },
+    {
+      "source": "Fort Greene Park Conservancy / BRIC",
+      "count": 1
+    },
+    {
+      "source": "Brooklyn Public Library",
+      "count": 1
+    },
+    {
+      "source": "BBG",
       "count": 1
     },
     {
@@ -125,19 +149,7 @@
       "count": 1
     },
     {
-      "source": "Brooklyn Craft Company",
-      "count": 1
-    },
-    {
-      "source": "Brooklyn Botanic Garden",
-      "count": 1
-    },
-    {
-      "source": "New York Botanical Garden",
-      "count": 1
-    },
-    {
-      "source": "Little Island",
+      "source": "Tenement Museum",
       "count": 1
     }
   ],
@@ -150,9 +162,10 @@
     "Creative Coding NYC",
     "NYC Parks",
     "Rooftop Films",
+    "Greenlight Bookstore",
     "Photoville"
   ],
-  "contributing": 35,
+  "contributing": 38,
   "feedErrors": [
     {
       "source": "NYC Parks",

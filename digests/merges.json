@@ -1,7 +1,163 @@
 {
-  "generated": "2026-09-29T22:31:12",
-  "verdictsApplied": 3,
+  "generated": "2026-10-06T22:40:44",
+  "verdictsApplied": 1,
   "merges": [
+    {
+      "day": "2026-10-06",
+      "kept": "Nowicki's Unbuilt Chandigarh: An Ecology of Everyday Life",
+      "keptVia": [
+        "AIANY"
+      ],
+      "dup": "J. Max Bond Jr. Lecture and Portrait Unveiling",
+      "dupVia": [
+        "AIANY"
+      ],
+      "reason": "same-url",
+      "score": 1
+    },
+    {
+      "day": "2026-10-09",
+      "kept": "Walking Tour: Madison Avenue, High Fashion, and Historic Preservation",
+      "keptVia": [
+        "AIANY"
+      ],
+      "dup": "Exhibition Tour: Humanist Modernity—Maciej and Stanisława Nowicki",
+      "dupVia": [
+        "AIANY"
+      ],
+      "reason": "same-url",
+      "score": 1
+    },
+    {
+      "day": "2026-10-07",
+      "kept": "Censored Chapters, Exposed Couture: Banned Books Week Fashion Show",
+      "keptVia": [
+        "NYPL"
+      ],
+      "dup": "Censored Chapters, Exposed Couture: A Banned Books Week Fashion Show",
+      "dupVia": [
+        "NYPL"
+      ],
+      "reason": "dice",
+      "score": 0.97
+    },
+    {
+      "day": "2026-10-08",
+      "kept": "Banned Books from the Cold War to the Present",
+      "keptVia": [
+        "NYPL"
+      ],
+      "dup": "Banned Books from the Cold War to the Present",
+      "dupVia": [
+        "NYPL"
+      ],
+      "reason": "dice",
+      "score": 1
+    },
+    {
+      "day": "2026-10-17",
+      "kept": "TechConnect Masterclass: Jam & Learn with Ableton Educators",
+      "keptVia": [
+        "NYPL"
+      ],
+      "dup": "TechConnect Masterclass: Jam & Learn with Ableton",
+      "dupVia": [
+        "NYPL"
+      ],
+      "reason": "dice",
+      "score": 0.9
+    },
+    {
+      "day": "2026-10-19",
+      "kept": "Home to Harlem: Celebrating Black Bibliography at the Schomburg Center",
+      "keptVia": [
+        "NYPL"
+      ],
+      "dup": "Home to Harlem: Celebrating Black Bibliography at the Schomburg",
+      "dupVia": [
+        "NYPL"
+      ],
+      "reason": "dice",
+      "score": 1
+    },
+    {
+      "day": "2026-10-13",
+      "kept": "Scientific Controversies No. 37: Octopus Umwelt",
+      "keptVia": [
+        "Pioneer Works"
+      ],
+      "dup": "Scientific Controversies No. 37: Octopus Umwelt",
+      "dupVia": [
+        "Pioneer Works"
+      ],
+      "reason": "same-url",
+      "score": 1
+    },
+    {
+      "day": "2026-10-09",
+      "kept": "Docent-led Gallery Tour: Revolutionary Women",
+      "keptVia": [
+        "New-York Historical Society"
+      ],
+      "dup": "NY Historical Docent Tour: Revolutionary Women",
+      "dupVia": [
+        "New-York Historical Society"
+      ],
+      "reason": "llm-same",
+      "score": 1
+    },
+    {
+      "day": "2026-10-10",
+      "kept": "Yoga in the Park with Shala Yoga",
+      "keptVia": [
+        "Fort Greene Park Conservancy"
+      ],
+      "dup": "Shala Yoga",
+      "dupVia": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "reason": "jaccard",
+      "score": 0.67
+    },
+    {
+      "day": "2026-10-10",
+      "kept": "Prison Ship Martyrs Memorial Commemoration",
+      "keptVia": [
+        "Fort Greene Park Conservancy"
+      ],
+      "dup": "Prison Ship Martyrs Memorial Commemoration",
+      "dupVia": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "reason": "dice",
+      "score": 1
+    },
+    {
+      "day": "2026-10-17",
+      "kept": "Black History & Culture Tour of Fort Greene",
+      "keptVia": [
+        "Fort Greene Park Conservancy"
+      ],
+      "dup": "Black History And Culture Tour Of Fort Greene",
+      "dupVia": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "reason": "dice",
+      "score": 0.92
+    },
+    {
+      "day": "2026-10-24",
+      "kept": "Halloween Fest at Fort Greene Park",
+      "keptVia": [
+        "Fort Greene Park Conservancy"
+      ],
+      "dup": "Halloween Fest",
+      "dupVia": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "reason": "dice",
+      "score": 1
+    },
     {
       "day": "2026-10-13",
       "kept": "Start Woodworking! - KJ",
@@ -14,32 +170,6 @@
       ],
       "reason": "dice",
       "score": 0.94
-    },
-    {
-      "day": "2026-09-29",
-      "kept": "Choosing the End: Ethics & Medical Aid in Dying",
-      "keptVia": [
-        "New York Public Library"
-      ],
-      "dup": "Bioethics Experts Discuss Ethics and Medical Aid in Dying (In Person AND Online!)",
-      "dupVia": [
-        "feed: Club Free Time"
-      ],
-      "reason": "llm-same",
-      "score": 1
-    },
-    {
-      "day": "2026-10-01",
-      "kept": "The King of Japanese Kawaii: Sebastian Masuda in Conversation",
-      "keptVia": [
-        "The Skint"
-      ],
-      "dup": "Japanese Kawaii Subculture as a Mode of Rebellion & Resistance",
-      "dupVia": [
-        "feed: Club Free Time"
-      ],
-      "reason": "llm-same",
-      "score": 1
     }
   ]
 }

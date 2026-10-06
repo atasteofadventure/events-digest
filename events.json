@@ -1,487 +1,631 @@
 [
   {
-    "id": "skint-stage-break-reading-series-2026-09-29",
-    "name": "Stage Break Reading Series with Astra House",
-    "dateISO": "2026-09-29T18:00:00",
-    "time": "6:00 PM",
-    "venue": "McNally Jackson Books at Bklyn Studios",
-    "neighborhood": "Downtown Brooklyn",
-    "price": "$10",
-    "url": "https://mcnallyjackson.com/event/2026-09-29/stage-break-astra-house",
-    "category": "talks_lectures",
-    "source": "McNally Jackson Books / Page Break",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Four writers perform original short stories one page at a time, alternating with randomly selected audience readers; attendees get a printed zine of the four stories."
-  },
-  {
-    "id": "skint-this-guy-sucked-draft-of-shame-2026-09-29",
-    "name": "This Guy Sucked Presents: Draft of Shame",
-    "dateISO": "2026-09-29T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Caveat",
-    "neighborhood": "Lower East Side",
-    "price": "$15 (promo code 'skint')",
-    "url": "https://caveat.nyc/events/tgs-draft-of-shame-2026-09-29",
-    "category": "talks_lectures",
-    "source": "This Guy Sucked / Caveat",
-    "via": [
-      "The Skint"
-    ],
-    "why": "History podcast hosts use a sports-draft format to assemble a team of America's most notorious historical villains and pit them against each other."
-  },
-  {
-    "id": "skint-punch-puppet-slam-princess-bride-2026-09-29",
-    "name": "Punch Puppet Slam: The Princess Bride",
-    "dateISO": "2026-09-29T19:00:00",
-    "time": "7:00 PM",
-    "venue": "The Tank",
-    "neighborhood": "Midtown",
-    "price": "$23",
-    "url": "https://www.dramaofworks.com/princessbride",
-    "category": "miscellaneous",
-    "source": "Drama of Works / The Tank",
-    "via": [
-      "The Skint"
-    ],
-    "why": "A diverse group of puppet artists use multiple puppet styles to perform The Princess Bride in a live variety-show format."
-  },
-  {
-    "id": "skint-live-band-karaoke-arlenes-grocery-2026-09-29",
-    "name": "Live Band Karaoke at Arlene's Grocery",
-    "dateISO": "2026-09-29T20:00:00",
-    "time": "8:00 PM",
-    "venue": "Arlene's Grocery",
-    "neighborhood": "Lower East Side",
-    "price": "$10 adv / $15 day-of",
-    "url": "https://www.arlenesgrocerynyc.com/upcoming-events",
-    "category": "music_nightlife",
-    "source": "Arlene's Grocery",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Sing your chosen song backed by a live full band (Nakatomi5); online ticket buyers enter raffles for drink tickets and free admission to future shows."
-  },
-  {
-    "id": "skint-americas-film-festival-ny-2026-09-30",
-    "name": "13th Annual Americas Film Festival of New York",
-    "dateISO": "2026-09-30T00:00:00",
-    "time": "Various",
-    "venue": "Various Locations",
-    "neighborhood": "NYC",
-    "price": "Free (except opening night)",
-    "url": "https://www.taffny.com/",
+    "id": "theskint-masters-of-horror-2026",
+    "name": "Masters of Horror Film Series",
+    "dateISO": "2026-10-06T18:00:00",
+    "time": "varies",
+    "venue": "Quad Cinema",
+    "neighborhood": "Greenwich Village",
+    "price": "$18 / $16 members",
+    "url": "https://quadcinema.com/program/masters-of-horror/",
     "category": "film_screenings",
-    "source": "Americas Film Festival of New York",
+    "source": "Quad Cinema",
     "via": [
       "The Skint"
     ],
-    "why": "Festival of films from across the Americas exploring historical memory, migration, identity, childhood, and music; features screenings, documentaries, shorts, and filmmaker Q&As through October 9."
+    "why": "Annual curated horror film series at Quad Cinema running Oct 6–30, featuring classic and contemporary genre films."
   },
   {
-    "id": "skint-georgia-gardner-gray-cookie-2026-09-30",
-    "name": "Georgia Gardner Gray: Cookie (Site-Specific Performance)",
-    "dateISO": "2026-09-30T19:30:00",
-    "time": "7:30 PM",
-    "venue": "Under the High Line, Meatpacking District",
-    "neighborhood": "Meatpacking District",
-    "price": "Free",
-    "url": "https://www.thehighline.org/art/projects/georgia-gardner-gray/",
-    "category": "art_exhibitions",
-    "source": "High Line / Georgia Gardner Gray",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Site-specific performance staged in the former parking lot of the Meatpacking District's last meat purveyor, featuring grifters, fake tailors, and hustlers in a fever-dream narrative; runs through Friday."
-  },
-  {
-    "id": "skint-gather-round-lets-dance-manhattan-west-2026-09-30",
-    "name": "Gather Round: Let's Dance – New York Swings (Final Night)",
-    "dateISO": "2026-09-30T17:00:00",
-    "time": "5:00 PM",
-    "venue": "Manhattan West Plaza",
-    "neighborhood": "Midtown West",
-    "price": "Free",
-    "url": "https://manhattanwestnyc.com/event/gather-round-lets-dance-2026-2/2026-09-30/",
-    "category": "music_nightlife",
-    "source": "Manhattan West / Works & Process",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Final night of this free outdoor dance series: lindy hop and authentic jazz with choreographer Gaby Cook and Grammy-winning saxophonist Josh Lee, with a participatory dance component."
-  },
-  {
-    "id": "skint-bhangra-in-the-plaza-2026-09-30",
-    "name": "Bhangra in the Plaza",
-    "dateISO": "2026-09-30T18:00:00",
-    "time": "6:00 PM",
-    "venue": "Greeley Square Plaza",
-    "neighborhood": "Midtown",
-    "price": "Free",
-    "url": "https://34thstreet.org/calendar/event/bhangra-in-the-plaza/2026-09-30",
-    "category": "music_nightlife",
-    "source": "34th Street Partnership",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Weekly outdoor session of contemporary Indian music and dance featuring Sarina Jain and dancers from Masala Bhangra; all experience levels welcome. Runs Wednesdays through October 21."
-  },
-  {
-    "id": "skint-art21-rewind-screening-2026-09-30",
-    "name": "Art21 Rewind: A 25th Anniversary Screening",
-    "dateISO": "2026-09-30T19:00:00",
-    "time": "7:00 PM",
-    "venue": "SVA Theatre",
-    "neighborhood": "Chelsea",
-    "price": "$7",
-    "url": "https://svatheatre.com/events/art21-25th-anniversary-screening/",
+    "id": "theskint-bushwick-film-festival-2026",
+    "name": "19th Annual Bushwick Film Festival",
+    "dateISO": "2026-10-07T18:00:00",
+    "time": "varies",
+    "venue": "Various venues",
+    "neighborhood": "Bushwick",
+    "price": "$20+",
+    "url": "https://www.bushwickfilmfestival.com/tickets",
     "category": "film_screenings",
-    "source": "Art21 / SVA Theatre",
+    "source": "Bushwick Film Festival",
     "via": [
       "The Skint"
     ],
-    "why": "Screening of artist documentaries from Art21's original 2001 debut season featuring Laurie Anderson, Mel Chin, Barry McGee, Shahzia Sikander, and others."
+    "why": "Five-day indie film festival running Oct 7–11 at multiple Bushwick venues."
   },
   {
-    "id": "skint-infinite-good-times-movie-club-carpenter-2026-09-30",
-    "name": "Infinite Good Times Movie Club: John Carpenter Double Feature",
-    "dateISO": "2026-09-30T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Lucky 13 Saloon",
-    "neighborhood": "Gowanus",
-    "price": "Free (RSVP, $5 suggested donation)",
-    "url": "https://partiful.com/u/wZCECUp5fKLAfaG7Oki2",
+    "id": "theskint-hitchcocktober-2026",
+    "name": "Hitchcocktober",
+    "dateISO": "2026-10-07T19:00:00",
+    "time": "varies",
+    "venue": "Village East by Angelika",
+    "neighborhood": "East Village",
+    "price": "$19",
+    "url": "https://angelikafilmcenter.com/villageeast/signature-programming/hitchcocktober",
     "category": "film_screenings",
-    "source": "Infinite Good Times Movie Club",
+    "source": "Angelika Film Center",
     "via": [
       "The Skint"
     ],
-    "why": "Double feature screening of John Carpenter's Big Trouble in Little China and They Live at a metal bar, with free popcorn and candy."
+    "why": "Monthly Alfred Hitchcock film screenings every Wednesday and Halloween night through Oct 31."
   },
   {
-    "id": "skint-charlene-kaye-king-mei-mei-debut-2026-09-30",
-    "name": "Charlene Kaye's 40th Birthday / King Mei Mei Debut Live Show",
-    "dateISO": "2026-09-30T20:00:00",
-    "time": "8:00 PM",
+    "id": "theskint-breaking-binary-theatre-2026",
+    "name": "Breaking the Binary Theatre Festival",
+    "dateISO": "2026-10-06T20:00:00",
+    "time": "varies",
+    "venue": "MCC Theater",
+    "neighborhood": "Hell's Kitchen",
+    "price": "Free",
+    "url": "https://www.btb-nyc.com/26-festival",
+    "category": "festivals_parties",
+    "source": "MCC Theater",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Theater festival Oct 6–11 featuring works exploring gender nonconformity and queerness."
+  },
+  {
+    "id": "theskint-cp-film-festival-2026",
+    "name": "Central Park Conservancy Film Festival",
+    "dateISO": "2026-10-06T19:00:00",
+    "time": "dusk",
+    "venue": "Central Park (Cherry Hill / Sheep Meadow lawn)",
+    "neighborhood": "Upper West Side",
+    "price": "Free",
+    "url": "https://www.centralparknyc.org/activities/guides/central-park-conservancy-film-festival",
+    "category": "film_screenings",
+    "source": "Central Park Conservancy",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Free outdoor film screenings in Central Park Oct 6–9, weather permitting."
+  },
+  {
+    "id": "theskint-heel-toe-rodeo-oct6",
+    "name": "Heel Toe Rodeo Line Dancing",
+    "dateISO": "2026-10-06T19:00:00",
+    "time": "7:00 PM",
     "venue": "Littlefield",
     "neighborhood": "Gowanus",
-    "price": "$15",
-    "url": "https://littlefieldnyc.com/event/?wfea_eb_id=1998488798795",
+    "price": "$15 adv / $20 door",
+    "url": "https://littlefieldnyc.com/event/?wfea_eb_id=1997940162810",
     "category": "music_nightlife",
     "source": "Littlefield",
     "via": [
       "The Skint"
     ],
-    "why": "Debut live performance of Charlene Kaye's new glam-punk project King Mei Mei, coinciding with her 40th birthday celebration."
+    "why": "Line dancing night with instructors at Gowanus venue Littlefield."
   },
   {
-    "id": "skint-escher-exhibition-2026-10-01",
-    "name": "Mathematics and the Art of M.C. Escher (Exhibition Opening)",
-    "dateISO": "2026-10-01T18:30:00",
-    "time": "6:30 PM (free opening celebration)",
-    "venue": "National Museum of Mathematics",
-    "neighborhood": "Flatiron",
-    "price": "Free opening 10/1; $30 general / $20 seniors/students thereafter",
-    "url": "https://momath.org/escher/",
-    "category": "art_exhibitions",
-    "source": "National Museum of Mathematics",
-    "via": [
-      "The Skint"
-    ],
-    "why": "First major exhibition devoted to the mathematics of Escher's art, featuring 60+ prints, original woodblocks, and objects exploring symmetry, geometry, infinity, and impossible scenes; runs through Feb 8, 2027."
-  },
-  {
-    "id": "skint-archtober-festival-2026-10-01",
-    "name": "Archtober Festival",
-    "dateISO": "2026-10-01T00:00:00",
-    "time": "Various",
-    "venue": "Various Locations",
-    "neighborhood": "NYC",
-    "price": "Various",
-    "url": "https://www.archtober.org/",
-    "category": "tours_experiences",
-    "source": "Archtober / Center for Architecture",
-    "via": [
-      "The Skint"
-    ],
-    "why": "NYC's month-long festival of architecture and design with building tours, talks, workshops, exhibitions, and film screenings across the five boroughs with 100+ partner organizations; runs through October 31."
-  },
-  {
-    "id": "skint-rooftop-cinema-club-midtown-2026-10-01",
-    "name": "Rooftop Cinema Club (Fall Season)",
-    "dateISO": "2026-10-01T00:00:00",
-    "time": "Evenings",
-    "venue": "Embassy Suites Skylawn Rooftop",
-    "neighborhood": "Midtown",
-    "price": "$21.75+",
-    "url": "https://rooftopcinemaclub.com/us/new-york/rooftop-cinema-club-midtown",
-    "category": "film_screenings",
-    "source": "Rooftop Cinema Club",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Open-air rooftop movie screenings with wireless headphones, screening Halloween, Get Out, Ghostbusters, Hocus Pocus, The Exorcist, Rocky Horror Picture Show, and more through October."
-  },
-  {
-    "id": "skint-king-of-japanese-kawaii-fit-2026-10-01",
-    "name": "The King of Japanese Kawaii: Sebastian Masuda in Conversation",
-    "dateISO": "2026-10-01T17:30:00",
-    "time": "5:30 PM",
-    "venue": "FIT Katie Murphy Amphitheatre",
-    "neighborhood": "Chelsea",
+    "id": "theskint-festival-of-firsts-2026",
+    "name": "Festival of Firsts",
+    "dateISO": "2026-10-07T12:00:00",
+    "time": "varies",
+    "venue": "Rubenstein Atrium at Lincoln Center",
+    "neighborhood": "Upper West Side",
     "price": "Free",
-    "url": "https://museumatfit.my.salesforce-sites.com/ticket/#/events/a0OVT00000Yyu292AB",
-    "category": "talks_lectures",
-    "source": "Museum at FIT",
+    "url": "https://www.lincolncenter.org/series/lincoln-center-presents/s/Festival%20of%20Firsts",
+    "category": "festivals_parties",
+    "source": "Lincoln Center",
     "via": [
       "The Skint"
     ],
-    "why": "Harajuku kawaii pioneer Sebastian Masuda discusses his colorful career and the culture he helped bring to the world in conversation with FIT professor Yuniya Kawamura."
+    "why": "Multi-week series at Lincoln Center's free outdoor Rubenstein Atrium Oct 7–23, spotlighting debut works and emerging artists."
   },
   {
-    "id": "skint-dumbo-first-thursday-gallery-walk-2026-10-01",
-    "name": "DUMBO First Thursday Gallery Walk – Season Opener",
-    "dateISO": "2026-10-01T18:00:00",
-    "time": "6:00 PM",
-    "venue": "DUMBO galleries (self-guided)",
-    "neighborhood": "DUMBO",
+    "id": "theskint-lunch-box-oct7",
+    "name": "Lunch Box Food Fair",
+    "dateISO": "2026-10-07T11:30:00",
+    "time": "11:30 AM–2:30 PM",
+    "venue": "Fosun Plaza at 28 Liberty St",
+    "neighborhood": "Financial District",
     "price": "Free",
-    "url": "https://artindumbo.com/first-thursdays/",
-    "category": "tours_experiences",
-    "source": "Art in DUMBO",
+    "url": "https://downtownny.com/lunch-box/",
+    "category": "festivals_parties",
+    "source": "Downtown NY",
     "via": [
       "The Skint"
     ],
-    "why": "Monthly self-guided walk through DUMBO galleries open late for receptions and artist talks, with outdoor projections and an after-party with DJ Nickodemus plus live saxophone and percussion."
+    "why": "Midday outdoor food vendor fair in the Financial District plaza."
   },
   {
-    "id": "skint-the-new-york-i-keep-2026-10-01",
-    "name": "The New York I Keep: An Evening of Obsessions",
-    "dateISO": "2026-10-01T18:30:00",
-    "time": "6:30 PM",
-    "venue": "P+T Knitwear Bookstore",
-    "neighborhood": "Lower East Side",
+    "id": "theskint-game-a-palooza-oct7",
+    "name": "Game-a-Palooza Indie Game Showcase",
+    "dateISO": "2026-10-07T13:00:00",
+    "time": "1:00 PM–7:00 PM",
+    "venue": "339 Adams St",
+    "neighborhood": "Downtown Brooklyn",
     "price": "$10",
-    "url": "https://ptknitwear.com/events/51553",
-    "category": "talks_lectures",
-    "source": "P+T Knitwear",
+    "url": "https://gameapalooza.love/",
+    "category": "miscellaneous",
+    "source": "Game-a-Palooza",
     "via": [
       "The Skint"
     ],
-    "why": "Five writers and thinkers each make a five-minute case for the one thing they can't stop loving about NYC, followed by a group walk outside to discover the city; speakers include Philip Lopate and Moses Gates."
+    "why": "Indie video game showcase and expo with playable demos from independent developers."
   },
   {
-    "id": "skint-spoons-toons-booze-halloween-2026-10-01",
-    "name": "Spoons, Toons + Booze: Halloween After Dark Edition",
-    "dateISO": "2026-10-01T21:15:00",
-    "time": "9:15 PM",
-    "venue": "Nitehawk Cinema",
-    "neighborhood": "Prospect Park",
-    "price": "$20 (includes all-you-can-eat cereal bar)",
-    "url": "https://secretformulany.com/events/spoons-toons-booze-halloween-after-dark-oct-2026",
+    "id": "theskint-mcgolrick-movie-oct7",
+    "name": "Outdoor Movie: Obsession at McGolrick Park",
+    "dateISO": "2026-10-07T19:00:00",
+    "time": "7:00 PM",
+    "venue": "McGolrick Park",
+    "neighborhood": "Greenpoint",
+    "price": "Free",
+    "url": "https://www.nycgovparks.org/events/2026/10/07/movie-under-the-stars-obsession-2026",
     "category": "film_screenings",
-    "source": "Secret Formula / Nitehawk Cinema",
+    "source": "NYC Parks",
     "via": [
       "The Skint"
     ],
-    "why": "Halloween-themed cartoons from the 1940s–2000s on the big screen with sugary cereals and cereal-infused cocktails at this annual screening party."
+    "why": "Free outdoor screening of Obsession in McGolrick Park."
   },
   {
-    "id": "skint-china-now-music-festival-carnegie-hall-2026-10-02",
-    "name": "China Now Music Festival – Opening Night at Carnegie Hall",
-    "dateISO": "2026-10-02T19:30:00",
+    "id": "theskint-central-chamber-series-oct7",
+    "name": "Central Chamber Series: Songs Without Words",
+    "dateISO": "2026-10-07T19:30:00",
     "time": "7:30 PM",
-    "venue": "Zankel Hall, Carnegie Hall",
-    "neighborhood": "Midtown",
-    "price": "Varies (30% off code MUS57515)",
-    "url": "https://qrcc.pro/tlxpw372v6tf",
+    "venue": "Central Presbyterian Church",
+    "neighborhood": "Upper East Side",
+    "price": "$20 general / free students",
+    "url": "https://www.centralchamberseries.com/",
     "category": "music_nightlife",
-    "source": "China Now Music Festival / Carnegie Hall",
+    "source": "Central Chamber Series",
     "via": [
       "The Skint"
     ],
-    "why": "Opening of the 9th annual China Now Music Festival: Huang Ruo and David Henry Hwang's opera The Rift plus three new works for the Bard East/West Ensemble blending Western strings with seven Chinese instruments."
+    "why": "Chamber music concert featuring instrumental works in an Upper East Side church setting."
   },
   {
-    "id": "mas-grand-central-tour-2026-09-30",
-    "name": "Grand Central Terminal Tour with MAS Docents",
-    "dateISO": "2026-09-30T11:00:00",
-    "time": "11:00 AM (multiple dates/times available)",
-    "venue": "Grand Central Terminal",
-    "neighborhood": "Midtown",
-    "price": "$25 members / $30 non-members",
-    "url": "https://mas.org/tours/grand-central-terminal/",
-    "category": "tours_experiences",
-    "source": "Municipal Art Society of New York",
+    "id": "theskint-our-bar-theatre-oct7",
+    "name": "Our Bar Theatre: Spectral Saloon",
+    "dateISO": "2026-10-07T20:00:00",
+    "time": "8:00 PM",
+    "venue": "Fáilte Bar + Restaurant",
+    "neighborhood": "Kips Bay",
+    "price": "$13",
+    "url": "https://www.ourbarnyc.com/tickets",
+    "category": "miscellaneous",
+    "source": "Our Bar Theatre",
     "via": [
-      "Municipal Art Society of New York"
+      "The Skint"
     ],
-    "why": "Expert-led walking tour of Grand Central Terminal's architecture, history, and hidden spaces; multiple dates and times offered each week."
+    "why": "Bar theater production set in a supernatural Old West saloon."
   },
   {
-    "id": "cooper-union-drawing-into-place-2026-09-29",
-    "name": "Guillaume Othenin-Girard: Drawing Into Place",
-    "dateISO": "2026-09-29T19:00:00",
-    "time": "7:00–8:30 PM",
-    "venue": "Cooper Union, Rose Auditorium",
+    "id": "theskint-sense-city-exhibit-opening",
+    "name": "Sense + The City: Opening Reception",
+    "dateISO": "2026-10-08T18:00:00",
+    "time": "6:00–8:00 PM",
+    "venue": "City Lore Gallery",
     "neighborhood": "East Village",
     "price": "Free",
-    "url": "https://cooper.edu/events-and-exhibitions/events/drawing-into-place",
+    "url": "https://citylore.org/multisensory-a-sense-the-city-exhibit/",
+    "category": "art_exhibitions",
+    "source": "City Lore",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Opening reception for multisensory exhibit exploring the city through sound, smell, touch, and sight; runs through Jan 18, 2027 (Sat–Sun 12–6 PM)."
+  },
+  {
+    "id": "theskint-musk-documentary-oct8",
+    "name": "Musk (documentary)",
+    "dateISO": "2026-10-08T18:00:00",
+    "time": "varies",
+    "venue": "Angelika Film Center / AMC Lincoln Square",
+    "neighborhood": "SoHo / Upper West Side",
+    "price": "varies",
+    "url": "https://bleeckerstreetmedia.com/musk",
+    "category": "film_screenings",
+    "source": "Bleecker Street",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Documentary film about Elon Musk opening Oct 8 at Angelika Film Center and AMC Lincoln Square."
+  },
+  {
+    "id": "theskint-practical-magic-pier57-oct8",
+    "name": "Outdoor Movie: Practical Magic at Pier 57 Rooftop",
+    "dateISO": "2026-10-08T18:00:00",
+    "time": "6:00 PM",
+    "venue": "Pier 57 Rooftop",
+    "neighborhood": "Chelsea",
+    "price": "Free",
+    "url": "https://pier57nyc.com/event/rooftop-films-screening-practical-magic/",
+    "category": "film_screenings",
+    "source": "Rooftop Films / Pier 57",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Free rooftop screening of Practical Magic presented by Rooftop Films."
+  },
+  {
+    "id": "theskint-men-iron-golden-spike-oct11",
+    "name": "Men of Iron and the Golden Spike",
+    "dateISO": "2026-10-11T15:00:00",
+    "time": "3:00 PM",
+    "venue": "Rose Theater, Jazz at Lincoln Center",
+    "neighborhood": "Columbus Circle",
+    "price": "varies",
+    "url": "https://qrcc.pro/tm54e7w2vji5",
+    "category": "music_nightlife",
+    "source": "Jazz at Lincoln Center",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Concert performance at Jazz at Lincoln Center's Rose Theater."
+  },
+  {
+    "id": "cerebralvalley-world-models-hackathon-oct8",
+    "name": "Reactor x Google: World Models Hackathon",
+    "dateISO": "2026-10-08T10:00:00",
+    "time": "10:00 AM–6:00 PM",
+    "venue": "Google NYC Office",
+    "neighborhood": "Chelsea",
+    "price": "Free",
+    "url": "https://luma.com/3h1nafmg",
+    "category": "tech_ai",
+    "source": "Reactor",
+    "via": [
+      "Cerebral Valley"
+    ],
+    "why": "AI hackathon focused on world models research hosted at Google's New York office."
+  },
+  {
+    "id": "cerebralvalley-agentic-economy-hackathon-oct10",
+    "name": "The New Agentic Economy Hackathon",
+    "dateISO": "2026-10-10T09:00:00",
+    "time": "9:00 AM–6:00 PM",
+    "venue": "New York, NY (TBD)",
+    "neighborhood": "TBD",
+    "price": "Free",
+    "url": "https://luma.com/1ofx14ov",
+    "category": "tech_ai",
+    "source": "The New Agentic Economy",
+    "via": [
+      "Cerebral Valley"
+    ],
+    "why": "Hackathon exploring agentic AI economy, tools, and infrastructure."
+  },
+  {
+    "id": "cooper-union-maintenance-artist-oct6",
+    "name": "Maintenance Artist: Screening and Panel Discussion",
+    "dateISO": "2026-10-06T18:30:00",
+    "time": "6:30–8:30 PM",
+    "venue": "Rose Auditorium, 41 Cooper Square",
+    "neighborhood": "East Village",
+    "price": "Free",
+    "url": "https://www.eventbrite.com/e/screening-and-panel-discussion-maintenance-artist-tickets-1998922063702",
+    "category": "film_screenings",
+    "source": "Cooper Union",
+    "via": [
+      "Cooper Union"
+    ],
+    "why": "Screening and panel discussion about Mierle Laderman Ukeles and her Maintenance Art practice."
+  },
+  {
+    "id": "cooper-union-at-hh-oct8",
+    "name": "AT-HH: Malin Heyman + James Hamilton — Cutting Together Apart",
+    "dateISO": "2026-10-08T18:30:00",
+    "time": "6:30–8:30 PM",
+    "venue": "Room 315, 7 East 7th St",
+    "neighborhood": "East Village",
+    "price": "Free",
+    "url": "https://www.eventbrite.com/e/at-hh-malin-heyman-james-hamilton-cutting-together-apart-tickets-2002234662775",
     "category": "talks_lectures",
     "source": "Cooper Union",
     "via": [
       "Cooper Union"
     ],
-    "why": "Swiss architect and archaeologist Guillaume Othenin-Girard presents drawings in which architectural form, human narrative, and landscape are created through a single continuous line, blurring boundaries between place, memory, and imagination."
+    "why": "Artists Malin Heyman and James Hamilton present collaborative research exploring archival and textile work."
   },
   {
-    "id": "cooper-union-kelly-walters-open-flat-file-2026-10-15",
+    "id": "cooper-union-primers-exhibition",
+    "name": "Primers for a Handmade Utopia: Exhibition",
+    "dateISO": "2026-10-08T12:00:00",
+    "time": "opens Oct 8, runs through Oct 29",
+    "venue": "Room 315, 7 East 7th St",
+    "neighborhood": "East Village",
+    "price": "Free",
+    "url": "https://www.eventbrite.com/e/exhibition-panel-discussion-primers-for-a-handmade-utopia-tickets-2002461801152",
+    "category": "art_exhibitions",
+    "source": "Cooper Union",
+    "via": [
+      "Cooper Union"
+    ],
+    "why": "Exhibition exploring handcraft, utopian thinking, and material culture; opens Oct 8, runs through Oct 29."
+  },
+  {
+    "id": "cooper-union-kelly-walters-oct15",
     "name": "Kelly Walters for Open Flat File",
     "dateISO": "2026-10-15T18:30:00",
     "time": "6:30–9:30 PM",
-    "venue": "Cooper Union",
+    "venue": "Rose Auditorium, 41 Cooper Square",
     "neighborhood": "East Village",
     "price": "Free",
-    "url": "https://cooper.edu/events-and-exhibitions/events/kelly-walters-open-flat-file",
+    "url": "https://www.eventbrite.com/e/kelly-walters-for-open-flat-file-tickets-1998637569773",
     "category": "talks_lectures",
     "source": "Cooper Union",
     "via": [
       "Cooper Union"
     ],
-    "why": "Designer and educator Kelly Walters presents work inspired by The Hampton Album (1900) and the overlooked role of Black Americans in shaping American print culture, visual language, and design history."
+    "why": "Designer and educator Kelly Walters presents work exploring race, culture, and graphic design practice."
   },
   {
-    "id": "cooper-union-sawyer-avenue-sunday-afternoon-2026-10-22",
+    "id": "cooper-union-sawyer-avenue-oct22",
     "name": "Sawyer Avenue, Sunday Afternoon: Film Screening & Panel",
     "dateISO": "2026-10-22T18:30:00",
     "time": "6:30–8:00 PM",
-    "venue": "Cooper Union",
+    "venue": "The Great Hall, 7 East 7th St",
     "neighborhood": "East Village",
     "price": "Free",
-    "url": "https://cooper.edu/events-and-exhibitions/events/sawyer-avenue-sunday-afternoon",
+    "url": "https://cooper.edu/events-and-exhibitions/events/sawyer-avenue-sunday-afternoon-film-screening-panel",
     "category": "film_screenings",
     "source": "Cooper Union",
     "via": [
       "Cooper Union"
     ],
-    "why": "Screening of a documentary about an immigrant family separated by immigration enforcement in a Chicago suburb, followed by a panel discussion on civil rights and immigration."
+    "why": "Documentary film about immigration enforcement in Brooklyn, followed by a panel discussion."
   },
   {
-    "id": "cooper-union-praise-day-sonia-sanchez-2026-10-23",
+    "id": "cooper-union-sonia-sanchez-oct23",
     "name": "Praise Day for Sonia Sanchez!",
     "dateISO": "2026-10-23T19:30:00",
     "time": "7:30–9:30 PM",
-    "venue": "Cooper Union, Great Hall",
+    "venue": "The Great Hall, 7 East 7th St",
     "neighborhood": "East Village",
     "price": "Free",
-    "url": "https://cooper.edu/events-and-exhibitions/events/praise-day-for-sonia-sanchez",
+    "url": "https://cooper.edu/events-and-exhibitions/events/praise-day-sonia-sanchez",
     "category": "talks_lectures",
     "source": "Cooper Union",
     "via": [
       "Cooper Union"
     ],
-    "why": "Tribute celebration honoring poet Sonia Sanchez featuring Sweet Honey in the Rock, a poetry performance, and a community gathering with other prominent poets and artists."
+    "why": "Celebration of poet and activist Sonia Sanchez's life and work, featuring readings and tributes."
   },
   {
-    "id": "cooper-union-native-voices-karenna-2026-11-05",
-    "name": "Native Voices Karenna: Lay Our Vibration Down",
-    "dateISO": "2026-11-05T19:00:00",
-    "time": "7:00–8:30 PM",
-    "venue": "Cooper Union",
-    "neighborhood": "East Village",
-    "price": "Free",
-    "url": "https://cooper.edu/events-and-exhibitions/events/native-voices-karenna",
+    "id": "pioneer-works-horse-lords-oct8",
+    "name": "Horse Lords, Jules Reidy, Silk Fence",
+    "dateISO": "2026-10-08T20:00:00",
+    "time": "8:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "varies",
+    "url": "https://pioneerworks.org/programs/horse-lords",
     "category": "music_nightlife",
-    "source": "Cooper Union",
+    "source": "Pioneer Works",
     "via": [
-      "Cooper Union"
+      "Pioneer Works"
     ],
-    "why": "Two short operas by Native American composers performed back to back, exploring indigenous voices in contemporary classical music."
+    "why": "Baltimore experimental rock quartet Horse Lords bring their 'Demand To Be Taken To Heaven Alive!' tour to Pioneer Works, supported by artists Jules Reidy and Silk Fence."
   },
   {
-    "id": "nyhistory-john-abigail-adams-2026-09-29",
-    "name": "John and Abigail Adams: The Modern Partnership at the Heart of the American Revolution",
-    "dateISO": "2026-09-29T18:30:00",
-    "time": "6:30 PM",
-    "venue": "New-York Historical Society",
-    "neighborhood": "Upper West Side",
-    "price": "Ticketed",
-    "url": "https://www.nyhistory.org/programs/john-and-abigail-adams-partnership-at-the-heart-american-revolution?date=2026-09-29",
+    "id": "pioneer-works-second-sundays-oct11",
+    "name": "Second Sundays: October 2026",
+    "dateISO": "2026-10-11T12:00:00",
+    "time": "12:00–6:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "Free (RSVP)",
+    "url": "https://pioneerworks.org/programs/second-sundays-october-2026",
+    "category": "festivals_parties",
+    "source": "Pioneer Works",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "Monthly open-house day with dwarf cuttlefish encounters, biometric bot lab, solar gazing, gallery walkthroughs, and a DJ set from Ragga NYC's Neon Christina."
+  },
+  {
+    "id": "pioneer-works-scientific-controversies-oct13",
+    "name": "Scientific Controversies No. 37: Octopus Umwelt",
+    "dateISO": "2026-10-13T20:00:00",
+    "time": "Doors 7 PM, starts 8 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "Free (RSVP)",
+    "url": "https://pioneerworks.org/programs/scientific-controversies-octopus-umwelt",
     "category": "talks_lectures",
-    "source": "New-York Historical Society",
+    "source": "Pioneer Works",
     "via": [
-      "New-York Historical Society"
+      "Pioneer Works"
     ],
-    "why": "Reporter Jennifer Schuessler sits down with historian Lindsay Chervinsky and former Archivist of the United States Colleen Shogan to examine the founding couple's political partnership and Abigail Adams's complex views on the rights and role of women."
+    "why": "Panel on octopus intelligence and consciousness with marine biologist Alex Schnell and evolutionary biologist Caroline Albertin, hosted by Janna Levin; cuttlefish on display before and after."
   },
   {
-    "id": "nyhistory-music-saved-city-panel-2026-10-01",
-    "name": "New York in the 1970s: When Music Saved the City (Panel + Disco Reception)",
-    "dateISO": "2026-10-01T18:30:00",
+    "id": "pioneer-works-little-miss-sun-sign-oct14",
+    "name": "The Downtown Festival: Little Miss Sun Sign + Q&A",
+    "dateISO": "2026-10-14T19:00:00",
+    "time": "evening",
+    "venue": "Roxy Cinema, 2 6th Ave",
+    "neighborhood": "Tribeca",
+    "price": "varies",
+    "url": "https://www.roxycinemanewyork.com/screenings/the-downtown-festival-little-miss-sun-sign-qa/",
+    "category": "film_screenings",
+    "source": "Roxy Cinema",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "Screening of Little Miss Sun Sign, a meditation on synchronicity and manic episodes, followed by a Q&A with director Joey Frank."
+  },
+  {
+    "id": "pioneer-works-cora-dance-oct13",
+    "name": "Cora Dance Brooklyn: Pay-What-You-Can Classes",
+    "dateISO": "2026-10-13T18:00:00",
+    "time": "varies",
+    "venue": "Pave Academy Charter School, 177 Dwight St",
+    "neighborhood": "Red Hook",
+    "price": "Pay what you can",
+    "url": "https://coradance.org/pay-what-you-can-dance-classes-cdb",
+    "category": "workshops_classes",
+    "source": "Cora Dance Brooklyn",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "Weekly pay-what-you-can dance classes for ages 7 to adult starting Oct 13, with performance opportunities throughout the season."
+  },
+  {
+    "id": "pioneer-works-false-harmonics-oct26",
+    "name": "False Harmonics #28: Currawong Project",
+    "dateISO": "2026-10-26T20:00:00",
+    "time": "8:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "varies",
+    "url": "https://pioneerworks.org/programs/false-harmonics-28-currawong-project-by-matthias-kriesberg-and-kevin-larke-feat-han-chen-arseniy",
+    "category": "music_nightlife",
+    "source": "Pioneer Works",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "Five concert pianists circulate among three technology-enhanced grand pianos to premiere a new composition by Matthias Kriesberg in homage to Alexander Scriabin."
+  },
+  {
+    "id": "pioneer-works-leenalchi-oct29",
+    "name": "Leenalchi, Femcel",
+    "dateISO": "2026-10-29T20:00:00",
+    "time": "8:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "varies",
+    "url": "https://pioneerworks.org/programs/leenalchi",
+    "category": "music_nightlife",
+    "source": "Pioneer Works",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "Seoul-based seven-piece Leenalchi make their Brooklyn debut, fusing 17th-century Korean storytelling with psychedelic groove; opened by NYC post-punk duo Femcel."
+  },
+  {
+    "id": "pioneer-works-machine-girl-oct30",
+    "name": "Machine Girl Halloween",
+    "dateISO": "2026-10-30T20:00:00",
+    "time": "8:00 PM",
+    "venue": "Pioneer Works",
+    "neighborhood": "Red Hook",
+    "price": "varies",
+    "url": "https://pioneerworks.org/programs/machine-girl",
+    "category": "music_nightlife",
+    "source": "Pioneer Works",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "Halloween Eve electronic hardcore show with Machine Girl, with support from Deli Girls and yesterdayneverhappened."
+  },
+  {
+    "id": "nypl-banned-books-fashion-show-oct7",
+    "name": "Censored Chapters, Exposed Couture: Banned Books Week Fashion Show",
+    "dateISO": "2026-10-07T18:00:00",
+    "time": "6:00–8:00 PM",
+    "venue": "Stavros Niarchos Foundation Library (SNFL)",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjUwMTl9AAYAAAAABcRMXfeM8X7ayicppiuQ_TSsCCKRhVPeuORyjIiAcJcihCrm-8Cxl8mOKi0sLhfRVD6R8dA2Y8Puaomngok41mRJRbGw",
+    "category": "festivals_parties",
+    "source": "NYPL",
+    "via": [
+      "NYPL"
+    ],
+    "why": "Banned Books Week fashion show featuring couture inspired by banned and challenged books, presented by D'Marsh Couture."
+  },
+  {
+    "id": "nypl-banned-books-cold-war-oct8",
+    "name": "Banned Books from the Cold War to the Present",
+    "dateISO": "2026-10-08T18:30:00",
     "time": "6:30 PM",
-    "venue": "New-York Historical Society",
-    "neighborhood": "Upper West Side",
-    "price": "Ticketed",
-    "url": "https://www.nyhistory.org/programs/new-york-in-the-1970s-when-music-saved-the-city?date=2026-10-01",
+    "venue": "Stavros Niarchos Foundation Library (SNFL)",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjUwMTl9AAYAAAAABcRMXfeX6ah6pEhRx5-ZJuCiGZLGygMG6Uc0JXaA3plgIrsYDj03GFV87c-nhquuny0tRfW9fTSwsw25CVxtK1mW9ynD",
     "category": "talks_lectures",
-    "source": "New-York Historical Society",
+    "source": "NYPL",
     "via": [
-      "New-York Historical Society"
+      "NYPL"
     ],
-    "why": "Pre-opening celebration for the 'You Should Be Dancing' exhibition: panel with MC Sha-Rock, Marky Ramone of the Ramones, Lenny Kaye of the Patti Smith Group, and DJ Nicky Siano, who revolutionized disco at Studio 54—followed by a live DJ set and disco reception."
+    "why": "Panel on tamizdat—manuscripts smuggled out of the Soviet Union—with scholars from the Tamizdat Project exploring Cold War censorship."
   },
   {
-    "id": "nyhistory-you-should-be-dancing-exhibition-2026-10-02",
-    "name": "You Should Be Dancing: New York, 1976 and Beyond (Exhibition Opening)",
-    "dateISO": "2026-10-02T00:00:00",
-    "time": "Museum hours",
-    "venue": "New-York Historical Society",
+    "id": "nypl-sounds-of-cyprus-oct15",
+    "name": "Sounds of Cyprus Presents Dialects",
+    "dateISO": "2026-10-15T18:00:00",
+    "time": "6:00 PM",
+    "venue": "Stavros Niarchos Foundation Library (SNFL)",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjUwMTl9AAYAAAAABcRMXfebr0Uv674heMODWZJk1KrItt0DRdoTDRiGsguNayWznCJwCSB_AkkXYH8sx6WX5nUIiH2GINRnkrLvxmh3Ut-D",
+    "category": "music_nightlife",
+    "source": "NYPL",
+    "via": [
+      "NYPL"
+    ],
+    "why": "Grammy-nominated musician Peter Douskalis leads a multilingual concert exploring Greek-Cypriot, Turkish-Cypriot, and Maronite-Cypriot musical traditions."
+  },
+  {
+    "id": "nypl-houdini-legacy-oct16",
+    "name": "Houdini: Preserving a Legacy of Magic, Escapes, and Showmanship",
+    "dateISO": "2026-10-16T19:00:00",
+    "time": "7:00 PM",
+    "venue": "Library for the Performing Arts",
     "neighborhood": "Upper West Side",
-    "price": "Pay-what-you-wish Fri 5–8 PM",
-    "url": "https://www.nyhistory.org/exhibitions/you-should-be-dancing-new-york-1976-and-beyond",
-    "category": "art_exhibitions",
-    "source": "New-York Historical Society",
+    "price": "Free",
+    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjUwMTl9AAYAAAAABcRMXfedKprDczSHJ_V5hOEOloDIP8GK7OnFFA5uCmPYMPYX9l2FesJubFo2HxY_x-FO-FjzVGLIgGJ_vrVHw6llLAHl",
+    "category": "talks_lectures",
+    "source": "NYPL",
     "via": [
-      "New-York Historical Society"
+      "NYPL"
     ],
-    "why": "New exhibition charting the American bicentennial year through NYC's simultaneous cultural explosions—Ramones punk at CBGB, the birth of hip-hop in the Bronx, and disco's rise—set against the city's fiscal crisis."
+    "why": "Centennial celebration of Houdini's death featuring rare archival items, conversation with escape artist Dorothy Dietrich, and a live performance by escape artist Thomas Solomon."
   },
   {
-    "id": "nyhistory-betye-saar-black-dolls-closing-2026-10-04",
-    "name": "Betye Saar's Black Dolls (Final Weekend)",
-    "dateISO": "2026-10-04T00:00:00",
-    "time": "Museum hours",
-    "venue": "New-York Historical Society",
-    "neighborhood": "Upper West Side",
-    "price": "General admission",
-    "url": "https://www.nyhistory.org/exhibitions/betye-saars-black-dolls",
-    "category": "art_exhibitions",
-    "source": "New-York Historical Society",
+    "id": "nypl-ableton-masterclass-oct17",
+    "name": "TechConnect Masterclass: Jam & Learn with Ableton Educators",
+    "dateISO": "2026-10-17T11:00:00",
+    "time": "11:00 AM–4:00 PM",
+    "venue": "Stavros Niarchos Foundation Library (SNFL)",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjUwMTl9AAYAAAAABcRMXfegjE1PyI73Vw2-S9YTWJIzSlOGl00qZQtSgzN3mfaMTtx6rJap6etEnO_6KEduMi0e7uEMKoSysDzyA",
+    "category": "workshops_classes",
+    "source": "NYPL",
     "via": [
-      "New-York Historical Society"
+      "NYPL"
     ],
-    "why": "Final weekend to see this exhibition honoring the centennial of Betye Saar's birth, including watercolors, assemblages, and her only self-made Black doll, Hoo Doo Woman (1974); exhibition closes October 4."
+    "why": "Free all-day workshop with Ableton Certified Trainers featuring keynote presentations, jam sessions, live performances, and interactive sessions on music production software."
   },
   {
-    "id": "nyhistory-submarines-and-ironclads-2026-10-05",
-    "name": "Submarines and Ironclads: Confederate Technology in the Civil War",
-    "dateISO": "2026-10-05T18:30:00",
+    "id": "nypl-home-to-harlem-oct19",
+    "name": "Home to Harlem: Celebrating Black Bibliography at the Schomburg Center",
+    "dateISO": "2026-10-19T13:00:00",
+    "time": "1:00–5:00 PM",
+    "venue": "Schomburg Center for Research in Black Culture",
+    "neighborhood": "Harlem",
+    "price": "Free",
+    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjUwMTl9AAYAAAAABcRMXfelbannaKrQxypJ9HqBrJDthD5ehFL14jShmnGnDudGtDw8A5BPpvUS5z90QVsgvuFVbvsB_rKeuYqwYlH1ygkv",
+    "category": "talks_lectures",
+    "source": "NYPL Schomburg Center",
+    "via": [
+      "NYPL"
+    ],
+    "why": "Half-day symposium with archivists and scholars tracing items in Arturo Schomburg's personal library, with behind-the-scenes looks at the Home to Harlem research project."
+  },
+  {
+    "id": "nypl-halloween-happy-hour-oct23",
+    "name": "Halloween Happy Hour with Tim Gunn",
+    "dateISO": "2026-10-23T18:30:00",
     "time": "6:30 PM",
-    "venue": "New-York Historical Society",
-    "neighborhood": "Upper West Side",
-    "price": "Ticketed",
-    "url": "https://www.nyhistory.org/programs/submarines-and-ironclads-confederate-technology?date=2026-10-05",
-    "category": "talks_lectures",
-    "source": "New-York Historical Society",
+    "venue": "Stephen A. Schwarzman Building",
+    "neighborhood": "Midtown",
+    "price": "Free (register)",
+    "url": "https://click.email.nypl.org/?qs=ABB7InYiOjEsImQiOjUwMTl9AAYAAAAABcRMXfeSIrO8-pSzBSaHlL9q6blbFHGDLsbDYOxq-91MQE5RBNOUnc6hOnb4QNganCjX_hkDU0gPJ_T8HPHyHfRreH7s",
+    "category": "festivals_parties",
+    "source": "NYPL",
     "via": [
-      "New-York Historical Society"
+      "NYPL"
     ],
-    "why": "Harold Holzer and Craig L. Symonds explore how the Confederate H. L. Hunley became the first submarine to sink an enemy warship, and how ironclads challenged Union naval dominance—part of the Leah and Michael Weisberg Series on American History."
+    "why": "Annual Halloween costume parade and contest judged by Tim Gunn; come dressed as a beloved book character, poem, or author."
   },
   {
-    "id": "nyhistory-gallery-tour-revolutionary-women-oct9-2026-10-09",
-    "name": "Docent-Led Gallery Tour: Revolutionary Women",
+    "id": "nyhistory-gallery-tour-rev-women-oct9",
+    "name": "Docent-led Gallery Tour: Revolutionary Women",
     "dateISO": "2026-10-09T11:30:00",
     "time": "11:30 AM",
     "venue": "New-York Historical Society",
@@ -493,942 +637,1070 @@
     "via": [
       "New-York Historical Society"
     ],
-    "why": "Docent-led tour of the museum's Revolutionary Women galleries; additional dates Oct 20 and Oct 24."
+    "why": "Docent-led guided tour of the Revolutionary Women gallery exhibition."
   },
   {
-    "id": "cerebral-valley-multi-model-future-nyc-2026-09-29",
-    "name": "The Multi-Model Future: AI Engineering Panel (NYC)",
-    "dateISO": "2026-09-29T18:30:00",
-    "time": "6:30–8:30 PM",
-    "venue": "Brex NYC Office",
-    "neighborhood": "New York",
-    "price": "Free (RSVP required)",
-    "url": "https://luma.com/brexextendsep29",
-    "category": "tech_ai",
-    "source": "Brex / Baseten / Extend / Vercel",
-    "via": [
-      "Cerebral Valley"
-    ],
-    "why": "AI engineering leaders from Brex, Baseten, Extend, and Vercel share what they've learned about choosing, routing, and running models efficiently at scale; one-hour panel then drinks with speakers."
-  },
-  {
-    "id": "cerebral-valley-brderless-buildathon-nyc-2026-10-04",
-    "name": "Brderless Buildathon: AI Agents (Brooklyn)",
-    "dateISO": "2026-10-04T10:00:00",
-    "time": "10:00 AM",
-    "venue": "Brooklyn (location TBD)",
-    "neighborhood": "Brooklyn",
-    "price": "Free (RSVP required)",
-    "url": "https://luma.com/buildathonnyc",
-    "category": "tech_ai",
-    "source": "Brderless",
-    "via": [
-      "Cerebral Valley"
-    ],
-    "why": "24-hour AI agent hackathon in Brooklyn followed by two weeks of continued shipping and a Demo Day—curated format where teams build a real product rather than just a demo."
-  },
-  {
-    "id": "momi-handcrafted-horrors-series-2026-10-03",
-    "name": "Handcrafted Horrors Halloween Screening Series",
-    "dateISO": "2026-10-03T00:00:00",
-    "time": "Various",
-    "venue": "Museum of the Moving Image",
-    "neighborhood": "Astoria, Queens",
-    "price": "$15 general / free for members",
-    "url": "https://movingimage.org/series/handcrafted-horrors/",
-    "category": "film_screenings",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Halloween screening series celebrating practical effects horror: Creature from the Black Lagoon in 3D, Fantasia, Faust, The Exorcist, Nosferatu with live musical accompaniment, Bram Stoker's Dracula, and more through October 31."
-  },
-  {
-    "id": "momi-nyff-screenings-2026-10-04",
-    "name": "New York Film Festival at MoMI",
-    "dateISO": "2026-10-04T00:00:00",
-    "time": "Various",
-    "venue": "Museum of the Moving Image",
-    "neighborhood": "Astoria, Queens",
-    "price": "Ticketed",
-    "url": "https://movingimage.org/series/new-york-film-festival-2026/",
-    "category": "film_screenings",
-    "source": "Museum of the Moving Image / Film at Lincoln Center",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "Six NYFF selections screened at MoMI including Once Upon a Time in Harlem, Rose, Tender Loving Care, Bitter Christmas, Behemoth!, and The Only Living Pickpocket in New York; October 4–9."
-  },
-  {
-    "id": "momi-momi-after-dark-tours-2026-10-17",
-    "name": "MoMI After Dark Tours",
-    "dateISO": "2026-10-17T00:00:00",
-    "time": "Evening",
-    "venue": "Museum of the Moving Image",
-    "neighborhood": "Astoria, Queens",
-    "price": "Ticketed (limited spots)",
-    "url": "https://movingimage.org/event/momi-after-dark-2026/2026-09-12/",
-    "category": "tours_experiences",
-    "source": "Museum of the Moving Image",
-    "via": [
-      "Museum of the Moving Image"
-    ],
-    "why": "After-hours tours of the Museum of the Moving Image with curated access and programming; limited spots for October 17."
-  },
-  {
-    "id": "mcny-late-night-wednesdays-2026-09-30",
-    "name": "MCNY Late-Night Wednesdays (Free Admission + Pop-Up Bar)",
-    "dateISO": "2026-09-30T17:00:00",
-    "time": "5:00–9:00 PM",
-    "venue": "Museum of the City of New York",
-    "neighborhood": "East Harlem / Museum Mile",
-    "price": "Free",
-    "url": "https://www.mcny.org/free-late-night-wednesdays",
-    "category": "art_exhibitions",
-    "source": "Museum of the City of New York",
-    "via": [
-      "Museum of the City of New York"
-    ],
-    "why": "Weekly free admission to all MCNY exhibitions on Wednesdays until 9 PM, plus a pop-up bar with signature cocktails and snacks; extended through the end of 2026."
-  },
-  {
-    "id": "nyac-schmalberg-fabric-flowers-2026-10-01",
-    "name": "Rare Look Inside M&S Schmalberg: NYC's Last Custom Fabric Flower Factory",
-    "dateISO": "2026-10-01T09:30:00",
-    "time": "9:30 AM",
-    "venue": "M&S Schmalberg Factory",
-    "neighborhood": "Midtown",
-    "price": "Member ticketed",
-    "url": "https://nyadventureclub.com/event/1998888072032",
-    "category": "tours_experiences",
-    "source": "New York Adventure Club",
-    "via": [
-      "New York Adventure Club"
-    ],
-    "why": "Behind-the-scenes tour of M&S Schmalberg, the last remaining custom fabric flower factory in New York City, with a rare look at 100-year-old techniques still in use."
-  },
-  {
-    "id": "nyac-lawn-bowling-central-park-2026-10-02",
-    "name": "Private Lawn Bowling Workshop @ Central Park's New York Lawn Bowling Club",
-    "dateISO": "2026-10-02T15:00:00",
+    "id": "nyhistory-gallery-tour-rev-women-oct20",
+    "name": "Docent-led Gallery Tour: Revolutionary Women",
+    "dateISO": "2026-10-20T15:00:00",
     "time": "3:00 PM",
-    "venue": "New York Lawn Bowling Club, Central Park",
+    "venue": "New-York Historical Society",
     "neighborhood": "Upper West Side",
-    "price": "Member ticketed",
-    "url": "https://nyadventureclub.com/event/1998888074038",
-    "category": "sports_fitness",
-    "source": "New York Adventure Club",
-    "via": [
-      "New York Adventure Club"
-    ],
-    "why": "Private hands-on lawn bowling workshop at one of Central Park's most hidden venues, the New York Lawn Bowling Club, which has operated on the same green since 1926."
-  },
-  {
-    "id": "nyac-upper-west-side-apartments-2026-10-03",
-    "name": "Exploring the Grand Apartments of the Upper West Side",
-    "dateISO": "2026-10-03T11:00:00",
-    "time": "11:00 AM",
-    "venue": "Upper West Side (meeting point TBD)",
-    "neighborhood": "Upper West Side",
-    "price": "Member ticketed",
-    "url": "https://nyadventureclub.com/event/1998888081059",
+    "price": "Included with admission",
+    "url": "https://www.nyhistory.org/programs/gallery-tour-revolutionary-women4?date=2026-10-20",
     "category": "tours_experiences",
-    "source": "New York Adventure Club",
+    "source": "New-York Historical Society",
     "via": [
-      "New York Adventure Club"
+      "New-York Historical Society"
     ],
-    "why": "Walking tour of the Upper West Side's landmark apartment buildings—the Dakota, the Ansonia, the Apthorp—exploring their architecture, eccentric histories, and famous tenants."
+    "why": "Docent-led guided tour of the Revolutionary Women gallery exhibition."
   },
   {
-    "id": "nyac-wooden-water-towers-2026-10-03",
-    "name": "Look Up! The Hidden History of NYC's Wooden Water Towers",
-    "dateISO": "2026-10-03T11:00:00",
-    "time": "11:00 AM",
-    "venue": "Manhattan (multiple neighborhoods)",
-    "neighborhood": "Manhattan",
-    "price": "Member ticketed",
-    "url": "https://nyadventureclub.com/event/1999695596359",
-    "category": "tours_experiences",
-    "source": "New York Adventure Club",
-    "via": [
-      "New York Adventure Club"
-    ],
-    "why": "Walking tour examining the wooden water towers that dot NYC's skyline—why they're still made of wood, how they work, and the craft behind the last family-owned businesses that build them."
-  },
-  {
-    "id": "nyac-gowanus-canal-walk-2026-10-03",
-    "name": "Walking Brooklyn's Gowanus Canal: From Toxic Past to Luxury Living",
-    "dateISO": "2026-10-03T11:00:00",
-    "time": "11:00 AM",
-    "venue": "Gowanus Canal (meeting point TBD)",
-    "neighborhood": "Gowanus",
-    "price": "Member ticketed",
-    "url": "https://nyadventureclub.com/event/1998909480064",
-    "category": "tours_experiences",
-    "source": "New York Adventure Club",
-    "via": [
-      "New York Adventure Club"
-    ],
-    "why": "Walking tour of the Gowanus Canal tracing its history from industrial wasteland Superfund site to luxury condo development, exploring the ongoing environmental remediation."
-  },
-  {
-    "id": "nyac-alexander-hamilton-nyc-2026-10-03",
-    "name": "Alexander Hamilton's New York: Tracing the American Founding Father's Steps",
-    "dateISO": "2026-10-03T11:30:00",
+    "id": "nyhistory-gallery-tour-democracy-matters-oct24",
+    "name": "Docent-led Gallery Tour: Democracy Matters",
+    "dateISO": "2026-10-24T11:30:00",
     "time": "11:30 AM",
-    "venue": "Lower Manhattan (meeting point TBD)",
-    "neighborhood": "Lower Manhattan",
-    "price": "Member ticketed",
-    "url": "https://nyadventureclub.com/event/1999695589338",
+    "venue": "New-York Historical Society",
+    "neighborhood": "Upper West Side",
+    "price": "Included with admission",
+    "url": "https://www.nyhistory.org/programs/gallery-tour-democracy-matters3?date=2026-10-24",
     "category": "tours_experiences",
-    "source": "New York Adventure Club",
+    "source": "New-York Historical Society",
     "via": [
-      "New York Adventure Club"
+      "New-York Historical Society"
     ],
-    "why": "Walking tour through the Lower Manhattan and Washington Heights sites most significant to Alexander Hamilton's life in New York, from his law office to his home to his burial place."
+    "why": "Docent-led guided tour of the Democracy Matters gallery exhibition."
   },
   {
-    "id": "nyac-battle-of-brooklyn-2026-10-03",
-    "name": "Tracing the Battle of Brooklyn: A Revolutionary War Battlefield Walk",
-    "dateISO": "2026-10-03T12:00:00",
-    "time": "12:00 PM",
-    "venue": "Prospect Park / Green-Wood Cemetery (meeting point TBD)",
-    "neighborhood": "Park Slope / Prospect Heights",
-    "price": "Member ticketed",
-    "url": "https://nyadventureclub.com/event/1998888087077",
+    "id": "mas-grand-central-tour",
+    "name": "Grand Central Terminal In-Person Tour",
+    "dateISO": "2026-10-09T11:00:00",
+    "time": "multiple dates & times",
+    "venue": "Grand Central Terminal",
+    "neighborhood": "Midtown East",
+    "price": "Members discounted",
+    "url": "https://www.mas.org/tours",
     "category": "tours_experiences",
-    "source": "New York Adventure Club",
+    "source": "Municipal Art Society",
     "via": [
-      "New York Adventure Club"
+      "Municipal Art Society"
     ],
-    "why": "Walking tour of the site of the largest battle of the American Revolutionary War, tracing troop movements and key locations through what is now Prospect Park and Green-Wood Cemetery."
+    "why": "MAS docent-led architectural and historical tour of Grand Central Terminal, mostly indoors."
   },
   {
-    "id": "nyac-park-slope-mansions-2026-10-04",
-    "name": "Exploring the Grand Mansions & Hidden Histories of Park Slope",
-    "dateISO": "2026-10-04T12:00:00",
-    "time": "12:00 PM",
-    "venue": "Park Slope (meeting point TBD)",
-    "neighborhood": "Park Slope",
-    "price": "Member ticketed",
-    "url": "https://nyadventureclub.com/event/1998888062002",
-    "category": "tours_experiences",
-    "source": "New York Adventure Club",
-    "via": [
-      "New York Adventure Club"
-    ],
-    "why": "Walking tour of Park Slope's Gilded Age mansions and brownstones, uncovering the neighborhood's history as one of the wealthiest districts in 19th-century America."
-  },
-  {
-    "id": "nyac-floral-district-tour-2026-10-09",
-    "name": "The Secret World of Flowers: Behind-the-Scenes NYC Floral District Tour",
-    "dateISO": "2026-10-09T09:30:00",
-    "time": "9:30 AM",
-    "venue": "NYC Floral District, Chelsea",
-    "neighborhood": "Chelsea",
-    "price": "Member ticketed",
-    "url": "https://nyadventureclub.com/event/2001077222841",
-    "category": "tours_experiences",
-    "source": "New York Adventure Club",
-    "via": [
-      "New York Adventure Club"
-    ],
-    "why": "Behind-the-scenes tour of the NYC flower market district with access to wholesale vendors and insights into how millions of flowers flow through the city's floral industry each week."
-  },
-  {
-    "id": "nyac-abandoned-railway-hike-queensway-2026-10-10",
-    "name": "The Abandoned Railway Urban Hike: Forest Park & the Future QueensWay",
-    "dateISO": "2026-10-10T10:00:00",
-    "time": "10:00 AM",
-    "venue": "Forest Park, Queens",
-    "neighborhood": "Forest Hills / Richmond Hill",
-    "price": "Member ticketed",
-    "url": "https://nyadventureclub.com/event/2000440098184",
-    "category": "tours_experiences",
-    "source": "New York Adventure Club",
-    "via": [
-      "New York Adventure Club"
-    ],
-    "why": "Urban hike along the abandoned Rockaway Beach Branch railway right-of-way through Forest Park, exploring the planned conversion to the QueensWay elevated park."
-  },
-  {
-    "id": "nyac-arthur-avenue-food-crawl-2026-10-10",
-    "name": "The Secret Eats of Arthur Avenue Food Crawl: The Bronx's Little Italy",
-    "dateISO": "2026-10-10T10:45:00",
-    "time": "10:45 AM",
-    "venue": "Arthur Avenue, Bronx",
-    "neighborhood": "Belmont, Bronx",
-    "price": "Member ticketed",
-    "url": "https://www.nyadventureclub.com/event/2000330884523",
-    "category": "tours_experiences",
-    "source": "New York Adventure Club",
-    "via": [
-      "New York Adventure Club"
-    ],
-    "why": "Food crawl through the Bronx's Arthur Avenue, sampling Italian specialties from century-old butchers, bakers, pasta makers, and cheese shops in the city's most authentic Italian marketplace."
-  },
-  {
-    "id": "nyac-east-village-rock-music-2026-10-10",
-    "name": "East Village, Rocks! Exploring the Neighborhood's Rock Music Legacy",
+    "id": "mas-north-williamsburg-oct10",
+    "name": "North Williamsburg In-Person Tour",
     "dateISO": "2026-10-10T11:00:00",
     "time": "11:00 AM",
-    "venue": "East Village (meeting point TBD)",
-    "neighborhood": "East Village",
-    "price": "Member ticketed",
-    "url": "https://www.nyadventureclub.com/event/2000330892547",
+    "venue": "North Williamsburg",
+    "neighborhood": "Williamsburg",
+    "price": "Members discounted",
+    "url": "https://www.mas.org/events/north-williamsburg/",
     "category": "tours_experiences",
-    "source": "New York Adventure Club",
+    "source": "Municipal Art Society",
     "via": [
-      "New York Adventure Club"
+      "Municipal Art Society"
     ],
-    "why": "Walking tour of East Village sites from the heyday of underground and alternative rock: CBGB's former location, the Velvet Underground's apartment, the Fillmore East, and more."
+    "why": "MAS guided architectural and neighborhood walking tour of North Williamsburg with guide Zack Rhodes."
   },
   {
-    "id": "nyac-city-island-tour-2026-10-10",
-    "name": "Exploring the Seaside Village of City Island",
-    "dateISO": "2026-10-10T13:00:00",
-    "time": "1:00 PM",
-    "venue": "City Island, Bronx",
-    "neighborhood": "City Island, Bronx",
-    "price": "Member ticketed",
-    "url": "https://www.nyadventureclub.com/event/2000330899568",
-    "category": "tours_experiences",
-    "source": "New York Adventure Club",
-    "via": [
-      "New York Adventure Club"
-    ],
-    "why": "Guided tour of City Island, the Bronx's overlooked nautical village that feels like a small New England fishing town, with stops at its maritime history, boatyards, and seafood spots."
-  },
-  {
-    "id": "nyac-andy-warhol-upper-east-side-2026-10-11",
-    "name": "Exploring Andy Warhol & Truman Capote's Upper East Side",
-    "dateISO": "2026-10-11T10:00:00",
-    "time": "10:00 AM",
-    "venue": "Upper East Side (meeting point TBD)",
-    "neighborhood": "Upper East Side",
-    "price": "Member ticketed",
-    "url": "https://www.nyadventureclub.com/event/1996638508527",
-    "category": "tours_experiences",
-    "source": "New York Adventure Club",
-    "via": [
-      "New York Adventure Club"
-    ],
-    "why": "Walking tour following the footsteps of Warhol, Capote, Jackie Onassis, and other luminaries through the Upper East Side's art galleries, townhouses, and cultural landmarks."
-  },
-  {
-    "id": "nyac-east-river-infrastructure-ferry-2026-10-11",
-    "name": "Secrets of the East River: NYC's Hidden Infrastructure by Ferry",
-    "dateISO": "2026-10-11T10:40:00",
-    "time": "10:40 AM",
-    "venue": "East River Ferry (boarding point TBD)",
-    "neighborhood": "Various",
-    "price": "Member ticketed",
-    "url": "https://www.nyadventureclub.com/event/2000335029922",
-    "category": "tours_experiences",
-    "source": "New York Adventure Club",
-    "via": [
-      "New York Adventure Club"
-    ],
-    "why": "Guided ferry tour of the East River's hidden infrastructure—bridges, tunnels, power plants, and waterfronts rarely seen by New Yorkers—with expert commentary from aboard the boat."
-  },
-  {
-    "id": "nyac-greenwich-village-music-history-2026-10-11",
-    "name": "Exploring Greenwich Village's Music History: From Dylan to Springsteen",
+    "id": "mas-soho-cast-iron-oct11",
+    "name": "SoHo Cast Iron Historic District Tour",
     "dateISO": "2026-10-11T11:00:00",
     "time": "11:00 AM",
-    "venue": "Greenwich Village (meeting point TBD)",
-    "neighborhood": "Greenwich Village",
-    "price": "Member ticketed",
-    "url": "https://www.nyadventureclub.com/event/2000330909598",
+    "venue": "SoHo",
+    "neighborhood": "SoHo",
+    "price": "Members discounted",
+    "url": "https://www.mas.org/events/soho-cast-iron-historic-district-4/",
     "category": "tours_experiences",
-    "source": "New York Adventure Club",
+    "source": "Municipal Art Society",
     "via": [
-      "New York Adventure Club"
+      "Municipal Art Society"
     ],
-    "why": "Walking tour through Greenwich Village's folk revival landmarks: the Gaslight Café, Kettle of Fish, MacDougal Street clubs, and the apartments of Bob Dylan, Jimi Hendrix, and other icons."
+    "why": "MAS guided tour of SoHo's cast iron architecture with architectural historian Anthony W. Robins."
   },
   {
-    "id": "nyac-the-players-club-tour-2026-10-16",
-    "name": "Inside The Players with a Rare Look Inside Edwin Booth's Untouched Bedroom",
-    "dateISO": "2026-10-16T14:00:00",
-    "time": "2:00 PM",
-    "venue": "The Players Club, Gramercy Park",
-    "neighborhood": "Gramercy",
-    "price": "Member ticketed",
-    "url": "https://nyadventureclub.com/event/2001186243926",
-    "category": "tours_experiences",
-    "source": "New York Adventure Club",
-    "via": [
-      "New York Adventure Club"
-    ],
-    "why": "Private tour of The Players, the landmark Gramercy Park club founded by Edwin Booth (brother of John Wilkes Booth) in 1888, including a rare look inside Booth's preserved bedroom."
-  },
-  {
-    "id": "nyac-national-arts-club-tour-2026-10-17",
-    "name": "Behind-the-Scenes @ The National Arts Club & 1844 Gilded Age Tilden Mansion",
-    "dateISO": "2026-10-17T11:00:00",
-    "time": "11:00 AM",
-    "venue": "National Arts Club, Gramercy Park",
-    "neighborhood": "Gramercy",
-    "price": "Member ticketed",
-    "url": "https://nyadventureclub.com/event/2001184507733",
-    "category": "tours_experiences",
-    "source": "New York Adventure Club",
-    "via": [
-      "New York Adventure Club"
-    ],
-    "why": "Behind-the-scenes tour of the National Arts Club inside the former mansion of Samuel Tilden, the 1876 Democratic presidential candidate—one of Gramercy Park's most stunning Gilded Age buildings."
-  },
-  {
-    "id": "nyac-cathedral-st-john-divine-2026-10-17",
-    "name": "From Crypt to Roof: After-Hours Tour @ The Cathedral of St. John the Divine",
-    "dateISO": "2026-10-17T17:00:00",
-    "time": "5:00 PM",
-    "venue": "Cathedral of St. John the Divine",
-    "neighborhood": "Morningside Heights",
-    "price": "Member ticketed",
-    "url": "https://nyadventureclub.com/event/2001184502718",
-    "category": "tours_experiences",
-    "source": "New York Adventure Club",
-    "via": [
-      "New York Adventure Club"
-    ],
-    "why": "After-hours private tour of the Cathedral of St. John the Divine—the world's largest cathedral—from its crypt to its roof, with access to areas closed to the public."
-  },
-  {
-    "id": "nyac-dutch-lower-manhattan-2026-10-18",
-    "name": "Exploring Dutch Lower Manhattan: From New Amsterdam to New York City",
-    "dateISO": "2026-10-18T11:00:00",
-    "time": "11:00 AM",
-    "venue": "Lower Manhattan (meeting point TBD)",
-    "neighborhood": "Lower Manhattan",
-    "price": "Member ticketed",
-    "url": "https://nyadventureclub.com/event/2001184533811",
-    "category": "tours_experiences",
-    "source": "New York Adventure Club",
-    "via": [
-      "New York Adventure Club"
-    ],
-    "why": "Walking tour of Lower Manhattan's Dutch-era sites: the original city wall (now Wall Street), the windmills, the first church, and the layers of history buried beneath modern streets."
-  },
-  {
-    "id": "nyac-medieval-armored-combat-2026-10-24",
-    "name": "The NYC Medieval Armored Combat Experience",
-    "dateISO": "2026-10-24T14:00:00",
-    "time": "2:00 PM",
-    "venue": "NYC (location TBD)",
-    "neighborhood": "New York",
-    "price": "Member ticketed",
-    "url": "https://nyadventureclub.com/event/1409032186199",
-    "category": "sports_fitness",
-    "source": "New York Adventure Club",
-    "via": [
-      "New York Adventure Club"
-    ],
-    "why": "Hands-on introduction to full-contact medieval armored combat: suit up in authentic period armor and learn the real techniques of sword fighting used by knights."
-  },
-  {
-    "id": "pioneer-works-supper-club-oct6-2026-10-06",
-    "name": "Supper Club with Pierce Abernathy: Ocean-Inspired Dinner + Short Film",
-    "dateISO": "2026-10-06T18:00:00",
-    "time": "6:00–10:00 PM",
-    "venue": "Pioneer Works",
-    "neighborhood": "Red Hook, Brooklyn",
-    "price": "Ticketed",
-    "url": "https://pioneerworks.org/programs/supper-club-with-pierce-abernathy",
+    "id": "ohny-launch-party-oct15",
+    "name": "OHNY Weekend Launch Party at the Woolworth Building",
+    "dateISO": "2026-10-15T18:00:00",
+    "time": "6:00–9:00 PM",
+    "venue": "The Woolworth Building, 233 Broadway (26th Floor)",
+    "neighborhood": "Tribeca",
+    "price": "$150 Explorer / $350 Adventurer",
+    "url": "https://ohny.org/festival/lineup",
     "category": "festivals_parties",
-    "source": "Pioneer Works",
+    "source": "Open House New York",
     "via": [
-      "Pioneer Works"
+      "Open House New York"
     ],
-    "why": "Chef and slow-food advocate Pierce Abernathy hosts an intimate dinner centered on oceanic ingredients, paired with a screening of his short film about alternative seafood and farming solutions across NYC."
+    "why": "OHNY Weekend's official kickoff party on the 26th floor of the Woolworth Building, with music, bites from Momofuku and Russ & Daughters, and a live stone carving demo."
   },
   {
-    "id": "pioneer-works-second-sundays-oct-2026-10-11",
-    "name": "Second Sundays at Pioneer Works: Cuttlefish, Sugar Kelp & Marlon James",
-    "dateISO": "2026-10-11T12:00:00",
-    "time": "12:00–6:00 PM",
-    "venue": "Pioneer Works",
-    "neighborhood": "Red Hook, Brooklyn",
-    "price": "Free RSVP",
-    "url": "https://pioneerworks.org/programs/second-sundays-october-2026",
-    "category": "festivals_parties",
-    "source": "Pioneer Works",
-    "via": [
-      "Pioneer Works"
-    ],
-    "why": "Monthly open house featuring live dwarf cuttlefish, community science with Seaweed City, Jean Painlevé's 1967 short The Love Life of the Octopus, open studios, and a launch event for Marlon James' new novel with a live set from Ragga NYC's Neon Christina."
-  },
-  {
-    "id": "pioneer-works-scientific-controversies-octopus-2026-10-13",
-    "name": "Scientific Controversies No. 37: Octopus Umwelt",
-    "dateISO": "2026-10-13T20:00:00",
-    "time": "8:00 PM",
-    "venue": "Pioneer Works",
-    "neighborhood": "Red Hook, Brooklyn",
-    "price": "Free RSVP",
-    "url": "https://pioneerworks.org/programs/scientific-controversies-octopus-umwelt",
-    "category": "talks_lectures",
-    "source": "Pioneer Works",
-    "via": [
-      "Pioneer Works"
-    ],
-    "why": "Janna Levin hosts comparative psychologist Dr. Alex Schnell and evolutionary biologist Dr. Caroline Albertin in conversation about what octopuses can teach us about consciousness, evolution, and the nature of intelligence."
-  },
-  {
-    "id": "brooklyn-museum-fall-fete-2026-10-01",
-    "name": "Brooklyn Museum Fall Fête 2026",
-    "dateISO": "2026-10-01T20:00:00",
-    "time": "8:00–11:00 PM",
-    "venue": "Brooklyn Museum",
-    "neighborhood": "Crown Heights, Brooklyn",
-    "price": "Ticketed",
-    "url": "https://www.brooklynmuseum.org/exhibitions/fall_fete_2026",
-    "category": "festivals_parties",
-    "source": "Brooklyn Museum",
-    "via": [
-      "Brooklyn Museum"
-    ],
-    "why": "After-hours celebration of the opening season: performances by Otaku Choir, DJ Jon Ray, Acky Bright, Shia Ho, Angel Au, and wev!, hosted by Miss Ma'am She, plus late-night gallery access to new exhibitions including Cézanne to Modigliani, Art of Manga, and Hopi Kachina Dolls."
-  },
-  {
-    "id": "brooklyn-museum-art-of-manga-2026-10-03",
-    "name": "Art of Manga (Opening)",
-    "dateISO": "2026-10-03T00:00:00",
-    "time": "Museum hours",
-    "venue": "Brooklyn Museum",
-    "neighborhood": "Crown Heights, Brooklyn",
-    "price": "Ticketed",
-    "url": "https://www.brooklynmuseum.org/exhibitions/art_of_manga",
-    "category": "art_exhibitions",
-    "source": "Brooklyn Museum",
-    "via": [
-      "Brooklyn Museum"
-    ],
-    "why": "Major survey of manga as an art form, opening October 3 and running through January 31, 2027—featuring works from Rumiko Takahashi, Jirō Taniguchi, Tetsuya Chiba, Hirohiko Araki, and dozens more."
-  },
-  {
-    "id": "ohny-weekend-2026-10-16",
-    "name": "Open House New York Weekend 2026",
-    "dateISO": "2026-10-16T00:00:00",
-    "time": "Varies by site",
-    "venue": "Citywide (300+ sites, all 5 boroughs)",
+    "id": "ohny-weekend-oct16-18",
+    "name": "OHNY Weekend 2026",
+    "dateISO": "2026-10-16T10:00:00",
+    "time": "Oct 16–18",
+    "venue": "Citywide (300+ drop-in destinations)",
     "neighborhood": "All boroughs",
-    "price": "Free drop-in at 158+ sites; $7 ticketed tours (release Fri Oct 2 noon)",
+    "price": "Free (most); some ticketed at $7",
     "url": "https://ohny.org/festival/lineup",
     "category": "tours_experiences",
     "source": "Open House New York",
     "via": [
       "Open House New York"
     ],
-    "why": "Annual architecture and urban exploration festival unlocking 300+ sites across NYC—archives, artist studios, manufacturing spaces, landmarks—many drop-in and free; October 16–18, 2026."
+    "why": "Annual citywide open architecture festival giving access to 300+ buildings and spaces across all five boroughs, Oct 16–18."
   },
   {
-    "id": "ohny-port-infrastructure-boat-tour-2026-10-18",
-    "name": "OHNY Weekend: Port Infrastructure Boat Tour",
+    "id": "ohny-port-infrastructure-boat-tour-oct18",
+    "name": "OHNY Port Infrastructure Boat Tour",
     "dateISO": "2026-10-18T15:20:00",
     "time": "3:20–6:00 PM",
-    "venue": "Pier 83, Midtown",
+    "venue": "Pier 83, West 42nd Street",
     "neighborhood": "Midtown West",
-    "price": "$80 general / $65 OHNY members",
-    "url": "https://ohny.org/programs/port-infrastructure-boat-tour-2026",
+    "price": "$80 general / $65 OHNY members / $25 children",
+    "url": "https://ohny.org/festival/lineup",
     "category": "tours_experiences",
     "source": "Open House New York",
     "via": [
       "Open House New York"
     ],
-    "why": "Port Director Beth Rooney leads an up-close tour of New York Harbor's massive container ships and gantry cranes, with expert narration about the logistics of one of the world's busiest ports."
+    "why": "Guided boat tour during OHNY Weekend exploring New York's working port and maritime infrastructure; departs Pier 83 Midtown."
   },
   {
-    "id": "bpl-university-open-air-oct-2026-10-01",
-    "name": "University Open Air at Prospect Park Boathouse",
-    "dateISO": "2026-10-01T00:00:00",
-    "time": "Various",
-    "venue": "Prospect Park Boathouse",
-    "neighborhood": "Park Slope / Prospect Park",
-    "price": "Free",
-    "url": "https://www.bklynlibrary.org/calendar/university-open-air-2026",
-    "category": "talks_lectures",
-    "source": "Brooklyn Public Library",
+    "id": "nybg-dia-de-los-muertos-2026",
+    "name": "Día de los Muertos at NYBG",
+    "dateISO": "2026-10-06T10:00:00",
+    "time": "varies (weekends: music and crafts; Nov 1: parade)",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "Bronx",
+    "price": "Included with garden admission",
+    "url": "https://e.nybg.org/c/AQjDnxYQxNUPGIbm65UBIIzG5wIo4oTIBOyqg9r5Cch9WrnpEpMJYBznig9X1k8KQy6x3_9O5-86",
+    "category": "festivals_parties",
+    "source": "New York Botanical Garden",
     "via": [
-      "Brooklyn Public Library"
+      "NYBG"
     ],
-    "why": "Weekend of free outdoor classes covering Tibetan yoga, food preservation, art, free will, AI, ornithology, and more; October 1, 3, and 4 at Prospect Park Boathouse."
+    "why": "Día de los Muertos celebration through Nov 2 with calaveras, a Catrina sculpture, community ofrenda, weekend music and crafts, and a parade on Nov 1."
   },
   {
-    "id": "bpl-jayz-in-8-screening-2026-10-02",
-    "name": "JAY-Z IN 8 — HBO Documentary Screening (Episodes 5 & 6)",
-    "dateISO": "2026-10-02T19:00:00",
-    "time": "7:00 PM",
-    "venue": "Brooklyn Public Library, Central Library",
-    "neighborhood": "Park Slope / Prospect Heights",
-    "price": "Free (registration encouraged)",
-    "url": "https://www.bklynlibrary.org/calendar/jayz-in-8-screening-2026",
-    "category": "film_screenings",
-    "source": "Brooklyn Public Library",
-    "via": [
-      "Brooklyn Public Library"
-    ],
-    "why": "Free screening of episodes 5 & 6 of the HBO documentary JAY-Z IN 8—a candid, intimate conversation between JAY-Z and Rick Rubin marking 30 years since 'Reasonable Doubt.'"
-  },
-  {
-    "id": "bpl-on-artistic-freedom-panel-2026-10-06",
-    "name": "On Artistic Freedom: A Panel Discussion (Banned Books Week)",
-    "dateISO": "2026-10-06T18:30:00",
-    "time": "6:30 PM",
-    "venue": "Brooklyn Public Library, Central Library Dweck Center",
-    "neighborhood": "Park Slope / Prospect Heights",
-    "price": "Free",
-    "url": "https://www.bklynlibrary.org/calendar/on-artistic-freedom-panel-2026",
-    "category": "talks_lectures",
-    "source": "Brooklyn Public Library",
-    "via": [
-      "Brooklyn Public Library"
-    ],
-    "why": "Artist and author Christopher Myers, film producer Karin Chien, and publisher Namrata Tripathi (Kokila Books) discuss artistic freedom with Hyperallergic editor Hrag Vartanian—part of Banned Books Week."
-  },
-  {
-    "id": "bpl-uprising-downfall-teach-in-2026-10-10",
-    "name": "UPRISING/DOWNFALL: Repression and Resistance in the Making of Democracy (Teach-In)",
-    "dateISO": "2026-10-10T19:00:00",
-    "time": "7:00–11:00 PM",
-    "venue": "Brooklyn Public Library, Central Library",
-    "neighborhood": "Park Slope / Prospect Heights",
-    "price": "Free",
-    "url": "https://www.bklynlibrary.org/calendar/uprising-downfall-2026",
-    "category": "talks_lectures",
-    "source": "Brooklyn Public Library",
-    "via": [
-      "Brooklyn Public Library"
-    ],
-    "why": "Four-hour teach-in featuring historians, activists, journalists, and authors examining American grassroots organizing—No-No Boys, Young Lords, ACT-UP, SNCC—with live music, performances, and readings from banned books."
-  },
-  {
-    "id": "bpl-nou-film-festival-2026-10-10",
-    "name": "NOU Film Festival at Flatbush Library",
-    "dateISO": "2026-10-10T12:30:00",
-    "time": "12:30 PM",
-    "venue": "Brooklyn Public Library, Flatbush Branch",
-    "neighborhood": "Flatbush",
-    "price": "Free",
-    "url": "https://www.bklynlibrary.org/calendar/nou-film-festival-2026",
-    "category": "film_screenings",
-    "source": "Brooklyn Public Library",
-    "via": [
-      "Brooklyn Public Library"
-    ],
-    "why": "Afternoon of short films exploring migration, displacement, memory, identity, resistance, and belonging—from New York City to the Gambia, Finland, Jamaica, and across the African diaspora."
-  },
-  {
-    "id": "gov-island-traces-of-gounouj-2026-10-03",
-    "name": "Traces of Gounouj (Site-Specific Dance, North American Premiere)",
-    "dateISO": "2026-10-03T12:30:00",
-    "time": "12:30 PM, 2:00 PM, and 3:30 PM",
-    "venue": "Governors Island",
-    "neighborhood": "Governors Island",
-    "price": "Free (RSVP encouraged)",
-    "url": "https://www.govisland.com/things-to-do/events/traces-of-gounouj",
+    "id": "nybg-flower-power-2026",
+    "name": "Flower Power at NYBG",
+    "dateISO": "2026-10-06T10:00:00",
+    "time": "through Oct 18",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "Bronx",
+    "price": "Included with garden admission",
+    "url": "https://e.nybg.org/c/AQjDnxYQxNUPGIbm65UBIIS15QIo4oTIBJsb0jRPcsfCDdxFR6ec7eDZsuk1lq7plcECLsDtHxsX",
     "category": "art_exhibitions",
-    "source": "Governors Island / L'Alliance New York",
+    "source": "New York Botanical Garden",
     "via": [
-      "Governors Island"
+      "NYBG"
     ],
-    "why": "North American premiere of choreographer Léo Lérus' intimate 20-minute duet, performed three times across the afternoon on Governors Island—rooted in the Gwoka tradition of Guadeloupe and exploring intergenerational communication through movement."
+    "why": "Hippie-culture exhibition through Oct 18 with Andy Warhol's Flowers, psychedelic flower displays, and 1960s photography inside the Haupt Conservatory and grounds."
   },
   {
-    "id": "gov-island-holy-ground-oyster-2026-10-11",
-    "name": "Holy Ground: The Oyster (Governors Island)",
-    "dateISO": "2026-10-11T00:00:00",
-    "time": "TBD",
-    "venue": "Governors Island",
-    "neighborhood": "Governors Island",
-    "price": "Free with ferry",
-    "url": "https://www.govisland.com/things-to-do/events/holy-ground-the-oyster",
+    "id": "nybg-farmers-market-oct",
+    "name": "NYBG Farmers Market",
+    "dateISO": "2026-10-07T10:00:00",
+    "time": "Wednesdays 10 AM–2 PM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "Bronx",
+    "price": "Free to enter",
+    "url": "https://e.nybg.org/c/AQjDnxYQxNUPGIbm65UBIIu15QIo4oTIBMq-MZtFB3HeXfr8pg6I4D2zpESvaU0x8dwz7VAIrdjS",
+    "category": "festivals_parties",
+    "source": "New York Botanical Garden",
+    "via": [
+      "NYBG"
+    ],
+    "why": "Weekly outdoor farmers market with fresh produce, baked goods, and artisanal items, every Wednesday through Oct 21."
+  },
+  {
+    "id": "nybg-growing-america-2026",
+    "name": "Growing America Exhibition",
+    "dateISO": "2026-10-06T10:00:00",
+    "time": "through Oct 18",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "Bronx",
+    "price": "Included with garden admission",
+    "url": "https://e.nybg.org/c/AQjDnxYQxNUPGIbm65UBII215QIo4oTIBO1NGHcfbWnyfI05JVaLKUH4IaTd0BCIRN819HrU41J8",
+    "category": "art_exhibitions",
+    "source": "New York Botanical Garden",
+    "via": [
+      "NYBG"
+    ],
+    "why": "Exhibition through Oct 18 exploring 250 years of American history through plants and food, with historical documents and living displays of heritage crops."
+  },
+  {
+    "id": "nybg-landscape-design-lecture-oct13",
+    "name": "Landscape Design Portfolios Lecture Series",
+    "dateISO": "2026-10-13T18:30:00",
+    "time": "6:30 PM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "Bronx",
+    "price": "varies",
+    "url": "https://e.nybg.org/c/AQjDnxYQxNUPGIbm65UBIIqb5wIo4oTIBAeGtwjebmJgUJHUNRv1hfWBVXT63epsTJbqqan071ka",
+    "category": "talks_lectures",
+    "source": "New York Botanical Garden",
+    "via": [
+      "NYBG"
+    ],
+    "why": "Three-part lecture series with renowned landscape architects on honoring the past and building resilience; first lecture Oct 13, then Oct 27 and Nov 10."
+  },
+  {
+    "id": "nybg-5k-fun-run-nov8",
+    "name": "NYBG 5K Fun Run",
+    "dateISO": "2026-11-08T08:00:00",
+    "time": "8:00 AM",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "Bronx",
+    "price": "varies",
+    "url": "https://e.nybg.org/c/AQjDnxYQxNUPGIbm65UBIIm15QIo4oTIBCrGsPsFHULxjzHhHJ5YVqlXYlye65e4aIkLCHF0o40R",
+    "category": "sports_fitness",
+    "source": "New York Botanical Garden",
+    "via": [
+      "NYBG"
+    ],
+    "why": "Annual 5K run through the Botanical Garden's scenic grounds and architecture, supporting biodiversity conservation work."
+  },
+  {
+    "id": "nybg-kiku-oct31",
+    "name": "Kiku: Spotlight on Tradition",
+    "dateISO": "2026-10-31T10:00:00",
+    "time": "Oct 31–Nov 15",
+    "venue": "New York Botanical Garden",
+    "neighborhood": "Bronx",
+    "price": "Included with garden admission",
+    "url": "https://e.nybg.org/c/AQjDnxYQxNUPGIbm65UBIIvF5wIo4oTIBKo6YYQ0tjneeU3mtxD49xfM4Gq1FKqa3MJ0Ut4gOL1k",
+    "category": "art_exhibitions",
+    "source": "New York Botanical Garden",
+    "via": [
+      "NYBG"
+    ],
+    "why": "Display of Japanese chrysanthemums trained over 11 months into elaborate shapes including the ozukuri 'thousand bloom' style; opens Oct 31."
+  },
+  {
+    "id": "momi-handcrafted-horrors-series",
+    "name": "Handcrafted Horrors Film Series",
+    "dateISO": "2026-10-06T13:00:00",
+    "time": "Oct 3–31 (multiple screenings)",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria, Queens",
+    "price": "General admission; members free for some",
+    "url": "https://movingimage.org/series/handcrafted-horrors/",
+    "category": "film_screenings",
+    "source": "Museum of the Moving Image",
+    "via": [
+      "MoMI"
+    ],
+    "why": "Month-long Halloween horror film series celebrating practical effects and creature design: Fantasia, Faust, Nosferatu (with live music), Bram Stoker's Dracula, The Exorcist, and more."
+  },
+  {
+    "id": "momi-internet-walk-oct10",
+    "name": "Internet Walk with Ingrid Burrington",
+    "dateISO": "2026-10-10T13:00:00",
+    "time": "1:00–2:30 PM",
+    "venue": "Astoria (meeting point TBD)",
+    "neighborhood": "Astoria, Queens",
+    "price": "Free with RSVP",
+    "url": "https://movingimage.org/event/internet-walk/",
     "category": "tours_experiences",
+    "source": "Museum of the Moving Image",
+    "via": [
+      "MoMI"
+    ],
+    "why": "Author Ingrid Burrington (Networks of New York) leads a free outdoor walk tracing the physical infrastructure of the internet through Astoria, with a book signing."
+  },
+  {
+    "id": "momi-prince-achmed-35mm-oct10",
+    "name": "The Adventures of Prince Achmed (35mm) — 100th Anniversary",
+    "dateISO": "2026-10-10T13:00:00",
+    "time": "1:00 PM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria, Queens",
+    "price": "General admission; members free",
+    "url": "https://movingimage.org/event/the-adventures-of-prince-achmed/",
+    "category": "film_screenings",
+    "source": "Museum of the Moving Image",
+    "via": [
+      "MoMI"
+    ],
+    "why": "100th anniversary 35mm screening of Lotte Reiniger's 1926 feature-length silhouette-animation masterpiece, with live musical accompaniment and a pre-show lecture."
+  },
+  {
+    "id": "momi-in-the-mouth-of-madness-oct10",
+    "name": "In the Mouth of Madness (35mm)",
+    "dateISO": "2026-10-10T15:30:00",
+    "time": "3:30 PM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria, Queens",
+    "price": "General admission; members free",
+    "url": "https://movingimage.org/event/in-the-mouth-of-madness/",
+    "category": "film_screenings",
+    "source": "Museum of the Moving Image",
+    "via": [
+      "MoMI"
+    ],
+    "why": "John Carpenter's Lovecraftian meta-horror starring Sam Neill screens in 35mm as part of Handcrafted Horrors."
+  },
+  {
+    "id": "momi-two-films-maudit-hoberman-oct11",
+    "name": "Two Films Maudit with J. Hoberman: Southland Tales + Peeping Tom",
+    "dateISO": "2026-10-11T13:00:00",
+    "time": "Oct 11 (two screenings)",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria, Queens",
+    "price": "General admission; members free",
+    "url": "https://movingimage.org/series/two-films-maudit-with-j-hoberman/",
+    "category": "film_screenings",
+    "source": "Museum of the Moving Image",
+    "via": [
+      "MoMI"
+    ],
+    "why": "Critic J. Hoberman presents Richard Kelly's Southland Tales (35mm) and Michael Powell's Peeping Tom—two films loathed on release and now reappraised—with book signing."
+  },
+  {
+    "id": "momi-muppets-tonight-oct12",
+    "name": "Muppets Tonight: 30th Anniversary Panel & Tribute to Arthur Novell",
+    "dateISO": "2026-10-12T13:00:00",
+    "time": "1:00 PM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria, Queens",
+    "price": "General admission; members free",
+    "url": "https://movingimage.org/event/muppets-tonight/",
+    "category": "talks_lectures",
+    "source": "Museum of the Moving Image",
+    "via": [
+      "MoMI"
+    ],
+    "why": "Dave Goelz, Bill Barretta, and Leslie Carrara-Rudolph reunite to celebrate Muppets Tonight's 30th anniversary and pay tribute to its creator Arthur Novell."
+  },
+  {
+    "id": "momi-yoga-room-oct",
+    "name": "Fall Yoga at MoMI with The Yoga Room",
+    "dateISO": "2026-10-11T11:15:00",
+    "time": "Sundays Oct 11 and 18, 11:15 AM",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria, Queens",
+    "price": "Free with RSVP",
+    "url": "https://movingimage.org/event/fall-yoga-with-the-yoga-room/2026-10-04/",
+    "category": "sports_fitness",
+    "source": "Museum of the Moving Image",
+    "via": [
+      "MoMI"
+    ],
+    "why": "Free one-hour yoga class inside the museum, followed by café time and optional gallery visits; offered Oct 11 and 18."
+  },
+  {
+    "id": "momi-exorcist-screening-oct24",
+    "name": "The Exorcist Screening",
+    "dateISO": "2026-10-24T19:00:00",
+    "time": "evening",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria, Queens",
+    "price": "General admission",
+    "url": "https://movingimage.org/event/the-exorcist/2026-10-24/",
+    "category": "film_screenings",
+    "source": "Museum of the Moving Image",
+    "via": [
+      "MoMI"
+    ],
+    "why": "Screening of the 1973 William Friedkin horror classic, in conjunction with the Horrible Sites makeup/production design exhibit in Behind the Screen."
+  },
+  {
+    "id": "momi-merch-meet-nov22",
+    "name": "MoMI Merch Meet — Artisan Market",
+    "dateISO": "2026-11-22T11:00:00",
+    "time": "Saturday, Nov 22",
+    "venue": "Museum of the Moving Image",
+    "neighborhood": "Astoria, Queens",
+    "price": "Free to attend",
+    "url": "https://movingimage.org/event/momi-merch-meet/",
+    "category": "markets_fairs",
+    "source": "Museum of the Moving Image",
+    "via": [
+      "MoMI"
+    ],
+    "why": "First-ever MoMI artisan market featuring local makers selling art, hats, shirts, buttons, jewelry, toys, zines, comics, and housewares celebrating the moving image."
+  },
+  {
+    "id": "govisland-pumpkin-point-oct24-25",
+    "name": "Pumpkin Point at Governors Island",
+    "dateISO": "2026-10-24T10:00:00",
+    "time": "Oct 24–25, 10 AM–5 PM",
+    "venue": "Governors Island (Nolan Park)",
+    "neighborhood": "Governors Island",
+    "price": "Free; ferry $5 round-trip (free before 11 AM on weekends)",
+    "url": "http://govisland.org/pumpkin-point",
+    "category": "festivals_parties",
     "source": "Governors Island",
     "via": [
       "Governors Island"
     ],
-    "why": "Program exploring the oyster's central role in New York Harbor's ecology and history, as part of Governors Island's ongoing environmental programming."
+    "why": "Governors Island's annual pumpkin patch in historic Nolan Park with thousands of pumpkins to pick, trick-or-treating, ghost tours, folk music by Porch Stomp, pumpkin painting, and food vendors."
   },
   {
-    "id": "gov-island-bebop-poru-oct17-2026-10-17",
-    "name": "BEBOP PORÚ at Six Coasts (Governors Island)",
-    "dateISO": "2026-10-17T00:00:00",
-    "time": "TBD",
-    "venue": "Six Coasts, Governors Island",
+    "id": "govisland-holy-ground-oyster-oct11",
+    "name": "Holy Ground: The Oyster",
+    "dateISO": "2026-10-11T11:00:00",
+    "time": "Oct 11",
+    "venue": "Governors Island",
     "neighborhood": "Governors Island",
-    "price": "Ticketed",
+    "price": "Free; ferry $5 round-trip",
+    "url": "https://www.govisland.com/things-to-do/events/holy-ground-the-oyster",
+    "category": "talks_lectures",
+    "source": "Governors Island",
+    "via": [
+      "Governors Island"
+    ],
+    "why": "Event exploring the history and ecology of oysters in New York Harbor, in collaboration with the Billion Oyster Project."
+  },
+  {
+    "id": "govisland-bebop-poru-oct17",
+    "name": "Bebop Porú at Six Coasts",
+    "dateISO": "2026-10-17T20:00:00",
+    "time": "Oct 17",
+    "venue": "Six Coasts by Smorgasburg, Governors Island",
+    "neighborhood": "Governors Island",
+    "price": "varies (see RA)",
     "url": "https://ra.co/events/2529696",
     "category": "music_nightlife",
     "source": "Governors Island",
     "via": [
       "Governors Island"
     ],
-    "why": "Live music event at Six Coasts on Governors Island—one of NYC's most unusual venues, a former officer's club with harbor views."
+    "why": "Evening dance music event at Six Coasts on Governors Island."
   },
   {
-    "id": "gov-island-pumpkin-point-2026-10-17",
-    "name": "Pumpkin Point at Governors Island",
-    "dateISO": "2026-10-17T00:00:00",
-    "time": "TBD",
+    "id": "govisland-cake-picnic-5k-oct17",
+    "name": "Cake Picnic 5K Run",
+    "dateISO": "2026-10-17T09:00:00",
+    "time": "Oct 17",
     "venue": "Governors Island",
     "neighborhood": "Governors Island",
-    "price": "Free with ferry ($5 round trip)",
-    "url": "https://www.govisland.com/things-to-do/events/pumpkin-point-2026",
+    "price": "varies",
+    "url": "https://www.govisland.com/things-to-do/events/cake-picnic-5k",
+    "category": "sports_fitness",
+    "source": "Governors Island",
+    "via": [
+      "Governors Island"
+    ],
+    "why": "5K run on Governors Island capped off with a picnic and cake."
+  },
+  {
+    "id": "govisland-flagpole-pinata-party-oct17",
+    "name": "Flagpole Piñata Party",
+    "dateISO": "2026-10-17T12:00:00",
+    "time": "Oct 17",
+    "venue": "Governors Island",
+    "neighborhood": "Governors Island",
+    "price": "Free; ferry $5 round-trip",
+    "url": "https://www.govisland.com/things-to-do/events/flagpole-pi%C3%B1ata-party",
     "category": "festivals_parties",
     "source": "Governors Island",
     "via": [
       "Governors Island"
     ],
-    "why": "Annual fall harvest celebration on Governors Island with pumpkins, autumnal activities, and seasonal programming."
+    "why": "Giant piñata party at Governors Island's historic flagpole."
   },
   {
-    "id": "tenement-museum-high-holidays-tour-oct4-2026-10-04",
-    "name": "High Holidays in the Tenements: Tour + Culinary Tasting",
-    "dateISO": "2026-10-04T00:00:00",
-    "time": "Various",
-    "venue": "Tenement Museum",
-    "neighborhood": "Lower East Side",
-    "price": "Ticketed",
-    "url": "https://www.tenement.org/programs/high-holidays-in-the-tenements/",
-    "category": "tours_experiences",
-    "source": "Tenement Museum",
+    "id": "cbh-reimagining-filipino-brooklyn-oct15",
+    "name": "Reimagining Filipino Brooklyn",
+    "dateISO": "2026-10-15T18:30:00",
+    "time": "6:30 PM",
+    "venue": "Center for Brooklyn History, 128 Pierrepont Street",
+    "neighborhood": "Brooklyn Heights",
+    "price": "Free (RSVP)",
+    "url": "https://click.bklynlibraryinfo.org/?qs=ABB7InYiOjEsImQiOjUwMjF9AAcAAAAAB4aYykvSzJUBmKAE3juDDF_HfUBZLghg16IHOAutHu3TGo7r1QxNsHkhnJE9AdtRt1bk4B5vMEIiRqBksGovmfyajNg3gskatAan-Yes",
+    "category": "talks_lectures",
+    "source": "Center for Brooklyn History",
     "via": [
-      "Tenement Museum"
+      "Center for Brooklyn History / BPL"
     ],
-    "why": "Tour of the Levine and Rogarshevsky family tenement apartments exploring how Jewish immigrants transformed Lower East Side storefronts and apartments into improvised synagogues for Rosh Hashanah and Yom Kippur—followed by a culinary presentation and tasting with culinary historian Sarah Lohman."
+    "why": "Talk and short film screening exploring the now-erased Filipino waterfront community near the Brooklyn Navy Yard in the 1940s, with historian Michael Salgarolo and filmmaker Claro de los Reyes."
   },
   {
-    "id": "tenement-museum-we-the-people-tour-oct13-2026-10-13",
-    "name": "We the People: Democracy in the Tenements (Evening Tour)",
-    "dateISO": "2026-10-13T00:00:00",
-    "time": "Evening",
-    "venue": "Tenement Museum",
-    "neighborhood": "Lower East Side",
-    "price": "Ticketed",
-    "url": "https://www.tenement.org/programs/we-the-people-tours/",
-    "category": "tours_experiences",
-    "source": "Tenement Museum",
+    "id": "cbh-brooklyn-trivia-oct21",
+    "name": "Brooklyn Trivia Night with The Trivia Masters",
+    "dateISO": "2026-10-21T18:30:00",
+    "time": "6:30 PM",
+    "venue": "Center for Brooklyn History, 128 Pierrepont Street",
+    "neighborhood": "Brooklyn Heights",
+    "price": "Free (RSVP)",
+    "url": "https://click.bklynlibraryinfo.org/?qs=ABB7InYiOjEsImQiOjUwMjF9AAcAAAAAB4aYykvUsLD3sCFfwycAtH5es0g3LfkJizer8aJ5i0pZZzB_YPhqNB0NR2U9gCnmlggFUF0Ie2t4VrM0sXtYuT9KrLOyXjGEI6aUa0he",
+    "category": "games_social",
+    "source": "Center for Brooklyn History",
     "via": [
-      "Tenement Museum"
+      "Center for Brooklyn History / BPL"
     ],
-    "why": "Evening tour marking America's 250th birthday by tracing how tenement residents exercised democracy—the 1870 15th Amendment parade, the 1902 Kosher Meat Boycott, the 1974 bilingual education court case, the 1982 Chinatown garment workers' strike—followed by conversation and refreshments; also November 12."
+    "why": "Brooklyn history trivia evening with Chris Kelley and Stuart Post of The Trivia Masters, featuring tough questions, lateral-thinking games, and multimedia; solo attendees welcome."
   },
   {
-    "id": "arch-league-beaux-arts-ball-2026-10-23",
+    "id": "cbh-haunted-brooklyn-oct27",
+    "name": "Haunted Brooklyn: Ghosts, Folklore, and the Stories We Tell",
+    "dateISO": "2026-10-27T18:30:00",
+    "time": "6:30 PM",
+    "venue": "Center for Brooklyn History, 128 Pierrepont Street",
+    "neighborhood": "Brooklyn Heights",
+    "price": "Free (RSVP)",
+    "url": "https://click.bklynlibraryinfo.org/?qs=ABB7InYiOjEsImQiOjUwMjF9AAcAAAAAB4aYykvWp4e9PfFmrUc7ga11895LgkaEgvgO9CMa--lyx1NRKEVOmr2bN6lpGPuuebORLgv8oSZkt-MW-IZDxg8pRqlGs2ls9dgkJE_C",
+    "category": "talks_lectures",
+    "source": "Center for Brooklyn History",
+    "via": [
+      "Center for Brooklyn History / BPL"
+    ],
+    "why": "Panel on Brooklyn ghost lore and the gothic imagination with Andrea Janes (Boroughs of the Dead), horror theorist Leila Taylor, Colin Dickey (Ghostland), and novelist Victor LaValle."
+  },
+  {
+    "id": "cbh-armed-objects-nov4",
+    "name": "Armed Objects: Weapons, Ornamentation, and Museum Stewardship",
+    "dateISO": "2026-11-04T18:30:00",
+    "time": "6:30 PM",
+    "venue": "Center for Brooklyn History, 128 Pierrepont Street",
+    "neighborhood": "Brooklyn Heights",
+    "price": "Free (RSVP)",
+    "url": "https://click.bklynlibraryinfo.org/?qs=ABB7InYiOjEsImQiOjUwMjF9AAcAAAAAB4aYykvZZheAi77G86Tysbu8JoSHL5-WSofbrKzAiYcqRqlKtaA5B8tnqTUFhhSJVIObaZCD_lrGloxTKOhvGQ1b6uayOrtvgwBLPVge",
+    "category": "talks_lectures",
+    "source": "Center for Brooklyn History",
+    "via": [
+      "Center for Brooklyn History / BPL"
+    ],
+    "why": "Panel on the ethics of displaying historic firearms and weapons in museums, with Cooper Hewitt chief curator Michelle Millar Fisher and arms conservator Lola Page."
+  },
+  {
+    "id": "cbh-brooklyn-theater-fire-dec3",
+    "name": "Forgotten History: The Brooklyn Theater Fire of 1876",
+    "dateISO": "2026-12-03T18:30:00",
+    "time": "6:30 PM",
+    "venue": "Center for Brooklyn History, 128 Pierrepont Street",
+    "neighborhood": "Brooklyn Heights",
+    "price": "Free (RSVP)",
+    "url": "https://click.bklynlibraryinfo.org/?qs=ABB7InYiOjEsImQiOjUwMjF9AAcAAAAAB4aYykvOO8v7ItHSfyZhaw7ZOVGSy54PS8rly18nY8nEJW67F2fMKNcKRWZU2tFR743GfmuNgmt_THC8Telht1XiAyMgEsDqD1FtcfB0",
+    "category": "talks_lectures",
+    "source": "Center for Brooklyn History",
+    "via": [
+      "Center for Brooklyn History / BPL"
+    ],
+    "why": "150th anniversary event examining the 1876 Brooklyn Theatre fire (nearly 300 dead) from two angles: Arthur Scinta's research reconstruction and Melanie Gall's perspective on performer Kate Claxton."
+  },
+  {
+    "id": "mcny-auchincloss-prize-colson-whitehead-oct21",
+    "name": "2026 Louis Auchincloss Prize Honoring Colson Whitehead",
+    "dateISO": "2026-10-21T18:30:00",
+    "time": "6:30 PM",
+    "venue": "Museum of the City of New York (MCNY), 1220 Fifth Avenue",
+    "neighborhood": "Harlem / Museum Mile",
+    "price": "$35 general / $25 members",
+    "url": "https://www.mcny.org/event/2026-louis-auchincloss-prize",
+    "category": "talks_lectures",
+    "source": "Museum of the City of New York",
+    "via": [
+      "MCNY"
+    ],
+    "why": "MCNY presents the Louis Auchincloss Prize to two-time Pulitzer Prize–winner Colson Whitehead in conversation with NYT critic Wesley Morris."
+  },
+  {
+    "id": "mcny-halloween-bash-oct31",
+    "name": "Halloween Bash: Ghosts of New York",
+    "dateISO": "2026-10-31T18:00:00",
+    "time": "6:00 PM",
+    "venue": "Museum of the City of New York, 1220 Fifth Avenue",
+    "neighborhood": "Harlem / Museum Mile",
+    "price": "$20 adults & members / $15 seniors & students",
+    "url": "https://www.mcny.org/event/halloween-bash-ghosts-new-york",
+    "category": "festivals_parties",
+    "source": "Museum of the City of New York",
+    "via": [
+      "MCNY"
+    ],
+    "why": "Annual MCNY Halloween Bash with drag performances, costume contest (come as the ghost of a famous New Yorker), DJ Misbehaviour on the South Terrace, and themed cocktails."
+  },
+  {
+    "id": "mcny-free-late-night-wednesdays",
+    "name": "MCNY Free Late-Night Wednesdays",
+    "dateISO": "2026-10-07T17:00:00",
+    "time": "Every Wednesday through 9 PM; pop-up bar 5–9 PM",
+    "venue": "Museum of the City of New York, 1220 Fifth Avenue",
+    "neighborhood": "Harlem / Museum Mile",
+    "price": "Free",
+    "url": "https://www.mcny.org/free-late-night-wednesdays",
+    "category": "art_exhibitions",
+    "source": "Museum of the City of New York",
+    "via": [
+      "MCNY"
+    ],
+    "why": "Free Wednesday evening admission through year-end with extended 9 PM closing and a pop-up bar from 5–9 PM to explore all current exhibitions."
+  },
+  {
+    "id": "stanns-kramer-fauci",
+    "name": "Kramer/Fauci at St. Ann's Warehouse",
+    "dateISO": "2026-10-06T19:30:00",
+    "time": "through Oct 24",
+    "venue": "St. Ann's Warehouse, 45 Water Street",
+    "neighborhood": "DUMBO",
+    "price": "varies",
+    "url": "https://stannswarehouse.org/show/kramer-fauci/",
+    "category": "theater",
+    "source": "Museum of the City of New York",
+    "via": [
+      "MCNY"
+    ],
+    "why": "Daniel Fish directs this staging of the explosive real-life confrontation between playwright-activist Larry Kramer and Dr. Anthony Fauci at the height of the AIDS crisis; through Oct 24."
+  },
+  {
+    "id": "bklyn-museum-art-of-manga",
+    "name": "Art of Manga at Brooklyn Museum",
+    "dateISO": "2026-10-06T11:00:00",
+    "time": "ongoing (opened Oct 3)",
+    "venue": "Brooklyn Museum, 200 Eastern Parkway",
+    "neighborhood": "Prospect Heights",
+    "price": "Included with general admission",
+    "url": "https://e.wordfly.com/click?sid=MjI5M185NzAyXzc1ODAwN182OTQ5&l=7b5b312e-26b1-f111-a840-0050569d9d1d&utm_source=wordfly&utm_medium=email&utm_campaign=ENG--FY27--10%2F3MangaOpenNow(General)&utm_content=version_A&promo=",
+    "category": "art_exhibitions",
+    "source": "Brooklyn Museum",
+    "via": [
+      "Brooklyn Museum"
+    ],
+    "why": "First major manga exhibition in the Americas, featuring work from Inuyasha, JoJo's Bizarre Adventure, Ōoku, ONE PIECE, and more—exploring manga as a serious art form."
+  },
+  {
+    "id": "nyhistory-you-should-be-dancing",
+    "name": "You Should Be Dancing: New York, 1976 and Beyond",
+    "dateISO": "2026-10-06T11:00:00",
+    "time": "Through April 4, 2027",
+    "venue": "New-York Historical Society, 170 Central Park West",
+    "neighborhood": "Upper West Side",
+    "price": "Included with admission",
+    "url": "https://www.nyhistory.org/exhibitions/you-should-be-dancing-new-york-1976-and-beyond",
+    "category": "art_exhibitions",
+    "source": "New-York Historical Society",
+    "via": [
+      "New-York Historical Society"
+    ],
+    "why": "Major exhibition on NYC's 1970s-80s underground music explosion—punk, disco, hip hop—featuring CBGB's awning, Ramones/Blondie/Talking Heads guitars, Grandmaster Flash's turntables, Studio 54 memorabilia, and more."
+  },
+  {
+    "id": "nyhistory-irish-literature-exhibition",
+    "name": "Irish Literature: History & Myth Since 1798",
+    "dateISO": "2026-10-06T11:00:00",
+    "time": "Through January 17, 2027",
+    "venue": "New-York Historical Society, 170 Central Park West",
+    "neighborhood": "Upper West Side",
+    "price": "Included with admission",
+    "url": "https://www.nyhistory.org/exhibitions/irish-literature-history-myth-since-1798",
+    "category": "art_exhibitions",
+    "source": "New-York Historical Society",
+    "via": [
+      "New-York Historical Society"
+    ],
+    "why": "Exhibition tracing the arc of Irish literary culture from the 1798 United Irishmen uprising through the present, with rare manuscripts, first editions, and personal effects."
+  },
+  {
+    "id": "fort-greene-halloween-fest-oct24",
+    "name": "Halloween Fest at Fort Greene Park",
+    "dateISO": "2026-10-24T12:00:00",
+    "time": "12:00–4:00 PM (rain date: Oct 25)",
+    "venue": "Fort Greene Park",
+    "neighborhood": "Fort Greene",
+    "price": "Free",
+    "url": "https://www.fortgreenepark.org",
+    "category": "festivals_parties",
+    "source": "Fort Greene Park Conservancy",
+    "via": [
+      "Fort Greene Park Conservancy"
+    ],
+    "why": "Annual outdoor Halloween fest with costume parade, spooky stories, face painting, haunted music, and games for all ages."
+  },
+  {
+    "id": "fort-greene-black-history-tour-oct17",
+    "name": "Black History & Culture Tour of Fort Greene",
+    "dateISO": "2026-10-17T11:00:00",
+    "time": "11:00 AM–12:30 PM",
+    "venue": "Fort Greene Park (meet at DeKalb Ave/Washington Park corner)",
+    "neighborhood": "Fort Greene",
+    "price": "Free",
+    "url": "https://www.classy.org/event/black-history-and-culture-tour-of-fort-greene/e779990",
+    "category": "tours_experiences",
+    "source": "Fort Greene Park Conservancy",
+    "via": [
+      "Fort Greene Park Conservancy"
+    ],
+    "why": "Guided tour tracing Fort Greene's Black History Makers and Cultural Giants route, led by local historian Suzanne Spellen, from the 1800s to today."
+  },
+  {
+    "id": "fort-greene-artisans-bazaar-oct",
+    "name": "Fort Greene Artisans Bazaar",
+    "dateISO": "2026-10-10T09:00:00",
+    "time": "Every Saturday 9 AM–4 PM",
+    "venue": "Fort Greene Park (DeKalb Ave between Oxford St and Washington Park)",
+    "neighborhood": "Fort Greene",
+    "price": "Free to browse",
+    "url": "https://www.brooklynpop-up.com/market-details/fort-greene-park-artisans-bazaar/r/recJUr0FbK4XTYISB",
+    "category": "markets_fairs",
+    "source": "Fort Greene Park Conservancy",
+    "via": [
+      "Fort Greene Park Conservancy"
+    ],
+    "why": "Weekly Saturday market with 30+ local designers and artisans selling upcycled fashion, handmade jewelry, small-batch apothecary, candles, local food, and more."
+  },
+  {
+    "id": "fort-greene-yoga-oct",
+    "name": "Yoga in the Park with Shala Yoga",
+    "dateISO": "2026-10-10T11:00:00",
+    "time": "Saturdays through Oct 24, 11 AM–12 PM",
+    "venue": "Fort Greene Park (East Panel Lawn)",
+    "neighborhood": "Fort Greene",
+    "price": "Free (no registration)",
+    "url": "https://theshala.com/class-schedule/",
+    "category": "sports_fitness",
+    "source": "Fort Greene Park Conservancy",
+    "via": [
+      "Fort Greene Park Conservancy"
+    ],
+    "why": "Free outdoor vinyasa class at Fort Greene Park every Saturday through Oct 24, all levels welcome; bring your own mat."
+  },
+  {
+    "id": "fort-greene-run-club-oct",
+    "name": "Run Club with Chelsea Piers Fitness at Fort Greene Park",
+    "dateISO": "2026-10-07T18:30:00",
+    "time": "Tuesdays through Nov 3, 6:30–7:30 PM",
+    "venue": "Fort Greene Park (Monument Plaza)",
+    "neighborhood": "Fort Greene",
+    "price": "Free",
+    "url": "https://www.strava.com/clubs/chelseapiersbkrunclub",
+    "category": "sports_fitness",
+    "source": "Fort Greene Park Conservancy",
+    "via": [
+      "Fort Greene Park Conservancy"
+    ],
+    "why": "Weekly 3-5 mile Tuesday run starting at Fort Greene Park's monument, led by Coach Skye Massey; all paces welcome, through Nov 3."
+  },
+  {
+    "id": "fort-greene-prison-ship-martyrs-oct10",
+    "name": "Prison Ship Martyrs Memorial Commemoration",
+    "dateISO": "2026-10-10T12:00:00",
+    "time": "12:00–2:00 PM",
+    "venue": "Fort Greene Park (Monument Plaza)",
+    "neighborhood": "Fort Greene",
+    "price": "Free",
+    "url": "https://www.facebook.com/groups/736312958068719",
+    "category": "talks_lectures",
+    "source": "Fort Greene Park Conservancy",
+    "via": [
+      "Fort Greene Park Conservancy"
+    ],
+    "why": "Solemn wreath-laying ceremony by the Sons of the American Revolution honoring patriots who died on British prison ships during the Revolution, with color guard in period uniforms."
+  },
+  {
+    "id": "bric-jazzfest-oct16-17",
+    "name": "BRIC JazzFest 2026",
+    "dateISO": "2026-10-16T18:00:00",
+    "time": "Oct 16–17, 6 PM–3 AM",
+    "venue": "BRIC House, 647 Fulton Street",
+    "neighborhood": "Fort Greene",
+    "price": "varies",
+    "url": "https://bricartsmedia.org/jazzfest2026/",
+    "category": "music_nightlife",
+    "source": "BRIC",
+    "via": [
+      "Fort Greene Park Conservancy / BRIC"
+    ],
+    "why": "Two-night jazz festival with Arturo O'Farrill and the Afro Latin Jazz Orchestra, Bilal, Takuya Kuroda, Braxton Cook, Mohini Dey, Marcus Gilmore, and after-hours parties."
+  },
+  {
+    "id": "bpl-uprising-downfall-teach-in-oct10",
+    "name": "UPRISING/DOWNFALL: Repression and Resistance in the Making of Democracy",
+    "dateISO": "2026-10-10T19:00:00",
+    "time": "7:00–11:00 PM",
+    "venue": "Brooklyn Public Library Central Branch, 10 Grand Army Plaza",
+    "neighborhood": "Prospect Heights",
+    "price": "Free",
+    "url": "https://click.bklynlibraryinfo.org/?qs=ABB7InYiOjEsImQiOjUwMTh9AAcAAAAAB2JVwbv8x56jtOaHNoR8aWaYP2ilUxNKmT6sFbJFoj7Bn15Njwg_wxncd2pwPREzKOSTc8OdsT0isxmXI-yGxoFf39V-4SHxTlrGbxI",
+    "category": "talks_lectures",
+    "source": "Brooklyn Public Library",
+    "via": [
+      "Brooklyn Public Library"
+    ],
+    "why": "Late-night teach-in with live DJ set from DJ Kofta, keynote by physicist Karmela Padavic-Callaghan and Living Colour guitarist Vernon Reid, plus speakers on democratic movements, civil rights, and resistance."
+  },
+  {
+    "id": "bbg-fall-plant-sale-oct15",
+    "name": "BBG Fall Plant Sale",
+    "dateISO": "2026-10-15T14:00:00",
+    "time": "2:00–7:00 PM",
+    "venue": "Brooklyn Botanic Garden, Steinberg Visitor Center (990 Washington Ave)",
+    "neighborhood": "Prospect Heights",
+    "price": "Free admission for shoppers",
+    "url": "https://enews.bbg.org/q/6Ypqjx0zZLPO2Q0XLoRaCSgpTiV108UhTREhZcOJc2FyYWguZmVsbGF5K255Y2V2ZW50c0BnbWFpbC5jb23DiAG_pm_jjpfbXYDsCCS0NI4BP-ZQ",
+    "category": "markets_fairs",
+    "source": "Brooklyn Botanic Garden",
+    "via": [
+      "BBG"
+    ],
+    "why": "Annual BBG plant sale with native trees and shrubs, unusual orchids, tropicals, succulents, and uncommon indoor and outdoor bulbs; garden admission free for shoppers."
+  },
+  {
+    "id": "archleague-beaux-arts-ball-oct23",
     "name": "Beaux Arts Ball 2026: Home Sweet Home",
     "dateISO": "2026-10-23T21:30:00",
     "time": "9:30 PM–1:00 AM",
-    "venue": "Andrew Freedman Home",
-    "neighborhood": "Grand Concourse, Bronx",
-    "price": "Ticketed",
+    "venue": "Andrew Freedman Home, 1125 Grand Concourse, The Bronx",
+    "neighborhood": "Bronx",
+    "price": "Advance tickets required (see website)",
     "url": "https://archleague.org/event/beaux-arts-ball-2026-home-sweet-home/",
     "category": "festivals_parties",
     "source": "Architectural League of New York",
     "via": [
       "Architectural League of New York"
     ],
-    "why": "Annual party of the NY design community held at the historic 1924 Andrew Freedman Home on the Grand Concourse—a mansion built for formerly wealthy residents fallen on hard times—featuring an original installation by TAKK, DJs Bojaq and Madre Guia, and a dinner option."
+    "why": "Annual Arch League costume ball at the beaux-arts Andrew Freedman Home in the Bronx, themed 'Home Sweet Home,' with DJs Bojaq and Madre Guia and a site-specific installation by TAKK."
   },
   {
-    "id": "brooklyn-craft-co-yarn-crawl-2026-10-01",
-    "name": "NYC Yarn Crawl at Brooklyn Craft Company (Free Drop-In Workshops)",
-    "dateISO": "2026-10-01T11:00:00",
-    "time": "Oct 1–4; workshops Fri–Sun",
-    "venue": "Brooklyn Craft Company (Greenpoint + Lower Manhattan pop-up)",
-    "neighborhood": "Greenpoint",
-    "price": "Free drop-in workshops",
-    "url": "https://www.brooklyncraftcompany.com/pages/nyc-yarn-crawl-2026",
-    "category": "workshops_classes",
-    "source": "Brooklyn Craft Company",
+    "id": "tenement-democracy-tours-oct13",
+    "name": "Tenement Museum: Democracy Evening Tours",
+    "dateISO": "2026-10-13T18:00:00",
+    "time": "Evening (tickets required; also Nov 12)",
+    "venue": "Tenement Museum, 103 Orchard Street",
+    "neighborhood": "Lower East Side",
+    "price": "Ticketed (see website)",
+    "url": "https://www.tenement.org",
+    "category": "tours_experiences",
+    "source": "Tenement Museum",
     "via": [
-      "Brooklyn Craft Company"
+      "Tenement Museum"
     ],
-    "why": "Both NYC Yarn Crawl locations offer free drop-in craft workshops (Scrappy Fabric Collage in Greenpoint; DIY Button Pins at the Lower Manhattan pop-up), plus 10% off all yarn Oct 1–4."
+    "why": "Evening tours with refreshments at the Tenement Museum tracing how ordinary New Yorkers advanced American democracy—from the 1870 15th Amendment parade to the 1974 Aspira bilingual education case and 1982 garment strikes; next dates Oct 13 and Nov 12."
   },
   {
-    "id": "lesp-woodcut-printing-oct4-2026-10-04",
-    "name": "Intro to Woodcut Printing with Anat Keinan",
-    "dateISO": "2026-10-04T12:00:00",
-    "time": "12:00–4:00 PM (2 Sundays: Oct 4 & 11)",
-    "venue": "Lower East Side Printshop",
-    "neighborhood": "Midtown West",
-    "price": "$275 (materials included)",
-    "url": "https://www.printshop.org/classes/intro-to-woodcut-printing",
-    "category": "workshops_classes",
-    "source": "Lower East Side Printshop",
-    "via": [
-      "Lower East Side Printshop"
-    ],
-    "why": "Two-session introduction to relief printing on paper: image processing, ink mixing, block carving, and single and multi-layered printing in wood block and linoleum."
-  },
-  {
-    "id": "lesp-water-monotype-oct24-2026-10-24",
-    "name": "Water-Based Monotype Weekend Workshop",
-    "dateISO": "2026-10-24T12:00:00",
-    "time": "12:00–4:00 PM (2-day: Oct 24–25)",
-    "venue": "Lower East Side Printshop",
-    "neighborhood": "Midtown West",
-    "price": "$220 (materials included)",
-    "url": "https://www.printshop.org/classes/water-based-monotype-workshop",
-    "category": "workshops_classes",
-    "source": "Lower East Side Printshop",
-    "via": [
-      "Lower East Side Printshop"
-    ],
-    "why": "Weekend workshop in monotype printmaking—combining painterly gestures with layering on-plate elements, stencils, and cut paper drawings using non-toxic water-soluble inks. No prior experience needed."
-  },
-  {
-    "id": "bbg-ancestral-ecologies-tour-oct8-2026-10-08",
-    "name": "Ancestral Ecologies: Archtober Sunset Tour",
+    "id": "bbg-ancestral-ecologies-tour-oct8",
+    "name": "Ancestral Ecologies Archtober Sunset Tour",
     "dateISO": "2026-10-08T17:00:00",
     "time": "5:00–6:00 PM",
-    "venue": "Brooklyn Botanic Garden",
-    "neighborhood": "Crown Heights, Brooklyn",
-    "price": "Included with Garden admission",
-    "url": "https://www.bbg.org/visit/event/ancestral_ecologies_archtober_sunset_tour",
+    "venue": "Brooklyn Botanic Garden, 990 Washington Ave",
+    "neighborhood": "Prospect Heights",
+    "price": "Included with garden admission",
+    "url": "https://www.bbg.org",
     "category": "tours_experiences",
     "source": "Brooklyn Botanic Garden",
     "via": [
       "Brooklyn Botanic Garden"
     ],
-    "why": "BBG's curatorial team leads a sunset tour of Ancestral Ecologies—four multisensory outdoor installations by Olalekan Jeyifous and AD--WO exploring Afrodiasporic and Latinx worldviews on ecology—closing October 25."
+    "why": "Archtober sunset tour of 'Ancestral Ecologies,' four multisensory installations by Olalekan Jeyifous and AD--WO exploring Afrodiasporic and Latinx approaches to ecological stewardship; exhibition closes Oct 25."
   },
   {
-    "id": "frick-first-fridays-oct2-2026-10-02",
-    "name": "Louis Vuitton First Fridays at The Frick",
-    "dateISO": "2026-10-02T17:30:00",
-    "time": "5:30–9:00 PM",
-    "venue": "The Frick Collection",
+    "id": "bbg-lightscape-2026",
+    "name": "BBG Lightscape 2026",
+    "dateISO": "2026-11-20T18:00:00",
+    "time": "Select dates Nov 20, 2026–Jan 3, 2027",
+    "venue": "Brooklyn Botanic Garden, 990 Washington Ave",
+    "neighborhood": "Prospect Heights",
+    "price": "Ticketed (see website)",
+    "url": "https://www.bbg.org/lightscape",
+    "category": "art_exhibitions",
+    "source": "Brooklyn Botanic Garden",
+    "via": [
+      "Brooklyn Botanic Garden"
+    ],
+    "why": "Annual illuminated nighttime trail through the Garden with new light installations themed around the four seasons of the Garden's splendor; runs select dates through Jan 3, 2027."
+  },
+  {
+    "id": "aiany-nowicki-chandigarh-oct6",
+    "name": "Nowicki's Unbuilt Chandigarh: An Ecology of Everyday Life",
+    "dateISO": "2026-10-06T17:30:00",
+    "time": "5:30–7:30 PM",
+    "venue": "Center for Architecture, 536 LaGuardia Place",
+    "neighborhood": "Greenwich Village",
+    "price": "Free (registration required)",
+    "url": "https://www.aiany.org/programs/calendar/",
+    "category": "talks_lectures",
+    "source": "AIANY / Center for Architecture",
+    "via": [
+      "AIANY"
+    ],
+    "why": "Talk on Polish-American architect Maciej Nowicki's visionary unbuilt designs for Chandigarh, India—imagining what could have been—in conjunction with the 'Humanist modernity' exhibition."
+  },
+  {
+    "id": "aiany-max-bond-lecture-oct6",
+    "name": "J. Max Bond Jr. Lecture and Portrait Unveiling",
+    "dateISO": "2026-10-06T18:00:00",
+    "time": "6:00–8:00 PM",
+    "venue": "Center for Architecture, 536 LaGuardia Place",
+    "neighborhood": "Greenwich Village",
+    "price": "Free (registration required)",
+    "url": "https://www.aiany.org/programs/calendar/",
+    "category": "talks_lectures",
+    "source": "AIANY / Center for Architecture",
+    "via": [
+      "AIANY"
+    ],
+    "why": "Lecture honoring J. Max Bond Jr.—pioneering architect whose work includes the National September 11 Memorial Museum and Schomburg Center renovation—with unveiling of his portrait."
+  },
+  {
+    "id": "aiany-beyond-code-resilience-oct7",
+    "name": "Beyond Code: Designing for Resilience, Risk, and the Future Standard of Care",
+    "dateISO": "2026-10-07T18:00:00",
+    "time": "6:00–8:00 PM",
+    "venue": "Center for Architecture, 536 LaGuardia Place",
+    "neighborhood": "Greenwich Village",
+    "price": "Free (registration required)",
+    "url": "https://www.aiany.org/programs/calendar/",
+    "category": "talks_lectures",
+    "source": "AIANY / Center for Architecture",
+    "via": [
+      "AIANY"
+    ],
+    "why": "Panel discussion on how climate resilience and environmental performance are reshaping architectural practice and professional standards of care."
+  },
+  {
+    "id": "aiany-eating-streetscapes-oct8",
+    "name": "Eating Through Streetscapes: Food, Frontage, and Public Space",
+    "dateISO": "2026-10-08T18:00:00",
+    "time": "6:00–8:00 PM",
+    "venue": "Center for Architecture, 536 LaGuardia Place",
+    "neighborhood": "Greenwich Village",
+    "price": "Free (registration required)",
+    "url": "https://www.aiany.org/programs/calendar/",
+    "category": "talks_lectures",
+    "source": "AIANY / Center for Architecture",
+    "via": [
+      "AIANY"
+    ],
+    "why": "Discussion on the intersection of food culture, street frontage, and the design of NYC's public spaces—how restaurants and vendors shape the experience of the city."
+  },
+  {
+    "id": "aiany-walking-tour-madison-ave-oct9",
+    "name": "Walking Tour: Madison Avenue, High Fashion, and Historic Preservation",
+    "dateISO": "2026-10-09T17:00:00",
+    "time": "5:00–7:00 PM",
+    "venue": "Madison Avenue (meeting point TBD, see registration)",
     "neighborhood": "Upper East Side",
-    "price": "Free (walk-ups welcome)",
-    "url": "https://www.frick.org/programs/first_fridays",
-    "category": "art_exhibitions",
-    "source": "The Frick Collection",
+    "price": "Ticketed (see website)",
+    "url": "https://www.aiany.org/programs/calendar/",
+    "category": "tours_experiences",
+    "source": "AIANY / Center for Architecture",
     "via": [
-      "The Skint"
+      "AIANY"
     ],
-    "why": "Free after-hours Friday at the Frick: live jazz, drop-in drawing, drinks and bites in the Garden Court, gallery talks, and late access to the collection; monthly through May 2027 (Oct 2, Nov 6, Dec 4)."
+    "why": "Archtober walking tour of Madison Avenue exploring the tension between luxury retail architecture, historic preservation, and the buildings that define the Gold Coast."
   },
   {
-    "id": "miller-theater-popup-concerts-oct-2026-10-20",
-    "name": "Miller Theater Pop-Up Concert Series (Season 15)",
-    "dateISO": "2026-10-20T18:00:00",
-    "time": "6:00 PM (monthly Tuesdays through Dec 1)",
-    "venue": "Miller Theatre at Columbia University",
-    "neighborhood": "Morningside Heights",
+    "id": "aiany-nowicki-exhibition-tour-oct9",
+    "name": "Exhibition Tour: Humanist Modernity—Maciej and Stanisława Nowicki",
+    "dateISO": "2026-10-09T18:00:00",
+    "time": "6:00–8:00 PM",
+    "venue": "Center for Architecture, 536 LaGuardia Place",
+    "neighborhood": "Greenwich Village",
+    "price": "Free (registration required)",
+    "url": "https://www.aiany.org/programs/calendar/",
+    "category": "tours_experiences",
+    "source": "AIANY / Center for Architecture",
+    "via": [
+      "AIANY"
+    ],
+    "why": "Guided tour of the exhibition on the visionary Polish-American architects Maciej and Stanisława Nowicki, whose careers bridged modernism and humanism before Maciej's death in 1950."
+  },
+  {
+    "id": "aiany-walking-tour-skyscraper-oct10",
+    "name": "Walking Tour: The Rise of the Skyscraper in Downtown New York",
+    "dateISO": "2026-10-10T10:00:00",
+    "time": "10:00 AM–12:00 PM",
+    "venue": "Downtown Manhattan (meeting point TBD, see registration)",
+    "neighborhood": "Financial District",
+    "price": "Ticketed (see website)",
+    "url": "https://www.aiany.org/programs/calendar/",
+    "category": "tours_experiences",
+    "source": "AIANY / Center for Architecture",
+    "via": [
+      "AIANY"
+    ],
+    "why": "Archtober walking tour tracing the architectural history of the skyscraper in lower Manhattan, from early cast-iron buildings to the 20th-century towers that defined the skyline."
+  },
+  {
+    "id": "aiany-adff-short-films-oct11",
+    "name": "Archtober x ADFF: Architecture & Design Film Festival Short Films",
+    "dateISO": "2026-10-11T14:00:00",
+    "time": "2:00–6:00 PM",
+    "venue": "Center for Architecture, 536 LaGuardia Place",
+    "neighborhood": "Greenwich Village",
+    "price": "Free (registration required)",
+    "url": "https://archtober.org",
+    "category": "film_tv",
+    "source": "AIANY / Center for Architecture",
+    "via": [
+      "AIANY"
+    ],
+    "why": "Four-hour showcase of short films from the Architecture & Design Film Festival (ADFF), presented as part of Archtober—architecture documentaries, design fiction, and experimental film."
+  },
+  {
+    "id": "aiany-humanist-modernity-exhibition",
+    "name": "Humanist Modernity: Maciej and Stanisława Nowicki (Exhibition)",
+    "dateISO": "2026-10-01T11:00:00",
+    "time": "Open now through TBD",
+    "venue": "Center for Architecture, 536 LaGuardia Place",
+    "neighborhood": "Greenwich Village",
     "price": "Free",
-    "url": "https://www.millertheatre.com/concerts",
-    "category": "music_nightlife",
-    "source": "The Skint",
-    "via": [
-      "The Skint"
-    ],
-    "why": "Sit onstage with virtuoso musicians for Columbia's hour-long early-evening concerts; free drink in hand, chance to mingle with performers after. Monthly through Dec 1."
-  },
-  {
-    "id": "new-museum-arthur-jafa-2026-09-24",
-    "name": "New Museum Fall Exhibitions (Arthur Jafa: I Am Tony)",
-    "dateISO": "2026-09-24T11:00:00",
-    "time": "Open now; Pay-what-you-wish Thursdays 7–9 PM",
-    "venue": "New Museum",
-    "neighborhood": "Lower East Side",
-    "price": "$28 general; free for SVA/NYU/Pratt; pay-what-you-wish Thursdays",
-    "url": "https://www.newmuseum.org",
+    "url": "https://www.aiany.org/exhibition/humanist-modernity/",
     "category": "art_exhibitions",
-    "source": "The Skint",
+    "source": "AIANY / Center for Architecture",
     "via": [
-      "The Skint"
+      "AIANY"
     ],
-    "why": "Arthur Jafa: I Am Tony is the artist's most comprehensive survey to date, alongside The Bowery: Devil's Mile, Diego Marcon's Arrivederci Piggies!, and a site-specific video by Ho Tzu Nyen; through Jan 31."
+    "why": "Major exhibition on Polish-American architects Maciej and Stanisława Nowicki, whose humanist modernism—bridging Bauhaus principles with cultural sensitivity—influenced a generation of designers."
   },
   {
-    "id": "260-madison-art-exhibition-2026-09-24",
-    "name": "260 Madison Art Exhibition",
-    "dateISO": "2026-09-25T12:00:00",
-    "time": "Fri–Sun 12–6 PM (through Nov 22)",
-    "venue": "260 Madison Avenue",
-    "neighborhood": "Midtown East",
+    "id": "aiany-dark-matter-u-exhibition",
+    "name": "Dark Matter U: Justice, Pedagogy, Design (Exhibition)",
+    "dateISO": "2026-10-01T11:00:00",
+    "time": "Open now through TBD",
+    "venue": "Center for Architecture, 536 LaGuardia Place",
+    "neighborhood": "Greenwich Village",
     "price": "Free",
-    "url": "https://www.broadwayworld.com/article/260-MADISON-Exhibition-to-Bring-More-Than-50-Artists-to-Midtown-Manhattan-20260918",
+    "url": "https://www.aiany.org/exhibition/dark-matter-u/",
     "category": "art_exhibitions",
-    "source": "The Skint",
+    "source": "AIANY / Center for Architecture",
     "via": [
-      "The Skint"
+      "AIANY"
     ],
-    "why": "50+ artists occupy a former Duane Reade and 23,000 sq ft office floor in a Midtown tower under renovation, with works on surveillance, AI, extraction, and labor systems; through Nov 22."
+    "why": "Exhibition exploring how architecture education can center justice and equity, featuring work from students, educators, and practitioners rethinking design pedagogy."
   },
   {
-    "id": "nytm-green-wood-nostalgia-ride-2026-10-03",
-    "name": "NYTM Nostalgia Ride: Afternoon to Green-Wood Cemetery",
-    "dateISO": "2026-10-03T14:00:00",
-    "time": "2:00–7:00 PM",
-    "venue": "Green-Wood Cemetery (via vintage subway)",
-    "neighborhood": "Sunset Park, Brooklyn",
-    "price": "$60 adult / $40 child ($50/$30 members)",
-    "url": "https://www.nytransitmuseum.org/program/green-wood-2026/",
-    "category": "tours_experiences",
-    "source": "NY Transit Museum",
+    "id": "aiany-why-design-exhibition",
+    "name": "Why Design? (Exhibition)",
+    "dateISO": "2026-10-01T11:00:00",
+    "time": "Open now through TBD",
+    "venue": "Center for Architecture, 536 LaGuardia Place",
+    "neighborhood": "Greenwich Village",
+    "price": "Free",
+    "url": "https://www.aiany.org/exhibition/why-design/",
+    "category": "art_exhibitions",
+    "source": "AIANY / Center for Architecture",
     "via": [
-      "NY Transit Museum"
+      "AIANY"
     ],
-    "why": "Ride a vintage subway train through Brooklyn to Green-Wood Cemetery, then take a guided tour of the Victorian-era graves of famous actors, politicians, artists, and inventors."
+    "why": "Exhibition asking foundational questions about design's purpose and impact, featuring diverse perspectives from architects, educators, and communities on what design is for."
   },
   {
-    "id": "nytm-underground-nyc-subway101-2026-10-09",
-    "name": "Underground NYC Tour: Subway 101",
-    "dateISO": "2026-10-09T11:00:00",
-    "time": "11:00 AM (also Oct 24; Nov 12)",
-    "venue": "NYC Subway (various stations)",
-    "neighborhood": "Manhattan",
-    "price": "$30",
-    "url": "https://www.nytransitmuseum.org/program/underground-10-9/",
-    "category": "tours_experiences",
-    "source": "NY Transit Museum",
-    "via": [
-      "NY Transit Museum"
-    ],
-    "why": "Ride the subway with Transit Museum expert guides who reveal station secrets, art and architecture, and exclusive archival images from the Museum's collection."
-  },
-  {
-    "id": "nytm-transit-walk-gowanus-2026-10-18",
-    "name": "Transit Walk: Gowanus and Carroll Gardens",
-    "dateISO": "2026-10-18T14:00:00",
-    "time": "2:00 PM",
-    "venue": "Gowanus / Carroll Gardens (walking tour)",
-    "neighborhood": "Gowanus, Brooklyn",
-    "price": "$40 general / $35 members",
-    "url": "https://www.nytransitmuseum.org/program/gowanus-10-18/",
-    "category": "tours_experiences",
-    "source": "NY Transit Museum",
-    "via": [
-      "NY Transit Museum"
-    ],
-    "why": "Traces the transit history of NW Brooklyn including the Smith-9th Street station (one of the world's highest subway stations) and the Carroll Street Bridge, the country's oldest surviving retractile bridge."
-  },
-  {
-    "id": "nytm-transit-walk-downtown-bk-2026-10-17",
-    "name": "Transit Walk: Downtown Brooklyn",
-    "dateISO": "2026-10-17T11:00:00",
-    "time": "11:00 AM",
-    "venue": "Downtown Brooklyn (walking tour ending at NYTM)",
+    "id": "nytm-through-mirror-oct15",
+    "name": "Through the Mirror: Homelessness, Healthcare, and Innovation in the NYC Subways",
+    "dateISO": "2026-10-15T18:00:00",
+    "time": "6:00–7:30 PM",
+    "venue": "NY Transit Museum, Boerum Place & Schermerhorn St",
     "neighborhood": "Downtown Brooklyn",
-    "price": "$40 general / $35 members",
-    "url": "https://www.nytransitmuseum.org/program/brooklyn-10-17/",
-    "category": "tours_experiences",
+    "price": "Free (registration required)",
+    "url": "https://www.nytransitmuseum.org/program/through-the-mirror/",
+    "category": "talks_lectures",
     "source": "NY Transit Museum",
     "via": [
       "NY Transit Museum"
     ],
-    "why": "Traces Downtown Brooklyn's transit history from early ferry landings through trolley/el routes into the subway era, concluding at the Museum's historic Court Street Station."
+    "why": "Panel discussion moderated by Elizabeth Glazer (Vital City) on how homelessness and healthcare intersect on the subway, featuring the MTA and city partners on new co-response programs."
   },
   {
-    "id": "nytm-secrets-and-lies-2026-10-22",
+    "id": "nytm-secrets-lies-oct22",
     "name": "NYC Secrets and Lies: Transit Tales",
     "dateISO": "2026-10-22T18:00:00",
     "time": "6:00 PM",
-    "venue": "NY Transit Museum",
+    "venue": "NY Transit Museum, Boerum Place & Schermerhorn St",
     "neighborhood": "Downtown Brooklyn",
     "price": "$15 general / $10 members",
     "url": "https://www.nytransitmuseum.org/program/secrets-and-lies/",
@@ -1437,198 +1709,758 @@
     "via": [
       "NY Transit Museum"
     ],
-    "why": "Three storytellers tell chilling tales from transit's mysterious past—but one is lying. Audience members who identify the liar enter a raffle for walking tour tickets. Halloween-season special."
+    "why": "Interactive transit-themed edition of NYC's Secrets & Lies game night—separate fact from fiction about transit lore; identify the liar and win tickets to an NYTM walking tour."
   },
   {
-    "id": "nytm-subway-swing-dance-2026-11-13",
+    "id": "nytm-underground-tour-oct9",
+    "name": "Underground NYC Tour: Subway 101",
+    "dateISO": "2026-10-09T11:00:00",
+    "time": "11:00 AM (also Oct 24 and Nov 12)",
+    "venue": "Meeting point TBD (see registration)",
+    "neighborhood": "Citywide",
+    "price": "$30",
+    "url": "https://www.nytransitmuseum.org/program/underground-10-9/",
+    "category": "tours_experiences",
+    "source": "NY Transit Museum",
+    "via": [
+      "NY Transit Museum"
+    ],
+    "why": "Expert-guided subway tour visiting old and new stations, exploring subway art and architecture, with exclusive archival images from the NYTM collection; next dates Oct 9, Oct 24, Nov 12."
+  },
+  {
+    "id": "nytm-transit-walk-downtown-brooklyn-oct17",
+    "name": "Transit Walk: Downtown Brooklyn",
+    "dateISO": "2026-10-17T11:00:00",
+    "time": "11:00 AM (also Nov 21)",
+    "venue": "Downtown Brooklyn (meeting point TBD)",
+    "neighborhood": "Downtown Brooklyn",
+    "price": "$40 general / $35 members",
+    "url": "https://www.nytransitmuseum.org/program/brooklyn-10-17/",
+    "category": "tours_experiences",
+    "source": "NY Transit Museum",
+    "via": [
+      "NY Transit Museum"
+    ],
+    "why": "Walking tour tracing Downtown Brooklyn's transit history from early ferry landings and trolley routes through the elevated train and subway era, ending at the historic Court Street Station."
+  },
+  {
+    "id": "nytm-transit-walk-gowanus-oct18",
+    "name": "Transit Walk: Gowanus and Carroll Gardens",
+    "dateISO": "2026-10-18T14:00:00",
+    "time": "2:00 PM",
+    "venue": "Gowanus/Carroll Gardens (meeting point TBD)",
+    "neighborhood": "Gowanus",
+    "price": "$40 general / $35 members",
+    "url": "https://www.nytransitmuseum.org/program/gowanus-10-18/",
+    "category": "tours_experiences",
+    "source": "NY Transit Museum",
+    "via": [
+      "NY Transit Museum"
+    ],
+    "why": "Transit history walking tour of Gowanus and Carroll Gardens, examining how transit shaped two of Brooklyn's most transformed neighborhoods."
+  },
+  {
+    "id": "nytm-transit-walk-penn-station-oct24",
+    "name": "Transit Walk: Art and Design Secrets of Penn Station & Moynihan Train Hall",
+    "dateISO": "2026-10-24T11:00:00",
+    "time": "11:00 AM (also Dec 16 at 11 AM and 2 PM)",
+    "venue": "Penn Station / Moynihan Train Hall",
+    "neighborhood": "Midtown West",
+    "price": "$40 general / $35 members",
+    "url": "https://www.nytransitmuseum.org/program/penn-10-24/",
+    "category": "tours_experiences",
+    "source": "NY Transit Museum",
+    "via": [
+      "NY Transit Museum"
+    ],
+    "why": "Walking tour revealing hidden architectural remnants of the demolished Beaux-Arts Penn Station and new public artworks in Moynihan Train Hall."
+  },
+  {
+    "id": "nytm-redbirds-nostalgia-ride-nov7",
+    "name": "Fly Away Redbirds Nostalgia Ride",
+    "dateISO": "2026-11-07T11:00:00",
+    "time": "11:00 AM or 2:00 PM departures",
+    "venue": "Old South Ferry Station (1905), departs Manhattan",
+    "neighborhood": "Lower Manhattan",
+    "price": "$60 adult / $40 child (members: $50/$30)",
+    "url": "https://www.nytransitmuseum.org/program/redbirds-morning/",
+    "category": "tours_experiences",
+    "source": "NY Transit Museum",
+    "via": [
+      "NY Transit Museum"
+    ],
+    "why": "Round-trip excursion to the Bronx on the legendary Redbird subway cars (1959–2003), departing from the historic Old South Ferry station—closed to the public since 2017."
+  },
+  {
+    "id": "nytm-subway-swing-nov13",
     "name": "Subway Swing: A Boogie for the Ages",
     "dateISO": "2026-11-13T18:00:00",
     "time": "6:00–9:00 PM",
-    "venue": "NY Transit Museum (1936 decommissioned subway station)",
+    "venue": "NY Transit Museum, Boerum Place & Schermerhorn St",
     "neighborhood": "Downtown Brooklyn",
-    "price": "$35 general / $30 members",
+    "price": "$35 general / $30 members (includes admission + 1 drink)",
     "url": "https://www.nytransitmuseum.org/program/subwayswing26/",
     "category": "music_nightlife",
     "source": "NY Transit Museum",
     "via": [
       "NY Transit Museum"
     ],
-    "why": "After-hours swing dance party with live jazz in the Museum's 1936 decommissioned subway station—vintage outfits encouraged."
+    "why": "After-hours swing dance party in the 1936 decommissioned subway station, with live jazz bands, the hottest swing dancing, and vintage-inspired dress encouraged."
   },
   {
-    "id": "untapped-explorers-club-tour-2026-10-06",
-    "name": "Behind the Scenes: The Explorer's Club NYC Headquarters",
-    "dateISO": "2026-10-06T14:00:00",
-    "time": "2:00 PM (also Nov 10 at 12 PM)",
-    "venue": "The Explorer's Club",
-    "neighborhood": "Upper East Side",
-    "price": "$25 general (free for Untapped Insiders/Explorers)",
-    "url": "https://www.untappedcities.com/tours/",
-    "category": "tours_experiences",
-    "source": "Untapped New York",
+    "id": "pm-monitor-yin-yang-oct7",
+    "name": "Matías Duville: Monitor Yin Yang Book Launch",
+    "dateISO": "2026-10-07T18:00:00",
+    "time": "6:00–8:00 PM",
+    "venue": "Printed Matter, 231 11th Ave",
+    "neighborhood": "Chelsea",
+    "price": "Free",
+    "url": "https://www.printedmatter.org/programs/events/2277",
+    "category": "talks_lectures",
+    "source": "Printed Matter",
     "via": [
-      "Untapped New York"
+      "Printed Matter"
     ],
-    "why": "All 5.5 floors of the 1904 members-only club's historic UES townhouse, with artifacts from scientific expeditions to land, sea, air, and space."
+    "why": "Launch of Argentine artist Matías Duville's trilingual travel guide 'Monitor Yin Yang' (Spanish/English/Italian) with 50 drawings, a photo album, and a fold-out map; conversation with Michel Nieva and Josefina Barcia."
   },
   {
-    "id": "untapped-met-opera-backstage-2026-10-01",
-    "name": "Backstage Metropolitan Opera House Tour",
-    "dateISO": "2026-10-01T00:00:00",
-    "time": "Multiple dates Sep–Jan (check site)",
-    "venue": "Metropolitan Opera House, Lincoln Center",
-    "neighborhood": "Upper West Side",
-    "price": "Ticketed (members get $15 off)",
-    "url": "https://www.untappedcities.com/tours/",
-    "category": "tours_experiences",
-    "source": "Untapped New York",
+    "id": "pm-k8-hardy-positions-oct8",
+    "name": "K8 Hardy: Positions Book Launch",
+    "dateISO": "2026-10-08T18:00:00",
+    "time": "6:00–8:00 PM",
+    "venue": "Printed Matter, 231 11th Ave",
+    "neighborhood": "Chelsea",
+    "price": "Free",
+    "url": "https://www.printedmatter.org/programs/events/2295",
+    "category": "talks_lectures",
+    "source": "Printed Matter",
     "via": [
-      "Untapped New York"
+      "Printed Matter"
     ],
-    "why": "Exclusive access behind the curtain at the Met Opera: scenic and carpentry shops, wig and costume departments, rehearsal rooms, dressing areas, the Marc Chagall mural lobby, and the iconic auditorium."
+    "why": "Launch of K8 Hardy's 'Positions,' collecting all 50 photographs from her pathbreaking Position Series (2007–12) on queer identity, DIY fashion, and early-2000s New York subcultures, with previously unseen images."
   },
   {
-    "id": "nybg-dia-de-los-muertos-2026-10-03",
-    "name": "Día de los Muertos at NYBG",
-    "dateISO": "2026-10-03T10:00:00",
-    "time": "Oct 3 – Nov 2 (garden hours)",
-    "venue": "New York Botanical Garden",
-    "neighborhood": "Bronx",
-    "price": "Included with NYBG garden admission",
-    "url": "https://www.nybg.org/event/dia-de-los-muertos/",
+    "id": "pm-insider-trading-ii-oct14",
+    "name": "Insider Trading II: A Candid Publishing Panel",
+    "dateISO": "2026-10-14T18:00:00",
+    "time": "6:00–8:00 PM",
+    "venue": "Printed Matter, 231 11th Ave",
+    "neighborhood": "Chelsea",
+    "price": "Free",
+    "url": "https://www.printedmatter.org/programs/events/2331",
+    "category": "talks_lectures",
+    "source": "Printed Matter",
+    "via": [
+      "Printed Matter"
+    ],
+    "why": "Off-the-record panel on the anatomy of publishing with Steff Yotka (Editor-in-Chief of i-D), Yusuf Hassan (BlackMass Publishing), and Academy Award-nominated costume designer Miyako Bellizzi."
+  },
+  {
+    "id": "pm-rong-xin-flushing-mall-oct20",
+    "name": "Rong Xin: Roaming a Flushing Mall Book Launch",
+    "dateISO": "2026-10-20T18:00:00",
+    "time": "6:00–8:00 PM",
+    "venue": "Printed Matter, 231 11th Ave",
+    "neighborhood": "Chelsea",
+    "price": "Free",
+    "url": "https://www.printedmatter.org/programs/events/2287",
+    "category": "talks_lectures",
+    "source": "Printed Matter",
+    "via": [
+      "Printed Matter"
+    ],
+    "why": "Book launch for 'Rong Xin,' translating the 2023 exhibition 'Home-O-Stasis: Life and Livelihoods in Flushing' at Rong Xin Plaza into print; panel with designer Sixuan Tong, editor Michael Guo, moderated by curator Herb Tam."
+  },
+  {
+    "id": "pm-katchadourian-seat-assignment-oct27",
+    "name": "Nina Katchadourian: Seat Assignment Book Discussion",
+    "dateISO": "2026-10-27T18:00:00",
+    "time": "6:00–8:00 PM",
+    "venue": "Printed Matter, 231 11th Ave",
+    "neighborhood": "Chelsea",
+    "price": "Free",
+    "url": "https://www.printedmatter.org/programs/events/2271",
+    "category": "talks_lectures",
+    "source": "Printed Matter",
+    "via": [
+      "Printed Matter"
+    ],
+    "why": "Discussion of Nina Katchadourian's 11-year project making art on airplanes using only in-flight materials—documented in hundreds of photographs of her seat-tray creations."
+  },
+  {
+    "id": "pm-risolab-talks-v5-oct28",
+    "name": "RisoLAB Talks vol. 5: Travess Smalley & Kyle Canyon",
+    "dateISO": "2026-10-28T17:30:00",
+    "time": "5:30–8:00 PM",
+    "venue": "Printed Matter, 231 11th Ave",
+    "neighborhood": "Chelsea",
+    "price": "Free",
+    "url": "https://www.printedmatter.org/programs/events/2289",
+    "category": "talks_lectures",
+    "source": "Printed Matter",
+    "via": [
+      "Printed Matter"
+    ],
+    "why": "Artists Travess Smalley and Kyle Canyon discuss their Riso-printed works-in-residence, with Smalley's experimental fluorescent Quadrifluox tabloid prints and Canyon's pop-surrealist comic 'Gauche Neapolitain Girl'; closing reception with works for sale."
+  },
+  {
+    "id": "lesp-ohny-open-house-oct16-17",
+    "name": "Lower East Side Printshop OHNY Open House",
+    "dateISO": "2026-10-16T12:00:00",
+    "time": "Fri Oct 16 12–6 PM; Sat Oct 17 12–4 PM (with 1 PM screenprinting & 3 PM linocut demos)",
+    "venue": "Lower East Side Printshop, 306 W. 37th St, 6th Floor (enter from 307 W. 36th St)",
+    "neighborhood": "Garment District",
+    "price": "Free",
+    "url": "https://www.printshop.org",
+    "category": "tours_experiences",
+    "source": "Lower East Side Printshop",
+    "via": [
+      "Lower East Side Printshop"
+    ],
+    "why": "OHNY Weekend open studio at one of NYC's flagship community printmaking spaces, with studio tours, gallery exhibition, artist studio visits, plus live screenprinting and linoleum-cut demos on Saturday."
+  },
+  {
+    "id": "lesp-copper-etching-intensive-oct31",
+    "name": "LESP x Print Center NY: Copper Etching Intensive",
+    "dateISO": "2026-10-31T10:00:00",
+    "time": "Full day (see website for hours)",
+    "venue": "Lower East Side Printshop, 306 W. 37th St, 6th Floor",
+    "neighborhood": "Garment District",
+    "price": "Ticketed (see website)",
+    "url": "https://www.printshop.org/programs",
+    "category": "workshops",
+    "source": "Lower East Side Printshop",
+    "via": [
+      "Lower East Side Printshop"
+    ],
+    "why": "Intensive copper etching workshop at LESP in conjunction with the Parasol Press exhibition at Print Center New York; also offered Nov 7."
+  },
+  {
+    "id": "lesp-morgan-intaglio-workshop-nov14",
+    "name": "LESP x Morgan Library: Intaglio Etching Workshop",
+    "dateISO": "2026-11-14T10:00:00",
+    "time": "Full day (see website for hours)",
+    "venue": "Lower East Side Printshop, 306 W. 37th St, 6th Floor",
+    "neighborhood": "Garment District",
+    "price": "Ticketed (see website)",
+    "url": "https://www.printshop.org/programs",
+    "category": "workshops",
+    "source": "Lower East Side Printshop",
+    "via": [
+      "Lower East Side Printshop"
+    ],
+    "why": "Intaglio etching workshop at LESP linked to the Morgan Library's exhibition 'Rembrandt's Lions: Art and Exile in the Dutch Republic'—learn the technique Rembrandt mastered."
+  },
+  {
+    "id": "nypl-haunted-opera-horror-oct6",
+    "name": "Night at the Haunted Opera: Best New Horror 2026",
+    "dateISO": "2026-10-06T18:30:00",
+    "time": "6:30 PM",
+    "venue": "53rd Street Library, 18 W 53rd St",
+    "neighborhood": "Midtown",
+    "price": "Free (free book giveaway while supplies last)",
+    "url": "https://www.nypl.org/events",
+    "category": "talks_lectures",
+    "source": "NYPL",
+    "via": [
+      "NYPL"
+    ],
+    "why": "Authors Deena Helm, Saratoga Schaefer, and Kailee Pedersen (who is also an opera singer) discuss the year's buzziest horror books with librarian Becky Spratford, followed by a live performance."
+  },
+  {
+    "id": "nypl-banned-books-fashion-show-oct7",
+    "name": "Censored Chapters, Exposed Couture: A Banned Books Week Fashion Show",
+    "dateISO": "2026-10-07T18:00:00",
+    "time": "6:00–8:00 PM",
+    "venue": "Stavros Niarchos Foundation Library (SNFL), 455 Fifth Ave",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://www.nypl.org/events",
     "category": "festivals_parties",
-    "source": "New York Botanical Garden",
+    "source": "NYPL",
     "via": [
-      "New York Botanical Garden"
+      "NYPL"
     ],
-    "why": "Vibrant marigold blooms, a community ofrenda, playful puppets, crafts, and live music celebrate the Mexican holiday of memory and renewal across NYBG's 250 acres; through Nov 2."
+    "why": "Fashion show featuring couture looks inspired by banned books, designed by award-winning Jamaican-born NY designer Glenroy March (House of D'Marsh), with giveaways."
   },
   {
-    "id": "little-island-archtober-tour-2026-10-02",
-    "name": "Archtober Guided Tour of Little Island",
-    "dateISO": "2026-10-02T10:30:00",
-    "time": "10:30 AM & 12:00 PM",
-    "venue": "Little Island",
-    "neighborhood": "Hudson River Park (West Village / Meatpacking)",
-    "price": "Free (no RSVP needed)",
-    "url": "https://littleisland.org/event/archtober-guided-tour-of-little-island/2026-10-02/1/",
-    "category": "tours_experiences",
-    "source": "Little Island",
+    "id": "nypl-banned-books-cold-war-oct8",
+    "name": "Banned Books from the Cold War to the Present",
+    "dateISO": "2026-10-08T18:30:00",
+    "time": "6:30 PM",
+    "venue": "Stavros Niarchos Foundation Library (SNFL), 455 Fifth Ave",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://www.nypl.org/events",
+    "category": "talks_lectures",
+    "source": "NYPL",
     "via": [
-      "Little Island"
+      "NYPL"
     ],
-    "why": "Landscape Architect Signe Nielsen and Architect of Record Fabian Jabro—the designers who built the park—lead tours explaining how Little Island grew from a storm-damaged pier, the story behind the iconic tulip pots, and the thinking behind its paths and lawns."
+    "why": "Yasha Klots of the Tamizdat Project discusses manuscripts smuggled out from behind the Iron Curtain—'tamizdat,' or 'published over there'—and their enduring power."
   },
   {
-    "id": "schomburg-forging-ahead-2026-09-24",
-    "name": "Forging Ahead: Recent Acquisitions of Black Women Artists",
-    "dateISO": "2026-09-24T10:00:00",
-    "time": "Open now through Mar 27, 2027",
-    "venue": "Schomburg Center for Research in Black Culture",
+    "id": "nypl-kerry-kennedy-ethel-oct13",
+    "name": "Kerry Kennedy with Douglas Brinkley: The Bold and Extraordinary Ethel Kennedy",
+    "dateISO": "2026-10-13T19:00:00",
+    "time": "7:00 PM",
+    "venue": "NYPL Stephen A. Schwarzman Building, 5th Ave & 42nd St",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://www.nypl.org/events",
+    "category": "talks_lectures",
+    "source": "NYPL",
+    "via": [
+      "NYPL"
+    ],
+    "why": "Kerry Kennedy discusses her biography of Ethel Kennedy with presidential historian Douglas Brinkley, drawing on family memories and her mother's private papers."
+  },
+  {
+    "id": "nypl-techconnect-ableton-oct17",
+    "name": "TechConnect Masterclass: Jam & Learn with Ableton",
+    "dateISO": "2026-10-17T11:00:00",
+    "time": "11:00 AM–4:00 PM",
+    "venue": "Stavros Niarchos Foundation Library (SNFL), 455 Fifth Ave",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://www.nypl.org/events",
+    "category": "talks_lectures",
+    "source": "NYPL",
+    "via": [
+      "NYPL"
+    ],
+    "why": "Full day of Ableton learning with Certified Trainers: keynote presentations, jam sessions, live performances, and interactive breakout sessions for musicians, producers, and educators."
+  },
+  {
+    "id": "nypl-home-to-harlem-schomburg-oct19",
+    "name": "Home to Harlem: Celebrating Black Bibliography at the Schomburg",
+    "dateISO": "2026-10-19T13:00:00",
+    "time": "1:00–5:00 PM",
+    "venue": "Schomburg Center for Research in Black Culture, 515 Malcolm X Blvd",
     "neighborhood": "Harlem",
     "price": "Free",
     "url": "https://www.nypl.org/locations/schomburg",
-    "category": "art_exhibitions",
-    "source": "New York Public Library",
-    "via": [
-      "New York Public Library"
-    ],
-    "why": "21 Black women artists working across media—exploring the iconography of the Black woman's body, futurism, spirituality, and the mapping of Black history—in new acquisitions to the Schomburg's permanent collection; through March 27, 2027."
-  },
-  {
-    "id": "nypl-choosing-the-end-ethics-panel-2026-09-29",
-    "name": "Choosing the End: Ethics & Medical Aid in Dying",
-    "dateISO": "2026-09-29T18:30:00",
-    "time": "6:30 PM",
-    "venue": "Stavros Niarchos Foundation Library (SNFL)",
-    "neighborhood": "Midtown",
-    "price": "Free (register via NYPL)",
-    "url": "https://www.nypl.org/events/programs",
     "category": "talks_lectures",
-    "source": "New York Public Library",
+    "source": "NYPL / Schomburg Center",
     "via": [
-      "New York Public Library"
+      "NYPL"
     ],
-    "why": "Jeffrey Kahn and Anna Mastroianni from the Johns Hopkins Berman Institute of Bioethics present an overview of the core ethical challenges around medical aid in dying for those facing terminal illness, including the debate over legalization and what autonomy means at end of life."
+    "why": "Half-day symposium with archivists and scholars on Black bibliography, with behind-the-scenes look at how Arturo Schomburg's personal library was identified; tied to the Schomburg Center's Centennial."
   },
   {
-    "id": "cbh-reimagining-filipino-brooklyn-2026-10-15",
-    "name": "CBH Talk: Reimagining Filipino Brooklyn",
-    "dateISO": "2026-10-15T18:30:00",
-    "time": "6:30 PM",
-    "venue": "Center for Brooklyn History",
-    "neighborhood": "Brooklyn Heights",
-    "price": "Free (RSVP)",
-    "url": "https://www.bklynlibrary.org/center-for-brooklyn-history",
-    "category": "film_screenings",
-    "source": "Center for Brooklyn History",
-    "via": [
-      "Center for Brooklyn History"
-    ],
-    "why": "Historian Michael Menor Salgarolo, filmmaker Claro de los Reyes (screening his 1940s-set Brooklyn waterfront short Sands Street), and Caroline C. Pasion explore the once-vibrant Filipino waterfront community around the Navy Yard that urban renewal and immigration policy erased."
-  },
-  {
-    "id": "cbh-brooklyn-trivia-2026-10-21",
-    "name": "Brooklyn Trivia with The Trivia Masters",
+    "id": "nypl-marlon-riggs-screening-oct21",
+    "name": "Black on Screen: Honoring Marlon Riggs",
     "dateISO": "2026-10-21T18:30:00",
     "time": "6:30 PM",
-    "venue": "Center for Brooklyn History",
-    "neighborhood": "Brooklyn Heights",
-    "price": "Free (RSVP)",
-    "url": "https://www.bklynlibrary.org/center-for-brooklyn-history",
-    "category": "miscellaneous",
-    "source": "Center for Brooklyn History",
+    "venue": "Schomburg Center for Research in Black Culture, 515 Malcolm X Blvd",
+    "neighborhood": "Harlem",
+    "price": "Free",
+    "url": "https://www.nypl.org/locations/schomburg",
+    "category": "film_tv",
+    "source": "NYPL / Schomburg Center",
     "via": [
-      "Center for Brooklyn History"
+      "NYPL"
     ],
-    "why": "Chris Kelley and Stuart Post of The Trivia Masters test the Brooklyn fold of your cerebral cortex with tough questions, lateral-thinking games, and multimedia challenges on Brooklyn history; come solo or assemble a team. Special guest: Brooklyn Borough Historian Asad Dandia."
+    "why": "Screening of Marlon Riggs's 1993 short 'Non, Je Ne Regrette Rien (No Regret)'—five HIV-positive gay Black men on living with AIDS—followed by a conversation on Riggs's legacy with Dr. Gervais Marsh and Sur Rodney (Sur)."
   },
   {
-    "id": "cbh-haunted-brooklyn-2026-10-27",
-    "name": "CBH Talk: Haunted Brooklyn—Ghosts, Folklore, and the Stories We Tell",
-    "dateISO": "2026-10-27T18:30:00",
+    "id": "nypl-halloween-happy-hour-oct23",
+    "name": "NYPL Halloween Happy Hour",
+    "dateISO": "2026-10-23T18:00:00",
+    "time": "Evening (exact time TBD; see website)",
+    "venue": "NYPL (location TBD; see website)",
+    "neighborhood": "Manhattan",
+    "price": "Ticketed (see website; tickets releasing soon)",
+    "url": "https://www.nypl.org/events",
+    "category": "festivals_parties",
+    "source": "NYPL",
+    "via": [
+      "NYPL"
+    ],
+    "why": "NYPL's popular annual Halloween party featuring a costume parade judged by Tim Gunn and NYPL librarians."
+  },
+  {
+    "id": "nypl-get-lit-t-kira-madden-oct26",
+    "name": "NYPL/WNYC Get Lit Book Club: Whidbey by T Kira Madden",
+    "dateISO": "2026-10-26T18:00:00",
+    "time": "Evening (see website for exact time)",
+    "venue": "NYPL (see website for location)",
+    "neighborhood": "Manhattan",
+    "price": "Free",
+    "url": "https://www.nypl.org/events",
+    "category": "talks_lectures",
+    "source": "NYPL",
+    "via": [
+      "NYPL"
+    ],
+    "why": "NYPL and WNYC's Get Lit Book Club discussion of T Kira Madden's debut novel 'Whidbey,' with WNYC host Alison Stewart."
+  },
+  {
+    "id": "nypl-winnie-pooh-100-display",
+    "name": "Winnie-the-Pooh at 100 Anniversary Display",
+    "dateISO": "2026-10-06T10:00:00",
+    "time": "Open now (ongoing)",
+    "venue": "NYPL Polonsky Exhibition of the NYPL's Treasures, 476 Fifth Ave",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://www.nypl.org/events",
+    "category": "art_exhibitions",
+    "source": "NYPL",
+    "via": [
+      "NYPL"
+    ],
+    "why": "Centennial display marking the 100th anniversary of Winnie-the-Pooh (first published Oct 1926), with original A. A. Milne mockups, Shepard illustrations, translations, and for the first time on public display the new Roo toy gifted by Queen Camilla."
+  },
+  {
+    "id": "pw-supper-club-abernathy-oct6",
+    "name": "Pioneer Works Supper Club: Pierce Abernathy on Marine Foodways",
+    "dateISO": "2026-10-06T18:00:00",
+    "time": "6:00–10:00 PM",
+    "venue": "Pioneer Works, 159 Pioneer St",
+    "neighborhood": "Red Hook",
+    "price": "Ticketed (see website)",
+    "url": "https://pioneerworks.org/programs/supper-club-with-pierce-abernathy",
+    "category": "food_drink",
+    "source": "Pioneer Works",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "Dinner by chef and slow-food advocate Pierce Abernathy centered on oceanic ingredients and marine foodways, with a screening of Abernathy's short film on alternative seafood and farming solutions across NYC; presented with Off The Table."
+  },
+  {
+    "id": "pw-second-sundays-oct11",
+    "name": "Pioneer Works Second Sundays: Ocean Season",
+    "dateISO": "2026-10-11T12:00:00",
+    "time": "12:00–6:00 PM",
+    "venue": "Pioneer Works, 159 Pioneer St",
+    "neighborhood": "Red Hook",
+    "price": "Free (RSVP required)",
+    "url": "https://pioneerworks.org/programs/second-sundays-october-2026",
+    "category": "festivals_parties",
+    "source": "Pioneer Works",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "Monthly open house featuring live dwarf cuttlefish with scientist Tessa Montague, community seaweed science with Seaweed City, a screening of Jean Painlevé's 1967 The Love Life of the Octopus, LaJuné McMillian installation walkthrough, artist open studios, and the launch of Marlon James's new novel The Disappearers with Colin Channer; Ragga NYC's Neon Christina closes the night."
+  },
+  {
+    "id": "pw-scientific-controversies-octopus-oct13",
+    "name": "Scientific Controversies No. 37: Octopus Umwelt",
+    "dateISO": "2026-10-13T20:00:00",
+    "time": "8:00 PM",
+    "venue": "Pioneer Works, 159 Pioneer St",
+    "neighborhood": "Red Hook",
+    "price": "Free (RSVP required)",
+    "url": "https://pioneerworks.org/programs/scientific-controversies-octopus-umwelt",
+    "category": "talks_lectures",
+    "source": "Pioneer Works",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "Director of Sciences Janna Levin hosts comparative psychologist Dr. Alex Schnell and evolutionary biologist Dr. Caroline Albertin on octopus consciousness, memory, and what these creatures can teach us about intelligence."
+  },
+  {
+    "id": "pw-siphon-exhibition",
+    "name": "Tuomas A. Laitinen: Siphon (Exhibition)",
+    "dateISO": "2026-10-06T12:00:00",
+    "time": "Open now through Nov 22",
+    "venue": "Pioneer Works Main Hall, 159 Pioneer St",
+    "neighborhood": "Red Hook",
+    "price": "Free (see website for hours)",
+    "url": "https://pioneerworks.org/exhibitions/tuomas-a-laitinen-siphon",
+    "category": "art_exhibitions",
+    "source": "Pioneer Works",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "Immersive 8K video installation exploring octopus consciousness through kaleidoscopic footage of octopus camouflage patterns from an Okinawa research lab, alongside blown-glass sculptures in water tanks arranged by 86-year-old Japanese ikebana master Kosen Ohtsubo, and a 'tentacular' spatial audio work filling the three-story Main Hall."
+  },
+  {
+    "id": "pw-children-bloom-exhibition",
+    "name": "LaJuné McMillian: Child/ren of the Bloom (Exhibition)",
+    "dateISO": "2026-10-06T12:00:00",
+    "time": "Open now through Dec 20",
+    "venue": "Pioneer Works 3rd Floor Gallery, 159 Pioneer St",
+    "neighborhood": "Red Hook",
+    "price": "Free (see website for hours)",
+    "url": "https://pioneerworks.org/exhibitions/lajune-mcmillian-child-ren-of-the-bloom",
+    "category": "art_exhibitions",
+    "source": "Pioneer Works",
+    "via": [
+      "Pioneer Works"
+    ],
+    "why": "Interactive installation responding to visitors' movements with floor-to-ceiling video transforming research on phytoplankton and bioluminescence into a spiritual encounter with oceanic systems; developed from an OceanX Education artist residency."
+  },
+  {
+    "id": "nyac-abandoned-railway-oct10",
+    "name": "Abandoned Railway Urban Hike: Forest Park & the Future QueensWay",
+    "dateISO": "2026-10-10T10:00:00",
+    "time": "10:00 AM",
+    "venue": "Forest Park, Queens (meeting point per registration)",
+    "neighborhood": "Queens",
+    "price": "Ticketed (see nyadventureclub.com)",
+    "url": "https://www.nyadventureclub.com/event/2000440098184",
+    "category": "tours_experiences",
+    "source": "NY Adventure Club",
+    "via": [
+      "NY Adventure Club"
+    ],
+    "why": "Guided hike exploring the abandoned LIRR Rockaway Beach Branch rail corridor through Forest Park, with insight into the QueensWay proposal to convert it into a linear park."
+  },
+  {
+    "id": "nyac-arthur-avenue-oct10",
+    "name": "NYAC: The Secret Eats of Arthur Avenue Food Crawl",
+    "dateISO": "2026-10-10T10:45:00",
+    "time": "10:45 AM",
+    "venue": "Arthur Avenue, the Bronx (meeting point per registration)",
+    "neighborhood": "Bronx",
+    "price": "Ticketed (see nyadventureclub.com)",
+    "url": "https://www.nyadventureclub.com/event/2000330884523",
+    "category": "food_drink",
+    "source": "NY Adventure Club",
+    "via": [
+      "NY Adventure Club"
+    ],
+    "why": "Guided food crawl through the Bronx's Arthur Avenue neighborhood—NYC's 'real Little Italy'—visiting old-school Italian delis, bakeries, and pasta makers with a local expert."
+  },
+  {
+    "id": "nyac-players-booth-oct16",
+    "name": "NYAC: Inside The Players Club with Rare Look Inside Edwin Booth's Bedroom",
+    "dateISO": "2026-10-16T14:00:00",
+    "time": "2:00 PM",
+    "venue": "The Players Club, 16 Gramercy Park South",
+    "neighborhood": "Gramercy",
+    "price": "Ticketed (see nyadventureclub.com)",
+    "url": "https://www.nyadventureclub.com/event/2001186243926",
+    "category": "tours_experiences",
+    "source": "NY Adventure Club",
+    "via": [
+      "NY Adventure Club"
+    ],
+    "why": "Exclusive access to The Players, the historic private club founded by actor Edwin Booth in 1888 on Gramercy Park, including a rare look inside Booth's preserved bedroom—closed to the public since his death in 1893."
+  },
+  {
+    "id": "nyac-lincoln-center-oct16",
+    "name": "NYAC: Behind-the-Scenes at Lincoln Center Extended Tour",
+    "dateISO": "2026-10-16T14:45:00",
+    "time": "2:45 PM",
+    "venue": "Lincoln Center, Broadway & 65th St",
+    "neighborhood": "Upper West Side",
+    "price": "Ticketed (see nyadventureclub.com)",
+    "url": "https://www.nyadventureclub.com/event/2001882399145",
+    "category": "tours_experiences",
+    "source": "NY Adventure Club",
+    "via": [
+      "NY Adventure Club"
+    ],
+    "why": "Extended behind-the-scenes tour of Lincoln Center going beyond the standard public areas, exploring backstage spaces and architectural history of Alice Tully Hall, the Met Opera, and Avery Fisher Hall."
+  },
+  {
+    "id": "nyac-cathedral-crypt-oct17",
+    "name": "NYAC: From Crypt to Roof — After-Hours Tour of the Cathedral of St. John the Divine",
+    "dateISO": "2026-10-17T17:00:00",
+    "time": "5:00 PM",
+    "venue": "Cathedral of St. John the Divine, Amsterdam Ave & 112th St",
+    "neighborhood": "Morningside Heights",
+    "price": "Ticketed (see nyadventureclub.com)",
+    "url": "https://nyadventureclub.com/event/2001184502718",
+    "category": "tours_experiences",
+    "source": "NY Adventure Club",
+    "via": [
+      "NY Adventure Club"
+    ],
+    "why": "After-hours access to the world's largest Gothic cathedral, from the crypt beneath the main floor to rooftop views of Manhattan—most of these spaces are not accessible to the general public."
+  },
+  {
+    "id": "nyac-truffle-pasta-oct22",
+    "name": "NYAC: Exclusive Truffle Pasta Making at The Urbani Truffle Lab NYC",
+    "dateISO": "2026-10-22T18:00:00",
+    "time": "6:00 PM",
+    "venue": "Urbani Truffle Lab NYC",
+    "neighborhood": "Midtown",
+    "price": "Ticketed (see nyadventureclub.com; 8 spots left)",
+    "url": "https://www.nyadventureclub.com/event/2002064012355",
+    "category": "food_drink",
+    "source": "NY Adventure Club",
+    "via": [
+      "NY Adventure Club"
+    ],
+    "why": "Hands-on truffle pasta-making experience at the Urbani Truffle Lab, NYC's premier truffle importer, with expert guidance on pairing, preparation, and tasting."
+  },
+  {
+    "id": "nyac-society-illustrators-oct23",
+    "name": "NYAC: Inside the Society of Illustrators: Norman Rockwell to Archives",
+    "dateISO": "2026-10-23T15:00:00",
+    "time": "3:00 PM",
+    "venue": "Society of Illustrators, 128 E 63rd St",
+    "neighborhood": "Upper East Side",
+    "price": "Ticketed (see nyadventureclub.com)",
+    "url": "https://www.nyadventureclub.com/event/2002625279119",
+    "category": "tours_experiences",
+    "source": "NY Adventure Club",
+    "via": [
+      "NY Adventure Club"
+    ],
+    "why": "Behind-the-scenes tour of the Society of Illustrators (founded 1901) including the original Norman Rockwell painting hanging in the building and access to their archives."
+  },
+  {
+    "id": "nyac-grave-robbers-oct24",
+    "name": "NYAC: Grave Robbers of New York — Exploring the City's Body Snatching History",
+    "dateISO": "2026-10-24T11:00:00",
+    "time": "11:00 AM",
+    "venue": "Manhattan (meeting point per registration)",
+    "neighborhood": "Manhattan",
+    "price": "Ticketed (see nyadventureclub.com)",
+    "url": "https://www.nyadventureclub.com/event/2002062242060",
+    "category": "tours_experiences",
+    "source": "NY Adventure Club",
+    "via": [
+      "NY Adventure Club"
+    ],
+    "why": "Halloween-season walking tour tracing NYC's 19th-century grave-robbing history—when medical schools paid for fresh cadavers and 'resurrection men' prowled cemeteries at night."
+  },
+  {
+    "id": "nyac-loews-valencia-oct31",
+    "name": "NYAC: Exclusive Trip Inside the Loew's Valencia — NYC's First Wonder Theatre",
+    "dateISO": "2026-10-31T12:30:00",
+    "time": "12:30 PM",
+    "venue": "Loew's Valencia Theatre, 165-11 Jamaica Ave, Jamaica Queens",
+    "neighborhood": "Queens",
+    "price": "Ticketed (see nyadventureclub.com)",
+    "url": "https://www.nyadventureclub.com/event/1997717341345",
+    "category": "tours_experiences",
+    "source": "NY Adventure Club",
+    "via": [
+      "NY Adventure Club"
+    ],
+    "why": "Rare access to the Loew's Valencia (1929), one of the original five atmospheric 'Wonder Theatres' and now a Seventh-Day Adventist church that has preserved its extraordinary Spanish Baroque interior—not open to the public otherwise."
+  },
+  {
+    "id": "nyac-ny-historical-conservation-lab-nov4",
+    "name": "NYAC: After-Hours Conservation Lab Tour at the New-York Historical Society",
+    "dateISO": "2026-11-04T18:00:00",
+    "time": "6:00 PM",
+    "venue": "New-York Historical Society, 170 Central Park West",
+    "neighborhood": "Upper West Side",
+    "price": "Ticketed (see nyadventureclub.com)",
+    "url": "https://www.nyadventureclub.com/event/2002570684826",
+    "category": "tours_experiences",
+    "source": "NY Adventure Club",
+    "via": [
+      "NY Adventure Club"
+    ],
+    "why": "After-hours access to the New-York Historical Society's brand-new conservation lab, normally off-limits to the public, to see how objects from the collection are preserved, restored, and analyzed."
+  },
+  {
+    "id": "momath-escher-exhibition",
+    "name": "Mathematics and the Art of M.C. Escher (Exhibition)",
+    "dateISO": "2026-10-06T10:00:00",
+    "time": "Open now through Feb 8, 2027",
+    "venue": "National Museum of Mathematics (MoMath), 11 E 26th St",
+    "neighborhood": "Flatiron",
+    "price": "$30 general / $20 seniors and students",
+    "url": "https://momath.org/escher/",
+    "category": "art_exhibitions",
+    "source": "The Skint / MoMath",
+    "via": [
+      "The Skint"
+    ],
+    "why": "The first major exhibition devoted to the mathematics behind Escher's mind-bending works, with 60+ prints, drawings, original woodblocks, and objects exploring symmetry, geometry, infinity, and perspective."
+  },
+  {
+    "id": "americas-film-festival-thru-oct9",
+    "name": "13th Annual Americas Film Festival of New York",
+    "dateISO": "2026-10-06T17:00:00",
+    "time": "Various (through Oct 9)",
+    "venue": "Various locations (see taffny.com)",
+    "neighborhood": "Manhattan",
+    "price": "Free (except opening night)",
+    "url": "https://www.taffny.com/",
+    "category": "film_tv",
+    "source": "The Skint",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Closing week of the Americas Film Festival exploring stories of historical memory, migration, identity, and music from across the Americas, with features, documentaries, shorts, and filmmaker Q&As."
+  },
+  {
+    "id": "bhangra-greeley-square-wednesdays",
+    "name": "Bhangra in the Plaza (Free, Wednesdays through Oct 21)",
+    "dateISO": "2026-10-07T18:00:00",
+    "time": "6:00 PM Wednesdays (Oct 7, 14, 21)",
+    "venue": "Greeley Square Plaza, Broadway & 32nd St",
+    "neighborhood": "Midtown",
+    "price": "Free",
+    "url": "https://34thstreet.org/calendar/event/bhangra-in-the-plaza/",
+    "category": "music_nightlife",
+    "source": "The Skint",
+    "via": [
+      "The Skint"
+    ],
+    "why": "Free outdoor Bhangra dance classes in the middle of Midtown Manhattan with Sarina Jain and Masala Bhangra dancers—watch and join in; all ages and experience levels welcome, runs through Oct 21."
+  },
+  {
+    "id": "cbh-ufos-aliens-oct19",
+    "name": "We Want to Believe: UFOs, Aliens, and Us",
+    "dateISO": "2026-10-19T18:30:00",
     "time": "6:30 PM",
-    "venue": "Center for Brooklyn History",
+    "venue": "Center for Brooklyn History, 128 Pierrepont St",
     "neighborhood": "Brooklyn Heights",
     "price": "Free (RSVP)",
-    "url": "https://www.bklynlibrary.org/center-for-brooklyn-history",
+    "url": "https://www.bklynlibrary.org/cbh",
     "category": "talks_lectures",
     "source": "Center for Brooklyn History",
     "via": [
       "Center for Brooklyn History"
     ],
-    "why": "Halloween-season panel with Andrea Janes (Boroughs of the Dead ghost tours), Leila Taylor (Darkly), Colin Dickey (Ghostland), and novelist Victor LaValle examining how haunted-place lore—especially around Melrose Hall in Brooklyn—shapes our fears and the stories we need to tell."
+    "why": "Poet and literary critic Adam Kirsch discusses his new book tracing the remarkable journey of UFOs from cultural punchline to subject of serious government investigation, drawing on declassified documents and a long history of believers and skeptics; conversation led by former Harper's editor-in-chief Christopher Beha."
   },
   {
-    "id": "mcny-raise-your-voice-2026-09-25",
-    "name": "Raise Your Voice: New York Activism (Puffin Foundation Center)",
-    "dateISO": "2026-09-25T10:00:00",
-    "time": "Open now (permanent exhibition)",
-    "venue": "Museum of the City of New York",
-    "neighborhood": "East Harlem",
-    "price": "Museum admission",
-    "url": "https://www.mcny.org/exhibition/raise-your-voice-new-york-activism",
-    "category": "art_exhibitions",
-    "source": "Museum of the City of New York",
+    "id": "cbh-rebuilding-democracy-nov9",
+    "name": "Rebuilding American Democracy: The Path to a Functioning Government",
+    "dateISO": "2026-11-09T18:30:00",
+    "time": "6:30 PM",
+    "venue": "Center for Brooklyn History, 128 Pierrepont St",
+    "neighborhood": "Brooklyn Heights",
+    "price": "Free (RSVP)",
+    "url": "https://www.bklynlibrary.org/cbh",
+    "category": "talks_lectures",
+    "source": "Center for Brooklyn History",
     "via": [
-      "Museum of the City of New York"
+      "Center for Brooklyn History"
     ],
-    "why": "Newly opened Puffin Foundation Center for NYC Activism inaugurates with this cornerstone exhibition on the history and legacy of civic engagement and social movements in New York City—successor to the long-running Activist New York."
+    "why": "Legal scholar and former Biden administration official K. Sabeel Rahman discusses his book 'Remaking the State: A New Blueprint for American Democracy,' arguing the crisis goes beyond elections to the institutions of government themselves; conversation with New York Times economics reporter Talmon Joseph Smith."
   },
   {
-    "id": "mcny-he-built-this-city-closing-2026-10-12",
-    "name": "He Built This City: Joe Macken's Model (Closing Oct 12)",
-    "dateISO": "2026-09-29T10:00:00",
-    "time": "Open now; closes Oct 12",
-    "venue": "Museum of the City of New York",
-    "neighborhood": "East Harlem",
-    "price": "Museum admission",
-    "url": "https://www.mcny.org/exhibition/he-built-city",
-    "category": "art_exhibitions",
-    "source": "Museum of the City of New York",
+    "id": "nyhistory-dark-stage-blackface-oct6",
+    "name": "The Dark Stage: New York and the Business of Blackface",
+    "dateISO": "2026-10-06T18:00:00",
+    "time": "6:00 PM",
+    "venue": "New-York Historical Society, 170 Central Park West",
+    "neighborhood": "Upper West Side",
+    "price": "Ticketed (see nyhistory.org)",
+    "url": "https://www.nyhistory.org/programs/the-dark-stage-new-york-and-the",
+    "category": "talks_lectures",
+    "source": "New-York Historical Society",
     "via": [
-      "Museum of the City of New York"
+      "New-York Historical Society"
     ],
-    "why": "Last two weeks to see Joe Macken's extraordinary hand-built scale model of New York City featuring 800,000+ structures across all five boroughs—a viral sensation recently featured by the Associated Press."
+    "why": "Dr. Rhae Lynn Barnes (author of 'Darkology: Blackface and the American Way of Entertainment') examines NYC's role as global epicenter of blackface minstrelsy and how grassroots organizations led by Black mothers fought to dismantle it."
+  },
+  {
+    "id": "nyhistory-revolutionary-women-tour-oct9",
+    "name": "NY Historical Docent Tour: Revolutionary Women",
+    "dateISO": "2026-10-09T11:30:00",
+    "time": "11:30 AM",
+    "venue": "New-York Historical Society, 170 Central Park West",
+    "neighborhood": "Upper West Side",
+    "price": "Free with museum admission",
+    "url": "https://www.nyhistory.org/programs/gallery-tour-revolutionary-women3",
+    "category": "tours_experiences",
+    "source": "New-York Historical Society",
+    "via": [
+      "New-York Historical Society"
+    ],
+    "why": "Docent-led tour of the NY Historical Society galleries focusing on women's roles in the American Revolution—part of the museum's ongoing Democracy Matters programming."
   }
 ]

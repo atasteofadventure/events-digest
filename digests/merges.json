@@ -1,45 +1,71 @@
 {
-  "generated": "2026-10-13T22:32:48",
-  "verdictsApplied": 8,
+  "generated": "2026-10-21T13:46:54",
+  "verdictsApplied": 1,
   "merges": [
     {
-      "day": "2026-10-14",
-      "kept": "Outdoor Movie: Practical Magic at Prospect Park",
+      "day": "2026-11-11",
+      "kept": "From Field to Form: Ocean Flora",
       "keptVia": [
-        "The Skint"
+        "The Architectural League"
       ],
-      "dup": "Movie Under the Stars: Practical Magic (1998) at Prospect Park",
+      "dup": "From Field to Form: Ocean Flora — Using Marine Materials in Architecture",
       "dupVia": [
-        "NYC Parks"
+        "Architectural League"
       ],
       "reason": "same-url",
       "score": 1
     },
     {
-      "day": "2026-10-13",
-      "kept": "Scientific Controversies: Octopus Umwelt",
+      "day": "2026-10-24",
+      "kept": "Yoga in the Park with Shala Yoga",
       "keptVia": [
-        "The Skint"
+        "Fort Greene Park Conservancy"
       ],
-      "dup": "Scientific Controversies No. 37: Octopus Umwelt",
+      "dup": "Shala Yoga",
       "dupVia": [
-        "Pioneer Works"
+        "feed: Fort Greene Park Conservancy"
       ],
-      "reason": "same-url",
-      "score": 1
+      "reason": "jaccard",
+      "score": 0.67
     },
     {
-      "day": "2026-10-13",
-      "kept": "Start Woodworking!",
+      "day": "2026-10-27",
+      "kept": "Run Club with Chelsea Piers Fitness at Fort Greene Park",
       "keptVia": [
-        "feed: Makeville Studio"
+        "Fort Greene Park Conservancy"
       ],
-      "dup": "Start Woodworking! - KJ",
+      "dup": "Run Club with Chelsea Piers Fitness",
       "dupVia": [
-        "feed: Makeville Studio"
+        "feed: Fort Greene Park Conservancy"
       ],
       "reason": "dice",
-      "score": 0.94
+      "score": 1
+    },
+    {
+      "day": "2026-11-14",
+      "kept": "America's 250th Anniversary Tour of Fort Greene",
+      "keptVia": [
+        "Fort Greene Park Conservancy"
+      ],
+      "dup": "America's 250th Anniversary Tour of Fort Greene",
+      "dupVia": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "reason": "dice",
+      "score": 1
+    },
+    {
+      "day": "2026-11-21",
+      "kept": "Black History and Culture Tour of Fort Greene",
+      "keptVia": [
+        "Fort Greene Park Conservancy"
+      ],
+      "dup": "Black History And Culture Tour Of Fort Greene",
+      "dupVia": [
+        "feed: Fort Greene Park Conservancy"
+      ],
+      "reason": "dice",
+      "score": 1
     }
   ]
 }

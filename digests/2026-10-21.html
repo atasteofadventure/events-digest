@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week of 2026-10-21</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f5f4;
+    color: #1c1917;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+
+  /* Tabs */
+  .tab-nav {
+    display: flex;
+    gap: 24px;
+    border-bottom: 1px solid #e7e5e4;
+    margin-bottom: 28px;
+  }
+
+  .tab {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 8px 0 10px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #78716c;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .tab:hover {
+    color: #44403c;
+  }
+
+  .tab.active {
+    color: #1c1917;
+    border-bottom-color: #1c1917;
+  }
+
+  .tab .count {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #a8a29e;
+    margin-left: 4px;
+  }
+
+  .tab.active .count {
+    color: #78716c;
+  }
+
+  /* Tab panels */
+  .tab-panel {
+    display: none;
+  }
+
+  .tab-panel.active {
+    display: block;
+  }
+
+  /* Category sections */
+  .category-section {
+    margin-top: 28px;
+  }
+
+  .category-section:first-child {
+    margin-top: 0;
+  }
+
+  .category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 4px 0 12px;
+    user-select: none;
+  }
+
+  .category-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #a8a29e;
+  }
+
+  .category-toggle {
+    font-size: 0.7rem;
+    color: #a8a29e;
+    transition: transform 0.2s;
+  }
+
+  .category-section.collapsed .category-toggle {
+    transform: rotate(-90deg);
+  }
+
+  .category-body {
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+
+  .category-section.collapsed .category-body {
+    max-height: 0 !important;
+    overflow: hidden;
+  }
+
+  /* Event cards */
+  .event-card {
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 8px;
+    border-left: 3px solid var(--accent, #a8a29e);
+    padding: 16px 18px;
+    margin-bottom: 12px;
+  }
+
+  .event-header {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+
+  .event-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1c1917;
+    text-decoration: none;
+  }
+
+  .event-name:hover {
+    text-decoration: underline;
+  }
+
+  .price-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  .price-badge.free {
+    background: #ecfdf5;
+    color: #059669;
+  }
+
+  .price-badge.paid {
+    background: #f5f5f4;
+    color: #78716c;
+  }
+
+  .event-meta {
+    font-size: 0.8rem;
+    color: #78716c;
+    margin-bottom: 6px;
+  }
+
+  .event-meta span + span::before {
+    content: "\00b7";
+    margin: 0 6px;
+  }
+
+  .event-why {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #57534e;
+    margin-bottom: 10px;
+  }
+
+  .event-nolink {
+    font-size: 0.72rem;
+    color: #b45309;
+    margin-top: 6px;
+  }
+
+  .event-source {
+    font-size: 0.72rem;
+    color: #a8a29e;
+    margin-top: 8px;
+  }
+
+  .source-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 6px 0;
+    border-bottom: 1px solid #f0edea;
+    font-size: 0.85rem;
+  }
+  .source-row .count { color: #78716c; white-space: nowrap; }
+  .source-empty { color: #b45309; }
+  .source-kind { color: #a8a29e; font-weight: 400; }
+  .sources-sub {
+    font-size: 0.8rem;
+    color: #78716c;
+    margin: 16px 0 6px;
+  }
+
+  .feedback-row {
+    display: flex;
+    gap: 4px;
+  }
+
+  .feedback-btn {
+    font-family: inherit;
+    font-size: 0.85rem;
+    background: none;
+    border: none;
+    padding: 2px 4px;
+    cursor: pointer;
+    color: #d6d3d1;
+    transition: color 0.15s;
+    line-height: 1;
+  }
+
+  .feedback-btn:hover {
+    color: #78716c;
+  }
+
+  .feedback-btn.selected-positive {
+    color: #059669;
+  }
+
+  .feedback-btn.selected-negative {
+    color: #dc2626;
+  }
+
+  /* Save button */
+  .save-btn {
+    font-family: inherit;
+    font-size: 0.85rem;
+    background: none;
+    border: none;
+    padding: 2px 4px;
+    cursor: pointer;
+    color: #d6d3d1;
+    transition: color 0.15s;
+    line-height: 1;
+    margin-left: auto;
+  }
+
+  .save-btn:hover {
+    color: #f59e0b;
+  }
+
+  .save-btn.saved {
+    color: #f59e0b;
+  }
+
+  /* Day filter pills */
+  .day-filter {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .day-pill {
+    font-family: inherit;
+    font-size: 0.7rem;
+    font-weight: 500;
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 16px;
+    padding: 4px 12px;
+    cursor: pointer;
+    color: #78716c;
+    transition: all 0.15s;
+  }
+
+  .day-pill:hover {
+    border-color: #a8a29e;
+    color: #44403c;
+  }
+
+  .day-pill.active {
+    background: #1c1917;
+    border-color: #1c1917;
+    color: #fff;
+  }
+
+  /* Saved section */
+  .saved-section {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e7e5e4;
+  }
+
+  .saved-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 4px 0 12px;
+    user-select: none;
+  }
+
+  .saved-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #f59e0b;
+  }
+
+  .saved-empty {
+    font-size: 0.8rem;
+    color: #a8a29e;
+    font-style: italic;
+    padding: 8px 0;
+  }
+
+  .saved-card {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .saved-card .event-name {
+    font-size: 0.85rem;
+  }
+
+  .saved-card .saved-meta {
+    font-size: 0.75rem;
+    color: #78716c;
+  }
+
+  .saved-card .unsave-btn {
+    font-family: inherit;
+    font-size: 0.7rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #a8a29e;
+    margin-left: auto;
+  }
+
+  .saved-card .unsave-btn:hover {
+    color: #dc2626;
+  }
+
+  /* Discovered Sources */
+  .sources-section {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e7e5e4;
+  }
+
+  .sources-title {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #a8a29e;
+    margin-bottom: 12px;
+  }
+
+  .source-item {
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+  }
+
+  .source-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #1c1917;
+    text-decoration: none;
+  }
+
+  .source-name:hover {
+    text-decoration: underline;
+  }
+
+  .source-desc {
+    font-size: 0.8rem;
+    color: #78716c;
+    margin-top: 2px;
+  }
+
+  /* Collection stats */
+  .stats-bar {
+    font-size: 0.8rem;
+    color: #a8a29e;
+    margin-bottom: 16px;
+  }
+
+  .stats-bar a {
+    color: #3b82f6;
+    text-decoration: none;
+  }
+
+  .stats-bar a:hover {
+    text-decoration: underline;
+  }
+
+  /* Empty state */
+  .empty-state {
+    text-align: center;
+    padding: 48px 20px;
+    color: #a8a29e;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1 id="digest-title"></h1>
+  <div id="collection-stats"></div>
+  <div id="saved-container"></div>
+  <nav class="tab-nav" id="tab-nav"></nav>
+  <div id="day-filter-container"></div>
+  <div id="tab-panels"></div>
+  <div id="sources-container"></div>
+</div>
+
+<script>
+var EVENTS_DATA = /*__EVENTS_JSON__*/{"meta":{"title":"Week of 2026-10-21","type":"week","total_collected":325,"source_report":{"contributing":32,"empty":["Thought Gallery","Center for Fiction","BRIC","Gary's Guide","Creative Coding NYC","NYC Parks","Rooftop Films","Photoville"],"counts":[{"source":"feed: Club Free Time","count":78},{"source":"The Skint","count":37},{"source":"feed: Green-Wood Cemetery","count":30},{"source":"feed: Makeville Studio","count":25},{"source":"feed: Gowanus Dredgers","count":14},{"source":"New York Public Library","count":13},{"source":"feed: Greenlight Bookstore","count":11},{"source":"New York Adventure Club","count":9},{"source":"feed: Fort Greene Park Conservancy","count":9},{"source":"feed: NYC Resistor","count":9},{"source":"feed: The Wisdom Bar","count":9},{"source":"AIA New York","count":7},{"source":"Museum of the Moving Image","count":6},{"source":"Fort Greene Park Conservancy","count":6},{"source":"New York Transit Museum","count":6},{"source":"feed: NY Mycological Society","count":6},{"source":"feed: Lectures on Tap","count":6},{"source":"Brooklyn Public Library","count":5},{"source":"The Cooper Union","count":5},{"source":"feed: Gotham Center","count":5},{"source":"The Architectural League","count":4},{"source":"New-York Historical Society","count":4},{"source":"Thought Gallery / 92NY","count":4},{"source":"Cerebral Valley","count":3},{"source":"Brooklyn Museum","count":3},{"source":"Museum of the City of New York","count":3},{"source":"Brooklyn Brainery","count":2},{"source":"feed: Nerd Nite NYC","count":2},{"source":"Brooklyn Botanic Garden","count":1},{"source":"NYC Parks","count":1},{"source":"Interintellect","count":1},{"source":"Architectural League","count":1}]}},"generated":"2026-10-21T13:46:54","thisWeek":[{"id":"nypl-exhibition-declaring-america","name":"Declaring America: 1776 and Beyond — Exhibition","dateISO":"2026-10-21T10:00:00","time":"During library hours","venue":"Stephen A. Schwarzman Building","neighborhood":"Midtown","price":"Free","url":"https://click.email.nypl.org/?qs=ABl7ImQiOjUwMzMsInQiOjYzNTIsInMiOjZ9AAYAAAAABjwyOtoVdpUJvoWSRoJ-oQ1lkQ0BpmXbE5ncerWR0DB6YfGtAGVIz8o2ybphftE2fSbI63i1ab70UufhA4mpbu10_PD2","category":"art_exhibitions","source":"New York Public Library","via":["New York Public Library"],"why":"Multi-gallery exhibition at the Schwarzman Building unpacking complex, diverse stories of the American Revolution — from founding documents and protest ephemera to artworks from the Schomburg Center — through Jan 10, 2027.","date":"2026-10-21"},{"id":"nypl-exhibition-forging-ahead-schomburg","name":"Forging Ahead: Recent Acquisitions of Black Women Artists — Exhibition","dateISO":"2026-10-21T10:00:00","time":"During library hours","venue":"Schomburg Center for Research in Black Culture","neighborhood":"Harlem","price":"Free","url":"https://click.email.nypl.org/?qs=ABl7ImQiOjUwMzMsInQiOjYzNTIsInMiOjZ9AAYAAAAABjwyOtoYYBfxT-Gx1m0JEDL_5f-Gh1i78Jw-Rg_rgBKiSLInBojgokhvd4MiYdUE704Z3-LQ7nWLvfpxm0geOdAeaHAF","category":"art_exhibitions","source":"Schomburg Center for Research in Black Culture","via":["New York Public Library"],"why":"21 Black women artists working across media on themes of body iconography, storytelling, futurism, spirituality, and mapping Black history in a showcase of the Schomburg's recent acquisitions. On view through Mar 27, 2027.","date":"2026-10-21"},{"id":"nypl-exhibition-winnie-pooh-100","name":"Silly Old Bear! Winnie-the-Pooh at 100 — Exhibition","dateISO":"2026-10-21T10:00:00","time":"During library hours","venue":"Stephen A. Schwarzman Building","neighborhood":"Midtown","price":"Free","url":"https://click.email.nypl.org/?qs=ABl7ImQiOjUwMzMsInQiOjYzNTIsInMiOjZ9AAYAAAAABjwyOtoSmI2GPER_71pqjGAIyed0aieDA0e44uLxEOoGli6FiW5hiMAGI5MuGoEfzvuGwC76vB8tAaZ2zq7JHwZ0Fnvs","category":"art_exhibitions","source":"New York Public Library","via":["New York Public Library"],"why":"Centenary exhibition displaying original A.A. Milne mockups, E.H. Shepard illustrations, translations of the Pooh stories, and the new Roo toy gifted by Queen Camilla — plus the original stuffed toys that inspired the books. On view through Nov 30.","date":"2026-10-21"},{"id":"nypl-exhibition-unleashed-pets-lpa","name":"Unleashed: Pets of the Performing Arts — Exhibition","dateISO":"2026-10-21T10:00:00","time":"During library hours","venue":"Library for the Performing Arts","neighborhood":"Lincoln Center","price":"Free","url":"https://click.email.nypl.org/?qs=ABl7ImQiOjUwMzMsInQiOjYzNTIsInMiOjZ9AAYAAAAABjwyOtoZOWKf7Ds5jjAnbBG16Cetggi5d3jnoPExmFcXKLeTlLE5RZAeL9o_BZ-iI0XMP-F3DR05zuZVxqUqwRhsuWC2","category":"art_exhibitions","source":"New York Public Library for the Performing Arts","via":["New York Public Library"],"why":"Exhibition drawing from the Library for the Performing Arts archives to spotlight the animals behind iconic performers — from Billie Holiday's boxer to Anna Pavlova's pet swan and Larry Kramer's hound. On view through May 8, 2027.","date":"2026-10-21"},{"id":"feed-green-wood-cemetery-2026-10-21-green-wood-on-wheels-stroller-friendly-t","name":"Green-Wood on Wheels: Stroller-Friendly Tour","dateISO":"2026-10-21T10:30:00","time":"10:30 AM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/green-wood-on-wheels-stroller-friendly-tour/2026-10-21/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"Green-Wood’s stunning landscapes, where history, nature, and community come together. Designed for parents and caregivers, this tour offers the perfect blend of discovery and connection as you…","date":"2026-10-21"},{"id":"bkm-what-season-america-1021","name":"Performance: What Season Is It, America?","dateISO":"2026-10-21T11:00:00","endDateISO":"2026-10-25","time":"Wed–Sun, Oct 21–25, 11 am–5 pm","venue":"Brooklyn Museum","neighborhood":"Prospect Heights","price":"Included with admission","url":"https://www.brooklynmuseum.org/opencollection/exhibitions","category":"arts_culture","source":"Brooklyn Museum","via":["Brooklyn Museum"],"why":"A performance work running the full week as part of the Drawing America: US@250 finale series at the Brooklyn Museum — five days of live art in the galleries exploring American identity and the current moment.","date":"2026-10-21"},{"id":"feed-gowanus-dredgers-2026-10-21-boathouse-bluegrass-jam","name":"Boathouse Bluegrass Jam","dateISO":"2026-10-21T18:00:00","time":"6:00 PM","venue":"Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States","neighborhood":"","price":"","url":"https://gowanusdredgers.org/event/boathouse-bluegrass-jam-2/2026-10-21/","category":"music_nightlife","source":"Gowanus Dredgers","via":["feed: Gowanus Dredgers"],"why":"","date":"2026-10-21"},{"id":"nypl-horror-film-slashers-1021","name":"Horror Film Series: Slashers — Scream (Oct 21) and Black Christmas (Oct 28)","dateISO":"2026-10-21T18:00:00","time":"6:00 PM","venue":"Stavros Niarchos Foundation Library (SNFL)","neighborhood":"Midtown","price":"Free","url":"https://click.email.nypl.org/?qs=ABl7ImQiOjUwMzMsInQiOjYzNTIsInMiOjZ9AAYAAAAABjwyOtoDGQL9NztUp76LgbdN_2Xx8BMxu-SuasftYyxQTtuCerqmyBVCaSDdRsPHxPn7pzDXAqIv706JcafmBT-viO_J","category":"film_screenings","source":"New York Public Library","via":["New York Public Library"],"why":"NYPL's two-part slasher film series screening iconic horror classics: Scream on Oct 21, Black Christmas on Oct 28, both at SNFL at 6 PM.","date":"2026-10-21"},{"id":"brainery-sinister-scents-1021","name":"Sinister Scents and Perfumed Potions","dateISO":"2026-10-21T18:00:00","time":"Evening","venue":"Brooklyn Brainery, Prospect Heights","neighborhood":"Prospect Heights","price":"$","url":"http://brooklynbrainery.com/courses/sinister-scents-and-perfumed-potions","category":"workshops","source":"Brooklyn Brainery","via":["Brooklyn Brainery"],"why":"Hands-on perfume-making class with a Halloween bent — create spooky-season scents and potions. The Brainery's signature affordable, accessible small-group format.","date":"2026-10-21"},{"id":"mcny-louis-auchincloss-prize-1021","name":"2026 Louis Auchincloss Prize Honoring Colson Whitehead","dateISO":"2026-10-21T18:30:00","time":"6:30 PM","venue":"Museum of the City of New York","neighborhood":"East Harlem / Museum Mile","price":"$35 (general) / $25 (members)","url":"https://www.mcny.org/event/2026-louis-auchincloss-prize","category":"talks_lectures","source":"Museum of the City of New York","via":["Museum of the City of New York"],"why":"Presentation of the Louis Auchincloss Prize to two-time Pulitzer Prize winner Colson Whitehead, in a moderated conversation with New York Times critic Wesley Morris. The prize celebrates writers and artists whose work illuminates the five boroughs.","date":"2026-10-21"},{"id":"nypl-black-on-screen-marlon-riggs-1021","name":"Black on Screen: Honoring Marlon Riggs","dateISO":"2026-10-21T18:30:00","time":"6:30 PM","venue":"Schomburg Center for Research in Black Culture","neighborhood":"Harlem","price":"Free","url":"https://click.email.nypl.org/?qs=ABl7ImQiOjUwMzMsInQiOjYzNTIsInMiOjZ9AAYAAAAABjwyOtn2tgoxivtcgyxAdMB7rj8GqU4sCzWtkseM5yoblb8TtC0bjhuOWtUW1LuGfqx6cwvGN47PF4cTiRxfmNK6qp-Y","category":"film_screenings","source":"New York Public Library / Schomburg Center","via":["New York Public Library"],"why":"Screening and tribute honoring the work of Marlon Riggs, the pioneering Black filmmaker and poet known for Tongues Untied, Ethnic Notions, and Color Adjustment.","date":"2026-10-21"},{"id":"feed-lectures-on-tap-2026-10-21-lectures-on-tap-the-actual-astronomy-of-","name":"Lectures on Tap - \"The (Actual) Astronomy of Astrology\"","dateISO":"2026-10-21T18:30:00","time":"6:30 PM","venue":"Prospect Park South, Brooklyn","neighborhood":"","price":"$41.32","url":"https://www.eventbrite.com/e/lectures-on-tap-the-actual-astronomy-of-astrology-tickets-2001094228706","category":"talks_lectures","source":"Lectures on Tap","via":["feed: Lectures on Tap"],"why":"","date":"2026-10-21"},{"id":"feed-nyc-resistor-2026-10-21-public-craft-night-1st-fridays-and-3rd-w","name":"Public Craft Night 1st Fridays and 3rd Wednesdays of the Month","dateISO":"2026-10-21T18:30:00","time":"6:30 PM","venue":"NYC Resistor","neighborhood":"","price":"Free","url":"https://www.eventbrite.com/e/public-craft-night-1st-fridays-and-3rd-wednesdays-of-the-month-masks-on-tickets-623419182557","category":"workshops_classes","source":"NYC Resistor","via":["feed: NYC Resistor"],"why":"Learn, make, and share at NYC Resistor (18+; high quality masks required and provided on request)","date":"2026-10-21"},{"id":"skint-adam-wade-live-ny-1021","name":"Adam Wade: Live in New York — Storytelling Show","dateISO":"2026-10-21T19:00:00","time":"7:00 PM","venue":"Under St. Marks Theater","neighborhood":"East Village","price":"$7+","url":"https://tickets.frigid.nyc/event/6897:476/","category":"talks_lectures","source":"Adam Wade","via":["The Skint"],"why":"20-time Moth Story Slam winner Adam Wade performs three to four stories from his catalog with a special guest; no two shows are the same.","date":"2026-10-21"},{"id":"skint-artists-beers-screening-1021","name":"Artists + Beers: Short Film Screening Series","dateISO":"2026-10-21T19:00:00","time":"7:00 PM","venue":"All Night Skate","neighborhood":"Bed-Stuy","price":"Free","url":"https://www.instagram.com/p/DeZj5IhRG7z/","category":"film_screenings","source":"Artists + Beers","via":["The Skint"],"why":"Semi-monthly screening of short films, docs, and music videos by local filmmakers, paired with beers.","date":"2026-10-21"},{"id":"feed-greenlight-bookstore-2026-10-21-black-lit-book-group","name":"Black Lit Book Group","dateISO":"2026-10-21T19:00:00","time":"7:00 PM","venue":"BierWax","neighborhood":"","price":"Free","url":"https://www.eventbrite.com/e/black-lit-book-group-tickets-2000483605315","category":"talks_lectures","source":"Greenlight Bookstore","via":["feed: Greenlight Bookstore"],"why":"Our Black Lit group meets monthly to amplify the works of past and present Black voices of all genres!","date":"2026-10-21"},{"id":"feed-club-free-time-2026-10-21-human-rights-leaders-in-conversation","name":"Human Rights Leaders in Conversation","dateISO":"2026-10-21T19:00:00","time":"7:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-10-21/event/767128","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Human Rights Leaders in Conversation","date":"2026-10-21"},{"id":"skint-roman-elegy-taylor-swift-1021","name":"Taylor Swift, 'Love Story,' and the Ancient Roman Art of Writing About Love","dateISO":"2026-10-21T19:00:00","time":"7:00 PM","venue":"Warburg Lounge at 92NY","neighborhood":"Upper East Side","price":"$","url":"https://www.92ny.org/event/david-levene-reading-roman-elegy-through-taylor-swift?utm_source=theskint\u0026utm_medium=cpc\u0026utm_campaign=swift\u0026utm_content=swift","category":"talks_lectures","source":"92NY","via":["The Skint"],"why":"NYU classicist David Levene traces Roman elegy from ancient Rome to the Eras Tour in a lecture based on his 'It's a Love Story' course; one-hour open bar included.","date":"2026-10-21"},{"id":"skint-phantom-opera-1925-live-score-1021","name":"The Phantom of the Opera (1925) with Original Guitar and Church Organ Live Score","dateISO":"2026-10-21T19:00:00","time":"7:00 PM","venue":"Stone Circle Theater","neighborhood":"Ridgewood","price":"$20","url":"https://www.aesopssoundfables.com/upcoming","category":"film_screenings","source":"Aesop's Sound Fables","via":["The Skint"],"why":"Halloween screening of the 1925 silent film classic accompanied by a newly composed live guitar and church organ score.","date":"2026-10-21"},{"id":"feed-greenlight-bookstore-2026-10-21-na-zhong-with-rachel-heng","name":"Na Zhong with Rachel Heng","dateISO":"2026-10-21T19:30:00","time":"7:30 PM","venue":"Greenlight Bookstore in Fort Greene","neighborhood":"","price":"Free","url":"https://www.eventbrite.com/e/na-zhong-with-rachel-heng-tickets-1999273195948","category":"talks_lectures","source":"Greenlight Bookstore","via":["feed: Greenlight Bookstore"],"why":"Na Zhong presents her expansive yet personal debut novella about a family, and a town changed by the breakneck pressures of modernization.","date":"2026-10-21"},{"id":"skint-taste-of-science-weather-1021","name":"Taste of Science: 'Under Pressure: Decoding the Weather Machine'","dateISO":"2026-10-21T19:30:00","time":"7:30 PM","venue":"Ryan's Daughter Pub","neighborhood":"Upper East Side","price":"Free","url":"https://tasteofscience.org/new-york-events/2026/10/21/under-pressure","category":"talks_lectures","source":"Taste of Science","via":["The Skint"],"why":"Science-bar talk covering weather science from today's forecast to how AI is transforming future climate predictions.","date":"2026-10-21"},{"id":"skint-our-wicked-lady-90s-cover-1021","name":"Our Wicked Lady Presents: '90s Cover Band Night","dateISO":"2026-10-21T20:00:00","time":"8:00 PM","venue":"Brooklyn Bowl","neighborhood":"Williamsburg","price":"$20","url":"https://www.brooklynbowl.com/brooklyn/events/detail/our-wicked-lady-presents-90-s-cover-night-k7vgf_3cjhr6a","category":"music_nightlife","source":"Brooklyn Bowl","via":["The Skint"],"why":"Halloween-themed covers of Rage Against the Machine, Alice in Chains, Smashing Pumpkins, and other '90s acts.","date":"2026-10-21"},{"id":"skint-rocky-horror-360-1021","name":"The Rocky Horror Picture Show: 360 Production","dateISO":"2026-10-21T20:00:00","time":"8:00 PM","venue":"Brooklyn Art Haus","neighborhood":"Williamsburg","price":"$20.60+","url":"https://www.eventbrite.com/e/the-rocky-horror-picture-show-360-tickets-2001969179708","category":"miscellaneous","source":"Kitchen Sink Theatre Company","via":["The Skint"],"why":"Fully staged 360° production with shadow cast; post-show DJ sets and dance parties following the Oct 23, 24, 30, and 31 shows. Runs through Nov 1.","date":"2026-10-21"},{"id":"skint-monster-high-mash-drag-1021","name":"The Monster High Mash: A Monster High Drag Party","dateISO":"2026-10-21T22:30:00","time":"10:30 PM","venue":"C'mon Everybody","neighborhood":"Bed-Stuy","price":"$13.39","url":"https://dice.fm/event/yoqrax-the-monster-high-mash-a-monster-high-drag-party-21st-oct-cmon-everybody-new-york-tickets","category":"music_nightlife","source":"C'mon Everybody","via":["The Skint"],"why":"All-Monster High-themed drag party hosted by Cheetah Quila.","date":"2026-10-21"},{"id":"nycparks-greenbelt-hike-1022","name":"Greenbelt Adult Hike — Paulo's Peak","dateISO":"2026-10-22T11:00:00","time":"11:00 AM – 1:00 PM","venue":"Greenbelt Nature Center, Blood Root Valley","neighborhood":"Staten Island","price":"Free","url":"https://www.nycgovparks.org/events/2026/10/22/greenbelt-adult-hike-paulos-peak","category":"outdoors_nature","source":"NYC Parks","via":["NYC Parks"],"why":"Urban Park Rangers-led adult hike through Staten Island's Greenbelt, one of New York City's largest contiguous natural areas, to Paulo's Peak.","date":"2026-10-22"},{"id":"feed-club-free-time-2026-10-22-art-critic-artist-explore-photography-in","name":"Art Critic \u0026 Artist Explore Photography in the Age of AI","dateISO":"2026-10-22T17:30:00","time":"5:30 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-gallery-talk/2026-10-22/event/764623","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"A conversation between Charlotte Kent and Danielle Ezzo about photography and AI from a historic, critical, and artistic perspective. Photography has always been troubled by its own expansion. From…","date":"2026-10-22"},{"id":"aiany-common-bond-gala-1022","name":"AIA New York Common Bond 2026 Gala","dateISO":"2026-10-22T18:00:00","time":"6:00 PM","venue":"Pier 60 at Chelsea Piers","neighborhood":"Chelsea","price":"$","url":"https://click.email.aiany.org/?qs=ABl7ImQiOjUwMzAsInQiOjc3MjcsInMiOjd9AAcAAAAAB-lEpwWNFBu1RABbAvsYSisE5GjH3s7TecSz47C3MjUAGEmHgPD3_h6GS_-Sjo5wryYFg-Pc24oPqCvqPcquIDTCavs","category":"festivals_parties","source":"AIA New York","via":["AIA New York"],"why":"Annual AIA NY fundraiser gala at Pier 60, celebrating honorees in support of the Center for Architecture's year-round community programs; after party 9 PM–midnight.","date":"2026-10-22"},{"id":"nyac-truffle-pasta-1022","name":"Exclusive Truffle Pasta Making Experience @ The Urbani Truffle Lab NYC","dateISO":"2026-10-22T18:00:00","time":"6:00 PM","venue":"Urbani Truffle Lab NYC","neighborhood":"Manhattan","price":"$","url":"https://nyadventureclub.com/event/2002064012355","category":"food_drink","source":"New York Adventure Club","via":["New York Adventure Club"],"why":"Hands-on truffle pasta making workshop at the Urbani Truffle Lab, guided by truffle experts.","date":"2026-10-22"},{"id":"feed-gowanus-dredgers-2026-10-22-paddle-in-movie-gowanus-current","name":"Paddle-In Movie: Gowanus Current","dateISO":"2026-10-22T18:00:00","time":"6:00 PM","venue":"Gowanus Dredgers","neighborhood":"","price":"","url":"https://gowanusdredgers.org/event/paddle-in-movie-gowanus-current/","category":"film_screenings","source":"Gowanus Dredgers","via":["feed: Gowanus Dredgers"],"why":"","date":"2026-10-22"},{"id":"nyac-city-speaks-1022","name":"The City Speaks: An Interactive One-Man Show of New York Slang \u0026 Speech","dateISO":"2026-10-22T18:00:00","time":"6:00 PM","venue":"Henry Street Settlement, Lower East Side","neighborhood":"Lower East Side","price":"$","url":"https://nyadventureclub.com/event/2002068974196","category":"arts_culture","source":"New York Adventure Club","via":["New York Adventure Club"],"why":"Debut performance of an interactive one-man theatrical experience inside the historic Henry Street Settlement, exploring the evolution of New York City's slang and speech.","date":"2026-10-22"},{"id":"feed-club-free-time-2026-10-22-artists-discuss-how-their-works-speak-to","name":"Artists Discuss How Their Works Speak to One Another","dateISO":"2026-10-22T18:30:00","time":"6:30 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-gallery-talk/2026-10-22/event/766990","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"In celebration of the exhibitions Arlene Shechet: She Said She Said, Torkwase Dyson: Seeing in Blue, and Lynda Benglis: KNOTTING, TYING, FOLDING, Torkwase Dyson, Nora Lawrence, and Sarita Dubin will…","date":"2026-10-22"},{"id":"skint-halloween-cover-show-art-market-1022","name":"Halloween Cover Show + Art Market","dateISO":"2026-10-22T18:30:00","time":"6:30 PM","venue":"Rubulad","neighborhood":"Bushwick","price":"$15","url":"https://pools.events/event/t6RSuqCG/halloween-cover-show-art-market/","category":"music_nightlife","source":"Rubulad","via":["The Skint"],"why":"Live tributes to Tom Petty, the B-52s, and more, alongside an art market.","date":"2026-10-22"},{"id":"feed-club-free-time-2026-10-22-kosovar-albanian-tea-sharing-tradition-e","name":"Kosovar Albanian Tea-Sharing Tradition: Exchange, Conversation, \u0026 Collective Reflection","dateISO":"2026-10-22T18:30:00","time":"6:30 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-gallery-talk/2026-10-22/event/766903","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Led by the New York–based artist-run initiative Brief Histories, this open conversation will reflect on how artist-led cultural spaces can uniquely respond to the needs of their communities. The…","date":"2026-10-22"},{"id":"feed-lectures-on-tap-2026-10-22-lectures-on-tap-a-political-scientist-s-","name":"Lectures on Tap - \"A Political Scientist's Guide to the 2026 Midterms\"","dateISO":"2026-10-22T18:30:00","time":"6:30 PM","venue":"Williamsburg, Brooklyn","neighborhood":"","price":"$41.32","url":"https://www.eventbrite.com/e/lectures-on-tap-a-political-scientists-guide-to-the-2026-midterms-tickets-2001241019762","category":"talks_lectures","source":"Lectures on Tap","via":["feed: Lectures on Tap"],"why":"","date":"2026-10-22"},{"id":"feed-lectures-on-tap-2026-10-22-lectures-on-tap-the-psychology-of-psycho","name":"Lectures on Tap - \"The Psychology of Psychopathy\"","dateISO":"2026-10-22T18:30:00","time":"6:30 PM","venue":"Lower East Side, Manhattan","neighborhood":"","price":"$41.32","url":"https://www.eventbrite.com/e/lectures-on-tap-the-psychology-of-psychopathy-tickets-2000010403957","category":"talks_lectures","source":"Lectures on Tap","via":["feed: Lectures on Tap"],"why":"","date":"2026-10-22"},{"id":"feed-nyc-resistor-2026-10-22-public-craft-night-mondays-and-thursdays","name":"Public Craft Night Mondays and Thursdays!","dateISO":"2026-10-22T18:30:00","time":"6:30 PM","venue":"NYC Resistor","neighborhood":"","price":"Free","url":"https://www.eventbrite.com/e/public-craft-night-mondays-and-thursdays-tickets-162729866411","category":"workshops_classes","source":"NYC Resistor","via":["feed: NYC Resistor"],"why":"Learn, make and share at NYC Resistor (all events18+)","date":"2026-10-22"},{"id":"cu-sawyer-avenue-screening-panel-1022","name":"Sawyer Avenue, Sunday Afternoon — Film Screening \u0026 Panel (Cooper Union + The New Yorker)","dateISO":"2026-10-22T18:30:00","time":"6:30 PM","venue":"The Great Hall at Cooper Union","neighborhood":"East Village","price":"Free","url":"https://cooper.edu/events-and-exhibitions/events/sawyer-avenue-sunday-afternoon-film-screening-panel","category":"film_screenings","source":"The Cooper Union / The New Yorker","via":["The Cooper Union"],"why":"Screening of The New Yorker Documentary's award-winning short about masked US Border Patrol agents abducting a man without warrant in Chicago, followed by a discussion with filmmaker Bill Morrison, journalist Jamie Kalven, NYCLU immigration policy strategist Devashish Basnet, and The City reporter Gwynne Hogan.","date":"2026-10-22"},{"id":"cv-scaling-ai-deployments-1022","name":"Scaling AI Deployments","dateISO":"2026-10-22T18:30:00","time":"6:30 PM","venue":"TBD","neighborhood":"NYC","price":"Free","url":"https://luma.com/scalingaideployments","category":"tech_ai","source":"Reasoning Project / ElevenLabs / OpenAI / Fireworks","via":["Cerebral Valley"],"why":"Founders and engineering leads from OpenAI, ElevenLabs, Fireworks, and QuantumLight discuss taking AI from early experimentation to production at scale, with firesides on deployments.","date":"2026-10-22"},{"id":"skint-mingle-games-1022","name":"The Mingle Games","dateISO":"2026-10-22T18:30:00","time":"6:30 PM","venue":"Jaywalker at New York Distilling Co.","neighborhood":"East Williamsburg","price":"$","url":"https://www.eventbrite.com/e/1999788047884?aff=Skint","category":"miscellaneous","source":"The Mingle Games","via":["The Skint"],"why":"Fast-paced social games send participants from table to table meeting strangers, with cocktails, beer, and dumplings; an app lets you connect with people you click with.","date":"2026-10-22"},{"id":"skint-wnyc-affordability-series-transit-1022","name":"WNYC In Conversation: Affordability Series — Second Avenue Subway Expansion","dateISO":"2026-10-22T18:30:00","time":"6:30 PM","venue":"CCCADI Ilé Oyin","neighborhood":"East Harlem","price":"Free","url":"https://wnyc.org/events/in-conversation-the-affordability-series-transit","category":"talks_lectures","source":"WNYC","via":["The Skint"],"why":"Live podcast taping with residents, business owners, and MTA officials discussing the long-promised Second Avenue Subway expansion and displacement tensions.","date":"2026-10-22"},{"id":"feed-club-free-time-2026-10-22-exquisite-acclaimed-author-and-her-work","name":"\"Exquisite\" - Acclaimed Author and Her Work","dateISO":"2026-10-22T19:00:00","time":"7:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-10-22/event/767131","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"\"Exquisite\" - Acclaimed Author and Her Work","date":"2026-10-22"},{"id":"skint-sinners-mccarren-park-1022","name":"Free Outdoor Movie: Sinners at McCarren Park","dateISO":"2026-10-22T19:00:00","time":"7:00 PM","venue":"McCarren Park","neighborhood":"Williamsburg","price":"Free","url":"https://www.nycgovparks.org/events/2026/10/22/movie-under-the-stars-sinners-2025","category":"film_screenings","source":"NYC Parks","via":["The Skint"],"why":"Free outdoor screening of Sinners (2025) at McCarren Park; weather permitting.","date":"2026-10-22"},{"id":"skint-momaps1-school-nite-1022","name":"MoMA PS1 School Nite: Isabella Lovestory, b0yg1rl, Ali RQ","dateISO":"2026-10-22T19:00:00","time":"7:00 PM","venue":"MoMA PS1","neighborhood":"Long Island City","price":"$15","url":"https://www.momaps1.org/en/events/844-school-nite","category":"music_nightlife","source":"MoMA PS1","via":["The Skint"],"why":"PS1's new after-hours series featuring digital, internet-based, and underground acts with gallery access until 9pm; Isabella Lovestory, b0yg1rl, and DJ Ali RQ headline.","date":"2026-10-22"},{"id":"feed-green-wood-cemetery-2026-10-22-nightfall","name":"Nightfall","dateISO":"2026-10-22T19:00:00","time":"7:00 PM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/nightfall-3/2026-10-22/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"Gothic Arch marks the beginning. Where the night takes you next is another story. Something new is coming to Brooklyn’s most storied grounds. For two nights only, Green-Wood’s winding pathways will…","date":"2026-10-22"},{"id":"momi-nosferatu-live-score-1022","name":"Nosferatu (35mm) with Live Musical Accompaniment by Makia Matsumura","dateISO":"2026-10-22T19:00:00","time":"7:00 PM","venue":"Museum of the Moving Image","neighborhood":"Astoria","price":"$","url":"https://movingimage.org/series/handcrafted-horrors/","category":"film_screenings","source":"Museum of the Moving Image","via":["Museum of the Moving Image"],"why":"35mm screening of the 1922 horror classic Nosferatu with a live musical score performed by Makia Matsumura, part of the Handcrafted Horrors Halloween series.","date":"2026-10-22"},{"id":"skint-nyc-magic-ensemble-1022","name":"NYC Magic Ensemble","dateISO":"2026-10-22T19:00:00","time":"7:00 PM","venue":"Young Ethel's","neighborhood":"South Slope","price":"$10","url":"https://www.eventbrite.com/e/nyc-magic-ensemble-young-ethels-1022-tickets-1994947809601","category":"miscellaneous","source":"NYC Magic Ensemble","via":["The Skint"],"why":"An evening of close-up magic and mentalism from the NYC Magic Ensemble at a neighborhood bar.","date":"2026-10-22"},{"id":"momi-persona-60th-newfest-1022","name":"Persona (60th Anniversary) co-presented with Newfest","dateISO":"2026-10-22T19:00:00","time":"TBD","venue":"Museum of the Moving Image","neighborhood":"Astoria","price":"$","url":"https://movingimage.org/events/list/?tribe-bar-date=2026-10-23\u0026tribe_filterbar_category_custom%5B0%5D=253\u0026tribe_filterbar_category_custom%5B1%5D=230","category":"film_screenings","source":"Museum of the Moving Image","via":["Museum of the Moving Image"],"why":"60th anniversary screening of Ingmar Bergman's Persona (1966), co-presented with Newfest, the NYC LGBT+ film festival.","date":"2026-10-22"},{"id":"feed-makeville-studio-2026-10-22-spoon-carving-esg","name":"Spoon Carving - ESG","dateISO":"2026-10-22T19:00:00","time":"7:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-10-22"},{"id":"92ny-sun-also-rises-1022","name":"The Sun Also Rises at 100 — Anniversary Reading with Maya Hawke, Sarah Pidgeon, Richard Schiff, Jay McInerney","dateISO":"2026-10-22T19:30:00","time":"7:30 PM","venue":"92NY, Unterberg Poetry Center","neighborhood":"Upper East Side","price":"$","url":"https://www.92ny.org/event/sun-also-rises-100","category":"talks_lectures","source":"92NY","via":["Thought Gallery / 92NY"],"why":"Centennial celebration of Hemingway's The Sun Also Rises, with a special anniversary reading featuring Maya Hawke, Sarah Pidgeon, Richard Schiff, and Jay McInerney bringing the characters to life 100 years later — one of the year's most starry literary events.","date":"2026-10-22"},{"id":"skint-goth-sk8-halloween-1022","name":"Goth Sk8 Halloween: Gargoyle, Llora, Nightwitch","dateISO":"2026-10-22T20:00:00","time":"8:00 PM","venue":"Xanadu","neighborhood":"Bushwick","price":"$26.78","url":"https://dice.fm/event/dkyb8o-goth-sk8-halloween-ft-gargoyle-live-llora-nightvvitchskate-22nd-oct-xanadu-new-york-city-tickets","category":"music_nightlife","source":"Xanadu","via":["The Skint"],"why":"Halloween goth skating party with live sets by Gargoyle, Llora, and Nightwitch; skate rental available.","date":"2026-10-22"},{"id":"skint-guillermo-del-homo-pans-labyrinth-1022","name":"Guillermo Del Homo: Pan's Labyrinth 20th Anniversary Drag Tribute","dateISO":"2026-10-22T21:00:00","time":"9:00 PM","venue":"C'mon Everybody","neighborhood":"Bed-Stuy","price":"$13.39","url":"https://dice.fm/event/92vdp6-guillermo-del-homo-pans-labyrinth-drag-tribute-22nd-oct-cmon-everybody-new-york-tickets","category":"music_nightlife","source":"C'mon Everybody","via":["The Skint"],"why":"Drag tribute to Guillermo del Toro's Pan's Labyrinth on its 20th anniversary.","date":"2026-10-22"}],"thisWeekend":[{"id":"nypl-accessible-tech-fair-1023","name":"Accessible Community, Culture \u0026 Technology Fair","dateISO":"2026-10-23T11:00:00","time":"11:00 AM – 4:00 PM","venue":"Stavros Niarchos Foundation Library (SNFL)","neighborhood":"Midtown Manhattan","price":"Free","url":"https://www.nypl.org/events/programs/2026/10/23/accessible-community-culture-technology-fair","category":"talks_lectures","source":"New York Public Library","via":["New York Public Library"],"why":"All-day event at SNFL for people who are blind, have low vision, or live with other disabilities: live demos of the latest adaptive technology, a keynote panel, and organizations working in education, employment, and advocacy. Open to all.","date":"2026-10-23"},{"id":"bkm-democracy-convening-1023","name":"In Pursuit of Life, Liberty, and Happiness — Brooklyn Museum Convening","dateISO":"2026-10-23T11:00:00","time":"11:00 AM – 5:30 PM","venue":"Brooklyn Museum","neighborhood":"Prospect Heights","price":"$","url":"https://secure.brooklynmuseum.org/22116/24826?promo=7213","category":"talks_lectures","source":"Brooklyn Museum","via":["Brooklyn Museum"],"why":"Ahead of Election Day, a day-long convening on justice and democratic promise featuring Mona Chalabi, Sky Hopinka, Paola Ramos, and Yomaira Figueroa-Vasquez on mapping migration histories, followed by American Artist, Mary Enoch Elizabeth Baxter, Mariame Kaba, and Jackie Wang on alternatives to incarceration.","date":"2026-10-23"},{"id":"aiany-building-melrose-library-1023","name":"Building of the Day Tour: Melrose Library, New York Public Library","dateISO":"2026-10-23T12:00:00","time":"12:00 PM","venue":"Melrose Library (New York Public Library branch)","neighborhood":"Bronx","price":"$","url":"https://click.email.aiany.org/?qs=ABl7ImQiOjUwMzAsInQiOjc3MjcsInMiOjd9AAcAAAAAB-lEpwWRRgx1FXUGngDoK8nQS9XUjISovzc4s1LLWAvcO2Mvf64_7mxsRM4X3cFhr7d_QuXaFi4Pt4xAlpe8Oy4NeQE","category":"tours_experiences","source":"AIA New York / Center for Architecture","via":["AIA New York"],"why":"Archtober guided tour of the Melrose branch of the New York Public Library, examining its architecture and neighborhood context.","date":"2026-10-23"},{"id":"archleague-beaux-arts-ball-1023","name":"Beaux Arts Ball 2026: Home Sweet Home","dateISO":"2026-10-23T18:00:00","time":"Evening","venue":"TBD","neighborhood":"NYC","price":"$","url":"https://archleague.org/event/beaux-arts-ball-2026-home-sweet-home/","category":"festivals_parties","source":"The Architectural League of New York","via":["The Architectural League"],"why":"Annual Architectural League costume ball themed 'Home Sweet Home.'","date":"2026-10-23"},{"id":"feed-gowanus-dredgers-2026-10-23-paddle-in-movie-creature-from-the-black-","name":"Paddle-In Movie: Creature from the Black Lagoon","dateISO":"2026-10-23T18:00:00","time":"6:00 PM","venue":"Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States","neighborhood":"","price":"","url":"https://gowanusdredgers.org/event/paddle-in-movie-creature-from-the-black-lagoon/","category":"film_screenings","source":"Gowanus Dredgers","via":["feed: Gowanus Dredgers"],"why":"","date":"2026-10-23"},{"id":"aiany-screening-gateways-ammann-1023","name":"Screening: Gateways to New York — Othmar H. Ammann and His Bridges","dateISO":"2026-10-23T18:00:00","time":"6:00 PM","venue":"Center for Architecture","neighborhood":"Greenwich Village","price":"$","url":"https://click.email.aiany.org/?qs=ABl7ImQiOjUwMzAsInQiOjc3MjcsInMiOjd9AAcAAAAAB-lEpwWTl3TLMMsRtxUbWQJ6QtaNC2FWM6p-kuo2yBkuM4B9Ybxudz4Lo0IZel7WTzEXmWCHMVhVvW5-ANhWsIuKFUQ","category":"film_screenings","source":"AIA New York / Center for Architecture","via":["AIA New York"],"why":"Screening of Gateways to New York, a documentary on Swiss-American bridge engineer Othmar H. Ammann, who designed the George Washington, Verrazano-Narrows, and Bayonne bridges.","date":"2026-10-23"},{"id":"feed-green-wood-cemetery-2026-10-23-nightfall","name":"Nightfall","dateISO":"2026-10-23T19:00:00","time":"7:00 PM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/nightfall-3/2026-10-23/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"Gothic Arch marks the beginning. Where the night takes you next is another story. Something new is coming to Brooklyn’s most storied grounds. For two nights only, Green-Wood’s winding pathways will…","date":"2026-10-23"},{"id":"feed-club-free-time-2026-10-23-photographer-historian-explore-the-dandy","name":"Photographer \u0026 Historian Explore the Dandy Subculture","dateISO":"2026-10-23T19:00:00","time":"7:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-10-23/event/762640","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Explore an inclusive landscape where dandyism belongs to anyone obsessed with masculine elegance, regardless of class, race, age, sexuality, or gender. For more than a decade, photographer Rose…","date":"2026-10-23"},{"id":"cu-praise-day-sonia-sanchez-1023","name":"Praise Day for Sonia Sanchez!","dateISO":"2026-10-23T19:30:00","time":"7:30 PM","venue":"The Great Hall at Cooper Union","neighborhood":"East Village","price":"Free","url":"https://cooper.edu/events-and-exhibitions/events/praise-day-sonia-sanchez","category":"music_nightlife","source":"The Cooper Union / Gardiner Foundation Great Hall Forum","via":["The Cooper Union"],"why":"Celebration of poet Sonia Sanchez featuring Sweet Honey in the Rock®, Tracy K. Smith, Danez Smith, Jessica Care Moore, Ursula Rucker, Yolanda Wisher, and special appearances by Cornelius Eady, LaTasha N. Nevada Diggs, and others.","date":"2026-10-23"},{"id":"feed-nyc-resistor-2026-10-23-synthesizer-night-nyc-resistor","name":"Synthesizer Night @ NYC Resistor","dateISO":"2026-10-23T19:30:00","time":"7:30 PM","venue":"NYC Resistor","neighborhood":"","price":"Free","url":"https://www.eventbrite.com/e/synthesizer-night-nyc-resistor-tickets-2002480300484","category":"workshops_classes","source":"NYC Resistor","via":["feed: NYC Resistor"],"why":"Gathering musicians, enthusiasts, and curious minds to connect, collaborate, and share their passion for synthesis. BYO synth encouraged!","date":"2026-10-23"},{"id":"fgp-artisans-bazaar-recurring","name":"Fort Greene Artisans Bazaar","dateISO":"2026-10-24T09:00:00","time":"9:00 AM – 4:00 PM","venue":"Fort Greene Park (along DeKalb Ave between S Oxford St and Washington Park)","neighborhood":"Fort Greene","price":"Free","url":"https://www.brooklynpop-up.com/market-details/fort-greene-park-artisans-bazaar/r/recJUr0FbK4XTYISB","category":"festivals_parties","source":"Brooklyn Pop-Up","via":["Fort Greene Park Conservancy"],"why":"Weekly outdoor market with 30+ local designers, artisans, and makers selling upcycled fashion, handmade jewelry, small-batch apothecary, candles, accessories, and more. Every Saturday.","date":"2026-10-24"},{"id":"bpl-birdwatching-rothman-1024","name":"Birdwatching Walk with Author Julia Rothman (Bird Anatomy)","dateISO":"2026-10-24T10:00:00","time":"10:00 AM","venue":"Prospect Park, Endale Arch","neighborhood":"Park Slope / Prospect Park","price":"Free","url":"https://www.bklynlibrary.org/event","category":"nature_outdoors","source":"Brooklyn Public Library","via":["Brooklyn Public Library"],"why":"Morning birdwatching walk in Prospect Park with author Julia Rothman celebrating her illustrated Bird Anatomy, led by her father Jack Rothman — highlighting both NYC bird residents and migratory visitors. Meet at Endale Arch.","date":"2026-10-24"},{"id":"feed-green-wood-cemetery-2026-10-24-the-revolution-continues-brooklyn-s-blac","name":"The Revolution Continues: Brooklyn’s Black Trailblazers","dateISO":"2026-10-24T10:00:00","time":"10:00 AM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/the-revolution-continues-brooklyns-black-trailblazers/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"Celebrating the Black pioneers of Brooklyn, this trolley tour honors the trailblazers at rest in Green-Wood who shaped art, activism, music, and medicine. Visit the memorials of revolutionary artist…","date":"2026-10-24"},{"id":"cv-zero-human-company-hackathon-1024","name":"Zero-Human Company Hackathon by Terac at Whop HQ","dateISO":"2026-10-24T10:00:00","time":"All day","venue":"Whop HQ","neighborhood":"NYC","price":"Free","url":"https://luma.com/naxtga5l","category":"tech_ai","source":"Terac","via":["Cerebral Valley"],"why":"Hackathon challenging engineers to build an autonomous agent that can run a business on its own: making decisions, handling operations, and executing with little to no human input.","date":"2026-10-24"},{"id":"feed-green-wood-cemetery-2026-10-24-little-birds-big-world-meet-green-wood-s","name":"Little Birds, Big World: Meet Green-Wood's Sparrows","dateISO":"2026-10-24T10:15:00","time":"10:15 AM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/little-birds-big-world-meet-green-woods-sparrows/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"One ticket secures a spot for both sessions, on October 24 and 25, from 10:15am to 12:15pm. Think all sparrows look the same? Guess again! Small, speedy, and often overlooked, sparrows can be some of…","date":"2026-10-24"},{"id":"nypl-across-crowded-room-musicals-1024","name":"Across a Crowded Room: Premiering New Musicals Made at the Library","dateISO":"2026-10-24T11:00:00","time":"11:00 AM – 5:00 PM","venue":"Library for the Performing Arts","neighborhood":"Lincoln Center","price":"Free","url":"https://click.email.nypl.org/?qs=ABl7ImQiOjUwMzMsInQiOjYzNTIsInMiOjZ9AAYAAAAABjwyOtn5ob7Oi4VQui0rGG49eSb0tIyT2vJeZiMCao8Fhm0-_upuEF-J62dd4T8UWFEAYMIPDuD8PA65QTmoJR4rWQSc","category":"music_nightlife","source":"New York Public Library for the Performing Arts","via":["New York Public Library"],"why":"Day-long showcase of new musicals created by artists-in-residence at the Library for the Performing Arts, culminating in staged readings and songs from works-in-progress.","date":"2026-10-24"},{"id":"bbg-fall-harvest-festival-1024","name":"Brooklyn Botanic Garden Fall Harvest Festival","dateISO":"2026-10-24T11:00:00","time":"11:00 AM – 5:00 PM","venue":"Brooklyn Botanic Garden","neighborhood":"Prospect Heights","price":"$","url":"https://www.bbg.org/visit/event/fall_harvest_festival_2026","category":"festivals_parties","source":"Brooklyn Botanic Garden","via":["Brooklyn Botanic Garden"],"why":"Annual fall festival with live music, a cider and beer garden, pumpkin decorating, an afternoon parade, and a VIP bar with New York State cider and beer flights.","date":"2026-10-24"},{"id":"nyac-woolworth-building-tour-1024","name":"Exclusive Tour Inside the Woolworth Building: NYC's Cathedral of Commerce","dateISO":"2026-10-24T11:00:00","time":"11:00 AM","venue":"Woolworth Building, Lower Manhattan","neighborhood":"Lower Manhattan","price":"$","url":"https://nyadventureclub.com/event/2001413964043","category":"tours_experiences","source":"New York Adventure Club","via":["New York Adventure Club"],"why":"Behind-the-scenes tour inside the Woolworth Building, the 1913 skyscraper known as the 'Cathedral of Commerce,' including access to areas closed to the public.","date":"2026-10-24"},{"id":"nyac-grave-robbers-1024","name":"Grave Robbers of New York: Exploring the City's Body Snatching History","dateISO":"2026-10-24T11:00:00","time":"11:00 AM","venue":"Manhattan (walking tour)","neighborhood":"Manhattan","price":"$","url":"https://nyadventureclub.com/event/2002062242060","category":"tours_experiences","source":"New York Adventure Club","via":["New York Adventure Club"],"why":"Halloween-appropriate walking tour exploring New York City's dark history of body snatching, grave robbing, and the city's role in 19th-century medical anatomy supply chains.","date":"2026-10-24"},{"id":"nytm-penn-moynihan-tour-1024","name":"Transit Walk: Art and Design Secrets of Penn Station and Moynihan Train Hall","dateISO":"2026-10-24T11:00:00","time":"11:00 AM","venue":"Penn Station / Moynihan Train Hall","neighborhood":"Midtown Manhattan","price":"$40 (general) / $35 (members)","url":"https://www.nytransitmuseum.org/program/penn-10-24/","category":"tours_experiences","source":"New York Transit Museum","via":["New York Transit Museum"],"why":"Walking tour through Penn Station's hidden Beaux-Arts architectural remnants and new public artworks extending into Moynihan Train Hall, led by Transit Museum expert guides.","date":"2026-10-24"},{"id":"aiany-walking-tour-soho-1024","name":"Walking Tour: Historic Buildings and New Interventions in SoHo","dateISO":"2026-10-24T11:00:00","time":"11:00 AM","venue":"SoHo (meeting point TBD)","neighborhood":"SoHo","price":"$","url":"https://click.email.aiany.org/?qs=ABl7ImQiOjUwMzAsInQiOjc3MjcsInMiOjd9AAcAAAAAB-lEpwWXYMav3FiPiKY7xoaOJe4acM9PR9iAPK-dxmT3vaj0236OUC8Yxc4UnxilUeheEZXtFJlguCxfq6s1LAcJJC8","category":"tours_experiences","source":"AIA New York / Center for Architecture","via":["AIA New York"],"why":"Archtober walking tour of SoHo examining the neighborhood's cast-iron historic buildings alongside contemporary architectural interventions.","date":"2026-10-24"},{"id":"fgp-yoga-in-park-1024","name":"Yoga in the Park with Shala Yoga","dateISO":"2026-10-24T11:00:00","time":"11:00 AM – 12:00 PM","venue":"Fort Greene Park (East Panel Lawn)","neighborhood":"Fort Greene","price":"Free","url":"https://theshala.com/class-schedule/","category":"sports_fitness","source":"Shala Yoga","via":["Fort Greene Park Conservancy","feed: Fort Greene Park Conservancy"],"why":"Free outdoor vinyasa-style yoga class blending breath and movement; suitable for all levels, no registration required — last session of the season Oct 24.","date":"2026-10-24"},{"id":"feed-fort-greene-park-conservancy-2026-10-24-halloween-fest","name":"Halloween Fest","dateISO":"2026-10-24T12:00:00","time":"12:00 PM","venue":"Fort Greene Park Conservancy","neighborhood":"","price":"","url":"https://www.fortgreenepark.org/calendar/halloween-fest-2026","category":"festivals_parties","source":"Fort Greene Park Conservancy","via":["feed: Fort Greene Park Conservancy"],"why":"Get ready for what’s in store, Halloween Fest is back with more! Dress up in your best costumes and join us on Saturday, October 24 from 12:00–4:00pm. Enjoy spooky stories, face painting…","date":"2026-10-24"},{"id":"feed-ny-mycological-society-2026-10-24-joint-nyms-coma-picnic-blue-mountain-res","name":"Joint NYMS/COMA Picnic. Blue Mountain Reservation, Peekskill, NY - Saturday, October 24th","dateISO":"2026-10-24T12:00:00","time":"12:00 PM","venue":"Blue Mountain Reservation, 435 Welcher Ave, Peekskill, 10566, United States","neighborhood":"","price":"","url":"https://www.newyorkmyc.org/event/joint-nyms-coma-picnic-blue-mountain-reservation-peekskill-ny-saturday-october-24th/","category":"tours_experiences","source":"NY Mycological Society","via":["feed: NY Mycological Society"],"why":"The New York Mycological Society along with COMA (Connecticut-Westchester Mycological Association) are having our annual joint potluck picnic. It will take place at Blue Mountain Reservation…","date":"2026-10-24"},{"id":"feed-nyc-resistor-2026-10-24-wire-wrapping-make-your-own-wand-or-brac","name":"Wire Wrapping: Make Your Own Wand or Bracelet","dateISO":"2026-10-24T12:00:00","time":"12:00 PM","venue":"NYC Resistor","neighborhood":"","price":"$40","url":"https://www.eventbrite.com/e/wire-wrapping-make-your-own-wand-or-bracelet-tickets-2002479922353","category":"workshops_classes","source":"NYC Resistor","via":["feed: NYC Resistor"],"why":"In this wire wrapping workshop, we will unlock our creative potential by crafting unique objects from aluminum wire and stones.","date":"2026-10-24"},{"id":"aiany-building-marcus-garvey-1024","name":"Building of the Day Tour: Marcus Garvey Village and Extension","dateISO":"2026-10-24T13:00:00","time":"1:00 PM","venue":"Marcus Garvey Village, Brownsville","neighborhood":"Brownsville","price":"$","url":"https://click.email.aiany.org/?qs=ABl7ImQiOjUwMzAsInQiOjc3MjcsInMiOjd9AAcAAAAAB-lEpwWZVG7_P2p2i5NYjA_-ke3P2FYiIQTzw064_vaBDh48Y06DFIkmlOEOeq2QgjtLPLmRAoGqa9eh2y6HkuGjmG8","category":"tours_experiences","source":"AIA New York / Center for Architecture","via":["AIA New York"],"why":"Archtober guided tour of Marcus Garvey Village, a 1970s low-rise public housing development in Brownsville by Ted Liebman, noted for its village-scale planning.","date":"2026-10-24"},{"id":"feed-green-wood-cemetery-2026-10-24-discover-green-wood-trolley-tour","name":"Discover Green-Wood Trolley Tour","dateISO":"2026-10-24T13:00:00","time":"1:00 PM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/discover-green-wood-trolley-tour-26/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"Hop on board our cozy, warm trolley for an expert-led tour of Green-Wood’s historic landscape and some of the Cemetery’s most intriguing permanent residents. Whether you’re a first-time visitor or a…","date":"2026-10-24"},{"id":"feed-gowanus-dredgers-2026-10-24-gowanus-dredgers-members-exhibition","name":"Gowanus Dredgers’ Members Exhibition","dateISO":"2026-10-24T13:00:00","time":"1:00 PM","venue":"Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States","neighborhood":"","price":"","url":"https://gowanusdredgers.org/event/gowanus-dredgers-members-exhibition-2/2026-10-24/","category":"art_exhibitions","source":"Gowanus Dredgers","via":["feed: Gowanus Dredgers"],"why":"","date":"2026-10-24"},{"id":"feed-club-free-time-2026-10-24-how-art-and-sci-shy-ence-can-honor-indig","name":"How Art and Sci\u0026shy;ence Can Honor Indigenous Histories \u0026 Ecologies","dateISO":"2026-10-24T14:00:00","time":"2:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-10-24/event/762526","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Mohawk artist Alan Michel\u0026shy;son and ecol\u0026shy;o\u0026shy;gist Eric W. Sander\u0026shy;son join togeth\u0026shy;er. They explore how art and sci\u0026shy;ence can sur\u0026shy;face and hon\u0026shy;or the Indige\u0026shy;nous…","date":"2026-10-24"},{"id":"nyac-medieval-armored-combat-1024","name":"The NYC Medieval Armored Combat Experience","dateISO":"2026-10-24T14:00:00","time":"2:00 PM","venue":"NYC (location TBD with registration)","neighborhood":"NYC","price":"$","url":"https://nyadventureclub.com/event/1409032186199","category":"tours_experiences","source":"New York Adventure Club","via":["New York Adventure Club"],"why":"Hands-on medieval armored combat experience in New York City — don actual armor and learn historic fighting techniques.","date":"2026-10-24"},{"id":"aiany-walking-tour-upper-east-side-1024","name":"Walking Tour: Upper East Side Architecture Through Affluence and Ailments","dateISO":"2026-10-24T14:00:00","time":"2:00 PM","venue":"Upper East Side (meeting point TBD)","neighborhood":"Upper East Side","price":"$","url":"https://click.email.aiany.org/?qs=ABl7ImQiOjUwMzAsInQiOjc3MjcsInMiOjd9AAcAAAAAB-lEpwWbe4y5CiwpJgPdza_yHdP7XwHigaxNufFlrCkbQ7r-3ig6KZGL5xvf7lmZPGXdRcoEQm09B6ZVpqi5-dWKn9M","category":"tours_experiences","source":"AIA New York / Center for Architecture","via":["AIA New York"],"why":"Archtober walking tour of the Upper East Side exploring how wealth and public health shaped its 19th- and 20th-century architecture.","date":"2026-10-24"},{"id":"feed-ny-mycological-society-2026-10-24-mushroom-marvels-a-family-halloween-fora","name":"Mushroom Marvels: A Family Halloween Foray, Van Cortlandt Park, Saturday, October 24","dateISO":"2026-10-24T15:00:00","time":"3:00 PM","venue":"Van Cortlandt Park West, 242nd st \u0026 Broadway, New York, NY, United States","neighborhood":"","price":"","url":"https://www.newyorkmyc.org/event/mushroom-marvels-a-family-halloween-foray-van-cortlandt-park-saturday-october-24/","category":"tours_experiences","source":"NY Mycological Society","via":["feed: NY Mycological Society"],"why":"Join us for a magical Halloween mushroom walk where we explore the mysterious world of fungi! Date: Saturday October 24, 2026 Time: 3:00 PM – 6:00 PM Location: Van Cortlandt Park This family-centered…","date":"2026-10-24"},{"id":"momi-halloween-party-1024","name":"MoMI Halloween Party (Members + Guests)","dateISO":"2026-10-24T19:30:00","time":"7:30 PM","venue":"Museum of the Moving Image","neighborhood":"Astoria","price":"Free","url":"https://movingimage.org/","category":"festivals_parties","source":"Museum of the Moving Image","via":["Museum of the Moving Image"],"why":"Members-only Halloween party at the Museum from 7:30–11pm with costumes encouraged.","date":"2026-10-24"},{"id":"cv-iqt-quantum-ai-2026-1025","name":"IQT Quantum + AI 2026","dateISO":"2026-10-25T09:00:00","time":"All day","venue":"TBD","neighborhood":"NYC","price":"$","url":"https://iqtevent.com/quantumai/?utm_source=cv-events\u0026utm_medium=cerebralvalley","category":"tech_ai","source":"IQT","via":["Cerebral Valley"],"why":"IQT's flagship conference on the convergence of quantum computing and AI, with 80+ speakers across hardware, software, applications, and business; includes a post-quantum cryptography track on Oct 26. Runs Oct 25–27.","date":"2026-10-25"},{"id":"feed-green-wood-cemetery-2026-10-25-little-birds-big-world-meet-green-wood-s","name":"Little Birds, Big World: Meet Green-Wood's Sparrows","dateISO":"2026-10-25T10:15:00","time":"10:15 AM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/little-birds-big-world-meet-green-woods-sparrows-2/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"One ticket secures a spot for both sessions, on October 24 and 25, from 10:15am to 12:15pm. Think all sparrows look the same? Guess again! Small, speedy, and often overlooked, sparrows can be some of…","date":"2026-10-25"},{"id":"aiany-walking-tour-upper-east-side-1025","name":"Walking Tour: Upper East Side Architecture Through Affluence and Ailments","dateISO":"2026-10-25T10:30:00","time":"10:30 AM","venue":"Upper East Side (meeting point TBD)","neighborhood":"Upper East Side","price":"$","url":"https://click.email.aiany.org/?qs=ABl7ImQiOjUwMzAsInQiOjc3MjcsInMiOjd9AAcAAAAAB-lEpwWdobKnm28cCl2SvX92Ua-iDYzZCQ1bOiU58z1zY14v3xatkjWhw0GK2Hd_hXlSZRipL3OVXqk7tliFQw8bafE","category":"tours_experiences","source":"AIA New York / Center for Architecture","via":["AIA New York"],"why":"Archtober walking tour of the Upper East Side exploring how wealth and public health shaped its 19th- and 20th-century architecture.","date":"2026-10-25"},{"id":"feed-green-wood-cemetery-2026-10-25-grave-beginnings-green-wood-by-trolley","name":"Grave Beginnings: Green-Wood By Trolley","dateISO":"2026-10-25T11:00:00","time":"11:00 AM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/grave-beginnings-green-wood-by-trolley-7/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"Green-Wood’s stunning landscape and remarkable history on this free hour-long trolley tour. Perfect for first-time visitors, this accessible introduction takes you on a leisurely ride to hear about…","date":"2026-10-25"},{"id":"nyac-chinatown-food-crawl-1025","name":"The Secret Eats of Chinatown: Manhattan Food Crawl","dateISO":"2026-10-25T11:00:00","time":"11:00 AM","venue":"Chinatown, Manhattan","neighborhood":"Chinatown","price":"$","url":"https://nyadventureclub.com/event/1998422942818","category":"food_drink","source":"New York Adventure Club","via":["New York Adventure Club"],"why":"Guided food crawl through hidden spots in Manhattan's Chinatown, exploring hole-in-the-wall restaurants and vendors that locals frequent.","date":"2026-10-25"},{"id":"feed-green-wood-cemetery-2026-10-25-rest-in-pace","name":"Rest in Pace","dateISO":"2026-10-25T12:00:00","time":"12:00 PM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/rest-in-pace-green-house-2/2026-10-25/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"Green-Wood’s leisurely walking group, Rest in Pace. This welcoming gathering is designed for anyone who loves a good stroll and even better company. Together, we’ll meander through the Cemetery’s…","date":"2026-10-25"},{"id":"feed-green-wood-cemetery-2026-10-25-green-wood-s-greatest-hits","name":"Green-Wood's Greatest Hits","dateISO":"2026-10-25T13:00:00","time":"1:00 PM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/green-woods-greatest-hits-17/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"Whether it’s your first visit to Green-Wood or your hundredth, this walking tour offers a fresh perspective on one of New York City’s most iconic landmarks. Led by one of our expert guides, this tour…","date":"2026-10-25"},{"id":"feed-club-free-time-2026-10-25-exploring-the-life-legacy-of-one-of-amer","name":"Exploring the Life \u0026 Legacy of One of America's Most Well-Known Landscape Painters of the 19th-Century","dateISO":"2026-10-25T14:00:00","time":"2:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-10-25/event/767287","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Celebrate Frederic Edwin Church with an afternoon of presentations and conversation by scholars to mark his 200th birthday. Immersed in the natural world, Church looked to contemporary scientific and…","date":"2026-10-25"},{"id":"feed-makeville-studio-2026-10-25-wood-shop-basics-serving-board-sc","name":"Wood Shop Basics - Serving Board SC","dateISO":"2026-10-25T14:00:00","time":"2:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-10-25"},{"id":"feed-green-wood-cemetery-2026-10-25-cemetery-scavenger-hunt","name":"Cemetery Scavenger Hunt","dateISO":"2026-10-25T14:15:00","time":"2:15 PM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/cemetery-scavenger-hunt/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"In Partnership with Lauren Seeley and Death Project Manager We are pleased to announce that this year, we are official partners of TalkDeath’s 6th Annual 2026 Halloween Cemetery Scavenger Hunt…","date":"2026-10-25"},{"id":"feed-club-free-time-2026-10-25-actor-visual-artist-discussesthe-politic","name":"Actor/Visual Artist Discussesthe Politics of Documenting War","dateISO":"2026-10-25T15:00:00","time":"3:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-lecture/2026-10-25/event/763396","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Rabih Mroué explores the image politics of ISIS videos in contrast with videos shot by drones. Based on research material comprising recruiting videos secured by officers of the German Intelligence…","date":"2026-10-25"},{"id":"feed-green-wood-cemetery-2026-10-25-green-wood-after-hours","name":"Green-Wood After Hours","dateISO":"2026-10-25T17:00:00","time":"5:00 PM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/green-wood-after-hours-57/2026-10-25/1/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"","date":"2026-10-25"},{"id":"nyhistory-revolutionary-women-exhibition","name":"Revolutionary Women — Final Week (Exhibition)","dateISO":"2026-10-25T17:00:00","time":"Closes Sunday, October 25","venue":"New-York Historical Society, Joyce B. Cowin Women's History Gallery","neighborhood":"Upper West Side","price":"Admission","url":"https://www.nyhistory.org/exhibitions/revolutionary-women","category":"arts_culture","source":"New-York Historical Society","via":["New-York Historical Society"],"why":"Final week of an exhibition on how women shaped the American Revolution and lived through seven years of British occupation in New York — part of the nation's 250th anniversary celebrations. Closes Oct 25.","date":"2026-10-25"},{"id":"feed-gowanus-dredgers-2026-10-25-full-moon-gowanus-voyage-october","name":"Full Moon Gowanus Voyage - OCTOBER","dateISO":"2026-10-25T17:30:00","time":"5:30 PM","venue":"Gowanus Dredgers Bunker (19th St.), 2 19th St., Brooklyn, NY","neighborhood":"","price":"","url":"https://gowanusdredgers.org/event/full-moon-gowanus-voyage-may/","category":"sports_fitness","source":"Gowanus Dredgers","via":["feed: Gowanus Dredgers"],"why":"","date":"2026-10-25"},{"id":"feed-the-wisdom-bar-2026-10-25-the-wisdom-bar-impact-of-the-rocky-horro","name":"The Wisdom Bar-\"Impact of The Rocky Horror Picture Show: Celebration Cont.\"","dateISO":"2026-10-25T18:30:00","time":"6:30 PM","venue":"Quick Eternity, Manhattan","neighborhood":"","price":"$36.97","url":"https://www.eventbrite.com/e/the-wisdom-bar-impact-of-the-rocky-horror-picture-show-celebration-cont-tickets-1999397971154","category":"talks_lectures","source":"The Wisdom Bar","via":["feed: The Wisdom Bar"],"why":"","date":"2026-10-25"}],"nextWeek":[{"id":"feed-club-free-time-2026-10-26-aapi-broadway-performers-discuss-their-n","name":"AAPI Broadway Performers Discuss Their Struggles \u0026 Triumphs","dateISO":"2026-10-26T18:00:00","time":"6:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-10-26/event/765826","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Celebrating the Asian American and Pacific Islander theater veterans who have defied the odds to perform in five or more Broadway productions. Moderator Lainie Sakakura leads an insightful…","date":"2026-10-26"},{"id":"feed-green-wood-cemetery-2026-10-26-moonlight-tour","name":"Moonlight Tour","dateISO":"2026-10-26T19:00:00","time":"7:00 PM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/moonlight-tour-14/2026-10-26/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"There’s no better way to experience Green-Wood than by moonlight. Walk alongside fellow night owls through winding paths and hidden corners, as the stories of the Cemetery’s most extraordinary…","date":"2026-10-26"},{"id":"feed-makeville-studio-2026-10-26-simple-plywood-storage-sb","name":"Simple Plywood Storage - SB","dateISO":"2026-10-26T19:00:00","time":"7:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-10-26"},{"id":"feed-makeville-studio-2026-10-26-women-furniture-making-table-jg","name":"Women+ Furniture Making: Table - JG","dateISO":"2026-10-26T19:00:00","time":"7:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-10-26"},{"id":"92ny-maira-kalman-joy-1026","name":"Maira Kalman: Joy","dateISO":"2026-10-26T20:00:00","time":"8:00 PM","venue":"92NY","neighborhood":"Upper East Side","price":"$","url":"https://www.92ny.org/event/maira-kalman-joy","category":"talks_lectures","source":"92NY","via":["Thought Gallery / 92NY"],"why":"Beloved NYC artist and author Maira Kalman in conversation about Joy, exploring creativity, delight, and the ideas behind her latest illustrated work.","date":"2026-10-26"},{"id":"cu-aaron-gilbert-alex-katz-chair-1027","name":"Aaron Gilbert: Alex Katz Chair in Painting Artist Talk","dateISO":"2026-10-27T18:00:00","time":"6:00 PM","venue":"Frederick P. Rose Auditorium, Cooper Union","neighborhood":"East Village","price":"Free","url":"https://cooper.edu/events-and-exhibitions/events/aaron-gilbert-alex-katz-chair-painting-artist-talk","category":"talks_lectures","source":"The Cooper Union","via":["The Cooper Union"],"why":"Brooklyn-based painter Aaron Gilbert discusses his work depicting scenes from private everyday life under the weight of institutional forces and late-stage technocapitalism.","date":"2026-10-27"},{"id":"feed-gowanus-dredgers-2026-10-27-gowanus-jug-string-band-sessions","name":"Gowanus Jug \u0026 String Band Sessions","dateISO":"2026-10-27T18:00:00","time":"6:00 PM","venue":"Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States","neighborhood":"","price":"","url":"https://gowanusdredgers.org/event/gowanus-jug-string-band-sessions-3/2026-10-27/","category":"music_nightlife","source":"Gowanus Dredgers","via":["feed: Gowanus Dredgers"],"why":"","date":"2026-10-27"},{"id":"nyhistory-wow-cafe-theatre-1027","name":"Miracle on East 4th Street: Tales from WOW Café Theatre","dateISO":"2026-10-27T18:00:00","time":"6:00 PM","venue":"New-York Historical Society","neighborhood":"Upper West Side","price":"$","url":"https://www.nyhistory.org/programs/miracle-on-east-4th-street-tales-from-wow-cafe-theatre?date=2026-10-27","category":"talks_lectures","source":"New-York Historical Society","via":["New-York Historical Society"],"why":"Women's History Salon celebrating WOW Café Theatre — from staging the first Women's One World Festival in 1980 to finding a permanent home on the Lower East Side — with theater artists Babs Davy, Peggy Shaw, Carmelita Tropicana, and Lois Weaver.","date":"2026-10-27"},{"id":"feed-club-free-time-2026-10-27-wynton-marsalis-and-peter-gelb-discuss-i","name":"Wynton Marsalis and Peter Gelb Discuss Inspiration, Collaboration, \u0026 Cultural Legacy of American Jazz","dateISO":"2026-10-27T18:00:00","time":"6:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-10-27/event/765829","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Lincoln Center Visionary Artist Wynton Marsalis and Peter Gelb (The Metropolitan Opera) have a conversation on the influences of jazz across genres. Drawing from their distinct institutional and…","date":"2026-10-27"},{"id":"feed-lectures-on-tap-2026-10-27-lectures-on-tap-nuclear-fallout-surprisi","name":"Lectures on Tap - \"Nuclear Fallout: Surprising Lessons from Chornobyl\"","dateISO":"2026-10-27T18:30:00","time":"6:30 PM","venue":"Williamsburg, Brooklyn","neighborhood":"","price":"$41.32","url":"https://www.eventbrite.com/e/lectures-on-tap-nuclear-fallout-surprising-lessons-from-chornobyl-tickets-2001263848042","category":"talks_lectures","source":"Lectures on Tap","via":["feed: Lectures on Tap"],"why":"","date":"2026-10-27"},{"id":"feed-lectures-on-tap-2026-10-27-lectures-on-tap-pentecostal-snake-handli","name":"Lectures on Tap - \"Pentecostal Snake Handling \u0026 Ecological Relationality\"","dateISO":"2026-10-27T18:30:00","time":"6:30 PM","venue":"Upper West Side, Manhattan","neighborhood":"","price":"$41.32","url":"https://www.eventbrite.com/e/lectures-on-tap-pentecostal-snake-handling-ecological-relationality-tickets-2000643803472","category":"talks_lectures","source":"Lectures on Tap","via":["feed: Lectures on Tap"],"why":"","date":"2026-10-27"},{"id":"cu-public-art-fund-genesis-belanger-1027","name":"Public Art Fund Talk: Genesis Belanger","dateISO":"2026-10-27T18:30:00","time":"6:30 PM","venue":"Civic Projects Lab at 41 Cooper Square","neighborhood":"East Village","price":"Free","url":"https://www.publicartfund.org/programs/view/public-art-fund-talks-genesis-belanger/","category":"talks_lectures","source":"Public Art Fund / The Cooper Union","via":["The Cooper Union"],"why":"Artist Genesis Belanger and Public Art Fund curator Melanie Kress discuss Belanger's sculptural installations in City Hall Park — pigmented cast concrete works exploring value, justice, authenticity, and artifice.","date":"2026-10-27"},{"id":"fgp-run-club-chelsea-piers-1028","name":"Run Club with Chelsea Piers Fitness at Fort Greene Park","dateISO":"2026-10-27T18:30:00","time":"6:30 PM – 7:30 PM","venue":"Fort Greene Park (Monument Plaza)","neighborhood":"Fort Greene","price":"Free","url":"https://www.strava.com/clubs/chelseapiersbkrunclub","category":"sports_fitness","source":"Chelsea Piers Fitness","via":["Fort Greene Park Conservancy","feed: Fort Greene Park Conservancy"],"why":"Community 3–5 mile run starting at the Fort Greene Park monument, led by Coach Skye Massey; all paces welcome. Every Tuesday through Nov 3.","date":"2026-10-27"},{"id":"feed-greenlight-bookstore-2026-10-27-radical-nonfiction-book-group","name":"Radical Nonfiction Book Group","dateISO":"2026-10-27T19:00:00","time":"7:00 PM","venue":"Hops Hill At Atlantic","neighborhood":"","price":"Free","url":"https://www.eventbrite.com/e/radical-nonfiction-book-group-tickets-2000484225169","category":"talks_lectures","source":"Greenlight Bookstore","via":["feed: Greenlight Bookstore"],"why":"Our Radical Nonfiction group meets monthly to discuss titles related to the issues of history, politics, \u0026 the promise of a better world.","date":"2026-10-27"},{"id":"fgp-kings-county-fitness-1028","name":"King's County Fitness Club — Free Wednesday Workout","dateISO":"2026-10-28T06:30:00","time":"6:30 AM","venue":"Fort Greene Park (Monument Plaza)","neighborhood":"Fort Greene","price":"Free","url":"https://www.instagram.com/kingscountyfitnessclub/","category":"sports_fitness","source":"King's County Fitness Club","via":["Fort Greene Park Conservancy"],"why":"Free community-led outdoor workout every Wednesday at Fort Greene Park's Monument Plaza; all ages and abilities welcome, dogs allowed, group coffee follows.","date":"2026-10-28"},{"id":"feed-club-free-time-2026-10-28-choreographer-dancer-shares-her-research","name":"Choreographer \u0026 Dancer Shares Her Research on Marth Graham's Works","dateISO":"2026-10-28T13:00:00","time":"1:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-10-28/event/762097","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Virginie Mecene, a former Principal Dancer, will discuss her experience in the reconstruction of Graham's Panorama, Prelude to Action, and The Puritan Duet from American Document, and the process of…","date":"2026-10-28"},{"id":"mcny-first-responders-night-1028","name":"First Responders Appreciation Night: Free Late-Night Wednesday","dateISO":"2026-10-28T18:00:00","time":"Until 9:00 PM","venue":"Museum of the City of New York","neighborhood":"East Harlem / Museum Mile","price":"Free","url":"https://www.mcny.org/event/first-responders-appreciation","category":"arts_culture","source":"Museum of the City of New York","via":["Museum of the City of New York"],"why":"MCNY opens its doors free for an evening honoring New York's first responders during National First Responders Day month. Part of the museum's Free Late-Night Wednesdays series. Open to all.","date":"2026-10-28"},{"id":"bpl-knicks-minyan-1028","name":"When the Knicks Nearly Formed a Minyan: 1946 and the Genesis of Big-League Basketball in New York","dateISO":"2026-10-28T18:00:00","time":"6:00 PM","venue":"Brooklyn Public Library, Central Library","neighborhood":"Park Slope","price":"Free","url":"https://www.bklynlibrary.org/event","category":"talks_lectures","source":"Brooklyn Public Library","via":["Brooklyn Public Library"],"why":"Basketball historian Avi J. Aronsky shares Knicks lore and piquant stories about the franchise's earliest days — a deep dive into New York basketball history from 1946.","date":"2026-10-28"},{"id":"feed-gotham-center-2026-10-28-city-of-fortune-inequality-and-the-makin","name":"City of Fortune: Inequality and the Making of Contemporary New York","dateISO":"2026-10-28T18:30:00","time":"6:30 PM","venue":"CUNY Graduate Center rooms C201/202","neighborhood":"","price":"","url":"https://www.gothamcenter.org/upcoming-events/city-of-fortune-inequality-and-the-making-of-contemporary-new-york","category":"talks_lectures","source":"Gotham Center","via":["feed: Gotham Center"],"why":"","date":"2026-10-28"},{"id":"feed-club-free-time-2026-10-28-multi-media-artist-discusses-the-work-of","name":"Multi-Media Artist Discusses the Work of National Medal of Arts Winning Abstract Artist","dateISO":"2026-10-28T18:30:00","time":"6:30 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-gallery-talk/2026-10-28/event/765460","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Nandi Loaf on Agnes Martin. Nandi Loaf is an artist living and working in the 21st century. Across installation, sculpture, painting, performance, and choreographed encounters, she examines the role…","date":"2026-10-28"},{"id":"feed-greenlight-bookstore-2026-10-28-literature-in-translation-book-group","name":"Literature in Translation Book Group","dateISO":"2026-10-28T19:00:00","time":"7:00 PM","venue":"Black Forest Brooklyn","neighborhood":"","price":"Free","url":"https://www.eventbrite.com/e/literature-in-translation-book-group-tickets-2000484701594","category":"talks_lectures","source":"Greenlight Bookstore","via":["feed: Greenlight Bookstore"],"why":"With a focus on indie presses and marginalized voices, our L.I.T. Book Group meets monthly to discuss books from around the world!","date":"2026-10-28"},{"id":"feed-greenlight-bookstore-2026-10-28-book-launch-party-ikwo-ntekim-with-ibi-z","name":"Book Launch Party: Ikwo Ntekim with Ibi Zoboi","dateISO":"2026-10-28T19:30:00","time":"7:30 PM","venue":"Greenlight Bookstore in Fort Greene","neighborhood":"","price":"Free","url":"https://www.eventbrite.com/e/book-launch-party-ikwo-ntekim-with-ibi-zoboi-tickets-1999290673223","category":"talks_lectures","source":"Greenlight Bookstore","via":["feed: Greenlight Bookstore"],"why":"Local bookseller (and former Greenlight manager!) Ikwo Ntekim launches her debut YA novel with a special launch party!","date":"2026-10-28"},{"id":"feed-nyc-resistor-2026-10-28-nycresistor-ham-radio-club","name":"NYCResistor Ham Radio Club","dateISO":"2026-10-28T20:00:00","time":"8:00 PM","venue":"NYC Resistor","neighborhood":"","price":"Free","url":"https://www.eventbrite.com/e/nycresistor-ham-radio-club-tickets-1112940648439","category":"workshops_classes","source":"NYC Resistor","via":["feed: NYC Resistor"],"why":"Monthly Amateur Radio club meeting of NYCResistor","date":"2026-10-28"},{"id":"archleague-after-hours-nycsca-1029","name":"After Hours: New York City School Construction Authority","dateISO":"2026-10-29T18:00:00","time":"6:00 PM","venue":"NYC School Construction Authority office","neighborhood":"NYC","price":"Free (League members only)","url":"https://archleague.org/event/after-hours-nycsca/","category":"tours_experiences","source":"The Architectural League of New York","via":["The Architectural League"],"why":"Behind-the-scenes visit to the NYC School Construction Authority, which designs and builds public school facilities across the city. Architectural League members only.","date":"2026-10-29"},{"id":"bpl-bodega-cats-1029","name":"Bodega Cats of New York with Author Dan Rimada","dateISO":"2026-10-29T18:00:00","time":"6:00 PM","venue":"Brooklyn Public Library, Central Library","neighborhood":"Park Slope","price":"Free","url":"https://www.bklynlibrary.org/event","category":"talks_lectures","source":"Brooklyn Public Library","via":["Brooklyn Public Library"],"why":"Dan Rimada reveals the making of Bodega Cats of New York (photos by Gulce Kilkis) — how he got to know the cats and the bodega workers behind the counters. The quintessential NYC neighborhood culture book.","date":"2026-10-29"},{"id":"brainery-haunted-history-1029","name":"Haunted History: The Age of the Witch Hunts","dateISO":"2026-10-29T18:00:00","time":"Evening","venue":"Brooklyn Brainery, Prospect Heights","neighborhood":"Prospect Heights","price":"$","url":"http://brooklynbrainery.com/courses/haunted-history-the-age-of-the-witch-hunts","category":"talks_lectures","source":"Brooklyn Brainery","via":["Brooklyn Brainery"],"why":"A history lecture/discussion exploring the real social, religious, and political forces behind the witch hunt era — just in time for Halloween. Brooklyn Brainery's intellectually curious format.","date":"2026-10-29"},{"id":"nypl-addams-family-screening-1029","name":"The Addams Family (1991) — 35th Anniversary Screening","dateISO":"2026-10-29T18:00:00","time":"6:00 PM","venue":"Stavros Niarchos Foundation Library (SNFL)","neighborhood":"Midtown","price":"Free","url":"https://click.email.nypl.org/?qs=ABl7ImQiOjUwMzMsInQiOjYzNTIsInMiOjZ9AAYAAAAABjwyOtn_tPLuMxbt2n9xN3xcHgm21zDyzAWkuta3fXlWbr1uN5B2YC86Jg2iA34qyj91N5f4o4HFRVLBu4uvd1nQfyE4","category":"film_screenings","source":"New York Public Library","via":["New York Public Library"],"why":"35th anniversary screening of Barry Sonnenfeld's 1991 Addams Family feature film, accompanied by related reading materials from the NYPL collection.","date":"2026-10-29"},{"id":"feed-lectures-on-tap-2026-10-29-lectures-on-tap-why-are-american-electio","name":"Lectures on Tap - \"Why Are American Elections So Expensive?\"","dateISO":"2026-10-29T18:30:00","time":"6:30 PM","venue":"Midtown Manhattan","neighborhood":"","price":"$41.32","url":"https://www.eventbrite.com/e/lectures-on-tap-why-are-american-elections-so-expensive-tickets-2000643917814","category":"talks_lectures","source":"Lectures on Tap","via":["feed: Lectures on Tap"],"why":"","date":"2026-10-29"},{"id":"nyhistory-manumission-legal-freedom-1029","name":"Primary Source: Manumission and Legal Freedom","dateISO":"2026-10-29T18:30:00","time":"6:30 PM","venue":"New-York Historical Society","neighborhood":"Upper West Side","price":"Free","url":"https://www.nyhistory.org/programs/primary-source-manumission-and-legal-freedom?date=2026-10-29","category":"talks_lectures","source":"New-York Historical Society","via":["New-York Historical Society"],"why":"Historian Sarah Gronningsater and curator Anne Garner discuss how antislavery lawyers and enslaved people in the late 1700s–early 1800s used a medieval writ across Northern courts to gain freedom, drawing on the Patricia D. Klingenstein Library's archives.","date":"2026-10-29"},{"id":"feed-club-free-time-2026-10-29-wangechi-mutu-moma-featured-artist-discu","name":"Wangechi Mutu, MoMA-Featured Artist, Discusses Her Career","dateISO":"2026-10-29T18:30:00","time":"6:30 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-10-29/event/764332","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Renowned Nairobi and Brooklyn-based visual artist presents recent work, including film, sculpture, and installation at the 61st International Art Exhibition of La Biennale di Venezia. Response by…","date":"2026-10-29"},{"id":"feed-greenlight-bookstore-2026-10-29-carol-mitchell-with-marsha-massiah","name":"Carol Mitchell with Marsha Massiah","dateISO":"2026-10-29T19:30:00","time":"7:30 PM","venue":"Greenlight Bookstore in Fort Greene","neighborhood":"","price":"Free","url":"https://www.eventbrite.com/e/carol-mitchell-with-marsha-massiah-tickets-1999297368248","category":"talks_lectures","source":"Greenlight Bookstore","via":["feed: Greenlight Bookstore"],"why":"Novelist and children's book author Carol Mitchell presents her first adult short story collection A Good Haunting.","date":"2026-10-29"}],"nextWeekend":[{"id":"bkm-iris-van-herpen-performance-1030","name":"Sculpting the (Un)Spoken: Participatory Performance with Iris van Herpen","dateISO":"2026-10-30T11:00:00","endDateISO":"2026-11-01","time":"Fri–Sun, Oct 30–Nov 1, 11 am–6 pm","venue":"Brooklyn Museum","neighborhood":"Prospect Heights","price":"Included with admission","url":"https://www.brooklynmuseum.org/opencollection/exhibitions","category":"arts_culture","source":"Brooklyn Museum","via":["Brooklyn Museum"],"why":"Participatory performance over three days in the Iris van Herpen exhibition galleries — a weekend-long immersive event with the visionary Dutch designer whose couture blurs science, nature, and fashion.","date":"2026-10-30"},{"id":"feed-green-wood-cemetery-2026-10-30-hereafter-hours","name":"Hereafter Hours","dateISO":"2026-10-30T18:00:00","time":"6:00 PM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/hereafter-hours/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"","date":"2026-10-30"},{"id":"nypl-lesia-ukrainka-playwright-1030","name":"Lesia Ukrainka: The Modernist Playwright America Has Yet to Discover","dateISO":"2026-10-30T18:00:00","time":"6:00 PM","venue":"Stavros Niarchos Foundation Library (SNFL)","neighborhood":"Midtown","price":"Free","url":"https://click.email.nypl.org/?qs=ABl7ImQiOjUwMzMsInQiOjYzNTIsInMiOjZ9AAYAAAAABjwyOtoFT-GZ9p3Tw55deTyxI0R1-NVh_VrCYBxDfrNIFALPsNMdSXcOFZwMGcXnc6hK3wpmaYHns0EtVwWsZ_aSBDfG","category":"talks_lectures","source":"New York Public Library","via":["New York Public Library"],"why":"Stage directors Virlana Tkacz and Rory Pelsue explore the fierce, psychologically charged dramas of Ukrainian modernist playwright Lesia Ukrainka — who wrestled with gender, war, desire, and power — through conversation and live readings, considering how her work might be reimagined today.","date":"2026-10-30"},{"id":"nypl-prehhalloween-schomburg-1030","name":"Pre-Halloween Last Friday at the Schomburg Center","dateISO":"2026-10-30T18:00:00","time":"6:00 – 9:00 PM","venue":"Schomburg Center for Research in Black Culture","neighborhood":"Harlem","price":"Free (rush entry — advance tickets sold out)","url":"https://www.nypl.org/events/programs/2026/10/30/prehaloween-last-friday-schomburg","category":"festivals_parties","source":"New York Public Library / Schomburg Center","via":["New York Public Library"],"why":"Spooky Last Friday Halloween party at the Schomburg Center with music by DJ Shug, dancing, drinks, and good vibes. Free entry tickets are sold out; rush entry available at the door.","date":"2026-10-30"},{"id":"feed-nyc-resistor-2026-10-30-simple-data-networks-for-multidisciplina","name":"Simple Data Networks for Multidisciplinary Artists","dateISO":"2026-10-30T18:00:00","time":"6:00 PM","venue":"NYC Resistor","neighborhood":"","price":"$75","url":"https://www.eventbrite.com/e/simple-data-networks-for-multidisciplinary-artists-tickets-2002982579815","category":"workshops_classes","source":"NYC Resistor","via":["feed: NYC Resistor"],"why":"Learn to create projects involving multiple separate components that communicate together to provide unique interactive experiences!","date":"2026-10-30"},{"id":"feed-ny-mycological-society-2026-10-31-green-wood-cemetery-brooklyn-ny-on-satur","name":"Green-Wood Cemetery, Brooklyn, NY on Saturday, October 31st","dateISO":"2026-10-31T10:00:00","time":"10:00 AM","venue":"Green-Wood Cemetery, 500 25th Street, Brooklyn, NY, 11232, United States","neighborhood":"","price":"","url":"https://www.newyorkmyc.org/event/green-wood-cemetery-brooklyn-ny-on-saturday-october-31st/","category":"tours_experiences","source":"NY Mycological Society","via":["feed: NY Mycological Society"],"why":"Join us for a walk in Green-Wood Cemetery in Brooklyn on Halloween and wander among the memorials to New York’s past residents including Leonard Bernstein, Boss Tweed, Charles Ebbets, Jean-Michel…","date":"2026-10-31"},{"id":"feed-green-wood-cemetery-2026-10-31-magicians-and-mediums-trolley-tour","name":"Magicians and Mediums Trolley Tour","dateISO":"2026-10-31T10:00:00","time":"10:00 AM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/magicians-and-mediums-trolley-tour-2/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"In the 1850s, New York City was captivated by the sensational story of the Fox sisters, three young women who claimed they could communicate with the dead through mysterious knocking sounds. (The…","date":"2026-10-31"},{"id":"nyac-east-river-ferry-1031","name":"Secrets of the East River: NYC's Hidden Infrastructure by Ferry","dateISO":"2026-10-31T10:40:00","time":"10:40 AM","venue":"East River Ferry (departure TBD)","neighborhood":"NYC","price":"$","url":"https://nyadventureclub.com/event/2002227361938","category":"tours_experiences","source":"New York Adventure Club","via":["New York Adventure Club"],"why":"Ferry-based tour revealing NYC's hidden East River infrastructure — bridges, power plants, water tunnels, and industrial history visible from the water.","date":"2026-10-31"},{"id":"feed-green-wood-cemetery-2026-10-31-last-saturdays-open-classroom","name":"Last Saturdays: Open Classroom","dateISO":"2026-10-31T12:00:00","time":"12:00 PM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/last-saturdays-open-classroom-5/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"Mark your calendars for the last Saturday of every month! May through November, the Green-House is opening its classroom space for free, drop-in fun for visitors of all ages. Expect two themed…","date":"2026-10-31"},{"id":"nyac-loews-valencia-1031","name":"Exclusive Trip Inside the Loew's Valencia: NYC's First 'Wonder Theatre'","dateISO":"2026-10-31T12:30:00","time":"12:30 PM","venue":"Loew's Valencia Theatre, Jamaica, Queens","neighborhood":"Jamaica, Queens","price":"$","url":"https://nyadventureclub.com/event/1997717341345","category":"tours_experiences","source":"New York Adventure Club","via":["New York Adventure Club"],"why":"Exclusive access inside the Loew's Valencia, one of NYC's five atmospheric 'Wonder Theatres' (1929) in Jamaica, Queens — rarely accessible to the public.","date":"2026-10-31"},{"id":"feed-green-wood-cemetery-2026-10-31-discover-green-wood-trolley-tour","name":"Discover Green-Wood Trolley Tour","dateISO":"2026-10-31T13:00:00","time":"1:00 PM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/discover-green-wood-trolley-tour-27/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"Hop on board our cozy, warm trolley for an expert-led tour of Green-Wood’s historic landscape and some of the Cemetery’s most intriguing permanent residents. Whether you’re a first-time visitor or a…","date":"2026-10-31"},{"id":"feed-gowanus-dredgers-2026-10-31-gowanus-dredgers-members-exhibition","name":"Gowanus Dredgers’ Members Exhibition","dateISO":"2026-10-31T13:00:00","time":"1:00 PM","venue":"Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States","neighborhood":"","price":"","url":"https://gowanusdredgers.org/event/gowanus-dredgers-members-exhibition-2/2026-10-31/","category":"art_exhibitions","source":"Gowanus Dredgers","via":["feed: Gowanus Dredgers"],"why":"","date":"2026-10-31"},{"id":"nypl-ghostbusters-halloween-1031","name":"New Classics Film Series: Ghostbusters (1984)","dateISO":"2026-10-31T13:00:00","time":"1:00 PM","venue":"Library for the Performing Arts","neighborhood":"Lincoln Center","price":"Free","url":"https://click.email.nypl.org/?qs=ABl7ImQiOjUwMzMsInQiOjYzNTIsInMiOjZ9AAYAAAAABjwyOtoG96qlg2W8HGzjeAt2h9ZeX4Qe-mQTPaEwesp6obAGPdgB56KwMo-HddAdfmuOeooOo5ul0-uo046CjhOQXwvN","category":"film_screenings","source":"New York Public Library for the Performing Arts","via":["New York Public Library"],"why":"Halloween afternoon screening of the 1984 Ghostbusters at the Library for the Performing Arts as part of the New Classics film series.","date":"2026-10-31"},{"id":"feed-makeville-studio-2026-10-31-wood-shop-basics-coat-hangers-sc","name":"Wood Shop Basics - Coat Hangers SC","dateISO":"2026-10-31T14:00:00","time":"2:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-10-31"},{"id":"feed-green-wood-cemetery-2026-10-31-revolutionary-spirits","name":"Revolutionary Spirits","dateISO":"2026-10-31T15:30:00","time":"3:30 PM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/revolutionary-spirits-7/2026-10-31/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"Courtesy of Fort Hamilton Distillery Delve into the storied past of distilled spirits in Brooklyn with Green-Wood and our neighbors at Fort Hamilton Distillery. The afternoon kicks off with a trolley…","date":"2026-10-31"},{"id":"mcny-halloween-bash-1031","name":"Halloween Bash: Ghosts of New York","dateISO":"2026-10-31T18:00:00","time":"6:00 – 10:00 PM","venue":"Museum of the City of New York","neighborhood":"East Harlem / Museum Mile","price":"$20 adults \u0026 members / $15 seniors \u0026 students","url":"https://www.mcny.org/event/halloween-bash-ghosts-new-york","category":"festivals_parties","source":"Museum of the City of New York","via":["Museum of the City of New York"],"why":"MCNY's annual Halloween Bash with costume theme 'Ghost of a Famous New Yorker': live tribute and drag performances by Mango, Tyrese Allums, Purss'ophonie \u0026 Corma Kelly, costume contests, themed cocktails at the Park View Bar, and DJ Misbehaviour sets on the South Terrace.","date":"2026-10-31"},{"id":"feed-green-wood-cemetery-2026-10-31-hereafter-hours","name":"Hereafter Hours","dateISO":"2026-10-31T18:00:00","time":"6:00 PM","venue":"Green-Wood Cemetery","neighborhood":"","price":"","url":"https://www.green-wood.com/event/hereafter-hours-2/","category":"tours_experiences","source":"Green-Wood Cemetery","via":["feed: Green-Wood Cemetery"],"why":"","date":"2026-10-31"},{"id":"feed-nyc-resistor-2026-10-31-nyc-resistor-halloween-party-2026","name":"NYC Resistor Halloween Party 2026","dateISO":"2026-10-31T20:00:00","time":"8:00 PM","venue":"NYC Resistor","neighborhood":"","price":"$20","url":"https://www.eventbrite.com/e/nyc-resistor-halloween-party-2026-tickets-2003212555679","category":"workshops_classes","source":"NYC Resistor","via":["feed: NYC Resistor"],"why":"Join NYC Resistor and friends for a spooky-special night of music and costumes.","date":"2026-10-31"},{"id":"feed-makeville-studio-2026-11-01-1-furniture-making-table-bc","name":"#1 Furniture Making: Table - BC","dateISO":"2026-11-01T10:00:00","time":"10:00 AM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-01"},{"id":"feed-makeville-studio-2026-11-01-plant-stand-workshop-bc","name":"Plant Stand Workshop - BC","dateISO":"2026-11-01T14:00:00","time":"2:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-01"}],"later":[{"id":"feed-the-wisdom-bar-2026-11-02-the-wisdom-bar-historical-migrations-of-","name":"The Wisdom Bar – \"Historical Migrations of Tacos in the USA: Taco Lovers\"","dateISO":"2026-11-02T18:30:00","time":"6:30 PM","venue":"Room 52, Manhattan","neighborhood":"","price":"$36.97","url":"https://www.eventbrite.com/e/the-wisdom-bar-historical-migrations-of-tacos-in-the-usa-taco-lovers-tickets-2003017054931","category":"talks_lectures","source":"The Wisdom Bar","via":["feed: The Wisdom Bar"],"why":"The real facts any taco lover should know. Expert-led lectures in bars and creative spaces across NYC.","date":"2026-11-02"},{"id":"feed-makeville-studio-2026-11-02-2-furniture-making-table-kj","name":"#2 Furniture Making: Table - KJ","dateISO":"2026-11-02T19:00:00","time":"7:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-02"},{"id":"feed-makeville-studio-2026-11-02-bowls-for-beginners","name":"Bowls for Beginners","dateISO":"2026-11-02T19:00:00","time":"7:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-02"},{"id":"feed-makeville-studio-2026-11-02-hand-cut-dovetails-sb","name":"Hand Cut Dovetails - SB","dateISO":"2026-11-02T19:00:00","time":"7:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-02"},{"id":"feed-club-free-time-2026-11-02-visionary-sci-fi-novel-and-a-blockbuster","name":"Visionary Sci-Fi Novel and a Blockbuster Actor","dateISO":"2026-11-02T19:00:00","time":"7:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-02/event/766933","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Visionary Sci-Fi Novel and a Blockbuster Actor","date":"2026-11-02"},{"id":"feed-club-free-time-2026-11-03-multidisciplinary-artist-dicusses-his-pr","name":"Multidisciplinary Artist Dicusses His Practice \u0026 Materiality (In Person AND Online!)","dateISO":"2026-11-03T15:00:00","time":"3:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-11-03/event/766312","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"A talk by artist Jeffrey Meris.Jeffrey Meris (b. 1991, Ayiti, raised in the Bahamas) is a multidisciplinary artist whose practice engages with the relationship between materiality and larger cultural…","date":"2026-11-03"},{"id":"feed-fort-greene-park-conservancy-2026-11-03-run-club-with-chelsea-piers-fitness","name":"Run Club with Chelsea Piers Fitness","dateISO":"2026-11-03T18:30:00","time":"6:30 PM","venue":"Fort Greene Park Conservancy","neighborhood":"","price":"","url":"https://www.fortgreenepark.org/calendar/runclub-chelsea-piers-110326","category":"sports_fitness","source":"Fort Greene Park Conservancy","via":["feed: Fort Greene Park Conservancy"],"why":"Join Coach Skye Massey for a 3-5 mile run starting at the monument in Fort Greene Park. Whether you're training for your first marathon or simply looking for a great workout and new connections, this…","date":"2026-11-03"},{"id":"feed-greenlight-bookstore-2026-11-03-fantasy-book-group","name":"Fantasy Book Group","dateISO":"2026-11-03T19:00:00","time":"7:00 PM","venue":"BierWax","neighborhood":"","price":"Free","url":"https://www.eventbrite.com/e/fantasy-book-group-tickets-2001637635049","category":"talks_lectures","source":"Greenlight Bookstore","via":["feed: Greenlight Bookstore"],"why":"For both lifelong lovers and burgeoning fans, the Fantasy Book Group meets monthly to explore the realm of magical storytelling!","date":"2026-11-03"},{"id":"feed-makeville-studio-2026-11-03-lathe-101-ad","name":"Lathe 101 - AD","dateISO":"2026-11-03T19:00:00","time":"7:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-03"},{"id":"feed-club-free-time-2026-11-03-mit-museum-professional-shares-interacti","name":"MIT Museum Professional Shares Interactive Projects Currently in the Works","dateISO":"2026-11-03T19:00:00","time":"7:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-11-03/event/765676","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"What if a museum worked less like a warehouse for finished objects and more like a lab where the experiment is still running? Ann Neumann is the Director of Galleries and Exhibitions at MIT Museum…","date":"2026-11-03"},{"id":"nyac-nyhistory-conservation-lab-1104","name":"After-Hours Conservation Lab Tour @ The New York Historical","dateISO":"2026-11-04T18:00:00","time":"6:00 PM","venue":"New-York Historical Society","neighborhood":"Upper West Side","price":"$","url":"https://nyadventureclub.com/event/2002570684826","category":"tours_experiences","source":"New York Adventure Club","via":["New York Adventure Club"],"why":"After-hours behind-the-scenes tour of the New-York Historical's conservation lab, where staff preserve and restore artifacts from the museum's extensive collection.","date":"2026-11-04"},{"id":"feed-nyc-resistor-2026-11-04-soldering-workshop-make-an-led-tile","name":"Soldering Workshop: Make an LED Tile","dateISO":"2026-11-04T18:00:00","time":"6:00 PM","venue":"NYC Resistor","neighborhood":"","price":"$97.88","url":"https://www.eventbrite.com/e/soldering-workshop-make-an-led-tile-tickets-2003477112977","category":"workshops_classes","source":"NYC Resistor","via":["feed: NYC Resistor"],"why":"Soldering is one of the most important skills you'll need for working with electronics. Come join us for an introductory through-hole solder","date":"2026-11-04"},{"id":"feed-gowanus-dredgers-2026-11-04-the-boathouse-jam-winter-edition","name":"The Boathouse Jam: Winter Edition","dateISO":"2026-11-04T18:00:00","time":"6:00 PM","venue":"Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States","neighborhood":"","price":"","url":"https://gowanusdredgers.org/event/the-boathouse-jam-winter-edition/2026-11-04/","category":"music_nightlife","source":"Gowanus Dredgers","via":["feed: Gowanus Dredgers"],"why":"","runsThrough":"2027-01-06","occurrences":5,"date":"2026-11-04"},{"id":"feed-greenlight-bookstore-2026-11-04-young-adult-book-group","name":"Young Adult Book Group","dateISO":"2026-11-04T18:00:00","time":"6:00 PM","venue":"Greenlight Bookstore in Fort Greene","neighborhood":"","price":"Free","url":"https://www.eventbrite.com/e/young-adult-book-group-tickets-2001637753403","category":"talks_lectures","source":"Greenlight Bookstore","via":["feed: Greenlight Bookstore"],"why":"Our YA Book Group is a space for the curious young reader interested in a curated, intentionally diverse selection of books.","date":"2026-11-04"},{"id":"feed-the-wisdom-bar-2026-11-04-the-wisdom-bar-psychedelics-creativity-i","name":"The Wisdom Bar-\"Psychedelics \u0026 Creativity in a Quantum World:Neuroscience\"","dateISO":"2026-11-04T18:30:00","time":"6:30 PM","venue":"The Velvet, Brooklyn","neighborhood":"","price":"$36.97","url":"https://www.eventbrite.com/e/the-wisdom-bar-psychedelics-creativity-in-a-quantum-worldneuroscience-tickets-2003017420023","category":"talks_lectures","source":"The Wisdom Bar","via":["feed: The Wisdom Bar"],"why":"How neuroscience looks at the Harmonics of Mind and Matter. Expert-led lectures in bars and creative spaces across NYC.","date":"2026-11-04"},{"id":"feed-makeville-studio-2026-11-04-bowls-ii","name":"Bowls II","dateISO":"2026-11-04T19:00:00","time":"7:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-04"},{"id":"feed-club-free-time-2026-11-04-emerging-photographers-share-their-work-","name":"Emerging Photographers Share Their Work of Self-Discovery","dateISO":"2026-11-04T19:00:00","time":"7:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-gallery-talk/2026-11-04/event/765679","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Alicia Hansen, photographer and founder and CEO of NYC Salt, discusses the mission and impact of the nonprofit arts organization. Founded by Hansen in 2005 as an after-school program in Washington…","date":"2026-11-04"},{"id":"nytm-ready-to-ride-1105","name":"Ready to Ride Event — New York Transit Museum","dateISO":"2026-11-05T16:30:00","time":"4:30 – 6:00 PM","venue":"New York Transit Museum, Downtown Brooklyn","neighborhood":"Downtown Brooklyn","price":"$10","url":"https://www.nytransitmuseum.org/program/ready-to-ride-event-fall2026/","category":"tours_experiences","source":"New York Transit Museum","via":["New York Transit Museum"],"why":"Hands-on subway navigation workshop inside the historic decommissioned Court Street station: practice OMNY, turnstiles, route-mapping, and role-play real-world scenarios aboard an actual subway car. Developed for participants aged 13 through adults with developmental/learning disabilities or autism.","date":"2026-11-05"},{"id":"cu-native-voices-karenna-1105","name":"Native Voices Karenna — Lay Our Vibration Down: New York Premiere","dateISO":"2026-11-05T19:00:00","time":"7:00 PM","venue":"The Great Hall at Cooper Union","neighborhood":"East Village","price":"Free","url":"https://cooper.edu/events-and-exhibitions/events/native-voices-karenna-lay-our-vibration-down","category":"music_nightlife","source":"The Cooper Union / Gardiner Foundation Great Hall Forum","via":["The Cooper Union"],"why":"New York-stage premiere of two short operas — Trials and Tears and Sacajawea: Women of Many Names — by Grammy-nominated Mohawk cellist-composer Dawn Avery, with music direction by Danielle Olana Jagelski (Oneida/Red Cliff Band of Ojibwe).","date":"2026-11-05"},{"id":"feed-nerd-nite-nyc-2026-11-05-nerd-nite","name":"Nerd Nite","dateISO":"2026-11-05T19:00:00","time":"7:00 PM","venue":"Caveat, Manhattan","neighborhood":"","price":"$20.29-25.54","url":"https://www.eventbrite.com/e/nerd-nite-tickets-1999866227722","category":"talks_lectures","source":"Nerd Nite NYC","via":["feed: Nerd Nite NYC"],"why":"Three fun-yet-informative presentations all about butts and sitting!","date":"2026-11-05"},{"id":"bpl-nytimes-midterms-1105","name":"New York Times Opinion Writers Unpack the 2026 Midterm Elections","dateISO":"2026-11-05T19:00:00","time":"7:00 PM","venue":"Brooklyn Public Library, Central Library, Dweck Center","neighborhood":"Park Slope","price":"Free","url":"https://www.bklynlibrary.org/event","category":"talks_lectures","source":"Brooklyn Public Library","via":["Brooklyn Public Library"],"why":"Live taping of The Opinions podcast with NYT columnists Michelle Cottle, David French, and Jamelle Bouie breaking down the 2026 midterm results and their implications for the next two years. Audience Q\u0026A included.","date":"2026-11-05"},{"id":"feed-club-free-time-2026-11-05-princeton-archeologist-discusses-the-tra","name":"Princeton Archeologist Discusses the Traveling Craftsmen of Ancient Greece","dateISO":"2026-11-05T19:30:00","time":"7:30 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-lecture/2026-11-05/event/765685","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"The designs of Greek temples, with their recognizable Doric and Ionic columns, spread widely in the ancient Mediterranean and Black Sea in the 6th and 5th centuries BCE. The dissemination of these…","date":"2026-11-05"},{"id":"feed-club-free-time-2026-11-06-clinical-psychologist-discusses-seasonal","name":"Clinical Psychologist Discusses Seasonal Affective Disorder \u0026 Management Strategies","dateISO":"2026-11-06T11:00:00","time":"11:00 AM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-06/event/767473","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"A discussion with William Lamson, Ph.D. including common symptoms, factors that may contribute to seasonal changes in mood, and strategies for managing symptoms and supporting mental and emotional…","date":"2026-11-06"},{"id":"feed-the-wisdom-bar-2026-11-06-the-wisdom-bar-rose-tinted-screens-paras","name":"The Wisdom Bar – \"Rose-Tinted Screens: Parasocial Relationships\"","dateISO":"2026-11-06T18:30:00","time":"6:30 PM","venue":"Room 52, Manhattan","neighborhood":"","price":"$36.97","url":"https://www.eventbrite.com/e/the-wisdom-bar-rose-tinted-screens-parasocial-relationships-tickets-2003370322564","category":"talks_lectures","source":"The Wisdom Bar","via":["feed: The Wisdom Bar"],"why":"A History and Future of Parasocial Relationships. Expert-led lectures in bars and creative spaces across NYC.","date":"2026-11-06"},{"id":"nytm-fly-away-redbirds-1107","name":"Fly Away Redbirds — Nostalgia Subway Ride","dateISO":"2026-11-07T10:00:00","time":"10:00 AM (also 2:00 PM session)","venue":"Old South Ferry station (departs)","neighborhood":"Lower Manhattan","price":"$60 adult / $40 child (members $50/$30)","url":"https://www.nytransitmuseum.org/programs/photo/?tribe-bar-search=fly+away+redbirds","category":"tours_experiences","source":"New York Transit Museum","via":["New York Transit Museum"],"why":"Round-trip excursion on the famed Redbird subway cars (in service 1959–2003), departing from the historic Old South Ferry station (opened 1905, closed to the public since 2017) and riding up to the Bronx.","date":"2026-11-07"},{"id":"feed-makeville-studio-2026-11-07-furniture-making-step-stool-sc","name":"Furniture Making: Step Stool - SC","dateISO":"2026-11-07T10:00:00","time":"10:00 AM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-07"},{"id":"feed-nyc-resistor-2026-11-07-yoga-for-hackers","name":"Yoga for Hackers","dateISO":"2026-11-07T12:00:00","time":"12:00 PM","venue":"NYCResistor","neighborhood":"","price":"Free","url":"https://www.eventbrite.com/e/yoga-for-hackers-tickets-2003487419805","category":"sports_fitness","source":"NYC Resistor","via":["feed: NYC Resistor"],"why":"Hack your body. We'll cover fundamental yoga postures, with an emphasis on alignment, breathing practices and strength. All are welcome!","date":"2026-11-07"},{"id":"feed-makeville-studio-2026-11-07-1-start-woodworking-sc","name":"#1 Start Woodworking! - SC","dateISO":"2026-11-07T14:00:00","time":"2:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-07"},{"id":"feed-ny-mycological-society-2026-11-08-gary-s-backyard-mushroom-walk-in-central","name":"Gary's Backyard Mushroom Walk in Central Park, Sunday, November 8th","dateISO":"2026-11-08T10:00:00","time":"10:00 AM","venue":"Central Park, w102nd st, Central Prk W \u0026 W 102nd St, New York, NY 10025, New York, 10025, United States","neighborhood":"","price":"","url":"https://www.newyorkmyc.org/event/garys-backyard-mushroom-walk-in-central-park-november-8th/","category":"tours_experiences","source":"NY Mycological Society","via":["feed: NY Mycological Society"],"why":"Join us for a walk in Central Park on Sunday November 8th. This walk honors Gary Lincoff, who traversed Central Park countless times, often with the club in tow, spreading knowledge, stories and…","date":"2026-11-08"},{"id":"feed-gowanus-dredgers-2026-11-08-brooklyn-folk-festival-banjo-toss-compet","name":"Brooklyn Folk Festival: Banjo Toss Competition","dateISO":"2026-11-08T13:00:00","time":"1:00 PM","venue":"Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States","neighborhood":"","price":"","url":"https://gowanusdredgers.org/event/brooklyn-folk-festival-banjo-toss-competition-3/","category":"festivals_parties","source":"Gowanus Dredgers","via":["feed: Gowanus Dredgers"],"why":"","date":"2026-11-08"},{"id":"feed-makeville-studio-2026-11-08-intro-to-hand-tools-mallet-jg","name":"Intro to Hand Tools: Mallet - JG","dateISO":"2026-11-08T14:00:00","time":"2:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-08"},{"id":"feed-club-free-time-2026-11-09-multi-media-artist-breaks-down-her-pract","name":"Multi-Media Artist Breaks Down Her Practice","dateISO":"2026-11-09T18:00:00","time":"6:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-gallery-talk/2026-11-09/event/766498","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"A conversation between the artist, Tith Kanitha, and Sohrab Mohebbi, Director of SculptureCenter, New York. Tith and Mohebbi will introduce and contextualize Tith's practice, which moves across film…","date":"2026-11-09"},{"id":"feed-makeville-studio-2026-11-09-simple-plywood-storage-sb","name":"Simple Plywood Storage - SB","dateISO":"2026-11-09T19:00:00","time":"7:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-09"},{"id":"feed-makeville-studio-2026-11-09-women-furniture-making-table-bc","name":"Women+ Furniture Making: Table - BC","dateISO":"2026-11-09T19:00:00","time":"7:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-09"},{"id":"interintellect-genz-festival-1110","name":"Interintellect Festival: GenZ's Economics and Culture","dateISO":"2026-11-10T18:00:00","time":"Evening","venue":"Manhattan (location TBD with registration)","neighborhood":"Manhattan","price":"$","url":"https://interintellect.com/salons/the-next-generation-economics-and-culture-of-gen-z-an-evening-of-discussion-in-manhattan","category":"talks_lectures","source":"Interintellect","via":["Interintellect"],"why":"In-person NYC festival exploring how Gen Z is rethinking work, faith, and success, with AI economist Rohit Krishnan, economist Allison Schrager, playwright Matthew Gasda, progress author Abi Olvera, and political columnist Shadi Hamid.","date":"2026-11-10"},{"id":"feed-club-free-time-2026-11-10-filmmaker-roundtable-discussing-themes-o","name":"Filmmaker Roundtable Discussing Themes of Migration, Identity, \u0026 the Quest for Belonging","dateISO":"2026-11-10T18:30:00","time":"6:30 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-11-10/event/765691","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Three powerful documentaries recently screened at the 2025 Queens World Film Festival: Home by Johanny Mota; Soñando America by Judit Angle; and Safari by Seyeon Bang. Katha Cato, Executive Director…","date":"2026-11-10"},{"id":"feed-makeville-studio-2026-11-10-2-start-woodworking-kj","name":"#2 Start Woodworking! KJ","dateISO":"2026-11-10T19:00:00","time":"7:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-10"},{"id":"feed-club-free-time-2026-11-10-new-york-times-featured-photographer-sha","name":"New York Times-Featured Photographer Shares Her Journey \u0026 Craft","dateISO":"2026-11-10T19:00:00","time":"7:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-11-10/event/766315","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"A talk by New York City-based commercial, editorial, and fine art photographer Emma Rose Milligan.Milligan is an Eddie Adams Workshop XXXVII alumnus. Her editorial writing and visual commissions have…","date":"2026-11-10"},{"id":"92ny-annie-proulx-1110","name":"Annie Proulx: New and Collected Stories (with Michael Cunningham)","dateISO":"2026-11-10T19:30:00","time":"7:30 PM","venue":"92NY","neighborhood":"Upper East Side","price":"$","url":"https://www.92ny.org/event/annie-proulx-new-collected-stories","category":"talks_lectures","source":"92NY","via":["Thought Gallery / 92NY"],"why":"Pulitzer Prize-winning author Annie Proulx discusses her new and collected stories in conversation with Michael Cunningham — two Pulitzer Prize winners in conversation at 92NY.","date":"2026-11-10"},{"id":"archleague-from-field-to-form-ocean-flora-1111","name":"From Field to Form: Ocean Flora","dateISO":"2026-11-11T18:00:00","time":"Evening","venue":"Parsons School of Design","neighborhood":"Greenwich Village","price":"$20 (free for League members and Parsons community)","url":"https://archleague.org/event/from-field-to-form-ocean-flora/","category":"talks_lectures","source":"The Architectural League of New York","via":["The Architectural League","Architectural League"],"why":"Architectural League event on the use of ocean flora — seaweed and marine plants — as sustainable materials in architecture and design.","date":"2026-11-11"},{"id":"feed-gotham-center-2026-11-11-eric-sanderson-s-guide-to-nyc-s-indigeno","name":"Eric Sanderson's Guide to NYC’s Indigenous Landscape","dateISO":"2026-11-11T18:30:00","time":"6:30 PM","venue":"Gotham Center","neighborhood":"","price":"","url":"https://www.gothamcenter.org/upcoming-events/welikia-a-natural-history-of-new-york-citys-five-boroughs","category":"talks_lectures","source":"Gotham Center","via":["feed: Gotham Center"],"why":"","date":"2026-11-11"},{"id":"nytm-underground-nyc-tour-1112","name":"Underground NYC Tour: Subway 101","dateISO":"2026-11-12T11:00:00","time":"11:00 AM","venue":"Subway (meets at announced location)","neighborhood":"NYC","price":"$30","url":"https://www.nytransitmuseum.org/program/underground-11-12/","category":"tours_experiences","source":"New York Transit Museum","via":["New York Transit Museum"],"why":"Expert-guided subway tour visiting stations old and new, exploring architecture, public art, and exclusive archival images from the Transit Museum's collection.","date":"2026-11-12"},{"id":"feed-the-wisdom-bar-2026-11-12-the-wisdom-bar-queer-melville-a-secret-h","name":"The Wisdom Bar-\"Queer Melville: A Secret History of America's Gay Writers\"","dateISO":"2026-11-12T18:30:00","time":"6:30 PM","venue":"Bibliotheque, Manhattan","neighborhood":"","price":"$36.97","url":"https://www.eventbrite.com/e/the-wisdom-bar-queer-melville-a-secret-history-of-americas-gay-writers-tickets-2003372044715","category":"talks_lectures","source":"The Wisdom Bar","via":["feed: The Wisdom Bar"],"why":"","date":"2026-11-12"},{"id":"feed-club-free-time-2026-11-12-national-book-award-finalist-discusses-h","name":"National Book Award Finalist Discusses How Literature Can Shape Radical Political Moments","dateISO":"2026-11-12T19:00:00","time":"7:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-11-12/event/766912","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"In this hour-long craft talk, Camonghne Felix will depart from Let the Poets Govern to reflect on poetic principles.Over the past decade, Camonghne Felix has been at the center of American politics…","date":"2026-11-12"},{"id":"92ny-girls-play-dead-1112","name":"Jen Percy \u0026 E. Jean Carroll: Girls Play Dead (with Jessica Bennett)","dateISO":"2026-11-12T20:00:00","time":"8:00 PM","venue":"92NY","neighborhood":"Upper East Side","price":"$","url":"https://www.92ny.org/event/jen-percy-e-jean-carroll-girls-play-dead","category":"talks_lectures","source":"92NY","via":["Thought Gallery / 92NY"],"why":"Jen Percy and E. Jean Carroll in conversation with journalist Jessica Bennett around Girls Play Dead — a charged discussion between two writers who have examined violence, gender, and survival.","date":"2026-11-12"},{"id":"nytm-subway-swing-1113","name":"Subway Swing: A Boogie for the Ages","dateISO":"2026-11-13T18:00:00","time":"6:00 – 9:00 PM","venue":"New York Transit Museum, Downtown Brooklyn","neighborhood":"Downtown Brooklyn","price":"$35 (general) / $30 (members) — includes one drink","url":"https://www.nytransitmuseum.org/program/subwayswing26/","category":"festivals_parties","source":"New York Transit Museum","via":["New York Transit Museum"],"why":"After-hours swing dance party inside a 1936 decommissioned subway station with live jazz bands, the hottest swing dancing, and vintage outfits — one drink ticket included.","date":"2026-11-13"},{"id":"nypl-library-after-hours-1113","name":"The Library After Hours: Friday the 13th Edition","dateISO":"2026-11-13T19:30:00","time":"7:30 PM – 10:30 PM","venue":"Stephen A. Schwarzman Building","neighborhood":"Midtown","price":"Free","url":"https://click.email.nypl.org/?qs=ABl7ImQiOjUwMzMsInQiOjYzNTIsInMiOjZ9AAYAAAAABjwyOtoRFPAFLUcM_ioCCWM564oujwuZFm_eqskorc_qS_At9BLIKgjmy1nQZfndUqOsVlEd3sdgkgMlt1qBmxJCcmVD","category":"festivals_parties","source":"New York Public Library","via":["New York Public Library"],"why":"After-hours Halloween party at the iconic Schwarzman Building with dancing, live music, storytelling, classic films, and a one-night display of rare collections material exploring the evolving identity of witches.","date":"2026-11-13"},{"id":"fgp-americas-250th-tour-1114","name":"America's 250th Anniversary Tour of Fort Greene","dateISO":"2026-11-14T09:30:00","time":"9:30 AM","venue":"Fort Greene Park (meet at DeKalb Ave/Washington Park entrance)","neighborhood":"Fort Greene","price":"Free","url":"https://pro.gofundme.com/event/americas-250th-anniversary-tour-of-fort-greene/e827959","category":"tours_experiences","source":"Fort Greene Park Conservancy","via":["Fort Greene Park Conservancy","feed: Fort Greene Park Conservancy"],"why":"Walking tour tracing Fort Greene Park's role in the American Revolutionary War, the Battle of Brooklyn, and the legacy of prison ship martyrs, led by historians Natasha Fearon and Alexandra Stevens.","date":"2026-11-14"},{"id":"feed-fort-greene-park-conservancy-2026-11-14-volunteer-day-leaf-no-trace","name":"Volunteer Day: Leaf No Trace","dateISO":"2026-11-14T10:00:00","time":"10:00 AM","venue":"Fort Greene Park Conservancy","neighborhood":"","price":"","url":"https://www.fortgreenepark.org/calendar/leaf-no-trace-111426","category":"miscellaneous","source":"Fort Greene Park Conservancy","via":["feed: Fort Greene Park Conservancy"],"why":"It's that time again! Fall is upon us! Join us for our annual leaf raking event, Leaf No Trace, to collect leaves en masse.","date":"2026-11-14"},{"id":"feed-ny-mycological-society-2026-11-14-edgewood-oak-brush-plains-preserve-deer-","name":"Edgewood Oak Brush Plains Preserve, Deer Park, with LIMC, Saturday, November 14th","dateISO":"2026-11-14T10:30:00","time":"10:30 AM","venue":"Edgewood Oak Brush Plains Preserver, 528 Commack Rd, Deer Park, 11729, United States","neighborhood":"","price":"","url":"https://www.newyorkmyc.org/event/edgewood-oak-brush-plains-preserve-deer-park-with-limc/","category":"tours_experiences","source":"NY Mycological Society","via":["feed: NY Mycological Society"],"why":"Joint walk with Long Island Mycological Club (LIMC) at Edgewood Oak Brush Plains Preserve, Deer Park, NY – Saturday, November 14th. Edgewood Oak Brush Plains Preserve features a rare pitch pine/scrub…","date":"2026-11-14"},{"id":"feed-club-free-time-2026-11-14-bilingual-conversation-with-theater-make","name":"Bilingual Conversation with Theater-Maker Carolina Cuervo","dateISO":"2026-11-14T11:00:00","time":"11:00 AM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-14/event/766978","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"An intimate conversation exploring the artist's work as a writer, playwright, screenwriter, showrunner, and creative artist.In conversation with Martha Schreiner, Carolina will take the audience…","date":"2026-11-14"},{"id":"feed-club-free-time-2026-11-14-conference-in-a-landmark-art-museum-arti","name":"Conference in a Landmark Art Museum: Artistic Representations of the Body \u0026 Fashion","dateISO":"2026-11-14T11:00:00","time":"11:00 AM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-symposium/2026-11-14/event/765997","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Dive deep into themes found in the exhibition Costume Art through dynamic conversations and presentations by leading scholars, designers, artists, models, and more. Explore the indivisible connection…","date":"2026-11-14"},{"id":"feed-club-free-time-2026-11-14-actors-from-chicago-fire-fbi-law-order-d","name":"Actors from Chicago Fire, FBI, \u0026 Law \u0026 Order Discuss Their Franchises \u0026 the Future of Network TV (+ Reception)","dateISO":"2026-11-14T12:00:00","time":"12:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-14/event/767365","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Hanako Greensmith, Zeeko Zaki, and David Ajala have a discussion on carrying forward the legacy of Wolf Entertainment's iconic franchises. From creating memorable characters to bringing new energy to…","date":"2026-11-14"},{"id":"feed-club-free-time-2026-11-14-death-cafe-discussion-group","name":"Death Cafe Discussion Group","dateISO":"2026-11-14T15:30:00","time":"3:30 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-14/event/765289","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"An informal, group-directed discussion of death with no agenda, objectives or themes. The purpose of Death Cafe is \"to increase awareness of death with a view to helping people make the most of their…","date":"2026-11-14"},{"id":"feed-makeville-studio-2026-11-15-wood-shop-basics-serving-board","name":"Wood Shop Basics - Serving Board","dateISO":"2026-11-15T14:00:00","time":"2:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-15"},{"id":"feed-the-wisdom-bar-2026-11-16-the-wisdom-bar-wine-wisdom-what-s-really","name":"The Wisdom Bar-\"Wine Wisdom: What's Really in Your Glass?\"","dateISO":"2026-11-16T18:30:00","time":"6:30 PM","venue":"Fabrik DUMBO, Brooklyn","neighborhood":"","price":"$36.97","url":"https://www.eventbrite.com/e/the-wisdom-bar-wine-wisdom-whats-really-in-your-glass-tickets-2003409531840","category":"talks_lectures","source":"The Wisdom Bar","via":["feed: The Wisdom Bar"],"why":"","date":"2026-11-16"},{"id":"feed-makeville-studio-2026-11-16-mitered-frames-sb","name":"Mitered Frames - SB","dateISO":"2026-11-16T19:00:00","time":"7:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-16"},{"id":"feed-gotham-center-2026-11-17-hidden-histories-of-jazz-age-new-york-fr","name":"Hidden Histories of Jazz Age New York: From the Suppressed to the Strange","dateISO":"2026-11-17T18:30:00","time":"6:30 PM","venue":"Gotham Center","neighborhood":"","price":"","url":"https://www.gothamcenter.org/upcoming-events/reintegrating-the-loyalists","category":"talks_lectures","source":"Gotham Center","via":["feed: Gotham Center"],"why":"","date":"2026-11-17"},{"id":"archleague-after-hours-inc-architecture-1119","name":"After Hours: INC Architecture \u0026 Design","dateISO":"2026-11-19T18:00:00","time":"6:00 PM","venue":"INC Architecture \u0026 Design office, downtown NYC","neighborhood":"Downtown Manhattan","price":"Free (League members only)","url":"https://archleague.org/event/after-hours-inc-architecture-design/","category":"tours_experiences","source":"The Architectural League of New York","via":["The Architectural League"],"why":"Visit to the downtown office of INC Architecture \u0026 Design, a 40-person NYC multidisciplinary studio co-founded by Adam Rolston, Drew Stuart, and Gabriel Benroth, known for high-end hospitality and residential projects. League members only.","date":"2026-11-19"},{"id":"feed-club-free-time-2026-11-19-johns-hopkins-bioethics-researchers-disc","name":"Johns Hopkins Bioethics Researchers Discuss Advances in Reproductive Technology","dateISO":"2026-11-19T18:30:00","time":"6:30 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-19/event/765325","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"Speakers explore the promises, risks, and societal implications of a technology that could reshape the future of human reproduction. What if ordinary skin cells could be transformed into eggs or…","date":"2026-11-19"},{"id":"feed-the-wisdom-bar-2026-11-19-the-wisdom-bar-the-real-process-behind-w","name":"The Wisdom Bar-\"The Real Process Behind Writing a Novel: Author's Account\"","dateISO":"2026-11-19T18:30:00","time":"6:30 PM","venue":"Bibliotheque, Manhattan","neighborhood":"","price":"$36.97","url":"https://www.eventbrite.com/e/the-wisdom-bar-the-real-process-behind-writing-a-novel-authors-account-tickets-2003410977163","category":"talks_lectures","source":"The Wisdom Bar","via":["feed: The Wisdom Bar"],"why":"An Author’s Firsthand Account of His Speculative Fiction Debut. Expert-led lectures in bars and creative spaces across NYC.","date":"2026-11-19"},{"id":"feed-club-free-time-2026-11-20-fashion-museum-curator-discusses-the-rel","name":"Fashion Museum Curator Discusses the Relationship between Dolls \u0026 Fashion","dateISO":"2026-11-20T19:00:00","time":"7:00 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-11-20/event/765700","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"As early as the fourteenth century, dolls circulated throughout Europe as miniature fashion models, showcasing the latest trends in three-dimensional detail. The first models for many aspiring…","date":"2026-11-20"},{"id":"fgp-black-history-tour-1121","name":"Black History and Culture Tour of Fort Greene","dateISO":"2026-11-21T11:00:00","time":"11:00 AM","venue":"Fort Greene Park (meet at DeKalb Ave/Washington Park corner entrance)","neighborhood":"Fort Greene","price":"Free","url":"https://www.classy.org/event/black-history-and-culture-tour-of-fort-greene/e779990","category":"tours_experiences","source":"Fort Greene Park Conservancy","via":["Fort Greene Park Conservancy","feed: Fort Greene Park Conservancy"],"why":"Guided tour of Fort Greene's Black history and culture led by local historian Suzanne Spellen, covering stops from both the 'Heart of Black Fort Greene: Fulton Street' and 'Fort Greene Black History Makers and Cultural Giants' routes.","date":"2026-11-21"},{"id":"nytm-second-avenue-tour-1121","name":"Transit Walk: Second Avenue's Art and Transit History","dateISO":"2026-11-21T14:00:00","time":"2:00 PM","venue":"East Side of Manhattan (Second Avenue corridor)","neighborhood":"Upper East Side / East Village","price":"$40 (general) / $35 (members) + one MetroCard swipe","url":"https://www.nytransitmuseum.org/program/secondav-11-21/","category":"tours_experiences","source":"New York Transit Museum","via":["New York Transit Museum"],"why":"Walking tour exploring Second Avenue's transit development and art collection: see an original trolley kiosk on the Queensboro Bridge, discover site-specific artworks by Jean Shin, Vik Muniz, and Sarah Sze in the Q train stations.","date":"2026-11-21"},{"id":"momi-artisan-market-1122","name":"MoMI Merch Meet: First Artisan Market","dateISO":"2026-11-22T12:00:00","time":"TBD","venue":"Museum of the Moving Image","neighborhood":"Astoria","price":"Free","url":"https://movingimage.org/","category":"miscellaneous","source":"Museum of the Moving Image","via":["Museum of the Moving Image"],"why":"MoMI's first artisan market featuring local makers whose work celebrates the moving image — art, hats, buttons, jewelry, toys, zines, comics, and more.","date":"2026-11-22"},{"id":"feed-makeville-studio-2026-11-22-wood-shop-basics-serving-board","name":"Wood Shop Basics - Serving Board","dateISO":"2026-11-22T14:00:00","time":"2:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-22"},{"id":"feed-club-free-time-2026-11-23-puppetry-arts-expert-discusses-the-legac","name":"Puppetry Arts Expert Discusses the Legacy of Designer \u0026 Puppeteer Tony Sarg","dateISO":"2026-11-23T18:30:00","time":"6:30 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-11-23/event/765703","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"The Macy’s Thanksgiving Day Parade is one of the world’s biggest theatrical events and always an event characterized by iconic 100-foot balloons, whimsical floats, and character costumes that act as…","date":"2026-11-23"},{"id":"feed-club-free-time-2026-11-24-archeology-scholar-discusses-preserving-","name":"Archeology Scholar Discusses Preserving Significant Terrains \u0026 Indigenous Ancestral Homelands","dateISO":"2026-11-24T18:30:00","time":"6:30 PM","venue":"New York City ( NYC )","neighborhood":"","price":"Free","url":"https://www.clubfreetime.com/new-york-city-nyc/free-lecture/2026-11-24/event/765706","category":"talks_lectures","source":"Club Free Time","via":["feed: Club Free Time"],"why":"This lecture by Brian Daniels of the University of Pennsylvania and President of the Archaeological Institute of America focuses on the Shasta Indian Nation, documenting the Kikaceki traditional…","date":"2026-11-24"},{"id":"feed-ny-mycological-society-2026-11-29-nyms-collab-walk-with-nyc-parks-long-pon","name":"NYMS collab walk with NYC Parks, Long Pond Park, Staten Island, Sunday, November 29th","dateISO":"2026-11-29T13:00:00","time":"1:00 PM","venue":"Long Pond Park (Eugene Street Entrance), Bartow Avenue and Eugene Street, Staten Island, NY, 10309, United States","neighborhood":"","price":"","url":"https://www.newyorkmyc.org/event/nyms-collab-walk-with-nyc-parks-long-pond-park-staten-island-sunday-november-29th/","category":"tours_experiences","source":"NY Mycological Society","via":["feed: NY Mycological Society"],"why":"Join us for a walk in Long Pond Park, Staten Island on Sunday, November 29th. The walk is open to the public and is a collaboration between NYMS and NYC Parks Urban Park Rangers. The walk starts in a…","date":"2026-11-29"},{"id":"feed-the-wisdom-bar-2026-11-30-the-wisdom-bar-the-nyc-subway-system-und","name":"The Wisdom Bar – \"The NYC Subway System: Underappreciated Art Museum\"","dateISO":"2026-11-30T18:30:00","time":"6:30 PM","venue":"Fabrik NYC, Manhattan","neighborhood":"","price":"$36.97","url":"https://www.eventbrite.com/e/the-wisdom-bar-the-nyc-subway-system-underappreciated-art-museum-tickets-2003411684278","category":"talks_lectures","source":"The Wisdom Bar","via":["feed: The Wisdom Bar"],"why":"New York City Subway System: The Most Underappreciated Art Museum in the World. Expert-led lectures in bars and creative spaces across NYC.","date":"2026-11-30"},{"id":"feed-makeville-studio-2026-11-30-router-101-cutting-board","name":"Router 101 - Cutting Board","dateISO":"2026-11-30T19:00:00","time":"7:00 PM","venue":"Makeville Studio","neighborhood":"","price":"","url":"https://www.makeville.com/classes","urlIsFallback":true,"category":"workshops_classes","source":"Makeville Studio","via":["feed: Makeville Studio"],"why":"","date":"2026-11-30"},{"id":"feed-gotham-center-2026-12-01-the-mets-new-york-baseball-class-struggl","name":"The Mets: New York Baseball, Class Struggle, and the People's Team","dateISO":"2026-12-01T18:30:00","time":"6:30 PM","venue":"Gotham Center","neighborhood":"","price":"","url":"https://www.gothamcenter.org/upcoming-events/rerurbdy58p2ekyy4plvx60b2so9li","category":"workshops_classes","source":"Gotham Center","via":["feed: Gotham Center"],"why":"","date":"2026-12-01"},{"id":"feed-nerd-nite-nyc-2026-12-03-nerd-nite","name":"Nerd Nite","dateISO":"2026-12-03T19:00:00","time":"7:00 PM","venue":"Caveat, Manhattan","neighborhood":"","price":"$20.29-25.54","url":"https://www.eventbrite.com/e/nerd-nite-tickets-2002678540425","category":"talks_lectures","source":"Nerd Nite NYC","via":["feed: Nerd Nite NYC"],"why":"Nerd Nite NYC is back at Caveat NYC with three fun-yet-informative presentations!","date":"2026-12-03"},{"id":"feed-fort-greene-park-conservancy-2026-12-04-fort-greene-tree-lighting","name":"Fort Greene Tree Lighting","dateISO":"2026-12-04T17:00:00","time":"5:00 PM","venue":"Fort Greene Park Conservancy","neighborhood":"","price":"","url":"https://www.fortgreenepark.org/calendar/annual-tree-lighting-2026","category":"miscellaneous","source":"Fort Greene Park Conservancy","via":["feed: Fort Greene Park Conservancy"],"why":"Mark your calendars and join us for the 12th Annual Tree Lighting Ceremony in partnership with Myrtle Avenue Brooklyn Partnership. Meet us at Myrtle Ave and St Edwards Street entrance on Friday…","date":"2026-12-04"},{"id":"skint-nyro-season-opener-1017","name":"New York Repertory Orchestra 2026–27 Season Opener","dateISO":"2026-12-05T20:00:00","time":"8:00 PM","venue":"The Church of St. Mary the Virgin","neighborhood":"Theater District","price":"Free (suggested donation $20)","url":"https://www.nyro.org/","category":"music_nightlife","source":"New York Repertory Orchestra","via":["The Skint"],"why":"All-volunteer community orchestra opens its new season with Rachmaninoff, Rautavaara, and Martinů, featuring soprano Kendra Berentsen. Season dates: Dec 5, Feb 20, Apr 3, May 15.","date":"2026-12-05"},{"id":"feed-gotham-center-2026-12-09-seneca-village-a-story-of-black-freedom-","name":"Seneca Village: A Story of Black Freedom and Manhattan Real Estate","dateISO":"2026-12-09T18:30:00","time":"6:30 PM","venue":"Gotham Center","neighborhood":"","price":"","url":"https://www.gothamcenter.org/upcoming-events/seneca-village-a-story-of-black-freedom-and-manhattan-real-estate","category":"talks_lectures","source":"Gotham Center","via":["feed: Gotham Center"],"why":"","date":"2026-12-09"},{"id":"feed-fort-greene-park-conservancy-2026-12-12-volunteer-day-leaf-no-trace","name":"Volunteer Day: Leaf No Trace","dateISO":"2026-12-12T10:00:00","time":"10:00 AM","venue":"Fort Greene Park Conservancy","neighborhood":"","price":"","url":"https://www.fortgreenepark.org/calendar/leaf-no-trace-111426-jysj9","category":"miscellaneous","source":"Fort Greene Park Conservancy","via":["feed: Fort Greene Park Conservancy"],"why":"It's that time again! Fall is upon us! Join us for our annual leaf raking event, Leaf No Trace, to collect leaves en masse.","date":"2026-12-12"}],"discovered_sources":[]}/**/;
+
+(function() {
+  'use strict';
+
+  var CATEGORY_ORDER = [
+    'tech_ai',
+    'music_nightlife',
+    'film_screenings',
+    'art_exhibitions',
+    'talks_lectures',
+    'workshops_classes',
+    'tours_experiences',
+    'sports_fitness',
+    'festivals_parties',
+    'miscellaneous'
+  ];
+
+  var CATEGORY_CONFIG = {
+    tech_ai:           { label: 'Tech & AI',            color: '#3b82f6' },
+    music_nightlife:   { label: 'Music & Nightlife',    color: '#6366f1' },
+    talks_lectures:    { label: 'Talks & Lectures',     color: '#8b5cf6' },
+    workshops_classes:  { label: 'Workshops & Classes',   color: '#f59e0b' },
+    tours_experiences:  { label: 'Tours & Experiences',   color: '#10b981' },
+    sports_fitness:     { label: 'Sports & Fitness',      color: '#22c55e' },
+    film_screenings:    { label: 'Film & Screenings',     color: '#ef4444' },
+    art_exhibitions:    { label: 'Art & Exhibitions',     color: '#ec4899' },
+    festivals_parties: { label: 'Festivals & Parties',  color: '#06b6d4' },
+    miscellaneous:     { label: 'Miscellaneous',        color: '#6b7280' }
+  };
+
+  var POSITIVE_SIGNALS = ['thumbs_up'];
+
+  var SHORT_DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  var SHORT_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  function formatDate(dateStr) {
+    var parts = dateStr.split('-');
+    var d = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
+    return SHORT_DAYS[d.getDay()] + ', ' + SHORT_MONTHS[d.getMonth()] + ' ' + d.getDate();
+  }
+
+  function groupByCategory(events) {
+    var groups = {};
+    for (var i = 0; i < events.length; i++) {
+      var cat = events[i].category || 'other';
+      if (!groups[cat]) groups[cat] = [];
+      groups[cat].push(events[i]);
+    }
+    return groups;
+  }
+
+  function createEl(tag, className) {
+    var el = document.createElement(tag);
+    if (className) el.className = className;
+    return el;
+  }
+
+  // Destination for an event's title link. Prefer the real event URL; when one
+  // is missing, fall back to a web search for the event so the link still goes
+  // somewhere useful instead of dead-ending on this page.
+  // Real event page when we have one. When no source carried a link the build
+  // flags `urlMissing`; the card then shows an explicit "no event page found"
+  // note and links to a web search so the event is still reachable.
+  function eventHref(evt) {
+    var u = (evt && evt.url ? String(evt.url) : '').trim();
+    if (/^https?:\/\//i.test(u)) return u;
+    var q = [evt && evt.name, evt && evt.venue, 'NYC'].filter(Boolean).join(' ');
+    return 'https://www.google.com/search?q=' + encodeURIComponent(q);
+  }
+
+  // "feed: Green-Wood Cemetery" -> "Green-Wood Cemetery (calendar feed)";
+  // anything else came from an email newsletter -> "(email list)".
+  function sourceLabel(via) {
+    var v = String(via || '');
+    if (/^feed:\s*/i.test(v)) return v.replace(/^feed:\s*/i, '') + ' (calendar feed)';
+    return v + ' (email list)';
+  }
+  function eventSourceText(evt) {
+    var vias = (evt && evt.via && evt.via.length) ? evt.via : (evt && evt.source ? [evt.source] : []);
+    var seen = {}, parts = [];
+    for (var i = 0; i < vias.length; i++) {
+      var l = sourceLabel(vias[i]);
+      if (!seen[l]) { seen[l] = true; parts.push(l); }
+    }
+    return parts.length ? 'Source: ' + parts.join(', ') : '';
+  }
+
+  function runsThroughLabel(evt) {
+    if (!evt || !evt.runsThrough) return '';
+    var d = new Date(evt.runsThrough + 'T12:00:00');
+    if (isNaN(d)) return '';
+    return 'Runs through ' + formatDate(evt.runsThrough) + (evt.occurrences ? ' (' + evt.occurrences + ' dates)' : '');
+  }
+
+  function createTabButton(label, tabKey, count) {
+    var btn = createEl('button', 'tab');
+    btn.setAttribute('data-tab', tabKey);
+    btn.appendChild(document.createTextNode(label + ' '));
+    var countSpan = createEl('span', 'count');
+    countSpan.textContent = String(count);
+    btn.appendChild(countSpan);
+    return btn;
+  }
+
+  function createEventCard(evt) {
+    var card = createEl('div', 'event-card');
+    var catConfig = CATEGORY_CONFIG[evt.category];
+    if (catConfig) {
+      card.style.setProperty('--accent', catConfig.color);
+    }
+
+    // Header: name link + price badge
+    var header = createEl('div', 'event-header');
+
+    var nameLink = createEl('a', 'event-name');
+    nameLink.textContent = evt.name;
+    nameLink.href = eventHref(evt);
+    nameLink.target = '_blank';
+    nameLink.rel = 'noopener noreferrer';
+    header.appendChild(nameLink);
+
+    if (evt.price) {
+      var badge = createEl('span', 'price-badge');
+      var isFree = evt.price.toLowerCase() === 'free';
+      badge.className = 'price-badge ' + (isFree ? 'free' : 'paid');
+      badge.textContent = evt.price;
+      header.appendChild(badge);
+    }
+
+    card.appendChild(header);
+
+    // Meta line: only non-empty parts, joined by the CSS "·" separator. Skip the
+    // whole line when nothing is present so no empty element/blank line renders.
+    var metaParts = [];
+    if (evt.date) metaParts.push(formatDate(evt.date));
+    if (evt.time) metaParts.push(evt.time);
+    if (evt.venue) metaParts.push(evt.venue);
+    if (evt.neighborhood) metaParts.push(evt.neighborhood);
+    if (runsThroughLabel(evt)) metaParts.push(runsThroughLabel(evt));
+
+    if (metaParts.length > 0) {
+      var meta = createEl('div', 'event-meta');
+      for (var m = 0; m < metaParts.length; m++) {
+        var span = createEl('span');
+        span.textContent = metaParts[m];
+        meta.appendChild(span);
+      }
+      card.appendChild(meta);
+    }
+
+    // Why sentence
+    if (evt.why) {
+      var why = createEl('div', 'event-why');
+      why.textContent = evt.why;
+      card.appendChild(why);
+    }
+
+    // Action row: feedback + save
+    var feedbackRow = createEl('div', 'feedback-row');
+    var signals = [
+      { key: 'thumbs_up',   label: '\u25B2' },
+      { key: 'thumbs_down', label: '\u25BC' }
+    ];
+
+    for (var s = 0; s < signals.length; s++) {
+      var btn = createEl('button', 'feedback-btn');
+      btn.textContent = signals[s].label;
+      btn.setAttribute('data-event-id', evt.id);
+      btn.setAttribute('data-signal', signals[s].key);
+      btn.setAttribute('title', signals[s].key === 'thumbs_up' ? 'More like this' : 'Less like this');
+      feedbackRow.appendChild(btn);
+    }
+
+    var saveBtn = createEl('button', 'save-btn');
+    saveBtn.textContent = '\u2606';
+    saveBtn.setAttribute('data-event-id', evt.id);
+    saveBtn.setAttribute('title', 'Save event');
+    if (savedEvents[evt.id]) {
+      saveBtn.classList.add('saved');
+      saveBtn.textContent = '\u2605';
+    }
+    feedbackRow.appendChild(saveBtn);
+
+    card.appendChild(feedbackRow);
+
+    if (evt.urlMissing) {
+      var nolink = createEl('div', 'event-nolink');
+      nolink.textContent = 'No event page in the source; title links to a web search.';
+      card.appendChild(nolink);
+    }
+
+    var srcText = eventSourceText(evt);
+    if (srcText) {
+      var srcEl = createEl('div', 'event-source');
+      srcEl.textContent = srcText;
+      card.appendChild(srcEl);
+    }
+
+    return card;
+  }
+
+  // Saved events state (localStorage only — single-browser, static site)
+  var savedEvents = {};
+  try {
+    var saved = localStorage.getItem('events-digest-saved');
+    if (saved) savedEvents = JSON.parse(saved);
+  } catch(e) {}
+
+  // All events indexed by id for quick lookup
+  var allEventsById = {};
+
+  function persistSaved() {
+    try { localStorage.setItem('events-digest-saved', JSON.stringify(savedEvents)); } catch(e) {}
+  }
+
+  function renderEvents(events, container) {
+    container.textContent = '';
+    if (!events || events.length === 0) {
+      var empty = createEl('div', 'empty-state');
+      empty.textContent = 'No events yet.';
+      container.appendChild(empty);
+      return;
+    }
+
+    var groups = groupByCategory(events);
+
+    for (var c = 0; c < CATEGORY_ORDER.length; c++) {
+      var catKey = CATEGORY_ORDER[c];
+      var catEvents = groups[catKey];
+      if (!catEvents || catEvents.length === 0) continue;
+
+      var config = CATEGORY_CONFIG[catKey];
+
+      var section = createEl('div', 'category-section');
+      var header = createEl('div', 'category-header');
+      var label = createEl('div', 'category-label');
+      label.textContent = (config ? config.label : catKey) + ' (' + catEvents.length + ')';
+      var toggle = createEl('span', 'category-toggle');
+      toggle.textContent = '\u25BC';
+      header.appendChild(label);
+      header.appendChild(toggle);
+      section.appendChild(header);
+
+      var body = createEl('div', 'category-body');
+      for (var e = 0; e < catEvents.length; e++) {
+        body.appendChild(createEventCard(catEvents[e]));
+      }
+      section.appendChild(body);
+
+      header.addEventListener('click', (function(sec) {
+        return function() { sec.classList.toggle('collapsed'); };
+      })(section));
+
+      container.appendChild(section);
+    }
+
+    // Render any categories not in CATEGORY_ORDER
+    var knownKeys = {};
+    for (var k = 0; k < CATEGORY_ORDER.length; k++) knownKeys[CATEGORY_ORDER[k]] = true;
+    for (var otherKey in groups) {
+      if (groups.hasOwnProperty(otherKey) && !knownKeys[otherKey]) {
+        var otherSection = createEl('div', 'category-section');
+        var otherHeader = createEl('div', 'category-header');
+        var otherLabel = createEl('div', 'category-label');
+        otherLabel.textContent = otherKey;
+        otherHeader.appendChild(otherLabel);
+        otherSection.appendChild(otherHeader);
+        var otherBody = createEl('div', 'category-body');
+        for (var oe = 0; oe < groups[otherKey].length; oe++) {
+          otherBody.appendChild(createEventCard(groups[otherKey][oe]));
+        }
+        otherSection.appendChild(otherBody);
+        container.appendChild(otherSection);
+      }
+    }
+  }
+
+  function getUniqueDays(events) {
+    var seen = {};
+    var days = [];
+    for (var i = 0; i < events.length; i++) {
+      var d = events[i].date;
+      if (d && !seen[d]) {
+        seen[d] = true;
+        days.push(d);
+      }
+    }
+    days.sort();
+    return days;
+  }
+
+  function filterByDay(events, dateStr) {
+    if (!dateStr) return events;
+    var result = [];
+    for (var i = 0; i < events.length; i++) {
+      if (events[i].date === dateStr) result.push(events[i]);
+    }
+    return result;
+  }
+
+  function renderSavedSection() {
+    var container = document.getElementById('saved-container');
+    container.textContent = '';
+
+    var ids = Object.keys(savedEvents);
+    if (ids.length === 0) return;
+
+    var section = createEl('div', 'saved-section');
+    var headerEl = createEl('div', 'saved-header');
+    var labelEl = createEl('div', 'saved-label');
+    labelEl.textContent = 'Saved (' + ids.length + ')';
+    headerEl.appendChild(labelEl);
+    section.appendChild(headerEl);
+
+    for (var i = 0; i < ids.length; i++) {
+      var evt = allEventsById[ids[i]] || savedEvents[ids[i]];
+      if (!evt) continue;
+
+      var card = createEl('div', 'saved-card');
+
+      var nameLink = createEl('a', 'event-name');
+      nameLink.textContent = evt.name;
+      nameLink.href = eventHref(evt);
+      nameLink.target = '_blank';
+      nameLink.rel = 'noopener noreferrer';
+      card.appendChild(nameLink);
+
+      var metaSpan = createEl('span', 'saved-meta');
+      var parts = [];
+      if (evt.date) parts.push(formatDate(evt.date));
+      if (evt.time) parts.push(evt.time);
+      if (evt.venue) parts.push(evt.venue);
+      metaSpan.textContent = parts.join(' \u00b7 ');
+      card.appendChild(metaSpan);
+
+      var unsaveBtn = createEl('button', 'unsave-btn');
+      unsaveBtn.textContent = '\u2715';
+      unsaveBtn.setAttribute('data-unsave-id', ids[i]);
+      unsaveBtn.setAttribute('title', 'Remove from saved');
+      card.appendChild(unsaveBtn);
+
+      section.appendChild(card);
+    }
+
+    container.appendChild(section);
+  }
+
+  // Per-source summary: events shown per source (descending), then configured
+  // sources that yielded nothing — the quickest way to spot a broken feed or a
+  // newsletter that stopped arriving.
+  function renderSourceSummary(data, allEvents) {
+    var wrapper = document.getElementById('sources-container');
+    var rep = data.meta && data.meta.source_report;
+    if (!rep) return;
+
+    var shownBy = {};
+    for (var i = 0; i < allEvents.length; i++) {
+      var vias = (allEvents[i].via && allEvents[i].via.length) ? allEvents[i].via : [allEvents[i].source || 'unknown'];
+      var seen = {};
+      for (var v = 0; v < vias.length; v++) {
+        var l = sourceLabel(vias[v]);
+        if (seen[l]) continue;
+        seen[l] = true;
+        shownBy[l] = (shownBy[l] || 0) + 1;
+      }
+    }
+    var counts = (rep.counts || []).map(function(c) {
+      var label = sourceLabel(c.source);
+      return { label: label, collected: c.count, shown: shownBy[label] || 0 };
+    });
+    counts.sort(function(a, b) { return b.shown - a.shown || b.collected - a.collected; });
+
+    var section = createEl('div', 'sources-section');
+    var title = createEl('div', 'sources-title');
+    title.textContent = 'Sources';
+    section.appendChild(title);
+
+    var sub = createEl('div', 'sources-sub');
+    sub.textContent = 'Events shown per source (collected before exclusions in parentheses).';
+    section.appendChild(sub);
+
+    for (var c = 0; c < counts.length; c++) {
+      var row = createEl('div', 'source-row');
+      var name = createEl('span');
+      var m = /^(.*) \((email list|calendar feed)\)$/.exec(counts[c].label);
+      name.textContent = m ? m[1] + ' ' : counts[c].label;
+      if (m) { var kind = createEl('span', 'source-kind'); kind.textContent = '(' + m[2] + ')'; name.appendChild(kind); }
+      var cnt = createEl('span', 'count');
+      cnt.textContent = counts[c].shown + (counts[c].collected !== counts[c].shown ? ' (' + counts[c].collected + ')' : '');
+      row.appendChild(name); row.appendChild(cnt);
+      section.appendChild(row);
+    }
+
+    var empty = rep.empty || [];
+    var sub2 = createEl('div', 'sources-sub');
+    sub2.textContent = empty.length ? 'No events from ' + empty.length + ' configured source' + (empty.length === 1 ? '' : 's') + ' (possibly broken):' : 'Every configured source contributed.';
+    section.appendChild(sub2);
+    for (var e = 0; e < empty.length; e++) {
+      var er = createEl('div', 'source-row source-empty');
+      var en = createEl('span'); en.textContent = empty[e];
+      var ec = createEl('span', 'count'); ec.textContent = '0';
+      er.appendChild(en); er.appendChild(ec);
+      section.appendChild(er);
+    }
+    wrapper.appendChild(section);
+  }
+
+  function renderDiscoveredSources(sources) {
+    var wrapper = document.getElementById('sources-container');
+    if (!sources || sources.length === 0) return;
+
+    var section = createEl('div', 'sources-section');
+
+    var title = createEl('div', 'sources-title');
+    title.textContent = 'Discovered Sources';
+    section.appendChild(title);
+
+    for (var i = 0; i < sources.length; i++) {
+      var src = sources[i];
+      var item = createEl('div', 'source-item');
+
+      var name = createEl('a', 'source-name');
+      name.textContent = src.name;
+      name.href = src.url || '#';
+      name.target = '_blank';
+      name.rel = 'noopener noreferrer';
+      item.appendChild(name);
+
+      if (src.description) {
+        var desc = createEl('div', 'source-desc');
+        desc.textContent = src.description;
+        item.appendChild(desc);
+      }
+
+      section.appendChild(item);
+    }
+
+    wrapper.appendChild(section);
+  }
+
+  function init() {
+    var data = EVENTS_DATA;
+    var BUCKETS = [
+      { key: 'thisWeek', label: 'This Week' },
+      { key: 'thisWeekend', label: 'This Weekend' },
+      { key: 'nextWeek', label: 'Next Week' },
+      { key: 'nextWeekend', label: 'Next Weekend' },
+      { key: 'later', label: 'Later' }
+    ];
+    var bucketEvents = {
+      thisWeek: data.thisWeek || [],
+      thisWeekend: data.thisWeekend || [],
+      nextWeek: data.nextWeek || [],
+      nextWeekend: data.nextWeekend || [],
+      later: data.later || []
+    };
+    // Only buckets with events get a tab — hides empty buckets, including
+    // "This Weekend" on Sunday runs (the build emits it empty).
+    var activeBuckets = BUCKETS.filter(function(b) { return bucketEvents[b.key].length > 0; });
+
+    // Index all events by id
+    var all = [];
+    for (var bk = 0; bk < BUCKETS.length; bk++) all = all.concat(bucketEvents[BUCKETS[bk].key]);
+    for (var ai = 0; ai < all.length; ai++) {
+      allEventsById[all[ai].id] = all[ai];
+    }
+
+    // Title
+    var titleEl = document.getElementById('digest-title');
+    titleEl.textContent = (data.meta && data.meta.title) ? data.meta.title : 'Events Digest';
+
+    // Collection stats
+    var statsContainer = document.getElementById('collection-stats');
+    var shown = all.length;
+    var total = (data.meta && data.meta.total_collected) ? data.meta.total_collected : null;
+    if (total && total > shown) {
+      var statsBar = createEl('div', 'stats-bar');
+      var digestDate = (data.meta && data.meta.week_start) ? data.meta.week_start : '';
+      var allFileUrl = '/digests/' + digestDate + '-all.json';
+      var statsText = document.createTextNode('Showing ' + shown + ' of ' + total + ' events found. ');
+      statsBar.appendChild(statsText);
+      var allLink = createEl('a');
+      allLink.href = allFileUrl;
+      allLink.target = '_blank';
+      allLink.textContent = 'View all ' + total;
+      statsBar.appendChild(allLink);
+      statsContainer.appendChild(statsBar);
+    }
+
+    // Saved section
+    renderSavedSection();
+
+    // Tab nav
+    var tabNav = document.getElementById('tab-nav');
+    var panelsContainer = document.getElementById('tab-panels');
+    var dayFilterContainer = document.getElementById('day-filter-container');
+
+    var panelsByKey = {};
+    for (var bi = 0; bi < activeBuckets.length; bi++) {
+      var bdef = activeBuckets[bi];
+      tabNav.appendChild(createTabButton(bdef.label, bdef.key, bucketEvents[bdef.key].length));
+      var panel = createEl('div', 'tab-panel');
+      panel.setAttribute('data-panel', bdef.key);
+      panelsContainer.appendChild(panel);
+      panelsByKey[bdef.key] = panel;
+    }
+
+    var activeTab = activeBuckets.length ? activeBuckets[0].key : null;
+    var activeDayFilter = null; // null = all days
+    try {
+      var st = localStorage.getItem('events-digest-tab');
+      if (st && bucketEvents[st] && bucketEvents[st].length > 0) activeTab = st;
+    } catch(e) {}
+
+    function renderDayFilter(events) {
+      dayFilterContainer.textContent = '';
+      var days = getUniqueDays(events);
+      if (days.length <= 1) return; // no filter needed for 0-1 days
+
+      var filterRow = createEl('div', 'day-filter');
+
+      var allPill = createEl('button', 'day-pill' + (activeDayFilter === null ? ' active' : ''));
+      allPill.textContent = 'All';
+      allPill.setAttribute('data-day', '');
+      filterRow.appendChild(allPill);
+
+      for (var i = 0; i < days.length; i++) {
+        var pill = createEl('button', 'day-pill' + (activeDayFilter === days[i] ? ' active' : ''));
+        pill.textContent = formatDate(days[i]);
+        pill.setAttribute('data-day', days[i]);
+        filterRow.appendChild(pill);
+      }
+
+      dayFilterContainer.appendChild(filterRow);
+    }
+
+    function renderCurrentView() {
+      if (!activeTab) return;
+      var events = bucketEvents[activeTab] || [];
+      var panel = panelsByKey[activeTab];
+      if (!panel) return;
+
+      renderDayFilter(events);
+
+      var filtered = activeDayFilter ? filterByDay(events, activeDayFilter) : events;
+      renderEvents(filtered, panel);
+    }
+
+    function activateTab(tabName) {
+      activeTab = tabName;
+      activeDayFilter = null; // reset day filter on tab switch
+
+      var tabs = tabNav.querySelectorAll('.tab');
+      for (var t = 0; t < tabs.length; t++) {
+        var isActive = tabs[t].getAttribute('data-tab') === tabName;
+        if (isActive) tabs[t].classList.add('active');
+        else tabs[t].classList.remove('active');
+      }
+
+      var panels = panelsContainer.querySelectorAll('.tab-panel');
+      for (var p = 0; p < panels.length; p++) {
+        var isActivePanel = panels[p].getAttribute('data-panel') === tabName;
+        if (isActivePanel) panels[p].classList.add('active');
+        else panels[p].classList.remove('active');
+      }
+
+      try { localStorage.setItem('events-digest-tab', tabName); } catch(e) {}
+      renderCurrentView();
+    }
+
+    // Tab clicks
+    tabNav.addEventListener('click', function(e) {
+      var target = e.target;
+      while (target && target !== tabNav) {
+        if (target.classList && target.classList.contains('tab')) {
+          var tabName = target.getAttribute('data-tab');
+          if (tabName) activateTab(tabName);
+          return;
+        }
+        target = target.parentElement;
+      }
+    });
+
+    // Day filter clicks
+    dayFilterContainer.addEventListener('click', function(e) {
+      if (!e.target.classList || !e.target.classList.contains('day-pill')) return;
+      var dayVal = e.target.getAttribute('data-day');
+      activeDayFilter = dayVal || null;
+      renderCurrentView();
+    });
+
+    if (activeTab) activateTab(activeTab);
+
+    // Global click delegation for feedback, save, unsave
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+
+      // Feedback buttons
+      if (target.classList && target.classList.contains('feedback-btn')) {
+        var eventId = target.getAttribute('data-event-id');
+        var signal = target.getAttribute('data-signal');
+        var row = target.parentElement;
+        var siblings = row.querySelectorAll('.feedback-btn');
+        for (var i = 0; i < siblings.length; i++) {
+          siblings[i].classList.remove('selected-positive', 'selected-negative');
+        }
+        var isPositive = POSITIVE_SIGNALS.indexOf(signal) !== -1;
+        target.classList.add(isPositive ? 'selected-positive' : 'selected-negative');
+        // Feedback is session-only for now (static site, no backend).
+        return;
+      }
+
+      // Save button
+      if (target.classList && target.classList.contains('save-btn')) {
+        var saveId = target.getAttribute('data-event-id');
+        if (savedEvents[saveId]) {
+          delete savedEvents[saveId];
+          target.classList.remove('saved');
+          target.textContent = '\u2606';
+        } else {
+          savedEvents[saveId] = allEventsById[saveId] || { id: saveId };
+          target.classList.add('saved');
+          target.textContent = '\u2605';
+        }
+        persistSaved();
+        renderSavedSection();
+        return;
+      }
+
+      // Unsave button
+      if (target.classList && target.classList.contains('unsave-btn')) {
+        var unsaveId = target.getAttribute('data-unsave-id');
+        delete savedEvents[unsaveId];
+        persistSaved();
+        renderSavedSection();
+        // Also update the star in the main list if visible
+        var stars = document.querySelectorAll('.save-btn[data-event-id="' + unsaveId + '"]');
+        for (var si = 0; si < stars.length; si++) {
+          stars[si].classList.remove('saved');
+          stars[si].textContent = '\u2606';
+        }
+        return;
+      }
+    });
+
+    // Discovered sources
+    renderSourceSummary(data, all);
+    renderDiscoveredSources(data.discovered_sources || []);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+</body>
+</html>

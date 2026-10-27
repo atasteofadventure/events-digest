@@ -5,10 +5,6 @@
       "count": 78
     },
     {
-      "source": "The Skint",
-      "count": 37
-    },
-    {
       "source": "feed: Green-Wood Cemetery",
       "count": 30
     },
@@ -17,20 +13,20 @@
       "count": 25
     },
     {
+      "source": "New York Adventure Club",
+      "count": 18
+    },
+    {
+      "source": "The Skint",
+      "count": 15
+    },
+    {
       "source": "feed: Gowanus Dredgers",
       "count": 14
     },
     {
-      "source": "New York Public Library",
-      "count": 13
-    },
-    {
       "source": "feed: Greenlight Bookstore",
       "count": 11
-    },
-    {
-      "source": "New York Adventure Club",
-      "count": 9
     },
     {
       "source": "feed: Fort Greene Park Conservancy",
@@ -45,19 +41,11 @@
       "count": 9
     },
     {
-      "source": "AIA New York",
-      "count": 7
-    },
-    {
-      "source": "Museum of the Moving Image",
+      "source": "AIANY",
       "count": 6
     },
     {
-      "source": "Fort Greene Park Conservancy",
-      "count": 6
-    },
-    {
-      "source": "New York Transit Museum",
+      "source": "NYPL",
       "count": 6
     },
     {
@@ -69,11 +57,11 @@
       "count": 6
     },
     {
-      "source": "Brooklyn Public Library",
+      "source": "Cooper Union",
       "count": 5
     },
     {
-      "source": "The Cooper Union",
+      "source": "Museum of the Moving Image",
       "count": 5
     },
     {
@@ -81,31 +69,27 @@
       "count": 5
     },
     {
-      "source": "The Architectural League",
-      "count": 4
-    },
-    {
-      "source": "New-York Historical Society",
-      "count": 4
-    },
-    {
-      "source": "Thought Gallery / 92NY",
-      "count": 4
-    },
-    {
       "source": "Cerebral Valley",
-      "count": 3
+      "count": 4
     },
     {
-      "source": "Brooklyn Museum",
-      "count": 3
+      "source": "Fort Greene Park Conservancy",
+      "count": 4
     },
     {
-      "source": "Museum of the City of New York",
+      "source": "MAS Tours",
       "count": 3
     },
     {
       "source": "Brooklyn Brainery",
+      "count": 3
+    },
+    {
+      "source": "Gary's Guide",
+      "count": 3
+    },
+    {
+      "source": "Museum of the City of New York",
       "count": 2
     },
     {
@@ -113,15 +97,7 @@
       "count": 2
     },
     {
-      "source": "Brooklyn Botanic Garden",
-      "count": 1
-    },
-    {
-      "source": "NYC Parks",
-      "count": 1
-    },
-    {
-      "source": "Interintellect",
+      "source": "Urban Omnibus",
       "count": 1
     },
     {
@@ -133,13 +109,12 @@
     "Thought Gallery",
     "Center for Fiction",
     "BRIC",
-    "Gary's Guide",
     "Creative Coding NYC",
     "NYC Parks",
     "Rooftop Films",
     "Photoville"
   ],
-  "contributing": 32,
+  "contributing": 26,
   "feedErrors": [
     {
       "source": "NYC Parks",

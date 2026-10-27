@@ -1,36 +1,10 @@
 {
-  "generated": "2026-10-21T13:46:54",
-  "verdictsApplied": 1,
+  "generated": "2026-10-27T22:28:01",
+  "verdictsApplied": 0,
   "merges": [
     {
-      "day": "2026-11-11",
-      "kept": "From Field to Form: Ocean Flora",
-      "keptVia": [
-        "The Architectural League"
-      ],
-      "dup": "From Field to Form: Ocean Flora — Using Marine Materials in Architecture",
-      "dupVia": [
-        "Architectural League"
-      ],
-      "reason": "same-url",
-      "score": 1
-    },
-    {
-      "day": "2026-10-24",
-      "kept": "Yoga in the Park with Shala Yoga",
-      "keptVia": [
-        "Fort Greene Park Conservancy"
-      ],
-      "dup": "Shala Yoga",
-      "dupVia": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "reason": "jaccard",
-      "score": 0.67
-    },
-    {
       "day": "2026-10-27",
-      "kept": "Run Club with Chelsea Piers Fitness at Fort Greene Park",
+      "kept": "Chelsea Piers Fitness Run Club at Fort Greene Park",
       "keptVia": [
         "Fort Greene Park Conservancy"
       ],
@@ -39,11 +13,11 @@
         "feed: Fort Greene Park Conservancy"
       ],
       "reason": "dice",
-      "score": 1
+      "score": 0.89
     },
     {
       "day": "2026-11-14",
-      "kept": "America's 250th Anniversary Tour of Fort Greene",
+      "kept": "America's 250th Anniversary Walking Tour of Fort Greene Park",
       "keptVia": [
         "Fort Greene Park Conservancy"
       ],
@@ -52,11 +26,11 @@
         "feed: Fort Greene Park Conservancy"
       ],
       "reason": "dice",
-      "score": 1
+      "score": 0.85
     },
     {
       "day": "2026-11-21",
-      "kept": "Black History and Culture Tour of Fort Greene",
+      "kept": "Black History & Culture Tour of Fort Greene Park",
       "keptVia": [
         "Fort Greene Park Conservancy"
       ],
@@ -65,7 +39,7 @@
         "feed: Fort Greene Park Conservancy"
       ],
       "reason": "dice",
-      "score": 1
+      "score": 0.87
     }
   ]
 }

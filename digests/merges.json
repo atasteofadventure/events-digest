@@ -1,45 +1,58 @@
 {
-  "generated": "2026-10-27T22:28:01",
-  "verdictsApplied": 0,
+  "generated": "2026-11-03T22:38:55",
+  "verdictsApplied": 3,
   "merges": [
     {
-      "day": "2026-10-27",
-      "kept": "Chelsea Piers Fitness Run Club at Fort Greene Park",
+      "day": "2026-11-04",
+      "kept": "2026 ACLS Open Access Book Prize Winners",
       "keptVia": [
-        "Fort Greene Park Conservancy"
+        "NYPL"
       ],
-      "dup": "Run Club with Chelsea Piers Fitness",
+      "dup": "World Poetry Salon: Ilya Kaminsky",
       "dupVia": [
-        "feed: Fort Greene Park Conservancy"
+        "NYPL"
       ],
-      "reason": "dice",
-      "score": 0.89
+      "reason": "same-url",
+      "score": 1
+    },
+    {
+      "day": "2026-11-05",
+      "kept": "Soft Landings for Hard Days",
+      "keptVia": [
+        "NYPL"
+      ],
+      "dup": "Learn to Draw with Procreate",
+      "dupVia": [
+        "NYPL"
+      ],
+      "reason": "same-url",
+      "score": 1
+    },
+    {
+      "day": "2026-11-03",
+      "kept": "Exhibition: Humanist Modernity — Maciej and Stanisława Nowicki",
+      "keptVia": [
+        "AIANY"
+      ],
+      "dup": "Exhibition: Why Design?",
+      "dupVia": [
+        "AIANY"
+      ],
+      "reason": "same-url",
+      "score": 1
     },
     {
       "day": "2026-11-14",
-      "kept": "America's 250th Anniversary Walking Tour of Fort Greene Park",
+      "kept": "Leaf No Trace Volunteer Day",
       "keptVia": [
         "Fort Greene Park Conservancy"
       ],
-      "dup": "America's 250th Anniversary Tour of Fort Greene",
+      "dup": "Volunteer Day: Leaf No Trace",
       "dupVia": [
         "feed: Fort Greene Park Conservancy"
       ],
       "reason": "dice",
-      "score": 0.85
-    },
-    {
-      "day": "2026-11-21",
-      "kept": "Black History & Culture Tour of Fort Greene Park",
-      "keptVia": [
-        "Fort Greene Park Conservancy"
-      ],
-      "dup": "Black History And Culture Tour Of Fort Greene",
-      "dupVia": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "reason": "dice",
-      "score": 0.87
+      "score": 0.95
     }
   ]
 }

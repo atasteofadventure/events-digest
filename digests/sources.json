@@ -2,82 +2,94 @@
   "counts": [
     {
       "source": "feed: Club Free Time",
-      "count": 70
-    },
-    {
-      "source": "NY Adventure Club",
-      "count": 31
+      "count": 74
     },
     {
       "source": "feed: Green-Wood Cemetery",
       "count": 30
     },
     {
-      "source": "feed: Makeville Studio",
-      "count": 19
-    },
-    {
-      "source": "feed: Lectures on Tap",
-      "count": 19
-    },
-    {
-      "source": "Gary's Guide",
-      "count": 18
-    },
-    {
       "source": "The Skint",
+      "count": 26
+    },
+    {
+      "source": "Brooklyn Public Library",
+      "count": 14
+    },
+    {
+      "source": "feed: Makeville Studio",
       "count": 12
     },
     {
       "source": "feed: Gowanus Dredgers",
-      "count": 12
-    },
-    {
-      "source": "NYPL",
-      "count": 11
-    },
-    {
-      "source": "feed: Greenlight Bookstore",
-      "count": 11
+      "count": 10
     },
     {
       "source": "feed: NYC Resistor",
-      "count": 9
+      "count": 10
+    },
+    {
+      "source": "feed: Greenlight Bookstore",
+      "count": 10
+    },
+    {
+      "source": "feed: Lectures on Tap",
+      "count": 10
+    },
+    {
+      "source": "New York Public Library",
+      "count": 7
     },
     {
       "source": "feed: The Wisdom Bar",
-      "count": 8
-    },
-    {
-      "source": "NYBG",
       "count": 7
     },
     {
-      "source": "AIANY",
-      "count": 7
-    },
-    {
-      "source": "Cooper Union",
-      "count": 6
-    },
-    {
-      "source": "feed: Fort Greene Park Conservancy",
-      "count": 6
-    },
-    {
-      "source": "feed: Gotham Center",
+      "source": "Brooklyn Museum",
       "count": 5
     },
     {
       "source": "Cerebral Valley",
+      "count": 5
+    },
+    {
+      "source": "Printed Matter",
+      "count": 5
+    },
+    {
+      "source": "Gary's Guide",
+      "count": 5
+    },
+    {
+      "source": "feed: Fort Greene Park Conservancy",
+      "count": 5
+    },
+    {
+      "source": "The Cooper Union",
       "count": 4
     },
     {
-      "source": "Fort Greene Park Conservancy",
+      "source": "The New York Historical",
       "count": 4
     },
     {
-      "source": "Untapped New York",
+      "source": "Architectural League of New York",
+      "count": 4
+    },
+    {
+      "source": "New York Transit Museum",
+      "count": 4
+    },
+    {
+      "source": "Museum of the Moving Image",
+      "count": 4
+    },
+    {
+      "source": "Pioneer Works",
+      "count": 4
+    },
+    {
+      "source": "Brooklyn Craft Company",
       "count": 4
     },
     {
@@ -85,19 +97,19 @@
       "count": 4
     },
     {
-      "source": "Municipal Art Society",
+      "source": "feed: Gotham Center",
+      "count": 4
+    },
+    {
+      "source": "Municipal Art Society of New York",
       "count": 3
     },
     {
-      "source": "MCNY",
+      "source": "Brooklyn Botanic Garden",
       "count": 3
     },
     {
-      "source": "The Architectural League",
-      "count": 2
-    },
-    {
-      "source": "Time Out",
+      "source": "Prospect Park Alliance",
       "count": 2
     },
     {
@@ -105,16 +117,20 @@
       "count": 2
     },
     {
-      "source": "Urban Omnibus",
+      "source": "The Explorers Club",
       "count": 1
     },
     {
-      "source": "Thought Gallery",
+      "source": "Museum of the City of New York",
+      "count": 1
+    },
+    {
+      "source": "Brooklyn Brainery",
       "count": 1
     }
   ],
   "empty": [
-    "Brooklyn Brainery",
+    "Thought Gallery",
     "Center for Fiction",
     "BRIC",
     "Creative Coding NYC",
@@ -122,7 +138,7 @@
     "Rooftop Films",
     "Photoville"
   ],
-  "contributing": 28,
+  "contributing": 32,
   "feedErrors": [
     {
       "source": "NYC Parks",

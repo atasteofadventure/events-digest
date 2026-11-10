@@ -1,58 +1,45 @@
 {
-  "generated": "2026-11-03T22:38:55",
-  "verdictsApplied": 3,
+  "generated": "2026-11-10T22:39:17",
+  "verdictsApplied": 2,
   "merges": [
     {
-      "day": "2026-11-04",
-      "kept": "2026 ACLS Open Access Book Prize Winners",
+      "day": "2026-11-10",
+      "kept": "Changing Tastes: American Foodways at 250",
       "keptVia": [
-        "NYPL"
+        "The Skint"
       ],
-      "dup": "World Poetry Salon: Ilya Kaminsky",
+      "dup": "Changing Tastes: American Foodways at 250",
       "dupVia": [
-        "NYPL"
-      ],
-      "reason": "same-url",
-      "score": 1
-    },
-    {
-      "day": "2026-11-05",
-      "kept": "Soft Landings for Hard Days",
-      "keptVia": [
-        "NYPL"
-      ],
-      "dup": "Learn to Draw with Procreate",
-      "dupVia": [
-        "NYPL"
-      ],
-      "reason": "same-url",
-      "score": 1
-    },
-    {
-      "day": "2026-11-03",
-      "kept": "Exhibition: Humanist Modernity — Maciej and Stanisława Nowicki",
-      "keptVia": [
-        "AIANY"
-      ],
-      "dup": "Exhibition: Why Design?",
-      "dupVia": [
-        "AIANY"
-      ],
-      "reason": "same-url",
-      "score": 1
-    },
-    {
-      "day": "2026-11-14",
-      "kept": "Leaf No Trace Volunteer Day",
-      "keptVia": [
-        "Fort Greene Park Conservancy"
-      ],
-      "dup": "Volunteer Day: Leaf No Trace",
-      "dupVia": [
-        "feed: Fort Greene Park Conservancy"
+        "New York Public Library"
       ],
       "reason": "dice",
-      "score": 0.95
+      "score": 1
+    },
+    {
+      "day": "2026-11-19",
+      "kept": "Immigrant Nation: Making Home in Song and Story",
+      "keptVia": [
+        "Brooklyn Public Library"
+      ],
+      "dup": "Helen Tworkov, Cyrus Dunham & Oneika Mays on Buddhism in America",
+      "dupVia": [
+        "Brooklyn Public Library"
+      ],
+      "reason": "same-url",
+      "score": 1
+    },
+    {
+      "day": "2026-12-03",
+      "kept": "Forgotten History: The Brooklyn Theater Fire of 1876",
+      "keptVia": [
+        "Brooklyn Public Library"
+      ],
+      "dup": "RestFest Film Festival: Short Films by Disabled & Mad Artists",
+      "dupVia": [
+        "Brooklyn Public Library"
+      ],
+      "reason": "same-url",
+      "score": 1
     }
   ]
 }

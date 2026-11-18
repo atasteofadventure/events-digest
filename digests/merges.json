@@ -1,44 +1,31 @@
 {
-  "generated": "2026-11-10T22:39:17",
-  "verdictsApplied": 2,
+  "generated": "2026-11-18T14:05:15",
+  "verdictsApplied": 6,
   "merges": [
     {
-      "day": "2026-11-10",
-      "kept": "Changing Tastes: American Foodways at 250",
+      "day": "2026-12-05",
+      "kept": "12th Annual Fort Greene Holiday Tree Lighting",
       "keptVia": [
-        "The Skint"
+        "Fort Greene Park Conservancy"
       ],
-      "dup": "Changing Tastes: American Foodways at 250",
+      "dup": "Fort Greene Tree Lighting",
       "dupVia": [
-        "New York Public Library"
+        "feed: Fort Greene Park Conservancy"
       ],
-      "reason": "dice",
-      "score": 1
+      "reason": "jaccard",
+      "score": 0.67
     },
     {
       "day": "2026-11-19",
-      "kept": "Immigrant Nation: Making Home in Song and Story",
+      "kept": "Conversations in Bioethics: Ethics & the Future of Reproduction (IVG)",
       "keptVia": [
-        "Brooklyn Public Library"
+        "New York Public Library"
       ],
-      "dup": "Helen Tworkov, Cyrus Dunham & Oneika Mays on Buddhism in America",
+      "dup": "Johns Hopkins Bioethics Researchers Discuss Advances in Reproductive Technology",
       "dupVia": [
-        "Brooklyn Public Library"
+        "feed: Club Free Time"
       ],
-      "reason": "same-url",
-      "score": 1
-    },
-    {
-      "day": "2026-12-03",
-      "kept": "Forgotten History: The Brooklyn Theater Fire of 1876",
-      "keptVia": [
-        "Brooklyn Public Library"
-      ],
-      "dup": "RestFest Film Festival: Short Films by Disabled & Mad Artists",
-      "dupVia": [
-        "Brooklyn Public Library"
-      ],
-      "reason": "same-url",
+      "reason": "llm-same",
       "score": 1
     }
   ]

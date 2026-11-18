@@ -1,38 +1,6 @@
 {
-  "generated": "2026-11-11T01:21:05.296Z",
+  "generated": "2026-11-18T02:59:51.062Z",
   "events": [
-    {
-      "id": "feed-fort-greene-park-conservancy-2026-11-14-america-s-250th-anniversary-tour-of-fort",
-      "name": "America's 250th Anniversary Tour of Fort Greene",
-      "dateISO": "2026-11-14T09:30:00",
-      "time": "9:30 AM",
-      "venue": "Fort Greene Park Conservancy",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.fortgreenepark.org/calendar/americas-250th-anniversary-tour-of-fort-greene-57cxc",
-      "category": "tours_experiences",
-      "source": "Fort Greene Park Conservancy",
-      "via": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-fort-greene-park-conservancy-2026-11-14-volunteer-day-leaf-no-trace",
-      "name": "Volunteer Day: Leaf No Trace",
-      "dateISO": "2026-11-14T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Fort Greene Park Conservancy",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.fortgreenepark.org/calendar/leaf-no-trace-111426",
-      "category": "miscellaneous",
-      "source": "Fort Greene Park Conservancy",
-      "via": [
-        "feed: Fort Greene Park Conservancy"
-      ],
-      "why": "It's that time again! Fall is upon us! Join us for our annual leaf raking event, Leaf No Trace, to collect leaves en masse."
-    },
     {
       "id": "feed-fort-greene-park-conservancy-2026-11-21-black-history-and-culture-tour-of-fort-g",
       "name": "Black History And Culture Tour Of Fort Greene",
@@ -63,7 +31,7 @@
       "via": [
         "feed: Fort Greene Park Conservancy"
       ],
-      "why": "Mark your calendars and join us for the 12th Annual Tree Lighting Ceremony in partnership with Myrtle Avenue Brooklyn Partnership. Meet us at Myrtle Ave and St Edwards Street entrance on Friday…"
+      "why": "Mark your calendars and join us for the 12th Annual Tree Lighting Ceremony in partnership with Myrtle Avenue Brooklyn Partnership. Meet us at Myrtle Ave and St Edwards Street entrance on Saturday…"
     },
     {
       "id": "feed-fort-greene-park-conservancy-2026-12-07-meet-fort-greene-park-s-urban-park-range",
@@ -98,150 +66,6 @@
       "why": "It's that time again! Fall is upon us! Join us for our annual leaf raking event, Leaf No Trace, to collect leaves en masse."
     },
     {
-      "id": "feed-green-wood-cemetery-2026-11-13-grieving-weaving",
-      "name": "Grieving & Weaving",
-      "dateISO": "2026-11-13T18:30:00",
-      "time": "6:30 PM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/grieving-weaving-8/2026-11-13/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": "Gelsey Bell at this special edition of Grieving & Weaving. She will present her work that thematically covers the many faces of loss through her vocals and music. Stitching together creativity and…"
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-11-14-dia-de-los-hongos-myco-drawing-walk",
-      "name": "Dia De Los Hongos Myco-Drawing + Walk",
-      "dateISO": "2026-11-14T12:00:00",
-      "time": "12:00 PM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/dia-de-los-hongos-myco-drawing-walk/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": "¡El Día de los Muertos no se limita al 1 de noviembre en el Cementerio Green Wood! ¡Sigamos la celebración con el Día de los Hongos! Un taller gratuito bilingüe de dibujo micológico y un recorrido…"
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-11-14-discover-green-wood-trolley-tour",
-      "name": "Discover Green-Wood Trolley Tour",
-      "dateISO": "2026-11-14T13:00:00",
-      "time": "1:00 PM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/discover-green-wood-trolley-tour-28/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-11-14-green-wood-after-hours",
-      "name": "Green-Wood After Hours",
-      "dateISO": "2026-11-14T17:00:00",
-      "time": "5:00 PM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/green-wood-after-hours-59/2026-11-14/1/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-11-14-green-wood-after-hours",
-      "name": "Green-Wood After Hours",
-      "dateISO": "2026-11-14T17:30:00",
-      "time": "5:30 PM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/green-wood-after-hours-59/2026-11-14/2/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-11-15-birding-in-peace",
-      "name": "Birding In Peace",
-      "dateISO": "2026-11-15T06:30:00",
-      "time": "6:30 AM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/birding-in-peace-32/2026-11-15/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": "Before our gates open to the public, this early morning walking tour provides exclusive access to discover the many birds that call Green-Wood home, at least temporarily. Stop by this fall and you…"
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-11-15-grave-beginnings-walking-green-wood",
-      "name": "Grave Beginnings: Walking Green-Wood",
-      "dateISO": "2026-11-15T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/grave-beginnings-walking-green-wood-5/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": "Green-Wood’s stunning landscape and remarkable history on this free 90-minute walking tour. Perfect for first-time visitors, this introductory tour takes you on a leisurely walk to hear about the…"
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-11-15-rest-in-pace",
-      "name": "Rest in Pace",
-      "dateISO": "2026-11-15T12:00:00",
-      "time": "12:00 PM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/rest-in-pace-green-house-2/2026-11-15/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": "Green-Wood’s leisurely walking group, Rest in Pace. This welcoming gathering is designed for anyone who loves a good stroll and even better company. Together, we’ll meander through the Cemetery’s…"
-    },
-    {
-      "id": "feed-green-wood-cemetery-2026-11-15-green-wood-s-greatest-hits",
-      "name": "Green-Wood's Greatest Hits",
-      "dateISO": "2026-11-15T13:00:00",
-      "time": "1:00 PM",
-      "venue": "Green-Wood Cemetery",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.green-wood.com/event/green-woods-greatest-hits-19/",
-      "category": "tours_experiences",
-      "source": "Green-Wood Cemetery",
-      "via": [
-        "feed: Green-Wood Cemetery"
-      ],
-      "why": "Whether it’s your first visit to Green-Wood or your hundredth, this walking tour offers a fresh perspective on one of New York City’s most iconic landmarks. Led by one of our expert guides, this tour…"
-    },
-    {
       "id": "feed-green-wood-cemetery-2026-11-18-green-wood-on-wheels-stroller-friendly-t",
       "name": "Green-Wood on Wheels: Stroller-Friendly Tour",
       "dateISO": "2026-11-18T10:30:00",
@@ -271,7 +95,7 @@
       "via": [
         "feed: Green-Wood Cemetery"
       ],
-      "why": "Photo Credits: Aaron Pierce Kick off the weekend with story time and crafts at Green-Wood! Presented in partnership with Brooklyn Public Library, these sessions are led by Kidsmobile Librarian…"
+      "why": ""
     },
     {
       "id": "feed-green-wood-cemetery-2026-11-21-the-revolution-continues-brooklyn-s-blac",
@@ -319,7 +143,7 @@
       "via": [
         "feed: Green-Wood Cemetery"
       ],
-      "why": ""
+      "why": "While we love the spirit of the Halloween season, Green-Wood remains an active cemetery. Out of respect for the grounds, masks and costumes are not permitted and guests wearing them will not be…"
     },
     {
       "id": "feed-green-wood-cemetery-2026-11-22-grave-beginnings-green-wood-by-trolley",
@@ -335,7 +159,7 @@
       "via": [
         "feed: Green-Wood Cemetery"
       ],
-      "why": "Green-Wood’s stunning landscape and remarkable history on this free hour-long trolley tour. Perfect for first-time visitors, this accessible introduction takes you on a leisurely ride to hear about…"
+      "why": ""
     },
     {
       "id": "feed-green-wood-cemetery-2026-11-22-green-wood-s-greatest-hits",
@@ -367,7 +191,7 @@
       "via": [
         "feed: Green-Wood Cemetery"
       ],
-      "why": "Move over, big kids! On Tuesday mornings, it’s toddler time at the Green-House. Bring your little ones to the most fun pop-up play zone in Sunset Park for a morning of open play and sensory…"
+      "why": ""
     },
     {
       "id": "feed-green-wood-cemetery-2026-11-24-moonlight-tour",
@@ -447,7 +271,7 @@
       "via": [
         "feed: Green-Wood Cemetery"
       ],
-      "why": ""
+      "why": "While we love the spirit of the Halloween season, Green-Wood remains an active cemetery. Out of respect for the grounds, masks and costumes are not permitted and guests wearing them will not be…"
     },
     {
       "id": "feed-green-wood-cemetery-2026-11-29-grave-beginnings-walking-green-wood",
@@ -495,7 +319,7 @@
       "via": [
         "feed: Green-Wood Cemetery"
       ],
-      "why": "Photo Credits: Aaron Pierce Kick off the weekend with story time and crafts at Green-Wood! Presented in partnership with Brooklyn Public Library, these sessions are led by Kidsmobile Librarian…"
+      "why": ""
     },
     {
       "id": "feed-green-wood-cemetery-2026-12-05-discover-green-wood-trolley-tour",
@@ -527,7 +351,39 @@
       "via": [
         "feed: Green-Wood Cemetery"
       ],
-      "why": "Green-Wood’s stunning landscape and remarkable history on this free hour-long trolley tour. Perfect for first-time visitors, this accessible introduction takes you on a leisurely ride to hear about…"
+      "why": ""
+    },
+    {
+      "id": "feed-green-wood-cemetery-2026-12-06-conifers",
+      "name": "Conifers",
+      "dateISO": "2026-12-06T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Green-Wood Cemetery",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.green-wood.com/event/conifers/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
+      "via": [
+        "feed: Green-Wood Cemetery"
+      ],
+      "why": "“There is no way to understand how something grows without also understanding how it dies… In the forest, renewal only comes with dying.” – Ecologist Suzanne Simard, When the Forest Breathes Conifers…"
+    },
+    {
+      "id": "feed-green-wood-cemetery-2026-12-06-conifers",
+      "name": "Conifers",
+      "dateISO": "2026-12-06T16:00:00",
+      "time": "4:00 PM",
+      "venue": "Green-Wood Cemetery",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.green-wood.com/event/conifers-2/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
+      "via": [
+        "feed: Green-Wood Cemetery"
+      ],
+      "why": "“There is no way to understand how something grows without also understanding how it dies… In the forest, renewal only comes with dying.” – Ecologist Suzanne Simard, When the Forest Breathes Conifers…"
     },
     {
       "id": "feed-green-wood-cemetery-2026-12-08-toddler-takeover-at-the-green-house",
@@ -543,7 +399,23 @@
       "via": [
         "feed: Green-Wood Cemetery"
       ],
-      "why": "Move over, big kids! On Tuesday mornings, it’s toddler time at the Green-House. Bring your little ones to the most fun pop-up play zone in Sunset Park for a morning of open play and sensory…"
+      "why": ""
+    },
+    {
+      "id": "feed-green-wood-cemetery-2026-12-08-history-happy-hour-remembering-the-brook",
+      "name": "History Happy Hour: Remembering the Brooklyn Theater Fire",
+      "dateISO": "2026-12-08T18:30:00",
+      "time": "6:30 PM",
+      "venue": "Green-Wood Cemetery",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.green-wood.com/event/history-happy-hour-remembering-the-brooklyn-theater-fire/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
+      "via": [
+        "feed: Green-Wood Cemetery"
+      ],
+      "why": "Calling all history lovers! Join us for History Happy Hour, a bimonthly program featuring historians, archivists, and conservators as special guests. After an introduction by an in-house expert…"
     },
     {
       "id": "feed-green-wood-cemetery-2026-12-10-member-mingle-members-only",
@@ -562,6 +434,22 @@
       "why": "Join us for our first Member Mingle, a relaxed evening of conversation, community, and refreshments in the Green-House Atrium! Whether you’re a longtime member or recently joined, this is a chance to…"
     },
     {
+      "id": "feed-green-wood-cemetery-2026-12-11-grieving-weaving",
+      "name": "Grieving & Weaving",
+      "dateISO": "2026-12-11T18:30:00",
+      "time": "6:30 PM",
+      "venue": "Green-Wood Cemetery",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.green-wood.com/event/grieving-weaving-10/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
+      "via": [
+        "feed: Green-Wood Cemetery"
+      ],
+      "why": "Stitching together creativity and community, this knitting and crocheting group is unique for one reason: it meets in a cemetery. Whether you’re an expert with yarn or just starting out, you are…"
+    },
+    {
       "id": "feed-green-wood-cemetery-2026-12-12-discover-green-wood-trolley-tour",
       "name": "Discover Green-Wood Trolley Tour",
       "dateISO": "2026-12-12T13:00:00",
@@ -578,18 +466,82 @@
       "why": ""
     },
     {
-      "id": "feed-gowanus-dredgers-2026-11-14-end-of-season-work-day-boathouse",
-      "name": "End of Season Work Day – Boathouse!",
-      "dateISO": "2026-11-14T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Gowanus Dredgers Canoe Club Boathouse, 165 2nd St, Brooklyn, NY, 11231, United States",
+      "id": "feed-green-wood-cemetery-2026-12-13-grave-beginnings-green-wood-by-trolley",
+      "name": "Grave Beginnings: Green-Wood By Trolley",
+      "dateISO": "2026-12-13T11:00:00",
+      "time": "11:00 AM",
+      "venue": "Green-Wood Cemetery",
       "neighborhood": "",
       "price": "",
-      "url": "https://gowanusdredgers.org/event/end-of-season-work-day-boathouse/",
-      "category": "sports_fitness",
-      "source": "Gowanus Dredgers",
+      "url": "https://www.green-wood.com/event/grave-beginnings-green-wood-by-trolley-3/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
       "via": [
-        "feed: Gowanus Dredgers"
+        "feed: Green-Wood Cemetery"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-green-wood-cemetery-2026-12-15-signatures-for-safekeeping-preparing-end",
+      "name": "Signatures for Safekeeping: Preparing End-of-Life Documents",
+      "dateISO": "2026-12-15T18:30:00",
+      "time": "6:30 PM",
+      "venue": "Green-Wood Cemetery",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.green-wood.com/event/signatures-for-safekeeping-preparing-end-of-life-documents-postponed/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
+      "via": [
+        "feed: Green-Wood Cemetery"
+      ],
+      "why": "Most of our decisions around end-of-life not only involve answering the big questions, but also handling complex paperwork. This program offers practical and accessible guidance on the documents that…"
+    },
+    {
+      "id": "feed-green-wood-cemetery-2026-12-18-tgif-afterschool-story-and-craft-hour",
+      "name": "TGIF! Afterschool Story and Craft Hour",
+      "dateISO": "2026-12-18T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Green-Wood Cemetery",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.green-wood.com/event/tgif-6/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
+      "via": [
+        "feed: Green-Wood Cemetery"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-green-wood-cemetery-2026-12-20-rest-in-pace-winter-solstice",
+      "name": "Rest in Pace: Winter Solstice",
+      "dateISO": "2026-12-20T15:00:00",
+      "time": "3:00 PM",
+      "venue": "Green-Wood Cemetery",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.green-wood.com/event/rest-in-pace-winter-solstice/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
+      "via": [
+        "feed: Green-Wood Cemetery"
+      ],
+      "why": "As the shortest day of the year transitions to its longest night, join Green-Wood’s leisurely walking group, Rest in Pace. Together, we’ll meander through the Cemetery’s scenic paths at a comfortable…"
+    },
+    {
+      "id": "feed-green-wood-cemetery-2026-12-22-toddler-takeover-at-the-green-house",
+      "name": "Toddler Takeover at the Green-House",
+      "dateISO": "2026-12-22T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Green-Wood Cemetery",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.green-wood.com/event/toddler-takeover-at-the-green-house-3/2026-12-22/",
+      "category": "tours_experiences",
+      "source": "Green-Wood Cemetery",
+      "via": [
+        "feed: Green-Wood Cemetery"
       ],
       "why": ""
     },
@@ -722,20 +674,20 @@
       "why": ""
     },
     {
-      "id": "feed-ny-mycological-society-2026-11-14-edgewood-oak-brush-plains-preserve-deer-",
-      "name": "Edgewood Oak Brush Plains Preserve, Deer Park, with LIMC, Saturday, November 14th",
-      "dateISO": "2026-11-14T10:30:00",
-      "time": "10:30 AM",
-      "venue": "Edgewood Oak Brush Plains Preserver, 528 Commack Rd, Deer Park, 11729, United States",
+      "id": "feed-ny-mycological-society-2026-11-21-nyms-pop-up-walk-cunningham-park-queens-",
+      "name": "NYMS pop-up walk, Cunningham Park, Queens, Saturday, November 21st",
+      "dateISO": "2026-11-21T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Cunningham Park, Queens, NY, 11427, United States",
       "neighborhood": "",
       "price": "",
-      "url": "https://www.newyorkmyc.org/event/edgewood-oak-brush-plains-preserve-deer-park-with-limc/",
+      "url": "https://www.newyorkmyc.org/event/nyms-pop-up-walk-cunningham-park-queens-saturday-november-21st/",
       "category": "tours_experiences",
       "source": "NY Mycological Society",
       "via": [
         "feed: NY Mycological Society"
       ],
-      "why": "Please note that a (free) Land Use Permit is required for each adult who attends this walk, as well as a parking permit for each vehicle. To get your permit: 1. Register to use the nForm portal. Go…"
+      "why": "Join us for a walk in Cunningham Park, Queens this Saturday, November 21st. Last November, our rust expert, Andrew Cannon, known for patiently examining leaves and blades of grass, found a beautiful…"
     },
     {
       "id": "feed-ny-mycological-society-2026-11-29-nyms-collab-walk-with-nyc-parks-long-pon",
@@ -752,125 +704,6 @@
         "feed: NY Mycological Society"
       ],
       "why": "Join us for a walk in Long Pond Park, Staten Island on Sunday, November 29th. The walk is open to the public and is a collaboration between NYMS and NYC Parks Urban Park Rangers. The walk starts in a…"
-    },
-    {
-      "id": "feed-makeville-studio-2026-12-12-2-holiday-turning",
-      "name": "#2 Holiday Turning",
-      "dateISO": "2026-12-12T13:00:00",
-      "time": "1:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-12-23-carve-your-ornaments-kids-you",
-      "name": "Carve Your Ornaments - Kids + You",
-      "dateISO": "2026-12-23T13:00:00",
-      "time": "1:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-11-15-wood-shop-basics-serving-board",
-      "name": "Wood Shop Basics - Serving Board",
-      "dateISO": "2026-11-15T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-11-28-furniture-making-step-stool-dec",
-      "name": "Furniture Making: Step Stool DEC",
-      "dateISO": "2026-11-28T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-12-12-1-holiday-turning",
-      "name": "#1 Holiday Turning",
-      "dateISO": "2026-12-12T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-12-02-wood-shop-basics-utensils",
-      "name": "Wood Shop Basics - Utensils",
-      "dateISO": "2026-12-02T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-11-30-router-101-cutting-board",
-      "name": "Router 101 - Cutting Board",
-      "dateISO": "2026-11-30T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
     },
     {
       "id": "feed-makeville-studio-2026-12-07-simple-plywood-boxes",
@@ -890,26 +723,9 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-12-20-wood-shop-basics-coat-hanger-bc",
-      "name": "Wood Shop Basics - Coat Hanger BC",
-      "dateISO": "2026-12-20T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-12-05-1-start-woodworking-cutting-board",
-      "name": "#1 Start Woodworking: Cutting Board",
-      "dateISO": "2026-12-05T10:00:00",
+      "id": "feed-makeville-studio-2026-12-06-2-start-woodworking-cutting-board-sc",
+      "name": "#2 Start Woodworking: Cutting Board SC",
+      "dateISO": "2026-12-06T10:00:00",
       "time": "10:00 AM",
       "venue": "Makeville Studio",
       "neighborhood": "",
@@ -941,91 +757,6 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-12-06-wood-shop-basics-candle-holders-sc",
-      "name": "Wood Shop Basics - Candle Holders SC",
-      "dateISO": "2026-12-06T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-12-13-wood-shop-basics-serving-board-bc",
-      "name": "Wood Shop Basics - Serving Board - BC",
-      "dateISO": "2026-12-13T14:00:00",
-      "time": "2:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-12-06-2-start-woodworking-cutting-board-sc",
-      "name": "#2 Start Woodworking: Cutting Board SC",
-      "dateISO": "2026-12-06T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-12-14-hand-tools-mallet",
-      "name": "Hand Tools: Mallet",
-      "dateISO": "2026-12-14T10:00:00",
-      "time": "10:00 AM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-makeville-studio-2026-11-30-bowls-for-beginners",
-      "name": "Bowls for Beginners",
-      "dateISO": "2026-11-30T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Makeville Studio",
-      "neighborhood": "",
-      "price": "",
-      "url": "https://www.makeville.com/classes",
-      "urlIsFallback": true,
-      "category": "workshops_classes",
-      "source": "Makeville Studio",
-      "via": [
-        "feed: Makeville Studio"
-      ],
-      "why": ""
-    },
-    {
       "id": "feed-makeville-studio-2026-11-22-wood-shop-basics-serving-board",
       "name": "Wood Shop Basics - Serving Board",
       "dateISO": "2026-11-22T14:00:00",
@@ -1043,9 +774,9 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-12-01-lathe-101",
-      "name": "Lathe 101",
-      "dateISO": "2026-12-01T19:00:00",
+      "id": "feed-makeville-studio-2026-12-02-wood-shop-basics-utensils",
+      "name": "Wood Shop Basics - Utensils",
+      "dateISO": "2026-12-02T19:00:00",
       "time": "7:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
@@ -1060,10 +791,27 @@
       "why": ""
     },
     {
-      "id": "feed-makeville-studio-2026-11-16-mitered-frames-sb",
-      "name": "Mitered Frames - SB",
-      "dateISO": "2026-11-16T19:00:00",
-      "time": "7:00 PM",
+      "id": "feed-makeville-studio-2026-11-18-coat-hangers-team-class-bc",
+      "name": "Coat Hangers - team class - BC",
+      "dateISO": "2026-11-18T15:00:00",
+      "time": "3:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-12-06-wood-shop-basics-candle-holders-sc",
+      "name": "Wood Shop Basics - Candle Holders SC",
+      "dateISO": "2026-12-06T14:00:00",
+      "time": "2:00 PM",
       "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
@@ -1111,34 +859,189 @@
       "why": ""
     },
     {
-      "id": "feed-gotham-center-2026-11-11-eric-sanderson-s-guide-to-nyc-s-indigeno",
-      "name": "Eric Sanderson's Guide to NYC’s Indigenous Landscape",
-      "dateISO": "2026-11-11T18:30:00",
-      "time": "6:30 PM",
-      "venue": "Gotham Center",
+      "id": "feed-makeville-studio-2026-12-20-wood-shop-basics-coat-hanger-bc",
+      "name": "Wood Shop Basics - Coat Hanger BC",
+      "dateISO": "2026-12-20T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
-      "url": "https://www.gothamcenter.org/upcoming-events/welikia-a-natural-history-of-new-york-citys-five-boroughs",
-      "category": "talks_lectures",
-      "source": "Gotham Center",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
       "via": [
-        "feed: Gotham Center"
+        "feed: Makeville Studio"
       ],
       "why": ""
     },
     {
-      "id": "feed-gotham-center-2026-11-17-hidden-histories-of-jazz-age-new-york-fr",
-      "name": "Hidden Histories of Jazz Age New York: From the Suppressed to the Strange",
-      "dateISO": "2026-11-17T18:30:00",
-      "time": "6:30 PM",
-      "venue": "Gotham Center",
+      "id": "feed-makeville-studio-2026-11-30-router-101-cutting-board",
+      "name": "Router 101 - Cutting Board",
+      "dateISO": "2026-11-30T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
       "neighborhood": "",
       "price": "",
-      "url": "https://www.gothamcenter.org/upcoming-events/reintegrating-the-loyalists",
-      "category": "talks_lectures",
-      "source": "Gotham Center",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
       "via": [
-        "feed: Gotham Center"
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-12-14-hand-tools-mallet",
+      "name": "Hand Tools: Mallet",
+      "dateISO": "2026-12-14T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-12-13-wood-shop-basics-serving-board-bc",
+      "name": "Wood Shop Basics - Serving Board - BC",
+      "dateISO": "2026-12-13T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-12-12-2-holiday-turning",
+      "name": "#2 Holiday Turning",
+      "dateISO": "2026-12-12T13:00:00",
+      "time": "1:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-12-05-1-start-woodworking-cutting-board",
+      "name": "#1 Start Woodworking: Cutting Board",
+      "dateISO": "2026-12-05T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-12-23-carve-your-ornaments-kids-you",
+      "name": "Carve Your Ornaments - Kids + You",
+      "dateISO": "2026-12-23T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-11-30-bowls-for-beginners",
+      "name": "Bowls for Beginners",
+      "dateISO": "2026-11-30T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-12-12-1-holiday-turning",
+      "name": "#1 Holiday Turning",
+      "dateISO": "2026-12-12T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-11-28-furniture-making-step-stool-dec",
+      "name": "Furniture Making: Step Stool DEC",
+      "dateISO": "2026-11-28T14:00:00",
+      "time": "2:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
+      ],
+      "why": ""
+    },
+    {
+      "id": "feed-makeville-studio-2026-12-01-lathe-101",
+      "name": "Lathe 101",
+      "dateISO": "2026-12-01T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Makeville Studio",
+      "neighborhood": "",
+      "price": "",
+      "url": "https://www.makeville.com/classes",
+      "urlIsFallback": true,
+      "category": "workshops_classes",
+      "source": "Makeville Studio",
+      "via": [
+        "feed: Makeville Studio"
       ],
       "why": ""
     },
@@ -1191,479 +1094,20 @@
       "why": ""
     },
     {
-      "id": "feed-club-free-time-2026-11-11-design-professionals-discuss-the-legacy-",
-      "name": "Design Professionals Discuss the Legacy of an Iconic Fashion Accessory",
-      "dateISO": "2026-11-11T18:00:00",
-      "time": "6:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-11-11/event/767512",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Liberty London’s Paola Scala, Director of Products, and Mary-Ann Dunkley, Design Director, have a discussion about the beauty and legacy of Liberty’s silk scarves. First launched in the early 1900s…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-11-12-queer-eye-personality-antoni-porowksi-ho",
-      "name": "Queer Eye Personality Antoni Porowksi Hosts Discussion on LGBTQ+ Voices Shaping Contemporary Literature",
-      "dateISO": "2026-11-12T17:00:00",
-      "time": "5:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-11-12/event/769951",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "A special evening celebrating LGBTQ+ writers, storytelling, and community! This author panel brings together an exciting group of writers for a conversation about books, creativity, identity, and the…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-11-12-new-yorker-featured-author-nbsp-shares-h",
-      "name": "New Yorker-Featured Author Shares His Latest Novel, West of Loveland",
-      "dateISO": "2026-11-12T18:00:00",
-      "time": "6:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-11-12/event/768445",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "A conversation with Tom Drury to celebrate his new book, a novel that returns readers to the Midwest in a moving portrait of contemporary life in a small rural county. The conversation will be…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-11-12-art-history-talk-discover-the-life-legac",
-      "name": "Art History Talk: Discover the Life & legacy of Joan Miro",
-      "dateISO": "2026-11-12T18:00:00",
-      "time": "6:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-gallery-talk/2026-11-12/event/768487",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Explore the life and work of an iconic modern artist. Miro's works are hard to classify but do express his pride in his Catalan heritage (references to Barcelona and the countryside) and his contempt…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-12-architectural-innovator-discusses-the-di",
-      "name": "Architectural Innovator Discusses the Discovery of Form (In Person AND Online!)",
-      "dateISO": "2026-11-12T18:30:00",
+      "id": "feed-gotham-center-2027-02-15-revolutionary-ink-new-york-printers-and-",
+      "name": "Revolutionary Ink: New York Printers and the Promise of Democracy, 1693–1804",
+      "dateISO": "2027-02-15T18:30:00",
       "time": "6:30 PM",
-      "venue": "New York City ( NYC )",
+      "venue": "Gotham Center",
       "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-lecture/2026-11-12/event/771094",
+      "price": "",
+      "url": "https://www.gothamcenter.org/upcoming-events/0u696tjdf385xbqg5gy4tm36niv6hm",
       "category": "talks_lectures",
-      "source": "Club Free Time",
+      "source": "Gotham Center",
       "via": [
-        "feed: Club Free Time"
+        "feed: Gotham Center"
       ],
-      "why": "This presentation, by Mark West, will describe a practice that adopts methods of Finding rather than methods of Control. These include techniques of \"hallucinatory\" drawing utilizing the very human…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-12-best-selling-historian-shares-his-new-bo",
-      "name": "Best-Selling Historian Shares His New Book on the Middle East",
-      "dateISO": "2026-11-12T18:30:00",
-      "time": "6:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-11-12/event/765694",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "The Cauldron, by Simon Sebag Montefiore, takes the reader on a spectacular journey from the Ottoman sultanate to the Trump presidency, from Morocco to Iran -- a panorama brought to life by an…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-11-12-interdisciplinary-artist-shares-his-tech",
-      "name": "Interdisciplinary Artist Shares His Techniques of \"Hallucinatory\" Drawing (In Person AND Online!)",
-      "dateISO": "2026-11-12T18:30:00",
-      "time": "6:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-11-12/event/767695",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "This presentation by Mark West will describe a practice that adopts methods of Finding rather than methods of Control. These include techniques of \"hallucinatory\" drawing utilizing the very human…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-12-macarthur-fellow-discusses-her-creative-",
-      "name": "MacArthur Fellow Discusses Her Creative Career",
-      "dateISO": "2026-11-12T18:30:00",
-      "time": "6:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-11-12/event/768760",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "An evening with Maaza Mengiste. Mengiste will be in conversation with writer and translator Lars Horn. Maaza Mengiste is a novelist, essayist, and the recipient of a 2026 MacArthur Fellowship. She is…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-11-12-3-artists-nbsp-discuss-their-new-exhibit",
-      "name": "3 Artists Discuss Their New Exhibition",
-      "dateISO": "2026-11-12T19:00:00",
-      "time": "7:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-gallery-talk/2026-11-12/event/770308",
-      "category": "art_exhibitions",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "A roundtable discussion with artists in residence, Derriann Pharr, Simonette Quamina, and Taylor Simmons, moderated by Studio Museum Assistant Curator Adria Gunter. To celebrate the opening of A…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-12-american-book-award-winning-poet-shares-",
-      "name": "American Book Award-Winning Poet Shares Her New Collection, The Ghost Forest",
-      "dateISO": "2026-11-12T19:00:00",
-      "time": "7:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-11-12/event/767869",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Kimiko Hahn in conversation with Sally Wen Mao. Kimiko Hahn introduces her new poetry collection The Ghost Forest. About the book: Opening with forty-three new formally inventive poems and leading…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-11-12-national-book-award-finalist-discusses-h",
-      "name": "National Book Award Finalist Discusses How Literature Can Shape Radical Political Moments",
-      "dateISO": "2026-11-12T19:00:00",
-      "time": "7:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-11-12/event/766912",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Over the past decade, Camonghne Felix has been at the center of American politics, working in strategy, communications, and as a speechwriter. Throughout it all, she has maintained her unwavering…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-13-celebrating-the-photography-of-nbsp-asia",
-      "name": "Celebrating the Photography of Asian & Asian American Artists",
-      "dateISO": "2026-11-13T11:00:00",
-      "time": "11:00 AM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-13/event/767611",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "A deep dive into the diverse voices shaping contemporary photography. This class highlights the Photography Collection's rich holdings of Asian and Asian American artists, offering a rare opportunity…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-13-genre-painter-shares-his-latest-monograp",
-      "name": "Genre Painter Shares His Latest Monograph (+ Signing)",
-      "dateISO": "2026-11-13T18:00:00",
-      "time": "6:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-11-13/event/768448",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Doron Langberg to celebrates their book featuring more than 100 paintings spanning ten years of artistic practice. They will be in conversation with Gaby Collins-Fernández, followed by a signing.",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-11-13-industry-professionals-discuss-how-nbsp-",
-      "name": "Industry Professionals Discuss How They Cultivate Sustainable Ecosystems for Filmmakers",
-      "dateISO": "2026-11-13T18:00:00",
-      "time": "6:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-13/event/769144",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "An engaging panel of filmmakers on navigating the tumultuous and changing landscape of entertainment to support filmmakers, artists, and creators.Panelists:Cassie Bradley (Creative Director, Impact…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-14-bilingual-conversation-with-theater-make",
-      "name": "Bilingual Conversation with Theater-Maker Carolina Cuervo",
-      "dateISO": "2026-11-14T11:00:00",
-      "time": "11:00 AM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-14/event/766978",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "An intimate conversation exploring the artist's work as a writer, playwright, screenwriter, showrunner, and creative artist.In conversation with Martha Schreiner, Carolina will take the audience…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-14-celebrating-the-photography-of-nbsp-asia",
-      "name": "Celebrating the Photography of Asian & Asian American Artists",
-      "dateISO": "2026-11-14T11:00:00",
-      "time": "11:00 AM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-14/event/767647",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "A deep dive into the diverse voices shaping contemporary photography. This class highlights the Photography Collection's rich holdings of Asian and Asian American artists, offering a rare opportunity…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-14-conference-in-a-landmark-art-museum-arti",
-      "name": "Conference in a Landmark Art Museum: Artistic Representations of the Body & Fashion",
-      "dateISO": "2026-11-14T11:00:00",
-      "time": "11:00 AM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-symposium/2026-11-14/event/765997",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Dive deep into themes found in the exhibition Costume Art through dynamic conversations and presentations by leading scholars, designers, artists, models, and more. Explore the indivisible connection…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-14-actors-from-chicago-fire-fbi-law-order-d",
-      "name": "Actors from Chicago Fire, FBI, & Law & Order Discuss Their Franchises & the Future of Network TV (+ Reception)",
-      "dateISO": "2026-11-14T12:00:00",
-      "time": "12:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-14/event/767365",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Hanako Greensmith, Zeeko Zaki, and David Ajala have a discussion on carrying forward the legacy of Wolf Entertainment's iconic franchises. From creating memorable characters to bringing new energy to…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-14-deadline-journalist-comedians-discuss-cr",
-      "name": "Deadline Journalist & Comedians Discuss Creating Comedy in the Age of AI",
-      "dateISO": "2026-11-14T15:00:00",
-      "time": "3:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-14/event/770530",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "As joke theft enters the age of Al, comedians face an unsettling new threat: stolen material repackaged, monetized and amplified to millions of viewers. Deadline’s Matt Grobar will moderate a…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-14-death-cafe-discussion-group",
-      "name": "Death Cafe Discussion Group",
-      "dateISO": "2026-11-14T15:30:00",
-      "time": "3:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-14/event/765289",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "An informal, group-directed discussion of death with no agenda, objectives or themes. The purpose of Death Cafe is \"to increase awareness of death with a view to helping people make the most of their…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-16-art-scholars-curators-dicuss-si-lewen-s-",
-      "name": "Art Scholars & Curators Dicuss Si Lewen's Masterpieces at a Landmark Museum",
-      "dateISO": "2026-11-16T18:00:00",
-      "time": "6:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-gallery-talk/2026-11-16/event/770560",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Learn more about an epic cycle of charcoal, pencil, and ink drawings, The Parade (ca. 1950). Hear from scholar Katy Siegel as she delves into Si Lewen's relationship to artistic strategies across the…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-16-book-discussion-nbsp-moon-of-the-cursed-",
-      "name": "Book Discussion: Moon of the Cursed Snow by Waubgeshig Rice",
-      "dateISO": "2026-11-16T18:30:00",
-      "time": "6:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-club/2026-11-16/event/765295",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Readers who enjoy horror and other dark literature are welcome to this in-person discussion. This meeting focuses on Moon of the Crusted Snow by Waubgeshig Rice. This month’s theme is: Native…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-11-16-hospitality-mogul-danny-meyer-shares-ins",
-      "name": "Hospitality Mogul Danny Meyer Shares Insights on Culture, Cuisine and Lasting Success",
-      "dateISO": "2026-11-16T18:30:00",
-      "time": "6:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-talk/2026-11-16/event/765697",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Restaurateur Danny Meyer -- founder and owner of Union Square Cafe, Gramercy Tavern and the Shake Shack empire, among others -- has a conversation about his new book, What Could Possibly Go Right…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-17-architects-discuss-their-new-book-on-a-h",
-      "name": "Architects Discuss Their New Book on a Historic Structure (+ Signing)",
-      "dateISO": "2026-11-17T18:00:00",
-      "time": "6:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-11-17/event/768451",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "A conversation with Sean E. Sawyer, President, The Olana Partnership, and Thomas L. Woltz, Principal, Nelson Byrd Woltz Landscape Architects, to celebrate the new book, OLANA: Frederic Church's…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-11-17-art-scholars-discuss-newfound-recognitio",
-      "name": "Art Scholars Discuss Newfound Recognition for 19th Century Women Artists",
-      "dateISO": "2026-11-17T18:00:00",
-      "time": "6:00 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-17/event/767905",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "A conversation about the women artists omitted from the dominant narrative of American landscape painting, and how artists, institutions, and scholars are reframing that history to bring visibility…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-17-mcsweeney-s-featured-writer-discusses-he",
-      "name": "McSweeney's-Featured Writer Discusses Her New Book, Tiger's Mouth",
-      "dateISO": "2026-11-17T18:30:00",
-      "time": "6:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-11-17/event/768670",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Lucy Tan in conversation with Joanne Kwong. About the Book; When two young men meet during a tech internship, it sparks an intense friendship—and even more intense competition—in this sweeping novel…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-11-17-book-launch-nbsp-between-the-river-and-t",
-      "name": "Book Launch: Between the River and the Railroad Tracks by Nicole R. Fleetwood (with Hanif Abdurraqib)",
-      "dateISO": "2026-11-17T18:30:00",
-      "time": "6:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-11-17/event/768313",
-      "category": "talks_lectures",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "A special evening moderated by Hanif Abdurraqib, marking a celebration and conversation with Fleetwood, an NYPL Fellow, about family, place, memory, and history. In her debut memoir, Between the…",
-      "literary": true
-    },
-    {
-      "id": "feed-club-free-time-2026-11-17-contemporary-artist-discusses-his-new-ex",
-      "name": "Contemporary Artist Discusses His New Exhibition & Approach",
-      "dateISO": "2026-11-17T18:30:00",
-      "time": "6:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-17/event/768466",
-      "category": "art_exhibitions",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Artist Tammam Azzam joins curator Saria AlMidani for a conversation about his artistic practice and A Horizon Remains. Together, they discuss the development of his work, his approach to painting…"
-    },
-    {
-      "id": "feed-club-free-time-2026-11-17-plants-cultural-memory-open-artist-sessi",
-      "name": "Plants & Cultural Memory: Open Artist Session",
-      "dateISO": "2026-11-17T18:30:00",
-      "time": "6:30 PM",
-      "venue": "New York City ( NYC )",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-gallery-talk/2026-11-17/event/770818",
-      "category": "music_nightlife",
-      "source": "Club Free Time",
-      "via": [
-        "feed: Club Free Time"
-      ],
-      "why": "Joy Youwakim will discuss the origins of Saboon Maazeh—a farm and soap workshop she founded, dedicated to SWANA heritage preservation in Chester, NY. She will also speak about her ongoing efforts to…"
+      "why": ""
     },
     {
       "id": "feed-club-free-time-2026-11-18-artistic-director-of-jazz-tap-ensemble-d",
@@ -1745,7 +1189,74 @@
       "via": [
         "feed: Club Free Time"
       ],
-      "why": "Bring a book or check one out of the library to read to yourself for one hour. After that, spend an hour socializing with those around you!",
+      "why": "",
+      "literary": true
+    },
+    {
+      "id": "feed-club-free-time-2026-11-18-getting-to-know-nyc-s-bodega-cats-with-n",
+      "name": "Getting To Know NYC's Bodega Cats with New Photo Book",
+      "dateISO": "2026-11-18T19:00:00",
+      "time": "7:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-11-18/event/771511",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A discussion with Dan Rimada, the founder of the beloved archive Bodega Cats of New York (now a book with the same name), which led to bodega cat legislation in New York City and New York State!",
+      "literary": true
+    },
+    {
+      "id": "feed-club-free-time-2026-11-18-famous-author-and-her-new-creation",
+      "name": "Famous Author and her New Creation",
+      "dateISO": "2026-11-18T19:30:00",
+      "time": "7:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-18/event/771997",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Famous Author and her New Creation"
+    },
+    {
+      "id": "feed-club-free-time-2026-11-19-anti-tech-activist-discusses-her-new-boo",
+      "name": "Anti-Tech Activist Discusses Her New Book",
+      "dateISO": "2026-11-19T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-11-19/event/771193",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A conversation with August Lamm to celebrate her new book, You Don't Need a Smartphone: A Practical Guide to Downgrading Your Phone and Upgrading Your Life. In this revelatory manifesto, anti-tech…",
+      "literary": true
+    },
+    {
+      "id": "feed-club-free-time-2026-11-19-book-launch-celebrating-the-legacy-of-co",
+      "name": "Book Launch Celebrating the Legacy of Contemporary Black Artists (+ Book Signing)",
+      "dateISO": "2026-11-19T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-11-19/event/771916",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Drinks, light bites, and an evening of discussion to celebrate the publication of Another View: The Vibrant World of Contemporary Black Artists, with featured artist Derrick Adams and author/curator…",
       "literary": true
     },
     {
@@ -1883,6 +1394,22 @@
       "why": "As early as the fourteenth century, dolls circulated throughout Europe as miniature fashion models, showcasing the latest trends in three-dimensional detail. The first models for many aspiring…"
     },
     {
+      "id": "feed-club-free-time-2026-11-20-high-stakes-reality-tv-show-contestants-",
+      "name": "High Stakes Reality TV Show Contestants Tell All",
+      "dateISO": "2026-11-20T19:00:00",
+      "time": "7:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-11-20/event/772054",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "High Stakes Reality TV Show Contestants Tell All"
+    },
+    {
       "id": "feed-club-free-time-2026-11-21-discuss-your-favorite-romance-books-with",
       "name": "Discuss Your Favorite Romance Books with Fellow Readers",
       "dateISO": "2026-11-21T11:00:00",
@@ -1966,6 +1493,23 @@
       "literary": true
     },
     {
+      "id": "feed-club-free-time-2026-11-23-fashion-historian-shares-her-book-the-fa",
+      "name": "Fashion Historian Shares Her Book, The Fashion of the Gilded Age",
+      "dateISO": "2026-11-23T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-11-23/event/771196",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Raissa Bretana and Dr. Hilary Davidson discuss Bretana's new book. Nothing embodied the resplendence of the Gilded Age like the opulent fashions worn by the women of elite society. As vast fortunes…",
+      "literary": true
+    },
+    {
       "id": "feed-club-free-time-2026-11-23-puppetry-arts-expert-discusses-the-legac",
       "name": "Puppetry Arts Expert Discusses the Legacy of Designer & Puppeteer Tony Sarg",
       "dateISO": "2026-11-23T18:30:00",
@@ -2011,7 +1555,7 @@
       "via": [
         "feed: Club Free Time"
       ],
-      "why": "Bring a book or check one out of the library to read to yourself for one hour. After that, spend an hour socializing with those around you!",
+      "why": "",
       "literary": true
     },
     {
@@ -2029,6 +1573,106 @@
         "feed: Club Free Time"
       ],
       "why": "Love reading poetry but wish you had someone to discuss it with? This event features an hour of guided poetry reading and discussion in the library. Take in the views of the Hudson River as the group…",
+      "literary": true
+    },
+    {
+      "id": "feed-club-free-time-2026-12-01-wildlife-photographers-discuss-capturing",
+      "name": "Wildlife Photographers Discuss Capturing Wild Felines on Film",
+      "dateISO": "2026-12-01T15:00:00",
+      "time": "3:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-lecture/2026-12-01/event/771232",
+      "category": "film_screenings",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "In partnership with Panthera, conservation photographers Sebastian Kennerknecht and Rachel Tobias are building the world's first photographic collection of all 40 wild cat species. In this talk…"
+    },
+    {
+      "id": "feed-club-free-time-2026-12-01-paris-review-featured-writer-shares-her-",
+      "name": "Paris Review-Featured Writer Shares Her New Memoir",
+      "dateISO": "2026-12-01T17:00:00",
+      "time": "5:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-12-01/event/771166",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Prize-winning author Meghan O’Gieblyn will appear in conversation with Gerald Howard, longtime editor and the author of The Insider: Malcolm Cowley and the Triumph of American Literature. In her new…",
+      "literary": true
+    },
+    {
+      "id": "feed-club-free-time-2026-12-01-historians-politicians-more-discuss-resi",
+      "name": "Historians, Politicians, & More DIscuss Resistance & Community for World AIDS Day",
+      "dateISO": "2026-12-01T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-12-01/event/771907",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "A powerful conversation exploring the fierce, community-led resistance that defined New York City’s response to the AIDS crisis. Featuring trailblazing former City Council Member and State Senator…"
+    },
+    {
+      "id": "feed-club-free-time-2026-12-02-quiet-reading-meet-up",
+      "name": "Quiet Reading Meet Up",
+      "dateISO": "2026-12-02T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-12-02/event/771409",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "",
+      "literary": true
+    },
+    {
+      "id": "feed-club-free-time-2026-12-03-end-of-year-literary-fiction-celebration",
+      "name": "End-of-Year Literary Fiction Celebration: Author Panel, Giveaways, & More (with Valeria Luiselli, Douglas Stewart, & Vincent Yu) (In Person AND Online!)",
+      "dateISO": "2026-12-03T18:30:00",
+      "time": "6:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-12-03/event/771334",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Isaac Fitzgerald chats with the authors of the year's buzziest fiction at this literary wrap party. Literary fiction is having a moment. Page-turning drama, unforgettable characters, well-crafted…",
+      "literary": true
+    },
+    {
+      "id": "feed-club-free-time-2026-12-04-expert-discusses-literary-figure-nbsp-ar",
+      "name": "Expert Discusses Literary Figure Arthur Szyk's Body of Art",
+      "dateISO": "2026-12-04T14:00:00",
+      "time": "2:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-12-04/event/771835",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Irvin Ungar, considered the foremost expert on Polish Jewish artist and illustrator Arthur Szyk, explores his life and legacy. Drawing from an extensive collection of Szyk’s work—the largest…",
       "literary": true
     },
     {
@@ -2064,6 +1708,22 @@
       "why": "A talk by Julia Bryan-Wilson, professor of contemporary art and LGBTQ+ studies at Columbia University. Bryan-Wilson's award-winning books include Art Workers: Radical Practice in the Vietnam War Era…"
     },
     {
+      "id": "feed-club-free-time-2026-12-08-artist-nbsp-conversation-on-nbsp-storyte",
+      "name": "Artist Conversation on Storytelling, Materiality, & the Emotional Resonance of Form.",
+      "dateISO": "2026-12-08T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-12-08/event/772153",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "The evening’s program will feature a conversation between Karon Davis and Thelma Golden, Ford Foundation Director and Chief Curator of the Studio Museum in Harlem.In this conversation, Davis and…"
+    },
+    {
       "id": "feed-club-free-time-2026-12-08-street-photographers-discuss-new-book-do",
       "name": "Street Photographers Discuss New Book Documenting Moments of Connection between Communities",
       "dateISO": "2026-12-08T19:00:00",
@@ -2097,6 +1757,40 @@
       "why": "This presentation contextualizes the Noyes School within the early modern dance landscape, including relationships with Ruth St. Denis and Ted Shawn, and features film screening of a solo danced by…"
     },
     {
+      "id": "feed-club-free-time-2026-12-09-quiet-reading-meet-up",
+      "name": "Quiet Reading Meet Up",
+      "dateISO": "2026-12-09T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-12-09/event/771538",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "",
+      "literary": true
+    },
+    {
+      "id": "feed-club-free-time-2026-12-11-literary-scholar-discusses-virginia-wool",
+      "name": "Literary Scholar Discusses Virginia Woolf's New Book of Lost Stories",
+      "dateISO": "2026-12-11T14:00:00",
+      "time": "2:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-12-11/event/771841",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "Scholar Urmila Seshagiri discusses making a major literary discovery: the final revised typescript of Virginia Woolf’s first fully realized work of fiction.In 1907, eight years before her first novel…",
+      "literary": true
+    },
+    {
       "id": "feed-club-free-time-2026-12-12-discuss-your-favorite-romance-books-with",
       "name": "Discuss Your Favorite Romance Books with Fellow Readers",
       "dateISO": "2026-12-12T11:00:00",
@@ -2111,6 +1805,39 @@
         "feed: Club Free Time"
       ],
       "why": "If you love romance or want to get into it, you're welcome at this romance book club! Attendees will be discussing their favorite romance books, current reads, and more!",
+      "literary": true
+    },
+    {
+      "id": "feed-club-free-time-2026-12-12-death-cafe-discussion-group",
+      "name": "Death Cafe Discussion Group",
+      "dateISO": "2026-12-12T15:30:00",
+      "time": "3:30 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-discussion/2026-12-12/event/771364",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "An informal, group-directed discussion of death with no agenda, objectives or themes. The purpose of Death Cafe is \"to increase awareness of death with a view to helping people make the most of their…"
+    },
+    {
+      "id": "feed-club-free-time-2026-12-16-quiet-reading-meet-up",
+      "name": "Quiet Reading Meet Up",
+      "dateISO": "2026-12-16T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-12-16/event/771547",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
+      "via": [
+        "feed: Club Free Time"
+      ],
+      "why": "",
       "literary": true
     },
     {
@@ -2130,84 +1857,38 @@
       "why": "Launched in the early 1990s by visionary founders Danny Castro and Anthony Marshall, Lyricist Lounge has blossomed from humble beginnings as an open mic series in the Lower East Side to its current…"
     },
     {
-      "id": "feed-nyc-resistor-2026-11-12-public-craft-night-mondays-and-thursdays",
-      "name": "Public Craft Night Mondays and Thursdays!",
-      "dateISO": "2026-11-12T18:30:00",
-      "time": "6:30 PM",
-      "venue": "NYC Resistor",
+      "id": "feed-club-free-time-2026-12-23-quiet-reading-meet-up",
+      "name": "Quiet Reading Meet Up",
+      "dateISO": "2026-12-23T18:00:00",
+      "time": "6:00 PM",
+      "venue": "New York City ( NYC )",
       "neighborhood": "",
       "price": "Free",
-      "url": "https://www.eventbrite.com/e/public-craft-night-mondays-and-thursdays-tickets-162729866411",
-      "category": "workshops_classes",
-      "source": "NYC Resistor",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-12-23/event/771556",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
       "via": [
-        "feed: NYC Resistor"
+        "feed: Club Free Time"
       ],
-      "why": "Learn, make and share at NYC Resistor (all events18+)"
+      "why": "",
+      "literary": true
     },
     {
-      "id": "feed-nyc-resistor-2026-11-13-sewing-machines-how-to-make-a-tote-bag",
-      "name": "Sewing Machines: How to Make a Tote Bag",
-      "dateISO": "2026-11-13T18:00:00",
+      "id": "feed-club-free-time-2026-12-30-quiet-reading-meet-up",
+      "name": "Quiet Reading Meet Up",
+      "dateISO": "2026-12-30T18:00:00",
       "time": "6:00 PM",
-      "venue": "NYC Resistor",
+      "venue": "New York City ( NYC )",
       "neighborhood": "",
-      "price": "$103.22",
-      "url": "https://www.eventbrite.com/e/sewing-machines-how-to-make-a-tote-bag-tickets-2003614910132",
-      "category": "workshops_classes",
-      "source": "NYC Resistor",
+      "price": "Free",
+      "url": "https://www.clubfreetime.com/new-york-city-nyc/free-book-discussion/2026-12-30/event/771559",
+      "category": "talks_lectures",
+      "source": "Club Free Time",
       "via": [
-        "feed: NYC Resistor"
+        "feed: Club Free Time"
       ],
-      "why": "Absolute beginners are welcome. Learn how to thread and use a Sewing Machine. Make a Tote bag at NYC Resistor!"
-    },
-    {
-      "id": "feed-nyc-resistor-2026-11-14-make-along-make-a-pinhole-polaroid-camer",
-      "name": "Make Along: Make a Pinhole Polaroid Camera from a Beer or Soda Can!",
-      "dateISO": "2026-11-14T10:00:00",
-      "time": "10:00 AM",
-      "venue": "NYCResistor",
-      "neighborhood": "",
-      "price": "$28.52",
-      "url": "https://www.eventbrite.com/e/make-along-make-a-pinhole-polaroid-camera-from-a-beer-or-soda-can-tickets-2004123280682",
-      "category": "workshops_classes",
-      "source": "NYC Resistor",
-      "via": [
-        "feed: NYC Resistor"
-      ],
-      "why": "Learn how to make a pinhole polaroid camera with stuff you can find around the house, but don't worry, we'll provide all the materials."
-    },
-    {
-      "id": "feed-nyc-resistor-2026-11-15-learn-to-use-a-laser-cutter-to-cut-and-e",
-      "name": "Learn to Use a Laser Cutter to Cut and Etch Your Own Designs",
-      "dateISO": "2026-11-15T13:00:00",
-      "time": "1:00 PM",
-      "venue": "NYC Resistor",
-      "neighborhood": "",
-      "price": "$85",
-      "url": "https://www.eventbrite.com/e/learn-to-use-a-laser-cutter-to-cut-and-etch-your-own-designs-tickets-2003478594408",
-      "category": "workshops_classes",
-      "source": "NYC Resistor",
-      "via": [
-        "feed: NYC Resistor"
-      ],
-      "why": "Harness the power of an Epilog 60 Watt Laser! In this class you'll learn everything you need."
-    },
-    {
-      "id": "feed-nyc-resistor-2026-11-15-computer-programming-for-absolute-beginn",
-      "name": "Computer Programming for Absolute Beginners (in Python)",
-      "dateISO": "2026-11-15T18:30:00",
-      "time": "6:30 PM",
-      "venue": "NYCResistor",
-      "neighborhood": "",
-      "price": "$50",
-      "url": "https://www.eventbrite.com/e/computer-programming-for-absolute-beginners-in-python-tickets-2003610794823",
-      "category": "workshops_classes",
-      "source": "NYC Resistor",
-      "via": [
-        "feed: NYC Resistor"
-      ],
-      "why": "This tutorial for absolute beginners goes through basic programming concepts, Python syntax, and a few fun programs along the way."
+      "why": "",
+      "literary": true
     },
     {
       "id": "feed-nyc-resistor-2026-11-18-public-craft-night-1st-fridays-and-3rd-w",
@@ -2224,6 +1905,22 @@
         "feed: NYC Resistor"
       ],
       "why": "Learn, make, and share at NYC Resistor (18+; high quality masks required and provided on request)"
+    },
+    {
+      "id": "feed-nyc-resistor-2026-11-19-public-craft-night-mondays-and-thursdays",
+      "name": "Public Craft Night Mondays and Thursdays!",
+      "dateISO": "2026-11-19T18:30:00",
+      "time": "6:30 PM",
+      "venue": "NYC Resistor",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.eventbrite.com/e/public-craft-night-mondays-and-thursdays-tickets-162729866411",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
+      "via": [
+        "feed: NYC Resistor"
+      ],
+      "why": "Learn, make and share at NYC Resistor (all events18+)"
     },
     {
       "id": "feed-nyc-resistor-2026-11-20-all-decked-out-a-cyberdeck-open-mic",
@@ -2274,22 +1971,6 @@
       "why": "In this hands-on class, you’ll learn essential woodworking skills while crafting a 12” x 16” picture frame from poplar wood."
     },
     {
-      "id": "feed-nyc-resistor-2026-11-22-locksport-workshop",
-      "name": "Locksport Workshop",
-      "dateISO": "2026-11-22T15:00:00",
-      "time": "3:00 PM",
-      "venue": "NYCResistor",
-      "neighborhood": "",
-      "price": "$15",
-      "url": "https://www.eventbrite.com/e/locksport-workshop-tickets-2004601891219",
-      "category": "workshops_classes",
-      "source": "NYC Resistor",
-      "via": [
-        "feed: NYC Resistor"
-      ],
-      "why": "Ethics, theory and hands on practice of lockpicking"
-    },
-    {
       "id": "feed-nyc-resistor-2026-11-25-nycresistor-ham-radio-club",
       "name": "NYCResistor Ham Radio Club",
       "dateISO": "2026-11-25T20:00:00",
@@ -2322,100 +2003,68 @@
       "why": "Gathering musicians, enthusiasts, and curious minds to connect, collaborate, and share their passion for synthesis. BYO synth encouraged!"
     },
     {
-      "id": "feed-greenlight-bookstore-2026-11-11-tween-book-group",
-      "name": "Tween Book Group",
-      "dateISO": "2026-11-11T18:00:00",
+      "id": "feed-nyc-resistor-2026-11-28-mask-chains-101-masks-on",
+      "name": "Mask Chains 101",
+      "dateISO": "2026-11-28T14:00:00",
+      "time": "2:00 PM",
+      "venue": "NYC Resistor",
+      "neighborhood": "",
+      "price": "$25",
+      "url": "https://www.eventbrite.com/e/mask-chains-101-masks-on-tickets-2004486179121",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
+      "via": [
+        "feed: NYC Resistor"
+      ],
+      "why": "You will learn the basics of wire wrapping your own mask chain and go home with your own wire wrapped flower mask chain."
+    },
+    {
+      "id": "feed-nyc-resistor-2026-11-29-still-life-painting-masks-on",
+      "name": "Still Life Painting:",
+      "dateISO": "2026-11-29T11:00:00",
+      "time": "11:00 AM",
+      "venue": "NYCResistor",
+      "neighborhood": "",
+      "price": "$25",
+      "url": "https://www.eventbrite.com/e/still-life-painting-masks-on-tickets-2004868294037",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
+      "via": [
+        "feed: NYC Resistor"
+      ],
+      "why": "Beginner friendly, guided Still Life Painting session: Masks Required"
+    },
+    {
+      "id": "feed-nyc-resistor-2026-11-29-touchdesigner-esp32s-and-sensors",
+      "name": "TouchDesigner, ESP32s and Sensors!",
+      "dateISO": "2026-11-29T14:00:00",
+      "time": "2:00 PM",
+      "venue": "NYCResistor",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.eventbrite.com/e/touchdesigner-esp32s-and-sensors-tickets-2004801732951",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
+      "via": [
+        "feed: NYC Resistor"
+      ],
+      "why": "Wire a motion sensor to an ESP32 and stream the live data into TouchDesigner over OSC and MQTT. No Arduino experience needed!"
+    },
+    {
+      "id": "feed-nyc-resistor-2026-12-02-soldering-workshop-make-an-led-tile",
+      "name": "Soldering Workshop: Make an LED Tile",
+      "dateISO": "2026-12-02T18:00:00",
       "time": "6:00 PM",
-      "venue": "Greenlight Bookstore in Fort Greene",
+      "venue": "NYC Resistor",
       "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/tween-book-group-tickets-2001648353107",
-      "category": "talks_lectures",
-      "source": "Greenlight Bookstore",
+      "price": "$97.88",
+      "url": "https://www.eventbrite.com/e/soldering-workshop-make-an-led-tile-tickets-2004867478598",
+      "category": "workshops_classes",
+      "source": "NYC Resistor",
       "via": [
-        "feed: Greenlight Bookstore"
+        "feed: NYC Resistor"
       ],
-      "why": "Our Tween Book Group is geared toward kids ages 9 to 12, reading and discussing great contemporary and classic chapter books."
-    },
-    {
-      "id": "feed-greenlight-bookstore-2026-11-11-mark-binelli-with-dinaw-mengestu",
-      "name": "Mark Binelli with Dinaw Mengestu",
-      "dateISO": "2026-11-11T19:30:00",
-      "time": "7:30 PM",
-      "venue": "Greenlight Bookstore in Fort Greene",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/mark-binelli-with-dinaw-mengestu-tickets-2002170437676",
-      "category": "talks_lectures",
-      "source": "Greenlight Bookstore",
-      "via": [
-        "feed: Greenlight Bookstore"
-      ],
-      "why": "Brooklyn native Mark Binelli returns with the first major biography of acclaimed filmmaker Martin Scorcese!"
-    },
-    {
-      "id": "feed-greenlight-bookstore-2026-11-12-book-launch-rose-smith-with-ada-calhoun-",
-      "name": "Book Launch: Rose Smith with Ada Calhoun and April Matthis",
-      "dateISO": "2026-11-12T19:30:00",
-      "time": "7:30 PM",
-      "venue": "Greenlight Bookstore in Fort Greene",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/book-launch-rose-smith-with-ada-calhoun-and-april-matthis-tickets-2001661427212",
-      "category": "talks_lectures",
-      "source": "Greenlight Bookstore",
-      "via": [
-        "feed: Greenlight Bookstore"
-      ],
-      "why": "Rose Smith launches her epic debut The Shared Life of Egan and Lucian!"
-    },
-    {
-      "id": "feed-greenlight-bookstore-2026-11-16-camila-kerwin-with-mia-warren",
-      "name": "Camila Kerwin with Mia Warren",
-      "dateISO": "2026-11-16T19:30:00",
-      "time": "7:30 PM",
-      "venue": "Greenlight Bookstore in Fort Greene",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/camila-kerwin-with-mia-warren-tickets-2001663068120",
-      "category": "talks_lectures",
-      "source": "Greenlight Bookstore",
-      "via": [
-        "feed: Greenlight Bookstore"
-      ],
-      "why": "Camila Kerwin presents their graphic novel of the true stories of four kids who have died in the U.S. and the guns that ended their lives."
-    },
-    {
-      "id": "feed-greenlight-bookstore-2026-11-17-radical-nonfiction-book-group",
-      "name": "Radical Nonfiction Book Group",
-      "dateISO": "2026-11-17T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Greenlight Bookstore",
-      "neighborhood": "",
-      "price": "Free",
-      "url": "https://www.eventbrite.com/e/radical-nonfiction-book-group-tickets-2001664556572",
-      "category": "talks_lectures",
-      "source": "Greenlight Bookstore",
-      "via": [
-        "feed: Greenlight Bookstore"
-      ],
-      "why": "Our Radical Nonfiction group meets monthly to discuss titles related to the issues of history, politics, & the promise of a better world."
-    },
-    {
-      "id": "feed-greenlight-bookstore-2026-11-17-brooklyn-chats-jonathan-mahler-at-bar-he",
-      "name": "Brooklyn Chats: Jonathan Mahler (at Bar Heretic)",
-      "dateISO": "2026-11-17T19:00:00",
-      "time": "7:00 PM",
-      "venue": "Bar Heretic",
-      "neighborhood": "",
-      "price": "$12.51",
-      "url": "https://www.eventbrite.com/e/brooklyn-chats-jonathan-mahler-at-bar-heretic-tickets-2002823025584",
-      "category": "talks_lectures",
-      "source": "Greenlight Bookstore",
-      "via": [
-        "feed: Greenlight Bookstore"
-      ],
-      "why": "At tonight's event, host Patrick Sauer talks with Jonathan Mahler about his newest book of New York history: The Gods of New York!"
+      "why": "Soldering is one of the most important skills you'll need for working with electronics. Come join us for an introductory through-hole solder"
     },
     {
       "id": "feed-greenlight-bookstore-2026-11-18-black-lit-book-group",
@@ -2450,30 +2099,110 @@
       "why": "With a focus on indie presses and marginalized voices, our L.I.T. Book Group meets monthly to discuss books from around the world!"
     },
     {
-      "id": "feed-greenlight-bookstore-2026-11-18-fork-greene-a-friendsgiving-potluck-at-b",
-      "name": "Fork Greene: A Friendsgiving Potluck (at Bar Heretic)",
-      "dateISO": "2026-11-18T19:30:00",
-      "time": "7:30 PM",
-      "venue": "Bar Heretic",
+      "id": "feed-greenlight-bookstore-2026-11-28-small-business-saturday",
+      "name": "Small Business Saturday!",
+      "dateISO": "2026-11-28T10:00:00",
+      "time": "10:00 AM",
+      "venue": "Greenlight Bookstore in Fort Greene",
       "neighborhood": "",
-      "price": "$23.94",
-      "url": "https://www.eventbrite.com/e/fork-greene-a-friendsgiving-potluck-at-bar-heretic-tickets-2001891714006",
+      "price": "Free",
+      "url": "https://www.eventbrite.com/e/small-business-saturday-tickets-2001894220503",
       "category": "talks_lectures",
       "source": "Greenlight Bookstore",
       "via": [
         "feed: Greenlight Bookstore"
       ],
-      "why": "You're invited (to something fun and new)!"
+      "why": ""
     },
     {
-      "id": "feed-lectures-on-tap-2026-11-12-lectures-on-tap-hunting-for-earth-2-0",
-      "name": "Lectures on Tap - \"Hunting for Earth 2.0\"",
-      "dateISO": "2026-11-12T18:30:00",
+      "id": "feed-greenlight-bookstore-2026-12-01-fantasy-book-group",
+      "name": "Fantasy Book Group",
+      "dateISO": "2026-12-01T19:00:00",
+      "time": "7:00 PM",
+      "venue": "BierWax",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.eventbrite.com/e/fantasy-book-group-tickets-2003739279123",
+      "category": "talks_lectures",
+      "source": "Greenlight Bookstore",
+      "via": [
+        "feed: Greenlight Bookstore"
+      ],
+      "why": "For both lifelong lovers and burgeoning fans, the Fantasy Book Group meets monthly to explore the realm of magical storytelling!"
+    },
+    {
+      "id": "feed-greenlight-bookstore-2026-12-01-book-launch-kristen-naiman-with-emilia-p",
+      "name": "Book Launch: Kristen Naiman with Emilia Petrarca (at The RealReal)",
+      "dateISO": "2026-12-01T19:00:00",
+      "time": "7:00 PM",
+      "venue": "The RealReal",
+      "neighborhood": "",
+      "price": "$37.74",
+      "url": "https://www.eventbrite.com/e/book-launch-kristen-naiman-with-emilia-petrarca-at-the-realreal-tickets-2004390784794",
+      "category": "talks_lectures",
+      "source": "Greenlight Bookstore",
+      "via": [
+        "feed: Greenlight Bookstore"
+      ],
+      "why": "Kristen Naiman, Chief Creative Officer of The RealReal, presents her new book with a conversation and book signing!"
+    },
+    {
+      "id": "feed-greenlight-bookstore-2026-12-02-young-adult-book-group",
+      "name": "Young Adult Book Group",
+      "dateISO": "2026-12-02T18:00:00",
+      "time": "6:00 PM",
+      "venue": "Greenlight Bookstore in Fort Greene",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.eventbrite.com/e/young-adult-book-group-tickets-2003739423555",
+      "category": "talks_lectures",
+      "source": "Greenlight Bookstore",
+      "via": [
+        "feed: Greenlight Bookstore"
+      ],
+      "why": "Our YA Book Group is a space for the curious young reader interested in a curated, intentionally diverse selection of books."
+    },
+    {
+      "id": "feed-greenlight-bookstore-2026-12-08-queer-book-group",
+      "name": "Queer Book Group",
+      "dateISO": "2026-12-08T19:00:00",
+      "time": "7:00 PM",
+      "venue": "Hops Hill At Atlantic",
+      "neighborhood": "",
+      "price": "Free",
+      "url": "https://www.eventbrite.com/e/queer-book-group-tickets-2003739647224",
+      "category": "talks_lectures",
+      "source": "Greenlight Bookstore",
+      "via": [
+        "feed: Greenlight Bookstore"
+      ],
+      "why": "Our Queer Book Group meets monthly to discuss contemporary fiction and nonfiction titles that relate to queer identity and more."
+    },
+    {
+      "id": "feed-greenlight-bookstore-2026-12-08-squawkin-sports-mike-sielski-and-laura-t",
+      "name": "Squawkin' Sports: Mike Sielski and Laura Theisen (at DSK)",
+      "dateISO": "2026-12-08T19:00:00",
+      "time": "7:00 PM",
+      "venue": "DSK Brooklyn",
+      "neighborhood": "",
+      "price": "$12.54",
+      "url": "https://www.eventbrite.com/e/squawkin-sports-mike-sielski-and-laura-theisen-at-dsk-tickets-2003740234982",
+      "category": "talks_lectures",
+      "source": "Greenlight Bookstore",
+      "via": [
+        "feed: Greenlight Bookstore"
+      ],
+      "why": "Sports and media journalists Mike Sielski and Laura Theisen join our hosts David and Patrick for this year's holiday Squawkin'!"
+    },
+    {
+      "id": "feed-lectures-on-tap-2026-11-18-lectures-on-tap-hunger-games-the-art-of-",
+      "name": "Lectures on Tap - \"Hunger Games: The Art of Adapting Fiction into Film\"",
+      "dateISO": "2026-11-18T18:30:00",
       "time": "6:30 PM",
-      "venue": "Williamsburg, Brooklyn",
+      "venue": "Prospect Park South, Brooklyn",
       "neighborhood": "",
       "price": "$41.32",
-      "url": "https://www.eventbrite.com/e/lectures-on-tap-hunting-for-earth-20-tickets-2003248448034",
+      "url": "https://www.eventbrite.com/e/lectures-on-tap-hunger-games-the-art-of-adapting-fiction-into-film-tickets-2003248789054",
       "category": "talks_lectures",
       "source": "Lectures on Tap",
       "via": [
@@ -2498,70 +2227,6 @@
       "why": ""
     },
     {
-      "id": "feed-lectures-on-tap-2026-11-11-lectures-on-tap-who-owns-history-the-eth",
-      "name": "Lectures on Tap - \"Who Owns History? The Ethics of Artifacts in Museums\"",
-      "dateISO": "2026-11-11T18:30:00",
-      "time": "6:30 PM",
-      "venue": "Tribeca, Manhattan",
-      "neighborhood": "",
-      "price": "$41.32",
-      "url": "https://www.eventbrite.com/e/lectures-on-tap-who-owns-history-the-ethics-of-artifacts-in-museums-tickets-2003427168592",
-      "category": "talks_lectures",
-      "source": "Lectures on Tap",
-      "via": [
-        "feed: Lectures on Tap"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-lectures-on-tap-2026-11-12-lectures-on-tap-common-pitfalls-in-stati",
-      "name": "Lectures on Tap - \"Common Pitfalls in Statistical Reasoning\"",
-      "dateISO": "2026-11-12T18:30:00",
-      "time": "6:30 PM",
-      "venue": "Lower East Side, Manhattan",
-      "neighborhood": "",
-      "price": "$41.32",
-      "url": "https://www.eventbrite.com/e/lectures-on-tap-common-pitfalls-in-statistical-reasoning-tickets-2003427319042",
-      "category": "talks_lectures",
-      "source": "Lectures on Tap",
-      "via": [
-        "feed: Lectures on Tap"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-lectures-on-tap-2026-11-16-lectures-on-tap-why-outrage-goes-viral-i",
-      "name": "Lectures on Tap-\"Why Outrage Goes Viral: Influence, Identity, Polarization\"",
-      "dateISO": "2026-11-16T18:30:00",
-      "time": "6:30 PM",
-      "venue": "West Village, Manhattan",
-      "neighborhood": "",
-      "price": "$41.32",
-      "url": "https://www.eventbrite.com/e/lectures-on-tap-why-outrage-goes-viral-influence-identity-polarization-tickets-2003427546723",
-      "category": "talks_lectures",
-      "source": "Lectures on Tap",
-      "via": [
-        "feed: Lectures on Tap"
-      ],
-      "why": ""
-    },
-    {
-      "id": "feed-lectures-on-tap-2026-11-17-lectures-on-tap-macroeconomics-of-immuni",
-      "name": "Lectures on Tap-\"Macroeconomics of Immunity: How Vaccines Shape Prosperity\"",
-      "dateISO": "2026-11-17T18:30:00",
-      "time": "6:30 PM",
-      "venue": "NoHo, Manhattan",
-      "neighborhood": "",
-      "price": "$41.32",
-      "url": "https://www.eventbrite.com/e/lectures-on-tap-macroeconomics-of-immunity-how-vaccines-shape-prosperity-tickets-2003427660062",
-      "category": "talks_lectures",
-      "source": "Lectures on Tap",
-      "via": [
-        "feed: Lectures on Tap"
-      ],
-      "why": ""
-    },
-    {
       "id": "feed-lectures-on-tap-2026-11-18-lectures-on-tap-identity-politics-and-ep",
       "name": "Lectures on Tap - \"Identity, Politics, and Epistemic Injustice\"",
       "dateISO": "2026-11-18T18:30:00",
@@ -2578,14 +2243,14 @@
       "why": ""
     },
     {
-      "id": "feed-lectures-on-tap-2026-11-25-lectures-on-tap-when-art-was-dangerous-s",
-      "name": "Lectures on Tap - \"When Art Was Dangerous: Surrealism During World War II\"",
-      "dateISO": "2026-11-25T18:30:00",
+      "id": "feed-lectures-on-tap-2026-11-19-lectures-on-tap-the-quest-for-a-theory-o",
+      "name": "Lectures on Tap-\"The Quest for a Theory of Everything (and Why It Matters)\"",
+      "dateISO": "2026-11-19T18:30:00",
       "time": "6:30 PM",
-      "venue": "Lower East Side, Manhattan",
+      "venue": "Midtown Manhattan",
       "neighborhood": "",
       "price": "$41.32",
-      "url": "https://www.eventbrite.com/e/lectures-on-tap-when-art-was-dangerous-surrealism-during-world-war-ii-tickets-2003428603885",
+      "url": "https://www.eventbrite.com/e/lectures-on-tap-the-quest-for-a-theory-of-everything-and-why-it-matters-tickets-2003427912818",
       "category": "talks_lectures",
       "source": "Lectures on Tap",
       "via": [
@@ -2594,36 +2259,36 @@
       "why": ""
     },
     {
-      "id": "feed-the-wisdom-bar-2026-11-12-the-wisdom-bar-queer-melville-a-secret-h",
-      "name": "The Wisdom Bar-\"Queer Melville: A Secret History of America's Gay Writers\"",
-      "dateISO": "2026-11-12T18:30:00",
+      "id": "feed-lectures-on-tap-2026-11-21-lectures-on-tap-the-story-of-lithium-fro",
+      "name": "Lectures on Tap - \"The Story of Lithium: From the Big Bang to Your Brain\"",
+      "dateISO": "2026-11-21T18:30:00",
       "time": "6:30 PM",
-      "venue": "Bibliotheque, Manhattan",
+      "venue": "Lower East Side, Manhattan",
       "neighborhood": "",
-      "price": "$36.97",
-      "url": "https://www.eventbrite.com/e/the-wisdom-bar-queer-melville-a-secret-history-of-americas-gay-writers-tickets-2003372044715",
+      "price": "$41.32",
+      "url": "https://www.eventbrite.com/e/lectures-on-tap-the-story-of-lithium-from-the-big-bang-to-your-brain-tickets-2003428059256",
       "category": "talks_lectures",
-      "source": "The Wisdom Bar",
+      "source": "Lectures on Tap",
       "via": [
-        "feed: The Wisdom Bar"
+        "feed: Lectures on Tap"
       ],
-      "why": "Queer Melville: A Secret History of America's Gay Writers. Expert-led lectures in bars and creative spaces across NYC."
+      "why": ""
     },
     {
-      "id": "feed-the-wisdom-bar-2026-11-19-the-wisdom-bar-the-real-process-behind-w",
-      "name": "The Wisdom Bar-\"The Real Process Behind Writing a Novel: Author's Account\"",
-      "dateISO": "2026-11-19T18:30:00",
+      "id": "feed-lectures-on-tap-2026-11-24-lectures-on-tap-the-evolutionary-psychol",
+      "name": "Lectures on Tap - \"The Evolutionary Psychology of Infidelity\"",
+      "dateISO": "2026-11-24T18:30:00",
       "time": "6:30 PM",
-      "venue": "Bibliotheque, Manhattan",
+      "venue": "Midtown Manhattan",
       "neighborhood": "",
-      "price": "$36.97",
-      "url": "https://www.eventbrite.com/e/the-wisdom-bar-the-real-process-behind-writing-a-novel-authors-account-tickets-2003410977163",
+      "price": "$41.32",
+      "url": "https://www.eventbrite.com/e/lectures-on-tap-the-evolutionary-psychology-of-infidelity-tickets-2003428192655",
       "category": "talks_lectures",
-      "source": "The Wisdom Bar",
+      "source": "Lectures on Tap",
       "via": [
-        "feed: The Wisdom Bar"
+        "feed: Lectures on Tap"
       ],
-      "why": "An Author’s Firsthand Account of His Speculative Fiction Debut. Expert-led lectures in bars and creative spaces across NYC."
+      "why": ""
     },
     {
       "id": "feed-the-wisdom-bar-2026-11-30-the-wisdom-bar-the-nyc-subway-system-und",
@@ -2674,14 +2339,14 @@
       "why": "The Self We Post: Identity, Performance, and Life in the Digital Public. Expert-led lectures in bars and creative spaces across NYC."
     },
     {
-      "id": "feed-the-wisdom-bar-2026-12-09-the-history-of-pasta-the-story-of-ronzon",
-      "name": "The History of Pasta: The Story of Ronzoni Macaroni l The Wisdom Bar",
+      "id": "feed-the-wisdom-bar-2026-12-09-a-family-pasta-empire-the-story-of-ronzo",
+      "name": "A Family Pasta Empire: The Story of Ronzoni Macaroni l The Wisdom Bar",
       "dateISO": "2026-12-09T18:30:00",
       "time": "6:30 PM",
       "venue": "QED Astoria, Queens",
       "neighborhood": "",
       "price": "$36.97",
-      "url": "https://www.eventbrite.com/e/the-history-of-pasta-the-story-of-ronzoni-macaroni-l-the-wisdom-bar-tickets-2004020644695",
+      "url": "https://www.eventbrite.com/e/a-family-pasta-empire-the-story-of-ronzoni-macaroni-l-the-wisdom-bar-tickets-2004020644695",
       "category": "talks_lectures",
       "source": "The Wisdom Bar",
       "via": [
@@ -2768,6 +2433,22 @@
         "feed: The Wisdom Bar"
       ],
       "why": "A Christmas Noir: Existential Dread at the Holidays. \"Blast of Silence\" screening.Expert-led lectures in bars & creative spaces across NYC."
+    },
+    {
+      "id": "feed-nerd-nite-nyc-2027-01-09-nerd-nite-nyc",
+      "name": "Nerd Nite NYC",
+      "dateISO": "2027-01-09T19:00:00",
+      "time": "7:00 PM",
+      "venue": "littlefield, Brooklyn",
+      "neighborhood": "",
+      "price": "$14.86-19.74",
+      "url": "https://www.eventbrite.com/e/nerd-nite-nyc-tickets-2004751283054",
+      "category": "talks_lectures",
+      "source": "Nerd Nite NYC",
+      "via": [
+        "feed: Nerd Nite NYC"
+      ],
+      "why": "Join us back in Brooklyn at Littlefield for three fun-yet-informative presentations and TRIVIA!"
     },
     {
       "id": "feed-nerd-nite-nyc-2026-12-03-nerd-nite",

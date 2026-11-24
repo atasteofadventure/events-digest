@@ -1,7 +1,46 @@
 {
-  "generated": "2026-11-18T14:05:15",
-  "verdictsApplied": 6,
+  "generated": "2026-11-24T22:31:39",
+  "verdictsApplied": 7,
   "merges": [
+    {
+      "day": "2026-11-24",
+      "kept": "Humanist Modernity: Maciej and Stanisława Nowicki",
+      "keptVia": [
+        "AIANY"
+      ],
+      "dup": "Dark Matter U: Justice, Pedagogy, Design",
+      "dupVia": [
+        "AIANY"
+      ],
+      "reason": "same-url",
+      "score": 1
+    },
+    {
+      "day": "2026-11-24",
+      "kept": "Humanist Modernity: Maciej and Stanisława Nowicki",
+      "keptVia": [
+        "AIANY"
+      ],
+      "dup": "Why Design?",
+      "dupVia": [
+        "AIANY"
+      ],
+      "reason": "same-url",
+      "score": 1
+    },
+    {
+      "day": "2026-11-24",
+      "kept": "AIANY Architecture Boat Tour",
+      "keptVia": [
+        "AIANY"
+      ],
+      "dup": "Climate Change, Architecture, and the Future of NYC Tour",
+      "dupVia": [
+        "AIANY"
+      ],
+      "reason": "same-url",
+      "score": 1
+    },
     {
       "day": "2026-12-05",
       "kept": "12th Annual Fort Greene Holiday Tree Lighting",
@@ -14,19 +53,6 @@
       ],
       "reason": "jaccard",
       "score": 0.67
-    },
-    {
-      "day": "2026-11-19",
-      "kept": "Conversations in Bioethics: Ethics & the Future of Reproduction (IVG)",
-      "keptVia": [
-        "New York Public Library"
-      ],
-      "dup": "Johns Hopkins Bioethics Researchers Discuss Advances in Reproductive Technology",
-      "dupVia": [
-        "feed: Club Free Time"
-      ],
-      "reason": "llm-same",
-      "score": 1
     }
   ]
 }
